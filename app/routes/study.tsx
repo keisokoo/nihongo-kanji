@@ -115,31 +115,33 @@ export default function Study({ loaderData }: Route.ComponentProps) {
 
   return (
     <main className="min-h-screen bg-neutral-50 dark:bg-neutral-950">
-      <div className="mx-auto max-w-[80rem] px-8 py-10">
-        <header className="mb-8 flex items-center justify-between gap-4">
+      <div className="mx-auto max-w-[80rem] px-4 py-6 sm:px-8 sm:py-10">
+        <header className="mb-6 flex flex-wrap items-center justify-between gap-x-4 gap-y-3 sm:mb-8">
           <button
             type="button"
             onClick={() => (window.location.href = "/")}
-            className="text-base text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100"
+            className="text-sm text-neutral-500 hover:text-neutral-900 sm:text-base dark:hover:text-neutral-100"
           >
             ← 팩 선택
           </button>
-          <div className="flex items-center gap-3">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <NavButton
               to={
                 prev ? `/study/${encodeURIComponent(packKey)}/${prev.id}` : null
               }
-              label="◀ 이전"
+              label="◀"
+              longLabel="◀ 이전"
               hint={prev?.character}
             />
-            <span className="text-base tabular-nums text-neutral-500">
+            <span className="text-sm tabular-nums text-neutral-500 sm:text-base">
               {pack?.title ?? packKey} · {position} / {total}
             </span>
             <NavButton
               to={
                 next ? `/study/${encodeURIComponent(packKey)}/${next.id}` : null
               }
-              label="다음 ▶"
+              label="▶"
+              longLabel="다음 ▶"
               hint={next?.character}
             />
             <button
@@ -147,9 +149,9 @@ export default function Study({ loaderData }: Route.ComponentProps) {
               onClick={() => setListOpen(true)}
               aria-label="한자 목록 열기"
               title="한자 목록"
-              className="rounded-md border border-neutral-200 bg-white px-3 py-2 text-base text-neutral-700 transition hover:border-neutral-400 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:border-neutral-600"
+              className="rounded-md border border-neutral-200 bg-white px-2.5 py-1.5 text-sm text-neutral-700 transition hover:border-neutral-400 sm:px-3 sm:py-2 sm:text-base dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:border-neutral-600"
             >
-              ☰ 목록
+              ☰ <span className="hidden sm:inline">목록</span>
             </button>
           </div>
         </header>
@@ -390,33 +392,48 @@ function EmptyWordsCta({
 function NavButton({
   to,
   label,
+  longLabel,
   hint,
 }: {
   to: string | null;
   label: string;
+  longLabel?: string;
   hint?: string;
 }) {
   const cls =
-    "rounded-md border border-neutral-200 bg-white px-4 py-2 text-base transition dark:border-neutral-800 dark:bg-neutral-900";
+    "rounded-md border border-neutral-200 bg-white px-2.5 py-1.5 text-sm transition sm:px-4 sm:py-2 sm:text-base dark:border-neutral-800 dark:bg-neutral-900";
   const enabled =
     "text-neutral-800 hover:border-neutral-400 dark:text-neutral-200 dark:hover:border-neutral-600";
   const disabled = "text-neutral-300 dark:text-neutral-700";
 
-  if (!to) {
-    return (
-      <span className={`${cls} ${disabled}`} aria-disabled>
-        {label}
-      </span>
-    );
-  }
-  return (
-    <Link to={to} className={`${cls} ${enabled}`} prefetch="intent">
-      {label}
+  const content = (
+    <>
+      {longLabel ? (
+        <>
+          <span className="sm:hidden">{label}</span>
+          <span className="hidden sm:inline">{longLabel}</span>
+        </>
+      ) : (
+        label
+      )}
       {hint && (
         <span className="ml-1 text-neutral-400 [font-family:'Noto_Sans_JP',sans-serif]">
           {hint}
         </span>
       )}
+    </>
+  );
+
+  if (!to) {
+    return (
+      <span className={`${cls} ${disabled}`} aria-disabled>
+        {content}
+      </span>
+    );
+  }
+  return (
+    <Link to={to} className={`${cls} ${enabled}`} prefetch="intent">
+      {content}
     </Link>
   );
 }

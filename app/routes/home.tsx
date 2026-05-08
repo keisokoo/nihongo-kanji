@@ -52,12 +52,12 @@ export default function Home({ loaderData }: Route.ComponentProps) {
 
   return (
     <main className="min-h-screen bg-neutral-50 dark:bg-neutral-950">
-      <div className="mx-auto max-w-[80rem] px-8 py-16">
-        <header className="mb-12">
-          <h1 className="text-3xl font-bold tracking-tight text-neutral-900 dark:text-neutral-100">
+      <div className="mx-auto max-w-[80rem] px-4 py-10 sm:px-8 sm:py-16">
+        <header className="mb-8 sm:mb-12">
+          <h1 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl dark:text-neutral-100">
             Nihongo
           </h1>
-          <p className="mt-2 text-neutral-600 dark:text-neutral-400">
+          <p className="mt-2 text-sm text-neutral-600 sm:text-base dark:text-neutral-400">
             일본어 한자 학습
           </p>
         </header>
@@ -66,7 +66,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-500">
             JLPT
           </h2>
-          <div className="grid gap-4 sm:grid-cols-3 md:grid-cols-5">
+          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 md:grid-cols-5">
             {jlpt.map((pack) => (
               <PackCard key={pack.key} pack={pack} />
             ))}

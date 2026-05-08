@@ -90,11 +90,11 @@ export function WordQuizSection({
 
   return (
     <div>
-      <div className="mb-3 flex items-center justify-between">
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
         <h2 className="text-sm uppercase tracking-wide text-neutral-500">
           단어
         </h2>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-2 sm:gap-3">
           {addingWord?.state === "error" && (
             <span className="text-xs text-rose-600">{addingWord.message}</span>
           )}
@@ -102,13 +102,14 @@ export function WordQuizSection({
             type="button"
             disabled={addingWord?.state === "loading"}
             onClick={() => setShowAddModal(true)}
-            className="group inline-flex items-center gap-1.5 rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm text-neutral-700 opacity-50 transition hover:border-neutral-400 hover:opacity-100 disabled:opacity-50 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
+            className="group inline-flex items-center gap-1.5 rounded-md border border-neutral-300 bg-white px-2.5 py-1.5 text-sm text-neutral-700 opacity-50 transition hover:border-neutral-400 hover:opacity-100 disabled:opacity-50 sm:px-3 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
             title="이 한자를 쓰는 새 단어 + 예문 1개를 Sonnet으로 생성"
           >
             {addingWord?.state === "loading" ? (
               <>
                 <Spinner className="h-3.5 w-3.5" />
-                단어 + 예문 생성 중…
+                <span className="hidden sm:inline">단어 + 예문 생성 중…</span>
+                <span className="sm:hidden">생성 중…</span>
               </>
             ) : (
               <>✦ 단어 추가</>
@@ -117,7 +118,7 @@ export function WordQuizSection({
         </div>
       </div>
 
-      <div className="mb-6 flex flex-wrap gap-2">
+      <div className="mb-6 flex flex-wrap gap-1.5 sm:gap-2">
         {words.map((w) => {
           const isActive = w.id === activeWord.id;
           const isGenerated = w.source === "generated";
@@ -127,7 +128,7 @@ export function WordQuizSection({
               to={`/study/${encodeURIComponent(packKey)}/${kanjiId}?word=${encodeURIComponent(w.word)}`}
               prefetch="intent"
               className={cn(
-                "rounded-full border px-4 py-2 text-base transition [font-family:'Noto_Sans_JP',sans-serif]",
+                "rounded-full border px-3 py-1.5 text-sm transition sm:px-4 sm:py-2 sm:text-base [font-family:'Noto_Sans_JP',sans-serif]",
                 isActive
                   ? "border-neutral-900 bg-neutral-900 text-white dark:border-neutral-100 dark:bg-neutral-100 dark:text-neutral-900"
                   : "border-neutral-200 bg-white text-neutral-800 hover:border-neutral-400 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200",
@@ -399,7 +400,7 @@ function ActiveWordQuiz({
   // No examples yet — show generate-first call to action.
   if (examples.length === 0) {
     return (
-      <div className="rounded-2xl border border-neutral-200 bg-white p-8 dark:border-neutral-800 dark:bg-neutral-900">
+      <div className="rounded-2xl border border-neutral-200 bg-white p-5 sm:p-8 dark:border-neutral-800 dark:bg-neutral-900">
         <WordHeader
           word={word}
           score={null}
@@ -467,7 +468,7 @@ function ActiveWordQuiz({
   const isGenerating = genStatus.kind === "loading";
 
   return (
-    <div className="rounded-2xl border border-neutral-200 bg-white p-8 dark:border-neutral-800 dark:bg-neutral-900">
+    <div className="rounded-2xl border border-neutral-200 bg-white p-5 sm:p-8 dark:border-neutral-800 dark:bg-neutral-900">
       <WordHeader
         word={word}
         score={score}
@@ -501,16 +502,16 @@ function ActiveWordQuiz({
           </div>
         )}
 
-        <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-6 dark:border-neutral-800 dark:bg-neutral-950">
+        <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4 sm:p-6 dark:border-neutral-800 dark:bg-neutral-950">
           <div className="flex items-start gap-3">
-            <p className="flex-1 text-2xl leading-loose text-neutral-800 dark:text-neutral-200 [font-family:'Noto_Sans_JP',sans-serif]">
+            <p className="flex-1 text-lg leading-loose text-neutral-800 sm:text-2xl dark:text-neutral-200 [font-family:'Noto_Sans_JP',sans-serif]">
               <SentenceRender
                 tokens={current!.sentence}
                 revealTarget={reveal}
                 wordReading={word.wordReading}
               />
             </p>
-            <div className="mt-2 flex shrink-0 flex-col gap-2">
+            <div className="mt-1 flex shrink-0 items-center gap-2 sm:mt-2">
               <button
                 type="button"
                 disabled={ttsLoading}
@@ -543,7 +544,7 @@ function ActiveWordQuiz({
             </div>
           </div>
           {current!.sentenceTranslationKo && (
-            <p className="mt-3 text-base text-neutral-500">
+            <p className="mt-3 text-sm text-neutral-500 sm:text-base">
               {current!.sentenceTranslationKo}
             </p>
           )}
@@ -558,7 +559,7 @@ function ActiveWordQuiz({
           />
         )}
 
-        <div className="mt-6 grid gap-3 sm:grid-cols-2">
+        <div className="mt-5 grid gap-2.5 sm:mt-6 sm:gap-3 sm:grid-cols-2">
           {currentChoices.map((choice) => {
             const stateClass =
               picked === null
@@ -575,7 +576,7 @@ function ActiveWordQuiz({
                 disabled={picked !== null || isGenerating}
                 onClick={() => pick(choice)}
                 className={cn(
-                  "rounded-xl border px-5 py-4 text-left text-xl transition [font-family:'Noto_Sans_JP',sans-serif]",
+                  "rounded-xl border px-4 py-3 text-left text-lg transition sm:px-5 sm:py-4 sm:text-xl [font-family:'Noto_Sans_JP',sans-serif]",
                   stateClass,
                 )}
               >
@@ -599,12 +600,13 @@ function ActiveWordQuiz({
         )}
       </div>
 
-      <div className="mt-6 flex items-center justify-between gap-3">
+      <div className="mt-5 flex flex-wrap items-center justify-between gap-3 sm:mt-6">
         <div className="flex items-center gap-2">
           <NavBtn
             disabled={currentIndex === 0 || isGenerating}
             onClick={() => setCurrentIndex((i) => Math.max(0, i - 1))}
-            label="◀ 이전 문제"
+            label="◀"
+            longLabel="◀ 이전 문제"
           />
           <span className="text-sm tabular-nums text-neutral-500">
             {currentIndex + 1} / {examples.length}
@@ -616,7 +618,8 @@ function ActiveWordQuiz({
             onClick={() =>
               setCurrentIndex((i) => Math.min(examples.length - 1, i + 1))
             }
-            label="다음 문제 ▶"
+            label="▶"
+            longLabel="다음 문제 ▶"
           />
         </div>
         <button
@@ -818,14 +821,14 @@ function WordHeader({
   onToggleExplanation: () => void;
 }) {
   return (
-    <div className="flex items-center justify-between gap-4">
-      <div className="flex items-baseline gap-3">
-        <span className="text-4xl font-semibold text-neutral-900 dark:text-neutral-100 [font-family:'Noto_Sans_JP',sans-serif]">
+    <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-3">
+      <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
+        <span className="text-3xl font-semibold sm:text-4xl text-neutral-900 dark:text-neutral-100 [font-family:'Noto_Sans_JP',sans-serif]">
           {word.word}
         </span>
         <span
           className={cn(
-            "text-lg [font-family:'Noto_Sans_JP',sans-serif] selection:bg-amber-200 selection:text-neutral-900 dark:selection:bg-amber-300 dark:selection:text-neutral-900",
+            "text-base sm:text-lg [font-family:'Noto_Sans_JP',sans-serif] selection:bg-amber-200 selection:text-neutral-900 dark:selection:bg-amber-300 dark:selection:text-neutral-900",
             revealReading
               ? "text-neutral-500 transition-colors duration-300"
               : "text-transparent",
@@ -846,7 +849,7 @@ function WordHeader({
           {wordTtsLoading ? <Spinner className="h-4 w-4" /> : "♪"}
         </button>
       </div>
-      <div className="flex items-center gap-3">
+      <div className="flex flex-wrap items-center gap-2 sm:gap-3">
         {score && score.total > 0 && (
           <div className="text-sm text-neutral-500 tabular-nums">
             점수 {score.correct} / {score.total}
@@ -860,7 +863,7 @@ function WordHeader({
           title="이 단어 발음의 음편화/연탁/아테지 등 해설"
           aria-pressed={explanationOpen}
           className={cn(
-            "inline-flex items-center gap-1.5 rounded-md border px-3 py-1.5 text-sm transition disabled:opacity-50",
+            "inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1.5 text-sm transition disabled:opacity-50 sm:px-3",
             explanationOpen
               ? "border-amber-400 bg-amber-50 text-amber-900 dark:border-amber-500 dark:bg-amber-950 dark:text-amber-200"
               : "border-neutral-300 bg-white text-neutral-700 hover:border-amber-400 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300",
@@ -974,10 +977,12 @@ function NavBtn({
   disabled,
   onClick,
   label,
+  longLabel,
 }: {
   disabled: boolean;
   onClick: () => void;
   label: string;
+  longLabel?: string;
 }) {
   return (
     <button
@@ -986,7 +991,14 @@ function NavBtn({
       onClick={onClick}
       className="rounded-md border border-neutral-200 bg-white px-3 py-1.5 text-sm text-neutral-700 transition hover:border-neutral-400 disabled:opacity-30 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-300"
     >
-      {label}
+      {longLabel ? (
+        <>
+          <span className="sm:hidden">{label}</span>
+          <span className="hidden sm:inline">{longLabel}</span>
+        </>
+      ) : (
+        label
+      )}
     </button>
   );
 }
