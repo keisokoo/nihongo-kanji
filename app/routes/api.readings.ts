@@ -2,6 +2,7 @@ import { eq } from "drizzle-orm";
 import type { Route } from "./+types/api.readings";
 import { db, kanji as kanjiTable, readings as readingsTable } from "~/lib/db";
 import { fetchKanjiReadings } from "~/lib/kanjipedia.server";
+import { generateMeaning } from "~/lib/claude.server";
 
 export function loader() {
   return Response.json({ error: "method not allowed" }, { status: 405 });
@@ -61,10 +62,29 @@ export async function action({ request }: Route.ActionArgs) {
 
   const inserted = await db.insert(readingsTable).values(rows).returning();
 
+  let meaningKo: string | null = null;
+  let meaningModel: string | null = null;
+  try {
+    const gen = await generateMeaning({
+      kanjiChar: target.character,
+      hint: target.meaningKo,
+    });
+    meaningKo = gen.result.meaningKo;
+    meaningModel = gen.modelUsed;
+    await db
+      .update(kanjiTable)
+      .set({ meaningKo: gen.result.meaningKo })
+      .where(eq(kanjiTable.id, kanjiId));
+  } catch (err) {
+    console.warn("[api.readings] meaning regeneration failed:", err);
+  }
+
   return Response.json({
     on: fetched.on,
     kun: fetched.kun,
     detailUrl: fetched.detailUrl,
     count: inserted.length,
+    meaningKo,
+    meaningModel,
   });
 }

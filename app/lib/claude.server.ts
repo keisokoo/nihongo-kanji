@@ -163,7 +163,7 @@ export type GenerateExampleInput = {
   word: string;
   wordReading: string;
   kanjiChar: string;
-  level: "N5" | "N4" | "N3";
+  level: string;
   excludeSentences?: string[];
 };
 
@@ -240,7 +240,7 @@ CONSTRAINTS:
 
 export type GenerateWordInput = {
   kanjiChar: string;
-  level: "N5" | "N4" | "N3";
+  level: string;
   existingWords?: { word: string; wordReading: string }[];
 };
 
@@ -323,7 +323,7 @@ export type GenerateExplanationInput = {
   word: string;
   wordReading: string;
   kanjiChar: string;
-  level: "N5" | "N4" | "N3";
+  level: string;
 };
 
 export type GenerateExplanationOutput = {
@@ -354,5 +354,72 @@ export async function generateExplanation(
     (model) =>
       callJson(model, EXPLANATION_SYSTEM_PROMPT, userMessage, EXPLANATION_SCHEMA),
     "explanation",
+  );
+}
+
+// ─── generateMeaning ────────────────────────────────────────────────────────
+
+const MEANING_SCHEMA = {
+  type: "object",
+  properties: {
+    meaningKo: { type: "string" },
+  },
+  required: ["meaningKo"],
+  additionalProperties: false,
+} as const;
+
+const MEANING_SYSTEM_PROMPT = `You translate kanji into the standard Korean reading-translation for JLPT learners.
+
+For a kanji, return the Korean kanji reading-translation in the format:
+  "<훈독> <음독> — <부가 의미>"
+
+Rules:
+- 훈독 (native Korean): the core Korean meaning word (e.g. 날, 한, 메, 나무, 큰).
+- 음독 (Sino-Korean reading, 한자음): the Korean Hanja reading (e.g. 일, 산, 목, 대).
+- 부가 의미 (optional): 1-3 short extra senses separated by commas, only if useful.
+  If only one or two main meanings, the dash and 부가 can be omitted.
+- Output only Korean (Hangul), never reuse the kanji or English.
+- For abstract kanji where 훈독 doesn't fit cleanly, use a natural Korean noun.
+
+Examples:
+- 日 → "날 일 — 해, 날, 일본"
+- 一 → "한 일 — 하나"
+- 山 → "메 산"
+- 与 → "줄 여 — 주다, 베풀다"
+- 経 → "지날 경 — 경전, 경과"
+
+Return JSON: { "meaningKo": "<korean>" }`;
+
+export type GenerateMeaningInput = {
+  kanjiChar: string;
+  hint?: string;
+};
+
+export type GenerateMeaningOutput = {
+  meaningKo: string;
+};
+
+function isMeaningOutput(x: unknown): x is GenerateMeaningOutput {
+  if (!x || typeof x !== "object") return false;
+  const o = x as Record<string, unknown>;
+  return typeof o.meaningKo === "string" && /[가-힣]/.test(o.meaningKo);
+}
+
+export async function generateMeaning(
+  input: GenerateMeaningInput,
+  tier: Tier = "default",
+): Promise<{ result: GenerateMeaningOutput; modelUsed: string }> {
+  const userMessage = [
+    `Kanji: ${input.kanjiChar}`,
+    input.hint ? `Hint (existing meaning or English): ${input.hint}` : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  return withFallback<GenerateMeaningOutput>(
+    tier,
+    isMeaningOutput,
+    (model) => callJson(model, MEANING_SYSTEM_PROMPT, userMessage, MEANING_SCHEMA),
+    "meaning",
   );
 }

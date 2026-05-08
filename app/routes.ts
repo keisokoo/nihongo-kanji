@@ -9,4 +9,5 @@ export default [
   route("api/word", "routes/api.word.ts"),
   route("api/readings", "routes/api.readings.ts"),
   route("api/explanation", "routes/api.explanation.ts"),
+  route("api/pack/import", "routes/api.pack.import.ts"),
 ] satisfies RouteConfig;

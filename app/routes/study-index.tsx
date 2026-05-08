@@ -1,26 +1,23 @@
 import { redirect } from "react-router";
 import { asc, eq } from "drizzle-orm";
 import type { Route } from "./+types/study-index";
-import { db, kanji as kanjiTable } from "~/lib/db";
-
-const LEVELS = ["N5", "N4", "N3"] as const;
-type Level = (typeof LEVELS)[number];
-
-function isLevel(value: string): value is Level {
-  return (LEVELS as readonly string[]).includes(value);
-}
+import { db, kanji as kanjiTable, packs as packsTable } from "~/lib/db";
 
 export async function loader({ params }: Route.LoaderArgs) {
-  if (!isLevel(params.level)) throw redirect("/");
+  const packKey = params.level; // URL segment is the pack key (kept named "level" for back-compat)
+  const pack = await db.query.packs.findFirst({
+    where: eq(packsTable.key, packKey),
+  });
+  if (!pack) throw redirect("/");
 
   const first = await db.query.kanji.findFirst({
-    where: eq(kanjiTable.level, params.level),
+    where: eq(kanjiTable.packKey, pack.key),
     orderBy: asc(kanjiTable.id),
     columns: { id: true },
   });
 
   if (!first) throw redirect("/");
-  throw redirect(`/study/${params.level}/${first.id}`);
+  throw redirect(`/study/${encodeURIComponent(pack.key)}/${first.id}`);
 }
 
 export default function StudyIndex() {

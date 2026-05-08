@@ -35,7 +35,7 @@ type GenStatus =
   | { kind: "error"; message: string };
 
 type Props = {
-  level: "N5" | "N4" | "N3";
+  packKey: string;
   kanjiId: number;
   words: Word[];
   activeWord: Word;
@@ -44,7 +44,7 @@ type Props = {
 };
 
 export function WordQuizSection({
-  level,
+  packKey,
   kanjiId,
   words,
   activeWord,
@@ -75,7 +75,7 @@ export function WordQuizSection({
       const data = (await res.json()) as WordResponse;
       // Soft-navigate to the new word — loader re-runs and picks it up.
       navigate(
-        `/study/${level}/${kanjiId}?word=${encodeURIComponent(data.word.word)}`,
+        `/study/${encodeURIComponent(packKey)}/${kanjiId}?word=${encodeURIComponent(data.word.word)}`,
       );
     } catch (err) {
       const message = err instanceof Error ? err.message : "failed";
@@ -119,7 +119,7 @@ export function WordQuizSection({
           return (
             <Link
               key={w.id}
-              to={`/study/${level}/${kanjiId}?word=${encodeURIComponent(w.word)}`}
+              to={`/study/${encodeURIComponent(packKey)}/${kanjiId}?word=${encodeURIComponent(w.word)}`}
               prefetch="intent"
               className={cn(
                 "rounded-full border px-4 py-2 text-base transition [font-family:'Noto_Sans_JP',sans-serif]",

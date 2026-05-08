@@ -1,0 +1,7348 @@
+{
+  "key": "N2",
+  "title": "N2",
+  "kind": "jlpt",
+  "description": "JLPT N2 한자 (kanjiapi.dev)",
+  "kanji": [
+    {
+      "character": "並",
+      "meaningKo": "나란 병 — 늘어서다, 함께",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヘイ"
+        },
+        {
+          "type": "on",
+          "reading": "ホウ"
+        },
+        {
+          "type": "kun",
+          "reading": "なみ"
+        },
+        {
+          "type": "kun",
+          "reading": "ならびに"
+        },
+        {
+          "type": "kun",
+          "reading": "ならぶ"
+        },
+        {
+          "type": "kun",
+          "reading": "ならべる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "丸",
+      "meaningKo": "동글 환 — 배, 둥글게",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ガン"
+        },
+        {
+          "type": "kun",
+          "reading": "まる"
+        },
+        {
+          "type": "kun",
+          "reading": "まるい"
+        },
+        {
+          "type": "kun",
+          "reading": "まるめる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "久",
+      "meaningKo": "오래 구 — 오래된",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キュウ"
+        },
+        {
+          "type": "on",
+          "reading": "ク"
+        },
+        {
+          "type": "kun",
+          "reading": "ひさしい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "乱",
+      "meaningKo": "어지러울 란 — 혼란, 싸움",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ラン"
+        },
+        {
+          "type": "on",
+          "reading": "ロン"
+        },
+        {
+          "type": "kun",
+          "reading": "おさめる"
+        },
+        {
+          "type": "kun",
+          "reading": "みだ"
+        },
+        {
+          "type": "kun",
+          "reading": "みだす"
+        },
+        {
+          "type": "kun",
+          "reading": "みだる"
+        },
+        {
+          "type": "kun",
+          "reading": "みだれる"
+        },
+        {
+          "type": "kun",
+          "reading": "わたる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "乳",
+      "meaningKo": "젖 유 — 우유",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ニュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "ち"
+        },
+        {
+          "type": "kun",
+          "reading": "ちち"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "乾",
+      "meaningKo": "마를 건 — 건조, 천",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カン"
+        },
+        {
+          "type": "on",
+          "reading": "ケン"
+        },
+        {
+          "type": "kun",
+          "reading": "いぬい"
+        },
+        {
+          "type": "kun",
+          "reading": "かわかす"
+        },
+        {
+          "type": "kun",
+          "reading": "かわく"
+        },
+        {
+          "type": "kun",
+          "reading": "ひる"
+        },
+        {
+          "type": "kun",
+          "reading": "ほす"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "了",
+      "meaningKo": "마칠 료",
+      "strokeCount": 2,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リョウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "介",
+      "meaningKo": "끼일 개 — 중개, 조개",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カイ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "仏",
+      "meaningKo": "부처 불",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フツ"
+        },
+        {
+          "type": "on",
+          "reading": "ブツ"
+        },
+        {
+          "type": "kun",
+          "reading": "ほとけ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "令",
+      "meaningKo": "명할 령 — 법령, 좋은",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "レイ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "仲",
+      "meaningKo": "중간 중 — 중개인",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "なか"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "伸",
+      "meaningKo": "펼 신 — 늘어나다, 펴다",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シン"
+        },
+        {
+          "type": "kun",
+          "reading": "のす"
+        },
+        {
+          "type": "kun",
+          "reading": "のばす"
+        },
+        {
+          "type": "kun",
+          "reading": "のびる"
+        },
+        {
+          "type": "kun",
+          "reading": "のべる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "伺",
+      "meaningKo": "물을 시 — 묻다, 엿보다",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シ"
+        },
+        {
+          "type": "kun",
+          "reading": "うかがう"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "低",
+      "meaningKo": "“낮을 저”. 낮다",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "テイ"
+        },
+        {
+          "type": "kun",
+          "reading": "ひくい"
+        },
+        {
+          "type": "kun",
+          "reading": "ひくまる"
+        },
+        {
+          "type": "kun",
+          "reading": "ひくめる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "テイ",
+          "word": "高低",
+          "wordReading": "こうてい"
+        },
+        {
+          "readingRef": "テイ",
+          "word": "最低",
+          "wordReading": "さいてい"
+        }
+      ]
+    },
+    {
+      "character": "依",
+      "meaningKo": "의지할 의 — 의존하다, 따라",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "イ"
+        },
+        {
+          "type": "on",
+          "reading": "エ"
+        },
+        {
+          "type": "kun",
+          "reading": "よる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "個",
+      "meaningKo": "낱 개 — 개인",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カ"
+        },
+        {
+          "type": "on",
+          "reading": "コ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "倍",
+      "meaningKo": "곱 배 — 두배, 배수",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "バイ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "停",
+      "meaningKo": "멈출 정 — 정지, 머물다",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "テイ"
+        },
+        {
+          "type": "kun",
+          "reading": "とまる"
+        },
+        {
+          "type": "kun",
+          "reading": "とめる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "傾",
+      "meaningKo": "기울 경 — 기울어지다, 넘어지다",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ケイ"
+        },
+        {
+          "type": "kun",
+          "reading": "かしげる"
+        },
+        {
+          "type": "kun",
+          "reading": "かたげる"
+        },
+        {
+          "type": "kun",
+          "reading": "かたぶく"
+        },
+        {
+          "type": "kun",
+          "reading": "かたむく"
+        },
+        {
+          "type": "kun",
+          "reading": "かたむける"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "像",
+      "meaningKo": "형상 상 — 상(像), 모습",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゾウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "億",
+      "meaningKo": "억 억",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "オク"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "兆",
+      "meaningKo": "조 조 — 징조, 신호",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "きざし"
+        },
+        {
+          "type": "kun",
+          "reading": "きざす"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "児",
+      "meaningKo": "아이 아 — 아이, 새끼",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゲイ"
+        },
+        {
+          "type": "on",
+          "reading": "ジ"
+        },
+        {
+          "type": "on",
+          "reading": "ニ"
+        },
+        {
+          "type": "kun",
+          "reading": "こ"
+        },
+        {
+          "type": "kun",
+          "reading": "っこ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "党",
+      "meaningKo": "무리 당 — 파벌, 정당",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "トウ"
+        },
+        {
+          "type": "kun",
+          "reading": "なかま"
+        },
+        {
+          "type": "kun",
+          "reading": "むら"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "兵",
+      "meaningKo": "병 병 — 군인, 전략",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヒョウ"
+        },
+        {
+          "type": "on",
+          "reading": "ヘイ"
+        },
+        {
+          "type": "kun",
+          "reading": "つわもの"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "冊",
+      "meaningKo": "책 책",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サク"
+        },
+        {
+          "type": "on",
+          "reading": "サツ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふみ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "再",
+      "meaningKo": "다시 재",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サ"
+        },
+        {
+          "type": "on",
+          "reading": "サイ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふたたび"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "凍",
+      "meaningKo": "얼 동 — 얼음, 냉동",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "トウ"
+        },
+        {
+          "type": "kun",
+          "reading": "いてる"
+        },
+        {
+          "type": "kun",
+          "reading": "こおる"
+        },
+        {
+          "type": "kun",
+          "reading": "こごえる"
+        },
+        {
+          "type": "kun",
+          "reading": "こごる"
+        },
+        {
+          "type": "kun",
+          "reading": "しみる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "刊",
+      "meaningKo": "새길 간 — 출판하다, 새기다",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カン"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "刷",
+      "meaningKo": "칠 삽 — 인쇄하다, 닦다",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サツ"
+        },
+        {
+          "type": "kun",
+          "reading": "ずり"
+        },
+        {
+          "type": "kun",
+          "reading": "する"
+        },
+        {
+          "type": "kun",
+          "reading": "はく"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "券",
+      "meaningKo": "표 권 — 증권",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ケン"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "刺",
+      "meaningKo": "찌를 자 — 쏘다, 명함",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シ"
+        },
+        {
+          "type": "kun",
+          "reading": "ささる"
+        },
+        {
+          "type": "kun",
+          "reading": "さし"
+        },
+        {
+          "type": "kun",
+          "reading": "さす"
+        },
+        {
+          "type": "kun",
+          "reading": "とげ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "則",
+      "meaningKo": "법칙 칙 — 따르다, 규칙",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ソク"
+        },
+        {
+          "type": "kun",
+          "reading": "すなわち"
+        },
+        {
+          "type": "kun",
+          "reading": "のっとる"
+        },
+        {
+          "type": "kun",
+          "reading": "のり"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "副",
+      "meaningKo": "곁 부 — 보조, 복사",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フク"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "劇",
+      "meaningKo": "극 극 — 드라마",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゲキ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "効",
+      "meaningKo": "효과 효 — 이롭다, 능력",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "きく"
+        },
+        {
+          "type": "kun",
+          "reading": "ききめ"
+        },
+        {
+          "type": "kun",
+          "reading": "ならう"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "勇",
+      "meaningKo": "용감할 용 — 용맹, 용기",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ユウ"
+        },
+        {
+          "type": "kun",
+          "reading": "いさむ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "募",
+      "meaningKo": "모을 모 — 모집하다, 소집",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ボ"
+        },
+        {
+          "type": "kun",
+          "reading": "つのる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "勢",
+      "meaningKo": "세 세 — 힘, 기세, 형세",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セイ"
+        },
+        {
+          "type": "on",
+          "reading": "ゼイ"
+        },
+        {
+          "type": "kun",
+          "reading": "いきおい"
+        },
+        {
+          "type": "kun",
+          "reading": "はずみ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "包",
+      "meaningKo": "쌀 포",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ホウ"
+        },
+        {
+          "type": "kun",
+          "reading": "くるむ"
+        },
+        {
+          "type": "kun",
+          "reading": "つつむ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "匹",
+      "meaningKo": "한 필 — 마리, 필",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヒツ"
+        },
+        {
+          "type": "kun",
+          "reading": "ひき"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "区",
+      "meaningKo": "“구역 구”. 구역, 구획, 경계",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "オウ"
+        },
+        {
+          "type": "on",
+          "reading": "ク"
+        },
+        {
+          "type": "on",
+          "reading": "コウ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ク",
+          "word": "区別",
+          "wordReading": "くべつ"
+        },
+        {
+          "readingRef": "ク",
+          "word": "区域",
+          "wordReading": "くいき"
+        },
+        {
+          "readingRef": "ク",
+          "word": "区画",
+          "wordReading": "くかく"
+        }
+      ]
+    },
+    {
+      "character": "卒",
+      "meaningKo": "마칠 졸 — 죽다, 졸업, 병사",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シュツ"
+        },
+        {
+          "type": "on",
+          "reading": "ソツ"
+        },
+        {
+          "type": "kun",
+          "reading": "おえる"
+        },
+        {
+          "type": "kun",
+          "reading": "おわる"
+        },
+        {
+          "type": "kun",
+          "reading": "そっする"
+        },
+        {
+          "type": "kun",
+          "reading": "ついに"
+        },
+        {
+          "type": "kun",
+          "reading": "にわか"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "協",
+      "meaningKo": "함께할 협 — 협력",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "占",
+      "meaningKo": "점 점 — 점치다, 차지하다",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セン"
+        },
+        {
+          "type": "kun",
+          "reading": "うらなう"
+        },
+        {
+          "type": "kun",
+          "reading": "しめる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "印",
+      "meaningKo": "인 인 — 인장, 증거",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "イン"
+        },
+        {
+          "type": "kun",
+          "reading": "じるし"
+        },
+        {
+          "type": "kun",
+          "reading": "しるす"
+        },
+        {
+          "type": "kun",
+          "reading": "しるし"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "卵",
+      "meaningKo": "알 란 — 계란",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ラン"
+        },
+        {
+          "type": "kun",
+          "reading": "たまご"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "厚",
+      "meaningKo": "두터울 후 — 두껍다, 친절하다",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "あか"
+        },
+        {
+          "type": "kun",
+          "reading": "あつい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "双",
+      "meaningKo": "쌍 쌍 — 한 쌍, 둘",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ソウ"
+        },
+        {
+          "type": "kun",
+          "reading": "たぐい"
+        },
+        {
+          "type": "kun",
+          "reading": "ならぶ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふた"
+        },
+        {
+          "type": "kun",
+          "reading": "ふたつ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "叫",
+      "meaningKo": "부를 규 — 외치다",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "さけぶ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "召",
+      "meaningKo": "부를 소 — 먹다, 마시다",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "kun",
+          "reading": "めす"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "史",
+      "meaningKo": "역사 사 — 기록",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "各",
+      "meaningKo": "“각각 각”. 각자의, 각각",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カク"
+        },
+        {
+          "type": "kun",
+          "reading": "おのおの"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "カク",
+          "word": "各国",
+          "wordReading": "かっこく"
+        },
+        {
+          "readingRef": "カク",
+          "word": "各種",
+          "wordReading": "かくしゅ"
+        },
+        {
+          "readingRef": "カク",
+          "word": "各地",
+          "wordReading": "かくち"
+        },
+        {
+          "readingRef": "おのおの",
+          "word": "各意見",
+          "wordReading": "おのおのいけん"
+        },
+        {
+          "readingRef": "おのおの",
+          "word": "述",
+          "wordReading": "の"
+        }
+      ]
+    },
+    {
+      "character": "含",
+      "meaningKo": "머금을 함 — 포함하다",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ガン"
+        },
+        {
+          "type": "kun",
+          "reading": "ふくむ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふくめる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "周",
+      "meaningKo": "둘레 주 — 일주",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "まわり"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "咲",
+      "meaningKo": "필 소 — 꽃피다",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "kun",
+          "reading": "ざき"
+        },
+        {
+          "type": "kun",
+          "reading": "さく"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "喫",
+      "meaningKo": "먹을 흡 — 마시다, 담배피우다",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キツ"
+        },
+        {
+          "type": "kun",
+          "reading": "のむ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "営",
+      "meaningKo": "일울 영 — 경영, 영업",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "エイ"
+        },
+        {
+          "type": "kun",
+          "reading": "いとなみ"
+        },
+        {
+          "type": "kun",
+          "reading": "いとなむ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "団",
+      "meaningKo": "둥글 단 — 단체, 모임",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ダン"
+        },
+        {
+          "type": "on",
+          "reading": "トン"
+        },
+        {
+          "type": "kun",
+          "reading": "かたまり"
+        },
+        {
+          "type": "kun",
+          "reading": "まるい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "囲",
+      "meaningKo": "둘러쌀 위 — 에워싸다",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "イ"
+        },
+        {
+          "type": "kun",
+          "reading": "かこい"
+        },
+        {
+          "type": "kun",
+          "reading": "かこう"
+        },
+        {
+          "type": "kun",
+          "reading": "かこむ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "固",
+      "meaningKo": "굳을 고 — 경화, 응고",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コ"
+        },
+        {
+          "type": "kun",
+          "reading": "かたい"
+        },
+        {
+          "type": "kun",
+          "reading": "かたまり"
+        },
+        {
+          "type": "kun",
+          "reading": "かたまる"
+        },
+        {
+          "type": "kun",
+          "reading": "かためる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "圧",
+      "meaningKo": "누를 압 — 억압, 압력",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "アツ"
+        },
+        {
+          "type": "on",
+          "reading": "エン"
+        },
+        {
+          "type": "on",
+          "reading": "オウ"
+        },
+        {
+          "type": "kun",
+          "reading": "おさえる"
+        },
+        {
+          "type": "kun",
+          "reading": "おす"
+        },
+        {
+          "type": "kun",
+          "reading": "へす"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "坂",
+      "meaningKo": "비탈 판 — 언덕, 경사",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハン"
+        },
+        {
+          "type": "kun",
+          "reading": "さか"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "均",
+      "meaningKo": "고를 균 — 평등, 평균",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キン"
+        },
+        {
+          "type": "kun",
+          "reading": "ならす"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "型",
+      "meaningKo": "틀 형 — 모양, 유형",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ケイ"
+        },
+        {
+          "type": "kun",
+          "reading": "がた"
+        },
+        {
+          "type": "kun",
+          "reading": "かた"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "埋",
+      "meaningKo": "묻을 매 — 매장, 파묻다",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "マイ"
+        },
+        {
+          "type": "kun",
+          "reading": "いける"
+        },
+        {
+          "type": "kun",
+          "reading": "うまる"
+        },
+        {
+          "type": "kun",
+          "reading": "うめる"
+        },
+        {
+          "type": "kun",
+          "reading": "うもれる"
+        },
+        {
+          "type": "kun",
+          "reading": "うずまる"
+        },
+        {
+          "type": "kun",
+          "reading": "うずめる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "城",
+      "meaningKo": "성 성 — 성곽",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジョウ"
+        },
+        {
+          "type": "on",
+          "reading": "セイ"
+        },
+        {
+          "type": "kun",
+          "reading": "しろ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "域",
+      "meaningKo": "경계 역 — 영역, 범위",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "イキ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "塔",
+      "meaningKo": "탑 탑 — 탑",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "トウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "塗",
+      "meaningKo": "칠 도 — 페인트, 칠하다",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ト"
+        },
+        {
+          "type": "kun",
+          "reading": "ぬり"
+        },
+        {
+          "type": "kun",
+          "reading": "ぬる"
+        },
+        {
+          "type": "kun",
+          "reading": "まみれる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "塩",
+      "meaningKo": "소금 염",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "エン"
+        },
+        {
+          "type": "kun",
+          "reading": "しお"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "境",
+      "meaningKo": "경계 경 — 국경, 지역",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョウ"
+        },
+        {
+          "type": "on",
+          "reading": "ケイ"
+        },
+        {
+          "type": "kun",
+          "reading": "さかい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "央",
+      "meaningKo": "한가운데 앙 — 중앙, 중심",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "オウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "奥",
+      "meaningKo": "깊을 오 — 내면, 깊은곳",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "オウ"
+        },
+        {
+          "type": "kun",
+          "reading": "おく"
+        },
+        {
+          "type": "kun",
+          "reading": "おくまる"
+        },
+        {
+          "type": "kun",
+          "reading": "くま"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "姓",
+      "meaningKo": "성 성 — 성씨, 이름",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "on",
+          "reading": "セイ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "委",
+      "meaningKo": "맡길 위 — 위임, 위원",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "イ"
+        },
+        {
+          "type": "kun",
+          "reading": "ゆだねる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "季",
+      "meaningKo": "계절 계 — 철, 시기",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "孫",
+      "meaningKo": "손자 손 — 후손",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ソン"
+        },
+        {
+          "type": "kun",
+          "reading": "まご"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "宇",
+      "meaningKo": "집 우 — 우주, 지붕",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "宝",
+      "meaningKo": "보물 보 — 재보, 귀중품",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ホウ"
+        },
+        {
+          "type": "kun",
+          "reading": "たから"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "寺",
+      "meaningKo": "절 사",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジ"
+        },
+        {
+          "type": "kun",
+          "reading": "てら"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "封",
+      "meaningKo": "봉할 봉 — 봉인, 막다",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フウ"
+        },
+        {
+          "type": "on",
+          "reading": "ホウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "専",
+      "meaningKo": "오로지 전 — 전문, 주로",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セン"
+        },
+        {
+          "type": "kun",
+          "reading": "もっぱら"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "将",
+      "meaningKo": "장수 장 — 장관, 곧",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "on",
+          "reading": "ソウ"
+        },
+        {
+          "type": "kun",
+          "reading": "はた"
+        },
+        {
+          "type": "kun",
+          "reading": "ひきいる"
+        },
+        {
+          "type": "kun",
+          "reading": "まさ"
+        },
+        {
+          "type": "kun",
+          "reading": "まさに"
+        },
+        {
+          "type": "kun",
+          "reading": "もって"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "尊",
+      "meaningKo": "귀할 존 — 높다, 소중하다",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ソン"
+        },
+        {
+          "type": "kun",
+          "reading": "たっとい"
+        },
+        {
+          "type": "kun",
+          "reading": "たっとぶ"
+        },
+        {
+          "type": "kun",
+          "reading": "とうとい"
+        },
+        {
+          "type": "kun",
+          "reading": "とうとぶ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "導",
+      "meaningKo": "이끌 도 — 지도, 안내",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ドウ"
+        },
+        {
+          "type": "kun",
+          "reading": "みちびく"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "届",
+      "meaningKo": "도달할 도 — 전달, 알리다",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カイ"
+        },
+        {
+          "type": "kun",
+          "reading": "とどけ"
+        },
+        {
+          "type": "kun",
+          "reading": "とどく"
+        },
+        {
+          "type": "kun",
+          "reading": "とどける"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "層",
+      "meaningKo": "층 층 — 계층, 굴곡",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ソウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "岩",
+      "meaningKo": "바위 암",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ガン"
+        },
+        {
+          "type": "kun",
+          "reading": "いわ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "岸",
+      "meaningKo": "물가 안 — 해변",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ガン"
+        },
+        {
+          "type": "kun",
+          "reading": "きし"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "島",
+      "meaningKo": "“섬 도”. 섬",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "トウ"
+        },
+        {
+          "type": "kun",
+          "reading": "しま"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "トウ",
+          "word": "列島",
+          "wordReading": "れっとう"
+        },
+        {
+          "readingRef": "トウ",
+          "word": "半島",
+          "wordReading": "はんとう"
+        },
+        {
+          "readingRef": "トウ",
+          "word": "無人島",
+          "wordReading": "むじんとう"
+        },
+        {
+          "readingRef": "しま",
+          "word": "島",
+          "wordReading": "しま"
+        },
+        {
+          "readingRef": "しま",
+          "word": "島国",
+          "wordReading": "しまぐに"
+        }
+      ]
+    },
+    {
+      "character": "州",
+      "meaningKo": "고을 주",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シュウ"
+        },
+        {
+          "type": "on",
+          "reading": "ス"
+        },
+        {
+          "type": "kun",
+          "reading": "す"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "巨",
+      "meaningKo": "클 거 — 거대, 큰",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "巻",
+      "meaningKo": "말 권 — 책, 두루마리",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カン"
+        },
+        {
+          "type": "on",
+          "reading": "ケン"
+        },
+        {
+          "type": "kun",
+          "reading": "まき"
+        },
+        {
+          "type": "kun",
+          "reading": "まく"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "布",
+      "meaningKo": "헝겊 포 — 펴다, 퍼뜨리다",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フ"
+        },
+        {
+          "type": "on",
+          "reading": "ホ"
+        },
+        {
+          "type": "kun",
+          "reading": "きれ"
+        },
+        {
+          "type": "kun",
+          "reading": "しく"
+        },
+        {
+          "type": "kun",
+          "reading": "ぬの"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "希",
+      "meaningKo": "드물 희 — 구하다, 엷다",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キ"
+        },
+        {
+          "type": "on",
+          "reading": "ケ"
+        },
+        {
+          "type": "kun",
+          "reading": "こいねがう"
+        },
+        {
+          "type": "kun",
+          "reading": "まれ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "帯",
+      "meaningKo": "띠 대 — 띠, 지역",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "タイ"
+        },
+        {
+          "type": "kun",
+          "reading": "おびる"
+        },
+        {
+          "type": "kun",
+          "reading": "おび"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "帽",
+      "meaningKo": "모자 모",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ボウ"
+        },
+        {
+          "type": "on",
+          "reading": "モウ"
+        },
+        {
+          "type": "kun",
+          "reading": "おおう"
+        },
+        {
+          "type": "kun",
+          "reading": "ずきん"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "幅",
+      "meaningKo": "폭 폭 — 그림, 넓이",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フク"
+        },
+        {
+          "type": "kun",
+          "reading": "はば"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "干",
+      "meaningKo": "마를 간 — 막다, 간섭하다",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カン"
+        },
+        {
+          "type": "kun",
+          "reading": "ぼし"
+        },
+        {
+          "type": "kun",
+          "reading": "ひる"
+        },
+        {
+          "type": "kun",
+          "reading": "ほし"
+        },
+        {
+          "type": "kun",
+          "reading": "ほす"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "幼",
+      "meaningKo": "어릴 유 — 어린이, 유아",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヨウ"
+        },
+        {
+          "type": "kun",
+          "reading": "おさない"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "庁",
+      "meaningKo": "관청 청",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チョウ"
+        },
+        {
+          "type": "on",
+          "reading": "テイ"
+        },
+        {
+          "type": "kun",
+          "reading": "やくしょ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "床",
+      "meaningKo": "침대 상 — 바닥, 자리",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "kun",
+          "reading": "とこ"
+        },
+        {
+          "type": "kun",
+          "reading": "ゆか"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "底",
+      "meaningKo": "밑 저 — 바닥, 깊이",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "テイ"
+        },
+        {
+          "type": "kun",
+          "reading": "そこ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "府",
+      "meaningKo": "고을 부 — 관청, 도시",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "庫",
+      "meaningKo": "곳간 고",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ク"
+        },
+        {
+          "type": "on",
+          "reading": "コ"
+        },
+        {
+          "type": "kun",
+          "reading": "くら"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "延",
+      "meaningKo": "늘 연 — 연장, 뻗다",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "エン"
+        },
+        {
+          "type": "kun",
+          "reading": "のばす"
+        },
+        {
+          "type": "kun",
+          "reading": "のびる"
+        },
+        {
+          "type": "kun",
+          "reading": "のべ"
+        },
+        {
+          "type": "kun",
+          "reading": "のべる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "弱",
+      "meaningKo": "약할 약",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジャク"
+        },
+        {
+          "type": "kun",
+          "reading": "よわい"
+        },
+        {
+          "type": "kun",
+          "reading": "よわまる"
+        },
+        {
+          "type": "kun",
+          "reading": "よわめる"
+        },
+        {
+          "type": "kun",
+          "reading": "よわる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "律",
+      "meaningKo": "법 률 — 규칙, 박자",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リチ"
+        },
+        {
+          "type": "on",
+          "reading": "リツ"
+        },
+        {
+          "type": "on",
+          "reading": "レツ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "復",
+      "meaningKo": "돌아올 복 — 회복, 돌아오다",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フク"
+        },
+        {
+          "type": "kun",
+          "reading": "また"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "快",
+      "meaningKo": "쾌할 쾌 — 기분 좋다, 편하다",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カイ"
+        },
+        {
+          "type": "kun",
+          "reading": "こころよい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "恋",
+      "meaningKo": "사랑할 련 — 그리워하다, 연정",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "レン"
+        },
+        {
+          "type": "kun",
+          "reading": "こう"
+        },
+        {
+          "type": "kun",
+          "reading": "こい"
+        },
+        {
+          "type": "kun",
+          "reading": "こいしい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "患",
+      "meaningKo": "앓을 환 — 병, 고생하다",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カン"
+        },
+        {
+          "type": "kun",
+          "reading": "わずらう"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "悩",
+      "meaningKo": "괴로워할 뇌 — 근심, 고민",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ノウ"
+        },
+        {
+          "type": "kun",
+          "reading": "なやましい"
+        },
+        {
+          "type": "kun",
+          "reading": "なやます"
+        },
+        {
+          "type": "kun",
+          "reading": "なやむ"
+        },
+        {
+          "type": "kun",
+          "reading": "なやみ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "憎",
+      "meaningKo": "미워할 증",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゾウ"
+        },
+        {
+          "type": "kun",
+          "reading": "にくい"
+        },
+        {
+          "type": "kun",
+          "reading": "にくしみ"
+        },
+        {
+          "type": "kun",
+          "reading": "にくむ"
+        },
+        {
+          "type": "kun",
+          "reading": "にくらしい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "戸",
+      "meaningKo": "문 호 — 집, 가호",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コ"
+        },
+        {
+          "type": "kun",
+          "reading": "と"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "承",
+      "meaningKo": "받을 승 — 듣다, 알다",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "on",
+          "reading": "ジョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "うける"
+        },
+        {
+          "type": "kun",
+          "reading": "うけたまわる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "技",
+      "meaningKo": "재주 기 — 기술, 솜씨",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ギ"
+        },
+        {
+          "type": "kun",
+          "reading": "わざ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "担",
+      "meaningKo": "맡을 담 — 짊어지다, 지다",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "タン"
+        },
+        {
+          "type": "kun",
+          "reading": "かつぐ"
+        },
+        {
+          "type": "kun",
+          "reading": "になう"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "拝",
+      "meaningKo": "절할 배 — 경배, 숭배",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハイ"
+        },
+        {
+          "type": "kun",
+          "reading": "おがむ"
+        },
+        {
+          "type": "kun",
+          "reading": "おろがむ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "拾",
+      "meaningKo": "줍을 습 — 주우다, 열",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シュウ"
+        },
+        {
+          "type": "on",
+          "reading": "ジュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "ひろう"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "挟",
+      "meaningKo": "낀다 협 — 사이에, 끼우다",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョウ"
+        },
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "kun",
+          "reading": "さしはさむ"
+        },
+        {
+          "type": "kun",
+          "reading": "はさまる"
+        },
+        {
+          "type": "kun",
+          "reading": "はさむ"
+        },
+        {
+          "type": "kun",
+          "reading": "わきばさむ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "捜",
+      "meaningKo": "찾을 수 — 수색하다",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シュ"
+        },
+        {
+          "type": "on",
+          "reading": "シュウ"
+        },
+        {
+          "type": "on",
+          "reading": "ソウ"
+        },
+        {
+          "type": "kun",
+          "reading": "さがす"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "捨",
+      "meaningKo": "버릴 사 — 포기하다, 버리다",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シャ"
+        },
+        {
+          "type": "kun",
+          "reading": "すてる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "掃",
+      "meaningKo": "쓸 소",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シュ"
+        },
+        {
+          "type": "on",
+          "reading": "ソウ"
+        },
+        {
+          "type": "kun",
+          "reading": "はく"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "掘",
+      "meaningKo": "팔 굴 — 파다, 굴파",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "クツ"
+        },
+        {
+          "type": "kun",
+          "reading": "ほる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "採",
+      "meaningKo": "채울 채 — 취하다, 따다",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サイ"
+        },
+        {
+          "type": "kun",
+          "reading": "とる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "接",
+      "meaningKo": "닿을 접 — 만나다, 접촉",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "on",
+          "reading": "セツ"
+        },
+        {
+          "type": "kun",
+          "reading": "つぐ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "換",
+      "meaningKo": "바꿀 환 — 교환, 변경",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カン"
+        },
+        {
+          "type": "kun",
+          "reading": "かえる"
+        },
+        {
+          "type": "kun",
+          "reading": "かわる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "損",
+      "meaningKo": "해칠 손 — 손해, 피해",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ソン"
+        },
+        {
+          "type": "kun",
+          "reading": "そこなう"
+        },
+        {
+          "type": "kun",
+          "reading": "そこねる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "改",
+      "meaningKo": "고칠 개 — 수정, 개선",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カイ"
+        },
+        {
+          "type": "kun",
+          "reading": "あらたまる"
+        },
+        {
+          "type": "kun",
+          "reading": "あらためる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "敬",
+      "meaningKo": "공경할 경 — 존경, 경의",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョウ"
+        },
+        {
+          "type": "on",
+          "reading": "ケイ"
+        },
+        {
+          "type": "kun",
+          "reading": "うやまう"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "旧",
+      "meaningKo": "옛 구 — 예전, 과거",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふるい"
+        },
+        {
+          "type": "kun",
+          "reading": "もと"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "昇",
+      "meaningKo": "오를 승 — 상승",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "kun",
+          "reading": "のぼる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "星",
+      "meaningKo": "별 성 — 항성, 점",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "on",
+          "reading": "セイ"
+        },
+        {
+          "type": "kun",
+          "reading": "ぼし"
+        },
+        {
+          "type": "kun",
+          "reading": "ほし"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "普",
+      "meaningKo": "널리 보 — 일반적, 보편적",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フ"
+        },
+        {
+          "type": "kun",
+          "reading": "あまねく"
+        },
+        {
+          "type": "kun",
+          "reading": "あまねし"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "暴",
+      "meaningKo": "난폭할 포 — 폭력, 거친",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "バク"
+        },
+        {
+          "type": "on",
+          "reading": "ボウ"
+        },
+        {
+          "type": "kun",
+          "reading": "あばく"
+        },
+        {
+          "type": "kun",
+          "reading": "あばれる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "曇",
+      "meaningKo": "흐릴 운 — 흐린 날씨",
+      "strokeCount": 16,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ドン"
+        },
+        {
+          "type": "kun",
+          "reading": "くもる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "替",
+      "meaningKo": "바꿀 체 — 교체, 대신",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "タイ"
+        },
+        {
+          "type": "kun",
+          "reading": "かえ"
+        },
+        {
+          "type": "kun",
+          "reading": "かえる"
+        },
+        {
+          "type": "kun",
+          "reading": "かわる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "札",
+      "meaningKo": "표찰 찰 — 지폐, 꼬리표",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サツ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふだ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "机",
+      "meaningKo": "책상 기 — 테이블",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キ"
+        },
+        {
+          "type": "kun",
+          "reading": "つくえ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "材",
+      "meaningKo": "재목 재 — 재료, 목재",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ザイ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "村",
+      "meaningKo": "“마을 촌”. 마을",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ソン"
+        },
+        {
+          "type": "kun",
+          "reading": "むら"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ソン",
+          "word": "村落",
+          "wordReading": "そんらく"
+        },
+        {
+          "readingRef": "ソン",
+          "word": "農村",
+          "wordReading": "のうそん"
+        },
+        {
+          "readingRef": "ソン",
+          "word": "漁村",
+          "wordReading": "ぎょそん"
+        },
+        {
+          "readingRef": "むら",
+          "word": "村",
+          "wordReading": "むら"
+        },
+        {
+          "readingRef": "むら",
+          "word": "村人",
+          "wordReading": "むらびと"
+        }
+      ]
+    },
+    {
+      "character": "板",
+      "meaningKo": "널빤지 판 — 판자, 무대",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハン"
+        },
+        {
+          "type": "on",
+          "reading": "バン"
+        },
+        {
+          "type": "kun",
+          "reading": "いた"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "林",
+      "meaningKo": "“수풀 림”. 수풀, 숲",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リン"
+        },
+        {
+          "type": "kun",
+          "reading": "はやし"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "リン",
+          "word": "森林",
+          "wordReading": "しんりん"
+        },
+        {
+          "readingRef": "リン",
+          "word": "山林",
+          "wordReading": "さんりん"
+        },
+        {
+          "readingRef": "はやし",
+          "word": "松林",
+          "wordReading": "まつばやし"
+        }
+      ]
+    },
+    {
+      "character": "枚",
+      "meaningKo": "세어 매 — 장, 개",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "バイ"
+        },
+        {
+          "type": "on",
+          "reading": "マイ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "枝",
+      "meaningKo": "가지 지 — 나뭇가지",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シ"
+        },
+        {
+          "type": "kun",
+          "reading": "えだ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "枯",
+      "meaningKo": "말 고 — 시들다, 마르다",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コ"
+        },
+        {
+          "type": "kun",
+          "reading": "からす"
+        },
+        {
+          "type": "kun",
+          "reading": "かれる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "柔",
+      "meaningKo": "부드러울 유 — 부드러움, 약함",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジュウ"
+        },
+        {
+          "type": "on",
+          "reading": "ニュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "やわ"
+        },
+        {
+          "type": "kun",
+          "reading": "やわら"
+        },
+        {
+          "type": "kun",
+          "reading": "やわらか"
+        },
+        {
+          "type": "kun",
+          "reading": "やわらかい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "柱",
+      "meaningKo": "기둥 주 — 기둥, 지주",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "はしら"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "査",
+      "meaningKo": "살필 사 — 조사하다",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "栄",
+      "meaningKo": "영광 영 — 번영, 영예",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "エイ"
+        },
+        {
+          "type": "on",
+          "reading": "ヨウ"
+        },
+        {
+          "type": "kun",
+          "reading": "ばえ"
+        },
+        {
+          "type": "kun",
+          "reading": "え"
+        },
+        {
+          "type": "kun",
+          "reading": "さかえる"
+        },
+        {
+          "type": "kun",
+          "reading": "はえ"
+        },
+        {
+          "type": "kun",
+          "reading": "はえる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "根",
+      "meaningKo": "뿌리 근 — 근원, 기초",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コン"
+        },
+        {
+          "type": "kun",
+          "reading": "ね"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "械",
+      "meaningKo": "쇠사슬 계 — 기계, 도구",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カイ"
+        },
+        {
+          "type": "kun",
+          "reading": "かせ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "棒",
+      "meaningKo": "막대 봉 — 지팡이, 막대",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ボウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "森",
+      "meaningKo": "“숲 삼”. 숲",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シン"
+        },
+        {
+          "type": "kun",
+          "reading": "もり"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "シン",
+          "word": "森林",
+          "wordReading": "しんりん"
+        },
+        {
+          "readingRef": "もり",
+          "word": "森",
+          "wordReading": "もり"
+        }
+      ]
+    },
+    {
+      "character": "植",
+      "meaningKo": "심을 식 — 심기, 식물",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショク"
+        },
+        {
+          "type": "kun",
+          "reading": "うえる"
+        },
+        {
+          "type": "kun",
+          "reading": "うわる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "極",
+      "meaningKo": "극도 극 — 끝, 최고",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョク"
+        },
+        {
+          "type": "on",
+          "reading": "ゴク"
+        },
+        {
+          "type": "kun",
+          "reading": "ぎめ"
+        },
+        {
+          "type": "kun",
+          "reading": "きまる"
+        },
+        {
+          "type": "kun",
+          "reading": "きめる"
+        },
+        {
+          "type": "kun",
+          "reading": "きわまり"
+        },
+        {
+          "type": "kun",
+          "reading": "きわまる"
+        },
+        {
+          "type": "kun",
+          "reading": "きわみ"
+        },
+        {
+          "type": "kun",
+          "reading": "きわめる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "橋",
+      "meaningKo": "다리 교 — 교량",
+      "strokeCount": 16,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "はし"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "欧",
+      "meaningKo": "유럽 구",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "オウ"
+        },
+        {
+          "type": "kun",
+          "reading": "うたう"
+        },
+        {
+          "type": "kun",
+          "reading": "はく"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "武",
+      "meaningKo": "무술 무 — 병기, 군사",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ブ"
+        },
+        {
+          "type": "on",
+          "reading": "ム"
+        },
+        {
+          "type": "kun",
+          "reading": "たけ"
+        },
+        {
+          "type": "kun",
+          "reading": "たけし"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "歴",
+      "meaningKo": "지날 역 — 역사, 경력",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "レキ"
+        },
+        {
+          "type": "on",
+          "reading": "レッキ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "殿",
+      "meaningKo": "궁전 전 — 전각, 전하",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "テン"
+        },
+        {
+          "type": "on",
+          "reading": "デン"
+        },
+        {
+          "type": "kun",
+          "reading": "どの"
+        },
+        {
+          "type": "kun",
+          "reading": "との"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "毒",
+      "meaningKo": "독 독 — 해독, 해로움",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ドク"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "比",
+      "meaningKo": "견줄 비 — 비교, 경기",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヒ"
+        },
+        {
+          "type": "kun",
+          "reading": "くらべる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "毛",
+      "meaningKo": "털 모",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "モウ"
+        },
+        {
+          "type": "kun",
+          "reading": "け"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "氷",
+      "meaningKo": "얼 빙 — 언, 얼음",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヒョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "こおる"
+        },
+        {
+          "type": "kun",
+          "reading": "こおり"
+        },
+        {
+          "type": "kun",
+          "reading": "ひ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "永",
+      "meaningKo": "길 영 — 영원",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "エイ"
+        },
+        {
+          "type": "kun",
+          "reading": "ながい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "汗",
+      "meaningKo": "땀 한",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カン"
+        },
+        {
+          "type": "kun",
+          "reading": "あせ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "汚",
+      "meaningKo": "더러울 오 — 오염, 욕되다",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "オ"
+        },
+        {
+          "type": "kun",
+          "reading": "きたない"
+        },
+        {
+          "type": "kun",
+          "reading": "けがす"
+        },
+        {
+          "type": "kun",
+          "reading": "けがらわしい"
+        },
+        {
+          "type": "kun",
+          "reading": "けがれる"
+        },
+        {
+          "type": "kun",
+          "reading": "よごす"
+        },
+        {
+          "type": "kun",
+          "reading": "よごれる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "池",
+      "meaningKo": "못 지 — 연못, 저수지",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チ"
+        },
+        {
+          "type": "kun",
+          "reading": "いけ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "沈",
+      "meaningKo": "잠길 침 — 가라앉다, 침체",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジン"
+        },
+        {
+          "type": "on",
+          "reading": "チン"
+        },
+        {
+          "type": "kun",
+          "reading": "しずむ"
+        },
+        {
+          "type": "kun",
+          "reading": "しずめる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "河",
+      "meaningKo": "내 하 — 강",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カ"
+        },
+        {
+          "type": "kun",
+          "reading": "かわ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "沸",
+      "meaningKo": "끓을 비 — 끓어오르다",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フツ"
+        },
+        {
+          "type": "kun",
+          "reading": "わかす"
+        },
+        {
+          "type": "kun",
+          "reading": "わく"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "油",
+      "meaningKo": "기름 유",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ユ"
+        },
+        {
+          "type": "on",
+          "reading": "ユウ"
+        },
+        {
+          "type": "kun",
+          "reading": "あぶら"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "況",
+      "meaningKo": "형편 황 — 상황, 조건",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "いわんや"
+        },
+        {
+          "type": "kun",
+          "reading": "おもむき"
+        },
+        {
+          "type": "kun",
+          "reading": "まして"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "泉",
+      "meaningKo": "샘 천 — 온천, 분수",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セン"
+        },
+        {
+          "type": "kun",
+          "reading": "いずみ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "泊",
+      "meaningKo": "정박할 박 — 묵다, 정박",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハク"
+        },
+        {
+          "type": "kun",
+          "reading": "とまる"
+        },
+        {
+          "type": "kun",
+          "reading": "とめる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "波",
+      "meaningKo": "물결 파 — 파도",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハ"
+        },
+        {
+          "type": "kun",
+          "reading": "なみ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "泥",
+      "meaningKo": "진흙 니 — 진흙, 진창",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "デ"
+        },
+        {
+          "type": "on",
+          "reading": "デイ"
+        },
+        {
+          "type": "on",
+          "reading": "ナイ"
+        },
+        {
+          "type": "on",
+          "reading": "ニ"
+        },
+        {
+          "type": "kun",
+          "reading": "どろ"
+        },
+        {
+          "type": "kun",
+          "reading": "なずむ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "浅",
+      "meaningKo": "얕을 천 — 천박, 피상적",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セン"
+        },
+        {
+          "type": "kun",
+          "reading": "あさい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "浴",
+      "meaningKo": "목욕할 욕 — 탕, 샤워",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヨク"
+        },
+        {
+          "type": "kun",
+          "reading": "あびせる"
+        },
+        {
+          "type": "kun",
+          "reading": "あびる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "涙",
+      "meaningKo": "눈물 루 — 울음",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ルイ"
+        },
+        {
+          "type": "on",
+          "reading": "レイ"
+        },
+        {
+          "type": "kun",
+          "reading": "なみだ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "液",
+      "meaningKo": "액체 액 — 진액, 분비물",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "エキ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "涼",
+      "meaningKo": "시원할 량 — 청량, 쾌적",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "うすい"
+        },
+        {
+          "type": "kun",
+          "reading": "すずしい"
+        },
+        {
+          "type": "kun",
+          "reading": "すずむ"
+        },
+        {
+          "type": "kun",
+          "reading": "すずやか"
+        },
+        {
+          "type": "kun",
+          "reading": "ひやす"
+        },
+        {
+          "type": "kun",
+          "reading": "まことに"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "混",
+      "meaningKo": "섞을 혼 — 혼합, 혼동",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コン"
+        },
+        {
+          "type": "kun",
+          "reading": "まじり"
+        },
+        {
+          "type": "kun",
+          "reading": "こむ"
+        },
+        {
+          "type": "kun",
+          "reading": "まざる"
+        },
+        {
+          "type": "kun",
+          "reading": "まじる"
+        },
+        {
+          "type": "kun",
+          "reading": "まぜる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "清",
+      "meaningKo": "맑을 청 — 청결, 순수",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "on",
+          "reading": "シン"
+        },
+        {
+          "type": "on",
+          "reading": "セイ"
+        },
+        {
+          "type": "kun",
+          "reading": "きよい"
+        },
+        {
+          "type": "kun",
+          "reading": "きよまる"
+        },
+        {
+          "type": "kun",
+          "reading": "きよめる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "減",
+      "meaningKo": "줄일 감 — 감소, 감형",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゲン"
+        },
+        {
+          "type": "kun",
+          "reading": "へらす"
+        },
+        {
+          "type": "kun",
+          "reading": "へる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "温",
+      "meaningKo": "따뜻할 온 — 따뜨다, 온난",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "オン"
+        },
+        {
+          "type": "kun",
+          "reading": "あたたか"
+        },
+        {
+          "type": "kun",
+          "reading": "あたたかい"
+        },
+        {
+          "type": "kun",
+          "reading": "あたたまる"
+        },
+        {
+          "type": "kun",
+          "reading": "あたためる"
+        },
+        {
+          "type": "kun",
+          "reading": "ぬく"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "測",
+      "meaningKo": "잴 측 — 측정, 예측",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ソク"
+        },
+        {
+          "type": "kun",
+          "reading": "はかる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "湖",
+      "meaningKo": "호수 호",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コ"
+        },
+        {
+          "type": "kun",
+          "reading": "みずうみ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "湯",
+      "meaningKo": "물 탕 — 온천, 국물",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "トウ"
+        },
+        {
+          "type": "kun",
+          "reading": "ゆ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "湾",
+      "meaningKo": "만 만 — 해만, 만곡",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ワン"
+        },
+        {
+          "type": "kun",
+          "reading": "いりえ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "湿",
+      "meaningKo": "축축할 습 — 습한, 습도",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シツ"
+        },
+        {
+          "type": "on",
+          "reading": "シュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "うるおう"
+        },
+        {
+          "type": "kun",
+          "reading": "うるおす"
+        },
+        {
+          "type": "kun",
+          "reading": "しめす"
+        },
+        {
+          "type": "kun",
+          "reading": "しめる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "準",
+      "meaningKo": "준칙 준 — 표준, 준거",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジュン"
+        },
+        {
+          "type": "kun",
+          "reading": "じゅんじる"
+        },
+        {
+          "type": "kun",
+          "reading": "じゅんずる"
+        },
+        {
+          "type": "kun",
+          "reading": "なぞらえる"
+        },
+        {
+          "type": "kun",
+          "reading": "のり"
+        },
+        {
+          "type": "kun",
+          "reading": "ひとしい"
+        },
+        {
+          "type": "kun",
+          "reading": "みずもり"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "溶",
+      "meaningKo": "녹을 용 — 용해, 용융",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヨウ"
+        },
+        {
+          "type": "kun",
+          "reading": "とかす"
+        },
+        {
+          "type": "kun",
+          "reading": "とく"
+        },
+        {
+          "type": "kun",
+          "reading": "とける"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "滴",
+      "meaningKo": "떨어질 적 — 한 방울",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "テキ"
+        },
+        {
+          "type": "kun",
+          "reading": "しずく"
+        },
+        {
+          "type": "kun",
+          "reading": "したたる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "漁",
+      "meaningKo": "고기잡이 어 — 어업, 낚시",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ギョ"
+        },
+        {
+          "type": "on",
+          "reading": "リョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "あさる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "濃",
+      "meaningKo": "짙을 농 — 진하다, 걸쭉",
+      "strokeCount": 16,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ノウ"
+        },
+        {
+          "type": "kun",
+          "reading": "こい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "濯",
+      "meaningKo": "빨 탁 — 세탁, 헹굼",
+      "strokeCount": 17,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "タク"
+        },
+        {
+          "type": "kun",
+          "reading": "すすぐ"
+        },
+        {
+          "type": "kun",
+          "reading": "ゆすぐ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "灯",
+      "meaningKo": "불 등 — 등불, 조명",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "トウ"
+        },
+        {
+          "type": "kun",
+          "reading": "あかり"
+        },
+        {
+          "type": "kun",
+          "reading": "ともす"
+        },
+        {
+          "type": "kun",
+          "reading": "ともしび"
+        },
+        {
+          "type": "kun",
+          "reading": "ひ"
+        },
+        {
+          "type": "kun",
+          "reading": "ほ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "灰",
+      "meaningKo": "재 회 — 화산재, 회색",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カイ"
+        },
+        {
+          "type": "kun",
+          "reading": "はい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "炭",
+      "meaningKo": "숯 탄 — 석탄, 연탄",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "タン"
+        },
+        {
+          "type": "kun",
+          "reading": "すみ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "焼",
+      "meaningKo": "구울 소 — 소성, 연소",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "kun",
+          "reading": "やき"
+        },
+        {
+          "type": "kun",
+          "reading": "やく"
+        },
+        {
+          "type": "kun",
+          "reading": "やける"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "照",
+      "meaningKo": "비칠 조 — 밝히다, 비추다",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "kun",
+          "reading": "てらす"
+        },
+        {
+          "type": "kun",
+          "reading": "てる"
+        },
+        {
+          "type": "kun",
+          "reading": "てれる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "燃",
+      "meaningKo": "탈 연",
+      "strokeCount": 16,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ネン"
+        },
+        {
+          "type": "kun",
+          "reading": "もえる"
+        },
+        {
+          "type": "kun",
+          "reading": "もす"
+        },
+        {
+          "type": "kun",
+          "reading": "もやす"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "燥",
+      "meaningKo": "바싹 조",
+      "strokeCount": 17,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ソウ"
+        },
+        {
+          "type": "kun",
+          "reading": "はしゃぐ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "爆",
+      "meaningKo": "터질 폭",
+      "strokeCount": 19,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "バク"
+        },
+        {
+          "type": "kun",
+          "reading": "はぜる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "片",
+      "meaningKo": "조각 편",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヘン"
+        },
+        {
+          "type": "kun",
+          "reading": "かた"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "版",
+      "meaningKo": "판 판",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハン"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "玉",
+      "meaningKo": "구슬 옥 — 보석",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ギョク"
+        },
+        {
+          "type": "kun",
+          "reading": "だま"
+        },
+        {
+          "type": "kun",
+          "reading": "たま"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "珍",
+      "meaningKo": "귀할 진 — 드물다",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チン"
+        },
+        {
+          "type": "kun",
+          "reading": "たから"
+        },
+        {
+          "type": "kun",
+          "reading": "めずらしい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "瓶",
+      "meaningKo": "병 병",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ビン"
+        },
+        {
+          "type": "kun",
+          "reading": "かめ"
+        },
+        {
+          "type": "kun",
+          "reading": "へい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "甘",
+      "meaningKo": "달 감",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カン"
+        },
+        {
+          "type": "kun",
+          "reading": "あまい"
+        },
+        {
+          "type": "kun",
+          "reading": "あまえる"
+        },
+        {
+          "type": "kun",
+          "reading": "あまやかす"
+        },
+        {
+          "type": "kun",
+          "reading": "うまい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "畜",
+      "meaningKo": "짐승 축",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チク"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "略",
+      "meaningKo": "생략 략 — 약탈하다",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リャク"
+        },
+        {
+          "type": "kun",
+          "reading": "おかす"
+        },
+        {
+          "type": "kun",
+          "reading": "おさめる"
+        },
+        {
+          "type": "kun",
+          "reading": "はかる"
+        },
+        {
+          "type": "kun",
+          "reading": "はかりごと"
+        },
+        {
+          "type": "kun",
+          "reading": "はぶく"
+        },
+        {
+          "type": "kun",
+          "reading": "ほぼ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "畳",
+      "meaningKo": "다다미 첩 — 접다",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジョウ"
+        },
+        {
+          "type": "on",
+          "reading": "チョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "かさなる"
+        },
+        {
+          "type": "kun",
+          "reading": "たたむ"
+        },
+        {
+          "type": "kun",
+          "reading": "たたみ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "療",
+      "meaningKo": "고칠 료",
+      "strokeCount": 17,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リョウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "皮",
+      "meaningKo": "가죽 피",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヒ"
+        },
+        {
+          "type": "kun",
+          "reading": "かわ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "皿",
+      "meaningKo": "접시 명",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ベイ"
+        },
+        {
+          "type": "kun",
+          "reading": "さら"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "省",
+      "meaningKo": "살필 성 — 생략하다",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "on",
+          "reading": "セイ"
+        },
+        {
+          "type": "kun",
+          "reading": "かえりみる"
+        },
+        {
+          "type": "kun",
+          "reading": "はぶく"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "県",
+      "meaningKo": "“고을 현”. 현(일본의 행정 구역)",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ケン"
+        },
+        {
+          "type": "kun",
+          "reading": "かける"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ケン",
+          "word": "県庁",
+          "wordReading": "けんちょう"
+        },
+        {
+          "readingRef": "ケン",
+          "word": "千葉県",
+          "wordReading": "ちばけん"
+        }
+      ]
+    },
+    {
+      "character": "短",
+      "meaningKo": "짧을 단",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "タン"
+        },
+        {
+          "type": "kun",
+          "reading": "みじかい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "砂",
+      "meaningKo": "모래 사",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サ"
+        },
+        {
+          "type": "on",
+          "reading": "シャ"
+        },
+        {
+          "type": "kun",
+          "reading": "すな"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "硬",
+      "meaningKo": "굳을 경",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "かたい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "磨",
+      "meaningKo": "갈 마 — 닦다, 연마하다",
+      "strokeCount": 16,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "マ"
+        },
+        {
+          "type": "kun",
+          "reading": "する"
+        },
+        {
+          "type": "kun",
+          "reading": "みがく"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "祈",
+      "meaningKo": "빌 기",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キ"
+        },
+        {
+          "type": "kun",
+          "reading": "いのる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "祝",
+      "meaningKo": "축할 축",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シュウ"
+        },
+        {
+          "type": "on",
+          "reading": "シュク"
+        },
+        {
+          "type": "kun",
+          "reading": "いわう"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "祭",
+      "meaningKo": "제사 제",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サイ"
+        },
+        {
+          "type": "kun",
+          "reading": "まつり"
+        },
+        {
+          "type": "kun",
+          "reading": "まつる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "禁",
+      "meaningKo": "금할 금",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キン"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "秒",
+      "meaningKo": "초 초",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ビョウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "移",
+      "meaningKo": "옮길 이 — 이동하다",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "イ"
+        },
+        {
+          "type": "kun",
+          "reading": "うつす"
+        },
+        {
+          "type": "kun",
+          "reading": "うつる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "税",
+      "meaningKo": "세금 세",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゼイ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "章",
+      "meaningKo": "글월 장 — 문장, 무늬",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "童",
+      "meaningKo": "아이 동",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ドウ"
+        },
+        {
+          "type": "kun",
+          "reading": "わらべ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "競",
+      "meaningKo": "다툴 경 — 겨루다",
+      "strokeCount": 20,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョウ"
+        },
+        {
+          "type": "on",
+          "reading": "ケイ"
+        },
+        {
+          "type": "kun",
+          "reading": "きそう"
+        },
+        {
+          "type": "kun",
+          "reading": "くらべる"
+        },
+        {
+          "type": "kun",
+          "reading": "せる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "竹",
+      "meaningKo": "대나무 죽",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チク"
+        },
+        {
+          "type": "kun",
+          "reading": "たけ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "符",
+      "meaningKo": "부호 부 — 표시",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "筆",
+      "meaningKo": "붓 필 — 글씨, 필체",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヒツ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふで"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "筒",
+      "meaningKo": "통 통",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "トウ"
+        },
+        {
+          "type": "kun",
+          "reading": "つつ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "算",
+      "meaningKo": "셈 산 — 계산하다",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サン"
+        },
+        {
+          "type": "kun",
+          "reading": "そろ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "管",
+      "meaningKo": "대롱 관 — 통, 지배하다",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カン"
+        },
+        {
+          "type": "kun",
+          "reading": "くだ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "築",
+      "meaningKo": "쌓을 축",
+      "strokeCount": 16,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チク"
+        },
+        {
+          "type": "kun",
+          "reading": "きずく"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "簡",
+      "meaningKo": "간략 간 — 간편하다",
+      "strokeCount": 18,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カン"
+        },
+        {
+          "type": "on",
+          "reading": "ケン"
+        },
+        {
+          "type": "kun",
+          "reading": "えらぶ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふだ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "籍",
+      "meaningKo": "적 적 — 등록, 국적",
+      "strokeCount": 20,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セキ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "粉",
+      "meaningKo": "가루 분 — 밀가루, 분말",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フン"
+        },
+        {
+          "type": "kun",
+          "reading": "こ"
+        },
+        {
+          "type": "kun",
+          "reading": "こな"
+        },
+        {
+          "type": "kun",
+          "reading": "デシメートル"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "粒",
+      "meaningKo": "알 립 — 입자, 방울",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "つぶ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "糸",
+      "meaningKo": "실 사",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シ"
+        },
+        {
+          "type": "kun",
+          "reading": "いと"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "紅",
+      "meaningKo": "빨강 홍 — 진빨강",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ク"
+        },
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "あかい"
+        },
+        {
+          "type": "kun",
+          "reading": "くれない"
+        },
+        {
+          "type": "kun",
+          "reading": "べに"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "純",
+      "meaningKo": "순수 순 — 순정, 순이익",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジュン"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "細",
+      "meaningKo": "가늘 세 — 자세, 정밀",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サイ"
+        },
+        {
+          "type": "kun",
+          "reading": "こまか"
+        },
+        {
+          "type": "kun",
+          "reading": "こまかい"
+        },
+        {
+          "type": "kun",
+          "reading": "ほそい"
+        },
+        {
+          "type": "kun",
+          "reading": "ほそる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "紹",
+      "meaningKo": "이을 소 — 소개, 상속",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "絡",
+      "meaningKo": "감길 락 — 얽히다, 걸리다",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ラク"
+        },
+        {
+          "type": "kun",
+          "reading": "からまる"
+        },
+        {
+          "type": "kun",
+          "reading": "からむ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "綿",
+      "meaningKo": "솜 면",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "メン"
+        },
+        {
+          "type": "kun",
+          "reading": "わた"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "総",
+      "meaningKo": "모두 총 — 전체, 일반",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ソウ"
+        },
+        {
+          "type": "kun",
+          "reading": "すべて"
+        },
+        {
+          "type": "kun",
+          "reading": "ふさ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "緑",
+      "meaningKo": "푸름 록",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リョク"
+        },
+        {
+          "type": "on",
+          "reading": "ロク"
+        },
+        {
+          "type": "kun",
+          "reading": "みどり"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "線",
+      "meaningKo": "줄 선 — 궤도",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セン"
+        },
+        {
+          "type": "kun",
+          "reading": "すじ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "編",
+      "meaningKo": "짜다 편 — 엮음, 편집",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヘン"
+        },
+        {
+          "type": "kun",
+          "reading": "あみ"
+        },
+        {
+          "type": "kun",
+          "reading": "あむ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "練",
+      "meaningKo": "익힐 련 — 연습, 가다듬다",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "レン"
+        },
+        {
+          "type": "kun",
+          "reading": "ねり"
+        },
+        {
+          "type": "kun",
+          "reading": "ねる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "績",
+      "meaningKo": "이룬 적 — 공적, 성과",
+      "strokeCount": 17,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セキ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "缶",
+      "meaningKo": "항아리 관 — 깡통",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カン"
+        },
+        {
+          "type": "kun",
+          "reading": "かま"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "署",
+      "meaningKo": "서명 서 — 관청, 경찰서",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "群",
+      "meaningKo": "떼 군 — 무리, 집단",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "グン"
+        },
+        {
+          "type": "kun",
+          "reading": "むれ"
+        },
+        {
+          "type": "kun",
+          "reading": "むれる"
+        },
+        {
+          "type": "kun",
+          "reading": "むら"
+        },
+        {
+          "type": "kun",
+          "reading": "むらがる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "羽",
+      "meaningKo": "날개 우 — 새 헤아림",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ウ"
+        },
+        {
+          "type": "kun",
+          "reading": "は"
+        },
+        {
+          "type": "kun",
+          "reading": "はね"
+        },
+        {
+          "type": "kun",
+          "reading": "わ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "翌",
+      "meaningKo": "다음 익 — 다음날",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヨク"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "耕",
+      "meaningKo": "밭갈 경",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "たがやす"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "肌",
+      "meaningKo": "살갗 기 — 피부, 결",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キ"
+        },
+        {
+          "type": "kun",
+          "reading": "はだ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "肩",
+      "meaningKo": "어깨 견",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ケン"
+        },
+        {
+          "type": "kun",
+          "reading": "かた"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "肯",
+      "meaningKo": "승낙 긍 — 동의, 허락",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "がえんじる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "胃",
+      "meaningKo": "위 위 — 소화기",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "イ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "胸",
+      "meaningKo": "가슴 흉 — 마음, 정서",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "むな"
+        },
+        {
+          "type": "kun",
+          "reading": "むね"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "脂",
+      "meaningKo": "기름 지 — 지방, 그리스",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シ"
+        },
+        {
+          "type": "kun",
+          "reading": "あぶら"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "脳",
+      "meaningKo": "뇌 뇌 — 기억",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ドウ"
+        },
+        {
+          "type": "on",
+          "reading": "ノウ"
+        },
+        {
+          "type": "kun",
+          "reading": "のうずる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "腕",
+      "meaningKo": "팔 완 — 능력, 솜씨",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ワン"
+        },
+        {
+          "type": "kun",
+          "reading": "うで"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "腰",
+      "meaningKo": "허리 요",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヨウ"
+        },
+        {
+          "type": "kun",
+          "reading": "こし"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "膚",
+      "meaningKo": "살 부 — 피부, 결",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フ"
+        },
+        {
+          "type": "kun",
+          "reading": "はだ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "臓",
+      "meaningKo": "내장 장 — 장기",
+      "strokeCount": 19,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゾウ"
+        },
+        {
+          "type": "kun",
+          "reading": "はらわた"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "臣",
+      "meaningKo": "신하 신",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シン"
+        },
+        {
+          "type": "on",
+          "reading": "ジン"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "舟",
+      "meaningKo": "배 주 — 선박",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "ぶね"
+        },
+        {
+          "type": "kun",
+          "reading": "ふな"
+        },
+        {
+          "type": "kun",
+          "reading": "ふね"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "航",
+      "meaningKo": "항해 항",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "般",
+      "meaningKo": "일반 반 — 운반, 종류",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハン"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "芸",
+      "meaningKo": "예술 예 — 공연, 기예",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ウン"
+        },
+        {
+          "type": "on",
+          "reading": "ゲイ"
+        },
+        {
+          "type": "kun",
+          "reading": "うえる"
+        },
+        {
+          "type": "kun",
+          "reading": "のり"
+        },
+        {
+          "type": "kun",
+          "reading": "わざ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "荒",
+      "meaningKo": "거친 황 — 황폐, 막무가내",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "あらし"
+        },
+        {
+          "type": "kun",
+          "reading": "あらす"
+        },
+        {
+          "type": "kun",
+          "reading": "あれる"
+        },
+        {
+          "type": "kun",
+          "reading": "あらい"
+        },
+        {
+          "type": "kun",
+          "reading": "すさぶ"
+        },
+        {
+          "type": "kun",
+          "reading": "すさむ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "荷",
+      "meaningKo": "짐 하 — 화물, 짐지다",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カ"
+        },
+        {
+          "type": "kun",
+          "reading": "に"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "菓",
+      "meaningKo": "과자 과 — 막과자, 캔디",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "菜",
+      "meaningKo": "나물 채 — 반찬, 야채",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サイ"
+        },
+        {
+          "type": "kun",
+          "reading": "な"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "著",
+      "meaningKo": "나타날 저 — 도착, 입다, 저작",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チャク"
+        },
+        {
+          "type": "on",
+          "reading": "チョ"
+        },
+        {
+          "type": "kun",
+          "reading": "あらわす"
+        },
+        {
+          "type": "kun",
+          "reading": "いちじるしい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "蒸",
+      "meaningKo": "찔 증 — 익다, 더우니",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジョウ"
+        },
+        {
+          "type": "on",
+          "reading": "セイ"
+        },
+        {
+          "type": "kun",
+          "reading": "むす"
+        },
+        {
+          "type": "kun",
+          "reading": "むらす"
+        },
+        {
+          "type": "kun",
+          "reading": "むれる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "蔵",
+      "meaningKo": "감출 장 — 저장, 소유",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ソウ"
+        },
+        {
+          "type": "on",
+          "reading": "ゾウ"
+        },
+        {
+          "type": "kun",
+          "reading": "おさめる"
+        },
+        {
+          "type": "kun",
+          "reading": "かくれる"
+        },
+        {
+          "type": "kun",
+          "reading": "くら"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "薄",
+      "meaningKo": "얇을 박 — 옅다, 약하다",
+      "strokeCount": 16,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハク"
+        },
+        {
+          "type": "kun",
+          "reading": "うす"
+        },
+        {
+          "type": "kun",
+          "reading": "うすい"
+        },
+        {
+          "type": "kun",
+          "reading": "うすまる"
+        },
+        {
+          "type": "kun",
+          "reading": "うすめる"
+        },
+        {
+          "type": "kun",
+          "reading": "うすら"
+        },
+        {
+          "type": "kun",
+          "reading": "うすらぐ"
+        },
+        {
+          "type": "kun",
+          "reading": "うすれる"
+        },
+        {
+          "type": "kun",
+          "reading": "すすき"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "虫",
+      "meaningKo": "벌레 충",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キ"
+        },
+        {
+          "type": "on",
+          "reading": "チュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "むし"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "血",
+      "meaningKo": "피 혈",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ケツ"
+        },
+        {
+          "type": "kun",
+          "reading": "ち"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "衣",
+      "meaningKo": "옷 의",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "イ"
+        },
+        {
+          "type": "on",
+          "reading": "エ"
+        },
+        {
+          "type": "kun",
+          "reading": "ぎ"
+        },
+        {
+          "type": "kun",
+          "reading": "きぬ"
+        },
+        {
+          "type": "kun",
+          "reading": "ころも"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "袋",
+      "meaningKo": "주머니 대 — 자루",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "タイ"
+        },
+        {
+          "type": "on",
+          "reading": "ダイ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふくろ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "被",
+      "meaningKo": "덮을 피 — 입다, 노출되다",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヒ"
+        },
+        {
+          "type": "kun",
+          "reading": "おおう"
+        },
+        {
+          "type": "kun",
+          "reading": "かぶせる"
+        },
+        {
+          "type": "kun",
+          "reading": "かぶる"
+        },
+        {
+          "type": "kun",
+          "reading": "こうむる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "装",
+      "meaningKo": "꾸밀 장 — 복장, 위장",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "on",
+          "reading": "ソウ"
+        },
+        {
+          "type": "kun",
+          "reading": "よそおい"
+        },
+        {
+          "type": "kun",
+          "reading": "よそおう"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "裏",
+      "meaningKo": "안쪽 리 — 뒤, 내부",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リ"
+        },
+        {
+          "type": "kun",
+          "reading": "うら"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "補",
+      "meaningKo": "도울 보 — 보조, 보충",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ホ"
+        },
+        {
+          "type": "kun",
+          "reading": "おぎなう"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "複",
+      "meaningKo": "겹 복 — 중복, 여러",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フク"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "角",
+      "meaningKo": "모서리 각 — 뿔, 방위",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カク"
+        },
+        {
+          "type": "kun",
+          "reading": "かど"
+        },
+        {
+          "type": "kun",
+          "reading": "つの"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "触",
+      "meaningKo": "닿을 촉 — 접촉, 충돌",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショク"
+        },
+        {
+          "type": "kun",
+          "reading": "さわ"
+        },
+        {
+          "type": "kun",
+          "reading": "さわる"
+        },
+        {
+          "type": "kun",
+          "reading": "ふれる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "訓",
+      "meaningKo": "가르칠 훈 — 읽음, 설명",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キン"
+        },
+        {
+          "type": "on",
+          "reading": "クン"
+        },
+        {
+          "type": "kun",
+          "reading": "おしえる"
+        },
+        {
+          "type": "kun",
+          "reading": "くんずる"
+        },
+        {
+          "type": "kun",
+          "reading": "よむ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "設",
+      "meaningKo": "설치할 설 — 마련, 구성",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セツ"
+        },
+        {
+          "type": "kun",
+          "reading": "もうける"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "詞",
+      "meaningKo": "말씀 사 — 시, 단어",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シ"
+        },
+        {
+          "type": "kun",
+          "reading": "ことば"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "詰",
+      "meaningKo": "문책할 질 — 꾹꾹, 탓하다",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キチ"
+        },
+        {
+          "type": "on",
+          "reading": "キツ"
+        },
+        {
+          "type": "kun",
+          "reading": "づめ"
+        },
+        {
+          "type": "kun",
+          "reading": "つまる"
+        },
+        {
+          "type": "kun",
+          "reading": "つむ"
+        },
+        {
+          "type": "kun",
+          "reading": "つめ"
+        },
+        {
+          "type": "kun",
+          "reading": "つめる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "誌",
+      "meaningKo": "기록할 지 — 잡지, 문헌",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "課",
+      "meaningKo": "나눌 과 — 부서, 수업",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "諸",
+      "meaningKo": "여럴 제 — 여러, 각각",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショ"
+        },
+        {
+          "type": "kun",
+          "reading": "もろ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "講",
+      "meaningKo": "강할 강 — 강의, 모임",
+      "strokeCount": 17,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "谷",
+      "meaningKo": "골짜기 곡 — 계곡",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コク"
+        },
+        {
+          "type": "kun",
+          "reading": "きわまる"
+        },
+        {
+          "type": "kun",
+          "reading": "たに"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "豊",
+      "meaningKo": "넉넉할 풍 — 풍요, 풍부",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ブ"
+        },
+        {
+          "type": "on",
+          "reading": "ホウ"
+        },
+        {
+          "type": "kun",
+          "reading": "とよ"
+        },
+        {
+          "type": "kun",
+          "reading": "ゆたか"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "象",
+      "meaningKo": "코끼리 상 — 형상, 모양",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "on",
+          "reading": "ゾウ"
+        },
+        {
+          "type": "kun",
+          "reading": "かたどる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "貝",
+      "meaningKo": "조개 패 — 패류",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "バイ"
+        },
+        {
+          "type": "kun",
+          "reading": "かい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "貨",
+      "meaningKo": "물건 화 — 상품, 재화",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カ"
+        },
+        {
+          "type": "kun",
+          "reading": "たから"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "販",
+      "meaningKo": "팔 판 — 판매, 거래",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハン"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "貯",
+      "meaningKo": "쌓을 저 — 저축, 저장",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チョ"
+        },
+        {
+          "type": "kun",
+          "reading": "ためる"
+        },
+        {
+          "type": "kun",
+          "reading": "たくわえる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "貿",
+      "meaningKo": "장사 무 — 무역, 거래",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ボウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "賞",
+      "meaningKo": "줄 상 — 상, 포상",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "kun",
+          "reading": "ほめる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "賢",
+      "meaningKo": "어질 현 — 현명, 지혜",
+      "strokeCount": 16,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ケン"
+        },
+        {
+          "type": "kun",
+          "reading": "かしこい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "贈",
+      "meaningKo": "줄 증 — 기증, 선물",
+      "strokeCount": 18,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ソウ"
+        },
+        {
+          "type": "on",
+          "reading": "ゾウ"
+        },
+        {
+          "type": "kun",
+          "reading": "おくる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "超",
+      "meaningKo": "뛸 초 — 초월, 뛰어나다",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "こえる"
+        },
+        {
+          "type": "kun",
+          "reading": "こす"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "跡",
+      "meaningKo": "발자국 적 — 흔적, 자국",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セキ"
+        },
+        {
+          "type": "kun",
+          "reading": "あと"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "踊",
+      "meaningKo": "뛸 용 — 춤, 뛰다",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヨウ"
+        },
+        {
+          "type": "kun",
+          "reading": "おどる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "軍",
+      "meaningKo": "군 군 — 군대, 전투",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "グン"
+        },
+        {
+          "type": "kun",
+          "reading": "いくさ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "軒",
+      "meaningKo": "집 헌 — 처마, 가옥",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ケン"
+        },
+        {
+          "type": "kun",
+          "reading": "のき"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "軟",
+      "meaningKo": "부드러울 연 — 말랑말랑",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ナン"
+        },
+        {
+          "type": "kun",
+          "reading": "やわらか"
+        },
+        {
+          "type": "kun",
+          "reading": "やわらかい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "軽",
+      "meaningKo": "가벼울 경",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョウ"
+        },
+        {
+          "type": "on",
+          "reading": "キン"
+        },
+        {
+          "type": "on",
+          "reading": "ケイ"
+        },
+        {
+          "type": "kun",
+          "reading": "かるい"
+        },
+        {
+          "type": "kun",
+          "reading": "かろやか"
+        },
+        {
+          "type": "kun",
+          "reading": "かろんじる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "輪",
+      "meaningKo": "바퀴 륜 — 고리, 연결",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リン"
+        },
+        {
+          "type": "kun",
+          "reading": "わ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "輸",
+      "meaningKo": "질 수 — 수송, 운반",
+      "strokeCount": 16,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シュ"
+        },
+        {
+          "type": "on",
+          "reading": "ユ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "辛",
+      "meaningKo": "매울 신 — 맵다, 고생",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シン"
+        },
+        {
+          "type": "kun",
+          "reading": "づらい"
+        },
+        {
+          "type": "kun",
+          "reading": "かのと"
+        },
+        {
+          "type": "kun",
+          "reading": "からい"
+        },
+        {
+          "type": "kun",
+          "reading": "つらい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "農",
+      "meaningKo": "농사 농 — 농업, 농민",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ノウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "辺",
+      "meaningKo": "가 변 — 경계, 주변",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヘン"
+        },
+        {
+          "type": "kun",
+          "reading": "べ"
+        },
+        {
+          "type": "kun",
+          "reading": "あたり"
+        },
+        {
+          "type": "kun",
+          "reading": "ほとり"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "述",
+      "meaningKo": "말할 술 — 진술, 언급",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジュツ"
+        },
+        {
+          "type": "kun",
+          "reading": "のべる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "逆",
+      "meaningKo": "거스를 역 — 반대, 역방향",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ギャク"
+        },
+        {
+          "type": "on",
+          "reading": "ゲキ"
+        },
+        {
+          "type": "kun",
+          "reading": "さか"
+        },
+        {
+          "type": "kun",
+          "reading": "さかさ"
+        },
+        {
+          "type": "kun",
+          "reading": "さからう"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "造",
+      "meaningKo": "지을 조 — 창조, 구조",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゾウ"
+        },
+        {
+          "type": "kun",
+          "reading": "づくり"
+        },
+        {
+          "type": "kun",
+          "reading": "つくり"
+        },
+        {
+          "type": "kun",
+          "reading": "つくる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "郊",
+      "meaningKo": "시골 교 — 교외, 시골",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "郵",
+      "meaningKo": "우편 우 — 우편물, 역참",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ユウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "量",
+      "meaningKo": "헤아릴 량 — 측정, 양",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "はかる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "針",
+      "meaningKo": "바늘 침 — 핀, 바늘",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シン"
+        },
+        {
+          "type": "kun",
+          "reading": "はり"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "鈍",
+      "meaningKo": "둔할 둔 — 무디다, 어리석다",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ドン"
+        },
+        {
+          "type": "kun",
+          "reading": "なまる"
+        },
+        {
+          "type": "kun",
+          "reading": "なまくら"
+        },
+        {
+          "type": "kun",
+          "reading": "にぶ"
+        },
+        {
+          "type": "kun",
+          "reading": "にぶい"
+        },
+        {
+          "type": "kun",
+          "reading": "にぶる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "鉄",
+      "meaningKo": "쇠 철",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "テツ"
+        },
+        {
+          "type": "kun",
+          "reading": "くろがね"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "鉱",
+      "meaningKo": "광산 광 — 광물, 광석",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "あらがね"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "銅",
+      "meaningKo": "놋쇠 동 — 구리",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ドウ"
+        },
+        {
+          "type": "kun",
+          "reading": "あかがね"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "鋭",
+      "meaningKo": "날카로울 예 — 예리하다, 날카롭다",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "エイ"
+        },
+        {
+          "type": "kun",
+          "reading": "するどい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "録",
+      "meaningKo": "기록 록 — 기록하다, 녹음",
+      "strokeCount": 16,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ロク"
+        },
+        {
+          "type": "kun",
+          "reading": "しるす"
+        },
+        {
+          "type": "kun",
+          "reading": "とる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "門",
+      "meaningKo": "“문 문”. 문",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "モン"
+        },
+        {
+          "type": "kun",
+          "reading": "かど"
+        },
+        {
+          "type": "kun",
+          "reading": "と"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "モン",
+          "word": "正門",
+          "wordReading": "せいもん"
+        },
+        {
+          "readingRef": "モン",
+          "word": "入門",
+          "wordReading": "にゅうもん"
+        },
+        {
+          "readingRef": "モン",
+          "word": "専門",
+          "wordReading": "せんもん"
+        },
+        {
+          "readingRef": "かど",
+          "word": "門口",
+          "wordReading": "かどぐち"
+        }
+      ]
+    },
+    {
+      "character": "防",
+      "meaningKo": "막을 방 — 방어, 보호",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ボウ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふせぐ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "陸",
+      "meaningKo": "뭍 육 — 육지, 땅",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リク"
+        },
+        {
+          "type": "on",
+          "reading": "ロク"
+        },
+        {
+          "type": "kun",
+          "reading": "おか"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "隅",
+      "meaningKo": "모 우 — 귀퉁이, 구석",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "グウ"
+        },
+        {
+          "type": "kun",
+          "reading": "すみ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "階",
+      "meaningKo": "층 계 — 계단, 단계",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カイ"
+        },
+        {
+          "type": "kun",
+          "reading": "きざはし"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "隻",
+      "meaningKo": "한 척 — 척도, 쌍",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セキ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "雇",
+      "meaningKo": "고울 고 — 고용, 채용",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コ"
+        },
+        {
+          "type": "kun",
+          "reading": "やとう"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "雲",
+      "meaningKo": "구름 운",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ウン"
+        },
+        {
+          "type": "kun",
+          "reading": "ぐも"
+        },
+        {
+          "type": "kun",
+          "reading": "くも"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "零",
+      "meaningKo": "영 영 — 영도, 넘치다",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "レイ"
+        },
+        {
+          "type": "kun",
+          "reading": "こぼす"
+        },
+        {
+          "type": "kun",
+          "reading": "こぼれる"
+        },
+        {
+          "type": "kun",
+          "reading": "ぜろ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "震",
+      "meaningKo": "흔들 진 — 진동, 떨리다",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シン"
+        },
+        {
+          "type": "kun",
+          "reading": "ふるう"
+        },
+        {
+          "type": "kun",
+          "reading": "ふるえる"
+        },
+        {
+          "type": "kun",
+          "reading": "ふるわす"
+        },
+        {
+          "type": "kun",
+          "reading": "ふるわせる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "革",
+      "meaningKo": "가죽 혁 — 개혁, 변화",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カク"
+        },
+        {
+          "type": "kun",
+          "reading": "かわ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "順",
+      "meaningKo": "순할 순 — 순서, 따르다",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジュン"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "預",
+      "meaningKo": "맡길 예 — 보관, 예금",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヨ"
+        },
+        {
+          "type": "kun",
+          "reading": "あずかる"
+        },
+        {
+          "type": "kun",
+          "reading": "あずける"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "領",
+      "meaningKo": "영토 령 — 영역, 지배",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "えり"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "額",
+      "meaningKo": "액수 액 — 이마, 액면",
+      "strokeCount": 18,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ガク"
+        },
+        {
+          "type": "kun",
+          "reading": "ひたい"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "香",
+      "meaningKo": "향 향 — 향기, 냄새",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョウ"
+        },
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "か"
+        },
+        {
+          "type": "kun",
+          "reading": "かおり"
+        },
+        {
+          "type": "kun",
+          "reading": "かおる"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "駐",
+      "meaningKo": "머물 주 — 주재, 정체",
+      "strokeCount": 15,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チュウ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "骨",
+      "meaningKo": "뼈 골 — 골격, 유골",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コツ"
+        },
+        {
+          "type": "kun",
+          "reading": "ほね"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "麦",
+      "meaningKo": "보리 맥 — 밀",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "バク"
+        },
+        {
+          "type": "kun",
+          "reading": "むぎ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "黄",
+      "meaningKo": "노랄 황 — 노란색",
+      "strokeCount": 11,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "オウ"
+        },
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "き"
+        },
+        {
+          "type": "kun",
+          "reading": "こ"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "鼻",
+      "meaningKo": "코 비",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ビ"
+        },
+        {
+          "type": "kun",
+          "reading": "はな"
+        }
+      ],
+      "words": []
+    },
+    {
+      "character": "齢",
+      "meaningKo": "나이 령 — 연세",
+      "strokeCount": 17,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "レイ"
+        },
+        {
+          "type": "kun",
+          "reading": "とし"
+        },
+        {
+          "type": "kun",
+          "reading": "よわい"
+        }
+      ],
+      "words": []
+    }
+  ]
+}

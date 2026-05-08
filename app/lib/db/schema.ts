@@ -24,21 +24,36 @@ export type WordExplanation = {
   createdAt: string;
 };
 
-export const jlptLevelEnum = pgEnum("jlpt_level", ["N5", "N4", "N3"]);
 export const readingTypeEnum = pgEnum("reading_type", ["on", "kun"]);
 export const exampleSourceEnum = pgEnum("example_source", ["seed", "generated"]);
+export const packKindEnum = pgEnum("pack_kind", ["jlpt", "custom"]);
+
+/**
+ * A pack is a top-level kanji collection. Pre-seeded JLPT levels (N5-N1)
+ * have kind="jlpt"; user-imported custom collections have kind="custom".
+ * Custom pack keys cannot collide with JLPT keys (validated at the API layer).
+ */
+export const packs = pgTable("packs", {
+  key: varchar("key", { length: 64 }).primaryKey(),
+  title: varchar("title", { length: 128 }).notNull(),
+  kind: packKindEnum("kind").notNull(),
+  description: text("description"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
 
 export const kanji = pgTable(
   "kanji",
   {
     id: serial("id").primaryKey(),
     character: varchar("character", { length: 8 }).notNull(),
-    level: jlptLevelEnum("level").notNull(),
+    packKey: varchar("pack_key", { length: 64 })
+      .notNull()
+      .references(() => packs.key, { onDelete: "cascade" }),
     meaningKo: text("meaning_ko").notNull(),
     strokeCount: integer("stroke_count"),
     createdAt: timestamp("created_at").defaultNow().notNull(),
   },
-  (t) => [uniqueIndex("kanji_character_idx").on(t.character)],
+  (t) => [uniqueIndex("kanji_pack_character_idx").on(t.packKey, t.character)],
 );
 
 export const readings = pgTable("readings", {
@@ -90,7 +105,15 @@ export const audioCache = pgTable(
   (t) => [uniqueIndex("audio_cache_hash_idx").on(t.textHash)],
 );
 
-export const kanjiRelations = relations(kanji, ({ many }) => ({
+export const packsRelations = relations(packs, ({ many }) => ({
+  kanji: many(kanji),
+}));
+
+export const kanjiRelations = relations(kanji, ({ one, many }) => ({
+  pack: one(packs, {
+    fields: [kanji.packKey],
+    references: [packs.key],
+  }),
   readings: many(readings),
   words: many(words),
 }));
@@ -127,3 +150,13 @@ export type Reading = typeof readings.$inferSelect;
 export type Word = typeof words.$inferSelect;
 export type Example = typeof examples.$inferSelect;
 export type AudioCache = typeof audioCache.$inferSelect;
+export type Pack = typeof packs.$inferSelect;
+export type PackKind = (typeof packKindEnum.enumValues)[number];
+
+/** JLPT levels are reserved keys — custom packs cannot use these. */
+export const JLPT_LEVELS = ["N5", "N4", "N3", "N2", "N1"] as const;
+export type JlptLevel = (typeof JLPT_LEVELS)[number];
+
+export function isJlptLevel(key: string): key is JlptLevel {
+  return (JLPT_LEVELS as readonly string[]).includes(key.toUpperCase());
+}

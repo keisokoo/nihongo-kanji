@@ -1,9 +1,12 @@
 {
-  "level": "N5",
+  "key": "N5",
+  "title": "N5",
+  "kind": "jlpt",
+  "description": "JLPT N5 한자 (kanjiapi.dev)",
   "kanji": [
     {
       "character": "一",
-      "meaningKo": "한 일 — 하나, 1",
+      "meaningKo": "“한 일”. 하나, 1",
       "strokeCount": 1,
       "readings": [
         {
@@ -16,6 +19,10 @@
         },
         {
           "type": "kun",
+          "reading": "ひと"
+        },
+        {
+          "type": "kun",
           "reading": "ひとつ"
         }
       ],
@@ -23,229 +30,68 @@
         {
           "readingRef": "イチ",
           "word": "一月",
-          "wordReading": "いちがつ",
-          "examples": [
-            {
-              "sentence": "{{一月}}は{寒|さむ}いです。",
-              "sentenceTranslationKo": "1월은 춥습니다."
-            }
-          ]
+          "wordReading": "いちがつ"
         },
         {
-          "readingRef": "ひとつ",
-          "word": "一つ",
-          "wordReading": "ひとつ",
-          "examples": [
-            {
-              "sentence": "リンゴを{{一つ}}ください。",
-              "sentenceTranslationKo": "사과 하나 주세요."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "二",
-      "meaningKo": "두 이 — 둘, 2",
-      "strokeCount": 2,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ニ"
+          "readingRef": "イチ",
+          "word": "一日",
+          "wordReading": "いちにち"
         },
         {
-          "type": "kun",
-          "reading": "ふたつ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ニ",
-          "word": "二月",
-          "wordReading": "にがつ",
-          "examples": [
-            {
-              "sentence": "{{二月}}に{試験|しけん}があります。",
-              "sentenceTranslationKo": "2월에 시험이 있습니다."
-            }
-          ]
+          "readingRef": "イチ",
+          "word": "一年",
+          "wordReading": "いちねん"
         },
         {
-          "readingRef": "ふたつ",
-          "word": "二つ",
-          "wordReading": "ふたつ",
-          "examples": [
-            {
-              "sentence": "ケーキを{{二つ}}{買|か}いました。",
-              "sentenceTranslationKo": "케이크를 두 개 샀습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "三",
-      "meaningKo": "석 삼 — 셋, 3",
-      "strokeCount": 3,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "サン"
+          "readingRef": "イチ",
+          "word": "一応",
+          "wordReading": "いちおう"
         },
         {
-          "type": "kun",
-          "reading": "みっつ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "サン",
-          "word": "三人",
-          "wordReading": "さんにん",
-          "examples": [
-            {
-              "sentence": "{家族|かぞく}は{{三人}}です。",
-              "sentenceTranslationKo": "가족은 세 명입니다."
-            }
-          ]
+          "readingRef": "イチ",
+          "word": "一部",
+          "wordReading": "いちぶ"
         },
         {
-          "readingRef": "みっつ",
-          "word": "三つ",
-          "wordReading": "みっつ",
-          "examples": [
-            {
-              "sentence": "りんごが{{三つ}}あります。",
-              "sentenceTranslationKo": "사과가 세 개 있습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "四",
-      "meaningKo": "넉 사 — 넷, 4",
-      "strokeCount": 5,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "シ"
+          "readingRef": "イチ",
+          "word": "万一",
+          "wordReading": "まんいち"
         },
         {
-          "type": "kun",
-          "reading": "よん"
+          "readingRef": "イツ",
+          "word": "唯一",
+          "wordReading": "ゆいいつ"
         },
         {
-          "type": "kun",
-          "reading": "よっつ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "シ",
-          "word": "四月",
-          "wordReading": "しがつ",
-          "examples": [
-            {
-              "sentence": "{{四月}}から{学校|がっこう}が{始|はじ}まります。",
-              "sentenceTranslationKo": "4월부터 학교가 시작됩니다."
-            }
-          ]
+          "readingRef": "イツ",
+          "word": "同一",
+          "wordReading": "どういつ"
         },
         {
-          "readingRef": "よっつ",
-          "word": "四つ",
-          "wordReading": "よっつ",
-          "examples": [
-            {
-              "sentence": "{卵|たまご}を{{四つ}}{使|つか}います。",
-              "sentenceTranslationKo": "달걀을 네 개 사용합니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "五",
-      "meaningKo": "다섯 오 — 다섯, 5",
-      "strokeCount": 4,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ゴ"
+          "readingRef": "イツ",
+          "word": "単一",
+          "wordReading": "たんいつ"
         },
         {
-          "type": "kun",
-          "reading": "いつつ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ゴ",
-          "word": "五月",
-          "wordReading": "ごがつ",
-          "examples": [
-            {
-              "sentence": "{{五月}}は{花|はな}がきれいです。",
-              "sentenceTranslationKo": "5월은 꽃이 예쁩니다."
-            }
-          ]
+          "readingRef": "イツ",
+          "word": "均一",
+          "wordReading": "きんいつ"
         },
         {
-          "readingRef": "いつつ",
-          "word": "五つ",
-          "wordReading": "いつつ",
-          "examples": [
-            {
-              "sentence": "{石|いし}が{{五つ}}あります。",
-              "sentenceTranslationKo": "돌이 다섯 개 있습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "六",
-      "meaningKo": "여섯 륙 — 여섯, 6",
-      "strokeCount": 4,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ロク"
+          "readingRef": "ひと",
+          "word": "一人",
+          "wordReading": "ひとり"
         },
         {
-          "type": "kun",
-          "reading": "むっつ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ロク",
-          "word": "六月",
-          "wordReading": "ろくがつ",
-          "examples": [
-            {
-              "sentence": "{{六月}}は{雨|あめ}が{多|おお}いです。",
-              "sentenceTranslationKo": "6월은 비가 많이 옵니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "むっつ",
-          "word": "六つ",
-          "wordReading": "むっつ",
-          "examples": [
-            {
-              "sentence": "{{六つ}}の{星|ほし}が{見|み}える。",
-              "sentenceTranslationKo": "여섯 개의 별이 보인다."
-            }
-          ]
+          "readingRef": "ひと",
+          "word": "一",
+          "wordReading": "ひと"
         }
       ]
     },
     {
       "character": "七",
-      "meaningKo": "일곱 칠 — 일곱, 7",
+      "meaningKo": "“일곱 칠”. 일곱",
       "strokeCount": 2,
       "readings": [
         {
@@ -259,75 +105,424 @@
         {
           "type": "kun",
           "reading": "ななつ"
+        },
+        {
+          "type": "kun",
+          "reading": "なの"
         }
       ],
       "words": [
         {
           "readingRef": "シチ",
           "word": "七月",
-          "wordReading": "しちがつ",
-          "examples": [
-            {
-              "sentence": "{{七月}}は{夏休|なつやす}みです。",
-              "sentenceTranslationKo": "7월은 여름방학입니다."
-            }
-          ]
+          "wordReading": "しちがつ"
         },
         {
-          "readingRef": "ななつ",
-          "word": "七つ",
-          "wordReading": "ななつ",
-          "examples": [
-            {
-              "sentence": "{息子|むすこ}は{{七つ}}になった。",
-              "sentenceTranslationKo": "아들이 일곱 살이 되었다."
-            }
-          ]
+          "readingRef": "なな",
+          "word": "七色",
+          "wordReading": "なないろ"
+        },
+        {
+          "readingRef": "なな",
+          "word": "七",
+          "wordReading": "なな"
+        },
+        {
+          "readingRef": "なの",
+          "word": "七日",
+          "wordReading": "なのか"
         }
       ]
     },
     {
-      "character": "八",
-      "meaningKo": "여덟 팔 — 여덟, 8",
-      "strokeCount": 2,
+      "character": "万",
+      "meaningKo": "“일만 만”. 일만",
+      "strokeCount": 3,
       "readings": [
         {
           "type": "on",
-          "reading": "ハチ"
+          "reading": "バン"
+        },
+        {
+          "type": "on",
+          "reading": "マン"
         },
         {
           "type": "kun",
-          "reading": "やっつ"
+          "reading": "よろず"
         }
       ],
       "words": [
         {
-          "readingRef": "ハチ",
-          "word": "八月",
-          "wordReading": "はちがつ",
-          "examples": [
-            {
-              "sentence": "{{八月}}は{暑|あつ}いです。",
-              "sentenceTranslationKo": "8월은 덥습니다."
-            }
-          ]
+          "readingRef": "マン",
+          "word": "一万",
+          "wordReading": "いちまん"
         },
         {
-          "readingRef": "やっつ",
-          "word": "八つ",
-          "wordReading": "やっつ",
-          "examples": [
-            {
-              "sentence": "{箱|はこ}が{{八つ}}あります。",
-              "sentenceTranslationKo": "상자가 여덟 개 있습니다."
-            }
-          ]
+          "readingRef": "マン",
+          "word": "万",
+          "wordReading": "まん"
+        },
+        {
+          "readingRef": "マン",
+          "word": "一",
+          "wordReading": "いち"
+        },
+        {
+          "readingRef": "マン",
+          "word": "万年筆",
+          "wordReading": "まんねんひつ"
+        },
+        {
+          "readingRef": "バン",
+          "word": "万歳",
+          "wordReading": "ばんざい"
+        },
+        {
+          "readingRef": "バン",
+          "word": "万国",
+          "wordReading": "ばんこく"
+        },
+        {
+          "readingRef": "バン",
+          "word": "万全",
+          "wordReading": "ばんぜん"
+        }
+      ]
+    },
+    {
+      "character": "三",
+      "meaningKo": "“셋 삼”. 3",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サン"
+        },
+        {
+          "type": "on",
+          "reading": "ゾウ"
+        },
+        {
+          "type": "kun",
+          "reading": "み"
+        },
+        {
+          "type": "kun",
+          "reading": "みつ"
+        },
+        {
+          "type": "kun",
+          "reading": "みっつ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "サン",
+          "word": "三十",
+          "wordReading": "さんじゅう"
+        },
+        {
+          "readingRef": "サン",
+          "word": "三人",
+          "wordReading": "さんにん"
+        },
+        {
+          "readingRef": "み",
+          "word": "三日月",
+          "wordReading": "みかづき"
+        },
+        {
+          "readingRef": "み",
+          "word": "三日",
+          "wordReading": "みっか"
+        },
+        {
+          "readingRef": "み",
+          "word": "三",
+          "wordReading": "みっ"
+        },
+        {
+          "readingRef": "み",
+          "word": "三",
+          "wordReading": "み"
+        },
+        {
+          "readingRef": "み",
+          "word": "指",
+          "wordReading": "ゆび"
+        }
+      ]
+    },
+    {
+      "character": "上",
+      "meaningKo": "“윗 상”. 위, 위쪽, 오르다",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シャン"
+        },
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "on",
+          "reading": "ジョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "あがり"
+        },
+        {
+          "type": "kun",
+          "reading": "あがる"
+        },
+        {
+          "type": "kun",
+          "reading": "あげる"
+        },
+        {
+          "type": "kun",
+          "reading": "うえ"
+        },
+        {
+          "type": "kun",
+          "reading": "うわ"
+        },
+        {
+          "type": "kun",
+          "reading": "かみ"
+        },
+        {
+          "type": "kun",
+          "reading": "たてまつる"
+        },
+        {
+          "type": "kun",
+          "reading": "のぼす"
+        },
+        {
+          "type": "kun",
+          "reading": "のぼせる"
+        },
+        {
+          "type": "kun",
+          "reading": "のぼり"
+        },
+        {
+          "type": "kun",
+          "reading": "のぼる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ジョウ",
+          "word": "地上",
+          "wordReading": "ちじょう"
+        },
+        {
+          "readingRef": "ジョウ",
+          "word": "海上",
+          "wordReading": "かいじょう"
+        },
+        {
+          "readingRef": "ジョウ",
+          "word": "上下",
+          "wordReading": "じょうげ"
+        },
+        {
+          "readingRef": "ジョウ",
+          "word": "上位",
+          "wordReading": "じょうい"
+        },
+        {
+          "readingRef": "ショウ",
+          "word": "上人",
+          "wordReading": "しょうにん"
+        },
+        {
+          "readingRef": "うえ",
+          "word": "雲",
+          "wordReading": "くも"
+        },
+        {
+          "readingRef": "うえ",
+          "word": "上",
+          "wordReading": "うえ"
+        },
+        {
+          "readingRef": "うわ",
+          "word": "上着",
+          "wordReading": "うわぎ"
+        },
+        {
+          "readingRef": "かみ",
+          "word": "川上",
+          "wordReading": "かわかみ"
+        }
+      ]
+    },
+    {
+      "character": "下",
+      "meaningKo": "“아래 하”. 아래, 아래쪽",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カ"
+        },
+        {
+          "type": "on",
+          "reading": "ゲ"
+        },
+        {
+          "type": "kun",
+          "reading": "くだす"
+        },
+        {
+          "type": "kun",
+          "reading": "おりる"
+        },
+        {
+          "type": "kun",
+          "reading": "おろす"
+        },
+        {
+          "type": "kun",
+          "reading": "くださる"
+        },
+        {
+          "type": "kun",
+          "reading": "くだり"
+        },
+        {
+          "type": "kun",
+          "reading": "くだる"
+        },
+        {
+          "type": "kun",
+          "reading": "さがる"
+        },
+        {
+          "type": "kun",
+          "reading": "さげる"
+        },
+        {
+          "type": "kun",
+          "reading": "した"
+        },
+        {
+          "type": "kun",
+          "reading": "しも"
+        },
+        {
+          "type": "kun",
+          "reading": "もと"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "カ",
+          "word": "地下鉄",
+          "wordReading": "ちかてつ"
+        },
+        {
+          "readingRef": "カ",
+          "word": "以下",
+          "wordReading": "いか"
+        },
+        {
+          "readingRef": "ゲ",
+          "word": "下水",
+          "wordReading": "げすい"
+        },
+        {
+          "readingRef": "ゲ",
+          "word": "下車",
+          "wordReading": "げしゃ"
+        },
+        {
+          "readingRef": "した",
+          "word": "下",
+          "wordReading": "した"
+        },
+        {
+          "readingRef": "した",
+          "word": "部屋",
+          "wordReading": "へや"
+        },
+        {
+          "readingRef": "しも",
+          "word": "川下",
+          "wordReading": "かわしも"
+        },
+        {
+          "readingRef": "もと",
+          "word": "白日",
+          "wordReading": "はくじつ"
+        },
+        {
+          "readingRef": "もと",
+          "word": "下",
+          "wordReading": "もと"
+        },
+        {
+          "readingRef": "もと",
+          "word": "晒",
+          "wordReading": "さら"
+        }
+      ]
+    },
+    {
+      "character": "中",
+      "meaningKo": "“가운데 중”. 중간, 가운데",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "あたる"
+        },
+        {
+          "type": "kun",
+          "reading": "うち"
+        },
+        {
+          "type": "kun",
+          "reading": "なか"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "チュウ",
+          "word": "掃除中",
+          "wordReading": "そうじちゅう"
+        },
+        {
+          "readingRef": "チュウ",
+          "word": "準備中",
+          "wordReading": "じゅんびちゅう"
+        },
+        {
+          "readingRef": "なか",
+          "word": "背中",
+          "wordReading": "せなか"
+        },
+        {
+          "readingRef": "なか",
+          "word": "中身",
+          "wordReading": "なかみ"
         }
       ]
     },
     {
       "character": "九",
-      "meaningKo": "아홉 구 — 아홉, 9",
+      "meaningKo": "“아홉 구”. 아홉",
       "strokeCount": 2,
       "readings": [
         {
@@ -340,42 +535,754 @@
         },
         {
           "type": "kun",
+          "reading": "ここの"
+        },
+        {
+          "type": "kun",
           "reading": "ここのつ"
         }
       ],
       "words": [
         {
+          "readingRef": "キュウ",
+          "word": "九百",
+          "wordReading": "きゅうひゃく"
+        },
+        {
           "readingRef": "ク",
           "word": "九月",
-          "wordReading": "くがつ",
-          "examples": [
-            {
-              "sentence": "{{九月}}に{学校|がっこう}が{始|はじ}まります。",
-              "sentenceTranslationKo": "9월에 학교가 시작됩니다."
-            }
-          ]
+          "wordReading": "くがつ"
+        },
+        {
+          "readingRef": "ク",
+          "word": "九九",
+          "wordReading": "くく"
+        },
+        {
+          "readingRef": "ここの",
+          "word": "九日",
+          "wordReading": "ここのか"
+        },
+        {
+          "readingRef": "ここの",
+          "word": "九",
+          "wordReading": "ここの"
+        }
+      ]
+    },
+    {
+      "character": "二",
+      "meaningKo": "“두 이”. 2",
+      "strokeCount": 2,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジ"
+        },
+        {
+          "type": "on",
+          "reading": "ニ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふた"
+        },
+        {
+          "type": "kun",
+          "reading": "ふたつ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふたたび"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ニ",
+          "word": "二月",
+          "wordReading": "にがつ"
+        },
+        {
+          "readingRef": "ニ",
+          "word": "二十",
+          "wordReading": "にじゅう"
+        },
+        {
+          "readingRef": "ふた",
+          "word": "二人",
+          "wordReading": "ふたり"
+        },
+        {
+          "readingRef": "ふた",
+          "word": "二",
+          "wordReading": "ふた"
+        }
+      ]
+    },
+    {
+      "character": "五",
+      "meaningKo": "“다섯 오”. 다섯",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゴ"
+        },
+        {
+          "type": "kun",
+          "reading": "いつ"
+        },
+        {
+          "type": "kun",
+          "reading": "いつつ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ゴ",
+          "word": "五月",
+          "wordReading": "ごがつ"
+        },
+        {
+          "readingRef": "いつ",
+          "word": "五日",
+          "wordReading": "いつか"
+        },
+        {
+          "readingRef": "いつ",
+          "word": "五",
+          "wordReading": "いつ"
+        }
+      ]
+    },
+    {
+      "character": "人",
+      "meaningKo": "“사람 인”. 사람",
+      "strokeCount": 2,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジン"
+        },
+        {
+          "type": "on",
+          "reading": "ニン"
+        },
+        {
+          "type": "kun",
+          "reading": "と"
+        },
+        {
+          "type": "kun",
+          "reading": "り"
+        },
+        {
+          "type": "kun",
+          "reading": "ひと"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ジン",
+          "word": "日本人",
+          "wordReading": "にほんじん"
+        },
+        {
+          "readingRef": "ジン",
+          "word": "主人",
+          "wordReading": "しゅじん"
+        },
+        {
+          "readingRef": "ジン",
+          "word": "人生",
+          "wordReading": "じんせい"
+        },
+        {
+          "readingRef": "ニン",
+          "word": "本人",
+          "wordReading": "ほんにん"
+        },
+        {
+          "readingRef": "ニン",
+          "word": "他人",
+          "wordReading": "たにん"
+        },
+        {
+          "readingRef": "ニン",
+          "word": "人形",
+          "wordReading": "にんぎょう"
+        },
+        {
+          "readingRef": "ひと",
+          "word": "人",
+          "wordReading": "ひと"
+        },
+        {
+          "readingRef": "ひと",
+          "word": "人手",
+          "wordReading": "ひとで"
+        }
+      ]
+    },
+    {
+      "character": "今",
+      "meaningKo": "“이제 금”. 지금, 현재",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キン"
+        },
+        {
+          "type": "on",
+          "reading": "コン"
+        },
+        {
+          "type": "kun",
+          "reading": "いま"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "コン",
+          "word": "今週",
+          "wordReading": "こんしゅう"
+        },
+        {
+          "readingRef": "コン",
+          "word": "今月",
+          "wordReading": "こんげつ"
+        },
+        {
+          "readingRef": "キン",
+          "word": "今上",
+          "wordReading": "きんじょう"
+        },
+        {
+          "readingRef": "いま",
+          "word": "今",
+          "wordReading": "いま"
+        },
+        {
+          "readingRef": "いま",
+          "word": "電話",
+          "wordReading": "でんわ"
+        }
+      ]
+    },
+    {
+      "character": "休",
+      "meaningKo": "“쉴 휴”. 쉬다, 휴식",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "やすまる"
+        },
+        {
+          "type": "kun",
+          "reading": "やすむ"
+        },
+        {
+          "type": "kun",
+          "reading": "やすめる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "キュウ",
+          "word": "休日",
+          "wordReading": "きゅうじつ"
         },
         {
           "readingRef": "キュウ",
-          "word": "九時",
-          "wordReading": "くじ",
-          "examples": [
-            {
-              "sentence": "{夜|よる}の{{九時}}に{寝|ね}ます。",
-              "sentenceTranslationKo": "밤 9시에 잡니다."
-            }
-          ]
+          "word": "休暇",
+          "wordReading": "きゅうか"
+        },
+        {
+          "readingRef": "キュウ",
+          "word": "休養",
+          "wordReading": "きゅうよう"
+        }
+      ]
+    },
+    {
+      "character": "何",
+      "meaningKo": "“어찌 하”. 무엇(what)",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カ"
+        },
+        {
+          "type": "kun",
+          "reading": "なに"
+        },
+        {
+          "type": "kun",
+          "reading": "なん"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "カ",
+          "word": "幾何学",
+          "wordReading": "きかがく"
+        },
+        {
+          "readingRef": "なに",
+          "word": "何",
+          "wordReading": "なに"
+        },
+        {
+          "readingRef": "なん",
+          "word": "何",
+          "wordReading": "なん"
+        }
+      ]
+    },
+    {
+      "character": "先",
+      "meaningKo": "“먼저 선”. 먼저, 앞서",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セン"
+        },
+        {
+          "type": "kun",
+          "reading": "さき"
+        },
+        {
+          "type": "kun",
+          "reading": "まず"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "セン",
+          "word": "先生",
+          "wordReading": "せんせい"
+        },
+        {
+          "readingRef": "セン",
+          "word": "先月",
+          "wordReading": "せんげつ"
+        },
+        {
+          "readingRef": "セン",
+          "word": "先輩",
+          "wordReading": "せんぱい"
+        }
+      ]
+    },
+    {
+      "character": "入",
+      "meaningKo": "“들 입”. 들어가다, 집어넣다",
+      "strokeCount": 2,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジュ"
+        },
+        {
+          "type": "on",
+          "reading": "ニュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "いり"
+        },
+        {
+          "type": "kun",
+          "reading": "いる"
+        },
+        {
+          "type": "kun",
+          "reading": "いれ"
+        },
+        {
+          "type": "kun",
+          "reading": "いれる"
+        },
+        {
+          "type": "kun",
+          "reading": "はいる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ニュウ",
+          "word": "入国",
+          "wordReading": "にゅうこく"
+        },
+        {
+          "readingRef": "ニュウ",
+          "word": "入学",
+          "wordReading": "にゅうがく"
+        },
+        {
+          "readingRef": "ニュウ",
+          "word": "入院",
+          "wordReading": "にゅういん"
+        }
+      ]
+    },
+    {
+      "character": "八",
+      "meaningKo": "“여덟 팔”. 여덟",
+      "strokeCount": 2,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハチ"
+        },
+        {
+          "type": "on",
+          "reading": "ハツ"
+        },
+        {
+          "type": "kun",
+          "reading": "や"
+        },
+        {
+          "type": "kun",
+          "reading": "やつ"
+        },
+        {
+          "type": "kun",
+          "reading": "やっつ"
+        },
+        {
+          "type": "kun",
+          "reading": "よう"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ハチ",
+          "word": "八月",
+          "wordReading": "はちがつ"
+        },
+        {
+          "readingRef": "や",
+          "word": "八重桜",
+          "wordReading": "やえざくら"
+        },
+        {
+          "readingRef": "や",
+          "word": "八",
+          "wordReading": "や"
+        },
+        {
+          "readingRef": "や",
+          "word": "当",
+          "wordReading": "あ"
+        },
+        {
+          "readingRef": "や",
+          "word": "八",
+          "wordReading": "やっ"
+        },
+        {
+          "readingRef": "よう",
+          "word": "八日",
+          "wordReading": "ようか"
+        }
+      ]
+    },
+    {
+      "character": "六",
+      "meaningKo": "“여섯 육”. 여섯",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リク"
+        },
+        {
+          "type": "on",
+          "reading": "ロク"
+        },
+        {
+          "type": "kun",
+          "reading": "む"
+        },
+        {
+          "type": "kun",
+          "reading": "むつ"
+        },
+        {
+          "type": "kun",
+          "reading": "むい"
+        },
+        {
+          "type": "kun",
+          "reading": "むっつ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ロク",
+          "word": "六月",
+          "wordReading": "ろくがつ"
+        },
+        {
+          "readingRef": "む",
+          "word": "六",
+          "wordReading": "む"
+        },
+        {
+          "readingRef": "む",
+          "word": "切",
+          "wordReading": "ぎ"
+        },
+        {
+          "readingRef": "む",
+          "word": "六",
+          "wordReading": "むっ"
+        },
+        {
+          "readingRef": "む",
+          "word": "六日",
+          "wordReading": "むいか"
+        }
+      ]
+    },
+    {
+      "character": "円",
+      "meaningKo": "“둥글 원”. 둥글다, 원",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "エン"
+        },
+        {
+          "type": "kun",
+          "reading": "まど"
+        },
+        {
+          "type": "kun",
+          "reading": "まどか"
+        },
+        {
+          "type": "kun",
+          "reading": "まる"
+        },
+        {
+          "type": "kun",
+          "reading": "まるい"
+        },
+        {
+          "type": "kun",
+          "reading": "まろやか"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "エン",
+          "word": "円",
+          "wordReading": "えん"
+        },
+        {
+          "readingRef": "エン",
+          "word": "円形",
+          "wordReading": "えんけい"
+        },
+        {
+          "readingRef": "まる",
+          "word": "円",
+          "wordReading": "まる"
+        },
+        {
+          "readingRef": "まる",
+          "word": "月",
+          "wordReading": "つき"
+        }
+      ]
+    },
+    {
+      "character": "出",
+      "meaningKo": "“날 출”. 나가다, 내보내다",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シュツ"
+        },
+        {
+          "type": "on",
+          "reading": "スイ"
+        },
+        {
+          "type": "kun",
+          "reading": "だす"
+        },
+        {
+          "type": "kun",
+          "reading": "で"
+        },
+        {
+          "type": "kun",
+          "reading": "いだす"
+        },
+        {
+          "type": "kun",
+          "reading": "いでる"
+        },
+        {
+          "type": "kun",
+          "reading": "でる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "シュツ",
+          "word": "出入",
+          "wordReading": "しゅつにゅう"
+        },
+        {
+          "readingRef": "シュツ",
+          "word": "出現",
+          "wordReading": "しゅつげん"
+        },
+        {
+          "readingRef": "シュツ",
+          "word": "出席",
+          "wordReading": "しゅっせき"
+        },
+        {
+          "readingRef": "スイ",
+          "word": "出納",
+          "wordReading": "すいとう"
+        },
+        {
+          "readingRef": "で",
+          "word": "会社",
+          "wordReading": "かいしゃ"
+        },
+        {
+          "readingRef": "で",
+          "word": "出",
+          "wordReading": "で"
+        }
+      ]
+    },
+    {
+      "character": "前",
+      "meaningKo": "“앞 전”. 앞",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゼン"
+        },
+        {
+          "type": "kun",
+          "reading": "まえ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ゼン",
+          "word": "午前",
+          "wordReading": "ごぜん"
+        },
+        {
+          "readingRef": "ゼン",
+          "word": "以前",
+          "wordReading": "いぜん"
+        },
+        {
+          "readingRef": "ゼン",
+          "word": "前進",
+          "wordReading": "ぜんしん"
+        },
+        {
+          "readingRef": "まえ",
+          "word": "名前",
+          "wordReading": "なまえ"
+        },
+        {
+          "readingRef": "まえ",
+          "word": "三日前",
+          "wordReading": "みっかまえ"
+        }
+      ]
+    },
+    {
+      "character": "北",
+      "meaningKo": "“북녘 북”. 북쪽",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ホク"
+        },
+        {
+          "type": "kun",
+          "reading": "きた"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ホク",
+          "word": "東北",
+          "wordReading": "とうほく"
+        },
+        {
+          "readingRef": "ホク",
+          "word": "北部",
+          "wordReading": "ほくぶ"
+        },
+        {
+          "readingRef": "きた",
+          "word": "北",
+          "wordReading": "きた"
+        },
+        {
+          "readingRef": "きた",
+          "word": "北風",
+          "wordReading": "きたかぜ"
+        },
+        {
+          "readingRef": "きた",
+          "word": "北側",
+          "wordReading": "きたがわ"
         }
       ]
     },
     {
       "character": "十",
-      "meaningKo": "열 십 — 열, 10",
+      "meaningKo": "“열 십”. 10",
       "strokeCount": 2,
       "readings": [
         {
           "type": "on",
+          "reading": "ジッ"
+        },
+        {
+          "type": "on",
           "reading": "ジュウ"
+        },
+        {
+          "type": "on",
+          "reading": "ジュッ"
+        },
+        {
+          "type": "kun",
+          "reading": "そ"
+        },
+        {
+          "type": "kun",
+          "reading": "と"
         },
         {
           "type": "kun",
@@ -386,54 +1293,48 @@
         {
           "readingRef": "ジュウ",
           "word": "十月",
-          "wordReading": "じゅうがつ",
-          "examples": [
-            {
-              "sentence": "{{十月}}は{涼|すず}しいです。",
-              "sentenceTranslationKo": "10월은 시원합니다."
-            }
-          ]
+          "wordReading": "じゅうがつ"
+        },
+        {
+          "readingRef": "ジュウ",
+          "word": "十人",
+          "wordReading": "じゅうにん"
+        },
+        {
+          "readingRef": "ジュウ",
+          "word": "二十",
+          "wordReading": "にじゅう"
+        },
+        {
+          "readingRef": "ジッ",
+          "word": "十中八九",
+          "wordReading": "じっちゅうはっく"
+        },
+        {
+          "readingRef": "ジッ",
+          "word": "十個",
+          "wordReading": "じっこ"
+        },
+        {
+          "readingRef": "ジッ",
+          "word": "十分",
+          "wordReading": "じっぷん"
         },
         {
           "readingRef": "とお",
-          "word": "十",
-          "wordReading": "とお",
-          "examples": [
-            {
-              "sentence": "りんごを{{十}}、ください。",
-              "sentenceTranslationKo": "사과 열 개 주세요."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "百",
-      "meaningKo": "일백 백 — 100",
-      "strokeCount": 6,
-      "readings": [
+          "word": "十日",
+          "wordReading": "とおか"
+        },
         {
-          "type": "on",
-          "reading": "ヒャク"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ヒャク",
-          "word": "百円",
-          "wordReading": "ひゃくえん",
-          "examples": [
-            {
-              "sentence": "このペンは{{百円}}です。",
-              "sentenceTranslationKo": "이 펜은 100엔입니다."
-            }
-          ]
+          "readingRef": "と",
+          "word": "十人十色",
+          "wordReading": "じゅうにんといろ"
         }
       ]
     },
     {
       "character": "千",
-      "meaningKo": "일천 천 — 1,000",
+      "meaningKo": "“일천 천”. 1000",
       "strokeCount": 3,
       "readings": [
         {
@@ -449,304 +1350,60 @@
         {
           "readingRef": "セン",
           "word": "千円",
-          "wordReading": "せんえん",
-          "examples": [
-            {
-              "sentence": "{本|ほん}は{{千円}}でした。",
-              "sentenceTranslationKo": "책은 1,000엔이었습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "万",
-      "meaningKo": "일만 만 — 10,000",
-      "strokeCount": 3,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "マン"
+          "wordReading": "せんえん"
         },
         {
-          "type": "on",
-          "reading": "バン"
-        }
-      ],
-      "words": [
+          "readingRef": "セン",
+          "word": "千差万別",
+          "wordReading": "せんさばんべつ"
+        },
         {
-          "readingRef": "マン",
-          "word": "一万円",
-          "wordReading": "いちまんえん",
-          "examples": [
-            {
-              "sentence": "{財布|さいふ}に{{一万円}}あります。",
-              "sentenceTranslationKo": "지갑에 만 엔 있습니다."
-            }
-          ]
+          "readingRef": "ち",
+          "word": "千切",
+          "wordReading": "ちぎ"
+        },
+        {
+          "readingRef": "ち",
+          "word": "千草",
+          "wordReading": "ちぐさ"
         }
       ]
     },
     {
-      "character": "円",
-      "meaningKo": "둥글 원 — 엔(화폐), 둥글다",
+      "character": "午",
+      "meaningKo": "“낮 오”. 정오",
       "strokeCount": 4,
       "readings": [
         {
           "type": "on",
-          "reading": "エン"
+          "reading": "ゴ"
         },
         {
           "type": "kun",
-          "reading": "まるい"
+          "reading": "うま"
         }
       ],
       "words": [
         {
-          "readingRef": "エン",
-          "word": "百円",
-          "wordReading": "ひゃくえん",
-          "examples": [
-            {
-              "sentence": "このパンは{{百円}}です。",
-              "sentenceTranslationKo": "이 빵은 100엔입니다."
-            }
-          ]
+          "readingRef": "ゴ",
+          "word": "午前",
+          "wordReading": "ごぜん"
         },
         {
-          "readingRef": "まるい",
-          "word": "円い",
-          "wordReading": "まるい",
-          "examples": [
-            {
-              "sentence": "{月|つき}は{{円い}}。",
-              "sentenceTranslationKo": "달은 둥글다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "年",
-      "meaningKo": "해 년 — 해, 년",
-      "strokeCount": 6,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ネン"
+          "readingRef": "ゴ",
+          "word": "午後",
+          "wordReading": "ごご"
         },
         {
-          "type": "kun",
-          "reading": "とし"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ネン",
-          "word": "去年",
-          "wordReading": "きょねん",
-          "examples": [
-            {
-              "sentence": "{{去年}}、{日本|にほん}へ{行|い}きました。",
-              "sentenceTranslationKo": "작년에 일본에 갔습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "とし",
-          "word": "年上",
-          "wordReading": "としうえ",
-          "examples": [
-            {
-              "sentence": "{兄|あに}は{私|わたし}より{{年上}}です。",
-              "sentenceTranslationKo": "형은 저보다 연상입니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "月",
-      "meaningKo": "달 월 — 달, 월",
-      "strokeCount": 4,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ゲツ"
-        },
-        {
-          "type": "on",
-          "reading": "ガツ"
-        },
-        {
-          "type": "kun",
-          "reading": "つき"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ゲツ",
-          "word": "月曜日",
-          "wordReading": "げつようび",
-          "examples": [
-            {
-              "sentence": "{{月曜日}}は{忙|いそが}しいです。",
-              "sentenceTranslationKo": "월요일은 바쁩니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "つき",
-          "word": "月",
-          "wordReading": "つき",
-          "examples": [
-            {
-              "sentence": "{今夜|こんや}の{{月}}はきれいだ。",
-              "sentenceTranslationKo": "오늘 밤 달은 예쁘다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "日",
-      "meaningKo": "날 일 — 해, 날, 일본",
-      "strokeCount": 4,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ニチ"
-        },
-        {
-          "type": "on",
-          "reading": "ジツ"
-        },
-        {
-          "type": "kun",
-          "reading": "ひ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ニチ",
-          "word": "日本",
-          "wordReading": "にほん",
-          "examples": [
-            {
-              "sentence": "{{日本}}に{行|い}きたいです。",
-              "sentenceTranslationKo": "일본에 가고 싶습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ジツ",
-          "word": "毎日",
-          "wordReading": "まいにち",
-          "examples": [
-            {
-              "sentence": "{{毎日}}{勉強|べんきょう}します。",
-              "sentenceTranslationKo": "매일 공부합니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ひ",
-          "word": "日",
-          "wordReading": "ひ",
-          "examples": [
-            {
-              "sentence": "いい{{日}}ですね。",
-              "sentenceTranslationKo": "좋은 날이네요."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "時",
-      "meaningKo": "때 시 — 때, 시간",
-      "strokeCount": 10,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ジ"
-        },
-        {
-          "type": "kun",
-          "reading": "とき"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ジ",
-          "word": "時間",
-          "wordReading": "じかん",
-          "examples": [
-            {
-              "sentence": "{{時間}}がありません。",
-              "sentenceTranslationKo": "시간이 없습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "とき",
-          "word": "時",
-          "wordReading": "とき",
-          "examples": [
-            {
-              "sentence": "{若|わか}い{{時}}、よく{旅行|りょこう}しました。",
-              "sentenceTranslationKo": "젊을 때, 자주 여행했습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "分",
-      "meaningKo": "나눌 분 — 분, 나누다, 알다",
-      "strokeCount": 4,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "フン"
-        },
-        {
-          "type": "on",
-          "reading": "ブン"
-        },
-        {
-          "type": "kun",
-          "reading": "わかる"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "フン",
-          "word": "三分",
-          "wordReading": "さんぷん",
-          "examples": [
-            {
-              "sentence": "あと{{三分}}で{着|つ}きます。",
-              "sentenceTranslationKo": "3분 후에 도착합니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "わかる",
-          "word": "分かる",
-          "wordReading": "わかる",
-          "examples": [
-            {
-              "sentence": "{意味|いみ}が{{分かりません}}。",
-              "sentenceTranslationKo": "의미를 모르겠습니다."
-            }
-          ]
+          "readingRef": "ゴ",
+          "word": "正午",
+          "wordReading": "しょうご"
         }
       ]
     },
     {
       "character": "半",
-      "meaningKo": "반 반 — 반, 절반",
+      "meaningKo": "“반 반”. 절반",
       "strokeCount": 5,
       "readings": [
         {
@@ -762,160 +1419,28 @@
         {
           "readingRef": "ハン",
           "word": "半分",
-          "wordReading": "はんぶん",
-          "examples": [
-            {
-              "sentence": "ケーキを{{半分}}ください。",
-              "sentenceTranslationKo": "케이크를 반 주세요."
-            }
-          ]
+          "wordReading": "はんぶん"
         },
         {
           "readingRef": "ハン",
-          "word": "三時半",
-          "wordReading": "さんじはん",
-          "examples": [
-            {
-              "sentence": "{{三時半}}に{会|あ}いましょう。",
-              "sentenceTranslationKo": "3시 반에 만납시다."
-            }
-          ]
+          "word": "半時間",
+          "wordReading": "はんじかん"
+        },
+        {
+          "readingRef": "ハン",
+          "word": "半年",
+          "wordReading": "はんねん"
         }
       ]
     },
     {
-      "character": "今",
-      "meaningKo": "이제 금 — 이제, 지금",
-      "strokeCount": 4,
+      "character": "南",
+      "meaningKo": "“남녘 남”. 남쪽",
+      "strokeCount": 9,
       "readings": [
         {
           "type": "on",
-          "reading": "コン"
-        },
-        {
-          "type": "on",
-          "reading": "キン"
-        },
-        {
-          "type": "kun",
-          "reading": "いま"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "コン",
-          "word": "今週",
-          "wordReading": "こんしゅう",
-          "examples": [
-            {
-              "sentence": "{{今週}}は{忙|いそが}しいです。",
-              "sentenceTranslationKo": "이번 주는 바쁩니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "いま",
-          "word": "今",
-          "wordReading": "いま",
-          "examples": [
-            {
-              "sentence": "{{今}}、{何時|なんじ}ですか。",
-              "sentenceTranslationKo": "지금 몇 시입니까?"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "何",
-      "meaningKo": "무엇 하 — 무엇, 몇",
-      "strokeCount": 7,
-      "readings": [
-        {
-          "type": "kun",
-          "reading": "なに"
-        },
-        {
-          "type": "kun",
-          "reading": "なん"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "なに",
-          "word": "何",
-          "wordReading": "なに",
-          "examples": [
-            {
-              "sentence": "それは{{何}}ですか。",
-              "sentenceTranslationKo": "그것은 무엇입니까?"
-            }
-          ]
-        },
-        {
-          "readingRef": "なん",
-          "word": "何時",
-          "wordReading": "なんじ",
-          "examples": [
-            {
-              "sentence": "{今|いま}、{{何時}}ですか。",
-              "sentenceTranslationKo": "지금 몇 시입니까?"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "人",
-      "meaningKo": "사람 인 — 사람",
-      "strokeCount": 2,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ジン"
-        },
-        {
-          "type": "on",
-          "reading": "ニン"
-        },
-        {
-          "type": "kun",
-          "reading": "ひと"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ジン",
-          "word": "日本人",
-          "wordReading": "にほんじん",
-          "examples": [
-            {
-              "sentence": "{彼|かれ}は{{日本人}}です。",
-              "sentenceTranslationKo": "그는 일본인입니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ひと",
-          "word": "人",
-          "wordReading": "ひと",
-          "examples": [
-            {
-              "sentence": "あの{{人}}は{誰|だれ}ですか。",
-              "sentenceTranslationKo": "저 사람은 누구입니까?"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "男",
-      "meaningKo": "사내 남 — 남자",
-      "strokeCount": 7,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ダン"
+          "reading": "ナ"
         },
         {
           "type": "on",
@@ -923,197 +1448,40 @@
         },
         {
           "type": "kun",
-          "reading": "おとこ"
+          "reading": "みなみ"
         }
       ],
       "words": [
         {
-          "readingRef": "ダン",
-          "word": "男性",
-          "wordReading": "だんせい",
-          "examples": [
-            {
-              "sentence": "{{男性}}のトイレはどこですか。",
-              "sentenceTranslationKo": "남성 화장실은 어디입니까?"
-            }
-          ]
+          "readingRef": "ナン",
+          "word": "南北",
+          "wordReading": "なんぼく"
         },
         {
-          "readingRef": "おとこ",
-          "word": "男",
-          "wordReading": "おとこ",
-          "examples": [
-            {
-              "sentence": "あの{{男}}の{人|ひと}は{先生|せんせい}です。",
-              "sentenceTranslationKo": "저 남자는 선생님입니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "女",
-      "meaningKo": "계집 녀 — 여자",
-      "strokeCount": 3,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ジョ"
+          "readingRef": "ナン",
+          "word": "南方",
+          "wordReading": "なんぽう"
         },
         {
-          "type": "on",
-          "reading": "ニョ"
+          "readingRef": "ナ",
+          "word": "南無阿弥陀仏",
+          "wordReading": "なむあみだぶつ"
         },
         {
-          "type": "kun",
-          "reading": "おんな"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ジョ",
-          "word": "女性",
-          "wordReading": "じょせい",
-          "examples": [
-            {
-              "sentence": "{{女性}}に{人気|にんき}があります。",
-              "sentenceTranslationKo": "여성에게 인기가 있습니다."
-            }
-          ]
+          "readingRef": "みなみ",
+          "word": "南",
+          "wordReading": "みなみ"
         },
         {
-          "readingRef": "おんな",
-          "word": "女",
-          "wordReading": "おんな",
-          "examples": [
-            {
-              "sentence": "{{女}}の{子|こ}が{泣|な}いています。",
-              "sentenceTranslationKo": "여자아이가 울고 있습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "子",
-      "meaningKo": "아들 자 — 아이, 자식",
-      "strokeCount": 3,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "シ"
-        },
-        {
-          "type": "kun",
-          "reading": "こ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "こ",
-          "word": "子供",
-          "wordReading": "こども",
-          "examples": [
-            {
-              "sentence": "{{子供}}が{三人|さんにん}います。",
-              "sentenceTranslationKo": "아이가 세 명 있습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "こ",
-          "word": "女の子",
-          "wordReading": "おんなのこ",
-          "examples": [
-            {
-              "sentence": "{{女の子}}が{走|はし}っています。",
-              "sentenceTranslationKo": "여자아이가 달리고 있습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "父",
-      "meaningKo": "아비 부 — 아버지",
-      "strokeCount": 4,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "フ"
-        },
-        {
-          "type": "kun",
-          "reading": "ちち"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ちち",
-          "word": "父",
-          "wordReading": "ちち",
-          "examples": [
-            {
-              "sentence": "{{父}}は{会社員|かいしゃいん}です。",
-              "sentenceTranslationKo": "아버지는 회사원입니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "フ",
-          "word": "父母",
-          "wordReading": "ふぼ",
-          "examples": [
-            {
-              "sentence": "{{父母}}に{手紙|てがみ}を{書|か}きました。",
-              "sentenceTranslationKo": "부모님께 편지를 썼습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "母",
-      "meaningKo": "어머니 모 — 어머니",
-      "strokeCount": 5,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ボ"
-        },
-        {
-          "type": "kun",
-          "reading": "はは"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "はは",
-          "word": "母",
-          "wordReading": "はは",
-          "examples": [
-            {
-              "sentence": "{{母}}は{料理|りょうり}が{上手|じょうず}です。",
-              "sentenceTranslationKo": "어머니는 요리를 잘합니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ボ",
-          "word": "母国",
-          "wordReading": "ぼこく",
-          "examples": [
-            {
-              "sentence": "{{母国}}の{料理|りょうり}が{恋|こい}しい。",
-              "sentenceTranslationKo": "모국의 음식이 그립다."
-            }
-          ]
+          "readingRef": "みなみ",
+          "word": "空",
+          "wordReading": "そら"
         }
       ]
     },
     {
       "character": "友",
-      "meaningKo": "벗 우 — 친구, 벗",
+      "meaningKo": "“벗 우”. 친구",
       "strokeCount": 4,
       "readings": [
         {
@@ -1127,536 +1495,30 @@
       ],
       "words": [
         {
-          "readingRef": "とも",
-          "word": "友達",
-          "wordReading": "ともだち",
-          "examples": [
-            {
-              "sentence": "{{友達}}と{映画|えいが}を{見|み}ました。",
-              "sentenceTranslationKo": "친구와 영화를 봤습니다."
-            }
-          ]
+          "readingRef": "ユウ",
+          "word": "友情",
+          "wordReading": "ゆうじょう"
         },
         {
           "readingRef": "ユウ",
           "word": "親友",
-          "wordReading": "しんゆう",
-          "examples": [
-            {
-              "sentence": "{彼|かれ}は{私|わたし}の{{親友}}です。",
-              "sentenceTranslationKo": "그는 내 친한 친구입니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "学",
-      "meaningKo": "배울 학 — 배우다, 학문",
-      "strokeCount": 8,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ガク"
+          "wordReading": "しんゆう"
         },
         {
-          "type": "kun",
-          "reading": "まなぶ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ガク",
-          "word": "学校",
-          "wordReading": "がっこう",
-          "examples": [
-            {
-              "sentence": "{{学校}}に{行|い}きます。",
-              "sentenceTranslationKo": "학교에 갑니다."
-            }
-          ]
+          "readingRef": "ユウ",
+          "word": "友人",
+          "wordReading": "ゆうじん"
         },
         {
-          "readingRef": "ガク",
-          "word": "学生",
-          "wordReading": "がくせい",
-          "examples": [
-            {
-              "sentence": "{私|わたし}は{大学|だいがく}の{{学生}}です。",
-              "sentenceTranslationKo": "저는 대학생입니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "生",
-      "meaningKo": "날 생 — 살다, 태어나다, 학생",
-      "strokeCount": 5,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "セイ"
-        },
-        {
-          "type": "on",
-          "reading": "ショウ"
-        },
-        {
-          "type": "kun",
-          "reading": "いきる"
-        },
-        {
-          "type": "kun",
-          "reading": "うまれる"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "セイ",
-          "word": "先生",
-          "wordReading": "せんせい",
-          "examples": [
-            {
-              "sentence": "{{先生}}に{質問|しつもん}します。",
-              "sentenceTranslationKo": "선생님께 질문합니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "うまれる",
-          "word": "生まれる",
-          "wordReading": "うまれる",
-          "examples": [
-            {
-              "sentence": "{東京|とうきょう}で{{生まれました}}。",
-              "sentenceTranslationKo": "도쿄에서 태어났습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "先",
-      "meaningKo": "먼저 선 — 먼저, 앞",
-      "strokeCount": 6,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "セン"
-        },
-        {
-          "type": "kun",
-          "reading": "さき"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "セン",
-          "word": "先週",
-          "wordReading": "せんしゅう",
-          "examples": [
-            {
-              "sentence": "{{先週}}、{京都|きょうと}に{行|い}きました。",
-              "sentenceTranslationKo": "지난주에 교토에 갔습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "さき",
-          "word": "先",
-          "wordReading": "さき",
-          "examples": [
-            {
-              "sentence": "お{{先}}に{失礼|しつれい}します。",
-              "sentenceTranslationKo": "먼저 실례하겠습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "上",
-      "meaningKo": "윗 상 — 위, 올라가다",
-      "strokeCount": 3,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ジョウ"
-        },
-        {
-          "type": "kun",
-          "reading": "うえ"
-        },
-        {
-          "type": "kun",
-          "reading": "あげる"
-        },
-        {
-          "type": "kun",
-          "reading": "のぼる"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "うえ",
-          "word": "上",
-          "wordReading": "うえ",
-          "examples": [
-            {
-              "sentence": "{机|つくえ}の{{上}}に{本|ほん}があります。",
-              "sentenceTranslationKo": "책상 위에 책이 있습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ジョウ",
-          "word": "上手",
-          "wordReading": "じょうず",
-          "examples": [
-            {
-              "sentence": "{歌|うた}が{{上手}}ですね。",
-              "sentenceTranslationKo": "노래를 잘하시네요."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "下",
-      "meaningKo": "아래 하 — 아래, 내려가다",
-      "strokeCount": 3,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "カ"
-        },
-        {
-          "type": "on",
-          "reading": "ゲ"
-        },
-        {
-          "type": "kun",
-          "reading": "した"
-        },
-        {
-          "type": "kun",
-          "reading": "さげる"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "した",
-          "word": "下",
-          "wordReading": "した",
-          "examples": [
-            {
-              "sentence": "{椅子|いす}の{{下}}に{猫|ねこ}がいます。",
-              "sentenceTranslationKo": "의자 아래에 고양이가 있습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "カ",
-          "word": "地下",
-          "wordReading": "ちか",
-          "examples": [
-            {
-              "sentence": "{{地下}}に{駐車場|ちゅうしゃじょう}があります。",
-              "sentenceTranslationKo": "지하에 주차장이 있습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "中",
-      "meaningKo": "가운데 중 — 가운데, 안",
-      "strokeCount": 4,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "チュウ"
-        },
-        {
-          "type": "kun",
-          "reading": "なか"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "なか",
-          "word": "中",
-          "wordReading": "なか",
-          "examples": [
-            {
-              "sentence": "{箱|はこ}の{{中}}にお{菓子|かし}があります。",
-              "sentenceTranslationKo": "상자 안에 과자가 있습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "チュウ",
-          "word": "中国",
-          "wordReading": "ちゅうごく",
-          "examples": [
-            {
-              "sentence": "{彼|かれ}は{{中国}}から{来|き}ました。",
-              "sentenceTranslationKo": "그는 중국에서 왔습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "前",
-      "meaningKo": "앞 전 — 앞, 이전",
-      "strokeCount": 9,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ゼン"
-        },
-        {
-          "type": "kun",
-          "reading": "まえ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "まえ",
-          "word": "前",
-          "wordReading": "まえ",
-          "examples": [
-            {
-              "sentence": "{駅|えき}の{{前}}で{会|あ}いましょう。",
-              "sentenceTranslationKo": "역 앞에서 만납시다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ゼン",
-          "word": "午前",
-          "wordReading": "ごぜん",
-          "examples": [
-            {
-              "sentence": "{{午前}}{九時|くじ}に{始|はじ}まります。",
-              "sentenceTranslationKo": "오전 9시에 시작됩니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "後",
-      "meaningKo": "뒤 후 — 뒤, 후",
-      "strokeCount": 9,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ゴ"
-        },
-        {
-          "type": "on",
-          "reading": "コウ"
-        },
-        {
-          "type": "kun",
-          "reading": "あと"
-        },
-        {
-          "type": "kun",
-          "reading": "うしろ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ゴ",
-          "word": "午後",
-          "wordReading": "ごご",
-          "examples": [
-            {
-              "sentence": "{{午後}}{三時|さんじ}に{来|き}てください。",
-              "sentenceTranslationKo": "오후 3시에 와 주세요."
-            }
-          ]
-        },
-        {
-          "readingRef": "うしろ",
-          "word": "後ろ",
-          "wordReading": "うしろ",
-          "examples": [
-            {
-              "sentence": "{{後ろ}}を{見|み}てください。",
-              "sentenceTranslationKo": "뒤를 봐 주세요."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "北",
-      "meaningKo": "북녘 북 — 북",
-      "strokeCount": 5,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ホク"
-        },
-        {
-          "type": "kun",
-          "reading": "きた"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "きた",
-          "word": "北",
-          "wordReading": "きた",
-          "examples": [
-            {
-              "sentence": "{風|かぜ}が{{北}}から{吹|ふ}いている。",
-              "sentenceTranslationKo": "바람이 북쪽에서 분다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ホク",
-          "word": "東北",
-          "wordReading": "とうほく",
-          "examples": [
-            {
-              "sentence": "{{東北}}{地方|ちほう}は{雪|ゆき}が{多|おお}い。",
-              "sentenceTranslationKo": "도호쿠 지방은 눈이 많다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "南",
-      "meaningKo": "남녘 남 — 남",
-      "strokeCount": 9,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ナン"
-        },
-        {
-          "type": "kun",
-          "reading": "みなみ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "みなみ",
-          "word": "南",
-          "wordReading": "みなみ",
-          "examples": [
-            {
-              "sentence": "{{南}}の{島|しま}へ{行|い}きたい。",
-              "sentenceTranslationKo": "남쪽 섬에 가고 싶다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ナン",
-          "word": "南米",
-          "wordReading": "なんべい",
-          "examples": [
-            {
-              "sentence": "{{南米}}を{旅行|りょこう}したい。",
-              "sentenceTranslationKo": "남미를 여행하고 싶다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "東",
-      "meaningKo": "동녘 동 — 동",
-      "strokeCount": 8,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "トウ"
-        },
-        {
-          "type": "kun",
-          "reading": "ひがし"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "トウ",
-          "word": "東京",
-          "wordReading": "とうきょう",
-          "examples": [
-            {
-              "sentence": "{{東京}}は{人|ひと}が{多|おお}いです。",
-              "sentenceTranslationKo": "도쿄는 사람이 많습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ひがし",
-          "word": "東",
-          "wordReading": "ひがし",
-          "examples": [
-            {
-              "sentence": "{太陽|たいよう}は{{東}}から{出|で}ます。",
-              "sentenceTranslationKo": "해는 동쪽에서 뜹니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "西",
-      "meaningKo": "서녘 서 — 서",
-      "strokeCount": 6,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "セイ"
-        },
-        {
-          "type": "on",
-          "reading": "サイ"
-        },
-        {
-          "type": "kun",
-          "reading": "にし"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "にし",
-          "word": "西",
-          "wordReading": "にし",
-          "examples": [
-            {
-              "sentence": "{太陽|たいよう}は{{西}}に{沈|しず}みます。",
-              "sentenceTranslationKo": "해는 서쪽으로 집니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "セイ",
-          "word": "西洋",
-          "wordReading": "せいよう",
-          "examples": [
-            {
-              "sentence": "{{西洋}}の{文化|ぶんか}に{興味|きょうみ}があります。",
-              "sentenceTranslationKo": "서양 문화에 관심이 있습니다."
-            }
-          ]
+          "readingRef": "とも",
+          "word": "友達",
+          "wordReading": "ともだち"
         }
       ]
     },
     {
       "character": "右",
-      "meaningKo": "오른 우 — 오른쪽",
+      "meaningKo": "“오른 우”. 오른쪽",
       "strokeCount": 5,
       "readings": [
         {
@@ -1674,1434 +1536,155 @@
       ],
       "words": [
         {
+          "readingRef": "ウ",
+          "word": "右翼",
+          "wordReading": "うよく"
+        },
+        {
+          "readingRef": "ウ",
+          "word": "右派",
+          "wordReading": "うは"
+        },
+        {
+          "readingRef": "ユウ",
+          "word": "左右",
+          "wordReading": "さゆう"
+        },
+        {
           "readingRef": "みぎ",
-          "word": "右",
-          "wordReading": "みぎ",
-          "examples": [
-            {
-              "sentence": "{次|つぎ}の{角|かど}を{{右}}に{曲|ま}がってください。",
-              "sentenceTranslationKo": "다음 모퉁이를 오른쪽으로 도세요."
-            }
-          ]
+          "word": "右手",
+          "wordReading": "みぎて"
+        },
+        {
+          "readingRef": "みぎ",
+          "word": "右側",
+          "wordReading": "みぎがわ"
         }
       ]
     },
     {
-      "character": "左",
-      "meaningKo": "왼 좌 — 왼쪽",
-      "strokeCount": 5,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "サ"
-        },
-        {
-          "type": "kun",
-          "reading": "ひだり"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ひだり",
-          "word": "左",
-          "wordReading": "ひだり",
-          "examples": [
-            {
-              "sentence": "{{左}}の{手|て}を{上|あ}げてください。",
-              "sentenceTranslationKo": "왼손을 들어 주세요."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "大",
-      "meaningKo": "큰 대 — 크다, 대",
-      "strokeCount": 3,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ダイ"
-        },
-        {
-          "type": "on",
-          "reading": "タイ"
-        },
-        {
-          "type": "kun",
-          "reading": "おおきい"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "おおきい",
-          "word": "大きい",
-          "wordReading": "おおきい",
-          "examples": [
-            {
-              "sentence": "この{箱|はこ}は{{大きい}}です。",
-              "sentenceTranslationKo": "이 상자는 큽니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ダイ",
-          "word": "大学",
-          "wordReading": "だいがく",
-          "examples": [
-            {
-              "sentence": "{兄|あに}は{{大学}}に{行|い}っています。",
-              "sentenceTranslationKo": "형은 대학에 다닙니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "小",
-      "meaningKo": "작을 소 — 작다, 소",
-      "strokeCount": 3,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ショウ"
-        },
-        {
-          "type": "kun",
-          "reading": "ちいさい"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ちいさい",
-          "word": "小さい",
-          "wordReading": "ちいさい",
-          "examples": [
-            {
-              "sentence": "{{小さい}}{犬|いぬ}がかわいい。",
-              "sentenceTranslationKo": "작은 강아지가 귀엽다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ショウ",
-          "word": "小学校",
-          "wordReading": "しょうがっこう",
-          "examples": [
-            {
-              "sentence": "{弟|おとうと}は{{小学校}}に{通|かよ}っています。",
-              "sentenceTranslationKo": "남동생은 초등학교에 다닙니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "高",
-      "meaningKo": "높을 고 — 높다, 비싸다",
-      "strokeCount": 10,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "コウ"
-        },
-        {
-          "type": "kun",
-          "reading": "たかい"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "たかい",
-          "word": "高い",
-          "wordReading": "たかい",
-          "examples": [
-            {
-              "sentence": "この{時計|とけい}は{{高い}}です。",
-              "sentenceTranslationKo": "이 시계는 비쌉니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "コウ",
-          "word": "高校",
-          "wordReading": "こうこう",
-          "examples": [
-            {
-              "sentence": "{姉|あね}は{{高校}}の{先生|せんせい}です。",
-              "sentenceTranslationKo": "누나는 고등학교 선생님입니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "安",
-      "meaningKo": "편안할 안 — 싸다, 편안하다",
+      "character": "名",
+      "meaningKo": "“이름 명”. 이름",
       "strokeCount": 6,
       "readings": [
         {
           "type": "on",
-          "reading": "アン"
+          "reading": "ミョウ"
         },
-        {
-          "type": "kun",
-          "reading": "やすい"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "やすい",
-          "word": "安い",
-          "wordReading": "やすい",
-          "examples": [
-            {
-              "sentence": "この{店|みせ}は{{安い}}です。",
-              "sentenceTranslationKo": "이 가게는 쌉니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "アン",
-          "word": "安心",
-          "wordReading": "あんしん",
-          "examples": [
-            {
-              "sentence": "{聞|き}いて{{安心}}しました。",
-              "sentenceTranslationKo": "듣고 안심했습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "新",
-      "meaningKo": "새 신 — 새롭다",
-      "strokeCount": 13,
-      "readings": [
         {
           "type": "on",
-          "reading": "シン"
+          "reading": "メイ"
         },
         {
           "type": "kun",
-          "reading": "あたらしい"
+          "reading": "な"
         }
       ],
       "words": [
         {
-          "readingRef": "あたらしい",
-          "word": "新しい",
-          "wordReading": "あたらしい",
-          "examples": [
-            {
-              "sentence": "{{新しい}}{靴|くつ}を{買|か}いました。",
-              "sentenceTranslationKo": "새 신발을 샀습니다."
-            }
-          ]
+          "readingRef": "メイ",
+          "word": "名人",
+          "wordReading": "めいじん"
         },
         {
-          "readingRef": "シン",
-          "word": "新聞",
-          "wordReading": "しんぶん",
-          "examples": [
-            {
-              "sentence": "{毎朝|まいあさ}、{{新聞}}を{読|よ}みます。",
-              "sentenceTranslationKo": "매일 아침 신문을 읽습니다."
-            }
-          ]
+          "readingRef": "メイ",
+          "word": "有名",
+          "wordReading": "ゆうめい"
+        },
+        {
+          "readingRef": "メイ",
+          "word": "名誉",
+          "wordReading": "めいよ"
+        },
+        {
+          "readingRef": "ミョウ",
+          "word": "本名",
+          "wordReading": "ほんみょう"
+        },
+        {
+          "readingRef": "ミョウ",
+          "word": "異名",
+          "wordReading": "いみょう"
+        },
+        {
+          "readingRef": "な",
+          "word": "名前",
+          "wordReading": "なまえ"
+        },
+        {
+          "readingRef": "な",
+          "word": "名付",
+          "wordReading": "なづ"
         }
       ]
     },
     {
-      "character": "古",
-      "meaningKo": "옛 고 — 낡다, 오래되다",
+      "character": "四",
+      "meaningKo": "“넷 사”. 넷",
       "strokeCount": 5,
       "readings": [
         {
           "type": "on",
-          "reading": "コ"
+          "reading": "シ"
         },
         {
           "type": "kun",
-          "reading": "ふるい"
+          "reading": "よ"
+        },
+        {
+          "type": "kun",
+          "reading": "よつ"
+        },
+        {
+          "type": "kun",
+          "reading": "よっつ"
+        },
+        {
+          "type": "kun",
+          "reading": "よん"
         }
       ],
       "words": [
         {
-          "readingRef": "ふるい",
-          "word": "古い",
-          "wordReading": "ふるい",
-          "examples": [
-            {
-              "sentence": "この{本|ほん}は{{古い}}です。",
-              "sentenceTranslationKo": "이 책은 낡았습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "長",
-      "meaningKo": "길 장 — 길다, 우두머리",
-      "strokeCount": 8,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "チョウ"
+          "readingRef": "シ",
+          "word": "四月",
+          "wordReading": "しがつ"
         },
         {
-          "type": "kun",
-          "reading": "ながい"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ながい",
-          "word": "長い",
-          "wordReading": "ながい",
-          "examples": [
-            {
-              "sentence": "この{川|かわ}は{{長い}}です。",
-              "sentenceTranslationKo": "이 강은 깁니다."
-            }
-          ]
+          "readingRef": "よ",
+          "word": "四人",
+          "wordReading": "よにん"
         },
         {
-          "readingRef": "チョウ",
-          "word": "社長",
-          "wordReading": "しゃちょう",
-          "examples": [
-            {
-              "sentence": "{{社長}}と{話|はな}しました。",
-              "sentenceTranslationKo": "사장님과 이야기했습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "多",
-      "meaningKo": "많을 다 — 많다",
-      "strokeCount": 6,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "タ"
+          "readingRef": "よ",
+          "word": "四千",
+          "wordReading": "よんせん"
         },
         {
-          "type": "kun",
-          "reading": "おおい"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "おおい",
-          "word": "多い",
-          "wordReading": "おおい",
-          "examples": [
-            {
-              "sentence": "この{町|まち}は{人|ひと}が{{多い}}です。",
-              "sentenceTranslationKo": "이 마을은 사람이 많습니다."
-            }
-          ]
+          "readingRef": "よ",
+          "word": "四",
+          "wordReading": "よっ"
         },
         {
-          "readingRef": "タ",
-          "word": "多分",
-          "wordReading": "たぶん",
-          "examples": [
-            {
-              "sentence": "{{多分}}、{雨|あめ}が{降|ふ}ります。",
-              "sentenceTranslationKo": "아마 비가 올 겁니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "少",
-      "meaningKo": "적을 소 — 적다, 조금",
-      "strokeCount": 4,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ショウ"
+          "readingRef": "よ",
+          "word": "分",
+          "wordReading": "わ"
         },
         {
-          "type": "kun",
-          "reading": "すくない"
+          "readingRef": "よ",
+          "word": "四",
+          "wordReading": "よ"
         },
         {
-          "type": "kun",
-          "reading": "すこし"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "すこし",
-          "word": "少し",
-          "wordReading": "すこし",
-          "examples": [
-            {
-              "sentence": "{{少し}}{疲|つか}れました。",
-              "sentenceTranslationKo": "조금 피곤합니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "すくない",
-          "word": "少ない",
-          "wordReading": "すくない",
-          "examples": [
-            {
-              "sentence": "{今日|きょう}は{人|ひと}が{{少ない}}。",
-              "sentenceTranslationKo": "오늘은 사람이 적다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "山",
-      "meaningKo": "메 산 — 산",
-      "strokeCount": 3,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "サン"
-        },
-        {
-          "type": "kun",
-          "reading": "やま"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "やま",
-          "word": "山",
-          "wordReading": "やま",
-          "examples": [
-            {
-              "sentence": "あの{{山}}は{高|たか}いです。",
-              "sentenceTranslationKo": "저 산은 높습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "サン",
-          "word": "富士山",
-          "wordReading": "ふじさん",
-          "examples": [
-            {
-              "sentence": "{{富士山}}は{美|うつく}しい。",
-              "sentenceTranslationKo": "후지산은 아름답다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "川",
-      "meaningKo": "내 천 — 강, 시내",
-      "strokeCount": 3,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "セン"
-        },
-        {
-          "type": "kun",
-          "reading": "かわ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "かわ",
-          "word": "川",
-          "wordReading": "かわ",
-          "examples": [
-            {
-              "sentence": "{{川}}で{泳|およ}ぎたい。",
-              "sentenceTranslationKo": "강에서 헤엄치고 싶다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "田",
-      "meaningKo": "밭 전 — 논",
-      "strokeCount": 5,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "デン"
-        },
-        {
-          "type": "kun",
-          "reading": "た"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "た",
-          "word": "田中",
-          "wordReading": "たなか",
-          "examples": [
-            {
-              "sentence": "{{田中}}さんは{私|わたし}の{友達|ともだち}です。",
-              "sentenceTranslationKo": "다나카 씨는 제 친구입니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "雨",
-      "meaningKo": "비 우 — 비",
-      "strokeCount": 8,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ウ"
-        },
-        {
-          "type": "kun",
-          "reading": "あめ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "あめ",
-          "word": "雨",
-          "wordReading": "あめ",
-          "examples": [
-            {
-              "sentence": "{今日|きょう}は{{雨}}です。",
-              "sentenceTranslationKo": "오늘은 비입니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "天",
-      "meaningKo": "하늘 천 — 하늘",
-      "strokeCount": 4,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "テン"
-        },
-        {
-          "type": "kun",
-          "reading": "あめ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "テン",
-          "word": "天気",
-          "wordReading": "てんき",
-          "examples": [
-            {
-              "sentence": "{今日|きょう}は{{天気}}がいい。",
-              "sentenceTranslationKo": "오늘은 날씨가 좋다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "気",
-      "meaningKo": "기운 기 — 기운, 마음",
-      "strokeCount": 6,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "キ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "キ",
-          "word": "元気",
-          "wordReading": "げんき",
-          "examples": [
-            {
-              "sentence": "お{{元気}}ですか。",
-              "sentenceTranslationKo": "잘 지내십니까?"
-            }
-          ]
-        },
-        {
-          "readingRef": "キ",
-          "word": "天気",
-          "wordReading": "てんき",
-          "examples": [
-            {
-              "sentence": "{明日|あした}の{{天気}}はどうですか。",
-              "sentenceTranslationKo": "내일 날씨는 어떻습니까?"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "花",
-      "meaningKo": "꽃 화 — 꽃",
-      "strokeCount": 7,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "カ"
-        },
-        {
-          "type": "kun",
-          "reading": "はな"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "はな",
-          "word": "花",
-          "wordReading": "はな",
-          "examples": [
-            {
-              "sentence": "{庭|にわ}にきれいな{{花}}が{咲|さ}いた。",
-              "sentenceTranslationKo": "마당에 예쁜 꽃이 피었다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "木",
-      "meaningKo": "나무 목 — 나무, 목요일",
-      "strokeCount": 4,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "モク"
-        },
-        {
-          "type": "on",
-          "reading": "ボク"
-        },
-        {
-          "type": "kun",
-          "reading": "き"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "き",
-          "word": "木",
-          "wordReading": "き",
-          "examples": [
-            {
-              "sentence": "{庭|にわ}に{大|おお}きい{{木}}があります。",
-              "sentenceTranslationKo": "마당에 큰 나무가 있습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "モク",
-          "word": "木曜日",
-          "wordReading": "もくようび",
-          "examples": [
-            {
-              "sentence": "{{木曜日}}に{会議|かいぎ}があります。",
-              "sentenceTranslationKo": "목요일에 회의가 있습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "水",
-      "meaningKo": "물 수 — 물, 수요일",
-      "strokeCount": 4,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "スイ"
-        },
-        {
-          "type": "kun",
-          "reading": "みず"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "みず",
-          "word": "水",
-          "wordReading": "みず",
-          "examples": [
-            {
-              "sentence": "{冷|つめ}たい{{水}}を{飲|の}みたい。",
-              "sentenceTranslationKo": "차가운 물을 마시고 싶다."
-            }
-          ]
-        },
-        {
-          "readingRef": "スイ",
-          "word": "水曜日",
-          "wordReading": "すいようび",
-          "examples": [
-            {
-              "sentence": "{{水曜日}}は{休|やす}みです。",
-              "sentenceTranslationKo": "수요일은 휴일입니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "火",
-      "meaningKo": "불 화 — 불, 화요일",
-      "strokeCount": 4,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "カ"
-        },
-        {
-          "type": "kun",
-          "reading": "ひ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ひ",
-          "word": "火",
-          "wordReading": "ひ",
-          "examples": [
-            {
-              "sentence": "{{火}}に{気|き}をつけてください。",
-              "sentenceTranslationKo": "불에 조심해 주세요."
-            }
-          ]
-        },
-        {
-          "readingRef": "カ",
-          "word": "火曜日",
-          "wordReading": "かようび",
-          "examples": [
-            {
-              "sentence": "{{火曜日}}にテストがある。",
-              "sentenceTranslationKo": "화요일에 시험이 있다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "土",
-      "meaningKo": "흙 토 — 흙, 토요일",
-      "strokeCount": 3,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ド"
-        },
-        {
-          "type": "on",
-          "reading": "ト"
-        },
-        {
-          "type": "kun",
-          "reading": "つち"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ド",
-          "word": "土曜日",
-          "wordReading": "どようび",
-          "examples": [
-            {
-              "sentence": "{{土曜日}}にデパートに{行|い}きます。",
-              "sentenceTranslationKo": "토요일에 백화점에 갑니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "つち",
-          "word": "土",
-          "wordReading": "つち",
-          "examples": [
-            {
-              "sentence": "{雨|あめ}で{{土}}がぬれた。",
-              "sentenceTranslationKo": "비로 흙이 젖었다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "金",
-      "meaningKo": "쇠 금 — 금, 돈, 금요일",
-      "strokeCount": 8,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "キン"
-        },
-        {
-          "type": "kun",
-          "reading": "かね"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "かね",
-          "word": "お金",
-          "wordReading": "おかね",
-          "examples": [
-            {
-              "sentence": "{{お金}}がありません。",
-              "sentenceTranslationKo": "돈이 없습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "キン",
-          "word": "金曜日",
-          "wordReading": "きんようび",
-          "examples": [
-            {
-              "sentence": "{{金曜日}}の{夜|よる}、{飲|の}みに{行|い}きます。",
-              "sentenceTranslationKo": "금요일 밤에 한잔하러 갑니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "茶",
-      "meaningKo": "차 차 — 차",
-      "strokeCount": 9,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "チャ"
-        },
-        {
-          "type": "on",
-          "reading": "サ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "チャ",
-          "word": "お茶",
-          "wordReading": "おちゃ",
-          "examples": [
-            {
-              "sentence": "{{お茶}}をどうぞ。",
-              "sentenceTranslationKo": "차 드세요."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "牛",
-      "meaningKo": "소 우 — 소",
-      "strokeCount": 4,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ギュウ"
-        },
-        {
-          "type": "kun",
-          "reading": "うし"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ギュウ",
-          "word": "牛肉",
-          "wordReading": "ぎゅうにく",
-          "examples": [
-            {
-              "sentence": "{{牛肉}}を{買|か}いました。",
-              "sentenceTranslationKo": "소고기를 샀습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "うし",
-          "word": "牛",
-          "wordReading": "うし",
-          "examples": [
-            {
-              "sentence": "{牧場|ぼくじょう}に{{牛}}がいます。",
-              "sentenceTranslationKo": "목장에 소가 있습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "魚",
-      "meaningKo": "고기 어 — 물고기, 생선",
-      "strokeCount": 11,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ギョ"
-        },
-        {
-          "type": "kun",
-          "reading": "さかな"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "さかな",
-          "word": "魚",
-          "wordReading": "さかな",
-          "examples": [
-            {
-              "sentence": "{{魚}}が{好|す}きです。",
-              "sentenceTranslationKo": "생선을 좋아합니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "食",
-      "meaningKo": "먹을 식 — 먹다",
-      "strokeCount": 9,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ショク"
-        },
-        {
-          "type": "kun",
-          "reading": "たべる"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "たべる",
-          "word": "食べる",
-          "wordReading": "たべる",
-          "examples": [
-            {
-              "sentence": "{毎朝|まいあさ}パンを{{食べます}}。",
-              "sentenceTranslationKo": "매일 아침 빵을 먹습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ショク",
-          "word": "食事",
-          "wordReading": "しょくじ",
-          "examples": [
-            {
-              "sentence": "{{食事}}はもう{済|す}みました。",
-              "sentenceTranslationKo": "식사는 이미 마쳤습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "飲",
-      "meaningKo": "마실 음 — 마시다",
-      "strokeCount": 12,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "イン"
-        },
-        {
-          "type": "kun",
-          "reading": "のむ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "のむ",
-          "word": "飲む",
-          "wordReading": "のむ",
-          "examples": [
-            {
-              "sentence": "コーヒーを{{飲みます}}。",
-              "sentenceTranslationKo": "커피를 마십니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "イン",
-          "word": "飲料",
-          "wordReading": "いんりょう",
-          "examples": [
-            {
-              "sentence": "{{飲料}}{水|すい}を{持|も}ってきました。",
-              "sentenceTranslationKo": "음료수를 가져왔습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "書",
-      "meaningKo": "쓸 서 — 쓰다, 책",
-      "strokeCount": 10,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ショ"
-        },
-        {
-          "type": "kun",
-          "reading": "かく"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "かく",
-          "word": "書く",
-          "wordReading": "かく",
-          "examples": [
-            {
-              "sentence": "{手紙|てがみ}を{{書きます}}。",
-              "sentenceTranslationKo": "편지를 씁니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ショ",
-          "word": "図書館",
-          "wordReading": "としょかん",
-          "examples": [
-            {
-              "sentence": "{{図書館}}で{勉強|べんきょう}します。",
-              "sentenceTranslationKo": "도서관에서 공부합니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "読",
-      "meaningKo": "읽을 독 — 읽다",
-      "strokeCount": 14,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ドク"
-        },
-        {
-          "type": "kun",
-          "reading": "よむ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "よむ",
-          "word": "読む",
-          "wordReading": "よむ",
-          "examples": [
-            {
-              "sentence": "{本|ほん}を{{読みます}}。",
-              "sentenceTranslationKo": "책을 읽습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ドク",
-          "word": "読書",
-          "wordReading": "どくしょ",
-          "examples": [
-            {
-              "sentence": "{趣味|しゅみ}は{{読書}}です。",
-              "sentenceTranslationKo": "취미는 독서입니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "見",
-      "meaningKo": "볼 견 — 보다",
-      "strokeCount": 7,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ケン"
-        },
-        {
-          "type": "kun",
-          "reading": "みる"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "みる",
-          "word": "見る",
-          "wordReading": "みる",
-          "examples": [
-            {
-              "sentence": "テレビを{{見ます}}。",
-              "sentenceTranslationKo": "텔레비전을 봅니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "行",
-      "meaningKo": "갈 행 — 가다, 행하다",
-      "strokeCount": 6,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "コウ"
-        },
-        {
-          "type": "kun",
-          "reading": "いく"
-        },
-        {
-          "type": "kun",
-          "reading": "おこなう"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "いく",
-          "word": "行く",
-          "wordReading": "いく",
-          "examples": [
-            {
-              "sentence": "{学校|がっこう}に{{行きます}}。",
-              "sentenceTranslationKo": "학교에 갑니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "コウ",
-          "word": "銀行",
-          "wordReading": "ぎんこう",
-          "examples": [
-            {
-              "sentence": "{{銀行}}でお{金|かね}を{下|お}ろしました。",
-              "sentenceTranslationKo": "은행에서 돈을 찾았습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "来",
-      "meaningKo": "올 래 — 오다",
-      "strokeCount": 7,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ライ"
-        },
-        {
-          "type": "kun",
-          "reading": "くる"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "くる",
-          "word": "来る",
-          "wordReading": "くる",
-          "examples": [
-            {
-              "sentence": "{明日|あした}、{友達|ともだち}が{{来ます}}。",
-              "sentenceTranslationKo": "내일 친구가 옵니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ライ",
-          "word": "来週",
-          "wordReading": "らいしゅう",
-          "examples": [
-            {
-              "sentence": "{{来週}}、{試験|しけん}があります。",
-              "sentenceTranslationKo": "다음 주에 시험이 있습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "出",
-      "meaningKo": "날 출 — 나가다, 내다",
-      "strokeCount": 5,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "シュツ"
-        },
-        {
-          "type": "kun",
-          "reading": "でる"
-        },
-        {
-          "type": "kun",
-          "reading": "だす"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "でる",
-          "word": "出る",
-          "wordReading": "でる",
-          "examples": [
-            {
-              "sentence": "{七時|しちじ}に{家|いえ}を{{出ます}}。",
-              "sentenceTranslationKo": "7시에 집을 나섭니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "シュツ",
-          "word": "出口",
-          "wordReading": "でぐち",
-          "examples": [
-            {
-              "sentence": "{{出口}}はあちらです。",
-              "sentenceTranslationKo": "출구는 저쪽입니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "入",
-      "meaningKo": "들 입 — 들어가다, 넣다",
-      "strokeCount": 2,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ニュウ"
-        },
-        {
-          "type": "kun",
-          "reading": "はいる"
-        },
-        {
-          "type": "kun",
-          "reading": "いれる"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "はいる",
-          "word": "入る",
-          "wordReading": "はいる",
-          "examples": [
-            {
-              "sentence": "{部屋|へや}に{{入ります}}。",
-              "sentenceTranslationKo": "방에 들어갑니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ニュウ",
-          "word": "入学",
-          "wordReading": "にゅうがく",
-          "examples": [
-            {
-              "sentence": "{今年|ことし}、{大学|だいがく}に{{入学}}した。",
-              "sentenceTranslationKo": "올해 대학에 입학했다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "立",
-      "meaningKo": "설 립 — 서다",
-      "strokeCount": 5,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "リツ"
-        },
-        {
-          "type": "kun",
-          "reading": "たつ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "たつ",
-          "word": "立つ",
-          "wordReading": "たつ",
-          "examples": [
-            {
-              "sentence": "ここに{{立って}}ください。",
-              "sentenceTranslationKo": "여기 서 주세요."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "休",
-      "meaningKo": "쉴 휴 — 쉬다",
-      "strokeCount": 6,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "キュウ"
-        },
-        {
-          "type": "kun",
-          "reading": "やすむ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "やすむ",
-          "word": "休む",
-          "wordReading": "やすむ",
-          "examples": [
-            {
-              "sentence": "{今日|きょう}は{会社|かいしゃ}を{{休みます}}。",
-              "sentenceTranslationKo": "오늘은 회사를 쉽니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "キュウ",
-          "word": "休日",
-          "wordReading": "きゅうじつ",
-          "examples": [
-            {
-              "sentence": "{{休日}}は{家|いえ}でゆっくりします。",
-              "sentenceTranslationKo": "휴일은 집에서 푹 쉽니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "言",
-      "meaningKo": "말씀 언 — 말하다, 말",
-      "strokeCount": 7,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ゲン"
-        },
-        {
-          "type": "kun",
-          "reading": "いう"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "いう",
-          "word": "言う",
-          "wordReading": "いう",
-          "examples": [
-            {
-              "sentence": "もう{一度|いちど}{{言って}}ください。",
-              "sentenceTranslationKo": "다시 한 번 말해 주세요."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "語",
-      "meaningKo": "말씀 어 — 말, 언어",
-      "strokeCount": 14,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ゴ"
-        },
-        {
-          "type": "kun",
-          "reading": "かたる"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "ゴ",
-          "word": "日本語",
-          "wordReading": "にほんご",
-          "examples": [
-            {
-              "sentence": "{{日本語}}を{勉強|べんきょう}しています。",
-              "sentenceTranslationKo": "일본어를 공부하고 있습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "ゴ",
-          "word": "英語",
-          "wordReading": "えいご",
-          "examples": [
-            {
-              "sentence": "{{英語}}が{話|はな}せます。",
-              "sentenceTranslationKo": "영어를 할 수 있습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "話",
-      "meaningKo": "말씀 화 — 이야기하다",
-      "strokeCount": 13,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ワ"
-        },
-        {
-          "type": "kun",
-          "reading": "はなす"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "はなす",
-          "word": "話す",
-          "wordReading": "はなす",
-          "examples": [
-            {
-              "sentence": "ゆっくり{{話して}}ください。",
-              "sentenceTranslationKo": "천천히 말해 주세요."
-            }
-          ]
-        },
-        {
-          "readingRef": "ワ",
-          "word": "電話",
-          "wordReading": "でんわ",
-          "examples": [
-            {
-              "sentence": "{母|はは}に{{電話}}をかけます。",
-              "sentenceTranslationKo": "어머니께 전화를 겁니다."
-            }
-          ]
+          "readingRef": "よ",
+          "word": "角",
+          "wordReading": "かど"
         }
       ]
     },
     {
       "character": "国",
-      "meaningKo": "나라 국 — 나라",
+      "meaningKo": "“나라 국”. 나라, 국가",
       "strokeCount": 8,
       "readings": [
         {
@@ -3115,241 +1698,208 @@
       ],
       "words": [
         {
-          "readingRef": "くに",
-          "word": "国",
-          "wordReading": "くに",
-          "examples": [
-            {
-              "sentence": "あなたの{{国}}はどこですか。",
-              "sentenceTranslationKo": "당신의 나라는 어디입니까?"
-            }
-          ]
+          "readingRef": "コク",
+          "word": "国王",
+          "wordReading": "こくおう"
         },
         {
           "readingRef": "コク",
-          "word": "中国",
-          "wordReading": "ちゅうごく",
-          "examples": [
-            {
-              "sentence": "{彼|かれ}は{{中国}}{出身|しゅっしん}です。",
-              "sentenceTranslationKo": "그는 중국 출신입니다."
-            }
-          ]
+          "word": "国土",
+          "wordReading": "こくど"
+        },
+        {
+          "readingRef": "くに",
+          "word": "国",
+          "wordReading": "くに"
+        },
+        {
+          "readingRef": "くに",
+          "word": "島国",
+          "wordReading": "しまぐに"
         }
       ]
     },
     {
-      "character": "名",
-      "meaningKo": "이름 명 — 이름",
-      "strokeCount": 6,
+      "character": "土",
+      "meaningKo": "“흙 토”. 흙, 땅",
+      "strokeCount": 3,
       "readings": [
         {
           "type": "on",
-          "reading": "メイ"
+          "reading": "ト"
         },
         {
           "type": "on",
-          "reading": "ミョウ"
+          "reading": "ド"
         },
         {
           "type": "kun",
-          "reading": "な"
+          "reading": "つち"
         }
       ],
       "words": [
         {
-          "readingRef": "な",
-          "word": "名前",
-          "wordReading": "なまえ",
-          "examples": [
-            {
-              "sentence": "お{{名前}}は{何|なん}ですか。",
-              "sentenceTranslationKo": "성함이 어떻게 되십니까?"
-            }
-          ]
+          "readingRef": "ド",
+          "word": "土曜日",
+          "wordReading": "どようび"
         },
         {
-          "readingRef": "メイ",
-          "word": "有名",
-          "wordReading": "ゆうめい",
-          "examples": [
-            {
-              "sentence": "この{店|みせ}は{{有名}}です。",
-              "sentenceTranslationKo": "이 가게는 유명합니다."
-            }
-          ]
+          "readingRef": "ド",
+          "word": "土木",
+          "wordReading": "どぼく"
+        },
+        {
+          "readingRef": "ド",
+          "word": "国土",
+          "wordReading": "こくど"
+        },
+        {
+          "readingRef": "ド",
+          "word": "本土",
+          "wordReading": "ほんど"
+        },
+        {
+          "readingRef": "ト",
+          "word": "土地",
+          "wordReading": "とち"
+        },
+        {
+          "readingRef": "つち",
+          "word": "土",
+          "wordReading": "つち"
+        },
+        {
+          "readingRef": "つち",
+          "word": "土色",
+          "wordReading": "つちいろ"
         }
       ]
     },
     {
-      "character": "車",
-      "meaningKo": "수레 차 — 차, 자동차",
-      "strokeCount": 7,
+      "character": "外",
+      "meaningKo": "“바깥 외”. 바깥",
+      "strokeCount": 5,
       "readings": [
         {
           "type": "on",
-          "reading": "シャ"
+          "reading": "ガイ"
+        },
+        {
+          "type": "on",
+          "reading": "ゲ"
         },
         {
           "type": "kun",
-          "reading": "くるま"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "くるま",
-          "word": "車",
-          "wordReading": "くるま",
-          "examples": [
-            {
-              "sentence": "{新|あたら}しい{{車}}を{買|か}いました。",
-              "sentenceTranslationKo": "새 차를 샀습니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "シャ",
-          "word": "電車",
-          "wordReading": "でんしゃ",
-          "examples": [
-            {
-              "sentence": "{{電車}}で{会社|かいしゃ}に{行|い}きます。",
-              "sentenceTranslationKo": "전철로 회사에 갑니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "駅",
-      "meaningKo": "역 역 — 역",
-      "strokeCount": 14,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "エキ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "エキ",
-          "word": "駅",
-          "wordReading": "えき",
-          "examples": [
-            {
-              "sentence": "{{駅}}まで{歩|ある}きました。",
-              "sentenceTranslationKo": "역까지 걸었습니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "電",
-      "meaningKo": "번개 전 — 전기",
-      "strokeCount": 13,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "デン"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "デン",
-          "word": "電気",
-          "wordReading": "でんき",
-          "examples": [
-            {
-              "sentence": "{{電気}}を{消|け}してください。",
-              "sentenceTranslationKo": "전기를 꺼 주세요."
-            }
-          ]
-        },
-        {
-          "readingRef": "デン",
-          "word": "電話",
-          "wordReading": "でんわ",
-          "examples": [
-            {
-              "sentence": "{{電話}}をしてもいいですか。",
-              "sentenceTranslationKo": "전화해도 될까요?"
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "道",
-      "meaningKo": "길 도 — 길, 도",
-      "strokeCount": 12,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ドウ"
+          "reading": "そと"
         },
         {
           "type": "kun",
-          "reading": "みち"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "みち",
-          "word": "道",
-          "wordReading": "みち",
-          "examples": [
-            {
-              "sentence": "この{{道}}はどこへ{行|い}きますか。",
-              "sentenceTranslationKo": "이 길은 어디로 갑니까?"
-            }
-          ]
-        },
-        {
-          "readingRef": "ドウ",
-          "word": "道路",
-          "wordReading": "どうろ",
-          "examples": [
-            {
-              "sentence": "{{道路}}が{混|こ}んでいます。",
-              "sentenceTranslationKo": "도로가 막힙니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "寺",
-      "meaningKo": "절 사 — 절",
-      "strokeCount": 6,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ジ"
+          "reading": "と"
         },
         {
           "type": "kun",
-          "reading": "てら"
+          "reading": "はずす"
+        },
+        {
+          "type": "kun",
+          "reading": "はずれる"
+        },
+        {
+          "type": "kun",
+          "reading": "ほか"
         }
       ],
       "words": [
         {
-          "readingRef": "てら",
-          "word": "お寺",
-          "wordReading": "おてら",
-          "examples": [
-            {
-              "sentence": "{京都|きょうと}には{{お寺}}がたくさんあります。",
-              "sentenceTranslationKo": "교토에는 절이 많습니다."
-            }
-          ]
+          "readingRef": "ガイ",
+          "word": "外国",
+          "wordReading": "がいこく"
+        },
+        {
+          "readingRef": "ガイ",
+          "word": "海外",
+          "wordReading": "かいがい"
+        },
+        {
+          "readingRef": "ゲ",
+          "word": "外科",
+          "wordReading": "げか"
         }
       ]
     },
     {
-      "character": "店",
-      "meaningKo": "가게 점 — 가게",
-      "strokeCount": 8,
+      "character": "大",
+      "meaningKo": "“클 대”. 크다",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "タイ"
+        },
+        {
+          "type": "on",
+          "reading": "ダイ"
+        },
+        {
+          "type": "kun",
+          "reading": "おおいに"
+        },
+        {
+          "type": "kun",
+          "reading": "おお"
+        },
+        {
+          "type": "kun",
+          "reading": "おおきい"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ダイ",
+          "word": "大学",
+          "wordReading": "だいがく"
+        },
+        {
+          "readingRef": "ダイ",
+          "word": "大地",
+          "wordReading": "だいち"
+        },
+        {
+          "readingRef": "タイ",
+          "word": "大会",
+          "wordReading": "たいかい"
+        },
+        {
+          "readingRef": "おお",
+          "word": "大雨",
+          "wordReading": "おおあめ"
+        },
+        {
+          "readingRef": "おお",
+          "word": "大昔",
+          "wordReading": "おおむかし"
+        },
+        {
+          "readingRef": "おお",
+          "word": "大",
+          "wordReading": "おお"
+        },
+        {
+          "readingRef": "おお",
+          "word": "音",
+          "wordReading": "おと"
+        },
+        {
+          "readingRef": "おお",
+          "word": "喜",
+          "wordReading": "よろこ"
+        }
+      ]
+    },
+    {
+      "character": "天",
+      "meaningKo": "“하늘 천”. 하늘",
+      "strokeCount": 4,
       "readings": [
         {
           "type": "on",
@@ -3357,128 +1907,808 @@
         },
         {
           "type": "kun",
-          "reading": "みせ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "みせ",
-          "word": "店",
-          "wordReading": "みせ",
-          "examples": [
-            {
-              "sentence": "あの{{店}}は{安|やす}いです。",
-              "sentenceTranslationKo": "저 가게는 쌉니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "テン",
-          "word": "店員",
-          "wordReading": "てんいん",
-          "examples": [
-            {
-              "sentence": "{{店員}}に{聞|き}いてください。",
-              "sentenceTranslationKo": "점원에게 물어보세요."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "校",
-      "meaningKo": "학교 교 — 학교",
-      "strokeCount": 10,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "コウ"
-        }
-      ],
-      "words": [
-        {
-          "readingRef": "コウ",
-          "word": "学校",
-          "wordReading": "がっこう",
-          "examples": [
-            {
-              "sentence": "{毎日|まいにち}{{学校}}に{通|かよ}っています。",
-              "sentenceTranslationKo": "매일 학교에 다닙니다."
-            }
-          ]
-        },
-        {
-          "readingRef": "コウ",
-          "word": "高校",
-          "wordReading": "こうこう",
-          "examples": [
-            {
-              "sentence": "{弟|おとうと}は{{高校}}{生|せい}です。",
-              "sentenceTranslationKo": "남동생은 고등학생입니다."
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "character": "白",
-      "meaningKo": "흰 백 — 희다",
-      "strokeCount": 5,
-      "readings": [
-        {
-          "type": "on",
-          "reading": "ハク"
+          "reading": "あま"
         },
         {
           "type": "kun",
-          "reading": "しろい"
+          "reading": "あまつ"
+        },
+        {
+          "type": "kun",
+          "reading": "あめ"
         }
       ],
       "words": [
         {
-          "readingRef": "しろい",
-          "word": "白い",
-          "wordReading": "しろい",
-          "examples": [
-            {
-              "sentence": "{{白い}}{花|はな}が{好|す}きです。",
-              "sentenceTranslationKo": "하얀 꽃을 좋아합니다."
-            }
-          ]
+          "readingRef": "テン",
+          "word": "天下",
+          "wordReading": "てんか"
+        },
+        {
+          "readingRef": "テン",
+          "word": "天然",
+          "wordReading": "てんねん"
+        },
+        {
+          "readingRef": "あめ",
+          "word": "天地",
+          "wordReading": "あめつち"
+        },
+        {
+          "readingRef": "あま",
+          "word": "天下",
+          "wordReading": "あまくだ"
         }
       ]
     },
     {
-      "character": "私",
-      "meaningKo": "사사 사 — 나, 저",
-      "strokeCount": 7,
+      "character": "女",
+      "meaningKo": "“계집 녀”. 여자",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジョ"
+        },
+        {
+          "type": "on",
+          "reading": "ニョ"
+        },
+        {
+          "type": "on",
+          "reading": "ニョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "おんな"
+        },
+        {
+          "type": "kun",
+          "reading": "め"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ジョ",
+          "word": "男女",
+          "wordReading": "だんじょ"
+        },
+        {
+          "readingRef": "ジョ",
+          "word": "女子",
+          "wordReading": "じょし"
+        },
+        {
+          "readingRef": "ジョ",
+          "word": "少女",
+          "wordReading": "しょうじょ"
+        },
+        {
+          "readingRef": "ニョ",
+          "word": "善男善女",
+          "wordReading": "ぜんなんぜんにょ"
+        },
+        {
+          "readingRef": "ニョ",
+          "word": "女房",
+          "wordReading": "にょうぼう"
+        },
+        {
+          "readingRef": "おんな",
+          "word": "女",
+          "wordReading": "おんな"
+        },
+        {
+          "readingRef": "おんな",
+          "word": "女心",
+          "wordReading": "おんなごころ"
+        },
+        {
+          "readingRef": "め",
+          "word": "女々",
+          "wordReading": "めめ"
+        }
+      ]
+    },
+    {
+      "character": "子",
+      "meaningKo": "“아들 자”. 아이",
+      "strokeCount": 3,
       "readings": [
         {
           "type": "on",
           "reading": "シ"
         },
         {
+          "type": "on",
+          "reading": "ス"
+        },
+        {
+          "type": "on",
+          "reading": "ツ"
+        },
+        {
           "type": "kun",
-          "reading": "わたし"
+          "reading": "こ"
+        },
+        {
+          "type": "kun",
+          "reading": "ね"
         }
       ],
       "words": [
         {
-          "readingRef": "わたし",
-          "word": "私",
-          "wordReading": "わたし",
-          "examples": [
-            {
-              "sentence": "{{私}}は{学生|がくせい}です。",
-              "sentenceTranslationKo": "저는 학생입니다."
-            }
-          ]
+          "readingRef": "シ",
+          "word": "男子",
+          "wordReading": "だんし"
+        },
+        {
+          "readingRef": "シ",
+          "word": "女子",
+          "wordReading": "じょし"
+        },
+        {
+          "readingRef": "シ",
+          "word": "子宮",
+          "wordReading": "しきゅう"
+        },
+        {
+          "readingRef": "シ",
+          "word": "分子",
+          "wordReading": "ぶんし"
+        },
+        {
+          "readingRef": "ス",
+          "word": "椅子",
+          "wordReading": "いす"
+        },
+        {
+          "readingRef": "ス",
+          "word": "様子",
+          "wordReading": "ようす"
+        },
+        {
+          "readingRef": "こ",
+          "word": "子",
+          "wordReading": "こ"
+        },
+        {
+          "readingRef": "こ",
+          "word": "子供",
+          "wordReading": "こども"
+        },
+        {
+          "readingRef": "こ",
+          "word": "親子",
+          "wordReading": "おやこ"
+        }
+      ]
+    },
+    {
+      "character": "学",
+      "meaningKo": "“배울 학”. 배우다",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ガク"
+        },
+        {
+          "type": "kun",
+          "reading": "まなぶ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ガク",
+          "word": "大学",
+          "wordReading": "だいがく"
+        },
+        {
+          "readingRef": "ガク",
+          "word": "学生",
+          "wordReading": "がくせい"
+        },
+        {
+          "readingRef": "ガク",
+          "word": "学会",
+          "wordReading": "がっかい"
+        },
+        {
+          "readingRef": "ガク",
+          "word": "学習",
+          "wordReading": "がくしゅう"
+        }
+      ]
+    },
+    {
+      "character": "小",
+      "meaningKo": "“작을 소”. 작다",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "kun",
+          "reading": "お"
+        },
+        {
+          "type": "kun",
+          "reading": "こ"
+        },
+        {
+          "type": "kun",
+          "reading": "さ"
+        },
+        {
+          "type": "kun",
+          "reading": "ちいさい"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ショウ",
+          "word": "小説",
+          "wordReading": "しょうせつ"
+        },
+        {
+          "readingRef": "ショウ",
+          "word": "小学生",
+          "wordReading": "しょうがくせい"
+        },
+        {
+          "readingRef": "こ",
+          "word": "小鳥",
+          "wordReading": "ことり"
+        },
+        {
+          "readingRef": "こ",
+          "word": "小麦",
+          "wordReading": "こむぎ"
+        },
+        {
+          "readingRef": "お",
+          "word": "小川",
+          "wordReading": "おがわ"
+        }
+      ]
+    },
+    {
+      "character": "山",
+      "meaningKo": "“메 산”. 산",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サン"
+        },
+        {
+          "type": "on",
+          "reading": "セン"
+        },
+        {
+          "type": "kun",
+          "reading": "やま"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "サン",
+          "word": "山林",
+          "wordReading": "さんりん"
+        },
+        {
+          "readingRef": "サン",
+          "word": "高山",
+          "wordReading": "こうざん"
+        },
+        {
+          "readingRef": "やま",
+          "word": "山",
+          "wordReading": "やま"
+        },
+        {
+          "readingRef": "やま",
+          "word": "山登",
+          "wordReading": "やまのぼ"
+        }
+      ]
+    },
+    {
+      "character": "川",
+      "meaningKo": "“내 천”. 강, 하천, 시내",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セン"
+        },
+        {
+          "type": "kun",
+          "reading": "かわ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "セン",
+          "word": "山川",
+          "wordReading": "さんせん"
+        },
+        {
+          "readingRef": "セン",
+          "word": "河川",
+          "wordReading": "かせん"
+        },
+        {
+          "readingRef": "かわ",
+          "word": "川",
+          "wordReading": "かわ"
+        },
+        {
+          "readingRef": "かわ",
+          "word": "川辺",
+          "wordReading": "かわべ"
+        }
+      ]
+    },
+    {
+      "character": "左",
+      "meaningKo": "“왼 좌”. 왼쪽",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サ"
+        },
+        {
+          "type": "on",
+          "reading": "シャ"
+        },
+        {
+          "type": "kun",
+          "reading": "ひだり"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "サ",
+          "word": "左右",
+          "wordReading": "さゆう"
+        },
+        {
+          "readingRef": "サ",
+          "word": "左翼",
+          "wordReading": "さよく"
+        },
+        {
+          "readingRef": "サ",
+          "word": "左派",
+          "wordReading": "さは"
+        },
+        {
+          "readingRef": "ひだり",
+          "word": "左手",
+          "wordReading": "ひだりて"
+        },
+        {
+          "readingRef": "ひだり",
+          "word": "左側",
+          "wordReading": "ひだりがわ"
+        }
+      ]
+    },
+    {
+      "character": "年",
+      "meaningKo": "“해 년”. 해(year)",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ネン"
+        },
+        {
+          "type": "kun",
+          "reading": "とし"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ネン",
+          "word": "三年",
+          "wordReading": "さんねん"
+        },
+        {
+          "readingRef": "ネン",
+          "word": "少年",
+          "wordReading": "しょうねん"
+        },
+        {
+          "readingRef": "とし",
+          "word": "毎年",
+          "wordReading": "まいとし"
+        },
+        {
+          "readingRef": "とし",
+          "word": "年上",
+          "wordReading": "としうえ"
+        },
+        {
+          "readingRef": "とし",
+          "word": "年下",
+          "wordReading": "としした"
+        }
+      ]
+    },
+    {
+      "character": "後",
+      "meaningKo": "“뒤 후”. 뒤, 이후, 나중.",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "on",
+          "reading": "ゴ"
+        },
+        {
+          "type": "kun",
+          "reading": "あと"
+        },
+        {
+          "type": "kun",
+          "reading": "うしろ"
+        },
+        {
+          "type": "kun",
+          "reading": "おくれる"
+        },
+        {
+          "type": "kun",
+          "reading": "のち"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ゴ",
+          "word": "午後",
+          "wordReading": "ごご"
+        },
+        {
+          "readingRef": "ゴ",
+          "word": "最後",
+          "wordReading": "さいご"
+        },
+        {
+          "readingRef": "コウ",
+          "word": "後半",
+          "wordReading": "こうはん"
+        },
+        {
+          "readingRef": "コウ",
+          "word": "後悔",
+          "wordReading": "こうかい"
+        },
+        {
+          "readingRef": "コウ",
+          "word": "後輩",
+          "wordReading": "こうはい"
+        }
+      ]
+    },
+    {
+      "character": "日",
+      "meaningKo": "“날 일”. 하루, 날, 태양",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジツ"
+        },
+        {
+          "type": "on",
+          "reading": "ニチ"
+        },
+        {
+          "type": "kun",
+          "reading": "か"
+        },
+        {
+          "type": "kun",
+          "reading": "び"
+        },
+        {
+          "type": "kun",
+          "reading": "ひ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ニチ",
+          "word": "一日",
+          "wordReading": "いちにち"
+        },
+        {
+          "readingRef": "ニチ",
+          "word": "毎日",
+          "wordReading": "まいにち"
+        },
+        {
+          "readingRef": "ジツ",
+          "word": "休日",
+          "wordReading": "きゅうじつ"
+        },
+        {
+          "readingRef": "ジツ",
+          "word": "平日",
+          "wordReading": "へいじつ"
+        },
+        {
+          "readingRef": "ひ",
+          "word": "月日",
+          "wordReading": "つきひ"
+        },
+        {
+          "readingRef": "ひ",
+          "word": "朝日",
+          "wordReading": "あさひ"
+        },
+        {
+          "readingRef": "ひ",
+          "word": "夕日",
+          "wordReading": "ゆうひ"
+        },
+        {
+          "readingRef": "か",
+          "word": "三日",
+          "wordReading": "みっか"
+        },
+        {
+          "readingRef": "か",
+          "word": "七日",
+          "wordReading": "なのか"
+        },
+        {
+          "readingRef": "か",
+          "word": "二日",
+          "wordReading": "ふつか"
+        }
+      ]
+    },
+    {
+      "character": "時",
+      "meaningKo": "“때 시”. 시간",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジ"
+        },
+        {
+          "type": "kun",
+          "reading": "どき"
+        },
+        {
+          "type": "kun",
+          "reading": "とき"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ジ",
+          "word": "時間",
+          "wordReading": "じかん"
+        },
+        {
+          "readingRef": "ジ",
+          "word": "時代",
+          "wordReading": "じだい"
+        },
+        {
+          "readingRef": "とき",
+          "word": "時",
+          "wordReading": "とき"
+        },
+        {
+          "readingRef": "とき",
+          "word": "時々",
+          "wordReading": "ときどき"
+        }
+      ]
+    },
+    {
+      "character": "書",
+      "meaningKo": "“글 서”. 글, 쓰다",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショ"
+        },
+        {
+          "type": "kun",
+          "reading": "がき"
+        },
+        {
+          "type": "kun",
+          "reading": "かく"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ショ",
+          "word": "読書",
+          "wordReading": "どくしょ"
+        },
+        {
+          "readingRef": "ショ",
+          "word": "書店",
+          "wordReading": "しょてん"
+        }
+      ]
+    },
+    {
+      "character": "月",
+      "meaningKo": "“달 월”. 달",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ガツ"
+        },
+        {
+          "type": "on",
+          "reading": "ゲツ"
+        },
+        {
+          "type": "kun",
+          "reading": "つき"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ゲツ",
+          "word": "月曜日",
+          "wordReading": "げつようび"
+        },
+        {
+          "readingRef": "ゲツ",
+          "word": "今月",
+          "wordReading": "こんげつ"
+        },
+        {
+          "readingRef": "ゲツ",
+          "word": "先月",
+          "wordReading": "せんげつ"
+        },
+        {
+          "readingRef": "ゲツ",
+          "word": "来月",
+          "wordReading": "らいげつ"
+        },
+        {
+          "readingRef": "ガツ",
+          "word": "一月",
+          "wordReading": "いちがつ"
+        },
+        {
+          "readingRef": "ガツ",
+          "word": "三月",
+          "wordReading": "さんがつ"
+        },
+        {
+          "readingRef": "ガツ",
+          "word": "九月",
+          "wordReading": "くがつ"
+        },
+        {
+          "readingRef": "ガツ",
+          "word": "正月",
+          "wordReading": "しょうがつ"
+        },
+        {
+          "readingRef": "つき",
+          "word": "月",
+          "wordReading": "つき"
+        },
+        {
+          "readingRef": "つき",
+          "word": "月日",
+          "wordReading": "つきひ"
+        },
+        {
+          "readingRef": "つき",
+          "word": "三日月",
+          "wordReading": "みかづき"
+        }
+      ]
+    },
+    {
+      "character": "木",
+      "meaningKo": "“나무 목”. 나무",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ボク"
+        },
+        {
+          "type": "on",
+          "reading": "モク"
+        },
+        {
+          "type": "kun",
+          "reading": "き"
+        },
+        {
+          "type": "kun",
+          "reading": "こ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ボク",
+          "word": "大木",
+          "wordReading": "たいぼく"
+        },
+        {
+          "readingRef": "ボク",
+          "word": "土木",
+          "wordReading": "どぼく"
+        },
+        {
+          "readingRef": "ボク",
+          "word": "高木",
+          "wordReading": "こうぼく"
+        },
+        {
+          "readingRef": "モク",
+          "word": "木造",
+          "wordReading": "もくぞう"
+        },
+        {
+          "readingRef": "モク",
+          "word": "材木",
+          "wordReading": "ざいもく"
+        },
+        {
+          "readingRef": "モク",
+          "word": "樹木",
+          "wordReading": "じゅもく"
+        },
+        {
+          "readingRef": "モク",
+          "word": "木曜日",
+          "wordReading": "もくようび"
+        },
+        {
+          "readingRef": "き",
+          "word": "木",
+          "wordReading": "き"
+        },
+        {
+          "readingRef": "き",
+          "word": "並木",
+          "wordReading": "なみき"
+        },
+        {
+          "readingRef": "き",
+          "word": "草木",
+          "wordReading": "くさき"
+        },
+        {
+          "readingRef": "こ",
+          "word": "木枯",
+          "wordReading": "こが"
         }
       ]
     },
     {
       "character": "本",
-      "meaningKo": "근본 본 — 책, 근본",
+      "meaningKo": "“근본 본”. 근본, 본질, 본래",
       "strokeCount": 5,
       "readings": [
         {
@@ -3494,31 +2724,724 @@
         {
           "readingRef": "ホン",
           "word": "本",
-          "wordReading": "ほん",
-          "examples": [
-            {
-              "sentence": "{面白|おもしろ}い{{本}}を{読|よ}みました。",
-              "sentenceTranslationKo": "재미있는 책을 읽었습니다."
-            }
-          ]
+          "wordReading": "ほん"
         },
         {
           "readingRef": "ホン",
-          "word": "日本",
-          "wordReading": "にほん",
-          "examples": [
-            {
-              "sentence": "{{日本}}の{文化|ぶんか}が{好|す}きです。",
-              "sentenceTranslationKo": "일본 문화를 좋아합니다."
-            }
-          ]
+          "word": "本名",
+          "wordReading": "ほんみょう"
+        },
+        {
+          "readingRef": "ホン",
+          "word": "本人",
+          "wordReading": "ほんにん"
+        },
+        {
+          "readingRef": "ホン",
+          "word": "鉛筆一本",
+          "wordReading": "えんぴついっぽん"
+        },
+        {
+          "readingRef": "もと",
+          "word": "根本",
+          "wordReading": "ねもと"
         }
       ]
     },
     {
-      "character": "文",
-      "meaningKo": "글월 문 — 글, 문장",
+      "character": "来",
+      "meaningKo": "“올 래”. 오다",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "タイ"
+        },
+        {
+          "type": "on",
+          "reading": "ライ"
+        },
+        {
+          "type": "kun",
+          "reading": "き"
+        },
+        {
+          "type": "kun",
+          "reading": "きたす"
+        },
+        {
+          "type": "kun",
+          "reading": "きたる"
+        },
+        {
+          "type": "kun",
+          "reading": "くる"
+        },
+        {
+          "type": "kun",
+          "reading": "こ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ライ",
+          "word": "未来",
+          "wordReading": "みらい"
+        },
+        {
+          "readingRef": "ライ",
+          "word": "来年",
+          "wordReading": "らいねん"
+        },
+        {
+          "readingRef": "ライ",
+          "word": "来月",
+          "wordReading": "らいげつ"
+        }
+      ]
+    },
+    {
+      "character": "東",
+      "meaningKo": "“동녘 동”. 동쪽",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "トウ"
+        },
+        {
+          "type": "kun",
+          "reading": "ひがし"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "トウ",
+          "word": "東洋",
+          "wordReading": "とうよう"
+        },
+        {
+          "readingRef": "トウ",
+          "word": "東京",
+          "wordReading": "とうきょう"
+        },
+        {
+          "readingRef": "ひがし",
+          "word": "東日本",
+          "wordReading": "ひがしにほん"
+        },
+        {
+          "readingRef": "ひがし",
+          "word": "東",
+          "wordReading": "ひがし"
+        }
+      ]
+    },
+    {
+      "character": "校",
+      "meaningKo": "“학교 교”. 학교",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョウ"
+        },
+        {
+          "type": "on",
+          "reading": "コウ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "コウ",
+          "word": "学校",
+          "wordReading": "がっこう"
+        },
+        {
+          "readingRef": "コウ",
+          "word": "校門",
+          "wordReading": "こうもん"
+        },
+        {
+          "readingRef": "コウ",
+          "word": "校庭",
+          "wordReading": "こうてい"
+        }
+      ]
+    },
+    {
+      "character": "母",
+      "meaningKo": "“어미 모”. 어머니",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ボ"
+        },
+        {
+          "type": "kun",
+          "reading": "はは"
+        },
+        {
+          "type": "kun",
+          "reading": "も"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ボ",
+          "word": "父母",
+          "wordReading": "ふぼ"
+        },
+        {
+          "readingRef": "ボ",
+          "word": "良妻賢母",
+          "wordReading": "りょうさいけんぼ"
+        },
+        {
+          "readingRef": "ボ",
+          "word": "母体",
+          "wordReading": "ぼたい"
+        },
+        {
+          "readingRef": "ボ",
+          "word": "分母",
+          "wordReading": "ぶんぼ"
+        },
+        {
+          "readingRef": "はは",
+          "word": "母",
+          "wordReading": "はは"
+        },
+        {
+          "readingRef": "はは",
+          "word": "母親",
+          "wordReading": "ははおや"
+        }
+      ]
+    },
+    {
+      "character": "毎",
+      "meaningKo": "“매양 매”. 매번",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "マイ"
+        },
+        {
+          "type": "kun",
+          "reading": "ごとに"
+        },
+        {
+          "type": "kun",
+          "reading": "ごと"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "マイ",
+          "word": "毎日",
+          "wordReading": "まいにち"
+        },
+        {
+          "readingRef": "マイ",
+          "word": "毎年",
+          "wordReading": "まいとし"
+        },
+        {
+          "readingRef": "マイ",
+          "word": "毎月",
+          "wordReading": "まいつき"
+        }
+      ]
+    },
+    {
+      "character": "気",
+      "meaningKo": "“기운 기”. 기운, 정신, 기체",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キ"
+        },
+        {
+          "type": "on",
+          "reading": "ケ"
+        },
+        {
+          "type": "kun",
+          "reading": "き"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "キ",
+          "word": "天気",
+          "wordReading": "てんき"
+        },
+        {
+          "readingRef": "キ",
+          "word": "人気",
+          "wordReading": "にんき"
+        },
+        {
+          "readingRef": "キ",
+          "word": "空気",
+          "wordReading": "くうき"
+        },
+        {
+          "readingRef": "ケ",
+          "word": "気配",
+          "wordReading": "けはい"
+        },
+        {
+          "readingRef": "ケ",
+          "word": "湿気",
+          "wordReading": "しっけ"
+        }
+      ]
+    },
+    {
+      "character": "水",
+      "meaningKo": "“물 수”. 물",
       "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "スイ"
+        },
+        {
+          "type": "kun",
+          "reading": "みず"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "スイ",
+          "word": "水分",
+          "wordReading": "すいぶん"
+        },
+        {
+          "readingRef": "スイ",
+          "word": "海水",
+          "wordReading": "かいすい"
+        },
+        {
+          "readingRef": "スイ",
+          "word": "水曜日",
+          "wordReading": "すいようび"
+        },
+        {
+          "readingRef": "みず",
+          "word": "水",
+          "wordReading": "みず"
+        },
+        {
+          "readingRef": "みず",
+          "word": "水色",
+          "wordReading": "みずいろ"
+        },
+        {
+          "readingRef": "みず",
+          "word": "水玉",
+          "wordReading": "みずたま"
+        }
+      ]
+    },
+    {
+      "character": "火",
+      "meaningKo": "“불 화”. 불",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カ"
+        },
+        {
+          "type": "kun",
+          "reading": "び"
+        },
+        {
+          "type": "kun",
+          "reading": "ひ"
+        },
+        {
+          "type": "kun",
+          "reading": "ほ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "カ",
+          "word": "火曜日",
+          "wordReading": "かようび"
+        },
+        {
+          "readingRef": "カ",
+          "word": "火事",
+          "wordReading": "かじ"
+        },
+        {
+          "readingRef": "カ",
+          "word": "火山",
+          "wordReading": "かざん"
+        },
+        {
+          "readingRef": "ひ",
+          "word": "火花",
+          "wordReading": "ひばな"
+        },
+        {
+          "readingRef": "ひ",
+          "word": "火口",
+          "wordReading": "ひぐち"
+        },
+        {
+          "readingRef": "ひ",
+          "word": "花火",
+          "wordReading": "はなび"
+        },
+        {
+          "readingRef": "ほ",
+          "word": "火影",
+          "wordReading": "ほかげ"
+        }
+      ]
+    },
+    {
+      "character": "父",
+      "meaningKo": "“아비 부”. 아버지",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フ"
+        },
+        {
+          "type": "kun",
+          "reading": "ちち"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "フ",
+          "word": "父母",
+          "wordReading": "ふぼ"
+        },
+        {
+          "readingRef": "フ",
+          "word": "祖父",
+          "wordReading": "そふ"
+        },
+        {
+          "readingRef": "ちち",
+          "word": "父",
+          "wordReading": "ちち"
+        },
+        {
+          "readingRef": "ちち",
+          "word": "父親",
+          "wordReading": "ちちおや"
+        }
+      ]
+    },
+    {
+      "character": "生",
+      "meaningKo": "“살 생”. 살다, 태어나다, 생명",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "on",
+          "reading": "セイ"
+        },
+        {
+          "type": "kun",
+          "reading": "う"
+        },
+        {
+          "type": "kun",
+          "reading": "いかす"
+        },
+        {
+          "type": "kun",
+          "reading": "いきる"
+        },
+        {
+          "type": "kun",
+          "reading": "いける"
+        },
+        {
+          "type": "kun",
+          "reading": "うまれ"
+        },
+        {
+          "type": "kun",
+          "reading": "うまれる"
+        },
+        {
+          "type": "kun",
+          "reading": "うむ"
+        },
+        {
+          "type": "kun",
+          "reading": "おう"
+        },
+        {
+          "type": "kun",
+          "reading": "き"
+        },
+        {
+          "type": "kun",
+          "reading": "なす"
+        },
+        {
+          "type": "kun",
+          "reading": "なる"
+        },
+        {
+          "type": "kun",
+          "reading": "なま"
+        },
+        {
+          "type": "kun",
+          "reading": "はえる"
+        },
+        {
+          "type": "kun",
+          "reading": "はやす"
+        },
+        {
+          "type": "kun",
+          "reading": "むす"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "セイ",
+          "word": "生命",
+          "wordReading": "せいめい"
+        },
+        {
+          "readingRef": "セイ",
+          "word": "人生",
+          "wordReading": "じんせい"
+        },
+        {
+          "readingRef": "セイ",
+          "word": "先生",
+          "wordReading": "せんせい"
+        },
+        {
+          "readingRef": "ショウ",
+          "word": "一生",
+          "wordReading": "いっしょう"
+        },
+        {
+          "readingRef": "ショウ",
+          "word": "生涯",
+          "wordReading": "しょうがい"
+        },
+        {
+          "readingRef": "ショウ",
+          "word": "一生懸命",
+          "wordReading": "いっしょうけんめい"
+        },
+        {
+          "readingRef": "き",
+          "word": "生地",
+          "wordReading": "きじ"
+        },
+        {
+          "readingRef": "なま",
+          "word": "生身",
+          "wordReading": "なまみ"
+        },
+        {
+          "readingRef": "なま",
+          "word": "生意気",
+          "wordReading": "なまいき"
+        },
+        {
+          "readingRef": "なま",
+          "word": "生物",
+          "wordReading": "なまもの"
+        }
+      ]
+    },
+    {
+      "character": "男",
+      "meaningKo": "“사내 남”. 남자",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ダン"
+        },
+        {
+          "type": "on",
+          "reading": "ナン"
+        },
+        {
+          "type": "kun",
+          "reading": "お"
+        },
+        {
+          "type": "kun",
+          "reading": "おとこ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ダン",
+          "word": "男性",
+          "wordReading": "だんせい"
+        },
+        {
+          "readingRef": "ダン",
+          "word": "男子",
+          "wordReading": "だんし"
+        },
+        {
+          "readingRef": "ダン",
+          "word": "男女",
+          "wordReading": "だんじょ"
+        },
+        {
+          "readingRef": "ナン",
+          "word": "長男",
+          "wordReading": "ちょうなん"
+        },
+        {
+          "readingRef": "ナン",
+          "word": "美男",
+          "wordReading": "びなん"
+        },
+        {
+          "readingRef": "おとこ",
+          "word": "男",
+          "wordReading": "おとこ"
+        }
+      ]
+    },
+    {
+      "character": "白",
+      "meaningKo": "“흰 백”. 흰색",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハク"
+        },
+        {
+          "type": "on",
+          "reading": "ビャク"
+        },
+        {
+          "type": "kun",
+          "reading": "しら"
+        },
+        {
+          "type": "kun",
+          "reading": "しろ"
+        },
+        {
+          "type": "kun",
+          "reading": "しろい"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ハク",
+          "word": "明白",
+          "wordReading": "めいはく"
+        },
+        {
+          "readingRef": "ハク",
+          "word": "空白",
+          "wordReading": "くうはく"
+        },
+        {
+          "readingRef": "ハク",
+          "word": "告白",
+          "wordReading": "こくはく"
+        },
+        {
+          "readingRef": "ビャク",
+          "word": "白衣",
+          "wordReading": "びゃくえ"
+        },
+        {
+          "readingRef": "しろ",
+          "word": "白",
+          "wordReading": "しろ"
+        },
+        {
+          "readingRef": "しろ",
+          "word": "花",
+          "wordReading": "はな"
+        },
+        {
+          "readingRef": "しろ",
+          "word": "黒白",
+          "wordReading": "くろしろ"
+        },
+        {
+          "readingRef": "しら",
+          "word": "白髪",
+          "wordReading": "しらが"
+        },
+        {
+          "readingRef": "しら",
+          "word": "白鳥",
+          "wordReading": "しらとり"
+        }
+      ]
+    },
+    {
+      "character": "百",
+      "meaningKo": "“일백 백”. 100",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヒャク"
+        },
+        {
+          "type": "on",
+          "reading": "ビャク"
+        },
+        {
+          "type": "kun",
+          "reading": "もも"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ヒャク",
+          "word": "百円",
+          "wordReading": "ひゃくえん"
+        },
+        {
+          "readingRef": "ヒャク",
+          "word": "百貨店",
+          "wordReading": "ひゃっかてん"
+        },
+        {
+          "readingRef": "ヒャク",
+          "word": "二百",
+          "wordReading": "にひゃく"
+        }
+      ]
+    },
+    {
+      "character": "聞",
+      "meaningKo": "“들을 문”. 듣다",
+      "strokeCount": 14,
       "readings": [
         {
           "type": "on",
@@ -3527,65 +3450,812 @@
         {
           "type": "on",
           "reading": "モン"
+        },
+        {
+          "type": "kun",
+          "reading": "きく"
+        },
+        {
+          "type": "kun",
+          "reading": "きこえる"
         }
       ],
       "words": [
         {
           "readingRef": "ブン",
-          "word": "文",
-          "wordReading": "ぶん",
-          "examples": [
-            {
-              "sentence": "{短|みじか}い{{文}}を{書|か}いてください。",
-              "sentenceTranslationKo": "짧은 문장을 써 주세요."
-            }
-          ]
+          "word": "新聞",
+          "wordReading": "しんぶん"
+        },
+        {
+          "readingRef": "ブン",
+          "word": "見聞",
+          "wordReading": "けんぶん"
+        },
+        {
+          "readingRef": "ブン",
+          "word": "風聞",
+          "wordReading": "ふうぶん"
         },
         {
           "readingRef": "モン",
-          "word": "文字",
-          "wordReading": "もじ",
-          "examples": [
-            {
-              "sentence": "この{{文字}}は{読|よ}めません。",
-              "sentenceTranslationKo": "이 글자는 읽을 수 없습니다."
-            }
-          ]
+          "word": "聴聞会",
+          "wordReading": "ちょうもんかい"
+        },
+        {
+          "readingRef": "モン",
+          "word": "前代未聞",
+          "wordReading": "ぜんだいみもん"
         }
       ]
     },
     {
-      "character": "字",
-      "meaningKo": "글자 자 — 글자",
+      "character": "行",
+      "meaningKo": "“다닐 행”. 가다, 행하다, 행(row)",
       "strokeCount": 6,
       "readings": [
         {
           "type": "on",
-          "reading": "ジ"
+          "reading": "アン"
+        },
+        {
+          "type": "on",
+          "reading": "ギョウ"
+        },
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "いき"
+        },
+        {
+          "type": "kun",
+          "reading": "ゆき"
+        },
+        {
+          "type": "kun",
+          "reading": "いく"
+        },
+        {
+          "type": "kun",
+          "reading": "おこなう"
+        },
+        {
+          "type": "kun",
+          "reading": "ゆく"
         }
       ],
       "words": [
         {
-          "readingRef": "ジ",
-          "word": "漢字",
-          "wordReading": "かんじ",
-          "examples": [
-            {
-              "sentence": "{{漢字}}を{勉強|べんきょう}しています。",
-              "sentenceTranslationKo": "한자를 공부하고 있습니다."
-            }
-          ]
+          "readingRef": "コウ",
+          "word": "行進",
+          "wordReading": "こうしん"
         },
         {
-          "readingRef": "ジ",
-          "word": "字",
-          "wordReading": "じ",
-          "examples": [
-            {
-              "sentence": "{{字}}をきれいに{書|か}きます。",
-              "sentenceTranslationKo": "글자를 예쁘게 씁니다."
-            }
-          ]
+          "readingRef": "コウ",
+          "word": "旅行",
+          "wordReading": "りょこう"
+        },
+        {
+          "readingRef": "コウ",
+          "word": "行動",
+          "wordReading": "こうどう"
+        },
+        {
+          "readingRef": "コウ",
+          "word": "実行",
+          "wordReading": "じっこう"
+        },
+        {
+          "readingRef": "ギョウ",
+          "word": "行列",
+          "wordReading": "ぎょうれつ"
+        },
+        {
+          "readingRef": "ギョウ",
+          "word": "行政",
+          "wordReading": "ぎょうせい"
+        },
+        {
+          "readingRef": "ギョウ",
+          "word": "行事",
+          "wordReading": "ぎょうじ"
+        },
+        {
+          "readingRef": "ギョウ",
+          "word": "修行",
+          "wordReading": "しゅぎょう"
+        },
+        {
+          "readingRef": "アン",
+          "word": "行灯",
+          "wordReading": "あんどう"
+        }
+      ]
+    },
+    {
+      "character": "西",
+      "meaningKo": "“서녘 서”. 서쪽",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サイ"
+        },
+        {
+          "type": "on",
+          "reading": "ス"
+        },
+        {
+          "type": "on",
+          "reading": "セイ"
+        },
+        {
+          "type": "kun",
+          "reading": "にし"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "セイ",
+          "word": "西洋",
+          "wordReading": "せいよう"
+        },
+        {
+          "readingRef": "セイ",
+          "word": "西暦",
+          "wordReading": "せいれき"
+        },
+        {
+          "readingRef": "サイ",
+          "word": "関西",
+          "wordReading": "かんさい"
+        },
+        {
+          "readingRef": "サイ",
+          "word": "東西",
+          "wordReading": "とうざい"
+        },
+        {
+          "readingRef": "にし",
+          "word": "西",
+          "wordReading": "にし"
+        },
+        {
+          "readingRef": "にし",
+          "word": "西日本",
+          "wordReading": "にしにほん"
+        }
+      ]
+    },
+    {
+      "character": "見",
+      "meaningKo": "“볼 견”. 보다",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ケン"
+        },
+        {
+          "type": "kun",
+          "reading": "みえる"
+        },
+        {
+          "type": "kun",
+          "reading": "みせる"
+        },
+        {
+          "type": "kun",
+          "reading": "みる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ケン",
+          "word": "意見",
+          "wordReading": "いけん"
+        },
+        {
+          "readingRef": "ケン",
+          "word": "見物",
+          "wordReading": "けんぶつ"
+        }
+      ]
+    },
+    {
+      "character": "話",
+      "meaningKo": "“말씀 화”. 이야기, 대화",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ワ"
+        },
+        {
+          "type": "kun",
+          "reading": "はなす"
+        },
+        {
+          "type": "kun",
+          "reading": "はなし"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ワ",
+          "word": "会話",
+          "wordReading": "かいわ"
+        },
+        {
+          "readingRef": "ワ",
+          "word": "話題",
+          "wordReading": "わだい"
+        },
+        {
+          "readingRef": "はなし",
+          "word": "子供",
+          "wordReading": "こども"
+        },
+        {
+          "readingRef": "はなし",
+          "word": "話",
+          "wordReading": "はなし"
+        }
+      ]
+    },
+    {
+      "character": "語",
+      "meaningKo": "“말씀 어”. 단어, 언어",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゴ"
+        },
+        {
+          "type": "kun",
+          "reading": "かたらう"
+        },
+        {
+          "type": "kun",
+          "reading": "かたる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ゴ",
+          "word": "言語",
+          "wordReading": "げんご"
+        },
+        {
+          "readingRef": "ゴ",
+          "word": "日本語",
+          "wordReading": "にほんご"
+        },
+        {
+          "readingRef": "ゴ",
+          "word": "外国語",
+          "wordReading": "がいこくご"
+        }
+      ]
+    },
+    {
+      "character": "読",
+      "meaningKo": "“읽을 독”. 읽다",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "トウ"
+        },
+        {
+          "type": "on",
+          "reading": "トク"
+        },
+        {
+          "type": "on",
+          "reading": "ドク"
+        },
+        {
+          "type": "kun",
+          "reading": "よみ"
+        },
+        {
+          "type": "kun",
+          "reading": "よむ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ドク",
+          "word": "読書",
+          "wordReading": "どくしょ"
+        },
+        {
+          "readingRef": "ドク",
+          "word": "読者",
+          "wordReading": "どくしゃ"
+        },
+        {
+          "readingRef": "トク",
+          "word": "読本",
+          "wordReading": "とくほん"
+        },
+        {
+          "readingRef": "トウ",
+          "word": "句読点",
+          "wordReading": "くとうてん"
+        },
+        {
+          "readingRef": "トウ",
+          "word": "読点",
+          "wordReading": "とうてん"
+        }
+      ]
+    },
+    {
+      "character": "車",
+      "meaningKo": "“수레 차(거)”. 차량, 수레",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シャ"
+        },
+        {
+          "type": "kun",
+          "reading": "くるま"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "シャ",
+          "word": "車庫",
+          "wordReading": "しゃこ"
+        },
+        {
+          "readingRef": "シャ",
+          "word": "車道",
+          "wordReading": "しゃどう"
+        },
+        {
+          "readingRef": "くるま",
+          "word": "車",
+          "wordReading": "くるま"
+        },
+        {
+          "readingRef": "くるま",
+          "word": "乳母車",
+          "wordReading": "うばぐるま"
+        }
+      ]
+    },
+    {
+      "character": "金",
+      "meaningKo": "“쇠 금”. 금, 금속, 쇠, 돈",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キン"
+        },
+        {
+          "type": "on",
+          "reading": "コン"
+        },
+        {
+          "type": "on",
+          "reading": "ゴン"
+        },
+        {
+          "type": "kun",
+          "reading": "がね"
+        },
+        {
+          "type": "kun",
+          "reading": "かな"
+        },
+        {
+          "type": "kun",
+          "reading": "かね"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "キン",
+          "word": "現金",
+          "wordReading": "げんきん"
+        },
+        {
+          "readingRef": "キン",
+          "word": "金星",
+          "wordReading": "きんせい"
+        },
+        {
+          "readingRef": "キン",
+          "word": "純金",
+          "wordReading": "じゅんきん"
+        },
+        {
+          "readingRef": "コン",
+          "word": "金剛",
+          "wordReading": "こんごう"
+        },
+        {
+          "readingRef": "コン",
+          "word": "黄金",
+          "wordReading": "おうごん"
+        },
+        {
+          "readingRef": "かね",
+          "word": "金",
+          "wordReading": "かね"
+        },
+        {
+          "readingRef": "かね",
+          "word": "金持",
+          "wordReading": "かねも"
+        },
+        {
+          "readingRef": "かね",
+          "word": "針金",
+          "wordReading": "はりがね"
+        },
+        {
+          "readingRef": "かな",
+          "word": "金物",
+          "wordReading": "かなもの"
+        }
+      ]
+    },
+    {
+      "character": "長",
+      "meaningKo": "“길 장”. 길다",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "おさ"
+        },
+        {
+          "type": "kun",
+          "reading": "ながい"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "チョウ",
+          "word": "長男",
+          "wordReading": "ちょうなん"
+        },
+        {
+          "readingRef": "チョウ",
+          "word": "社長",
+          "wordReading": "しゃちょう"
+        },
+        {
+          "readingRef": "チョウ",
+          "word": "成長",
+          "wordReading": "せいちょう"
+        }
+      ]
+    },
+    {
+      "character": "間",
+      "meaningKo": "“사이 간”. 사이, 간격, 틈새",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カン"
+        },
+        {
+          "type": "on",
+          "reading": "ケン"
+        },
+        {
+          "type": "kun",
+          "reading": "あい"
+        },
+        {
+          "type": "kun",
+          "reading": "あいだ"
+        },
+        {
+          "type": "kun",
+          "reading": "ま"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "カン",
+          "word": "時間",
+          "wordReading": "じかん"
+        },
+        {
+          "readingRef": "カン",
+          "word": "年間",
+          "wordReading": "ねんかん"
+        },
+        {
+          "readingRef": "カン",
+          "word": "週間",
+          "wordReading": "しゅうかん"
+        },
+        {
+          "readingRef": "ケン",
+          "word": "世間",
+          "wordReading": "せけん"
+        },
+        {
+          "readingRef": "ケン",
+          "word": "眉間",
+          "wordReading": "みけん"
+        },
+        {
+          "readingRef": "あいだ",
+          "word": "生徒",
+          "wordReading": "せいと"
+        },
+        {
+          "readingRef": "あいだ",
+          "word": "間",
+          "wordReading": "あいだ"
+        },
+        {
+          "readingRef": "あいだ",
+          "word": "人気",
+          "wordReading": "にんき"
+        },
+        {
+          "readingRef": "ま",
+          "word": "間",
+          "wordReading": "ま"
+        },
+        {
+          "readingRef": "ま",
+          "word": "冬",
+          "wordReading": "ふゆ"
+        },
+        {
+          "readingRef": "ま",
+          "word": "来",
+          "wordReading": "き"
+        }
+      ]
+    },
+    {
+      "character": "雨",
+      "meaningKo": "“비 우”. 비",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ウ"
+        },
+        {
+          "type": "kun",
+          "reading": "さめ"
+        },
+        {
+          "type": "kun",
+          "reading": "あま"
+        },
+        {
+          "type": "kun",
+          "reading": "あめ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ウ",
+          "word": "梅雨",
+          "wordReading": "ばいう"
+        },
+        {
+          "readingRef": "ウ",
+          "word": "雨天",
+          "wordReading": "うてん"
+        },
+        {
+          "readingRef": "あめ",
+          "word": "雨",
+          "wordReading": "あめ"
+        },
+        {
+          "readingRef": "あめ",
+          "word": "大雨",
+          "wordReading": "おおあめ"
+        },
+        {
+          "readingRef": "あま",
+          "word": "雨水",
+          "wordReading": "あまみず"
+        },
+        {
+          "readingRef": "あま",
+          "word": "雨音",
+          "wordReading": "あまおと"
+        },
+        {
+          "readingRef": "あま",
+          "word": "雨雲",
+          "wordReading": "あまぐも"
+        }
+      ]
+    },
+    {
+      "character": "電",
+      "meaningKo": "“번개 전”. 전기, 번개",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "デン"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "デン",
+          "word": "電気",
+          "wordReading": "でんき"
+        },
+        {
+          "readingRef": "デン",
+          "word": "発電",
+          "wordReading": "はつでん"
+        },
+        {
+          "readingRef": "デン",
+          "word": "雷電",
+          "wordReading": "らいでん"
+        }
+      ]
+    },
+    {
+      "character": "食",
+      "meaningKo": "“먹을 식”. 먹다",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショク"
+        },
+        {
+          "type": "on",
+          "reading": "ジキ"
+        },
+        {
+          "type": "kun",
+          "reading": "くう"
+        },
+        {
+          "type": "kun",
+          "reading": "くらう"
+        },
+        {
+          "type": "kun",
+          "reading": "たべる"
+        },
+        {
+          "type": "kun",
+          "reading": "はむ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ショク",
+          "word": "食事",
+          "wordReading": "しょくじ"
+        },
+        {
+          "readingRef": "ショク",
+          "word": "食料",
+          "wordReading": "しょくりょう"
+        },
+        {
+          "readingRef": "ショク",
+          "word": "食品",
+          "wordReading": "しょくひん"
+        },
+        {
+          "readingRef": "ジキ",
+          "word": "断食",
+          "wordReading": "だんじき"
+        },
+        {
+          "readingRef": "ジキ",
+          "word": "乞食",
+          "wordReading": "こじき"
+        }
+      ]
+    },
+    {
+      "character": "高",
+      "meaningKo": "“높을 고”. 높다",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "だか"
+        },
+        {
+          "type": "kun",
+          "reading": "たか"
+        },
+        {
+          "type": "kun",
+          "reading": "たかい"
+        },
+        {
+          "type": "kun",
+          "reading": "たかまる"
+        },
+        {
+          "type": "kun",
+          "reading": "たかめる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "コウ",
+          "word": "高度",
+          "wordReading": "こうど"
+        },
+        {
+          "readingRef": "コウ",
+          "word": "最高",
+          "wordReading": "さいこう"
+        },
+        {
+          "readingRef": "コウ",
+          "word": "高速",
+          "wordReading": "こうそく"
+        },
+        {
+          "readingRef": "たか",
+          "word": "高々",
+          "wordReading": "たかだか"
+        },
+        {
+          "readingRef": "たか",
+          "word": "手",
+          "wordReading": "て"
+        },
+        {
+          "readingRef": "たか",
+          "word": "高",
+          "wordReading": "たか"
+        },
+        {
+          "readingRef": "たか",
+          "word": "上",
+          "wordReading": "あ"
+        },
+        {
+          "readingRef": "たか",
+          "word": "日本",
+          "wordReading": "にほん"
+        },
+        {
+          "readingRef": "たか",
+          "word": "関心",
+          "wordReading": "かんしん"
+        },
+        {
+          "readingRef": "たか",
+          "word": "品質",
+          "wordReading": "ひんしつ"
         }
       ]
     }

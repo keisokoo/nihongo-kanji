@@ -70,7 +70,7 @@ export async function action({ request }: Route.ActionArgs) {
           word: word.word,
           wordReading: word.wordReading,
           kanjiChar: word.kanji.character,
-          level: word.kanji.level,
+          level: word.kanji.packKey,
           excludeSentences: existingMd,
         },
         tier,

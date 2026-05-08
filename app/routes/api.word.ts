@@ -49,7 +49,7 @@ export async function action({ request }: Route.ActionArgs) {
       gen = await generateWord(
         {
           kanjiChar: target.character,
-          level: target.level,
+          level: target.packKey,
           existingWords: target.words.map((w) => ({
             word: w.word,
             wordReading: w.wordReading,
