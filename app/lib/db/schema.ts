@@ -24,6 +24,19 @@ export type WordExplanation = {
   createdAt: string;
 };
 
+export type ExampleExplanation = {
+  /** 한국어 의역과 일본어 원문의 늬앙스 차이, 일본식 표현. */
+  nuance: string;
+  /** 문법 구조 / 활용 / 입자 (조사) 분석. */
+  grammar: string;
+  /** 발음(연탁/음편화/숙자훈) 또는 학습 포인트. 비어 있을 수 있음. */
+  pronunciation: string;
+  /** 관용 표현, 알아두면 좋은 어휘/관용구. */
+  takeaways: string;
+  modelUsed: string;
+  createdAt: string;
+};
+
 export const readingTypeEnum = pgEnum("reading_type", ["on", "kun"]);
 export const exampleSourceEnum = pgEnum("example_source", ["seed", "generated"]);
 export const packKindEnum = pgEnum("pack_kind", ["jlpt", "custom"]);
@@ -90,6 +103,7 @@ export const examples = pgTable("examples", {
   sentenceTranslationKo: text("sentence_translation_ko"),
   source: exampleSourceEnum("source").notNull().default("seed"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
+  explanation: jsonb("explanation").$type<ExampleExplanation>(),
 });
 
 export const audioCache = pgTable(

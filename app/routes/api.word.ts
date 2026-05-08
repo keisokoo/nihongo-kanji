@@ -8,9 +8,12 @@ import {
   words as wordsTable,
 } from "~/lib/db";
 import {
+  addUsage,
   generateExample,
   generateWord,
+  ZERO_USAGE,
   type Tier,
+  type Usage,
 } from "~/lib/claude.server";
 import { parseSentence } from "~/lib/sentence";
 
@@ -98,6 +101,8 @@ export async function action({ request }: Route.ActionArgs) {
       })
       .returning();
 
+    let totalUsage: Usage = addUsage(ZERO_USAGE, gen.usage);
+
     // Best-effort: also generate one example so the new word lands with a
     // ready quiz. Failures are non-fatal — the user can hit "문제 생성".
     let example: typeof examplesTable.$inferSelect | null = null;
@@ -113,6 +118,7 @@ export async function action({ request }: Route.ActionArgs) {
         },
         tier,
       );
+      totalUsage = addUsage(totalUsage, exampleGen.usage);
       const tokens = parseSentence(
         exampleGen.result.sentence,
         `generated ${saved.word}/${saved.wordReading}`,
@@ -155,6 +161,7 @@ export async function action({ request }: Route.ActionArgs) {
             modelUsed: exampleModelUsed,
           }
         : null,
+      usage: { ...totalUsage, model: gen.modelUsed },
     });
   }
 

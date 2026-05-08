@@ -17,15 +17,24 @@ export async function action({ request }: Route.ActionArgs) {
   const voice = typeof body?.voice === "string" ? body.voice : undefined;
 
   try {
-    const { buffer, cached } = await synthesize({ text, voice });
+    const { buffer, cached, usage } = await synthesize({ text, voice });
+    const headers: Record<string, string> = {
+      "Content-Type": "audio/wav",
+      "Content-Length": String(buffer.byteLength),
+      "Cache-Control": "private, max-age=31536000, immutable",
+      "X-Cached": cached ? "1" : "0",
+    };
+    if (usage) {
+      headers["X-Tts-Model"] = usage.model;
+      headers["X-Tts-Input-Tokens"] = String(usage.inputTokens);
+      headers["X-Tts-Output-Tokens"] = String(usage.outputTokens);
+      headers["X-Tts-Total-Tokens"] = String(usage.totalTokens);
+      headers["Access-Control-Expose-Headers"] =
+        "X-Cached, X-Tts-Model, X-Tts-Input-Tokens, X-Tts-Output-Tokens, X-Tts-Total-Tokens";
+    }
     return new Response(new Uint8Array(buffer), {
       status: 200,
-      headers: {
-        "Content-Type": "audio/wav",
-        "Content-Length": String(buffer.byteLength),
-        "Cache-Control": "private, max-age=31536000, immutable",
-        "X-Cached": cached ? "1" : "0",
-      },
+      headers,
     });
   } catch (err) {
     const message = err instanceof Error ? err.message : "tts failed";

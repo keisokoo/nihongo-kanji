@@ -4,6 +4,7 @@ import { useTtsPlayer } from "~/lib/useTtsPlayer";
 import type { Kanji, Reading } from "~/lib/db";
 import { Spinner } from "./Spinner";
 import { ConfirmModal } from "./ConfirmModal";
+import { showUsageToast, type ApiUsage } from "./Toast";
 
 type Props = {
   kanji: Pick<Kanji, "id" | "character" | "packKey" | "meaningKo">;
@@ -32,6 +33,10 @@ export function KanjiCard({ kanji, readings }: Props) {
         const body = (await res.json().catch(() => ({}))) as { error?: string };
         throw new Error(body.error ?? `request failed (${res.status})`);
       }
+      const body = (await res.json().catch(() => ({}))) as {
+        usage?: ApiUsage | null;
+      };
+      if (body.usage) showUsageToast("↻ 한자 의미 재생성", body.usage);
       // Re-run loader to pick up the new readings.
       revalidator.revalidate();
       setRefetch(null);

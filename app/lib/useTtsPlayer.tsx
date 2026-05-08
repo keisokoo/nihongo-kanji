@@ -1,4 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
+import { showToast } from "~/components/Toast";
 
 const blobUrlCache = new Map<string, string>();
 
@@ -46,6 +47,33 @@ export function useTtsPlayer() {
             // not JSON; keep default message
           }
           throw new Error(message);
+        }
+        const cached = res.headers.get("X-Cached") === "1";
+        const ttsModel = res.headers.get("X-Tts-Model");
+        const inTok = Number(res.headers.get("X-Tts-Input-Tokens") ?? "0");
+        const outTok = Number(res.headers.get("X-Tts-Output-Tokens") ?? "0");
+        const totalTok = Number(res.headers.get("X-Tts-Total-Tokens") ?? "0");
+        if (!cached && ttsModel) {
+          const total = totalTok || inTok + outTok;
+          showToast(
+            <div className="min-w-[16rem]">
+              <div className="flex items-center justify-between gap-3">
+                <span className="font-medium text-neutral-900 dark:text-neutral-100">
+                  ♪ TTS 생성
+                </span>
+                <span className="rounded bg-neutral-100 px-1.5 py-0.5 text-[10px] uppercase tracking-wide text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400">
+                  {ttsModel.replace(/^gemini-/, "")}
+                </span>
+              </div>
+              <div className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-neutral-500 dark:text-neutral-400 tabular-nums">
+                <span>입력 {inTok.toLocaleString()}</span>
+                <span>출력 {outTok.toLocaleString()}</span>
+                <span className="text-neutral-400">
+                  합계 {total.toLocaleString()}
+                </span>
+              </div>
+            </div>,
+          );
         }
         const blob = await res.blob();
         url = URL.createObjectURL(blob);

@@ -1,8 +1,9 @@
-import { useMemo, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import { useTtsPlayer } from "~/lib/useTtsPlayer";
 import type {
   Example,
+  ExampleExplanation,
   SentenceToken,
   Word,
   WordExplanation,
@@ -10,6 +11,7 @@ import type {
 import { tokensToPlain } from "~/lib/sentence";
 import { Spinner } from "./Spinner";
 import { ConfirmModal } from "./ConfirmModal";
+import { showUsageToast, type ApiUsage } from "./Toast";
 
 type ApiExample = {
   example: {
@@ -20,6 +22,7 @@ type ApiExample = {
   };
   cached: boolean;
   modelUsed?: string;
+  usage?: ApiUsage | null;
 };
 
 type WordResponse = {
@@ -27,6 +30,7 @@ type WordResponse = {
   kanjiReading: string;
   matched: boolean;
   modelUsed: string;
+  usage?: ApiUsage | null;
 };
 
 type GenStatus =
@@ -73,6 +77,7 @@ export function WordQuizSection({
         throw new Error(body.error ?? `request failed (${res.status})`);
       }
       const data = (await res.json()) as WordResponse;
+      if (data.usage) showUsageToast("✦ 단어 + 예문 추가", data.usage);
       // Soft-navigate to the new word — loader re-runs and picks it up.
       navigate(
         `/study/${encodeURIComponent(packKey)}/${kanjiId}?word=${encodeURIComponent(data.word.word)}`,
@@ -203,6 +208,15 @@ function ActiveWordQuiz({
   >({ kind: "idle" });
   const [showExplRegenModal, setShowExplRegenModal] = useState(false);
 
+  const [exampleExplOpen, setExampleExplOpen] = useState(false);
+  const [exampleExplStatus, setExampleExplStatus] = useState<
+    | { kind: "idle" }
+    | { kind: "loading"; tier: "default" | "premium" }
+    | { kind: "error"; message: string }
+  >({ kind: "idle" });
+  const [showExampleExplRegenModal, setShowExampleExplRegenModal] =
+    useState(false);
+
   const choicesCache = useRef(new Map<number, string[]>());
 
   const { play, loading: ttsLoading, loadingText } = useTtsPlayer();
@@ -255,6 +269,7 @@ function ActiveWordQuiz({
         throw new Error(body.error ?? `request failed (${res.status})`);
       }
       const data = (await res.json()) as ApiExample;
+      if (data.usage) showUsageToast("✦ 예문 생성", data.usage);
       const newRow: Example = {
         id: data.example.id,
         wordId: word.id,
@@ -262,6 +277,7 @@ function ActiveWordQuiz({
         sentenceTranslationKo: data.example.sentenceTranslationKo,
         source: data.example.source,
         createdAt: new Date(),
+        explanation: null,
       };
       setExamples((prev) => {
         // dedupe in case API returned an existing one
@@ -297,7 +313,9 @@ function ActiveWordQuiz({
       const data = (await res.json()) as {
         explanation: WordExplanation;
         cached: boolean;
+        usage?: ApiUsage | null;
       };
+      if (data.usage) showUsageToast("💡 해설 생성", data.usage);
       setExplanation(data.explanation);
       setExplanationStatus({ kind: "idle" });
     } catch (err) {
@@ -319,6 +337,59 @@ function ActiveWordQuiz({
     setShowExplRegenModal(false);
     fetchExplanation("premium");
   }
+
+  async function fetchExampleExplanation(tier: "default" | "premium") {
+    if (!current) return;
+    const exampleId = current.id;
+    setExampleExplOpen(true);
+    setExampleExplStatus({ kind: "loading", tier });
+    try {
+      const res = await fetch("/api/example-explanation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ exampleId, tier }),
+      });
+      if (!res.ok) {
+        const body = (await res.json().catch(() => ({}))) as { error?: string };
+        throw new Error(body.error ?? `request failed (${res.status})`);
+      }
+      const data = (await res.json()) as {
+        explanation: ExampleExplanation;
+        cached: boolean;
+        usage?: ApiUsage | null;
+      };
+      if (data.usage) showUsageToast("📖 예문 해설", data.usage);
+      setExamples((prev) =>
+        prev.map((e) =>
+          e.id === exampleId ? { ...e, explanation: data.explanation } : e,
+        ),
+      );
+      setExampleExplStatus({ kind: "idle" });
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "failed";
+      setExampleExplStatus({ kind: "error", message });
+    }
+  }
+
+  function handleExampleExplToggle() {
+    if (!current) return;
+    if (!current.explanation) {
+      fetchExampleExplanation("default");
+    } else {
+      setExampleExplOpen((v) => !v);
+    }
+  }
+
+  function handleExampleExplRegenConfirm() {
+    setShowExampleExplRegenModal(false);
+    fetchExampleExplanation("premium");
+  }
+
+  // Reset example-explanation panel state when navigating between examples.
+  useEffect(() => {
+    setExampleExplOpen(false);
+    setExampleExplStatus({ kind: "idle" });
+  }, [currentIndex]);
 
   const picked = current ? (picks.get(current.id) ?? null) : null;
   const reveal = picked !== null;
@@ -439,15 +510,37 @@ function ActiveWordQuiz({
                 wordReading={word.wordReading}
               />
             </p>
-            <button
-              type="button"
-              disabled={ttsLoading}
-              onClick={() => play(sentencePlain)}
-              aria-label="예문 발음"
-              className="mt-2 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-neutral-200 text-base text-neutral-600 hover:bg-neutral-100 disabled:opacity-50 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
-            >
-              {sentenceLoading ? <Spinner className="h-4 w-4" /> : "♪"}
-            </button>
+            <div className="mt-2 flex shrink-0 flex-col gap-2">
+              <button
+                type="button"
+                disabled={ttsLoading}
+                onClick={() => play(sentencePlain)}
+                aria-label="예문 발음"
+                className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-200 text-base text-neutral-600 hover:bg-neutral-100 disabled:opacity-50 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+              >
+                {sentenceLoading ? <Spinner className="h-4 w-4" /> : "♪"}
+              </button>
+              <button
+                type="button"
+                disabled={exampleExplStatus.kind === "loading"}
+                onClick={handleExampleExplToggle}
+                aria-label="예문 해설"
+                aria-pressed={exampleExplOpen}
+                title="예문 전체에 대한 해설 (늬앙스/문법/표현)"
+                className={cn(
+                  "inline-flex h-9 w-9 items-center justify-center rounded-full border text-base transition disabled:opacity-50",
+                  exampleExplOpen
+                    ? "border-sky-400 bg-sky-50 text-sky-900 dark:border-sky-500 dark:bg-sky-950 dark:text-sky-200"
+                    : "border-neutral-200 text-neutral-600 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800",
+                )}
+              >
+                {exampleExplStatus.kind === "loading" ? (
+                  <Spinner className="h-4 w-4" />
+                ) : (
+                  <span aria-hidden>📖</span>
+                )}
+              </button>
+            </div>
           </div>
           {current!.sentenceTranslationKo && (
             <p className="mt-3 text-base text-neutral-500">
@@ -455,6 +548,15 @@ function ActiveWordQuiz({
             </p>
           )}
         </div>
+
+        {exampleExplOpen && (
+          <ExampleExplanationPanel
+            explanation={current!.explanation ?? null}
+            status={exampleExplStatus}
+            onRegenerate={() => setShowExampleExplRegenModal(true)}
+            onRetry={() => fetchExampleExplanation("default")}
+          />
+        )}
 
         <div className="mt-6 grid gap-3 sm:grid-cols-2">
           {currentChoices.map((choice) => {
@@ -583,6 +685,109 @@ function ActiveWordQuiz({
         onConfirm={handleExplRegenConfirm}
         onCancel={() => setShowExplRegenModal(false)}
       />
+
+      <ConfirmModal
+        open={showExampleExplRegenModal}
+        title="예문 해설 다시 생성"
+        body={
+          <>
+            <p>
+              <strong>Sonnet</strong> 으로 예문 해설을 다시 생성합니다.
+            </p>
+            <p className="mt-2 text-xs text-neutral-500">
+              기존 예문 해설을 덮어씁니다. 비용이 더 발생합니다.
+            </p>
+          </>
+        }
+        confirmLabel="생성"
+        onConfirm={handleExampleExplRegenConfirm}
+        onCancel={() => setShowExampleExplRegenModal(false)}
+      />
+    </div>
+  );
+}
+
+function ExampleExplanationPanel({
+  explanation,
+  status,
+  onRegenerate,
+  onRetry,
+}: {
+  explanation: ExampleExplanation | null;
+  status:
+    | { kind: "idle" }
+    | { kind: "loading"; tier: "default" | "premium" }
+    | { kind: "error"; message: string };
+  onRegenerate: () => void;
+  onRetry: () => void;
+}) {
+  return (
+    <div className="mt-5 rounded-xl border border-sky-200 bg-sky-50 p-5 dark:border-sky-900/50 dark:bg-sky-950/30">
+      <div className="mb-3 flex items-center justify-between gap-3">
+        <h3 className="text-sm font-semibold uppercase tracking-wide text-sky-900 dark:text-sky-200">
+          예문 해설
+        </h3>
+        {explanation && status.kind !== "loading" && (
+          <button
+            type="button"
+            onClick={onRegenerate}
+            aria-label="예문 해설 다시 생성"
+            title="Sonnet으로 다시 생성"
+            className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-sky-300 bg-white text-sm text-sky-700 opacity-40 transition hover:opacity-100 dark:border-sky-800 dark:bg-neutral-900 dark:text-sky-300"
+          >
+            ✦
+          </button>
+        )}
+      </div>
+
+      {status.kind === "loading" && (
+        <div className="flex items-center gap-2 text-sm text-sky-900 dark:text-sky-200">
+          <Spinner className="h-4 w-4" />
+          {status.tier === "premium"
+            ? "고품질 예문 해설 생성 중…"
+            : "예문 해설 생성 중…"}
+        </div>
+      )}
+
+      {status.kind === "error" && (
+        <div className="flex items-center justify-between gap-3">
+          <p className="text-sm text-rose-600">
+            예문 해설 생성 실패: {status.message}
+          </p>
+          <button
+            type="button"
+            onClick={onRetry}
+            className="rounded-md border border-sky-300 bg-white px-3 py-1.5 text-sm hover:border-sky-400"
+          >
+            다시 시도
+          </button>
+        </div>
+      )}
+
+      {status.kind === "idle" && explanation && (
+        <div className="space-y-4 text-sm leading-relaxed text-neutral-800 dark:text-neutral-200">
+          <ExplSection label="늬앙스" body={explanation.nuance} />
+          <ExplSection label="문법" body={explanation.grammar} />
+          <ExplSection label="발음" body={explanation.pronunciation} />
+          <ExplSection label="학습 포인트" body={explanation.takeaways} />
+          <p className="pt-1 text-xs text-neutral-400">
+            {explanation.modelUsed} ·{" "}
+            {new Date(explanation.createdAt).toLocaleString("ko-KR")}
+          </p>
+        </div>
+      )}
+    </div>
+  );
+}
+
+function ExplSection({ label, body }: { label: string; body: string }) {
+  if (!body || body.trim() === "") return null;
+  return (
+    <div>
+      <div className="mb-1 text-xs font-semibold uppercase tracking-wide text-sky-700 dark:text-sky-400">
+        {label}
+      </div>
+      <p className="whitespace-pre-wrap">{body}</p>
     </div>
   );
 }

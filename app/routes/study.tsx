@@ -12,6 +12,7 @@ import {
 import { KanjiCard } from "~/components/KanjiCard";
 import { WordQuizSection } from "~/components/WordQuizSection";
 import { Spinner } from "~/components/Spinner";
+import { showUsageToast, type ApiUsage } from "~/components/Toast";
 
 const DISTRACTOR_POOL_SIZE = 200;
 
@@ -322,7 +323,11 @@ function EmptyWordsCta({
         const body = (await res.json().catch(() => ({}))) as { error?: string };
         throw new Error(body.error ?? `request failed (${res.status})`);
       }
-      const data = (await res.json()) as { word: Word };
+      const data = (await res.json()) as {
+        word: Word;
+        usage?: ApiUsage | null;
+      };
+      if (data.usage) showUsageToast("✦ 단어 + 예문 생성", data.usage);
       navigate(
         `/study/${encodeURIComponent(packKey)}/${kanjiId}?word=${encodeURIComponent(data.word.word)}`,
       );

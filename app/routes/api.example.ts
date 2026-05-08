@@ -6,7 +6,11 @@ import {
   words as wordsTable,
 } from "~/lib/db";
 import { parseSentence, tokensToMarkdown } from "~/lib/sentence";
-import { generateExample, type Tier } from "~/lib/claude.server";
+import {
+  generateExample,
+  type Tier,
+  type Usage,
+} from "~/lib/claude.server";
 
 export function loader() {
   return Response.json({ error: "method not allowed" }, { status: 405 });
@@ -42,6 +46,7 @@ export async function action({ request }: Route.ActionArgs) {
   let example: ExampleRow | undefined;
   let cached = false;
   let modelUsed: string | undefined;
+  let usage: Usage | null = null;
 
   // Premium tier (다시 생성) bypasses cache and always generates fresh.
   if (tier !== "premium") {
@@ -81,6 +86,7 @@ export async function action({ request }: Route.ActionArgs) {
       return Response.json({ error: message }, { status: 502 });
     }
     modelUsed = gen.modelUsed;
+    usage = gen.usage;
 
     let tokens;
     try {
@@ -142,5 +148,6 @@ export async function action({ request }: Route.ActionArgs) {
     },
     cached,
     modelUsed,
+    usage: usage && modelUsed ? { ...usage, model: modelUsed } : null,
   });
 }

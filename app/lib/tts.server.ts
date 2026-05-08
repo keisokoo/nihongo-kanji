@@ -59,9 +59,17 @@ export type TtsOptions = {
   model?: string;
 };
 
+export type TtsUsage = {
+  model: string;
+  inputTokens: number;
+  outputTokens: number;
+  totalTokens: number;
+};
+
 export type TtsResult = {
   buffer: Buffer;
   cached: boolean;
+  usage: TtsUsage | null;
 };
 
 export async function synthesize({
@@ -76,7 +84,7 @@ export async function synthesize({
   const filePath = join(CACHE_DIR, `${hash}.wav`);
 
   if (await fileExists(filePath)) {
-    return { buffer: await readFile(filePath), cached: true };
+    return { buffer: await readFile(filePath), cached: true, usage: null };
   }
 
   // Wrap with an explicit pronunciation instruction.
@@ -139,5 +147,15 @@ export async function synthesize({
     .values({ textHash: hash, text: trimmed, voice, filePath })
     .onConflictDoNothing();
 
-  return { buffer: wav, cached: false };
+  const meta = response.usageMetadata;
+  const usage: TtsUsage = {
+    model,
+    inputTokens: meta?.promptTokenCount ?? 0,
+    outputTokens: meta?.candidatesTokenCount ?? 0,
+    totalTokens:
+      meta?.totalTokenCount ??
+      (meta?.promptTokenCount ?? 0) + (meta?.candidatesTokenCount ?? 0),
+  };
+
+  return { buffer: wav, cached: false, usage };
 }

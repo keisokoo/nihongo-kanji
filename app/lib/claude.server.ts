@@ -31,12 +31,36 @@ function modelFor(tier: Tier) {
 
 type Schema = Record<string, unknown>;
 
-async function callJson<T>(
+export type Usage = {
+  inputTokens: number;
+  outputTokens: number;
+  cacheCreationInputTokens: number;
+  cacheReadInputTokens: number;
+};
+
+export const ZERO_USAGE: Usage = {
+  inputTokens: 0,
+  outputTokens: 0,
+  cacheCreationInputTokens: 0,
+  cacheReadInputTokens: 0,
+};
+
+export function addUsage(a: Usage, b: Usage): Usage {
+  return {
+    inputTokens: a.inputTokens + b.inputTokens,
+    outputTokens: a.outputTokens + b.outputTokens,
+    cacheCreationInputTokens:
+      a.cacheCreationInputTokens + b.cacheCreationInputTokens,
+    cacheReadInputTokens: a.cacheReadInputTokens + b.cacheReadInputTokens,
+  };
+}
+
+async function callJson(
   model: string,
   systemPrompt: string,
   userMessage: string,
   schema: Schema,
-): Promise<T> {
+): Promise<{ data: unknown; usage: Usage }> {
   const outputConfig: Record<string, unknown> = {
     format: { type: "json_schema", schema },
   };
@@ -44,7 +68,7 @@ async function callJson<T>(
 
   const response = await client().messages.create({
     model,
-    max_tokens: 1024,
+    max_tokens: 2048,
     system: [
       {
         type: "text",
@@ -56,6 +80,14 @@ async function callJson<T>(
     messages: [{ role: "user", content: userMessage }],
   });
 
+  const u = response.usage;
+  const usage: Usage = {
+    inputTokens: u?.input_tokens ?? 0,
+    outputTokens: u?.output_tokens ?? 0,
+    cacheCreationInputTokens: u?.cache_creation_input_tokens ?? 0,
+    cacheReadInputTokens: u?.cache_read_input_tokens ?? 0,
+  };
+
   const textBlock = response.content.find((b) => b.type === "text");
   if (!textBlock || textBlock.type !== "text") {
     console.error("[claude] no text content", response);
@@ -63,7 +95,7 @@ async function callJson<T>(
   }
 
   try {
-    return JSON.parse(textBlock.text) as T;
+    return { data: JSON.parse(textBlock.text), usage };
   } catch {
     console.error("[claude] JSON parse failed:", textBlock.text);
     throw new Error("Claude returned invalid JSON");
@@ -80,17 +112,20 @@ async function callJson<T>(
 async function withFallback<T>(
   tier: Tier,
   validate: (out: unknown) => out is T,
-  call: (model: string) => Promise<unknown>,
+  call: (model: string) => Promise<{ data: unknown; usage: Usage }>,
   label: string,
-): Promise<{ result: T; modelUsed: string }> {
+): Promise<{ result: T; modelUsed: string; usage: Usage }> {
   const primary = modelFor(tier);
   let lastErr: unknown = null;
+  let aggregated: Usage = ZERO_USAGE;
 
   try {
-    const out = await call(primary);
-    if (validate(out)) return { result: out, modelUsed: primary };
+    const { data, usage } = await call(primary);
+    aggregated = addUsage(aggregated, usage);
+    if (validate(data))
+      return { result: data, modelUsed: primary, usage: aggregated };
     lastErr = new Error("validation failed");
-    console.warn(`[claude:${label}] ${primary} produced invalid output:`, out);
+    console.warn(`[claude:${label}] ${primary} produced invalid output:`, data);
   } catch (err) {
     lastErr = err;
     console.warn(`[claude:${label}] ${primary} threw:`, err);
@@ -98,17 +133,18 @@ async function withFallback<T>(
 
   if (tier === "default" && primary !== PREMIUM_MODEL) {
     try {
-      const out = await call(PREMIUM_MODEL);
-      if (validate(out)) {
+      const { data, usage } = await call(PREMIUM_MODEL);
+      aggregated = addUsage(aggregated, usage);
+      if (validate(data)) {
         console.warn(
           `[claude:${label}] fell back to ${PREMIUM_MODEL} successfully`,
         );
-        return { result: out, modelUsed: PREMIUM_MODEL };
+        return { result: data, modelUsed: PREMIUM_MODEL, usage: aggregated };
       }
       lastErr = new Error("fallback validation failed");
       console.error(
         `[claude:${label}] ${PREMIUM_MODEL} fallback also produced invalid output:`,
-        out,
+        data,
       );
     } catch (err) {
       lastErr = err;
@@ -181,7 +217,7 @@ function isExampleOutput(x: unknown): x is GenerateExampleOutput {
 export async function generateExample(
   input: GenerateExampleInput,
   tier: Tier = "default",
-): Promise<{ result: GenerateExampleOutput; modelUsed: string }> {
+): Promise<{ result: GenerateExampleOutput; modelUsed: string; usage: Usage }> {
   const userMessage = [
     `Target word: ${input.word}`,
     `Reading: ${input.wordReading}`,
@@ -263,7 +299,7 @@ function isWordOutput(x: unknown): x is GenerateWordOutput {
 export async function generateWord(
   input: GenerateWordInput,
   tier: Tier = "default",
-): Promise<{ result: GenerateWordOutput; modelUsed: string }> {
+): Promise<{ result: GenerateWordOutput; modelUsed: string; usage: Usage }> {
   const userMessage = [
     `Target kanji: ${input.kanjiChar}`,
     `JLPT Level: ${input.level}`,
@@ -340,7 +376,7 @@ function isExplanationOutput(x: unknown): x is GenerateExplanationOutput {
 export async function generateExplanation(
   input: GenerateExplanationInput,
   tier: Tier = "default",
-): Promise<{ result: GenerateExplanationOutput; modelUsed: string }> {
+): Promise<{ result: GenerateExplanationOutput; modelUsed: string; usage: Usage }> {
   const userMessage = [
     `Word: ${input.word}`,
     `Reading: ${input.wordReading}`,
@@ -408,7 +444,7 @@ function isMeaningOutput(x: unknown): x is GenerateMeaningOutput {
 export async function generateMeaning(
   input: GenerateMeaningInput,
   tier: Tier = "default",
-): Promise<{ result: GenerateMeaningOutput; modelUsed: string }> {
+): Promise<{ result: GenerateMeaningOutput; modelUsed: string; usage: Usage }> {
   const userMessage = [
     `Kanji: ${input.kanjiChar}`,
     input.hint ? `Hint (existing meaning or English): ${input.hint}` : "",
@@ -421,5 +457,94 @@ export async function generateMeaning(
     isMeaningOutput,
     (model) => callJson(model, MEANING_SYSTEM_PROMPT, userMessage, MEANING_SCHEMA),
     "meaning",
+  );
+}
+
+// ─── generateExampleExplanation ─────────────────────────────────────────────
+
+const EXAMPLE_EXPLANATION_SCHEMA = {
+  type: "object",
+  properties: {
+    nuance: { type: "string" },
+    grammar: { type: "string" },
+    pronunciation: { type: "string" },
+    takeaways: { type: "string" },
+  },
+  required: ["nuance", "grammar", "pronunciation", "takeaways"],
+  additionalProperties: false,
+} as const;
+
+const EXAMPLE_EXPLANATION_SYSTEM_PROMPT = `You are a Japanese language tutor for Korean speakers studying JLPT. Given a Japanese example sentence with its Korean translation, explain (IN KOREAN) the whole sentence — not just one word — across four lenses.
+
+Output JSON with these four fields, ALL written in Korean (Japanese terms in original kana/kanji are fine):
+
+{
+  "nuance": "<2-4 sentences. Explain Japanese expressions and nuances that don't map 1:1 to Korean. Where the Korean translation simplifies or shifts meaning, say what's actually happening in the Japanese. Cite specific words/particles in 「」 quotes.>",
+  "grammar": "<2-4 sentences. Break down notable grammar: particles (は/が/を/に/で/と/から/まで/の/も/や/か), verb forms (て-form, た-form, 〜ている, 〜ます, 〜ない, conditional, passive, causative), adjective inflections, copula, sentence-final particles. Pick the 1-3 most instructive points; don't list everything.>",
+  "pronunciation": "<1-3 sentences. ONLY if the sentence has interesting reading phenomena: 연탁(rendaku), 음편화(sokuon/onbin), 숙자훈(jukujikun), 아테지, irregular kanji readings, or non-obvious pitch. If nothing notable, write '특이사항 없음.'>",
+  "takeaways": "<2-3 sentences. Idioms, useful patterns, common collocations, JLPT-relevant expressions to memorize. Be concrete with what to learn.>"
+}
+
+CONSTRAINTS:
+- Korean explanation throughout; quote Japanese in 「」 when citing.
+- Be specific to THIS sentence — no generic study advice.
+- Skip sycophancy and meta-commentary.
+- If a section truly has nothing useful, say so briefly (don't pad).
+- The "focus word" is the quiz target inside the sentence — you can mention it but don't repeat the word-level explanation; explain the SENTENCE.`;
+
+export type GenerateExampleExplanationInput = {
+  sentence: string;
+  translationKo: string;
+  focusWord: string;
+  focusWordReading: string;
+  level: string;
+};
+
+export type GenerateExampleExplanationOutput = {
+  nuance: string;
+  grammar: string;
+  pronunciation: string;
+  takeaways: string;
+};
+
+function isExampleExplanationOutput(
+  x: unknown,
+): x is GenerateExampleExplanationOutput {
+  if (!x || typeof x !== "object") return false;
+  const o = x as Record<string, unknown>;
+  return (
+    typeof o.nuance === "string" &&
+    typeof o.grammar === "string" &&
+    typeof o.pronunciation === "string" &&
+    typeof o.takeaways === "string"
+  );
+}
+
+export async function generateExampleExplanation(
+  input: GenerateExampleExplanationInput,
+  tier: Tier = "default",
+): Promise<{
+  result: GenerateExampleExplanationOutput;
+  modelUsed: string;
+  usage: Usage;
+}> {
+  const userMessage = [
+    `Sentence (Japanese, plain): ${input.sentence}`,
+    `Translation (Korean): ${input.translationKo}`,
+    `Focus word: ${input.focusWord} (${input.focusWordReading})`,
+    `JLPT Level: ${input.level}`,
+  ].join("\n");
+
+  return withFallback<GenerateExampleExplanationOutput>(
+    tier,
+    isExampleExplanationOutput,
+    (model) =>
+      callJson(
+        model,
+        EXAMPLE_EXPLANATION_SYSTEM_PROMPT,
+        userMessage,
+        EXAMPLE_EXPLANATION_SCHEMA,
+      ),
+    "example-explanation",
   );
 }

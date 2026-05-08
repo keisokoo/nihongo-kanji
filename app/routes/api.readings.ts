@@ -2,7 +2,7 @@ import { eq } from "drizzle-orm";
 import type { Route } from "./+types/api.readings";
 import { db, kanji as kanjiTable, readings as readingsTable } from "~/lib/db";
 import { fetchKanjiReadings } from "~/lib/kanjipedia.server";
-import { generateMeaning } from "~/lib/claude.server";
+import { generateMeaning, type Usage } from "~/lib/claude.server";
 
 export function loader() {
   return Response.json({ error: "method not allowed" }, { status: 405 });
@@ -64,6 +64,7 @@ export async function action({ request }: Route.ActionArgs) {
 
   let meaningKo: string | null = null;
   let meaningModel: string | null = null;
+  let meaningUsage: Usage | null = null;
   try {
     const gen = await generateMeaning({
       kanjiChar: target.character,
@@ -71,6 +72,7 @@ export async function action({ request }: Route.ActionArgs) {
     });
     meaningKo = gen.result.meaningKo;
     meaningModel = gen.modelUsed;
+    meaningUsage = gen.usage;
     await db
       .update(kanjiTable)
       .set({ meaningKo: gen.result.meaningKo })
@@ -86,5 +88,9 @@ export async function action({ request }: Route.ActionArgs) {
     count: inserted.length,
     meaningKo,
     meaningModel,
+    usage:
+      meaningUsage && meaningModel
+        ? { ...meaningUsage, model: meaningModel }
+        : null,
   });
 }

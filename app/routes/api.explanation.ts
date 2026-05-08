@@ -66,5 +66,9 @@ export async function action({ request }: Route.ActionArgs) {
     .set({ explanation })
     .where(eq(wordsTable.id, wordId));
 
-  return Response.json({ explanation, cached: false });
+  return Response.json({
+    explanation,
+    cached: false,
+    usage: { ...gen.usage, model: gen.modelUsed },
+  });
 }
