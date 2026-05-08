@@ -1,0 +1,16 @@
+services:
+  postgres:
+    image: postgres:17-alpine
+    container_name: nihongo-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_USER: nihongo
+      POSTGRES_PASSWORD: nihongo
+      POSTGRES_DB: nihongo
+    ports:
+      - "5432:5432"
+    volumes:
+      - nihongo-pgdata:/var/lib/postgresql/data
+
+volumes:
+  nihongo-pgdata:

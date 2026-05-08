@@ -1,0 +1,13 @@
+.DS_Store
+.env
+/node_modules/
+
+# React Router
+/.react-router/
+/build/
+
+# TTS audio cache
+/public/audio/
+
+# Drizzle
+/drizzle/meta/_journal.json.bak
