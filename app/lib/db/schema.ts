@@ -7,11 +7,26 @@ import {
   timestamp,
   pgEnum,
   uniqueIndex,
+  jsonb,
 } from "drizzle-orm/pg-core";
 import { relations } from "drizzle-orm";
 
+export type SentenceToken = {
+  text: string;
+  reading?: string;
+  target?: true;
+};
+
+export type WordExplanation = {
+  reasoning: string;
+  mnemonic: string;
+  modelUsed: string;
+  createdAt: string;
+};
+
 export const jlptLevelEnum = pgEnum("jlpt_level", ["N5", "N4", "N3"]);
 export const readingTypeEnum = pgEnum("reading_type", ["on", "kun"]);
+export const exampleSourceEnum = pgEnum("example_source", ["seed", "generated"]);
 
 export const kanji = pgTable(
   "kanji",
@@ -36,18 +51,30 @@ export const readings = pgTable("readings", {
   romaji: varchar("romaji", { length: 32 }),
 });
 
-export const examples = pgTable("examples", {
+export const words = pgTable("words", {
   id: serial("id").primaryKey(),
   kanjiId: integer("kanji_id")
     .notNull()
     .references(() => kanji.id, { onDelete: "cascade" }),
-  readingId: integer("reading_id")
-    .notNull()
-    .references(() => readings.id, { onDelete: "cascade" }),
+  readingId: integer("reading_id").references(() => readings.id, {
+    onDelete: "set null",
+  }),
   word: varchar("word", { length: 64 }).notNull(),
   wordReading: varchar("word_reading", { length: 64 }).notNull(),
-  sentence: text("sentence"),
+  source: exampleSourceEnum("source").notNull().default("seed"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  explanation: jsonb("explanation").$type<WordExplanation>(),
+});
+
+export const examples = pgTable("examples", {
+  id: serial("id").primaryKey(),
+  wordId: integer("word_id")
+    .notNull()
+    .references(() => words.id, { onDelete: "cascade" }),
+  sentence: jsonb("sentence").$type<SentenceToken[]>().notNull(),
   sentenceTranslationKo: text("sentence_translation_ko"),
+  source: exampleSourceEnum("source").notNull().default("seed"),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
 });
 
 export const audioCache = pgTable(
@@ -65,7 +92,7 @@ export const audioCache = pgTable(
 
 export const kanjiRelations = relations(kanji, ({ many }) => ({
   readings: many(readings),
-  examples: many(examples),
+  words: many(words),
 }));
 
 export const readingsRelations = relations(readings, ({ one, many }) => ({
@@ -73,21 +100,30 @@ export const readingsRelations = relations(readings, ({ one, many }) => ({
     fields: [readings.kanjiId],
     references: [kanji.id],
   }),
+  words: many(words),
+}));
+
+export const wordsRelations = relations(words, ({ one, many }) => ({
+  kanji: one(kanji, {
+    fields: [words.kanjiId],
+    references: [kanji.id],
+  }),
+  reading: one(readings, {
+    fields: [words.readingId],
+    references: [readings.id],
+  }),
   examples: many(examples),
 }));
 
 export const examplesRelations = relations(examples, ({ one }) => ({
-  kanji: one(kanji, {
-    fields: [examples.kanjiId],
-    references: [kanji.id],
-  }),
-  reading: one(readings, {
-    fields: [examples.readingId],
-    references: [readings.id],
+  word: one(words, {
+    fields: [examples.wordId],
+    references: [words.id],
   }),
 }));
 
 export type Kanji = typeof kanji.$inferSelect;
 export type Reading = typeof readings.$inferSelect;
+export type Word = typeof words.$inferSelect;
 export type Example = typeof examples.$inferSelect;
 export type AudioCache = typeof audioCache.$inferSelect;

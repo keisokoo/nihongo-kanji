@@ -6,8 +6,11 @@
 /.react-router/
 /build/
 
-# TTS audio cache
-/public/audio/
+# TTS audio cache (server-side, not exposed)
+/.cache/
 
 # Drizzle
 /drizzle/meta/_journal.json.bak
+
+# Claude
+/.claude
