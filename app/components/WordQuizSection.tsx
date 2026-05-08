@@ -98,12 +98,12 @@ export function WordQuizSection({
             disabled={addingWord?.state === "loading"}
             onClick={() => setShowAddModal(true)}
             className="group inline-flex items-center gap-1.5 rounded-md border border-neutral-300 bg-white px-3 py-1.5 text-sm text-neutral-700 opacity-50 transition hover:border-neutral-400 hover:opacity-100 disabled:opacity-50 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
-            title="이 한자를 쓰는 새 단어를 Sonnet으로 생성"
+            title="이 한자를 쓰는 새 단어 + 예문 1개를 Sonnet으로 생성"
           >
             {addingWord?.state === "loading" ? (
               <>
                 <Spinner className="h-3.5 w-3.5" />
-                생성 중…
+                단어 + 예문 생성 중…
               </>
             ) : (
               <>✦ 단어 추가</>
@@ -161,10 +161,11 @@ export function WordQuizSection({
                 {/* show the kanji from word context — derived from any word */}
                 {activeWord.word.match(/\p{sc=Han}/u)?.[0] ?? ""}
               </span>{" "}
-              로 시작하는 새 단어를 <strong>Sonnet</strong> 으로 생성합니다.
+              를 쓰는 새 단어와 예문 1개를 <strong>Sonnet</strong> 으로
+              생성합니다.
             </p>
             <p className="mt-2 text-xs text-neutral-500">
-              비용이 발생합니다 (캐시 우회).
+              비용이 발생합니다 (단어 + 예문, 캐시 우회).
             </p>
           </>
         }

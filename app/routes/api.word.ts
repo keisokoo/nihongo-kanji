@@ -2,11 +2,17 @@ import { eq } from "drizzle-orm";
 import type { Route } from "./+types/api.word";
 import {
   db,
+  examples as examplesTable,
   kanji as kanjiTable,
   readings as readingsTable,
   words as wordsTable,
 } from "~/lib/db";
-import { generateWord, type Tier } from "~/lib/claude.server";
+import {
+  generateExample,
+  generateWord,
+  type Tier,
+} from "~/lib/claude.server";
+import { parseSentence } from "~/lib/sentence";
 
 export function loader() {
   return Response.json({ error: "method not allowed" }, { status: 405 });
@@ -92,11 +98,63 @@ export async function action({ request }: Route.ActionArgs) {
       })
       .returning();
 
+    // Best-effort: also generate one example so the new word lands with a
+    // ready quiz. Failures are non-fatal — the user can hit "문제 생성".
+    let example: typeof examplesTable.$inferSelect | null = null;
+    let exampleModelUsed: string | null = null;
+    try {
+      const exampleGen = await generateExample(
+        {
+          word: saved.word,
+          wordReading: saved.wordReading,
+          kanjiChar: target.character,
+          level: target.packKey,
+          excludeSentences: [],
+        },
+        tier,
+      );
+      const tokens = parseSentence(
+        exampleGen.result.sentence,
+        `generated ${saved.word}/${saved.wordReading}`,
+      );
+      const targetCount = tokens.filter((t) => t.target).length;
+      if (targetCount !== 1) {
+        throw new Error(
+          `generated sentence has ${targetCount} target markers (expected 1)`,
+        );
+      }
+      const [insertedExample] = await db
+        .insert(examplesTable)
+        .values({
+          wordId: saved.id,
+          sentence: tokens,
+          sentenceTranslationKo: exampleGen.result.translationKo,
+          source: "generated",
+        })
+        .returning();
+      example = insertedExample;
+      exampleModelUsed = exampleGen.modelUsed;
+    } catch (err) {
+      console.warn(
+        "[api.word] example generation failed (non-fatal):",
+        err instanceof Error ? err.message : err,
+      );
+    }
+
     return Response.json({
       word: saved,
       kanjiReading,
       matched: !!matchedReading,
       modelUsed: gen.modelUsed,
+      example: example
+        ? {
+            id: example.id,
+            sentence: example.sentence,
+            sentenceTranslationKo: example.sentenceTranslationKo,
+            source: example.source,
+            modelUsed: exampleModelUsed,
+          }
+        : null,
     });
   }
 

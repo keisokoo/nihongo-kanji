@@ -338,7 +338,7 @@ function EmptyWordsCta({
     <div className="rounded-2xl border border-dashed border-neutral-300 p-12 text-center dark:border-neutral-700">
       <p className="text-base text-neutral-500">아직 등록된 단어가 없습니다.</p>
       <p className="mt-1 text-sm text-neutral-400">
-        AI로 이 한자를 쓰는 단어를 생성해보세요.
+        AI로 이 한자를 쓰는 단어와 예문 1개를 같이 생성해보세요.
       </p>
       <div className="mt-6 flex items-center justify-center gap-3">
         <button
@@ -350,7 +350,7 @@ function EmptyWordsCta({
           {isLoading && status.tier === "default" ? (
             <>
               <Spinner className="h-4 w-4" />
-              생성 중…
+              단어 + 예문 생성 중…
             </>
           ) : (
             <>✦ 단어 생성 (Haiku)</>
@@ -366,7 +366,7 @@ function EmptyWordsCta({
           {isLoading && status.tier === "premium" ? (
             <>
               <Spinner className="h-3.5 w-3.5" />
-              생성 중…
+              단어 + 예문 생성 중…
             </>
           ) : (
             <>고품질 (Sonnet)</>
