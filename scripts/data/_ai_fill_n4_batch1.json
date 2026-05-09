@@ -1,0 +1,475 @@
+{
+  "_comment": "N4 batch 1: 借, 兄, 公, 冬, 勉, 堂, 夕, 妹, 姉, 弟",
+  "fills": {
+    "借": [
+      {
+        "readingRef": "シャク",
+        "word": "借金",
+        "wordReading": "しゃっきん",
+        "meaningsKo": ["빚", "차용금"],
+        "examples": [
+          { "sentence": "{{借金}}を{返|かえ}すために{頑張|がんば}っています。", "sentenceTranslationKo": "빚을 갚기 위해 열심히 하고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "シャク",
+        "word": "借用",
+        "wordReading": "しゃくよう",
+        "meaningsKo": ["차용", "빌려 씀"],
+        "examples": [
+          { "sentence": "{{借用}}した{本|ほん}は{来週|らいしゅう}{返|かえ}します。", "sentenceTranslationKo": "차용한 책은 다음 주에 돌려드리겠습니다." }
+        ]
+      },
+      {
+        "readingRef": "かりる",
+        "word": "借りる",
+        "wordReading": "かりる",
+        "meaningsKo": ["빌리다"],
+        "examples": [
+          { "sentence": "{図書館|としょかん}で{本|ほん}を{{借りる}}。", "sentenceTranslationKo": "도서관에서 책을 빌립니다." }
+        ]
+      },
+      {
+        "readingRef": "かりる",
+        "word": "借り物",
+        "wordReading": "かりもの",
+        "meaningsKo": ["빌린 물건"],
+        "examples": [
+          { "sentence": "この{傘|かさ}は{{借り物}}なので{大切|たいせつ}に{使|つか}います。", "sentenceTranslationKo": "이 우산은 빌린 물건이라서 소중히 씁니다." }
+        ]
+      },
+      {
+        "readingRef": "かりる",
+        "word": "借家",
+        "wordReading": "しゃくや",
+        "meaningsKo": ["셋집", "임대주택"],
+        "examples": [
+          { "sentence": "{駅|えき}の{近|ちか}くに{{借家}}を{探|さが}しています。", "sentenceTranslationKo": "역 근처에 셋집을 찾고 있습니다." }
+        ]
+      }
+    ],
+    "兄": [
+      {
+        "readingRef": "ケイ",
+        "word": "兄弟",
+        "wordReading": "きょうだい",
+        "meaningsKo": ["형제", "남매"],
+        "examples": [
+          { "sentence": "{私|わたし}は{{兄弟}}が{三人|さんにん}います。", "sentenceTranslationKo": "저는 형제가 세 명 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "ケイ",
+        "word": "長兄",
+        "wordReading": "ちょうけい",
+        "meaningsKo": ["맏형", "큰형"],
+        "examples": [
+          { "sentence": "{{長兄}}は{家族|かぞく}の{中|なか}で{一番|いちばん}{頼|たよ}りになります。", "sentenceTranslationKo": "맏형은 가족 중에서 가장 의지가 됩니다." }
+        ]
+      },
+      {
+        "readingRef": "あに",
+        "word": "兄",
+        "wordReading": "あに",
+        "meaningsKo": ["형", "오빠"],
+        "examples": [
+          { "sentence": "{{兄}}は{大学|だいがく}で{勉強|べんきょう}しています。", "sentenceTranslationKo": "형은 대학에서 공부하고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "あに",
+        "word": "兄貴",
+        "wordReading": "あにき",
+        "meaningsKo": ["형님", "형"],
+        "examples": [
+          { "sentence": "{{兄貴}}に{相談|そうだん}してから{決|き}めます。", "sentenceTranslationKo": "형님과 상의한 후에 결정하겠습니다." }
+        ]
+      },
+      {
+        "readingRef": "あに",
+        "word": "兄嫁",
+        "wordReading": "あによめ",
+        "meaningsKo": ["형수"],
+        "examples": [
+          { "sentence": "{{兄嫁}}は{料理|りょうり}がとても{上手|じょうず}です。", "sentenceTranslationKo": "형수는 요리를 아주 잘합니다." }
+        ]
+      }
+    ],
+    "公": [
+      {
+        "readingRef": "コウ",
+        "word": "公園",
+        "wordReading": "こうえん",
+        "meaningsKo": ["공원"],
+        "examples": [
+          { "sentence": "{毎朝|まいあさ}{{公園}}を{散歩|さんぽ}します。", "sentenceTranslationKo": "매일 아침 공원을 산책합니다." }
+        ]
+      },
+      {
+        "readingRef": "コウ",
+        "word": "公務員",
+        "wordReading": "こうむいん",
+        "meaningsKo": ["공무원"],
+        "examples": [
+          { "sentence": "{父|ちち}は{市役所|しやくしょ}の{{公務員}}です。", "sentenceTranslationKo": "아버지는 시청의 공무원입니다." }
+        ]
+      },
+      {
+        "readingRef": "コウ",
+        "word": "公平",
+        "wordReading": "こうへい",
+        "meaningsKo": ["공평", "공평하다"],
+        "examples": [
+          { "sentence": "{先生|せんせい}は{学生|がくせい}に{{公平}}に{接|せっ}します。", "sentenceTranslationKo": "선생님은 학생들을 공평하게 대합니다." }
+        ]
+      },
+      {
+        "readingRef": "コウ",
+        "word": "公開",
+        "wordReading": "こうかい",
+        "meaningsKo": ["공개"],
+        "examples": [
+          { "sentence": "{新|あたら}しい{映画|えいが}が{来月|らいげつ}{{公開}}されます。", "sentenceTranslationKo": "새 영화가 다음 달에 공개됩니다." }
+        ]
+      },
+      {
+        "readingRef": "コウ",
+        "word": "公共",
+        "wordReading": "こうきょう",
+        "meaningsKo": ["공공"],
+        "examples": [
+          { "sentence": "{{公共}}の{場|ば}では{静|しず}かにしましょう。", "sentenceTranslationKo": "공공장소에서는 조용히 합시다." }
+        ]
+      },
+      {
+        "readingRef": "おおやけ",
+        "word": "公",
+        "wordReading": "おおやけ",
+        "meaningsKo": ["공", "공적"],
+        "examples": [
+          { "sentence": "この{情報|じょうほう}はまだ{{公}}にされていません。", "sentenceTranslationKo": "이 정보는 아직 공개되지 않았습니다." }
+        ]
+      }
+    ],
+    "冬": [
+      {
+        "readingRef": "トウ",
+        "word": "冬季",
+        "wordReading": "とうき",
+        "meaningsKo": ["동계", "겨울철"],
+        "examples": [
+          { "sentence": "{{冬季}}オリンピックは{雪|ゆき}と{氷|こおり}の{祭|まつ}りです。", "sentenceTranslationKo": "동계 올림픽은 눈과 얼음의 축제입니다." }
+        ]
+      },
+      {
+        "readingRef": "トウ",
+        "word": "冬眠",
+        "wordReading": "とうみん",
+        "meaningsKo": ["동면", "겨울잠"],
+        "examples": [
+          { "sentence": "{熊|くま}は{{冬眠}}するために{食|た}べ{物|もの}をたくさん{食|た}べます。", "sentenceTranslationKo": "곰은 동면하기 위해 음식을 많이 먹습니다." }
+        ]
+      },
+      {
+        "readingRef": "ふゆ",
+        "word": "冬",
+        "wordReading": "ふゆ",
+        "meaningsKo": ["겨울"],
+        "examples": [
+          { "sentence": "{{冬}}は{寒|さむ}くて{雪|ゆき}が{降|ふ}ります。", "sentenceTranslationKo": "겨울은 춥고 눈이 내립니다." }
+        ]
+      },
+      {
+        "readingRef": "ふゆ",
+        "word": "冬休み",
+        "wordReading": "ふゆやすみ",
+        "meaningsKo": ["겨울방학", "겨울휴가"],
+        "examples": [
+          { "sentence": "{{冬休み}}に{家族|かぞく}と{旅行|りょこう}に{行|い}きます。", "sentenceTranslationKo": "겨울방학에 가족과 여행을 갑니다." }
+        ]
+      },
+      {
+        "readingRef": "ふゆ",
+        "word": "冬服",
+        "wordReading": "ふゆふく",
+        "meaningsKo": ["겨울옷"],
+        "examples": [
+          { "sentence": "{寒|さむ}くなったので{{冬服}}を{出|だ}しました。", "sentenceTranslationKo": "추워져서 겨울옷을 꺼냈습니다." }
+        ]
+      },
+      {
+        "readingRef": "ふゆ",
+        "word": "真冬",
+        "wordReading": "まふゆ",
+        "meaningsKo": ["한겨울"],
+        "examples": [
+          { "sentence": "{{真冬}}の{朝|あさ}は{息|いき}が{白|しろ}く{見|み}えます。", "sentenceTranslationKo": "한겨울 아침은 입김이 하얗게 보입니다." }
+        ]
+      }
+    ],
+    "勉": [
+      {
+        "readingRef": "ベン",
+        "word": "勉強",
+        "wordReading": "べんきょう",
+        "meaningsKo": ["공부"],
+        "examples": [
+          { "sentence": "{毎日|まいにち}{日本語|にほんご}を{{勉強}}しています。", "sentenceTranslationKo": "매일 일본어를 공부하고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "ベン",
+        "word": "勤勉",
+        "wordReading": "きんべん",
+        "meaningsKo": ["근면", "근면하다"],
+        "examples": [
+          { "sentence": "{彼|かれ}はとても{{勤勉}}な{学生|がくせい}です。", "sentenceTranslationKo": "그는 아주 근면한 학생입니다." }
+        ]
+      },
+      {
+        "readingRef": "ベン",
+        "word": "勉学",
+        "wordReading": "べんがく",
+        "meaningsKo": ["면학", "학업"],
+        "examples": [
+          { "sentence": "{{勉学}}に{励|はげ}む{毎日|まいにち}を{送|おく}っています。", "sentenceTranslationKo": "면학에 힘쓰는 나날을 보내고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "つとめる",
+        "word": "勉める",
+        "wordReading": "つとめる",
+        "meaningsKo": ["힘쓰다", "노력하다"],
+        "examples": [
+          { "sentence": "{皆|みな}さんに{喜|よろこ}んでもらえるよう{{勉める}}つもりです。", "sentenceTranslationKo": "모두에게 기쁨을 드리도록 노력할 생각입니다." }
+        ]
+      }
+    ],
+    "堂": [
+      {
+        "readingRef": "ドウ",
+        "word": "食堂",
+        "wordReading": "しょくどう",
+        "meaningsKo": ["식당"],
+        "examples": [
+          { "sentence": "{昼|ひる}は{学校|がっこう}の{{食堂}}で{食|た}べます。", "sentenceTranslationKo": "점심은 학교 식당에서 먹습니다." }
+        ]
+      },
+      {
+        "readingRef": "ドウ",
+        "word": "講堂",
+        "wordReading": "こうどう",
+        "meaningsKo": ["강당"],
+        "examples": [
+          { "sentence": "{入学式|にゅうがくしき}は{{講堂}}で{行|おこな}われます。", "sentenceTranslationKo": "입학식은 강당에서 거행됩니다." }
+        ]
+      },
+      {
+        "readingRef": "ドウ",
+        "word": "本堂",
+        "wordReading": "ほんどう",
+        "meaningsKo": ["본당"],
+        "examples": [
+          { "sentence": "{お寺|おてら}の{{本堂}}で{手|て}を{合|あ}わせました。", "sentenceTranslationKo": "절의 본당에서 합장을 했습니다." }
+        ]
+      },
+      {
+        "readingRef": "ドウ",
+        "word": "公会堂",
+        "wordReading": "こうかいどう",
+        "meaningsKo": ["공회당"],
+        "examples": [
+          { "sentence": "{町|まち}の{{公会堂}}でコンサートが{開|ひら}かれます。", "sentenceTranslationKo": "마을의 공회당에서 콘서트가 열립니다." }
+        ]
+      },
+      {
+        "readingRef": "ドウ",
+        "word": "堂々",
+        "wordReading": "どうどう",
+        "meaningsKo": ["당당", "당당하다"],
+        "examples": [
+          { "sentence": "{彼女|かのじょ}は{{堂々}}とスピーチをしました。", "sentenceTranslationKo": "그녀는 당당하게 연설을 했습니다." }
+        ]
+      }
+    ],
+    "夕": [
+      {
+        "readingRef": "セキ",
+        "word": "夕食",
+        "wordReading": "ゆうしょく",
+        "meaningsKo": ["저녁식사", "저녁밥"],
+        "examples": [
+          { "sentence": "{家族|かぞく}と{一緒|いっしょ}に{{夕食}}を{食|た}べます。", "sentenceTranslationKo": "가족과 함께 저녁식사를 합니다." }
+        ]
+      },
+      {
+        "readingRef": "セキ",
+        "word": "夕刊",
+        "wordReading": "ゆうかん",
+        "meaningsKo": ["석간", "저녁신문"],
+        "examples": [
+          { "sentence": "{父|ちち}は{帰|かえ}ってから{{夕刊}}を{読|よ}みます。", "sentenceTranslationKo": "아버지는 돌아오신 뒤 석간을 읽습니다." }
+        ]
+      },
+      {
+        "readingRef": "ゆう",
+        "word": "夕方",
+        "wordReading": "ゆうがた",
+        "meaningsKo": ["저녁때", "저녁 무렵"],
+        "examples": [
+          { "sentence": "{{夕方}}になると{空|そら}が{赤|あか}くなります。", "sentenceTranslationKo": "저녁때가 되면 하늘이 붉어집니다." }
+        ]
+      },
+      {
+        "readingRef": "ゆう",
+        "word": "夕日",
+        "wordReading": "ゆうひ",
+        "meaningsKo": ["석양", "저녁해"],
+        "examples": [
+          { "sentence": "{海|うみ}に{沈|しず}む{{夕日}}はとてもきれいです。", "sentenceTranslationKo": "바다에 지는 석양은 매우 아름답습니다." }
+        ]
+      },
+      {
+        "readingRef": "ゆう",
+        "word": "夕べ",
+        "wordReading": "ゆうべ",
+        "meaningsKo": ["어젯밤", "저녁"],
+        "examples": [
+          { "sentence": "{{夕べ}}は{遅|おそ}くまで{本|ほん}を{読|よ}んでいました。", "sentenceTranslationKo": "어젯밤은 늦게까지 책을 읽고 있었습니다." }
+        ]
+      },
+      {
+        "readingRef": "ゆう",
+        "word": "夕焼け",
+        "wordReading": "ゆうやけ",
+        "meaningsKo": ["저녁노을"],
+        "examples": [
+          { "sentence": "{今日|きょう}の{{夕焼け}}はとてもきれいでした。", "sentenceTranslationKo": "오늘의 저녁노을은 매우 아름다웠습니다." }
+        ]
+      }
+    ],
+    "妹": [
+      {
+        "readingRef": "マイ",
+        "word": "姉妹",
+        "wordReading": "しまい",
+        "meaningsKo": ["자매"],
+        "examples": [
+          { "sentence": "{私|わたし}たちは{三人|さんにん}{{姉妹}}です。", "sentenceTranslationKo": "우리는 세 자매입니다." }
+        ]
+      },
+      {
+        "readingRef": "マイ",
+        "word": "義妹",
+        "wordReading": "ぎまい",
+        "meaningsKo": ["의붓여동생", "처제", "시누이"],
+        "examples": [
+          { "sentence": "{{義妹}}の{結婚式|けっこんしき}に{出席|しゅっせき}しました。", "sentenceTranslationKo": "처제의 결혼식에 참석했습니다." }
+        ]
+      },
+      {
+        "readingRef": "いもうと",
+        "word": "妹",
+        "wordReading": "いもうと",
+        "meaningsKo": ["여동생"],
+        "examples": [
+          { "sentence": "{{妹}}は{私|わたし}より{三|さん}つ{年下|としした}です。", "sentenceTranslationKo": "여동생은 저보다 세 살 어립니다." }
+        ]
+      },
+      {
+        "readingRef": "いもうと",
+        "word": "妹さん",
+        "wordReading": "いもうとさん",
+        "meaningsKo": ["여동생분", "동생분"],
+        "examples": [
+          { "sentence": "{{妹さん}}はとても{元気|げんき}そうですね。", "sentenceTranslationKo": "여동생분은 아주 건강해 보이시네요." }
+        ]
+      }
+    ],
+    "姉": [
+      {
+        "readingRef": "シ",
+        "word": "姉妹",
+        "wordReading": "しまい",
+        "meaningsKo": ["자매"],
+        "examples": [
+          { "sentence": "{隣|となり}の{家|いえ}には{二人|ふたり}の{{姉妹}}が{住|す}んでいます。", "sentenceTranslationKo": "옆집에는 두 자매가 살고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "あね",
+        "word": "姉",
+        "wordReading": "あね",
+        "meaningsKo": ["언니", "누나"],
+        "examples": [
+          { "sentence": "{{姉}}は{銀行|ぎんこう}で{働|はたら}いています。", "sentenceTranslationKo": "언니는 은행에서 일하고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "あね",
+        "word": "姉さん",
+        "wordReading": "ねえさん",
+        "meaningsKo": ["언니", "누나"],
+        "examples": [
+          { "sentence": "{{姉さん}}、ちょっと{手伝|てつだ}ってください。", "sentenceTranslationKo": "언니, 잠깐 도와주세요." }
+        ]
+      },
+      {
+        "readingRef": "あね",
+        "word": "義姉",
+        "wordReading": "ぎし",
+        "meaningsKo": ["의붓언니", "형수", "올케언니"],
+        "examples": [
+          { "sentence": "{{義姉}}が{子|こ}どもの{世話|せわ}をしてくれました。", "sentenceTranslationKo": "형수가 아이를 돌봐 주었습니다." }
+        ]
+      }
+    ],
+    "弟": [
+      {
+        "readingRef": "ダイ",
+        "word": "兄弟",
+        "wordReading": "きょうだい",
+        "meaningsKo": ["형제", "남매"],
+        "examples": [
+          { "sentence": "{{兄弟}}{仲|なか}よく{遊|あそ}んでいます。", "sentenceTranslationKo": "형제 사이좋게 놀고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "テイ",
+        "word": "弟子",
+        "wordReading": "でし",
+        "meaningsKo": ["제자"],
+        "examples": [
+          { "sentence": "{彼|かれ}は{有名|ゆうめい}な{先生|せんせい}の{{弟子}}です。", "sentenceTranslationKo": "그는 유명한 선생님의 제자입니다." }
+        ]
+      },
+      {
+        "readingRef": "テイ",
+        "word": "子弟",
+        "wordReading": "してい",
+        "meaningsKo": ["자제", "제자"],
+        "examples": [
+          { "sentence": "{良|よ}い{家|いえ}の{{子弟}}が{集|あつ}まる{学校|がっこう}です。", "sentenceTranslationKo": "좋은 집안의 자제들이 모이는 학교입니다." }
+        ]
+      },
+      {
+        "readingRef": "おとうと",
+        "word": "弟",
+        "wordReading": "おとうと",
+        "meaningsKo": ["남동생"],
+        "examples": [
+          { "sentence": "{{弟}}は{中学校|ちゅうがっこう}に{通|かよ}っています。", "sentenceTranslationKo": "남동생은 중학교에 다니고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "おとうと",
+        "word": "弟さん",
+        "wordReading": "おとうとさん",
+        "meaningsKo": ["남동생분", "동생분"],
+        "examples": [
+          { "sentence": "{{弟さん}}は{高校生|こうこうせい}ですか。", "sentenceTranslationKo": "남동생분은 고등학생이세요?" }
+        ]
+      }
+    ]
+  }
+}

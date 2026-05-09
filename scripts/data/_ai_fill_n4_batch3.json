@@ -1,0 +1,238 @@
+{
+  "_comment": "N4 batch 3: 茶, 貸, 飯, 鳥",
+  "fills": {
+    "茶": [
+      {
+        "readingRef": "チャ",
+        "word": "お茶",
+        "wordReading": "おちゃ",
+        "meaningsKo": ["차", "녹차"],
+        "examples": [
+          { "sentence": "{食事|しょくじ}のあとで{{お茶}}を{飲|の}みます。", "sentenceTranslationKo": "식사 후에 차를 마십니다." }
+        ]
+      },
+      {
+        "readingRef": "チャ",
+        "word": "緑茶",
+        "wordReading": "りょくちゃ",
+        "meaningsKo": ["녹차"],
+        "examples": [
+          { "sentence": "{{緑茶}}は{体|からだ}にいい{飲|の}み{物|もの}です。", "sentenceTranslationKo": "녹차는 몸에 좋은 음료입니다." }
+        ]
+      },
+      {
+        "readingRef": "チャ",
+        "word": "紅茶",
+        "wordReading": "こうちゃ",
+        "meaningsKo": ["홍차"],
+        "examples": [
+          { "sentence": "ミルクを{入|い}れた{{紅茶}}が{好|す}きです。", "sentenceTranslationKo": "우유를 넣은 홍차를 좋아합니다." }
+        ]
+      },
+      {
+        "readingRef": "チャ",
+        "word": "麦茶",
+        "wordReading": "むぎちゃ",
+        "meaningsKo": ["보리차"],
+        "examples": [
+          { "sentence": "{夏|なつ}は{冷|つめ}たい{{麦茶}}がおいしいです。", "sentenceTranslationKo": "여름은 차가운 보리차가 맛있습니다." }
+        ]
+      },
+      {
+        "readingRef": "チャ",
+        "word": "茶色",
+        "wordReading": "ちゃいろ",
+        "meaningsKo": ["갈색"],
+        "examples": [
+          { "sentence": "{彼|かれ}は{{茶色}}のかばんを{持|も}っています。", "sentenceTranslationKo": "그는 갈색 가방을 들고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "サ",
+        "word": "喫茶店",
+        "wordReading": "きっさてん",
+        "meaningsKo": ["찻집", "다방"],
+        "examples": [
+          { "sentence": "{駅|えき}の{近|ちか}くの{{喫茶店}}で{待|ま}っています。", "sentenceTranslationKo": "역 근처 찻집에서 기다리고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "サ",
+        "word": "茶道",
+        "wordReading": "さどう",
+        "meaningsKo": ["다도"],
+        "examples": [
+          { "sentence": "{祖母|そぼ}は{{茶道}}の{先生|せんせい}です。", "sentenceTranslationKo": "할머니는 다도 선생님입니다." }
+        ]
+      }
+    ],
+    "貸": [
+      {
+        "readingRef": "タイ",
+        "word": "貸借",
+        "wordReading": "たいしゃく",
+        "meaningsKo": ["대차", "꾸어줌과 꾸어 옴"],
+        "examples": [
+          { "sentence": "{帳簿|ちょうぼ}の{{貸借}}を{確認|かくにん}しました。", "sentenceTranslationKo": "장부의 대차를 확인했습니다." }
+        ]
+      },
+      {
+        "readingRef": "タイ",
+        "word": "貸与",
+        "wordReading": "たいよ",
+        "meaningsKo": ["대여"],
+        "examples": [
+          { "sentence": "{学校|がっこう}からノートパソコンの{{貸与}}を{受|う}けました。", "sentenceTranslationKo": "학교에서 노트북 대여를 받았습니다." }
+        ]
+      },
+      {
+        "readingRef": "かす",
+        "word": "貸す",
+        "wordReading": "かす",
+        "meaningsKo": ["빌려주다"],
+        "examples": [
+          { "sentence": "{友|とも}だちに{傘|かさ}を{{貸す}}。", "sentenceTranslationKo": "친구에게 우산을 빌려줍니다." }
+        ]
+      },
+      {
+        "readingRef": "かし",
+        "word": "貸し出し",
+        "wordReading": "かしだし",
+        "meaningsKo": ["대출", "대여"],
+        "examples": [
+          { "sentence": "{図書館|としょかん}で{本|ほん}の{{貸し出し}}{手続|てつづ}きをしました。", "sentenceTranslationKo": "도서관에서 책 대출 절차를 밟았습니다." }
+        ]
+      },
+      {
+        "readingRef": "かし",
+        "word": "貸し家",
+        "wordReading": "かしや",
+        "meaningsKo": ["셋집", "임대주택"],
+        "examples": [
+          { "sentence": "この{町|まち}には{{貸し家}}が{多|おお}いです。", "sentenceTranslationKo": "이 동네에는 셋집이 많습니다." }
+        ]
+      },
+      {
+        "readingRef": "かし",
+        "word": "貸し本",
+        "wordReading": "かしほん",
+        "meaningsKo": ["대여 책", "셋책"],
+        "examples": [
+          { "sentence": "{昔|むかし}は{{貸し本}}{屋|や}が{町|まち}にありました。", "sentenceTranslationKo": "옛날에는 대여 책방이 동네에 있었습니다." }
+        ]
+      }
+    ],
+    "飯": [
+      {
+        "readingRef": "ハン",
+        "word": "朝飯",
+        "wordReading": "あさはん",
+        "meaningsKo": ["아침밥", "아침식사"],
+        "examples": [
+          { "sentence": "{{朝飯}}にパンと{卵|たまご}を{食|た}べました。", "sentenceTranslationKo": "아침밥으로 빵과 달걀을 먹었습니다." }
+        ]
+      },
+      {
+        "readingRef": "ハン",
+        "word": "夕飯",
+        "wordReading": "ゆうはん",
+        "meaningsKo": ["저녁밥", "저녁식사"],
+        "examples": [
+          { "sentence": "{今日|きょう}の{{夕飯}}はカレーです。", "sentenceTranslationKo": "오늘 저녁밥은 카레입니다." }
+        ]
+      },
+      {
+        "readingRef": "ハン",
+        "word": "赤飯",
+        "wordReading": "せきはん",
+        "meaningsKo": ["팥밥"],
+        "examples": [
+          { "sentence": "お{祝|いわ}いの{日|ひ}には{{赤飯}}を{食|た}べます。", "sentenceTranslationKo": "축하의 날에는 팥밥을 먹습니다." }
+        ]
+      },
+      {
+        "readingRef": "めし",
+        "word": "飯",
+        "wordReading": "めし",
+        "meaningsKo": ["밥", "식사"],
+        "examples": [
+          { "sentence": "{今|いま}から{{飯}}を{食|く}いに{行|い}こう。", "sentenceTranslationKo": "이제부터 밥을 먹으러 가자." }
+        ]
+      },
+      {
+        "readingRef": "めし",
+        "word": "ご飯",
+        "wordReading": "ごはん",
+        "meaningsKo": ["밥", "식사"],
+        "examples": [
+          { "sentence": "{毎日|まいにち}{家族|かぞく}で{{ご飯}}を{食|た}べます。", "sentenceTranslationKo": "매일 가족과 밥을 먹습니다." }
+        ]
+      },
+      {
+        "readingRef": "めし",
+        "word": "焼き飯",
+        "wordReading": "やきめし",
+        "meaningsKo": ["볶음밥"],
+        "examples": [
+          { "sentence": "{昼|ひる}に{{焼き飯}}を{作|つく}りました。", "sentenceTranslationKo": "점심에 볶음밥을 만들었습니다." }
+        ]
+      }
+    ],
+    "鳥": [
+      {
+        "readingRef": "チョウ",
+        "word": "野鳥",
+        "wordReading": "やちょう",
+        "meaningsKo": ["야생 새", "들새"],
+        "examples": [
+          { "sentence": "{公園|こうえん}で{{野鳥}}を{観察|かんさつ}しました。", "sentenceTranslationKo": "공원에서 야생 새를 관찰했습니다." }
+        ]
+      },
+      {
+        "readingRef": "チョウ",
+        "word": "白鳥",
+        "wordReading": "はくちょう",
+        "meaningsKo": ["백조"],
+        "examples": [
+          { "sentence": "{湖|みずうみ}に{{白鳥}}が{泳|およ}いでいます。", "sentenceTranslationKo": "호수에 백조가 헤엄치고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "チョウ",
+        "word": "鳥類",
+        "wordReading": "ちょうるい",
+        "meaningsKo": ["조류"],
+        "examples": [
+          { "sentence": "{図鑑|ずかん}で{{鳥類}}について{調|しら}べました。", "sentenceTranslationKo": "도감으로 조류에 대해 조사했습니다." }
+        ]
+      },
+      {
+        "readingRef": "とり",
+        "word": "鳥",
+        "wordReading": "とり",
+        "meaningsKo": ["새"],
+        "examples": [
+          { "sentence": "{朝|あさ}{早|はや}く{{鳥}}が{鳴|な}いています。", "sentenceTranslationKo": "아침 일찍 새가 울고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "とり",
+        "word": "小鳥",
+        "wordReading": "ことり",
+        "meaningsKo": ["작은 새"],
+        "examples": [
+          { "sentence": "かごの{中|なか}で{{小鳥}}が{歌|うた}っています。", "sentenceTranslationKo": "새장 안에서 작은 새가 노래하고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "とり",
+        "word": "焼き鳥",
+        "wordReading": "やきとり",
+        "meaningsKo": ["야키토리", "닭꼬치"],
+        "examples": [
+          { "sentence": "{居酒屋|いざかや}で{{焼き鳥}}を{注文|ちゅうもん}しました。", "sentenceTranslationKo": "이자카야에서 야키토리를 주문했습니다." }
+        ]
+      }
+    ]
+  }
+}

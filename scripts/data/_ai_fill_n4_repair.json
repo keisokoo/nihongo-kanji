@@ -1,0 +1,143 @@
+{
+  "_comment": "N4 결함 단어 26건 처리. value=null이면 삭제, 객체면 교체. 교체 단어는 모두 focus 한자 포함 + 예문 1개.",
+  "fills": {
+    "世/中#なか": {
+      "readingRef": "よ",
+      "word": "世の中",
+      "wordReading": "よのなか",
+      "meaningsKo": ["세상", "사회"],
+      "examples": [
+        { "sentence": "{{世の中}}にはいろいろな{人|ひと}がいます。", "sentenceTranslationKo": "세상에는 여러 사람이 있습니다." }
+      ]
+    },
+    "主/持#も": {
+      "readingRef": "ぬし",
+      "word": "持ち主",
+      "wordReading": "もちぬし",
+      "meaningsKo": ["주인", "소유자"],
+      "examples": [
+        { "sentence": "この{財布|さいふ}の{{持ち主}}を{探|さが}しています。", "sentenceTranslationKo": "이 지갑의 주인을 찾고 있습니다." }
+      ]
+    },
+    "主/女#おんな": {
+      "readingRef": "シュ",
+      "word": "女主人",
+      "wordReading": "おんなしゅじん",
+      "meaningsKo": ["여주인"],
+      "examples": [
+        { "sentence": "あの{店|みせ}の{{女主人}}はとても{親切|しんせつ}です。", "sentenceTranslationKo": "저 가게의 여주인은 아주 친절합니다." }
+      ]
+    },
+    "主/議題#ぎだい": {
+      "readingRef": "おも",
+      "word": "主な",
+      "wordReading": "おもな",
+      "meaningsKo": ["주된", "주요한"],
+      "examples": [
+        { "sentence": "{今日|きょう}の{会議|かいぎ}の{{主な}}{議題|ぎだい}は{予算|よさん}です。", "sentenceTranslationKo": "오늘 회의의 주된 의제는 예산입니다." }
+      ]
+    },
+    "体/言葉#ことば": null,
+    "体/詐欺#さぎ": {
+      "readingRef": "テイ",
+      "word": "体裁",
+      "wordReading": "ていさい",
+      "meaningsKo": ["체면", "외관"],
+      "examples": [
+        { "sentence": "{彼|かれ}は{{体裁}}を{気|き}にする{人|ひと}です。", "sentenceTranslationKo": "그는 체면을 신경 쓰는 사람입니다." }
+      ]
+    },
+    "体/鍛#きた": null,
+    "味/初恋#はつこい": null,
+    "味/酒#さけ": {
+      "readingRef": "あじ",
+      "word": "味見",
+      "wordReading": "あじみ",
+      "meaningsKo": ["맛보기", "시식"],
+      "examples": [
+        { "sentence": "スープを{{味見}}してから{塩|しお}を{足|た}しました。", "sentenceTranslationKo": "수프를 맛보고 나서 소금을 더 넣었습니다." }
+      ]
+    },
+    "場/緊急#きんきゅう": {
+      "readingRef": "ば",
+      "word": "場",
+      "wordReading": "ば",
+      "meaningsKo": ["자리", "장소"],
+      "examples": [
+        { "sentence": "この{{場}}にいるみんなで{話|はな}し{合|あ}いましょう。", "sentenceTranslationKo": "이 자리에 있는 모두가 함께 의논합시다." }
+      ]
+    },
+    "家/我#わ": {
+      "readingRef": "や",
+      "word": "我が家",
+      "wordReading": "わがや",
+      "meaningsKo": ["우리 집"],
+      "examples": [
+        { "sentence": "{旅行|りょこう}から{{我が家}}に{帰|かえ}ってきました。", "sentenceTranslationKo": "여행에서 우리 집으로 돌아왔습니다." }
+      ]
+    },
+    "度/見#み": {
+      "readingRef": "たび",
+      "word": "度々",
+      "wordReading": "たびたび",
+      "meaningsKo": ["여러 번", "자주"],
+      "examples": [
+        { "sentence": "{{度々}}{連絡|れんらく}してすみません。", "sentenceTranslationKo": "여러 번 연락드려 죄송합니다." }
+      ]
+    },
+    "度/思#おも": null,
+    "度/出#だ": null,
+    "新/情報#じょうほう": {
+      "readingRef": "シン",
+      "word": "新情報",
+      "wordReading": "しんじょうほう",
+      "meaningsKo": ["새 정보", "최신 정보"],
+      "examples": [
+        { "sentence": "{事件|じけん}についての{{新情報}}が{入|はい}りました。", "sentenceTranslationKo": "사건에 대한 새 정보가 들어왔습니다." }
+      ]
+    },
+    "方/読#よ": {
+      "readingRef": "かた",
+      "word": "読み方",
+      "wordReading": "よみかた",
+      "meaningsKo": ["읽는 법"],
+      "examples": [
+        { "sentence": "この{漢字|かんじ}の{{読み方}}を{教|おし}えてください。", "sentenceTranslationKo": "이 한자의 읽는 법을 알려 주세요." }
+      ]
+    },
+    "方/話#はな": {
+      "readingRef": "かた",
+      "word": "話し方",
+      "wordReading": "はなしかた",
+      "meaningsKo": ["말하는 법", "말투"],
+      "examples": [
+        { "sentence": "{彼|かれ}の{{話し方}}はとてもやさしいです。", "sentenceTranslationKo": "그의 말투는 아주 부드럽습니다." }
+      ]
+    },
+    "早/諦#あきら": null,
+    "早/予定#よてい": null,
+    "早/開会#かいかい": null,
+    "歌/合#あ": null,
+    "界/世#せ": {
+      "readingRef": "カイ",
+      "word": "業界",
+      "wordReading": "ぎょうかい",
+      "meaningsKo": ["업계"],
+      "examples": [
+        { "sentence": "ゲーム{{業界}}は{毎年|まいとし}{大|おお}きく{変化|へんか}しています。", "sentenceTranslationKo": "게임 업계는 매년 크게 변화하고 있습니다." }
+      ]
+    },
+    "病/胸#むね": null,
+    "者/追#お": null,
+    "青/海#うみ": null,
+    "黒/服#ふく": {
+      "readingRef": "くろ",
+      "word": "黒服",
+      "wordReading": "くろふく",
+      "meaningsKo": ["검은 옷", "정장"],
+      "examples": [
+        { "sentence": "お{葬式|そうしき}には{{黒服}}を{着|き}て{行|い}きます。", "sentenceTranslationKo": "장례식에는 검은 옷을 입고 갑니다." }
+      ]
+    }
+  }
+}
