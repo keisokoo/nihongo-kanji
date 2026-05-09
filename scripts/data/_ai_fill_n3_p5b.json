@@ -1,0 +1,804 @@
+{
+  "_comment": "N3 Phase 5-B: 빈 한자 17개 (解,記,訪,許,認,誤,調,談,論,識,警,議,負,財,貧,責,費)",
+  "fills": {
+    "解": [
+      {
+        "readingRef": "カイ",
+        "word": "解決",
+        "wordReading": "かいけつ",
+        "meaningsKo": ["해결"],
+        "examples": [
+          { "sentence": "{問題|もんだい}を{{解決}}する{方法|ほうほう}を{考|かんが}えています。", "sentenceTranslationKo": "문제를 해결할 방법을 생각하고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "カイ",
+        "word": "理解",
+        "wordReading": "りかい",
+        "meaningsKo": ["이해"],
+        "examples": [
+          { "sentence": "{相手|あいて}の{気持|きも}ちを{{理解}}しようとしています。", "sentenceTranslationKo": "상대의 마음을 이해하려고 하고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "カイ",
+        "word": "解説",
+        "wordReading": "かいせつ",
+        "meaningsKo": ["해설"],
+        "examples": [
+          { "sentence": "{先生|せんせい}が{丁寧|ていねい}に{{解説}}してくれました。", "sentenceTranslationKo": "선생님이 정성껏 해설해 주셨습니다." }
+        ]
+      },
+      {
+        "readingRef": "カイ",
+        "word": "誤解",
+        "wordReading": "ごかい",
+        "meaningsKo": ["오해"],
+        "examples": [
+          { "sentence": "{彼|かれ}の{言葉|ことば}を{{誤解}}してしまいました。", "sentenceTranslationKo": "그의 말을 오해해 버렸습니다." }
+        ]
+      },
+      {
+        "readingRef": "とく",
+        "word": "解く",
+        "wordReading": "とく",
+        "meaningsKo": ["풀다"],
+        "examples": [
+          { "sentence": "この{問題|もんだい}を{{解く}}のに{時間|じかん}がかかりました。", "sentenceTranslationKo": "이 문제를 푸는 데 시간이 걸렸습니다." }
+        ]
+      }
+    ],
+    "記": [
+      {
+        "readingRef": "キ",
+        "word": "記憶",
+        "wordReading": "きおく",
+        "meaningsKo": ["기억"],
+        "examples": [
+          { "sentence": "{子|こ}どもの{頃|ころ}の{{記憶}}が{鮮明|せんめい}です。", "sentenceTranslationKo": "어린 시절의 기억이 선명합니다." }
+        ]
+      },
+      {
+        "readingRef": "キ",
+        "word": "記録",
+        "wordReading": "きろく",
+        "meaningsKo": ["기록"],
+        "examples": [
+          { "sentence": "{毎日|まいにち}の{出来事|できごと}を{{記録}}しています。", "sentenceTranslationKo": "매일의 일을 기록하고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "キ",
+        "word": "記事",
+        "wordReading": "きじ",
+        "meaningsKo": ["기사"],
+        "examples": [
+          { "sentence": "{新聞|しんぶん}の{{記事}}を{読|よ}みました。", "sentenceTranslationKo": "신문 기사를 읽었습니다." }
+        ]
+      },
+      {
+        "readingRef": "キ",
+        "word": "記念",
+        "wordReading": "きねん",
+        "meaningsKo": ["기념"],
+        "examples": [
+          { "sentence": "{結婚|けっこん}{{記念}}{日|び}に{食事|しょくじ}に{行|い}きました。", "sentenceTranslationKo": "결혼기념일에 식사하러 갔습니다." }
+        ]
+      },
+      {
+        "readingRef": "しるす",
+        "word": "記す",
+        "wordReading": "しるす",
+        "meaningsKo": ["기록하다", "적다"],
+        "examples": [
+          { "sentence": "{大切|たいせつ}なことをノートに{{記す}}{習慣|しゅうかん}があります。", "sentenceTranslationKo": "중요한 것을 노트에 적는 습관이 있습니다." }
+        ]
+      }
+    ],
+    "訪": [
+      {
+        "readingRef": "ホウ",
+        "word": "訪問",
+        "wordReading": "ほうもん",
+        "meaningsKo": ["방문"],
+        "examples": [
+          { "sentence": "{先生|せんせい}の{家|いえ}を{{訪問}}しました。", "sentenceTranslationKo": "선생님 댁을 방문했습니다." }
+        ]
+      },
+      {
+        "readingRef": "ホウ",
+        "word": "来訪",
+        "wordReading": "らいほう",
+        "meaningsKo": ["내방"],
+        "examples": [
+          { "sentence": "{お客|おきゃく}{様|さま}の{{来訪}}を{歓迎|かんげい}しました。", "sentenceTranslationKo": "손님의 내방을 환영했습니다." }
+        ]
+      },
+      {
+        "readingRef": "おとずれる",
+        "word": "訪れる",
+        "wordReading": "おとずれる",
+        "meaningsKo": ["방문하다", "찾아오다"],
+        "examples": [
+          { "sentence": "{春|はる}が{{訪れる}}{季節|きせつ}になりました。", "sentenceTranslationKo": "봄이 찾아오는 계절이 되었습니다." }
+        ]
+      },
+      {
+        "readingRef": "たずねる",
+        "word": "訪ねる",
+        "wordReading": "たずねる",
+        "meaningsKo": ["찾아가다"],
+        "examples": [
+          { "sentence": "{昔|むかし}の{友|とも}だちを{{訪ねる}}{ために|ために}{出|で}かけました。", "sentenceTranslationKo": "옛 친구를 찾아가기 위해 외출했습니다." }
+        ]
+      },
+      {
+        "readingRef": "ホウ",
+        "word": "探訪",
+        "wordReading": "たんぼう",
+        "meaningsKo": ["탐방"],
+        "examples": [
+          { "sentence": "{歴史|れきし}{{探訪}}の{番組|ばんぐみ}を{見|み}ました。", "sentenceTranslationKo": "역사 탐방 프로그램을 봤습니다." }
+        ]
+      }
+    ],
+    "許": [
+      {
+        "readingRef": "キョ",
+        "word": "許可",
+        "wordReading": "きょか",
+        "meaningsKo": ["허가"],
+        "examples": [
+          { "sentence": "{駐車|ちゅうしゃ}の{{許可}}を{得|え}ました。", "sentenceTranslationKo": "주차 허가를 받았습니다." }
+        ]
+      },
+      {
+        "readingRef": "キョ",
+        "word": "免許",
+        "wordReading": "めんきょ",
+        "meaningsKo": ["면허"],
+        "examples": [
+          { "sentence": "{運転|うんてん}{{免許}}を{取得|しゅとく}しました。", "sentenceTranslationKo": "운전면허를 취득했습니다." }
+        ]
+      },
+      {
+        "readingRef": "キョ",
+        "word": "特許",
+        "wordReading": "とっきょ",
+        "meaningsKo": ["특허"],
+        "examples": [
+          { "sentence": "{新|あたら}しい{発明|はつめい}が{{特許}}を{取|と}りました。", "sentenceTranslationKo": "새로운 발명이 특허를 받았습니다." }
+        ]
+      },
+      {
+        "readingRef": "ゆるす",
+        "word": "許す",
+        "wordReading": "ゆるす",
+        "meaningsKo": ["용서하다", "허락하다"],
+        "examples": [
+          { "sentence": "{失敗|しっぱい}を{{許す}}{気持|きも}ちが{大切|たいせつ}です。", "sentenceTranslationKo": "실수를 용서하는 마음이 중요합니다." }
+        ]
+      },
+      {
+        "readingRef": "もと",
+        "word": "許に",
+        "wordReading": "もとに",
+        "meaningsKo": ["곁에"],
+        "examples": [
+          { "sentence": "{先生|せんせい}の{{許に}}{通|かよ}って{学|まな}びました。", "sentenceTranslationKo": "선생님 밑에 다니며 배웠습니다." }
+        ]
+      }
+    ],
+    "認": [
+      {
+        "readingRef": "ニン",
+        "word": "確認",
+        "wordReading": "かくにん",
+        "meaningsKo": ["확인"],
+        "examples": [
+          { "sentence": "{予定|よてい}を{{確認}}しました。", "sentenceTranslationKo": "예정을 확인했습니다." }
+        ]
+      },
+      {
+        "readingRef": "ニン",
+        "word": "承認",
+        "wordReading": "しょうにん",
+        "meaningsKo": ["승인"],
+        "examples": [
+          { "sentence": "{企画|きかく}が{部長|ぶちょう}に{{承認}}されました。", "sentenceTranslationKo": "기획이 부장에게 승인되었습니다." }
+        ]
+      },
+      {
+        "readingRef": "ニン",
+        "word": "認識",
+        "wordReading": "にんしき",
+        "meaningsKo": ["인식"],
+        "examples": [
+          { "sentence": "{問題|もんだい}の{{認識}}が{大切|たいせつ}です。", "sentenceTranslationKo": "문제 인식이 중요합니다." }
+        ]
+      },
+      {
+        "readingRef": "ニン",
+        "word": "公認",
+        "wordReading": "こうにん",
+        "meaningsKo": ["공인"],
+        "examples": [
+          { "sentence": "{彼|かれ}は{{公認}}{会計|かいけい}{士|し}です。", "sentenceTranslationKo": "그는 공인회계사입니다." }
+        ]
+      },
+      {
+        "readingRef": "みとめる",
+        "word": "認める",
+        "wordReading": "みとめる",
+        "meaningsKo": ["인정하다"],
+        "examples": [
+          { "sentence": "{自分|じぶん}の{過|あやま}ちを{{認める}}{ことが|ことが}{大切|たいせつ}です。", "sentenceTranslationKo": "자신의 잘못을 인정하는 것이 중요합니다." }
+        ]
+      }
+    ],
+    "誤": [
+      {
+        "readingRef": "ゴ",
+        "word": "誤解",
+        "wordReading": "ごかい",
+        "meaningsKo": ["오해"],
+        "examples": [
+          { "sentence": "{彼|かれ}の{言葉|ことば}を{{誤解}}してしまいました。", "sentenceTranslationKo": "그의 말을 오해해 버렸습니다." }
+        ]
+      },
+      {
+        "readingRef": "ゴ",
+        "word": "誤差",
+        "wordReading": "ごさ",
+        "meaningsKo": ["오차"],
+        "examples": [
+          { "sentence": "{測定|そくてい}{結果|けっか}に{多少|たしょう}の{{誤差}}があります。", "sentenceTranslationKo": "측정 결과에 약간의 오차가 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "ゴ",
+        "word": "誤字",
+        "wordReading": "ごじ",
+        "meaningsKo": ["오자"],
+        "examples": [
+          { "sentence": "{報告|ほうこく}{書|しょ}に{{誤字}}が{多|おお}かったです。", "sentenceTranslationKo": "보고서에 오자가 많았습니다." }
+        ]
+      },
+      {
+        "readingRef": "ゴ",
+        "word": "錯誤",
+        "wordReading": "さくご",
+        "meaningsKo": ["착오"],
+        "examples": [
+          { "sentence": "{試行|しこう}{{錯誤}}しながら{進|すす}めています。", "sentenceTranslationKo": "시행착오를 거치며 진행하고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "あやまる",
+        "word": "誤る",
+        "wordReading": "あやまる",
+        "meaningsKo": ["잘못하다", "틀리다"],
+        "examples": [
+          { "sentence": "{判断|はんだん}を{{誤る}}と{後悔|こうかい}します。", "sentenceTranslationKo": "판단을 잘못하면 후회합니다." }
+        ]
+      }
+    ],
+    "調": [
+      {
+        "readingRef": "チョウ",
+        "word": "調査",
+        "wordReading": "ちょうさ",
+        "meaningsKo": ["조사"],
+        "examples": [
+          { "sentence": "{原因|げんいん}を{{調査}}しています。", "sentenceTranslationKo": "원인을 조사하고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "チョウ",
+        "word": "調整",
+        "wordReading": "ちょうせい",
+        "meaningsKo": ["조정"],
+        "examples": [
+          { "sentence": "{機械|きかい}の{{調整}}が{必要|ひつよう}です。", "sentenceTranslationKo": "기계 조정이 필요합니다." }
+        ]
+      },
+      {
+        "readingRef": "チョウ",
+        "word": "調子",
+        "wordReading": "ちょうし",
+        "meaningsKo": ["상태", "컨디션"],
+        "examples": [
+          { "sentence": "{今日|きょう}は{体|からだ}の{{調子}}がいいです。", "sentenceTranslationKo": "오늘은 몸 상태가 좋습니다." }
+        ]
+      },
+      {
+        "readingRef": "チョウ",
+        "word": "強調",
+        "wordReading": "きょうちょう",
+        "meaningsKo": ["강조"],
+        "examples": [
+          { "sentence": "{先生|せんせい}は{安全|あんぜん}を{{強調}}しました。", "sentenceTranslationKo": "선생님은 안전을 강조했습니다." }
+        ]
+      },
+      {
+        "readingRef": "しらべる",
+        "word": "調べる",
+        "wordReading": "しらべる",
+        "meaningsKo": ["조사하다", "알아보다"],
+        "examples": [
+          { "sentence": "{言葉|ことば}の{意味|いみ}を{辞書|じしょ}で{{調べる}}{習慣|しゅうかん}があります。", "sentenceTranslationKo": "단어 뜻을 사전에서 찾아보는 습관이 있습니다." }
+        ]
+      }
+    ],
+    "談": [
+      {
+        "readingRef": "ダン",
+        "word": "相談",
+        "wordReading": "そうだん",
+        "meaningsKo": ["상담"],
+        "examples": [
+          { "sentence": "{先生|せんせい}に{進路|しんろ}を{{相談}}しました。", "sentenceTranslationKo": "선생님께 진로를 상담했습니다." }
+        ]
+      },
+      {
+        "readingRef": "ダン",
+        "word": "会談",
+        "wordReading": "かいだん",
+        "meaningsKo": ["회담"],
+        "examples": [
+          { "sentence": "{両国|りょうこく}の{首脳|しゅのう}{{会談}}が{行|おこな}われました。", "sentenceTranslationKo": "양국의 수뇌 회담이 열렸습니다." }
+        ]
+      },
+      {
+        "readingRef": "ダン",
+        "word": "雑談",
+        "wordReading": "ざつだん",
+        "meaningsKo": ["잡담"],
+        "examples": [
+          { "sentence": "{休憩|きゅうけい}{時間|じかん}に{同僚|どうりょう}と{{雑談}}しました。", "sentenceTranslationKo": "휴식 시간에 동료와 잡담했습니다." }
+        ]
+      },
+      {
+        "readingRef": "ダン",
+        "word": "面談",
+        "wordReading": "めんだん",
+        "meaningsKo": ["면담"],
+        "examples": [
+          { "sentence": "{先生|せんせい}と{{面談}}する{機会|きかい}がありました。", "sentenceTranslationKo": "선생님과 면담할 기회가 있었습니다." }
+        ]
+      },
+      {
+        "readingRef": "ダン",
+        "word": "美談",
+        "wordReading": "びだん",
+        "meaningsKo": ["미담"],
+        "examples": [
+          { "sentence": "ニュースで{{美談}}が{紹介|しょうかい}されました。", "sentenceTranslationKo": "뉴스에서 미담이 소개되었습니다." }
+        ]
+      }
+    ],
+    "論": [
+      {
+        "readingRef": "ロン",
+        "word": "論文",
+        "wordReading": "ろんぶん",
+        "meaningsKo": ["논문"],
+        "examples": [
+          { "sentence": "{大学|だいがく}{院|いん}で{{論文}}を{書|か}いています。", "sentenceTranslationKo": "대학원에서 논문을 쓰고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "ロン",
+        "word": "議論",
+        "wordReading": "ぎろん",
+        "meaningsKo": ["의논", "토론"],
+        "examples": [
+          { "sentence": "クラスで{活発|かっぱつ}な{{議論}}がありました。", "sentenceTranslationKo": "반에서 활발한 토론이 있었습니다." }
+        ]
+      },
+      {
+        "readingRef": "ロン",
+        "word": "論理",
+        "wordReading": "ろんり",
+        "meaningsKo": ["논리"],
+        "examples": [
+          { "sentence": "{彼|かれ}の{話|はなし}は{{論理}}{的|てき}でわかりやすいです。", "sentenceTranslationKo": "그의 이야기는 논리적이라 알기 쉽습니다." }
+        ]
+      },
+      {
+        "readingRef": "ロン",
+        "word": "理論",
+        "wordReading": "りろん",
+        "meaningsKo": ["이론"],
+        "examples": [
+          { "sentence": "{新|あたら}しい{{理論}}を{学|まな}びました。", "sentenceTranslationKo": "새 이론을 배웠습니다." }
+        ]
+      },
+      {
+        "readingRef": "ロン",
+        "word": "結論",
+        "wordReading": "けつろん",
+        "meaningsKo": ["결론"],
+        "examples": [
+          { "sentence": "{話|はな}し{合|あ}いの{{結論}}が{出|で}ました。", "sentenceTranslationKo": "토론의 결론이 나왔습니다." }
+        ]
+      }
+    ],
+    "識": [
+      {
+        "readingRef": "シキ",
+        "word": "知識",
+        "wordReading": "ちしき",
+        "meaningsKo": ["지식"],
+        "examples": [
+          { "sentence": "{本|ほん}を{読|よ}んで{{知識}}を{広|ひろ}げています。", "sentenceTranslationKo": "책을 읽어 지식을 넓히고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "シキ",
+        "word": "意識",
+        "wordReading": "いしき",
+        "meaningsKo": ["의식"],
+        "examples": [
+          { "sentence": "{安全|あんぜん}{{意識}}を{高|たか}める{必要|ひつよう}があります。", "sentenceTranslationKo": "안전 의식을 높일 필요가 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "シキ",
+        "word": "認識",
+        "wordReading": "にんしき",
+        "meaningsKo": ["인식"],
+        "examples": [
+          { "sentence": "{問題|もんだい}の{{認識}}が{大切|たいせつ}です。", "sentenceTranslationKo": "문제의 인식이 중요합니다." }
+        ]
+      },
+      {
+        "readingRef": "シキ",
+        "word": "常識",
+        "wordReading": "じょうしき",
+        "meaningsKo": ["상식"],
+        "examples": [
+          { "sentence": "{社会|しゃかい}の{{常識}}を{学|まな}びましょう。", "sentenceTranslationKo": "사회의 상식을 배웁시다." }
+        ]
+      },
+      {
+        "readingRef": "シキ",
+        "word": "標識",
+        "wordReading": "ひょうしき",
+        "meaningsKo": ["표지", "표지판"],
+        "examples": [
+          { "sentence": "{道路|どうろ}{{標識}}に{従|したが}って{運転|うんてん}しましょう。", "sentenceTranslationKo": "도로 표지에 따라 운전합시다." }
+        ]
+      }
+    ],
+    "警": [
+      {
+        "readingRef": "ケイ",
+        "word": "警察",
+        "wordReading": "けいさつ",
+        "meaningsKo": ["경찰"],
+        "examples": [
+          { "sentence": "{事故|じこ}があって{{警察}}が{来|き}ました。", "sentenceTranslationKo": "사고가 있어서 경찰이 왔습니다." }
+        ]
+      },
+      {
+        "readingRef": "ケイ",
+        "word": "警告",
+        "wordReading": "けいこく",
+        "meaningsKo": ["경고"],
+        "examples": [
+          { "sentence": "{台風|たいふう}{{警告}}が{出|で}されました。", "sentenceTranslationKo": "태풍 경고가 발령되었습니다." }
+        ]
+      },
+      {
+        "readingRef": "ケイ",
+        "word": "警備",
+        "wordReading": "けいび",
+        "meaningsKo": ["경비"],
+        "examples": [
+          { "sentence": "{建物|たてもの}の{{警備}}が{厳重|げんじゅう}です。", "sentenceTranslationKo": "건물 경비가 엄중합니다." }
+        ]
+      },
+      {
+        "readingRef": "ケイ",
+        "word": "警報",
+        "wordReading": "けいほう",
+        "meaningsKo": ["경보"],
+        "examples": [
+          { "sentence": "{大雨|おおあめ}{{警報}}が{発令|はつれい}されました。", "sentenceTranslationKo": "호우 경보가 발령되었습니다." }
+        ]
+      },
+      {
+        "readingRef": "ケイ",
+        "word": "警官",
+        "wordReading": "けいかん",
+        "meaningsKo": ["경관"],
+        "examples": [
+          { "sentence": "{駅前|えきまえ}で{{警官}}が{交通|こうつう}{整理|せいり}をしています。", "sentenceTranslationKo": "역 앞에서 경관이 교통정리를 하고 있습니다." }
+        ]
+      }
+    ],
+    "議": [
+      {
+        "readingRef": "ギ",
+        "word": "会議",
+        "wordReading": "かいぎ",
+        "meaningsKo": ["회의"],
+        "examples": [
+          { "sentence": "{今日|きょう}{重要|じゅうよう}な{{会議}}があります。", "sentenceTranslationKo": "오늘 중요한 회의가 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "ギ",
+        "word": "議論",
+        "wordReading": "ぎろん",
+        "meaningsKo": ["토론", "의논"],
+        "examples": [
+          { "sentence": "クラスで{活発|かっぱつ}な{{議論}}がありました。", "sentenceTranslationKo": "반에서 활발한 토론이 있었습니다." }
+        ]
+      },
+      {
+        "readingRef": "ギ",
+        "word": "議員",
+        "wordReading": "ぎいん",
+        "meaningsKo": ["의원"],
+        "examples": [
+          { "sentence": "{選挙|せんきょ}で{新|あたら}しい{{議員}}が{選|えら}ばれました。", "sentenceTranslationKo": "선거에서 새 의원이 선출되었습니다." }
+        ]
+      },
+      {
+        "readingRef": "ギ",
+        "word": "議題",
+        "wordReading": "ぎだい",
+        "meaningsKo": ["의제"],
+        "examples": [
+          { "sentence": "{今日|きょう}の{{議題}}を{確認|かくにん}しました。", "sentenceTranslationKo": "오늘의 의제를 확인했습니다." }
+        ]
+      },
+      {
+        "readingRef": "ギ",
+        "word": "抗議",
+        "wordReading": "こうぎ",
+        "meaningsKo": ["항의"],
+        "examples": [
+          { "sentence": "{市民|しみん}が{{抗議}}{活動|かつどう}をしました。", "sentenceTranslationKo": "시민이 항의 활동을 했습니다." }
+        ]
+      }
+    ],
+    "負": [
+      {
+        "readingRef": "フ",
+        "word": "勝負",
+        "wordReading": "しょうぶ",
+        "meaningsKo": ["승부"],
+        "examples": [
+          { "sentence": "{真剣|しんけん}な{{勝負}}を{楽|たの}しみました。", "sentenceTranslationKo": "진지한 승부를 즐겼습니다." }
+        ]
+      },
+      {
+        "readingRef": "フ",
+        "word": "負担",
+        "wordReading": "ふたん",
+        "meaningsKo": ["부담"],
+        "examples": [
+          { "sentence": "{家族|かぞく}に{{負担}}をかけたくありません。", "sentenceTranslationKo": "가족에게 부담을 주고 싶지 않습니다." }
+        ]
+      },
+      {
+        "readingRef": "フ",
+        "word": "負傷",
+        "wordReading": "ふしょう",
+        "meaningsKo": ["부상"],
+        "examples": [
+          { "sentence": "{試合|しあい}で{選手|せんしゅ}が{{負傷}}しました。", "sentenceTranslationKo": "시합에서 선수가 부상을 입었습니다." }
+        ]
+      },
+      {
+        "readingRef": "まける",
+        "word": "負ける",
+        "wordReading": "まける",
+        "meaningsKo": ["지다"],
+        "examples": [
+          { "sentence": "{試合|しあい}に{{負ける}}{ことも|ことも}{経験|けいけん}になります。", "sentenceTranslationKo": "시합에서 지는 것도 경험이 됩니다." }
+        ]
+      },
+      {
+        "readingRef": "おう",
+        "word": "負う",
+        "wordReading": "おう",
+        "meaningsKo": ["짊어지다", "지다"],
+        "examples": [
+          { "sentence": "{責任|せきにん}を{{負う}}{覚悟|かくご}があります。", "sentenceTranslationKo": "책임을 질 각오가 있습니다." }
+        ]
+      }
+    ],
+    "財": [
+      {
+        "readingRef": "ザイ",
+        "word": "財産",
+        "wordReading": "ざいさん",
+        "meaningsKo": ["재산"],
+        "examples": [
+          { "sentence": "{祖父|そふ}の{{財産}}を{相続|そうぞく}しました。", "sentenceTranslationKo": "할아버지의 재산을 상속받았습니다." }
+        ]
+      },
+      {
+        "readingRef": "ザイ",
+        "word": "財布",
+        "wordReading": "さいふ",
+        "meaningsKo": ["지갑"],
+        "examples": [
+          { "sentence": "{新|あたら}しい{{財布}}を{買|か}いました。", "sentenceTranslationKo": "새 지갑을 샀습니다." }
+        ]
+      },
+      {
+        "readingRef": "ザイ",
+        "word": "財政",
+        "wordReading": "ざいせい",
+        "meaningsKo": ["재정"],
+        "examples": [
+          { "sentence": "{町|まち}の{{財政}}{状況|じょうきょう}を{確認|かくにん}しました。", "sentenceTranslationKo": "마을의 재정 상황을 확인했습니다." }
+        ]
+      },
+      {
+        "readingRef": "ザイ",
+        "word": "文化財",
+        "wordReading": "ぶんかざい",
+        "meaningsKo": ["문화재"],
+        "examples": [
+          { "sentence": "この{建物|たてもの}は{重要|じゅうよう}{{文化財}}です。", "sentenceTranslationKo": "이 건물은 중요 문화재입니다." }
+        ]
+      },
+      {
+        "readingRef": "たから",
+        "word": "財",
+        "wordReading": "たから",
+        "meaningsKo": ["재물", "보물"],
+        "examples": [
+          { "sentence": "{家族|かぞく}が{一番|いちばん}の{{財}}です。", "sentenceTranslationKo": "가족이 최고의 재물입니다." }
+        ]
+      }
+    ],
+    "貧": [
+      {
+        "readingRef": "ヒン",
+        "word": "貧困",
+        "wordReading": "ひんこん",
+        "meaningsKo": ["빈곤"],
+        "examples": [
+          { "sentence": "{世界|せかい}には{{貧困}}に{苦|くる}しむ{人|ひと}がいます。", "sentenceTranslationKo": "세계에는 빈곤으로 고통받는 사람이 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "ヒン",
+        "word": "貧富",
+        "wordReading": "ひんぷ",
+        "meaningsKo": ["빈부"],
+        "examples": [
+          { "sentence": "{社会|しゃかい}の{{貧富}}の{差|さ}が{問題|もんだい}です。", "sentenceTranslationKo": "사회의 빈부 격차가 문제입니다." }
+        ]
+      },
+      {
+        "readingRef": "ヒン",
+        "word": "貧乏",
+        "wordReading": "びんぼう",
+        "meaningsKo": ["가난"],
+        "examples": [
+          { "sentence": "{昔|むかし}は{{貧乏}}でしたが{今|いま}は{違|ちが}います。", "sentenceTranslationKo": "옛날에는 가난했지만 지금은 다릅니다." }
+        ]
+      },
+      {
+        "readingRef": "ヒン",
+        "word": "貧血",
+        "wordReading": "ひんけつ",
+        "meaningsKo": ["빈혈"],
+        "examples": [
+          { "sentence": "{{貧血}}で{倒|たお}れそうになりました。", "sentenceTranslationKo": "빈혈로 쓰러질 뻔했습니다." }
+        ]
+      },
+      {
+        "readingRef": "まずしい",
+        "word": "貧しい",
+        "wordReading": "まずしい",
+        "meaningsKo": ["가난하다"],
+        "examples": [
+          { "sentence": "{{貧しい}}{人|ひと}を{助|たす}ける{活動|かつどう}に{参加|さんか}しました。", "sentenceTranslationKo": "가난한 사람을 돕는 활동에 참가했습니다." }
+        ]
+      }
+    ],
+    "責": [
+      {
+        "readingRef": "セキ",
+        "word": "責任",
+        "wordReading": "せきにん",
+        "meaningsKo": ["책임"],
+        "examples": [
+          { "sentence": "{自分|じぶん}の{仕事|しごと}に{{責任}}を{持|も}ちます。", "sentenceTranslationKo": "자신의 일에 책임을 집니다." }
+        ]
+      },
+      {
+        "readingRef": "セキ",
+        "word": "責務",
+        "wordReading": "せきむ",
+        "meaningsKo": ["책무"],
+        "examples": [
+          { "sentence": "{自分|じぶん}の{{責務}}を{果|は}たします。", "sentenceTranslationKo": "자신의 책무를 다합니다." }
+        ]
+      },
+      {
+        "readingRef": "セキ",
+        "word": "重責",
+        "wordReading": "じゅうせき",
+        "meaningsKo": ["중책"],
+        "examples": [
+          { "sentence": "{大|おお}きな{{重責}}を{担|にな}っています。", "sentenceTranslationKo": "큰 중책을 짊어지고 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "セキ",
+        "word": "免責",
+        "wordReading": "めんせき",
+        "meaningsKo": ["면책"],
+        "examples": [
+          { "sentence": "{契約|けいやく}{書|しょ}に{{免責}}{事項|じこう}があります。", "sentenceTranslationKo": "계약서에 면책 사항이 있습니다." }
+        ]
+      },
+      {
+        "readingRef": "せめる",
+        "word": "責める",
+        "wordReading": "せめる",
+        "meaningsKo": ["책망하다", "비난하다"],
+        "examples": [
+          { "sentence": "{自分|じぶん}を{{責める}}{必要|ひつよう}はありません。", "sentenceTranslationKo": "자신을 책망할 필요는 없습니다." }
+        ]
+      }
+    ],
+    "費": [
+      {
+        "readingRef": "ヒ",
+        "word": "費用",
+        "wordReading": "ひよう",
+        "meaningsKo": ["비용"],
+        "examples": [
+          { "sentence": "{旅行|りょこう}の{{費用}}を{計算|けいさん}しました。", "sentenceTranslationKo": "여행 비용을 계산했습니다." }
+        ]
+      },
+      {
+        "readingRef": "ヒ",
+        "word": "消費",
+        "wordReading": "しょうひ",
+        "meaningsKo": ["소비"],
+        "examples": [
+          { "sentence": "{{消費}}{税|ぜい}が{上|あ}がりました。", "sentenceTranslationKo": "소비세가 올랐습니다." }
+        ]
+      },
+      {
+        "readingRef": "ヒ",
+        "word": "学費",
+        "wordReading": "がくひ",
+        "meaningsKo": ["학비"],
+        "examples": [
+          { "sentence": "{大学|だいがく}の{{学費}}は{高|たか}いです。", "sentenceTranslationKo": "대학의 학비는 비쌉니다." }
+        ]
+      },
+      {
+        "readingRef": "ヒ",
+        "word": "交通費",
+        "wordReading": "こうつうひ",
+        "meaningsKo": ["교통비"],
+        "examples": [
+          { "sentence": "{会社|かいしゃ}が{{交通費}}を{負担|ふたん}してくれます。", "sentenceTranslationKo": "회사가 교통비를 부담해 줍니다." }
+        ]
+      },
+      {
+        "readingRef": "ついやす",
+        "word": "費やす",
+        "wordReading": "ついやす",
+        "meaningsKo": ["소비하다", "쓰다"],
+        "examples": [
+          { "sentence": "{多|おお}くの{時間|じかん}を{勉強|べんきょう}に{{費やす}}{毎日|まいにち}です。", "sentenceTranslationKo": "많은 시간을 공부에 쓰는 매일입니다." }
+        ]
+      }
+    ]
+  }
+}
