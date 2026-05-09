@@ -1,0 +1,59 @@
+{
+  "_comment": "N3 결함 6건 처리. 모두 focus 한자 포함 단어로 교체 + 예문",
+  "fills": {
+    "係/人#ひと": {
+      "readingRef": "かかり",
+      "word": "係員",
+      "wordReading": "かかりいん",
+      "meaningsKo": ["담당자", "직원"],
+      "examples": [
+        { "sentence": "{駅|えき}の{{係員}}に{道|みち}を{聞|き}きました。", "sentenceTranslationKo": "역 직원에게 길을 물어봤습니다." }
+      ]
+    },
+    "光/星#ほし": {
+      "readingRef": "ひかり",
+      "word": "光輝",
+      "wordReading": "こうき",
+      "meaningsKo": ["광휘", "빛남"],
+      "examples": [
+        { "sentence": "{彼|かれ}の{経歴|けいれき}には{{光輝}}があります。", "sentenceTranslationKo": "그의 경력에는 빛나는 면이 있습니다." }
+      ]
+    },
+    "民/声#こえ": {
+      "readingRef": "ミン",
+      "word": "民間",
+      "wordReading": "みんかん",
+      "meaningsKo": ["민간"],
+      "examples": [
+        { "sentence": "この{研究|けんきゅう}は{{民間}}{企業|きぎょう}で{行|おこな}われています。", "sentenceTranslationKo": "이 연구는 민간 기업에서 행해지고 있습니다." }
+      ]
+    },
+    "頭/一味#いちみ": {
+      "readingRef": "かしら",
+      "word": "頭文字",
+      "wordReading": "かしらもじ",
+      "meaningsKo": ["이니셜", "첫 글자"],
+      "examples": [
+        { "sentence": "{自分|じぶん}の{名前|なまえ}の{{頭文字}}を{書|か}いてください。", "sentenceTranslationKo": "자기 이름의 이니셜을 써 주세요." }
+      ]
+    },
+    "首/長#なが": {
+      "readingRef": "シュ",
+      "word": "首長",
+      "wordReading": "しゅちょう",
+      "meaningsKo": ["수장", "지자체장"],
+      "examples": [
+        { "sentence": "{町|まち}の{{首長}}{選挙|せんきょ}が{行|おこな}われます。", "sentenceTranslationKo": "동네의 수장 선거가 치러집니다." }
+      ]
+    },
+    "首/人#ひと": {
+      "readingRef": "くび",
+      "word": "首飾り",
+      "wordReading": "くびかざり",
+      "meaningsKo": ["목걸이"],
+      "examples": [
+        { "sentence": "{誕生日|たんじょうび}に{{首飾り}}をもらいました。", "sentenceTranslationKo": "생일에 목걸이를 받았습니다." }
+      ]
+    }
+  }
+}
