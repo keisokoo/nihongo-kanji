@@ -3,21 +3,21 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "react-router build && node scripts/build-sw.mjs",
     "dev": "react-router dev",
-    "start": "react-router-serve ./build/server/index.js",
-    "typecheck": "react-router typegen && tsc"
+    "build": "react-router build && node scripts/build-sw.mjs",
+    "preview": "vite preview",
+    "typecheck": "react-router typegen && tsc",
+    "seed:sync": "node scripts/sync-seed.mjs"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.95.1",
     "@google/genai": "^2.0.0",
-    "@react-router/node": "7.15.0",
-    "@react-router/serve": "7.15.0",
+    "@react-router/node": "^7.15.0",
     "dexie": "^4.4.2",
-    "isbot": "^5.1.36",
     "react": "^19.2.6",
     "react-dom": "^19.2.6",
-    "react-router": "7.15.0"
+    "react-router": "7.15.0",
+    "isbot": "^5"
   },
   "devDependencies": {
     "@react-router/dev": "7.15.0",

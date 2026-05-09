@@ -1,16 +1,15 @@
 .DS_Store
-.env
+
+# build output
+/build/
+/.react-router/
+
+# deps
 /node_modules/
 
-# React Router
-/.react-router/
-/build/
+# agents
+/.claude/
 
-# TTS audio cache (server-side, not exposed)
-/.cache/
-
-# Drizzle
-/drizzle/meta/_journal.json.bak
-
-# Claude
-/.claude
+# env (keys are entered via the app and stored in IndexedDB; no .env needed)
+.env
+.env.local
