@@ -8178,7 +8178,12 @@
             "비애",
             "슬픔"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{悲哀}}に{満|み}ちた{物語|ものがたり}を{読|よ}んだ。",
+              "sentenceTranslationKo": "비애에 가득 찬 이야기를 읽었다."
+            }
+          ]
         },
         {
           "readingRef": "アイ",
@@ -8188,7 +8193,12 @@
             "애수",
             "쓸쓸한 슬픔"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{哀愁}}を{帯|お}びた{歌声|うたごえ}が{響|ひび}く。",
+              "sentenceTranslationKo": "애수를 띤 노랫소리가 울려 퍼진다."
+            }
+          ]
         },
         {
           "readingRef": "あわれ",
@@ -8198,7 +8208,12 @@
             "불쌍함",
             "가엾음"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{哀れ}}な{姿|すがた}に{涙|なみだ}が{出|で}た。",
+              "sentenceTranslationKo": "가엾은 모습에 눈물이 났다."
+            }
+          ]
         }
       ]
     },
@@ -8228,7 +8243,12 @@
           "meaningsKo": [
             "~로구나(감탄)"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{古|ふる}き{良|よ}き{時代|じだい}{{哉}}と{思|おも}う。",
+              "sentenceTranslationKo": "옛 좋은 시대로구나 생각한다."
+            }
+          ]
         }
       ]
     },
@@ -8258,7 +8278,12 @@
           "meaningsKo": [
             "철학"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{大学|だいがく}で{{哲学}}を{学|まな}んでいる。",
+              "sentenceTranslationKo": "대학에서 철학을 배우고 있다."
+            }
+          ]
         },
         {
           "readingRef": "テツ",
@@ -8268,7 +8293,12 @@
             "철인",
             "철학자"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{古代|こだい}の{{哲人}}たちの{言葉|ことば}には{深|ふか}い{意味|いみ}がある。",
+              "sentenceTranslationKo": "고대 철학자들의 말에는 깊은 의미가 있다."
+            }
+          ]
         },
         {
           "readingRef": "テツ",
@@ -8278,7 +8308,12 @@
             "선철",
             "옛 현자"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{先哲}}の{教|おし}えに{学|まな}ぶ{価値|かち}は{大|おお}きい。",
+              "sentenceTranslationKo": "옛 현자의 가르침에서 배우는 가치는 크다."
+            }
+          ]
         }
       ]
     },
@@ -8309,7 +8344,12 @@
             "민요",
             "노래"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{祭|まつ}りで{昔|むかし}の{{唄}}を{聞|き}いた。",
+              "sentenceTranslationKo": "축제에서 옛날 노래를 들었다."
+            }
+          ]
         },
         {
           "readingRef": "うた",
@@ -8318,7 +8358,12 @@
           "meaningsKo": [
             "자장가"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{母|はは}が{{子守唄}}を{歌|うた}ってくれた。",
+              "sentenceTranslationKo": "어머니가 자장가를 불러 주셨다."
+            }
+          ]
         }
       ]
     },
@@ -8349,7 +8394,12 @@
             "시사",
             "암시"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼|かれ}の{発言|はつげん}は{重要|じゅうよう}な{{示唆}}を{含|ふく}んでいる。",
+              "sentenceTranslationKo": "그의 발언은 중요한 시사를 담고 있다."
+            }
+          ]
         },
         {
           "readingRef": "サ",
@@ -8359,7 +8409,12 @@
             "교사",
             "부추김"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{犯罪|はんざい}の{{教唆}}も{処罰|しょばつ}の{対象|たいしょう}になる。",
+              "sentenceTranslationKo": "범죄 교사도 처벌 대상이 된다."
+            }
+          ]
         },
         {
           "readingRef": "そそのかす",
@@ -8369,7 +8424,12 @@
             "부추기다",
             "꼬드기다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{友達|ともだち}を{{唆して}}{悪|わる}いことをさせた。",
+              "sentenceTranslationKo": "친구를 부추겨 나쁜 짓을 하게 했다."
+            }
+          ]
         }
       ]
     },
@@ -8395,7 +8455,12 @@
           "meaningsKo": [
             "입술"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{寒|さむ}くて{{唇}}が{震|ふる}えた。",
+              "sentenceTranslationKo": "추워서 입술이 떨렸다."
+            }
+          ]
         },
         {
           "readingRef": "シン",
@@ -8405,7 +8470,12 @@
             "구순",
             "입술"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{口唇}}が{乾燥|かんそう}しやすい{季節|きせつ}だ。",
+              "sentenceTranslationKo": "입술이 건조해지기 쉬운 계절이다."
+            }
+          ]
         }
       ]
     },
@@ -8435,7 +8505,12 @@
           "meaningsKo": [
             "유일"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "それが{彼|かれ}の{{唯一}}の{楽|たの}しみだ。",
+              "sentenceTranslationKo": "그것이 그의 유일한 즐거움이다."
+            }
+          ]
         },
         {
           "readingRef": "ただ",
@@ -8445,7 +8520,12 @@
             "다만",
             "오직"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{唯}}の{噂|うわさ}に{過|す}ぎなかった。",
+              "sentenceTranslationKo": "단순한 소문에 불과했다."
+            }
+          ]
         },
         {
           "readingRef": "ユイ",
@@ -8454,7 +8534,12 @@
           "meaningsKo": [
             "유물론"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{唯物論}}について{議論|ぎろん}した。",
+              "sentenceTranslationKo": "유물론에 대해 토론했다."
+            }
+          ]
         }
       ]
     },
@@ -8480,7 +8565,12 @@
           "meaningsKo": [
             "합창"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{学校|がっこう}の{{合唱}}コンクールに{出|で}る。",
+              "sentenceTranslationKo": "학교 합창 대회에 나간다."
+            }
+          ]
         },
         {
           "readingRef": "ショウ",
@@ -8490,7 +8580,12 @@
             "제창",
             "제안"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼|かれ}が{新|あたら}しい{理論|りろん}を{{提唱}}した。",
+              "sentenceTranslationKo": "그가 새로운 이론을 제창했다."
+            }
+          ]
         },
         {
           "readingRef": "となえる",
@@ -8500,7 +8595,12 @@
             "주창하다",
             "외치다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{反対|はんたい}{意見|いけん}を{{唱えた}}。",
+              "sentenceTranslationKo": "반대 의견을 주장했다."
+            }
+          ]
         }
       ]
     },
@@ -8538,7 +8638,12 @@
           "meaningsKo": [
             "딱따구리"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{森|もり}の{中|なか}で{{啄木鳥}}の{音|おと}が{聞|き}こえる。",
+              "sentenceTranslationKo": "숲속에서 딱따구리 소리가 들린다."
+            }
+          ]
         }
       ]
     },
@@ -8569,7 +8674,12 @@
             "계발",
             "깨우침"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{自己|じこ}{{啓発}}の{本|ほん}を{読|よ}んでいる。",
+              "sentenceTranslationKo": "자기계발 책을 읽고 있다."
+            }
+          ]
         },
         {
           "readingRef": "ケイ",
@@ -8578,7 +8688,12 @@
           "meaningsKo": [
             "계몽"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{環境|かんきょう}{問題|もんだい}の{{啓蒙}}{活動|かつどう}に{参加|さんか}した。",
+              "sentenceTranslationKo": "환경 문제 계몽 활동에 참여했다."
+            }
+          ]
         },
         {
           "readingRef": "ケイ",
@@ -8588,7 +8703,12 @@
             "배계",
             "삼가 아룀(편지 첫머리)"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{手紙|てがみ}は「{{拝啓}}」で{始|はじ}める。",
+              "sentenceTranslationKo": "편지는 '배계'로 시작한다."
+            }
+          ]
         }
       ]
     },
@@ -8626,7 +8746,12 @@
           "meaningsKo": [
             "선악"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{善悪}}の{判断|はんだん}は{難|むずか}しい。",
+              "sentenceTranslationKo": "선악의 판단은 어렵다."
+            }
+          ]
         },
         {
           "readingRef": "ゼン",
@@ -8635,7 +8760,12 @@
           "meaningsKo": [
             "개선"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{業務|ぎょうむ}の{{改善}}に{取|と}り{組|く}んでいる。",
+              "sentenceTranslationKo": "업무 개선에 임하고 있다."
+            }
+          ]
         },
         {
           "readingRef": "よい",
@@ -8645,7 +8775,12 @@
             "좋다",
             "선하다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{善い}}{行|おこな}いを{心|こころ}がける。",
+              "sentenceTranslationKo": "선한 행동을 마음 쓴다."
+            }
+          ]
         }
       ]
     },
@@ -8671,7 +8806,12 @@
           "meaningsKo": [
             "소환"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{裁判所|さいばんしょ}に{{召喚}}された。",
+              "sentenceTranslationKo": "법원에 소환됐다."
+            }
+          ]
         },
         {
           "readingRef": "カン",
@@ -8681,7 +8821,12 @@
             "환기",
             "불러일으킴"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{注意|ちゅうい}を{{喚起}}するポスターを{貼|は}った。",
+              "sentenceTranslationKo": "주의를 환기하는 포스터를 붙였다."
+            }
+          ]
         },
         {
           "readingRef": "わめく",
@@ -8691,7 +8836,12 @@
             "고함치다",
             "외치다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{子供|こども}が{大声|おおごえ}で{{喚いて}}いる。",
+              "sentenceTranslationKo": "아이가 큰 소리로 고함치고 있다."
+            }
+          ]
         }
       ]
     },
@@ -8714,7 +8864,12 @@
             "공갈",
             "협박"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{{恐喝}}の{罪|つみ}で{逮捕|たいほ}された。",
+              "sentenceTranslationKo": "그는 공갈죄로 체포됐다."
+            }
+          ]
         },
         {
           "readingRef": "カツ",
@@ -8724,7 +8879,12 @@
             "일갈",
             "호통"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{先生|せんせい}が{生徒|せいと}を{{一喝}}した。",
+              "sentenceTranslationKo": "선생님이 학생을 일갈했다."
+            }
+          ]
         },
         {
           "readingRef": "カツ",
@@ -8734,7 +8894,12 @@
             "갈채",
             "환호"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{観客|かんきゃく}から{{喝采}}を{浴|あ}びた。",
+              "sentenceTranslationKo": "관객으로부터 갈채를 받았다."
+            }
+          ]
         }
       ]
     },
@@ -8760,7 +8925,12 @@
           "meaningsKo": [
             "상실"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{記憶|きおく}{{喪失}}になった。",
+              "sentenceTranslationKo": "기억상실에 걸렸다."
+            }
+          ]
         },
         {
           "readingRef": "も",
@@ -8770,7 +8940,12 @@
             "상",
             "초상"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{祖父|そふ}の{{喪}}に{服|ふく}している。",
+              "sentenceTranslationKo": "할아버지의 상에 복상하고 있다."
+            }
+          ]
         },
         {
           "readingRef": "も",
@@ -8779,7 +8954,12 @@
           "meaningsKo": [
             "상복"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{葬式|そうしき}には{{喪服}}を{着|き}て{行|い}く。",
+              "sentenceTranslationKo": "장례식에는 상복을 입고 간다."
+            }
+          ]
         }
       ]
     },
@@ -8806,7 +8986,12 @@
             "교목",
             "큰키나무"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{公園|こうえん}には{{喬木}}が{多|おお}い。",
+              "sentenceTranslationKo": "공원에는 큰키나무가 많다."
+            }
+          ]
         }
       ]
     },
@@ -8829,7 +9014,12 @@
             "사자",
             "후계자"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{家|いえ}の{{嗣子}}として{育|そだ}てられた。",
+              "sentenceTranslationKo": "그는 집안의 후계자로 길러졌다."
+            }
+          ]
         },
         {
           "readingRef": "シ",
@@ -8839,7 +9029,12 @@
             "후사",
             "후계자"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{王|おう}には{{後嗣}}がいなかった。",
+              "sentenceTranslationKo": "왕에게는 후계자가 없었다."
+            }
+          ]
         }
       ]
     },
@@ -8869,7 +9064,12 @@
           "meaningsKo": [
             "감탄"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼|かれ}の{才能|さいのう}に{{感嘆}}した。",
+              "sentenceTranslationKo": "그의 재능에 감탄했다."
+            }
+          ]
         },
         {
           "readingRef": "タン",
@@ -8878,7 +9078,12 @@
           "meaningsKo": [
             "비탄"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{家族|かぞく}は{{悲嘆}}に{暮|く}れた。",
+              "sentenceTranslationKo": "가족은 비탄에 빠졌다."
+            }
+          ]
         },
         {
           "readingRef": "なげく",
@@ -8888,7 +9093,12 @@
             "한탄하다",
             "슬퍼하다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{失敗|しっぱい}を{{嘆いて}}も{仕方|しかた}がない。",
+              "sentenceTranslationKo": "실패를 한탄해도 어쩔 수 없다."
+            }
+          ]
         }
       ]
     },
@@ -8919,7 +9129,12 @@
             "가상",
             "칭찬"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼|かれ}の{業績|ぎょうせき}は{{嘉賞}}に{値|あたい}する。",
+              "sentenceTranslationKo": "그의 업적은 칭찬받을 만하다."
+            }
+          ]
         },
         {
           "readingRef": "カ",
@@ -8929,7 +9144,12 @@
             "좋은 날",
             "길일"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{結婚式|けっこんしき}は{{嘉日}}に{行|おこな}われた。",
+              "sentenceTranslationKo": "결혼식은 좋은 날에 거행됐다."
+            }
+          ]
         }
       ]
     },
@@ -8959,7 +9179,12 @@
           "meaningsKo": [
             "위촉"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{専門家|せんもんか}に{調査|ちょうさ}を{{委嘱}}した。",
+              "sentenceTranslationKo": "전문가에게 조사를 위촉했다."
+            }
+          ]
         },
         {
           "readingRef": "ショク",
@@ -8969,7 +9194,12 @@
             "촉탁",
             "위탁"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{嘱託}}{社員|しゃいん}として{働|はたら}いている。",
+              "sentenceTranslationKo": "촉탁 사원으로 일하고 있다."
+            }
+          ]
         },
         {
           "readingRef": "ショク",
@@ -8979,7 +9209,12 @@
             "촉망",
             "기대를 걺"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{将来|しょうらい}を{{嘱望}}される{若者|わかもの}だ。",
+              "sentenceTranslationKo": "장래가 촉망되는 젊은이다."
+            }
+          ]
         }
       ]
     },
@@ -9006,7 +9241,12 @@
             "기구",
             "도구"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{台所|だいどころ}{{器具}}を{揃|そろ}えた。",
+              "sentenceTranslationKo": "주방 기구를 갖췄다."
+            }
+          ]
         },
         {
           "readingRef": "キ",
@@ -9015,7 +9255,12 @@
           "meaningsKo": [
             "악기"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼女|かのじょ}は{何|なん}でも{{楽器}}を{演奏|えんそう}できる。",
+              "sentenceTranslationKo": "그녀는 어떤 악기든 연주할 수 있다."
+            }
+          ]
         },
         {
           "readingRef": "うつわ",
@@ -9025,7 +9270,12 @@
             "그릇",
             "용기"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{陶芸|とうげい}で{美|うつく}しい{{器}}を{作|つく}った。",
+              "sentenceTranslationKo": "도예로 아름다운 그릇을 만들었다."
+            }
+          ]
         }
       ]
     },
@@ -9052,7 +9302,12 @@
             "분화",
             "화산 폭발"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{火山|かざん}が{{噴火}}した。",
+              "sentenceTranslationKo": "화산이 분화했다."
+            }
+          ]
         },
         {
           "readingRef": "フン",
@@ -9061,7 +9316,12 @@
           "meaningsKo": [
             "분수"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{公園|こうえん}の{{噴水}}が{綺麗|きれい}だ。",
+              "sentenceTranslationKo": "공원의 분수가 아름답다."
+            }
+          ]
         },
         {
           "readingRef": "ふく",
@@ -9071,7 +9331,12 @@
             "뿜다",
             "내뿜다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{鯨|くじら}が{潮|しお}を{{噴いた}}。",
+              "sentenceTranslationKo": "고래가 물을 뿜었다."
+            }
+          ]
         }
       ]
     },
@@ -9098,7 +9363,12 @@
             "위협",
             "위하"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{犬|いぬ}が{{威嚇}}するように{吠|ほ}えた。",
+              "sentenceTranslationKo": "개가 위협하듯 짖었다."
+            }
+          ]
         }
       ]
     },
@@ -9125,7 +9395,12 @@
             "수인",
             "죄수"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{囚人}}たちが{労働|ろうどう}している。",
+              "sentenceTranslationKo": "수인들이 노동하고 있다."
+            }
+          ]
         },
         {
           "readingRef": "シュウ",
@@ -9134,7 +9409,12 @@
           "meaningsKo": [
             "사형수"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{死刑囚}}の{執行|しっこう}が{延期|えんき}された。",
+              "sentenceTranslationKo": "사형수의 집행이 연기됐다."
+            }
+          ]
         }
       ]
     },
@@ -9161,7 +9441,12 @@
             "권내",
             "범위 안"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{合格|ごうかく}{{圏内}}に{入|はい}っている。",
+              "sentenceTranslationKo": "합격권 내에 들어 있다."
+            }
+          ]
         },
         {
           "readingRef": "ケン",
@@ -9170,7 +9455,12 @@
           "meaningsKo": [
             "수도권"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{首都圏}}の{交通|こうつう}{渋滞|じゅうたい}が{激|はげ}しい。",
+              "sentenceTranslationKo": "수도권의 교통 체증이 심하다."
+            }
+          ]
         },
         {
           "readingRef": "ケン",
@@ -9179,7 +9469,12 @@
           "meaningsKo": [
             "대기권"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "ロケットが{{大気圏}}を{突破|とっぱ}した。",
+              "sentenceTranslationKo": "로켓이 대기권을 돌파했다."
+            }
+          ]
         }
       ]
     },
@@ -9206,7 +9501,12 @@
             "규각",
             "모난 행동"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼|かれ}の{言動|げんどう}には{{圭角}}が{多|おお}い。",
+              "sentenceTranslationKo": "그의 언동에는 모난 점이 많다."
+            }
+          ]
         }
       ]
     },
@@ -9228,7 +9528,12 @@
           "meaningsKo": [
             "탄광"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{昔|むかし}{{炭坑}}で{働|はたら}く{人|ひと}が{多|おお}かった。",
+              "sentenceTranslationKo": "옛날에는 탄광에서 일하는 사람이 많았다."
+            }
+          ]
         },
         {
           "readingRef": "コウ",
@@ -9237,7 +9542,12 @@
           "meaningsKo": [
             "갱도"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{深|ふか}い{{坑道}}に{入|はい}った。",
+              "sentenceTranslationKo": "깊은 갱도에 들어갔다."
+            }
+          ]
         }
       ]
     },
@@ -9263,7 +9573,12 @@
           "meaningsKo": [
             "평(면적 단위)"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{土地|とち}は{五十|ごじゅう}{{坪}}ある。",
+              "sentenceTranslationKo": "토지는 50평이 있다."
+            }
+          ]
         },
         {
           "readingRef": "つぼ",
@@ -9273,7 +9588,12 @@
             "건평",
             "건물 면적"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "この{家|いえ}の{{建坪}}は{広|ひろ}い。",
+              "sentenceTranslationKo": "이 집의 건평은 넓다."
+            }
+          ]
         }
       ]
     },
@@ -9311,7 +9631,12 @@
           "meaningsKo": [
             "수직"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{線|せん}を{{垂直}}に{引|ひ}いた。",
+              "sentenceTranslationKo": "선을 수직으로 그었다."
+            }
+          ]
         },
         {
           "readingRef": "たれる",
@@ -9321,7 +9646,12 @@
             "드리워지다",
             "늘어지다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{枝|えだ}が{重|おも}そうに{{垂れて}}いる。",
+              "sentenceTranslationKo": "가지가 무겁게 늘어져 있다."
+            }
+          ]
         },
         {
           "readingRef": "たらす",
@@ -9330,7 +9660,12 @@
           "meaningsKo": [
             "늘어뜨리다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{髪|かみ}を{長|なが}く{{垂らした}}。",
+              "sentenceTranslationKo": "머리를 길게 늘어뜨렸다."
+            }
+          ]
         }
       ]
     },
@@ -9357,7 +9692,12 @@
             "담",
             "울타리"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{庭|にわ}に{低|ひく}い{{垣}}を{作|つく}った。",
+              "sentenceTranslationKo": "정원에 낮은 담을 만들었다."
+            }
+          ]
         },
         {
           "readingRef": "かき",
@@ -9366,7 +9706,12 @@
           "meaningsKo": [
             "울타리"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{垣根}}を{越|こ}えて{猫|ねこ}が{来|き}た。",
+              "sentenceTranslationKo": "울타리를 넘어 고양이가 왔다."
+            }
+          ]
         }
       ]
     },
@@ -9396,7 +9741,12 @@
           "meaningsKo": [
             "집필"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{作家|さっか}は{小説|しょうせつ}を{{執筆}}している。",
+              "sentenceTranslationKo": "작가는 소설을 집필하고 있다."
+            }
+          ]
         },
         {
           "readingRef": "シュウ",
@@ -9405,7 +9755,12 @@
           "meaningsKo": [
             "집착"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{お金|おかね}に{{執着}}しすぎてはいけない。",
+              "sentenceTranslationKo": "돈에 집착해서는 안 된다."
+            }
+          ]
         },
         {
           "readingRef": "とる",
@@ -9415,7 +9770,12 @@
             "잡다",
             "집행하다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼|かれ}が{指揮|しき}を{{執った}}。",
+              "sentenceTranslationKo": "그가 지휘를 잡았다."
+            }
+          ]
         }
       ]
     },
@@ -9441,7 +9801,12 @@
           "meaningsKo": [
             "재배"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{農家|のうか}が{野菜|やさい}を{{栽培}}している。",
+              "sentenceTranslationKo": "농가가 채소를 재배하고 있다."
+            }
+          ]
         },
         {
           "readingRef": "バイ",
@@ -9450,7 +9815,12 @@
           "meaningsKo": [
             "배양"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{細胞|さいぼう}を{{培養}}する{実験|じっけん}を{行|おこな}った。",
+              "sentenceTranslationKo": "세포를 배양하는 실험을 했다."
+            }
+          ]
         },
         {
           "readingRef": "つちかう",
@@ -9460,7 +9830,12 @@
             "기르다",
             "배양하다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{忍耐力|にんたいりょく}を{{培う}}{訓練|くんれん}を{受|う}けた。",
+              "sentenceTranslationKo": "인내력을 기르는 훈련을 받았다."
+            }
+          ]
         }
       ]
     },
@@ -9490,7 +9865,12 @@
           "meaningsKo": [
             "기본"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{何事|なにごと}も{{基本}}が{大切|たいせつ}だ。",
+              "sentenceTranslationKo": "무슨 일이든 기본이 중요하다."
+            }
+          ]
         },
         {
           "readingRef": "キ",
@@ -9499,7 +9879,12 @@
           "meaningsKo": [
             "기초"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{英語|えいご}の{{基礎}}を{固|かた}める。",
+              "sentenceTranslationKo": "영어의 기초를 다진다."
+            }
+          ]
         },
         {
           "readingRef": "もと",
@@ -9509,7 +9894,12 @@
             "바탕",
             "근거"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{経験|けいけん}を{{基}}に{判断|はんだん}した。",
+              "sentenceTranslationKo": "경험을 바탕으로 판단했다."
+            }
+          ]
         }
       ]
     },
@@ -9536,7 +9926,12 @@
             "해자",
             "도랑"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{城|しろ}の{{堀}}に{鯉|こい}がいる。",
+              "sentenceTranslationKo": "성의 해자에 잉어가 있다."
+            }
+          ]
         },
         {
           "readingRef": "ほり",
@@ -9545,7 +9940,12 @@
           "meaningsKo": [
             "바깥 해자"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{外堀}}を{埋|う}められて{追|お}い{詰|つ}められた。",
+              "sentenceTranslationKo": "바깥 해자를 메워 궁지에 몰렸다."
+            }
+          ]
         }
       ]
     },
@@ -9575,7 +9975,12 @@
           "meaningsKo": [
             "견고"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{堅固}}な{城|しろ}を{築|きず}いた。",
+              "sentenceTranslationKo": "견고한 성을 쌓았다."
+            }
+          ]
         },
         {
           "readingRef": "ケン",
@@ -9584,7 +9989,12 @@
           "meaningsKo": [
             "견실"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{{堅実}}な{生活|せいかつ}を{送|おく}っている。",
+              "sentenceTranslationKo": "그는 견실한 생활을 보내고 있다."
+            }
+          ]
         },
         {
           "readingRef": "かたい",
@@ -9594,7 +10004,12 @@
             "굳다",
             "단단하다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{この|この}{パン|ぱん}は{{堅い}}。",
+              "sentenceTranslationKo": "이 빵은 단단하다."
+            }
+          ]
         }
       ]
     },
@@ -9628,7 +10043,12 @@
           "meaningsKo": [
             "타락"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{完全|かんぜん}に{{堕落}}してしまった。",
+              "sentenceTranslationKo": "그는 완전히 타락해 버렸다."
+            }
+          ]
         },
         {
           "readingRef": "ダ",
@@ -9637,7 +10057,12 @@
           "meaningsKo": [
             "낙태"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{堕胎}}は{法律|ほうりつ}で{制限|せいげん}されている。",
+              "sentenceTranslationKo": "낙태는 법률로 제한되어 있다."
+            }
+          ]
         }
       ]
     },
@@ -9664,7 +10089,12 @@
             "제방",
             "둑"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{大雨|おおあめ}で{{堤防}}が{決壊|けっかい}した。",
+              "sentenceTranslationKo": "큰비로 제방이 무너졌다."
+            }
+          ]
         },
         {
           "readingRef": "つつみ",
@@ -9674,7 +10104,12 @@
             "둑",
             "제방"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{川|かわ}の{{堤}}を{散歩|さんぽ}した。",
+              "sentenceTranslationKo": "강둑을 산책했다."
+            }
+          ]
         }
       ]
     },
@@ -9717,7 +10152,12 @@
             "재능 있음",
             "능숙함"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{英語|えいご}に{{堪能}}だ。",
+              "sentenceTranslationKo": "그는 영어에 능숙하다."
+            }
+          ]
         },
         {
           "readingRef": "たえる",
@@ -9727,7 +10167,12 @@
             "견디다",
             "참다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{苦|くる}しみに{{堪えた}}。",
+              "sentenceTranslationKo": "고통을 견뎠다."
+            }
+          ]
         },
         {
           "readingRef": "こらえる",
@@ -9737,7 +10182,12 @@
             "참다",
             "버티다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{涙|なみだ}を{{堪えた}}。",
+              "sentenceTranslationKo": "눈물을 참았다."
+            }
+          ]
         }
       ]
     },
@@ -9764,7 +10214,12 @@
             "담",
             "담장"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{家|いえ}の{周|まわ}りに{{塀}}を{建|た}てた。",
+              "sentenceTranslationKo": "집 주위에 담을 세웠다."
+            }
+          ]
         },
         {
           "readingRef": "ヘイ",
@@ -9773,7 +10228,12 @@
           "meaningsKo": [
             "판자 담"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{古|ふる}い{{板塀}}が{倒|たお}れそうだ。",
+              "sentenceTranslationKo": "낡은 판자 담이 쓰러질 것 같다."
+            }
+          ]
         }
       ]
     },
@@ -9808,7 +10268,12 @@
             "루(야구)",
             "보루"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "ランナーが{次|つぎ}の{{塁}}を{狙|ねら}う。",
+              "sentenceTranslationKo": "주자가 다음 루를 노린다."
+            }
+          ]
         },
         {
           "readingRef": "ルイ",
@@ -9817,7 +10282,12 @@
           "meaningsKo": [
             "홈런"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{大|おお}きな{{本塁打}}を{打|う}った。",
+              "sentenceTranslationKo": "그는 큰 홈런을 쳤다."
+            }
+          ]
         },
         {
           "readingRef": "ルイ",
@@ -9826,7 +10296,12 @@
           "meaningsKo": [
             "도루"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "ランナーが{{盗塁}}に{成功|せいこう}した。",
+              "sentenceTranslationKo": "주자가 도루에 성공했다."
+            }
+          ]
         }
       ]
     },
@@ -9861,7 +10336,12 @@
             "덩어리",
             "단괴"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{{団塊}}{世代|せだい}が{定年|ていねん}を{迎|むか}える。",
+              "sentenceTranslationKo": "베이비붐 세대가 정년을 맞이한다."
+            }
+          ]
         },
         {
           "readingRef": "かたまり",
@@ -9870,7 +10350,12 @@
           "meaningsKo": [
             "덩어리"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{大|おお}きな{肉|にく}の{{塊}}を{切|き}り{分|わ}けた。",
+              "sentenceTranslationKo": "큰 고기 덩어리를 잘라 나눴다."
+            }
+          ]
         },
         {
           "readingRef": "カイ",
@@ -9879,7 +10364,12 @@
           "meaningsKo": [
             "금괴"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{銀行|ぎんこう}の{金庫|きんこ}に{{金塊}}が{保管|ほかん}されている。",
+              "sentenceTranslationKo": "은행 금고에 금괴가 보관되어 있다."
+            }
+          ]
         }
       ]
     },
@@ -9906,7 +10396,12 @@
             "조소",
             "조각"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{{彫塑}}を{学|まな}んでいる。",
+              "sentenceTranslationKo": "그는 조소를 배우고 있다."
+            }
+          ]
         },
         {
           "readingRef": "ソ",
@@ -9916,7 +10411,12 @@
             "소상",
             "흙으로 빚은 상"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{粘土|ねんど}で{{塑像}}を{作|つく}った。",
+              "sentenceTranslationKo": "점토로 소상을 만들었다."
+            }
+          ]
         }
       ]
     },
@@ -9947,7 +10447,12 @@
             "무덤",
             "봉분"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{古|ふる}い{{塚}}が{発見|はっけん}された。",
+              "sentenceTranslationKo": "오래된 무덤이 발견됐다."
+            }
+          ]
         },
         {
           "readingRef": "つか",
@@ -9956,7 +10461,12 @@
           "meaningsKo": [
             "조개무지"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{遺跡|いせき}から{{貝塚}}が{出土|しゅつど}した。",
+              "sentenceTranslationKo": "유적에서 조개무지가 출토됐다."
+            }
+          ]
         }
       ]
     },
@@ -9979,7 +10489,12 @@
             "학원",
             "사숙"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{放課後|ほうかご}に{{塾}}に{通|かよ}っている。",
+              "sentenceTranslationKo": "방과 후에 학원에 다니고 있다."
+            }
+          ]
         },
         {
           "readingRef": "ジュク",
@@ -9988,7 +10503,12 @@
           "meaningsKo": [
             "학습 학원"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{近所|きんじょ}に{新|あたら}しい{{学習塾}}ができた。",
+              "sentenceTranslationKo": "근처에 새로운 학원이 생겼다."
+            }
+          ]
         },
         {
           "readingRef": "ジュク",
@@ -9997,7 +10517,12 @@
           "meaningsKo": [
             "사숙"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{昔|むかし}は{{私塾}}が{多|おお}くあった。",
+              "sentenceTranslationKo": "옛날에는 사숙이 많이 있었다."
+            }
+          ]
         }
       ]
     },
@@ -10024,7 +10549,12 @@
             "무덤",
             "묘"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{先祖|せんぞ}の{{墓}}にお{参|まい}りした。",
+              "sentenceTranslationKo": "조상의 묘에 성묘했다."
+            }
+          ]
         },
         {
           "readingRef": "ボ",
@@ -10033,7 +10563,12 @@
           "meaningsKo": [
             "묘지"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{丘|おか}の{上|うえ}に{{墓地}}がある。",
+              "sentenceTranslationKo": "언덕 위에 묘지가 있다."
+            }
+          ]
         },
         {
           "readingRef": "ボ",
@@ -10042,7 +10577,12 @@
           "meaningsKo": [
             "묘석"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{古|ふる}い{{墓石}}が{苔|こけ}に{覆|おお}われている。",
+              "sentenceTranslationKo": "오래된 묘석이 이끼로 덮여 있다."
+            }
+          ]
         }
       ]
     },
@@ -10072,7 +10612,12 @@
           "meaningsKo": [
             "추락"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{飛行機|ひこうき}が{{墜落}}した。",
+              "sentenceTranslationKo": "비행기가 추락했다."
+            }
+          ]
         },
         {
           "readingRef": "ツイ",
@@ -10081,7 +10626,12 @@
           "meaningsKo": [
             "격추"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{敵|てき}の{戦闘機|せんとうき}を{{撃墜}}した。",
+              "sentenceTranslationKo": "적의 전투기를 격추했다."
+            }
+          ]
         }
       ]
     },
@@ -10107,7 +10657,12 @@
           "meaningsKo": [
             "먹"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{書道|しょどう}で{{墨}}を{使|つか}う。",
+              "sentenceTranslationKo": "서예에서 먹을 사용한다."
+            }
+          ]
         },
         {
           "readingRef": "ボク",
@@ -10116,7 +10671,12 @@
           "meaningsKo": [
             "수묵화"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{中国|ちゅうごく}の{{水墨画}}は{有名|ゆうめい}だ。",
+              "sentenceTranslationKo": "중국의 수묵화는 유명하다."
+            }
+          ]
         },
         {
           "readingRef": "すみ",
@@ -10125,7 +10685,12 @@
           "meaningsKo": [
             "먹그림"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{祖父|そふ}は{{墨絵}}が{得意|とくい}だ。",
+              "sentenceTranslationKo": "할아버지는 먹그림을 잘 그린다."
+            }
+          ]
         }
       ]
     },
@@ -10147,7 +10712,12 @@
           "meaningsKo": [
             "고분"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{近|ちか}くに{大|おお}きな{{古墳}}がある。",
+              "sentenceTranslationKo": "근처에 큰 고분이 있다."
+            }
+          ]
         },
         {
           "readingRef": "フン",
@@ -10157,7 +10727,12 @@
             "분묘",
             "무덤"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{歴史的|れきしてき}な{{墳墓}}が{保存|ほぞん}されている。",
+              "sentenceTranslationKo": "역사적인 분묘가 보존되어 있다."
+            }
+          ]
         }
       ]
     },
@@ -10187,7 +10762,12 @@
           "meaningsKo": [
             "개간"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{荒|あ}れ{地|ち}を{{開墾}}した。",
+              "sentenceTranslationKo": "황무지를 개간했다."
+            }
+          ]
         },
         {
           "readingRef": "コン",
@@ -10196,7 +10776,12 @@
           "meaningsKo": [
             "개간한 밭"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{先人|せんじん}たちが{{墾田}}を{広|ひろ}げた。",
+              "sentenceTranslationKo": "선인들이 개간한 밭을 넓혔다."
+            }
+          ]
         }
       ]
     },
@@ -10222,7 +10807,12 @@
           "meaningsKo": [
             "벽"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{部屋|へや}の{{壁}}に{絵|え}を{掛|か}けた。",
+              "sentenceTranslationKo": "방의 벽에 그림을 걸었다."
+            }
+          ]
         },
         {
           "readingRef": "ヘキ",
@@ -10231,7 +10821,12 @@
           "meaningsKo": [
             "벽화"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{古代|こだい}の{{壁画}}が{発見|はっけん}された。",
+              "sentenceTranslationKo": "고대의 벽화가 발견됐다."
+            }
+          ]
         },
         {
           "readingRef": "ヘキ",
@@ -10240,7 +10835,12 @@
           "meaningsKo": [
             "장벽"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{言語|げんご}の{{障壁}}を{乗|の}り{越|こ}えた。",
+              "sentenceTranslationKo": "언어 장벽을 넘어섰다."
+            }
+          ]
         }
       ]
     },
@@ -10266,7 +10866,12 @@
           "meaningsKo": [
             "단상"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{校長|こうちょう}{先生|せんせい}が{{壇上}}に{立|た}った。",
+              "sentenceTranslationKo": "교장 선생님이 단상에 올랐다."
+            }
+          ]
         },
         {
           "readingRef": "ダン",
@@ -10275,7 +10880,12 @@
           "meaningsKo": [
             "제단"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{教会|きょうかい}の{{祭壇}}が{美|うつく}しい。",
+              "sentenceTranslationKo": "교회의 제단이 아름답다."
+            }
+          ]
         },
         {
           "readingRef": "ダン",
@@ -10284,7 +10894,12 @@
           "meaningsKo": [
             "화단"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{庭|にわ}の{{花壇}}に{花|はな}を{植|う}えた。",
+              "sentenceTranslationKo": "정원의 화단에 꽃을 심었다."
+            }
+          ]
         }
       ]
     },
@@ -10322,7 +10937,12 @@
           "meaningsKo": [
             "파괴"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{建物|たてもの}が{{破壊}}された。",
+              "sentenceTranslationKo": "건물이 파괴됐다."
+            }
+          ]
         },
         {
           "readingRef": "こわす",
@@ -10332,7 +10952,12 @@
             "부수다",
             "망가뜨리다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{古|ふる}い{家|いえ}を{{壊した}}。",
+              "sentenceTranslationKo": "낡은 집을 부쉈다."
+            }
+          ]
         },
         {
           "readingRef": "こわれる",
@@ -10342,7 +10967,12 @@
             "부서지다",
             "망가지다"
           ],
-          "examples": []
+          "examples": [
+            {
+              "sentence": "{時計|とけい}が{{壊れた}}。",
+              "sentenceTranslationKo": "시계가 망가졌다."
+            }
+          ]
         }
       ]
     },
