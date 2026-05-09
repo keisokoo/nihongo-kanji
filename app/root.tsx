@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import {
   isRouteErrorResponse,
   Links,
@@ -47,6 +48,17 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
+  // Service worker registration. vite-plugin-pwa's auto-inject doesn't reach
+  // RR7-generated index.html, so register manually. sw.js is only present in
+  // production builds (see scripts/build-sw.mjs); dev mode skips it silently.
+  useEffect(() => {
+    if (typeof navigator === "undefined" || !("serviceWorker" in navigator))
+      return;
+    navigator.serviceWorker.register("/sw.js", { scope: "/" }).catch((err) => {
+      console.warn("[sw] register failed:", err);
+    });
+  }, []);
+
   return (
     <InitGate>
       <Outlet />

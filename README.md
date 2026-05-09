@@ -51,9 +51,51 @@ npm run dev          # https://localhost:5173 (자가서명 인증서)
 ## 빌드 & 배포
 
 ```sh
-npm run build        # 정적 자산 → build/client/
-npm run preview      # 로컬 정적 서빙 확인
+npm run build        # 정적 자산 → build/client/ + Workbox sw.js
+npm run preview      # https://localhost:4173 (서비스 워커 + 오프라인 작동)
 ```
+
+> **PWA / 오프라인 테스트**는 반드시 `npm run preview` 로 해야 함. `npm run
+> dev` 에선 sw.js 가 생성되지 않아 홈 화면 추가는 되지만 오프라인이 안 됨.
+
+### 데스크톱 오프라인 검증
+
+```sh
+npm run build && npm run preview
+# https://localhost:4173 접속
+```
+
+DevTools → Application → Service Workers 에서 `sw.js` activated 확인 →
+Network 탭에서 "Offline" 체크 → 새로고침 시 정상 로딩되면 SW 동작 OK.
+
+### 모바일 오프라인 검증 (사파리)
+
+iOS 사파리는 자가서명 인증서에서 Service Worker 등록을 silent 거부함. LAN
+IP (`https://192.168.x.x:4173`) 로는 PWA 추가까지는 되지만 SW 가 등록 안
+되어 오프라인이 안 됨. 진짜 HTTPS cert 가 필요함.
+
+가장 빠른 방법: `cloudflared` quick tunnel.
+
+```sh
+brew install cloudflared
+# 빌드 + preview 띄운 상태에서, 별도 터미널:
+cloudflared tunnel --no-tls-verify --url https://localhost:4173
+# → https://xxx-yyy-zzz.trycloudflare.com 발급
+```
+
+`--no-tls-verify` 는 cloudflared 가 origin (preview 의 자가서명 cert) 검증
+을 건너뛰게 함. 외부에는 cloudflared 가 진짜 Let's Encrypt cert 로 HTTPS
+제공.
+
+폰 사파리에서:
+1. cloudflared 가 준 `https://xxx.trycloudflare.com` 접속 (LAN IP 아님)
+2. 인증서 경고 없이 정상 로딩 → 셋업 완료
+3. 페이지 둘러보기 (~10초, SW 가 background 에서 5MB precache)
+4. 공유 → 홈 화면에 추가
+5. **비행기 모드 ON** → 홈 화면 아이콘으로 진입 → 오프라인 동작 확인
+
+> Quick tunnel URL 은 cloudflared 끄면 사라짐. 영구 URL 이 필요하면 정식
+> 배포 (§빌드 & 배포 위).
 
 `build/client/` 를 그대로 어떤 정적 호스트에든 올리면 됨 (Cloudflare Pages,
 Vercel static, Netlify, GitHub Pages 등). 서버 런타임 필요 없음.

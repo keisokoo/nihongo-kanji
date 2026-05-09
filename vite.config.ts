@@ -5,11 +5,19 @@ import { VitePWA } from "vite-plugin-pwa";
 import basicSsl from "@vitejs/plugin-basic-ssl";
 
 export default defineConfig({
-  // Dev over LAN (e.g. https://192.168.x.x:5173 from phone). Required because
-  // crypto.subtle / service workers only work in secure contexts. Browsers
-  // will prompt to trust the self-signed cert once.
+  // Dev + preview over LAN (e.g. https://192.168.x.x:5173 from phone).
+  // Required because crypto.subtle / service workers only work in secure
+  // contexts. basicSsl() generates a self-signed cert; first-time browser
+  // visit needs a trust prompt. Use `npm run preview` to test the real PWA
+  // (with sw.js + precache) — `npm run dev` does NOT build the SW.
   server: {
     host: true,
+    https: {},
+  },
+  preview: {
+    host: true,
+    port: 4173,
+    strictPort: true,
     https: {},
   },
   plugins: [
