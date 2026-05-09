@@ -72,7 +72,7 @@ export async function action({ request }: Route.ActionArgs) {
       break;
     }
 
-    const { word, wordReading, kanjiReading } = gen.result;
+    const { word, wordReading, kanjiReading, meaningsKo } = gen.result;
 
     if (!word.includes(target.character)) {
       lastError = `generated word "${word}" does not contain ${target.character}`;
@@ -97,6 +97,7 @@ export async function action({ request }: Route.ActionArgs) {
         readingId: matchedReading?.id ?? null,
         word,
         wordReading,
+        meaningsKo: meaningsKo ?? [],
         source: "generated",
       })
       .returning();

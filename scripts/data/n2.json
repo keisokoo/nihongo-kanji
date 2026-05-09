@@ -318,12 +318,19 @@
         {
           "readingRef": "テイ",
           "word": "高低",
-          "wordReading": "こうてい"
+          "wordReading": "こうてい",
+          "meaningsKo": [
+            "높낮이"
+          ]
         },
         {
           "readingRef": "テイ",
           "word": "最低",
-          "wordReading": "さいてい"
+          "wordReading": "さいてい",
+          "meaningsKo": [
+            "최저",
+            "가장 낮다"
+          ]
         }
       ]
     },
@@ -873,17 +880,27 @@
         {
           "readingRef": "ク",
           "word": "区別",
-          "wordReading": "くべつ"
+          "wordReading": "くべつ",
+          "meaningsKo": [
+            "구별",
+            "차별"
+          ]
         },
         {
           "readingRef": "ク",
           "word": "区域",
-          "wordReading": "くいき"
+          "wordReading": "くいき",
+          "meaningsKo": [
+            "구역"
+          ]
         },
         {
           "readingRef": "ク",
           "word": "区画",
-          "wordReading": "くかく"
+          "wordReading": "くかく",
+          "meaningsKo": [
+            "구획"
+          ]
         }
       ]
     },
@@ -1105,27 +1122,43 @@
         {
           "readingRef": "カク",
           "word": "各国",
-          "wordReading": "かっこく"
+          "wordReading": "かっこく",
+          "meaningsKo": [
+            "각국"
+          ]
         },
         {
           "readingRef": "カク",
           "word": "各種",
-          "wordReading": "かくしゅ"
+          "wordReading": "かくしゅ",
+          "meaningsKo": [
+            "각종"
+          ]
         },
         {
           "readingRef": "カク",
           "word": "各地",
-          "wordReading": "かくち"
+          "wordReading": "かくち",
+          "meaningsKo": [
+            "각지"
+          ]
         },
         {
           "readingRef": "おのおの",
           "word": "各意見",
-          "wordReading": "おのおのいけん"
+          "wordReading": "おのおのいけん",
+          "meaningsKo": [
+            "각각의 의견"
+          ]
         },
         {
           "readingRef": "おのおの",
           "word": "述",
-          "wordReading": "の"
+          "wordReading": "の",
+          "meaningsKo": [
+            "말하다",
+            "서술하다"
+          ]
         }
       ]
     },
@@ -1859,27 +1892,42 @@
         {
           "readingRef": "トウ",
           "word": "列島",
-          "wordReading": "れっとう"
+          "wordReading": "れっとう",
+          "meaningsKo": [
+            "열도"
+          ]
         },
         {
           "readingRef": "トウ",
           "word": "半島",
-          "wordReading": "はんとう"
+          "wordReading": "はんとう",
+          "meaningsKo": [
+            "반도"
+          ]
         },
         {
           "readingRef": "トウ",
           "word": "無人島",
-          "wordReading": "むじんとう"
+          "wordReading": "むじんとう",
+          "meaningsKo": [
+            "무인도"
+          ]
         },
         {
           "readingRef": "しま",
           "word": "島",
-          "wordReading": "しま"
+          "wordReading": "しま",
+          "meaningsKo": [
+            "섬"
+          ]
         },
         {
           "readingRef": "しま",
           "word": "島国",
-          "wordReading": "しまぐに"
+          "wordReading": "しまぐに",
+          "meaningsKo": [
+            "도서국"
+          ]
         }
       ]
     },
@@ -2933,27 +2981,43 @@
         {
           "readingRef": "ソン",
           "word": "村落",
-          "wordReading": "そんらく"
+          "wordReading": "そんらく",
+          "meaningsKo": [
+            "마을",
+            "촌락"
+          ]
         },
         {
           "readingRef": "ソン",
           "word": "農村",
-          "wordReading": "のうそん"
+          "wordReading": "のうそん",
+          "meaningsKo": [
+            "농촌"
+          ]
         },
         {
           "readingRef": "ソン",
           "word": "漁村",
-          "wordReading": "ぎょそん"
+          "wordReading": "ぎょそん",
+          "meaningsKo": [
+            "어촌"
+          ]
         },
         {
           "readingRef": "むら",
           "word": "村",
-          "wordReading": "むら"
+          "wordReading": "むら",
+          "meaningsKo": [
+            "마을"
+          ]
         },
         {
           "readingRef": "むら",
           "word": "村人",
-          "wordReading": "むらびと"
+          "wordReading": "むらびと",
+          "meaningsKo": [
+            "마을 사람"
+          ]
         }
       ]
     },
@@ -2995,17 +3059,27 @@
         {
           "readingRef": "リン",
           "word": "森林",
-          "wordReading": "しんりん"
+          "wordReading": "しんりん",
+          "meaningsKo": [
+            "숲",
+            "산림"
+          ]
         },
         {
           "readingRef": "リン",
           "word": "山林",
-          "wordReading": "さんりん"
+          "wordReading": "さんりん",
+          "meaningsKo": [
+            "산림"
+          ]
         },
         {
           "readingRef": "はやし",
           "word": "松林",
-          "wordReading": "まつばやし"
+          "wordReading": "まつばやし",
+          "meaningsKo": [
+            "소나무숲"
+          ]
         }
       ]
     },
@@ -3219,12 +3293,19 @@
         {
           "readingRef": "シン",
           "word": "森林",
-          "wordReading": "しんりん"
+          "wordReading": "しんりん",
+          "meaningsKo": [
+            "숲",
+            "산림"
+          ]
         },
         {
           "readingRef": "もり",
           "word": "森",
-          "wordReading": "もり"
+          "wordReading": "もり",
+          "meaningsKo": [
+            "숲"
+          ]
         }
       ]
     },
@@ -4630,12 +4711,18 @@
         {
           "readingRef": "ケン",
           "word": "県庁",
-          "wordReading": "けんちょう"
+          "wordReading": "けんちょう",
+          "meaningsKo": [
+            "현청"
+          ]
         },
         {
           "readingRef": "ケン",
           "word": "千葉県",
-          "wordReading": "ちばけん"
+          "wordReading": "ちばけん",
+          "meaningsKo": [
+            "치바현"
+          ]
         }
       ]
     },
@@ -6945,22 +7032,36 @@
         {
           "readingRef": "モン",
           "word": "正門",
-          "wordReading": "せいもん"
+          "wordReading": "せいもん",
+          "meaningsKo": [
+            "정문"
+          ]
         },
         {
           "readingRef": "モン",
           "word": "入門",
-          "wordReading": "にゅうもん"
+          "wordReading": "にゅうもん",
+          "meaningsKo": [
+            "입문"
+          ]
         },
         {
           "readingRef": "モン",
           "word": "専門",
-          "wordReading": "せんもん"
+          "wordReading": "せんもん",
+          "meaningsKo": [
+            "전문",
+            "전공"
+          ]
         },
         {
           "readingRef": "かど",
           "word": "門口",
-          "wordReading": "かどぐち"
+          "wordReading": "かどぐち",
+          "meaningsKo": [
+            "문입구",
+            "출입구"
+          ]
         }
       ]
     },

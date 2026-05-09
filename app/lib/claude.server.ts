@@ -334,8 +334,12 @@ const WORD_SCHEMA = {
     word: { type: "string" },
     wordReading: { type: "string" },
     kanjiReading: { type: "string" },
+    meaningsKo: {
+      type: "array",
+      items: { type: "string" },
+    },
   },
-  required: ["word", "wordReading", "kanjiReading"],
+  required: ["word", "wordReading", "kanjiReading", "meaningsKo"],
   additionalProperties: false,
 } as const;
 
@@ -345,14 +349,16 @@ Given a target kanji and JLPT level, output ONE Japanese word that contains the 
 {
   "word": "<word containing the target kanji, e.g. 学校>",
   "wordReading": "<full hiragana reading of the word, e.g. がっこう>",
-  "kanjiReading": "<reading of the TARGET KANJI within this word — KATAKANA for on-yomi (音読み), HIRAGANA for kun-yomi (訓読み)>"
+  "kanjiReading": "<reading of the TARGET KANJI within this word — KATAKANA for on-yomi (音読み), HIRAGANA for kun-yomi (訓読み)>",
+  "meaningsKo": ["<1-3 short Korean translations>"]
 }
 
 Examples:
-- target 一: { "word": "一月", "wordReading": "いちがつ", "kanjiReading": "イチ" }
-- target 一: { "word": "一つ", "wordReading": "ひとつ", "kanjiReading": "ひとつ" }
-- target 学: { "word": "学校", "wordReading": "がっこう", "kanjiReading": "ガク" }
-- target 山: { "word": "富士山", "wordReading": "ふじさん", "kanjiReading": "サン" }
+- target 一: { "word": "一月", "wordReading": "いちがつ", "kanjiReading": "イチ", "meaningsKo": ["1월"] }
+- target 一: { "word": "一つ", "wordReading": "ひとつ", "kanjiReading": "ひとつ", "meaningsKo": ["하나", "한 개"] }
+- target 学: { "word": "学校", "wordReading": "がっこう", "kanjiReading": "ガク", "meaningsKo": ["학교"] }
+- target 大: { "word": "大きい", "wordReading": "おおきい", "kanjiReading": "おお", "meaningsKo": ["크다", "큰"] }
+- target 山: { "word": "富士山", "wordReading": "ふじさん", "kanjiReading": "サン", "meaningsKo": ["후지산"] }
 
 CONSTRAINTS:
 - The "word" MUST contain the target kanji exactly as given
@@ -360,7 +366,8 @@ CONSTRAINTS:
 - Prefer common, useful vocabulary actual learners encounter
 - DO NOT duplicate or vary slightly from words in the "Existing words" list
 - "kanjiReading" must be the actual reading of the target kanji within "word" — katakana for on-yomi, hiragana for kun-yomi
-- For mixed/special readings, use whichever style fits the reading type best`;
+- For mixed/special readings, use whichever style fits the reading type best
+- "meaningsKo": 1-3 short Korean translations. ONLY Korean (Hangul / digits / 월·일 etc.). Never include the Japanese word, English, or romaji. Order from most common to least.`;
 
 export type GenerateWordInput = {
   kanjiChar: string;
@@ -372,6 +379,7 @@ export type GenerateWordOutput = {
   word: string;
   wordReading: string;
   kanjiReading: string;
+  meaningsKo: string[];
 };
 
 function isWordOutput(x: unknown): x is GenerateWordOutput {
@@ -380,7 +388,9 @@ function isWordOutput(x: unknown): x is GenerateWordOutput {
   return (
     typeof o.word === "string" &&
     typeof o.wordReading === "string" &&
-    typeof o.kanjiReading === "string"
+    typeof o.kanjiReading === "string" &&
+    Array.isArray(o.meaningsKo) &&
+    o.meaningsKo.every((m) => typeof m === "string")
   );
 }
 

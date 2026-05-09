@@ -27,6 +27,8 @@ export type SeedWord = {
   readingRef: string;
   word: string;
   wordReading: string;
+  /** 1-3 short Korean meanings for word-test mode. */
+  meaningsKo?: string[];
   examples?: SeedExample[];
 };
 
@@ -202,6 +204,7 @@ export async function importPack(
           readingId: r.id,
           word: w.word,
           wordReading: w.wordReading,
+          meaningsKo: w.meaningsKo ?? [],
         })
         .returning();
       stats.words++;

@@ -30,62 +30,105 @@
         {
           "readingRef": "イチ",
           "word": "一月",
-          "wordReading": "いちがつ"
+          "wordReading": "いちがつ",
+          "meaningsKo": [
+            "1월"
+          ]
         },
         {
           "readingRef": "イチ",
           "word": "一日",
-          "wordReading": "いちにち"
+          "wordReading": "いちにち",
+          "meaningsKo": [
+            "하루",
+            "1일"
+          ]
         },
         {
           "readingRef": "イチ",
           "word": "一年",
-          "wordReading": "いちねん"
+          "wordReading": "いちねん",
+          "meaningsKo": [
+            "1년"
+          ]
         },
         {
           "readingRef": "イチ",
           "word": "一応",
-          "wordReading": "いちおう"
+          "wordReading": "いちおう",
+          "meaningsKo": [
+            "일단",
+            "우선"
+          ]
         },
         {
           "readingRef": "イチ",
           "word": "一部",
-          "wordReading": "いちぶ"
+          "wordReading": "いちぶ",
+          "meaningsKo": [
+            "일부",
+            "일부분"
+          ]
         },
         {
           "readingRef": "イチ",
           "word": "万一",
-          "wordReading": "まんいち"
+          "wordReading": "まんいち",
+          "meaningsKo": [
+            "만약",
+            "혹시"
+          ]
         },
         {
           "readingRef": "イツ",
           "word": "唯一",
-          "wordReading": "ゆいいつ"
+          "wordReading": "ゆいいつ",
+          "meaningsKo": [
+            "유일하다"
+          ]
         },
         {
           "readingRef": "イツ",
           "word": "同一",
-          "wordReading": "どういつ"
+          "wordReading": "どういつ",
+          "meaningsKo": [
+            "동일",
+            "같다"
+          ]
         },
         {
           "readingRef": "イツ",
           "word": "単一",
-          "wordReading": "たんいつ"
+          "wordReading": "たんいつ",
+          "meaningsKo": [
+            "단일하다"
+          ]
         },
         {
           "readingRef": "イツ",
           "word": "均一",
-          "wordReading": "きんいつ"
+          "wordReading": "きんいつ",
+          "meaningsKo": [
+            "균일하다"
+          ]
         },
         {
           "readingRef": "ひと",
           "word": "一人",
-          "wordReading": "ひとり"
+          "wordReading": "ひとり",
+          "meaningsKo": [
+            "한 명",
+            "혼자"
+          ]
         },
         {
           "readingRef": "ひと",
           "word": "一",
-          "wordReading": "ひと"
+          "wordReading": "ひと",
+          "meaningsKo": [
+            "하나",
+            "1"
+          ]
         }
       ]
     },
@@ -115,22 +158,37 @@
         {
           "readingRef": "シチ",
           "word": "七月",
-          "wordReading": "しちがつ"
+          "wordReading": "しちがつ",
+          "meaningsKo": [
+            "7월"
+          ]
         },
         {
           "readingRef": "なな",
           "word": "七色",
-          "wordReading": "なないろ"
+          "wordReading": "なないろ",
+          "meaningsKo": [
+            "무지개색",
+            "일곱 가지 색"
+          ]
         },
         {
           "readingRef": "なな",
           "word": "七",
-          "wordReading": "なな"
+          "wordReading": "なな",
+          "meaningsKo": [
+            "일곱",
+            "7"
+          ]
         },
         {
           "readingRef": "なの",
           "word": "七日",
-          "wordReading": "なのか"
+          "wordReading": "なのか",
+          "meaningsKo": [
+            "이레",
+            "7일"
+          ]
         }
       ]
     },
@@ -156,37 +214,60 @@
         {
           "readingRef": "マン",
           "word": "一万",
-          "wordReading": "いちまん"
+          "wordReading": "いちまん",
+          "meaningsKo": [
+            "1만"
+          ]
         },
         {
           "readingRef": "マン",
           "word": "万",
-          "wordReading": "まん"
+          "wordReading": "まん",
+          "meaningsKo": [
+            "만"
+          ]
         },
         {
           "readingRef": "マン",
           "word": "一",
-          "wordReading": "いち"
+          "wordReading": "いち",
+          "meaningsKo": [
+            "하나",
+            "1"
+          ]
         },
         {
           "readingRef": "マン",
           "word": "万年筆",
-          "wordReading": "まんねんひつ"
+          "wordReading": "まんねんひつ",
+          "meaningsKo": [
+            "만년필"
+          ]
         },
         {
           "readingRef": "バン",
           "word": "万歳",
-          "wordReading": "ばんざい"
+          "wordReading": "ばんざい",
+          "meaningsKo": [
+            "만세"
+          ]
         },
         {
           "readingRef": "バン",
           "word": "万国",
-          "wordReading": "ばんこく"
+          "wordReading": "ばんこく",
+          "meaningsKo": [
+            "만국"
+          ]
         },
         {
           "readingRef": "バン",
           "word": "万全",
-          "wordReading": "ばんぜん"
+          "wordReading": "ばんぜん",
+          "meaningsKo": [
+            "만전",
+            "완벽하다"
+          ]
         }
       ]
     },
@@ -220,37 +301,64 @@
         {
           "readingRef": "サン",
           "word": "三十",
-          "wordReading": "さんじゅう"
+          "wordReading": "さんじゅう",
+          "meaningsKo": [
+            "30",
+            "서른"
+          ]
         },
         {
           "readingRef": "サン",
           "word": "三人",
-          "wordReading": "さんにん"
+          "wordReading": "さんにん",
+          "meaningsKo": [
+            "3명",
+            "세 명"
+          ]
         },
         {
           "readingRef": "み",
           "word": "三日月",
-          "wordReading": "みかづき"
+          "wordReading": "みかづき",
+          "meaningsKo": [
+            "초승달"
+          ]
         },
         {
           "readingRef": "み",
           "word": "三日",
-          "wordReading": "みっか"
+          "wordReading": "みっか",
+          "meaningsKo": [
+            "사흘",
+            "3일"
+          ]
         },
         {
           "readingRef": "み",
           "word": "三",
-          "wordReading": "みっ"
+          "wordReading": "みっ",
+          "meaningsKo": [
+            "미",
+            "3"
+          ]
         },
         {
           "readingRef": "み",
           "word": "三",
-          "wordReading": "み"
+          "wordReading": "み",
+          "meaningsKo": [
+            "미",
+            "3"
+          ]
         },
         {
           "readingRef": "み",
           "word": "指",
-          "wordReading": "ゆび"
+          "wordReading": "ゆび",
+          "meaningsKo": [
+            "손가락",
+            "손톱"
+          ]
         }
       ]
     },
@@ -320,47 +428,82 @@
         {
           "readingRef": "ジョウ",
           "word": "地上",
-          "wordReading": "ちじょう"
+          "wordReading": "ちじょう",
+          "meaningsKo": [
+            "지면",
+            "땅 위"
+          ]
         },
         {
           "readingRef": "ジョウ",
           "word": "海上",
-          "wordReading": "かいじょう"
+          "wordReading": "かいじょう",
+          "meaningsKo": [
+            "해상",
+            "바다 위"
+          ]
         },
         {
           "readingRef": "ジョウ",
           "word": "上下",
-          "wordReading": "じょうげ"
+          "wordReading": "じょうげ",
+          "meaningsKo": [
+            "상하",
+            "위아래"
+          ]
         },
         {
           "readingRef": "ジョウ",
           "word": "上位",
-          "wordReading": "じょうい"
+          "wordReading": "じょうい",
+          "meaningsKo": [
+            "상위",
+            "윗자리"
+          ]
         },
         {
           "readingRef": "ショウ",
           "word": "上人",
-          "wordReading": "しょうにん"
+          "wordReading": "しょうにん",
+          "meaningsKo": [
+            "고승",
+            "스님"
+          ]
         },
         {
           "readingRef": "うえ",
           "word": "雲",
-          "wordReading": "くも"
+          "wordReading": "くも",
+          "meaningsKo": [
+            "구름"
+          ]
         },
         {
           "readingRef": "うえ",
           "word": "上",
-          "wordReading": "うえ"
+          "wordReading": "うえ",
+          "meaningsKo": [
+            "위",
+            "올라가다"
+          ]
         },
         {
           "readingRef": "うわ",
           "word": "上着",
-          "wordReading": "うわぎ"
+          "wordReading": "うわぎ",
+          "meaningsKo": [
+            "윗옷",
+            "겉옷"
+          ]
         },
         {
           "readingRef": "かみ",
           "word": "川上",
-          "wordReading": "かわかみ"
+          "wordReading": "かわかみ",
+          "meaningsKo": [
+            "강 위쪽",
+            "상류"
+          ]
         }
       ]
     },
@@ -426,52 +569,90 @@
         {
           "readingRef": "カ",
           "word": "地下鉄",
-          "wordReading": "ちかてつ"
+          "wordReading": "ちかてつ",
+          "meaningsKo": [
+            "지하철"
+          ]
         },
         {
           "readingRef": "カ",
           "word": "以下",
-          "wordReading": "いか"
+          "wordReading": "いか",
+          "meaningsKo": [
+            "이하",
+            "~아래"
+          ]
         },
         {
           "readingRef": "ゲ",
           "word": "下水",
-          "wordReading": "げすい"
+          "wordReading": "げすい",
+          "meaningsKo": [
+            "하수",
+            "오수"
+          ]
         },
         {
           "readingRef": "ゲ",
           "word": "下車",
-          "wordReading": "げしゃ"
+          "wordReading": "げしゃ",
+          "meaningsKo": [
+            "하차",
+            "내리다"
+          ]
         },
         {
           "readingRef": "した",
           "word": "下",
-          "wordReading": "した"
+          "wordReading": "した",
+          "meaningsKo": [
+            "아래",
+            "밑"
+          ]
         },
         {
           "readingRef": "した",
           "word": "部屋",
-          "wordReading": "へや"
+          "wordReading": "へや",
+          "meaningsKo": [
+            "방"
+          ]
         },
         {
           "readingRef": "しも",
           "word": "川下",
-          "wordReading": "かわしも"
+          "wordReading": "かわしも",
+          "meaningsKo": [
+            "강 아래쪽",
+            "하류"
+          ]
         },
         {
           "readingRef": "もと",
           "word": "白日",
-          "wordReading": "はくじつ"
+          "wordReading": "はくじつ",
+          "meaningsKo": [
+            "한낮",
+            "대낮"
+          ]
         },
         {
           "readingRef": "もと",
           "word": "下",
-          "wordReading": "もと"
+          "wordReading": "もと",
+          "meaningsKo": [
+            "아래",
+            "밑"
+          ]
         },
         {
           "readingRef": "もと",
           "word": "晒",
-          "wordReading": "さら"
+          "wordReading": "さら",
+          "meaningsKo": [
+            "드러내다",
+            "노출하다"
+          ]
         }
       ]
     },
@@ -501,22 +682,36 @@
         {
           "readingRef": "チュウ",
           "word": "掃除中",
-          "wordReading": "そうじちゅう"
+          "wordReading": "そうじちゅう",
+          "meaningsKo": [
+            "청소 중"
+          ]
         },
         {
           "readingRef": "チュウ",
           "word": "準備中",
-          "wordReading": "じゅんびちゅう"
+          "wordReading": "じゅんびちゅう",
+          "meaningsKo": [
+            "준비 중"
+          ]
         },
         {
           "readingRef": "なか",
           "word": "背中",
-          "wordReading": "せなか"
+          "wordReading": "せなか",
+          "meaningsKo": [
+            "등",
+            "뒤"
+          ]
         },
         {
           "readingRef": "なか",
           "word": "中身",
-          "wordReading": "なかみ"
+          "wordReading": "なかみ",
+          "meaningsKo": [
+            "속",
+            "내용물"
+          ]
         }
       ]
     },
@@ -546,27 +741,43 @@
         {
           "readingRef": "キュウ",
           "word": "九百",
-          "wordReading": "きゅうひゃく"
+          "wordReading": "きゅうひゃく",
+          "meaningsKo": [
+            "900"
+          ]
         },
         {
           "readingRef": "ク",
           "word": "九月",
-          "wordReading": "くがつ"
+          "wordReading": "くがつ",
+          "meaningsKo": [
+            "9월"
+          ]
         },
         {
           "readingRef": "ク",
           "word": "九九",
-          "wordReading": "くく"
+          "wordReading": "くく",
+          "meaningsKo": [
+            "구구단"
+          ]
         },
         {
           "readingRef": "ここの",
           "word": "九日",
-          "wordReading": "ここのか"
+          "wordReading": "ここのか",
+          "meaningsKo": [
+            "9일"
+          ]
         },
         {
           "readingRef": "ここの",
           "word": "九",
-          "wordReading": "ここの"
+          "wordReading": "ここの",
+          "meaningsKo": [
+            "9",
+            "아홉"
+          ]
         }
       ]
     },
@@ -600,22 +811,37 @@
         {
           "readingRef": "ニ",
           "word": "二月",
-          "wordReading": "にがつ"
+          "wordReading": "にがつ",
+          "meaningsKo": [
+            "2월"
+          ]
         },
         {
           "readingRef": "ニ",
           "word": "二十",
-          "wordReading": "にじゅう"
+          "wordReading": "にじゅう",
+          "meaningsKo": [
+            "20",
+            "스물"
+          ]
         },
         {
           "readingRef": "ふた",
           "word": "二人",
-          "wordReading": "ふたり"
+          "wordReading": "ふたり",
+          "meaningsKo": [
+            "두 명",
+            "2명"
+          ]
         },
         {
           "readingRef": "ふた",
           "word": "二",
-          "wordReading": "ふた"
+          "wordReading": "ふた",
+          "meaningsKo": [
+            "둘",
+            "2"
+          ]
         }
       ]
     },
@@ -641,17 +867,28 @@
         {
           "readingRef": "ゴ",
           "word": "五月",
-          "wordReading": "ごがつ"
+          "wordReading": "ごがつ",
+          "meaningsKo": [
+            "5월"
+          ]
         },
         {
           "readingRef": "いつ",
           "word": "五日",
-          "wordReading": "いつか"
+          "wordReading": "いつか",
+          "meaningsKo": [
+            "닷째",
+            "5일"
+          ]
         },
         {
           "readingRef": "いつ",
           "word": "五",
-          "wordReading": "いつ"
+          "wordReading": "いつ",
+          "meaningsKo": [
+            "다섯",
+            "5"
+          ]
         }
       ]
     },
@@ -685,42 +922,69 @@
         {
           "readingRef": "ジン",
           "word": "日本人",
-          "wordReading": "にほんじん"
+          "wordReading": "にほんじん",
+          "meaningsKo": [
+            "일본인"
+          ]
         },
         {
           "readingRef": "ジン",
           "word": "主人",
-          "wordReading": "しゅじん"
+          "wordReading": "しゅじん",
+          "meaningsKo": [
+            "남편",
+            "주인"
+          ]
         },
         {
           "readingRef": "ジン",
           "word": "人生",
-          "wordReading": "じんせい"
+          "wordReading": "じんせい",
+          "meaningsKo": [
+            "인생"
+          ]
         },
         {
           "readingRef": "ニン",
           "word": "本人",
-          "wordReading": "ほんにん"
+          "wordReading": "ほんにん",
+          "meaningsKo": [
+            "본인"
+          ]
         },
         {
           "readingRef": "ニン",
           "word": "他人",
-          "wordReading": "たにん"
+          "wordReading": "たにん",
+          "meaningsKo": [
+            "남",
+            "다른 사람"
+          ]
         },
         {
           "readingRef": "ニン",
           "word": "人形",
-          "wordReading": "にんぎょう"
+          "wordReading": "にんぎょう",
+          "meaningsKo": [
+            "인형"
+          ]
         },
         {
           "readingRef": "ひと",
           "word": "人",
-          "wordReading": "ひと"
+          "wordReading": "ひと",
+          "meaningsKo": [
+            "사람"
+          ]
         },
         {
           "readingRef": "ひと",
           "word": "人手",
-          "wordReading": "ひとで"
+          "wordReading": "ひとで",
+          "meaningsKo": [
+            "일손",
+            "인원"
+          ]
         }
       ]
     },
@@ -746,27 +1010,43 @@
         {
           "readingRef": "コン",
           "word": "今週",
-          "wordReading": "こんしゅう"
+          "wordReading": "こんしゅう",
+          "meaningsKo": [
+            "이번 주"
+          ]
         },
         {
           "readingRef": "コン",
           "word": "今月",
-          "wordReading": "こんげつ"
+          "wordReading": "こんげつ",
+          "meaningsKo": [
+            "이번 달"
+          ]
         },
         {
           "readingRef": "キン",
           "word": "今上",
-          "wordReading": "きんじょう"
+          "wordReading": "きんじょう",
+          "meaningsKo": [
+            "현 천황"
+          ]
         },
         {
           "readingRef": "いま",
           "word": "今",
-          "wordReading": "いま"
+          "wordReading": "いま",
+          "meaningsKo": [
+            "지금",
+            "이제"
+          ]
         },
         {
           "readingRef": "いま",
           "word": "電話",
-          "wordReading": "でんわ"
+          "wordReading": "でんわ",
+          "meaningsKo": [
+            "전화"
+          ]
         }
       ]
     },
@@ -796,17 +1076,26 @@
         {
           "readingRef": "キュウ",
           "word": "休日",
-          "wordReading": "きゅうじつ"
+          "wordReading": "きゅうじつ",
+          "meaningsKo": [
+            "휴일"
+          ]
         },
         {
           "readingRef": "キュウ",
           "word": "休暇",
-          "wordReading": "きゅうか"
+          "wordReading": "きゅうか",
+          "meaningsKo": [
+            "휴가"
+          ]
         },
         {
           "readingRef": "キュウ",
           "word": "休養",
-          "wordReading": "きゅうよう"
+          "wordReading": "きゅうよう",
+          "meaningsKo": [
+            "휴식"
+          ]
         }
       ]
     },
@@ -832,17 +1121,26 @@
         {
           "readingRef": "カ",
           "word": "幾何学",
-          "wordReading": "きかがく"
+          "wordReading": "きかがく",
+          "meaningsKo": [
+            "기하학"
+          ]
         },
         {
           "readingRef": "なに",
           "word": "何",
-          "wordReading": "なに"
+          "wordReading": "なに",
+          "meaningsKo": [
+            "몇"
+          ]
         },
         {
           "readingRef": "なん",
           "word": "何",
-          "wordReading": "なん"
+          "wordReading": "なん",
+          "meaningsKo": [
+            "몇"
+          ]
         }
       ]
     },
@@ -868,17 +1166,26 @@
         {
           "readingRef": "セン",
           "word": "先生",
-          "wordReading": "せんせい"
+          "wordReading": "せんせい",
+          "meaningsKo": [
+            "선생님"
+          ]
         },
         {
           "readingRef": "セン",
           "word": "先月",
-          "wordReading": "せんげつ"
+          "wordReading": "せんげつ",
+          "meaningsKo": [
+            "지난달"
+          ]
         },
         {
           "readingRef": "セン",
           "word": "先輩",
-          "wordReading": "せんぱい"
+          "wordReading": "せんぱい",
+          "meaningsKo": [
+            "선배"
+          ]
         }
       ]
     },
@@ -920,17 +1227,26 @@
         {
           "readingRef": "ニュウ",
           "word": "入国",
-          "wordReading": "にゅうこく"
+          "wordReading": "にゅうこく",
+          "meaningsKo": [
+            "입국"
+          ]
         },
         {
           "readingRef": "ニュウ",
           "word": "入学",
-          "wordReading": "にゅうがく"
+          "wordReading": "にゅうがく",
+          "meaningsKo": [
+            "입학"
+          ]
         },
         {
           "readingRef": "ニュウ",
           "word": "入院",
-          "wordReading": "にゅういん"
+          "wordReading": "にゅういん",
+          "meaningsKo": [
+            "입원"
+          ]
         }
       ]
     },
@@ -968,32 +1284,53 @@
         {
           "readingRef": "ハチ",
           "word": "八月",
-          "wordReading": "はちがつ"
+          "wordReading": "はちがつ",
+          "meaningsKo": [
+            "8월"
+          ]
         },
         {
           "readingRef": "や",
           "word": "八重桜",
-          "wordReading": "やえざくら"
+          "wordReading": "やえざくら",
+          "meaningsKo": [
+            "겹벚꽃"
+          ]
         },
         {
           "readingRef": "や",
           "word": "八",
-          "wordReading": "や"
+          "wordReading": "や",
+          "meaningsKo": [
+            "여덟",
+            "8"
+          ]
         },
         {
           "readingRef": "や",
           "word": "当",
-          "wordReading": "あ"
+          "wordReading": "あ",
+          "meaningsKo": [
+            "맞다",
+            "닿다"
+          ]
         },
         {
           "readingRef": "や",
           "word": "八",
-          "wordReading": "やっ"
+          "wordReading": "やっ",
+          "meaningsKo": [
+            "여덟",
+            "8"
+          ]
         },
         {
           "readingRef": "よう",
           "word": "八日",
-          "wordReading": "ようか"
+          "wordReading": "ようか",
+          "meaningsKo": [
+            "8일"
+          ]
         }
       ]
     },
@@ -1031,27 +1368,44 @@
         {
           "readingRef": "ロク",
           "word": "六月",
-          "wordReading": "ろくがつ"
+          "wordReading": "ろくがつ",
+          "meaningsKo": [
+            "6월"
+          ]
         },
         {
           "readingRef": "む",
           "word": "六",
-          "wordReading": "む"
+          "wordReading": "む",
+          "meaningsKo": [
+            "여섯",
+            "6"
+          ]
         },
         {
           "readingRef": "む",
           "word": "切",
-          "wordReading": "ぎ"
+          "wordReading": "ぎ",
+          "meaningsKo": [
+            "자르다"
+          ]
         },
         {
           "readingRef": "む",
           "word": "六",
-          "wordReading": "むっ"
+          "wordReading": "むっ",
+          "meaningsKo": [
+            "여섯",
+            "6"
+          ]
         },
         {
           "readingRef": "む",
           "word": "六日",
-          "wordReading": "むいか"
+          "wordReading": "むいか",
+          "meaningsKo": [
+            "6일"
+          ]
         }
       ]
     },
@@ -1089,22 +1443,35 @@
         {
           "readingRef": "エン",
           "word": "円",
-          "wordReading": "えん"
+          "wordReading": "えん",
+          "meaningsKo": [
+            "동그랗다"
+          ]
         },
         {
           "readingRef": "エン",
           "word": "円形",
-          "wordReading": "えんけい"
+          "wordReading": "えんけい",
+          "meaningsKo": [
+            "원형"
+          ]
         },
         {
           "readingRef": "まる",
           "word": "円",
-          "wordReading": "まる"
+          "wordReading": "まる",
+          "meaningsKo": [
+            "동그랗다"
+          ]
         },
         {
           "readingRef": "まる",
           "word": "月",
-          "wordReading": "つき"
+          "wordReading": "つき",
+          "meaningsKo": [
+            "달",
+            "월"
+          ]
         }
       ]
     },
@@ -1146,32 +1513,54 @@
         {
           "readingRef": "シュツ",
           "word": "出入",
-          "wordReading": "しゅつにゅう"
+          "wordReading": "しゅつにゅう",
+          "meaningsKo": [
+            "드나들다",
+            "출입"
+          ]
         },
         {
           "readingRef": "シュツ",
           "word": "出現",
-          "wordReading": "しゅつげん"
+          "wordReading": "しゅつげん",
+          "meaningsKo": [
+            "나타나다",
+            "출현"
+          ]
         },
         {
           "readingRef": "シュツ",
           "word": "出席",
-          "wordReading": "しゅっせき"
+          "wordReading": "しゅっせき",
+          "meaningsKo": [
+            "참석하다"
+          ]
         },
         {
           "readingRef": "スイ",
           "word": "出納",
-          "wordReading": "すいとう"
+          "wordReading": "すいとう",
+          "meaningsKo": [
+            "출납"
+          ]
         },
         {
           "readingRef": "で",
           "word": "会社",
-          "wordReading": "かいしゃ"
+          "wordReading": "かいしゃ",
+          "meaningsKo": [
+            "회사",
+            "기업"
+          ]
         },
         {
           "readingRef": "で",
           "word": "出",
-          "wordReading": "で"
+          "wordReading": "で",
+          "meaningsKo": [
+            "나가다",
+            "나오다"
+          ]
         }
       ]
     },
@@ -1193,27 +1582,43 @@
         {
           "readingRef": "ゼン",
           "word": "午前",
-          "wordReading": "ごぜん"
+          "wordReading": "ごぜん",
+          "meaningsKo": [
+            "오전"
+          ]
         },
         {
           "readingRef": "ゼン",
           "word": "以前",
-          "wordReading": "いぜん"
+          "wordReading": "いぜん",
+          "meaningsKo": [
+            "이전",
+            "전에"
+          ]
         },
         {
           "readingRef": "ゼン",
           "word": "前進",
-          "wordReading": "ぜんしん"
+          "wordReading": "ぜんしん",
+          "meaningsKo": [
+            "전진"
+          ]
         },
         {
           "readingRef": "まえ",
           "word": "名前",
-          "wordReading": "なまえ"
+          "wordReading": "なまえ",
+          "meaningsKo": [
+            "이름"
+          ]
         },
         {
           "readingRef": "まえ",
           "word": "三日前",
-          "wordReading": "みっかまえ"
+          "wordReading": "みっかまえ",
+          "meaningsKo": [
+            "3일 전"
+          ]
         }
       ]
     },
@@ -1235,27 +1640,43 @@
         {
           "readingRef": "ホク",
           "word": "東北",
-          "wordReading": "とうほく"
+          "wordReading": "とうほく",
+          "meaningsKo": [
+            "동북"
+          ]
         },
         {
           "readingRef": "ホク",
           "word": "北部",
-          "wordReading": "ほくぶ"
+          "wordReading": "ほくぶ",
+          "meaningsKo": [
+            "북부"
+          ]
         },
         {
           "readingRef": "きた",
           "word": "北",
-          "wordReading": "きた"
+          "wordReading": "きた",
+          "meaningsKo": [
+            "북쪽",
+            "북"
+          ]
         },
         {
           "readingRef": "きた",
           "word": "北風",
-          "wordReading": "きたかぜ"
+          "wordReading": "きたかぜ",
+          "meaningsKo": [
+            "북풍"
+          ]
         },
         {
           "readingRef": "きた",
           "word": "北側",
-          "wordReading": "きたがわ"
+          "wordReading": "きたがわ",
+          "meaningsKo": [
+            "북쪽"
+          ]
         }
       ]
     },
@@ -1293,42 +1714,71 @@
         {
           "readingRef": "ジュウ",
           "word": "十月",
-          "wordReading": "じゅうがつ"
+          "wordReading": "じゅうがつ",
+          "meaningsKo": [
+            "10월"
+          ]
         },
         {
           "readingRef": "ジュウ",
           "word": "十人",
-          "wordReading": "じゅうにん"
+          "wordReading": "じゅうにん",
+          "meaningsKo": [
+            "열 명",
+            "10명"
+          ]
         },
         {
           "readingRef": "ジュウ",
           "word": "二十",
-          "wordReading": "にじゅう"
+          "wordReading": "にじゅう",
+          "meaningsKo": [
+            "20",
+            "스물"
+          ]
         },
         {
           "readingRef": "ジッ",
           "word": "十中八九",
-          "wordReading": "じっちゅうはっく"
+          "wordReading": "じっちゅうはっく",
+          "meaningsKo": [
+            "대부분",
+            "십중팔구"
+          ]
         },
         {
           "readingRef": "ジッ",
           "word": "十個",
-          "wordReading": "じっこ"
+          "wordReading": "じっこ",
+          "meaningsKo": [
+            "열 개",
+            "10개"
+          ]
         },
         {
           "readingRef": "ジッ",
           "word": "十分",
-          "wordReading": "じっぷん"
+          "wordReading": "じっぷん",
+          "meaningsKo": [
+            "10분"
+          ]
         },
         {
           "readingRef": "とお",
           "word": "十日",
-          "wordReading": "とおか"
+          "wordReading": "とおか",
+          "meaningsKo": [
+            "10일"
+          ]
         },
         {
           "readingRef": "と",
           "word": "十人十色",
-          "wordReading": "じゅうにんといろ"
+          "wordReading": "じゅうにんといろ",
+          "meaningsKo": [
+            "각각 다르다",
+            "십인십색"
+          ]
         }
       ]
     },
@@ -1350,22 +1800,36 @@
         {
           "readingRef": "セン",
           "word": "千円",
-          "wordReading": "せんえん"
+          "wordReading": "せんえん",
+          "meaningsKo": [
+            "1000엔"
+          ]
         },
         {
           "readingRef": "セン",
           "word": "千差万別",
-          "wordReading": "せんさばんべつ"
+          "wordReading": "せんさばんべつ",
+          "meaningsKo": [
+            "가지각색",
+            "천차만별"
+          ]
         },
         {
           "readingRef": "ち",
           "word": "千切",
-          "wordReading": "ちぎ"
+          "wordReading": "ちぎ",
+          "meaningsKo": [
+            "채 썬다",
+            "가늘게 자르다"
+          ]
         },
         {
           "readingRef": "ち",
           "word": "千草",
-          "wordReading": "ちぐさ"
+          "wordReading": "ちぐさ",
+          "meaningsKo": [
+            "여러 풀"
+          ]
         }
       ]
     },
@@ -1387,17 +1851,26 @@
         {
           "readingRef": "ゴ",
           "word": "午前",
-          "wordReading": "ごぜん"
+          "wordReading": "ごぜん",
+          "meaningsKo": [
+            "오전"
+          ]
         },
         {
           "readingRef": "ゴ",
           "word": "午後",
-          "wordReading": "ごご"
+          "wordReading": "ごご",
+          "meaningsKo": [
+            "오후"
+          ]
         },
         {
           "readingRef": "ゴ",
           "word": "正午",
-          "wordReading": "しょうご"
+          "wordReading": "しょうご",
+          "meaningsKo": [
+            "정오"
+          ]
         }
       ]
     },
@@ -1419,17 +1892,29 @@
         {
           "readingRef": "ハン",
           "word": "半分",
-          "wordReading": "はんぶん"
+          "wordReading": "はんぶん",
+          "meaningsKo": [
+            "반",
+            "절반"
+          ]
         },
         {
           "readingRef": "ハン",
           "word": "半時間",
-          "wordReading": "はんじかん"
+          "wordReading": "はんじかん",
+          "meaningsKo": [
+            "30분",
+            "반시간"
+          ]
         },
         {
           "readingRef": "ハン",
           "word": "半年",
-          "wordReading": "はんねん"
+          "wordReading": "はんねん",
+          "meaningsKo": [
+            "6개월",
+            "반년"
+          ]
         }
       ]
     },
@@ -1455,27 +1940,44 @@
         {
           "readingRef": "ナン",
           "word": "南北",
-          "wordReading": "なんぼく"
+          "wordReading": "なんぼく",
+          "meaningsKo": [
+            "남북"
+          ]
         },
         {
           "readingRef": "ナン",
           "word": "南方",
-          "wordReading": "なんぽう"
+          "wordReading": "なんぽう",
+          "meaningsKo": [
+            "남쪽",
+            "남방"
+          ]
         },
         {
           "readingRef": "ナ",
           "word": "南無阿弥陀仏",
-          "wordReading": "なむあみだぶつ"
+          "wordReading": "なむあみだぶつ",
+          "meaningsKo": [
+            "나무아미타불"
+          ]
         },
         {
           "readingRef": "みなみ",
           "word": "南",
-          "wordReading": "みなみ"
+          "wordReading": "みなみ",
+          "meaningsKo": [
+            "남쪽"
+          ]
         },
         {
           "readingRef": "みなみ",
           "word": "空",
-          "wordReading": "そら"
+          "wordReading": "そら",
+          "meaningsKo": [
+            "하늘",
+            "하늘색"
+          ]
         }
       ]
     },
@@ -1497,22 +1999,35 @@
         {
           "readingRef": "ユウ",
           "word": "友情",
-          "wordReading": "ゆうじょう"
+          "wordReading": "ゆうじょう",
+          "meaningsKo": [
+            "우정"
+          ]
         },
         {
           "readingRef": "ユウ",
           "word": "親友",
-          "wordReading": "しんゆう"
+          "wordReading": "しんゆう",
+          "meaningsKo": [
+            "친구",
+            "친한 친구"
+          ]
         },
         {
           "readingRef": "ユウ",
           "word": "友人",
-          "wordReading": "ゆうじん"
+          "wordReading": "ゆうじん",
+          "meaningsKo": [
+            "친구"
+          ]
         },
         {
           "readingRef": "とも",
           "word": "友達",
-          "wordReading": "ともだち"
+          "wordReading": "ともだち",
+          "meaningsKo": [
+            "친구"
+          ]
         }
       ]
     },
@@ -1538,27 +2053,42 @@
         {
           "readingRef": "ウ",
           "word": "右翼",
-          "wordReading": "うよく"
+          "wordReading": "うよく",
+          "meaningsKo": [
+            "우익"
+          ]
         },
         {
           "readingRef": "ウ",
           "word": "右派",
-          "wordReading": "うは"
+          "wordReading": "うは",
+          "meaningsKo": [
+            "우파"
+          ]
         },
         {
           "readingRef": "ユウ",
           "word": "左右",
-          "wordReading": "さゆう"
+          "wordReading": "さゆう",
+          "meaningsKo": [
+            "좌우"
+          ]
         },
         {
           "readingRef": "みぎ",
           "word": "右手",
-          "wordReading": "みぎて"
+          "wordReading": "みぎて",
+          "meaningsKo": [
+            "오른손"
+          ]
         },
         {
           "readingRef": "みぎ",
           "word": "右側",
-          "wordReading": "みぎがわ"
+          "wordReading": "みぎがわ",
+          "meaningsKo": [
+            "오른쪽"
+          ]
         }
       ]
     },
@@ -1584,37 +2114,60 @@
         {
           "readingRef": "メイ",
           "word": "名人",
-          "wordReading": "めいじん"
+          "wordReading": "めいじん",
+          "meaningsKo": [
+            "명인",
+            "전문가"
+          ]
         },
         {
           "readingRef": "メイ",
           "word": "有名",
-          "wordReading": "ゆうめい"
+          "wordReading": "ゆうめい",
+          "meaningsKo": [
+            "유명하다"
+          ]
         },
         {
           "readingRef": "メイ",
           "word": "名誉",
-          "wordReading": "めいよ"
+          "wordReading": "めいよ",
+          "meaningsKo": [
+            "명예"
+          ]
         },
         {
           "readingRef": "ミョウ",
           "word": "本名",
-          "wordReading": "ほんみょう"
+          "wordReading": "ほんみょう",
+          "meaningsKo": [
+            "본명"
+          ]
         },
         {
           "readingRef": "ミョウ",
           "word": "異名",
-          "wordReading": "いみょう"
+          "wordReading": "いみょう",
+          "meaningsKo": [
+            "이명",
+            "별명"
+          ]
         },
         {
           "readingRef": "な",
           "word": "名前",
-          "wordReading": "なまえ"
+          "wordReading": "なまえ",
+          "meaningsKo": [
+            "이름"
+          ]
         },
         {
           "readingRef": "な",
           "word": "名付",
-          "wordReading": "なづ"
+          "wordReading": "なづ",
+          "meaningsKo": [
+            "이름 짓다"
+          ]
         }
       ]
     },
@@ -1648,37 +2201,62 @@
         {
           "readingRef": "シ",
           "word": "四月",
-          "wordReading": "しがつ"
+          "wordReading": "しがつ",
+          "meaningsKo": [
+            "4월"
+          ]
         },
         {
           "readingRef": "よ",
           "word": "四人",
-          "wordReading": "よにん"
+          "wordReading": "よにん",
+          "meaningsKo": [
+            "네 명",
+            "4명"
+          ]
         },
         {
           "readingRef": "よ",
           "word": "四千",
-          "wordReading": "よんせん"
+          "wordReading": "よんせん",
+          "meaningsKo": [
+            "4천"
+          ]
         },
         {
           "readingRef": "よ",
           "word": "四",
-          "wordReading": "よっ"
+          "wordReading": "よっ",
+          "meaningsKo": [
+            "넷",
+            "4"
+          ]
         },
         {
           "readingRef": "よ",
           "word": "分",
-          "wordReading": "わ"
+          "wordReading": "わ",
+          "meaningsKo": [
+            "나누다",
+            "분"
+          ]
         },
         {
           "readingRef": "よ",
           "word": "四",
-          "wordReading": "よ"
+          "wordReading": "よ",
+          "meaningsKo": [
+            "넷",
+            "4"
+          ]
         },
         {
           "readingRef": "よ",
           "word": "角",
-          "wordReading": "かど"
+          "wordReading": "かど",
+          "meaningsKo": [
+            "모서리"
+          ]
         }
       ]
     },
@@ -1700,22 +2278,34 @@
         {
           "readingRef": "コク",
           "word": "国王",
-          "wordReading": "こくおう"
+          "wordReading": "こくおう",
+          "meaningsKo": [
+            "국왕"
+          ]
         },
         {
           "readingRef": "コク",
           "word": "国土",
-          "wordReading": "こくど"
+          "wordReading": "こくど",
+          "meaningsKo": [
+            "국토"
+          ]
         },
         {
           "readingRef": "くに",
           "word": "国",
-          "wordReading": "くに"
+          "wordReading": "くに",
+          "meaningsKo": [
+            "나라"
+          ]
         },
         {
           "readingRef": "くに",
           "word": "島国",
-          "wordReading": "しまぐに"
+          "wordReading": "しまぐに",
+          "meaningsKo": [
+            "도서국"
+          ]
         }
       ]
     },
@@ -1741,37 +2331,61 @@
         {
           "readingRef": "ド",
           "word": "土曜日",
-          "wordReading": "どようび"
+          "wordReading": "どようび",
+          "meaningsKo": [
+            "토요일"
+          ]
         },
         {
           "readingRef": "ド",
           "word": "土木",
-          "wordReading": "どぼく"
+          "wordReading": "どぼく",
+          "meaningsKo": [
+            "토목",
+            "건설"
+          ]
         },
         {
           "readingRef": "ド",
           "word": "国土",
-          "wordReading": "こくど"
+          "wordReading": "こくど",
+          "meaningsKo": [
+            "국토"
+          ]
         },
         {
           "readingRef": "ド",
           "word": "本土",
-          "wordReading": "ほんど"
+          "wordReading": "ほんど",
+          "meaningsKo": [
+            "본토"
+          ]
         },
         {
           "readingRef": "ト",
           "word": "土地",
-          "wordReading": "とち"
+          "wordReading": "とち",
+          "meaningsKo": [
+            "땅",
+            "부지"
+          ]
         },
         {
           "readingRef": "つち",
           "word": "土",
-          "wordReading": "つち"
+          "wordReading": "つち",
+          "meaningsKo": [
+            "흙",
+            "땅"
+          ]
         },
         {
           "readingRef": "つち",
           "word": "土色",
-          "wordReading": "つちいろ"
+          "wordReading": "つちいろ",
+          "meaningsKo": [
+            "황토색"
+          ]
         }
       ]
     },
@@ -1813,17 +2427,26 @@
         {
           "readingRef": "ガイ",
           "word": "外国",
-          "wordReading": "がいこく"
+          "wordReading": "がいこく",
+          "meaningsKo": [
+            "외국"
+          ]
         },
         {
           "readingRef": "ガイ",
           "word": "海外",
-          "wordReading": "かいがい"
+          "wordReading": "かいがい",
+          "meaningsKo": [
+            "해외"
+          ]
         },
         {
           "readingRef": "ゲ",
           "word": "外科",
-          "wordReading": "げか"
+          "wordReading": "げか",
+          "meaningsKo": [
+            "외과"
+          ]
         }
       ]
     },
@@ -1857,42 +2480,70 @@
         {
           "readingRef": "ダイ",
           "word": "大学",
-          "wordReading": "だいがく"
+          "wordReading": "だいがく",
+          "meaningsKo": [
+            "대학"
+          ]
         },
         {
           "readingRef": "ダイ",
           "word": "大地",
-          "wordReading": "だいち"
+          "wordReading": "だいち",
+          "meaningsKo": [
+            "대지"
+          ]
         },
         {
           "readingRef": "タイ",
           "word": "大会",
-          "wordReading": "たいかい"
+          "wordReading": "たいかい",
+          "meaningsKo": [
+            "대회"
+          ]
         },
         {
           "readingRef": "おお",
           "word": "大雨",
-          "wordReading": "おおあめ"
+          "wordReading": "おおあめ",
+          "meaningsKo": [
+            "큰비",
+            "폭우"
+          ]
         },
         {
           "readingRef": "おお",
           "word": "大昔",
-          "wordReading": "おおむかし"
+          "wordReading": "おおむかし",
+          "meaningsKo": [
+            "먼옛날"
+          ]
         },
         {
           "readingRef": "おお",
           "word": "大",
-          "wordReading": "おお"
+          "wordReading": "おお",
+          "meaningsKo": [
+            "크다",
+            "큰"
+          ]
         },
         {
           "readingRef": "おお",
           "word": "音",
-          "wordReading": "おと"
+          "wordReading": "おと",
+          "meaningsKo": [
+            "소리",
+            "음"
+          ]
         },
         {
           "readingRef": "おお",
           "word": "喜",
-          "wordReading": "よろこ"
+          "wordReading": "よろこ",
+          "meaningsKo": [
+            "기쁘다",
+            "좋아하다"
+          ]
         }
       ]
     },
@@ -1922,22 +2573,34 @@
         {
           "readingRef": "テン",
           "word": "天下",
-          "wordReading": "てんか"
+          "wordReading": "てんか",
+          "meaningsKo": [
+            "천하"
+          ]
         },
         {
           "readingRef": "テン",
           "word": "天然",
-          "wordReading": "てんねん"
+          "wordReading": "てんねん",
+          "meaningsKo": [
+            "천연"
+          ]
         },
         {
           "readingRef": "あめ",
           "word": "天地",
-          "wordReading": "あめつち"
+          "wordReading": "あめつち",
+          "meaningsKo": [
+            "천지"
+          ]
         },
         {
           "readingRef": "あま",
           "word": "天下",
-          "wordReading": "あまくだ"
+          "wordReading": "あまくだ",
+          "meaningsKo": [
+            "천하"
+          ]
         }
       ]
     },
@@ -1971,42 +2634,69 @@
         {
           "readingRef": "ジョ",
           "word": "男女",
-          "wordReading": "だんじょ"
+          "wordReading": "だんじょ",
+          "meaningsKo": [
+            "남녀"
+          ]
         },
         {
           "readingRef": "ジョ",
           "word": "女子",
-          "wordReading": "じょし"
+          "wordReading": "じょし",
+          "meaningsKo": [
+            "여자",
+            "여성"
+          ]
         },
         {
           "readingRef": "ジョ",
           "word": "少女",
-          "wordReading": "しょうじょ"
+          "wordReading": "しょうじょ",
+          "meaningsKo": [
+            "소녀"
+          ]
         },
         {
           "readingRef": "ニョ",
           "word": "善男善女",
-          "wordReading": "ぜんなんぜんにょ"
+          "wordReading": "ぜんなんぜんにょ",
+          "meaningsKo": [
+            "착한남녀"
+          ]
         },
         {
           "readingRef": "ニョ",
           "word": "女房",
-          "wordReading": "にょうぼう"
+          "wordReading": "にょうぼう",
+          "meaningsKo": [
+            "아내"
+          ]
         },
         {
           "readingRef": "おんな",
           "word": "女",
-          "wordReading": "おんな"
+          "wordReading": "おんな",
+          "meaningsKo": [
+            "여자",
+            "여성"
+          ]
         },
         {
           "readingRef": "おんな",
           "word": "女心",
-          "wordReading": "おんなごころ"
+          "wordReading": "おんなごころ",
+          "meaningsKo": [
+            "여심",
+            "여자마음"
+          ]
         },
         {
           "readingRef": "め",
           "word": "女々",
-          "wordReading": "めめ"
+          "wordReading": "めめ",
+          "meaningsKo": [
+            "여자다운"
+          ]
         }
       ]
     },
@@ -2040,47 +2730,78 @@
         {
           "readingRef": "シ",
           "word": "男子",
-          "wordReading": "だんし"
+          "wordReading": "だんし",
+          "meaningsKo": [
+            "남자",
+            "남학생"
+          ]
         },
         {
           "readingRef": "シ",
           "word": "女子",
-          "wordReading": "じょし"
+          "wordReading": "じょし",
+          "meaningsKo": [
+            "여자",
+            "여성"
+          ]
         },
         {
           "readingRef": "シ",
           "word": "子宮",
-          "wordReading": "しきゅう"
+          "wordReading": "しきゅう",
+          "meaningsKo": [
+            "자궁"
+          ]
         },
         {
           "readingRef": "シ",
           "word": "分子",
-          "wordReading": "ぶんし"
+          "wordReading": "ぶんし",
+          "meaningsKo": [
+            "분자"
+          ]
         },
         {
           "readingRef": "ス",
           "word": "椅子",
-          "wordReading": "いす"
+          "wordReading": "いす",
+          "meaningsKo": [
+            "의자"
+          ]
         },
         {
           "readingRef": "ス",
           "word": "様子",
-          "wordReading": "ようす"
+          "wordReading": "ようす",
+          "meaningsKo": [
+            "모양",
+            "상태"
+          ]
         },
         {
           "readingRef": "こ",
           "word": "子",
-          "wordReading": "こ"
+          "wordReading": "こ",
+          "meaningsKo": [
+            "아이"
+          ]
         },
         {
           "readingRef": "こ",
           "word": "子供",
-          "wordReading": "こども"
+          "wordReading": "こども",
+          "meaningsKo": [
+            "아이",
+            "어린이"
+          ]
         },
         {
           "readingRef": "こ",
           "word": "親子",
-          "wordReading": "おやこ"
+          "wordReading": "おやこ",
+          "meaningsKo": [
+            "부모자식"
+          ]
         }
       ]
     },
@@ -2102,22 +2823,34 @@
         {
           "readingRef": "ガク",
           "word": "大学",
-          "wordReading": "だいがく"
+          "wordReading": "だいがく",
+          "meaningsKo": [
+            "대학"
+          ]
         },
         {
           "readingRef": "ガク",
           "word": "学生",
-          "wordReading": "がくせい"
+          "wordReading": "がくせい",
+          "meaningsKo": [
+            "학생"
+          ]
         },
         {
           "readingRef": "ガク",
           "word": "学会",
-          "wordReading": "がっかい"
+          "wordReading": "がっかい",
+          "meaningsKo": [
+            "학회"
+          ]
         },
         {
           "readingRef": "ガク",
           "word": "学習",
-          "wordReading": "がくしゅう"
+          "wordReading": "がくしゅう",
+          "meaningsKo": [
+            "학습"
+          ]
         }
       ]
     },
@@ -2151,27 +2884,43 @@
         {
           "readingRef": "ショウ",
           "word": "小説",
-          "wordReading": "しょうせつ"
+          "wordReading": "しょうせつ",
+          "meaningsKo": [
+            "소설"
+          ]
         },
         {
           "readingRef": "ショウ",
           "word": "小学生",
-          "wordReading": "しょうがくせい"
+          "wordReading": "しょうがくせい",
+          "meaningsKo": [
+            "초등학생"
+          ]
         },
         {
           "readingRef": "こ",
           "word": "小鳥",
-          "wordReading": "ことり"
+          "wordReading": "ことり",
+          "meaningsKo": [
+            "작은새",
+            "소조"
+          ]
         },
         {
           "readingRef": "こ",
           "word": "小麦",
-          "wordReading": "こむぎ"
+          "wordReading": "こむぎ",
+          "meaningsKo": [
+            "밀"
+          ]
         },
         {
           "readingRef": "お",
           "word": "小川",
-          "wordReading": "おがわ"
+          "wordReading": "おがわ",
+          "meaningsKo": [
+            "작은개울"
+          ]
         }
       ]
     },
@@ -2197,22 +2946,35 @@
         {
           "readingRef": "サン",
           "word": "山林",
-          "wordReading": "さんりん"
+          "wordReading": "さんりん",
+          "meaningsKo": [
+            "산림"
+          ]
         },
         {
           "readingRef": "サン",
           "word": "高山",
-          "wordReading": "こうざん"
+          "wordReading": "こうざん",
+          "meaningsKo": [
+            "높은산",
+            "고산"
+          ]
         },
         {
           "readingRef": "やま",
           "word": "山",
-          "wordReading": "やま"
+          "wordReading": "やま",
+          "meaningsKo": [
+            "산"
+          ]
         },
         {
           "readingRef": "やま",
           "word": "山登",
-          "wordReading": "やまのぼ"
+          "wordReading": "やまのぼ",
+          "meaningsKo": [
+            "등산"
+          ]
         }
       ]
     },
@@ -2234,22 +2996,35 @@
         {
           "readingRef": "セン",
           "word": "山川",
-          "wordReading": "さんせん"
+          "wordReading": "さんせん",
+          "meaningsKo": [
+            "산천"
+          ]
         },
         {
           "readingRef": "セン",
           "word": "河川",
-          "wordReading": "かせん"
+          "wordReading": "かせん",
+          "meaningsKo": [
+            "하천"
+          ]
         },
         {
           "readingRef": "かわ",
           "word": "川",
-          "wordReading": "かわ"
+          "wordReading": "かわ",
+          "meaningsKo": [
+            "강",
+            "개울"
+          ]
         },
         {
           "readingRef": "かわ",
           "word": "川辺",
-          "wordReading": "かわべ"
+          "wordReading": "かわべ",
+          "meaningsKo": [
+            "강가"
+          ]
         }
       ]
     },
@@ -2275,27 +3050,42 @@
         {
           "readingRef": "サ",
           "word": "左右",
-          "wordReading": "さゆう"
+          "wordReading": "さゆう",
+          "meaningsKo": [
+            "좌우"
+          ]
         },
         {
           "readingRef": "サ",
           "word": "左翼",
-          "wordReading": "さよく"
+          "wordReading": "さよく",
+          "meaningsKo": [
+            "좌익"
+          ]
         },
         {
           "readingRef": "サ",
           "word": "左派",
-          "wordReading": "さは"
+          "wordReading": "さは",
+          "meaningsKo": [
+            "좌파"
+          ]
         },
         {
           "readingRef": "ひだり",
           "word": "左手",
-          "wordReading": "ひだりて"
+          "wordReading": "ひだりて",
+          "meaningsKo": [
+            "왼손"
+          ]
         },
         {
           "readingRef": "ひだり",
           "word": "左側",
-          "wordReading": "ひだりがわ"
+          "wordReading": "ひだりがわ",
+          "meaningsKo": [
+            "왼쪽"
+          ]
         }
       ]
     },
@@ -2317,27 +3107,44 @@
         {
           "readingRef": "ネン",
           "word": "三年",
-          "wordReading": "さんねん"
+          "wordReading": "さんねん",
+          "meaningsKo": [
+            "3년"
+          ]
         },
         {
           "readingRef": "ネン",
           "word": "少年",
-          "wordReading": "しょうねん"
+          "wordReading": "しょうねん",
+          "meaningsKo": [
+            "소년"
+          ]
         },
         {
           "readingRef": "とし",
           "word": "毎年",
-          "wordReading": "まいとし"
+          "wordReading": "まいとし",
+          "meaningsKo": [
+            "매년"
+          ]
         },
         {
           "readingRef": "とし",
           "word": "年上",
-          "wordReading": "としうえ"
+          "wordReading": "としうえ",
+          "meaningsKo": [
+            "나이 많은",
+            "연상"
+          ]
         },
         {
           "readingRef": "とし",
           "word": "年下",
-          "wordReading": "としした"
+          "wordReading": "としした",
+          "meaningsKo": [
+            "나이 적은",
+            "연하"
+          ]
         }
       ]
     },
@@ -2375,27 +3182,43 @@
         {
           "readingRef": "ゴ",
           "word": "午後",
-          "wordReading": "ごご"
+          "wordReading": "ごご",
+          "meaningsKo": [
+            "오후"
+          ]
         },
         {
           "readingRef": "ゴ",
           "word": "最後",
-          "wordReading": "さいご"
+          "wordReading": "さいご",
+          "meaningsKo": [
+            "마지막"
+          ]
         },
         {
           "readingRef": "コウ",
           "word": "後半",
-          "wordReading": "こうはん"
+          "wordReading": "こうはん",
+          "meaningsKo": [
+            "후반"
+          ]
         },
         {
           "readingRef": "コウ",
           "word": "後悔",
-          "wordReading": "こうかい"
+          "wordReading": "こうかい",
+          "meaningsKo": [
+            "후회하다",
+            "뉘우치다"
+          ]
         },
         {
           "readingRef": "コウ",
           "word": "後輩",
-          "wordReading": "こうはい"
+          "wordReading": "こうはい",
+          "meaningsKo": [
+            "후배"
+          ]
         }
       ]
     },
@@ -2429,52 +3252,86 @@
         {
           "readingRef": "ニチ",
           "word": "一日",
-          "wordReading": "いちにち"
+          "wordReading": "いちにち",
+          "meaningsKo": [
+            "하루",
+            "1일"
+          ]
         },
         {
           "readingRef": "ニチ",
           "word": "毎日",
-          "wordReading": "まいにち"
+          "wordReading": "まいにち",
+          "meaningsKo": [
+            "매일"
+          ]
         },
         {
           "readingRef": "ジツ",
           "word": "休日",
-          "wordReading": "きゅうじつ"
+          "wordReading": "きゅうじつ",
+          "meaningsKo": [
+            "휴일"
+          ]
         },
         {
           "readingRef": "ジツ",
           "word": "平日",
-          "wordReading": "へいじつ"
+          "wordReading": "へいじつ",
+          "meaningsKo": [
+            "평일"
+          ]
         },
         {
           "readingRef": "ひ",
           "word": "月日",
-          "wordReading": "つきひ"
+          "wordReading": "つきひ",
+          "meaningsKo": [
+            "세월"
+          ]
         },
         {
           "readingRef": "ひ",
           "word": "朝日",
-          "wordReading": "あさひ"
+          "wordReading": "あさひ",
+          "meaningsKo": [
+            "아침 해"
+          ]
         },
         {
           "readingRef": "ひ",
           "word": "夕日",
-          "wordReading": "ゆうひ"
+          "wordReading": "ゆうひ",
+          "meaningsKo": [
+            "저녁 해"
+          ]
         },
         {
           "readingRef": "か",
           "word": "三日",
-          "wordReading": "みっか"
+          "wordReading": "みっか",
+          "meaningsKo": [
+            "사흘",
+            "3일"
+          ]
         },
         {
           "readingRef": "か",
           "word": "七日",
-          "wordReading": "なのか"
+          "wordReading": "なのか",
+          "meaningsKo": [
+            "이레",
+            "7일"
+          ]
         },
         {
           "readingRef": "か",
           "word": "二日",
-          "wordReading": "ふつか"
+          "wordReading": "ふつか",
+          "meaningsKo": [
+            "이틀",
+            "2일"
+          ]
         }
       ]
     },
@@ -2500,22 +3357,36 @@
         {
           "readingRef": "ジ",
           "word": "時間",
-          "wordReading": "じかん"
+          "wordReading": "じかん",
+          "meaningsKo": [
+            "시간"
+          ]
         },
         {
           "readingRef": "ジ",
           "word": "時代",
-          "wordReading": "じだい"
+          "wordReading": "じだい",
+          "meaningsKo": [
+            "시대"
+          ]
         },
         {
           "readingRef": "とき",
           "word": "時",
-          "wordReading": "とき"
+          "wordReading": "とき",
+          "meaningsKo": [
+            "때",
+            "시간"
+          ]
         },
         {
           "readingRef": "とき",
           "word": "時々",
-          "wordReading": "ときどき"
+          "wordReading": "ときどき",
+          "meaningsKo": [
+            "때때로",
+            "가끔"
+          ]
         }
       ]
     },
@@ -2541,12 +3412,18 @@
         {
           "readingRef": "ショ",
           "word": "読書",
-          "wordReading": "どくしょ"
+          "wordReading": "どくしょ",
+          "meaningsKo": [
+            "독서"
+          ]
         },
         {
           "readingRef": "ショ",
           "word": "書店",
-          "wordReading": "しょてん"
+          "wordReading": "しょてん",
+          "meaningsKo": [
+            "서점"
+          ]
         }
       ]
     },
@@ -2572,57 +3449,92 @@
         {
           "readingRef": "ゲツ",
           "word": "月曜日",
-          "wordReading": "げつようび"
+          "wordReading": "げつようび",
+          "meaningsKo": [
+            "월요일"
+          ]
         },
         {
           "readingRef": "ゲツ",
           "word": "今月",
-          "wordReading": "こんげつ"
+          "wordReading": "こんげつ",
+          "meaningsKo": [
+            "이번 달"
+          ]
         },
         {
           "readingRef": "ゲツ",
           "word": "先月",
-          "wordReading": "せんげつ"
+          "wordReading": "せんげつ",
+          "meaningsKo": [
+            "지난달"
+          ]
         },
         {
           "readingRef": "ゲツ",
           "word": "来月",
-          "wordReading": "らいげつ"
+          "wordReading": "らいげつ",
+          "meaningsKo": [
+            "내월"
+          ]
         },
         {
           "readingRef": "ガツ",
           "word": "一月",
-          "wordReading": "いちがつ"
+          "wordReading": "いちがつ",
+          "meaningsKo": [
+            "1월"
+          ]
         },
         {
           "readingRef": "ガツ",
           "word": "三月",
-          "wordReading": "さんがつ"
+          "wordReading": "さんがつ",
+          "meaningsKo": [
+            "3월"
+          ]
         },
         {
           "readingRef": "ガツ",
           "word": "九月",
-          "wordReading": "くがつ"
+          "wordReading": "くがつ",
+          "meaningsKo": [
+            "9월"
+          ]
         },
         {
           "readingRef": "ガツ",
           "word": "正月",
-          "wordReading": "しょうがつ"
+          "wordReading": "しょうがつ",
+          "meaningsKo": [
+            "정월",
+            "1월"
+          ]
         },
         {
           "readingRef": "つき",
           "word": "月",
-          "wordReading": "つき"
+          "wordReading": "つき",
+          "meaningsKo": [
+            "달",
+            "월"
+          ]
         },
         {
           "readingRef": "つき",
           "word": "月日",
-          "wordReading": "つきひ"
+          "wordReading": "つきひ",
+          "meaningsKo": [
+            "세월"
+          ]
         },
         {
           "readingRef": "つき",
           "word": "三日月",
-          "wordReading": "みかづき"
+          "wordReading": "みかづき",
+          "meaningsKo": [
+            "초승달"
+          ]
         }
       ]
     },
@@ -2652,57 +3564,95 @@
         {
           "readingRef": "ボク",
           "word": "大木",
-          "wordReading": "たいぼく"
+          "wordReading": "たいぼく",
+          "meaningsKo": [
+            "큰 나무"
+          ]
         },
         {
           "readingRef": "ボク",
           "word": "土木",
-          "wordReading": "どぼく"
+          "wordReading": "どぼく",
+          "meaningsKo": [
+            "토목",
+            "건설"
+          ]
         },
         {
           "readingRef": "ボク",
           "word": "高木",
-          "wordReading": "こうぼく"
+          "wordReading": "こうぼく",
+          "meaningsKo": [
+            "큰나무",
+            "교목"
+          ]
         },
         {
           "readingRef": "モク",
           "word": "木造",
-          "wordReading": "もくぞう"
+          "wordReading": "もくぞう",
+          "meaningsKo": [
+            "목조"
+          ]
         },
         {
           "readingRef": "モク",
           "word": "材木",
-          "wordReading": "ざいもく"
+          "wordReading": "ざいもく",
+          "meaningsKo": [
+            "목재",
+            "재목"
+          ]
         },
         {
           "readingRef": "モク",
           "word": "樹木",
-          "wordReading": "じゅもく"
+          "wordReading": "じゅもく",
+          "meaningsKo": [
+            "나무",
+            "수목"
+          ]
         },
         {
           "readingRef": "モク",
           "word": "木曜日",
-          "wordReading": "もくようび"
+          "wordReading": "もくようび",
+          "meaningsKo": [
+            "목요일"
+          ]
         },
         {
           "readingRef": "き",
           "word": "木",
-          "wordReading": "き"
+          "wordReading": "き",
+          "meaningsKo": [
+            "나무"
+          ]
         },
         {
           "readingRef": "き",
           "word": "並木",
-          "wordReading": "なみき"
+          "wordReading": "なみき",
+          "meaningsKo": [
+            "가로수"
+          ]
         },
         {
           "readingRef": "き",
           "word": "草木",
-          "wordReading": "くさき"
+          "wordReading": "くさき",
+          "meaningsKo": [
+            "초목",
+            "풀과나무"
+          ]
         },
         {
           "readingRef": "こ",
           "word": "木枯",
-          "wordReading": "こが"
+          "wordReading": "こが",
+          "meaningsKo": [
+            "목가을바람"
+          ]
         }
       ]
     },
@@ -2724,27 +3674,44 @@
         {
           "readingRef": "ホン",
           "word": "本",
-          "wordReading": "ほん"
+          "wordReading": "ほん",
+          "meaningsKo": [
+            "책",
+            "권"
+          ]
         },
         {
           "readingRef": "ホン",
           "word": "本名",
-          "wordReading": "ほんみょう"
+          "wordReading": "ほんみょう",
+          "meaningsKo": [
+            "본명"
+          ]
         },
         {
           "readingRef": "ホン",
           "word": "本人",
-          "wordReading": "ほんにん"
+          "wordReading": "ほんにん",
+          "meaningsKo": [
+            "본인"
+          ]
         },
         {
           "readingRef": "ホン",
           "word": "鉛筆一本",
-          "wordReading": "えんぴついっぽん"
+          "wordReading": "えんぴついっぽん",
+          "meaningsKo": [
+            "연필한자루"
+          ]
         },
         {
           "readingRef": "もと",
           "word": "根本",
-          "wordReading": "ねもと"
+          "wordReading": "ねもと",
+          "meaningsKo": [
+            "근본",
+            "밑"
+          ]
         }
       ]
     },
@@ -2786,17 +3753,26 @@
         {
           "readingRef": "ライ",
           "word": "未来",
-          "wordReading": "みらい"
+          "wordReading": "みらい",
+          "meaningsKo": [
+            "미래"
+          ]
         },
         {
           "readingRef": "ライ",
           "word": "来年",
-          "wordReading": "らいねん"
+          "wordReading": "らいねん",
+          "meaningsKo": [
+            "내년"
+          ]
         },
         {
           "readingRef": "ライ",
           "word": "来月",
-          "wordReading": "らいげつ"
+          "wordReading": "らいげつ",
+          "meaningsKo": [
+            "내월"
+          ]
         }
       ]
     },
@@ -2818,22 +3794,35 @@
         {
           "readingRef": "トウ",
           "word": "東洋",
-          "wordReading": "とうよう"
+          "wordReading": "とうよう",
+          "meaningsKo": [
+            "동양"
+          ]
         },
         {
           "readingRef": "トウ",
           "word": "東京",
-          "wordReading": "とうきょう"
+          "wordReading": "とうきょう",
+          "meaningsKo": [
+            "도쿄"
+          ]
         },
         {
           "readingRef": "ひがし",
           "word": "東日本",
-          "wordReading": "ひがしにほん"
+          "wordReading": "ひがしにほん",
+          "meaningsKo": [
+            "동일본"
+          ]
         },
         {
           "readingRef": "ひがし",
           "word": "東",
-          "wordReading": "ひがし"
+          "wordReading": "ひがし",
+          "meaningsKo": [
+            "동쪽",
+            "동"
+          ]
         }
       ]
     },
@@ -2855,17 +3844,27 @@
         {
           "readingRef": "コウ",
           "word": "学校",
-          "wordReading": "がっこう"
+          "wordReading": "がっこう",
+          "meaningsKo": [
+            "학교"
+          ]
         },
         {
           "readingRef": "コウ",
           "word": "校門",
-          "wordReading": "こうもん"
+          "wordReading": "こうもん",
+          "meaningsKo": [
+            "교문"
+          ]
         },
         {
           "readingRef": "コウ",
           "word": "校庭",
-          "wordReading": "こうてい"
+          "wordReading": "こうてい",
+          "meaningsKo": [
+            "교정",
+            "운동장"
+          ]
         }
       ]
     },
@@ -2891,32 +3890,51 @@
         {
           "readingRef": "ボ",
           "word": "父母",
-          "wordReading": "ふぼ"
+          "wordReading": "ふぼ",
+          "meaningsKo": [
+            "부모"
+          ]
         },
         {
           "readingRef": "ボ",
           "word": "良妻賢母",
-          "wordReading": "りょうさいけんぼ"
+          "wordReading": "りょうさいけんぼ",
+          "meaningsKo": [
+            "현모양처"
+          ]
         },
         {
           "readingRef": "ボ",
           "word": "母体",
-          "wordReading": "ぼたい"
+          "wordReading": "ぼたい",
+          "meaningsKo": [
+            "모체"
+          ]
         },
         {
           "readingRef": "ボ",
           "word": "分母",
-          "wordReading": "ぶんぼ"
+          "wordReading": "ぶんぼ",
+          "meaningsKo": [
+            "분모"
+          ]
         },
         {
           "readingRef": "はは",
           "word": "母",
-          "wordReading": "はは"
+          "wordReading": "はは",
+          "meaningsKo": [
+            "어머니",
+            "엄마"
+          ]
         },
         {
           "readingRef": "はは",
           "word": "母親",
-          "wordReading": "ははおや"
+          "wordReading": "ははおや",
+          "meaningsKo": [
+            "어머니"
+          ]
         }
       ]
     },
@@ -2942,17 +3960,26 @@
         {
           "readingRef": "マイ",
           "word": "毎日",
-          "wordReading": "まいにち"
+          "wordReading": "まいにち",
+          "meaningsKo": [
+            "매일"
+          ]
         },
         {
           "readingRef": "マイ",
           "word": "毎年",
-          "wordReading": "まいとし"
+          "wordReading": "まいとし",
+          "meaningsKo": [
+            "매년"
+          ]
         },
         {
           "readingRef": "マイ",
           "word": "毎月",
-          "wordReading": "まいつき"
+          "wordReading": "まいつき",
+          "meaningsKo": [
+            "매달"
+          ]
         }
       ]
     },
@@ -2978,27 +4005,44 @@
         {
           "readingRef": "キ",
           "word": "天気",
-          "wordReading": "てんき"
+          "wordReading": "てんき",
+          "meaningsKo": [
+            "날씨"
+          ]
         },
         {
           "readingRef": "キ",
           "word": "人気",
-          "wordReading": "にんき"
+          "wordReading": "にんき",
+          "meaningsKo": [
+            "인기"
+          ]
         },
         {
           "readingRef": "キ",
           "word": "空気",
-          "wordReading": "くうき"
+          "wordReading": "くうき",
+          "meaningsKo": [
+            "공기",
+            "대기"
+          ]
         },
         {
           "readingRef": "ケ",
           "word": "気配",
-          "wordReading": "けはい"
+          "wordReading": "けはい",
+          "meaningsKo": [
+            "기색",
+            "기미"
+          ]
         },
         {
           "readingRef": "ケ",
           "word": "湿気",
-          "wordReading": "しっけ"
+          "wordReading": "しっけ",
+          "meaningsKo": [
+            "습기"
+          ]
         }
       ]
     },
@@ -3020,32 +4064,52 @@
         {
           "readingRef": "スイ",
           "word": "水分",
-          "wordReading": "すいぶん"
+          "wordReading": "すいぶん",
+          "meaningsKo": [
+            "수분"
+          ]
         },
         {
           "readingRef": "スイ",
           "word": "海水",
-          "wordReading": "かいすい"
+          "wordReading": "かいすい",
+          "meaningsKo": [
+            "바닷물"
+          ]
         },
         {
           "readingRef": "スイ",
           "word": "水曜日",
-          "wordReading": "すいようび"
+          "wordReading": "すいようび",
+          "meaningsKo": [
+            "수요일"
+          ]
         },
         {
           "readingRef": "みず",
           "word": "水",
-          "wordReading": "みず"
+          "wordReading": "みず",
+          "meaningsKo": [
+            "물"
+          ]
         },
         {
           "readingRef": "みず",
           "word": "水色",
-          "wordReading": "みずいろ"
+          "wordReading": "みずいろ",
+          "meaningsKo": [
+            "연파랑",
+            "하늘색"
+          ]
         },
         {
           "readingRef": "みず",
           "word": "水玉",
-          "wordReading": "みずたま"
+          "wordReading": "みずたま",
+          "meaningsKo": [
+            "물방울",
+            "점무늬"
+          ]
         }
       ]
     },
@@ -3075,37 +4139,60 @@
         {
           "readingRef": "カ",
           "word": "火曜日",
-          "wordReading": "かようび"
+          "wordReading": "かようび",
+          "meaningsKo": [
+            "화요일"
+          ]
         },
         {
           "readingRef": "カ",
           "word": "火事",
-          "wordReading": "かじ"
+          "wordReading": "かじ",
+          "meaningsKo": [
+            "불",
+            "화재"
+          ]
         },
         {
           "readingRef": "カ",
           "word": "火山",
-          "wordReading": "かざん"
+          "wordReading": "かざん",
+          "meaningsKo": [
+            "화산"
+          ]
         },
         {
           "readingRef": "ひ",
           "word": "火花",
-          "wordReading": "ひばな"
+          "wordReading": "ひばな",
+          "meaningsKo": [
+            "불똥"
+          ]
         },
         {
           "readingRef": "ひ",
           "word": "火口",
-          "wordReading": "ひぐち"
+          "wordReading": "ひぐち",
+          "meaningsKo": [
+            "화구"
+          ]
         },
         {
           "readingRef": "ひ",
           "word": "花火",
-          "wordReading": "はなび"
+          "wordReading": "はなび",
+          "meaningsKo": [
+            "불꽃",
+            "불놀이"
+          ]
         },
         {
           "readingRef": "ほ",
           "word": "火影",
-          "wordReading": "ほかげ"
+          "wordReading": "ほかげ",
+          "meaningsKo": [
+            "불그림자"
+          ]
         }
       ]
     },
@@ -3127,22 +4214,34 @@
         {
           "readingRef": "フ",
           "word": "父母",
-          "wordReading": "ふぼ"
+          "wordReading": "ふぼ",
+          "meaningsKo": [
+            "부모"
+          ]
         },
         {
           "readingRef": "フ",
           "word": "祖父",
-          "wordReading": "そふ"
+          "wordReading": "そふ",
+          "meaningsKo": [
+            "할아버지"
+          ]
         },
         {
           "readingRef": "ちち",
           "word": "父",
-          "wordReading": "ちち"
+          "wordReading": "ちち",
+          "meaningsKo": [
+            "아버지"
+          ]
         },
         {
           "readingRef": "ちち",
           "word": "父親",
-          "wordReading": "ちちおや"
+          "wordReading": "ちちおや",
+          "meaningsKo": [
+            "아버지"
+          ]
         }
       ]
     },
@@ -3224,52 +4323,89 @@
         {
           "readingRef": "セイ",
           "word": "生命",
-          "wordReading": "せいめい"
+          "wordReading": "せいめい",
+          "meaningsKo": [
+            "생명"
+          ]
         },
         {
           "readingRef": "セイ",
           "word": "人生",
-          "wordReading": "じんせい"
+          "wordReading": "じんせい",
+          "meaningsKo": [
+            "인생"
+          ]
         },
         {
           "readingRef": "セイ",
           "word": "先生",
-          "wordReading": "せんせい"
+          "wordReading": "せんせい",
+          "meaningsKo": [
+            "선생님"
+          ]
         },
         {
           "readingRef": "ショウ",
           "word": "一生",
-          "wordReading": "いっしょう"
+          "wordReading": "いっしょう",
+          "meaningsKo": [
+            "평생",
+            "일생"
+          ]
         },
         {
           "readingRef": "ショウ",
           "word": "生涯",
-          "wordReading": "しょうがい"
+          "wordReading": "しょうがい",
+          "meaningsKo": [
+            "일생",
+            "평생"
+          ]
         },
         {
           "readingRef": "ショウ",
           "word": "一生懸命",
-          "wordReading": "いっしょうけんめい"
+          "wordReading": "いっしょうけんめい",
+          "meaningsKo": [
+            "온힘을 다해",
+            "열심히"
+          ]
         },
         {
           "readingRef": "き",
           "word": "生地",
-          "wordReading": "きじ"
+          "wordReading": "きじ",
+          "meaningsKo": [
+            "천",
+            "직물"
+          ]
         },
         {
           "readingRef": "なま",
           "word": "生身",
-          "wordReading": "なまみ"
+          "wordReading": "なまみ",
+          "meaningsKo": [
+            "생몸",
+            "육체"
+          ]
         },
         {
           "readingRef": "なま",
           "word": "生意気",
-          "wordReading": "なまいき"
+          "wordReading": "なまいき",
+          "meaningsKo": [
+            "건방진",
+            "주제넘는"
+          ]
         },
         {
           "readingRef": "なま",
           "word": "生物",
-          "wordReading": "なまもの"
+          "wordReading": "なまもの",
+          "meaningsKo": [
+            "생물",
+            "생명"
+          ]
         }
       ]
     },
@@ -3299,32 +4435,55 @@
         {
           "readingRef": "ダン",
           "word": "男性",
-          "wordReading": "だんせい"
+          "wordReading": "だんせい",
+          "meaningsKo": [
+            "남성",
+            "남자"
+          ]
         },
         {
           "readingRef": "ダン",
           "word": "男子",
-          "wordReading": "だんし"
+          "wordReading": "だんし",
+          "meaningsKo": [
+            "남자",
+            "남학생"
+          ]
         },
         {
           "readingRef": "ダン",
           "word": "男女",
-          "wordReading": "だんじょ"
+          "wordReading": "だんじょ",
+          "meaningsKo": [
+            "남녀"
+          ]
         },
         {
           "readingRef": "ナン",
           "word": "長男",
-          "wordReading": "ちょうなん"
+          "wordReading": "ちょうなん",
+          "meaningsKo": [
+            "큰아들",
+            "장남"
+          ]
         },
         {
           "readingRef": "ナン",
           "word": "美男",
-          "wordReading": "びなん"
+          "wordReading": "びなん",
+          "meaningsKo": [
+            "미남",
+            "잘생긴남자"
+          ]
         },
         {
           "readingRef": "おとこ",
           "word": "男",
-          "wordReading": "おとこ"
+          "wordReading": "おとこ",
+          "meaningsKo": [
+            "남자",
+            "남성"
+          ]
         }
       ]
     },
@@ -3358,47 +4517,79 @@
         {
           "readingRef": "ハク",
           "word": "明白",
-          "wordReading": "めいはく"
+          "wordReading": "めいはく",
+          "meaningsKo": [
+            "분명하다",
+            "명백"
+          ]
         },
         {
           "readingRef": "ハク",
           "word": "空白",
-          "wordReading": "くうはく"
+          "wordReading": "くうはく",
+          "meaningsKo": [
+            "공백",
+            "빈 곳"
+          ]
         },
         {
           "readingRef": "ハク",
           "word": "告白",
-          "wordReading": "こくはく"
+          "wordReading": "こくはく",
+          "meaningsKo": [
+            "고백",
+            "자백"
+          ]
         },
         {
           "readingRef": "ビャク",
           "word": "白衣",
-          "wordReading": "びゃくえ"
+          "wordReading": "びゃくえ",
+          "meaningsKo": [
+            "흰옷"
+          ]
         },
         {
           "readingRef": "しろ",
           "word": "白",
-          "wordReading": "しろ"
+          "wordReading": "しろ",
+          "meaningsKo": [
+            "하얀",
+            "하양"
+          ]
         },
         {
           "readingRef": "しろ",
           "word": "花",
-          "wordReading": "はな"
+          "wordReading": "はな",
+          "meaningsKo": [
+            "꽃"
+          ]
         },
         {
           "readingRef": "しろ",
           "word": "黒白",
-          "wordReading": "くろしろ"
+          "wordReading": "くろしろ",
+          "meaningsKo": [
+            "검은색과 흰색"
+          ]
         },
         {
           "readingRef": "しら",
           "word": "白髪",
-          "wordReading": "しらが"
+          "wordReading": "しらが",
+          "meaningsKo": [
+            "하얀머리",
+            "백발"
+          ]
         },
         {
           "readingRef": "しら",
           "word": "白鳥",
-          "wordReading": "しらとり"
+          "wordReading": "しらとり",
+          "meaningsKo": [
+            "백조"
+          ]
         }
       ]
     },
@@ -3424,17 +4615,27 @@
         {
           "readingRef": "ヒャク",
           "word": "百円",
-          "wordReading": "ひゃくえん"
+          "wordReading": "ひゃくえん",
+          "meaningsKo": [
+            "100엔"
+          ]
         },
         {
           "readingRef": "ヒャク",
           "word": "百貨店",
-          "wordReading": "ひゃっかてん"
+          "wordReading": "ひゃっかてん",
+          "meaningsKo": [
+            "백화점"
+          ]
         },
         {
           "readingRef": "ヒャク",
           "word": "二百",
-          "wordReading": "にひゃく"
+          "wordReading": "にひゃく",
+          "meaningsKo": [
+            "200",
+            "이백"
+          ]
         }
       ]
     },
@@ -3464,27 +4665,45 @@
         {
           "readingRef": "ブン",
           "word": "新聞",
-          "wordReading": "しんぶん"
+          "wordReading": "しんぶん",
+          "meaningsKo": [
+            "신문"
+          ]
         },
         {
           "readingRef": "ブン",
           "word": "見聞",
-          "wordReading": "けんぶん"
+          "wordReading": "けんぶん",
+          "meaningsKo": [
+            "견문",
+            "보고들은것"
+          ]
         },
         {
           "readingRef": "ブン",
           "word": "風聞",
-          "wordReading": "ふうぶん"
+          "wordReading": "ふうぶん",
+          "meaningsKo": [
+            "풍문",
+            "소문"
+          ]
         },
         {
           "readingRef": "モン",
           "word": "聴聞会",
-          "wordReading": "ちょうもんかい"
+          "wordReading": "ちょうもんかい",
+          "meaningsKo": [
+            "청문회"
+          ]
         },
         {
           "readingRef": "モン",
           "word": "前代未聞",
-          "wordReading": "ぜんだいみもん"
+          "wordReading": "ぜんだいみもん",
+          "meaningsKo": [
+            "전대미문",
+            "전례없는"
+          ]
         }
       ]
     },
@@ -3530,47 +4749,79 @@
         {
           "readingRef": "コウ",
           "word": "行進",
-          "wordReading": "こうしん"
+          "wordReading": "こうしん",
+          "meaningsKo": [
+            "행진",
+            "진군"
+          ]
         },
         {
           "readingRef": "コウ",
           "word": "旅行",
-          "wordReading": "りょこう"
+          "wordReading": "りょこう",
+          "meaningsKo": [
+            "여행"
+          ]
         },
         {
           "readingRef": "コウ",
           "word": "行動",
-          "wordReading": "こうどう"
+          "wordReading": "こうどう",
+          "meaningsKo": [
+            "행동"
+          ]
         },
         {
           "readingRef": "コウ",
           "word": "実行",
-          "wordReading": "じっこう"
+          "wordReading": "じっこう",
+          "meaningsKo": [
+            "실행"
+          ]
         },
         {
           "readingRef": "ギョウ",
           "word": "行列",
-          "wordReading": "ぎょうれつ"
+          "wordReading": "ぎょうれつ",
+          "meaningsKo": [
+            "행렬",
+            "줄"
+          ]
         },
         {
           "readingRef": "ギョウ",
           "word": "行政",
-          "wordReading": "ぎょうせい"
+          "wordReading": "ぎょうせい",
+          "meaningsKo": [
+            "행정"
+          ]
         },
         {
           "readingRef": "ギョウ",
           "word": "行事",
-          "wordReading": "ぎょうじ"
+          "wordReading": "ぎょうじ",
+          "meaningsKo": [
+            "행사",
+            "행사"
+          ]
         },
         {
           "readingRef": "ギョウ",
           "word": "修行",
-          "wordReading": "しゅぎょう"
+          "wordReading": "しゅぎょう",
+          "meaningsKo": [
+            "수행",
+            "수련"
+          ]
         },
         {
           "readingRef": "アン",
           "word": "行灯",
-          "wordReading": "あんどう"
+          "wordReading": "あんどう",
+          "meaningsKo": [
+            "등불",
+            "행등"
+          ]
         }
       ]
     },
@@ -3600,32 +4851,51 @@
         {
           "readingRef": "セイ",
           "word": "西洋",
-          "wordReading": "せいよう"
+          "wordReading": "せいよう",
+          "meaningsKo": [
+            "서양"
+          ]
         },
         {
           "readingRef": "セイ",
           "word": "西暦",
-          "wordReading": "せいれき"
+          "wordReading": "せいれき",
+          "meaningsKo": [
+            "서력",
+            "기독교력"
+          ]
         },
         {
           "readingRef": "サイ",
           "word": "関西",
-          "wordReading": "かんさい"
+          "wordReading": "かんさい",
+          "meaningsKo": [
+            "간사이"
+          ]
         },
         {
           "readingRef": "サイ",
           "word": "東西",
-          "wordReading": "とうざい"
+          "wordReading": "とうざい",
+          "meaningsKo": [
+            "동서"
+          ]
         },
         {
           "readingRef": "にし",
           "word": "西",
-          "wordReading": "にし"
+          "wordReading": "にし",
+          "meaningsKo": [
+            "서쪽"
+          ]
         },
         {
           "readingRef": "にし",
           "word": "西日本",
-          "wordReading": "にしにほん"
+          "wordReading": "にしにほん",
+          "meaningsKo": [
+            "니시니혼"
+          ]
         }
       ]
     },
@@ -3655,12 +4925,19 @@
         {
           "readingRef": "ケン",
           "word": "意見",
-          "wordReading": "いけん"
+          "wordReading": "いけん",
+          "meaningsKo": [
+            "의견"
+          ]
         },
         {
           "readingRef": "ケン",
           "word": "見物",
-          "wordReading": "けんぶつ"
+          "wordReading": "けんぶつ",
+          "meaningsKo": [
+            "관광",
+            "구경"
+          ]
         }
       ]
     },
@@ -3686,22 +4963,37 @@
         {
           "readingRef": "ワ",
           "word": "会話",
-          "wordReading": "かいわ"
+          "wordReading": "かいわ",
+          "meaningsKo": [
+            "회화",
+            "대화"
+          ]
         },
         {
           "readingRef": "ワ",
           "word": "話題",
-          "wordReading": "わだい"
+          "wordReading": "わだい",
+          "meaningsKo": [
+            "화제"
+          ]
         },
         {
           "readingRef": "はなし",
           "word": "子供",
-          "wordReading": "こども"
+          "wordReading": "こども",
+          "meaningsKo": [
+            "아이",
+            "어린이"
+          ]
         },
         {
           "readingRef": "はなし",
           "word": "話",
-          "wordReading": "はなし"
+          "wordReading": "はなし",
+          "meaningsKo": [
+            "말",
+            "이야기"
+          ]
         }
       ]
     },
@@ -3727,17 +5019,26 @@
         {
           "readingRef": "ゴ",
           "word": "言語",
-          "wordReading": "げんご"
+          "wordReading": "げんご",
+          "meaningsKo": [
+            "언어"
+          ]
         },
         {
           "readingRef": "ゴ",
           "word": "日本語",
-          "wordReading": "にほんご"
+          "wordReading": "にほんご",
+          "meaningsKo": [
+            "일본어"
+          ]
         },
         {
           "readingRef": "ゴ",
           "word": "外国語",
-          "wordReading": "がいこくご"
+          "wordReading": "がいこくご",
+          "meaningsKo": [
+            "외국어"
+          ]
         }
       ]
     },
@@ -3771,27 +5072,45 @@
         {
           "readingRef": "ドク",
           "word": "読書",
-          "wordReading": "どくしょ"
+          "wordReading": "どくしょ",
+          "meaningsKo": [
+            "독서"
+          ]
         },
         {
           "readingRef": "ドク",
           "word": "読者",
-          "wordReading": "どくしゃ"
+          "wordReading": "どくしゃ",
+          "meaningsKo": [
+            "독자"
+          ]
         },
         {
           "readingRef": "トク",
           "word": "読本",
-          "wordReading": "とくほん"
+          "wordReading": "とくほん",
+          "meaningsKo": [
+            "독본",
+            "읽을 책"
+          ]
         },
         {
           "readingRef": "トウ",
           "word": "句読点",
-          "wordReading": "くとうてん"
+          "wordReading": "くとうてん",
+          "meaningsKo": [
+            "구두점",
+            "문장 부호"
+          ]
         },
         {
           "readingRef": "トウ",
           "word": "読点",
-          "wordReading": "とうてん"
+          "wordReading": "とうてん",
+          "meaningsKo": [
+            "쉼표",
+            "쉼표"
+          ]
         }
       ]
     },
@@ -3813,22 +5132,35 @@
         {
           "readingRef": "シャ",
           "word": "車庫",
-          "wordReading": "しゃこ"
+          "wordReading": "しゃこ",
+          "meaningsKo": [
+            "차고"
+          ]
         },
         {
           "readingRef": "シャ",
           "word": "車道",
-          "wordReading": "しゃどう"
+          "wordReading": "しゃどう",
+          "meaningsKo": [
+            "차도"
+          ]
         },
         {
           "readingRef": "くるま",
           "word": "車",
-          "wordReading": "くるま"
+          "wordReading": "くるま",
+          "meaningsKo": [
+            "자동차",
+            "차"
+          ]
         },
         {
           "readingRef": "くるま",
           "word": "乳母車",
-          "wordReading": "うばぐるま"
+          "wordReading": "うばぐるま",
+          "meaningsKo": [
+            "유모차"
+          ]
         }
       ]
     },
@@ -3866,47 +5198,76 @@
         {
           "readingRef": "キン",
           "word": "現金",
-          "wordReading": "げんきん"
+          "wordReading": "げんきん",
+          "meaningsKo": [
+            "현금"
+          ]
         },
         {
           "readingRef": "キン",
           "word": "金星",
-          "wordReading": "きんせい"
+          "wordReading": "きんせい",
+          "meaningsKo": [
+            "금성"
+          ]
         },
         {
           "readingRef": "キン",
           "word": "純金",
-          "wordReading": "じゅんきん"
+          "wordReading": "じゅんきん",
+          "meaningsKo": [
+            "순금"
+          ]
         },
         {
           "readingRef": "コン",
           "word": "金剛",
-          "wordReading": "こんごう"
+          "wordReading": "こんごう",
+          "meaningsKo": [
+            "금강"
+          ]
         },
         {
           "readingRef": "コン",
           "word": "黄金",
-          "wordReading": "おうごん"
+          "wordReading": "おうごん",
+          "meaningsKo": [
+            "황금"
+          ]
         },
         {
           "readingRef": "かね",
           "word": "金",
-          "wordReading": "かね"
+          "wordReading": "かね",
+          "meaningsKo": [
+            "돈",
+            "금"
+          ]
         },
         {
           "readingRef": "かね",
           "word": "金持",
-          "wordReading": "かねも"
+          "wordReading": "かねも",
+          "meaningsKo": [
+            "부자"
+          ]
         },
         {
           "readingRef": "かね",
           "word": "針金",
-          "wordReading": "はりがね"
+          "wordReading": "はりがね",
+          "meaningsKo": [
+            "철사"
+          ]
         },
         {
           "readingRef": "かな",
           "word": "金物",
-          "wordReading": "かなもの"
+          "wordReading": "かなもの",
+          "meaningsKo": [
+            "금속제품",
+            "쇠"
+          ]
         }
       ]
     },
@@ -3932,17 +5293,27 @@
         {
           "readingRef": "チョウ",
           "word": "長男",
-          "wordReading": "ちょうなん"
+          "wordReading": "ちょうなん",
+          "meaningsKo": [
+            "큰아들",
+            "장남"
+          ]
         },
         {
           "readingRef": "チョウ",
           "word": "社長",
-          "wordReading": "しゃちょう"
+          "wordReading": "しゃちょう",
+          "meaningsKo": [
+            "사장"
+          ]
         },
         {
           "readingRef": "チョウ",
           "word": "成長",
-          "wordReading": "せいちょう"
+          "wordReading": "せいちょう",
+          "meaningsKo": [
+            "성장"
+          ]
         }
       ]
     },
@@ -3976,57 +5347,95 @@
         {
           "readingRef": "カン",
           "word": "時間",
-          "wordReading": "じかん"
+          "wordReading": "じかん",
+          "meaningsKo": [
+            "시간"
+          ]
         },
         {
           "readingRef": "カン",
           "word": "年間",
-          "wordReading": "ねんかん"
+          "wordReading": "ねんかん",
+          "meaningsKo": [
+            "1년",
+            "연간"
+          ]
         },
         {
           "readingRef": "カン",
           "word": "週間",
-          "wordReading": "しゅうかん"
+          "wordReading": "しゅうかん",
+          "meaningsKo": [
+            "주간",
+            "일주일"
+          ]
         },
         {
           "readingRef": "ケン",
           "word": "世間",
-          "wordReading": "せけん"
+          "wordReading": "せけん",
+          "meaningsKo": [
+            "세상",
+            "사회"
+          ]
         },
         {
           "readingRef": "ケン",
           "word": "眉間",
-          "wordReading": "みけん"
+          "wordReading": "みけん",
+          "meaningsKo": [
+            "눈썹 사이"
+          ]
         },
         {
           "readingRef": "あいだ",
           "word": "生徒",
-          "wordReading": "せいと"
+          "wordReading": "せいと",
+          "meaningsKo": [
+            "학생"
+          ]
         },
         {
           "readingRef": "あいだ",
           "word": "間",
-          "wordReading": "あいだ"
+          "wordReading": "あいだ",
+          "meaningsKo": [
+            "방",
+            "칸"
+          ]
         },
         {
           "readingRef": "あいだ",
           "word": "人気",
-          "wordReading": "にんき"
+          "wordReading": "にんき",
+          "meaningsKo": [
+            "인기"
+          ]
         },
         {
           "readingRef": "ま",
           "word": "間",
-          "wordReading": "ま"
+          "wordReading": "ま",
+          "meaningsKo": [
+            "방",
+            "칸"
+          ]
         },
         {
           "readingRef": "ま",
           "word": "冬",
-          "wordReading": "ふゆ"
+          "wordReading": "ふゆ",
+          "meaningsKo": [
+            "겨울"
+          ]
         },
         {
           "readingRef": "ま",
           "word": "来",
-          "wordReading": "き"
+          "wordReading": "き",
+          "meaningsKo": [
+            "오다"
+          ]
         }
       ]
     },
@@ -4056,37 +5465,59 @@
         {
           "readingRef": "ウ",
           "word": "梅雨",
-          "wordReading": "ばいう"
+          "wordReading": "ばいう",
+          "meaningsKo": [
+            "장마"
+          ]
         },
         {
           "readingRef": "ウ",
           "word": "雨天",
-          "wordReading": "うてん"
+          "wordReading": "うてん",
+          "meaningsKo": [
+            "비 오는 날"
+          ]
         },
         {
           "readingRef": "あめ",
           "word": "雨",
-          "wordReading": "あめ"
+          "wordReading": "あめ",
+          "meaningsKo": [
+            "비"
+          ]
         },
         {
           "readingRef": "あめ",
           "word": "大雨",
-          "wordReading": "おおあめ"
+          "wordReading": "おおあめ",
+          "meaningsKo": [
+            "큰비",
+            "폭우"
+          ]
         },
         {
           "readingRef": "あま",
           "word": "雨水",
-          "wordReading": "あまみず"
+          "wordReading": "あまみず",
+          "meaningsKo": [
+            "빗물"
+          ]
         },
         {
           "readingRef": "あま",
           "word": "雨音",
-          "wordReading": "あまおと"
+          "wordReading": "あまおと",
+          "meaningsKo": [
+            "빗소리"
+          ]
         },
         {
           "readingRef": "あま",
           "word": "雨雲",
-          "wordReading": "あまぐも"
+          "wordReading": "あまぐも",
+          "meaningsKo": [
+            "빗구름"
+          ]
         }
       ]
     },
@@ -4104,17 +5535,27 @@
         {
           "readingRef": "デン",
           "word": "電気",
-          "wordReading": "でんき"
+          "wordReading": "でんき",
+          "meaningsKo": [
+            "전기"
+          ]
         },
         {
           "readingRef": "デン",
           "word": "発電",
-          "wordReading": "はつでん"
+          "wordReading": "はつでん",
+          "meaningsKo": [
+            "발전"
+          ]
         },
         {
           "readingRef": "デン",
           "word": "雷電",
-          "wordReading": "らいでん"
+          "wordReading": "らいでん",
+          "meaningsKo": [
+            "벼락",
+            "번개"
+          ]
         }
       ]
     },
@@ -4152,27 +5593,42 @@
         {
           "readingRef": "ショク",
           "word": "食事",
-          "wordReading": "しょくじ"
+          "wordReading": "しょくじ",
+          "meaningsKo": [
+            "식사"
+          ]
         },
         {
           "readingRef": "ショク",
           "word": "食料",
-          "wordReading": "しょくりょう"
+          "wordReading": "しょくりょう",
+          "meaningsKo": [
+            "식량"
+          ]
         },
         {
           "readingRef": "ショク",
           "word": "食品",
-          "wordReading": "しょくひん"
+          "wordReading": "しょくひん",
+          "meaningsKo": [
+            "식품"
+          ]
         },
         {
           "readingRef": "ジキ",
           "word": "断食",
-          "wordReading": "だんじき"
+          "wordReading": "だんじき",
+          "meaningsKo": [
+            "단식"
+          ]
         },
         {
           "readingRef": "ジキ",
           "word": "乞食",
-          "wordReading": "こじき"
+          "wordReading": "こじき",
+          "meaningsKo": [
+            "거지"
+          ]
         }
       ]
     },
@@ -4210,52 +5666,86 @@
         {
           "readingRef": "コウ",
           "word": "高度",
-          "wordReading": "こうど"
+          "wordReading": "こうど",
+          "meaningsKo": [
+            "높이",
+            "고도"
+          ]
         },
         {
           "readingRef": "コウ",
           "word": "最高",
-          "wordReading": "さいこう"
+          "wordReading": "さいこう",
+          "meaningsKo": [
+            "최고"
+          ]
         },
         {
           "readingRef": "コウ",
           "word": "高速",
-          "wordReading": "こうそく"
+          "wordReading": "こうそく",
+          "meaningsKo": [
+            "고속"
+          ]
         },
         {
           "readingRef": "たか",
           "word": "高々",
-          "wordReading": "たかだか"
+          "wordReading": "たかだか",
+          "meaningsKo": [
+            "겨우",
+            "기껏"
+          ]
         },
         {
           "readingRef": "たか",
           "word": "手",
-          "wordReading": "て"
+          "wordReading": "て",
+          "meaningsKo": [
+            "손"
+          ]
         },
         {
           "readingRef": "たか",
           "word": "高",
-          "wordReading": "たか"
+          "wordReading": "たか",
+          "meaningsKo": [
+            "높다",
+            "높이"
+          ]
         },
         {
           "readingRef": "たか",
           "word": "上",
-          "wordReading": "あ"
+          "wordReading": "あ",
+          "meaningsKo": [
+            "위",
+            "올라가다"
+          ]
         },
         {
           "readingRef": "たか",
           "word": "日本",
-          "wordReading": "にほん"
+          "wordReading": "にほん",
+          "meaningsKo": [
+            "일본"
+          ]
         },
         {
           "readingRef": "たか",
           "word": "関心",
-          "wordReading": "かんしん"
+          "wordReading": "かんしん",
+          "meaningsKo": [
+            "관심"
+          ]
         },
         {
           "readingRef": "たか",
           "word": "品質",
-          "wordReading": "ひんしつ"
+          "wordReading": "ひんしつ",
+          "meaningsKo": [
+            "품질"
+          ]
         }
       ]
     }

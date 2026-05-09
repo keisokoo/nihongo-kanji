@@ -11,6 +11,7 @@ import type {
 import { tokensToPlain } from "~/lib/sentence";
 import { Spinner } from "./Spinner";
 import { ConfirmModal } from "./ConfirmModal";
+import { SentenceRender } from "./SentenceRender";
 import { showUsageToast, type ApiUsage } from "./Toast";
 
 type ApiExample = {
@@ -587,7 +588,7 @@ function ActiveWordQuiz({
         </div>
 
         {picked !== null && (
-          <div className="mt-4">
+          <div className="mt-4 flex flex-wrap items-baseline gap-x-3 gap-y-1">
             <span
               className={cn(
                 "text-base font-medium",
@@ -596,6 +597,11 @@ function ActiveWordQuiz({
             >
               {isCorrect ? "정답!" : `정답: ${word.wordReading}`}
             </span>
+            {isCorrect && word.meaningsKo && word.meaningsKo.length > 0 && (
+              <span className="text-sm text-neutral-600 dark:text-neutral-300">
+                뜻 — {word.meaningsKo.join(" · ")}
+              </span>
+            )}
           </div>
         )}
       </div>
@@ -1000,57 +1006,6 @@ function NavBtn({
         label
       )}
     </button>
-  );
-}
-
-function SentenceRender({
-  tokens,
-  revealTarget,
-  wordReading,
-}: {
-  tokens: SentenceToken[];
-  revealTarget: boolean;
-  wordReading: string;
-}) {
-  return (
-    <>
-      {tokens.map((t, i) => {
-        if (t.target) {
-          if (revealTarget) {
-            return (
-              <ruby
-                key={i}
-                className="font-semibold text-neutral-900 dark:text-neutral-100"
-              >
-                {t.text}
-                <rt className="text-[0.55em] font-normal text-emerald-600">
-                  {wordReading}
-                </rt>
-              </ruby>
-            );
-          }
-          return (
-            <span
-              key={i}
-              className="font-semibold text-neutral-900 underline decoration-dotted underline-offset-4 dark:text-neutral-100"
-            >
-              {t.text}
-            </span>
-          );
-        }
-        if (t.reading) {
-          return (
-            <ruby key={i}>
-              {t.text}
-              <rt className="text-[0.55em] font-normal text-neutral-500">
-                {t.reading}
-              </rt>
-            </ruby>
-          );
-        }
-        return <span key={i}>{t.text}</span>;
-      })}
-    </>
   );
 }
 

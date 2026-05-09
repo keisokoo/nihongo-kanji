@@ -8,6 +8,7 @@ import {
   pgEnum,
   uniqueIndex,
   jsonb,
+  boolean,
 } from "drizzle-orm/pg-core";
 import { relations } from "drizzle-orm";
 
@@ -40,6 +41,14 @@ export type ExampleExplanation = {
 export const readingTypeEnum = pgEnum("reading_type", ["on", "kun"]);
 export const exampleSourceEnum = pgEnum("example_source", ["seed", "generated"]);
 export const packKindEnum = pgEnum("pack_kind", ["jlpt", "custom"]);
+export const wordTestModeEnum = pgEnum("word_test_mode", [
+  "jp_to_ko",
+  "ko_to_jp",
+]);
+export const wordTestKindEnum = pgEnum("word_test_kind", [
+  "meaning",
+  "reading",
+]);
 
 /**
  * A pack is a top-level kanji collection. Pre-seeded JLPT levels (N5-N1)
@@ -89,6 +98,8 @@ export const words = pgTable("words", {
   }),
   word: varchar("word", { length: 64 }).notNull(),
   wordReading: varchar("word_reading", { length: 64 }).notNull(),
+  /** 1-3 short Korean meanings (translation candidates) for word-test mode. */
+  meaningsKo: jsonb("meanings_ko").$type<string[]>().notNull().default([]),
   source: exampleSourceEnum("source").notNull().default("seed"),
   createdAt: timestamp("created_at").defaultNow().notNull(),
   explanation: jsonb("explanation").$type<WordExplanation>(),
@@ -105,6 +116,65 @@ export const examples = pgTable("examples", {
   createdAt: timestamp("created_at").defaultNow().notNull(),
   explanation: jsonb("explanation").$type<ExampleExplanation>(),
 });
+
+/**
+ * A word test ("시험장") — a snapshot of words sourced from one or more packs,
+ * for the meaning-quiz mode. Item ordering, mode, and answer state are
+ * persisted so the user can pause and resume.
+ */
+export const wordTests = pgTable("word_tests", {
+  id: serial("id").primaryKey(),
+  name: varchar("name", { length: 128 }).notNull(),
+  /**
+   * "meaning" — JP↔KO 4-choice (current). One pick per item.
+   * "reading" — for each word: pick reading + pick meaning (two sub-picks).
+   */
+  kind: wordTestKindEnum("kind").notNull().default("meaning"),
+  /** Pack keys included at creation, for display only. */
+  sourcePacks: jsonb("source_packs").$type<string[]>().notNull().default([]),
+  total: integer("total").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+});
+
+export const wordTestItems = pgTable("word_test_items", {
+  id: serial("id").primaryKey(),
+  testId: integer("test_id")
+    .notNull()
+    .references(() => wordTests.id, { onDelete: "cascade" }),
+  /** Order within the test (0-indexed). */
+  position: integer("position").notNull(),
+  /** Original source word; nullable so a deleted source word doesn't drop items. */
+  sourceWordId: integer("source_word_id").references(() => words.id, {
+    onDelete: "set null",
+  }),
+  word: varchar("word", { length: 64 }).notNull(),
+  wordReading: varchar("word_reading", { length: 64 }).notNull(),
+  meaningsKo: jsonb("meanings_ko").$type<string[]>().notNull(),
+  /** kind="meaning" only — the JP↔KO direction. NULL for reading kind. */
+  mode: wordTestModeEnum("mode"),
+  /** kind="meaning": the single pick. NULL for reading kind. */
+  pickedChoice: text("picked_choice"),
+  isCorrect: boolean("is_correct"),
+  /** kind="reading": reading sub-pick. */
+  pickedReading: text("picked_reading"),
+  isCorrectReading: boolean("is_correct_reading"),
+  /** kind="reading": meaning sub-pick. */
+  pickedMeaning: text("picked_meaning"),
+  isCorrectMeaning: boolean("is_correct_meaning"),
+  /** Set when item fully answered (meaning: 1 pick; reading: BOTH sub-picks). */
+  answeredAt: timestamp("answered_at"),
+});
+
+export const wordTestsRelations = relations(wordTests, ({ many }) => ({
+  items: many(wordTestItems),
+}));
+
+export const wordTestItemsRelations = relations(wordTestItems, ({ one }) => ({
+  test: one(wordTests, {
+    fields: [wordTestItems.testId],
+    references: [wordTests.id],
+  }),
+}));
 
 export const audioCache = pgTable(
   "audio_cache",
@@ -166,6 +236,11 @@ export type Example = typeof examples.$inferSelect;
 export type AudioCache = typeof audioCache.$inferSelect;
 export type Pack = typeof packs.$inferSelect;
 export type PackKind = (typeof packKindEnum.enumValues)[number];
+export type WordTest = typeof wordTests.$inferSelect;
+export type WordTestItem = typeof wordTestItems.$inferSelect;
+export type WordTestMode = (typeof wordTestModeEnum.enumValues)[number];
+export type WordTestKind = (typeof wordTestKindEnum.enumValues)[number];
+export type ReadingSubPick = "reading" | "meaning";
 
 /** JLPT levels are reserved keys — custom packs cannot use these. */
 export const JLPT_LEVELS = ["N5", "N4", "N3", "N2", "N1"] as const;
