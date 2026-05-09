@@ -2,26 +2,23 @@ import { reactRouter } from "@react-router/dev/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
-import basicSsl from "@vitejs/plugin-basic-ssl";
 
 export default defineConfig({
-  // Dev + preview over LAN (e.g. https://192.168.x.x:5173 from phone).
-  // Required because crypto.subtle / service workers only work in secure
-  // contexts. basicSsl() generates a self-signed cert; first-time browser
-  // visit needs a trust prompt. Use `npm run preview` to test the real PWA
-  // (with sw.js + precache) — `npm run dev` does NOT build the SW.
+  // HTTPS는 cloudflared 터널이 담당 (.cloudflared 설정 참고). vite 자체는
+  // 평문 HTTP로 뜨고 cloudflared 가 외부에 진짜 cert 로 HTTPS 종단함.
+  // crypto.subtle / Service Worker는 secure context 한정이라
+  // localhost (127.0.0.1) 또는 cloudflared 가 준 *.trycloudflare.com /
+  // 영구 도메인으로 접속해야 동작함. LAN IP HTTP로는 키 저장이 silent fail.
   server: {
     host: true,
-    https: {},
   },
   preview: {
     host: true,
     port: 4173,
     strictPort: true,
-    https: {},
+    allowedHosts: ["nihongo.unsangu.com"],
   },
   plugins: [
-    basicSsl(),
     tailwindcss(),
     reactRouter(),
     // Manifest only — the SW is built separately by scripts/build-sw.mjs because

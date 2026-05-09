@@ -13,3 +13,6 @@
 # env (keys are entered via the app and stored in IndexedDB; no .env needed)
 .env
 .env.local
+
+# cloudflared tunnel config (계정/도메인/credential 포함, 로컬 전용)
+/.cloudflared/

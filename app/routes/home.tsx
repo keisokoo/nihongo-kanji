@@ -28,9 +28,14 @@ export default function Home({ loaderData }: Route.ComponentProps) {
       <div className="mx-auto max-w-[80rem] px-4 py-10 sm:px-8 sm:py-16">
         <header className="mb-8 flex flex-wrap items-start justify-between gap-4 sm:mb-12">
           <div>
-            <h1 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl dark:text-neutral-100">
+            <button
+              type="button"
+              onClick={() => window.location.reload()}
+              title="새로고침"
+              className="text-2xl font-bold tracking-tight text-neutral-900 transition hover:text-neutral-600 sm:text-3xl dark:text-neutral-100 dark:hover:text-neutral-400"
+            >
               Nihongo
-            </h1>
+            </button>
             <p className="mt-2 text-sm text-neutral-600 sm:text-base dark:text-neutral-400">
               일본어 한자 학습
             </p>

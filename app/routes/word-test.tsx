@@ -317,22 +317,21 @@ export default function WordTest({ loaderData }: Route.ComponentProps) {
   const finishedAll = answeredCount === total;
 
   // Per-item status for the sidebar list.
-  const itemStatuses: Array<"unanswered" | "correct" | "wrong"> = useMemo(() => {
-    return items.map((it) => {
-      if (test.kind === "meaning") {
-        const p = meaningPicks.get(it.id);
-        if (!p) return "unanswered";
-        return p.isCorrect ? "correct" : "wrong";
-      }
-      const r = readingPicks.get(it.id);
-      if (!r?.reading || !r?.meaning) return "unanswered";
-      return r.reading.isCorrect && r.meaning.isCorrect ? "correct" : "wrong";
-    });
-  }, [items, test.kind, meaningPicks, readingPicks]);
+  const itemStatuses: Array<"unanswered" | "correct" | "wrong"> =
+    useMemo(() => {
+      return items.map((it) => {
+        if (test.kind === "meaning") {
+          const p = meaningPicks.get(it.id);
+          if (!p) return "unanswered";
+          return p.isCorrect ? "correct" : "wrong";
+        }
+        const r = readingPicks.get(it.id);
+        if (!r?.reading || !r?.meaning) return "unanswered";
+        return r.reading.isCorrect && r.meaning.isCorrect ? "correct" : "wrong";
+      });
+    }, [items, test.kind, meaningPicks, readingPicks]);
 
-  const meaningPicked = current
-    ? (meaningPicks.get(current.id) ?? null)
-    : null;
+  const meaningPicked = current ? (meaningPicks.get(current.id) ?? null) : null;
   const readingPicksFor = current
     ? (readingPicks.get(current.id) ?? null)
     : null;
@@ -651,14 +650,17 @@ function ReadingCard({
   // Reveal target reading once the reading sub-pick is locked in (regardless of correctness).
   const showTargetReading = readingPicked !== null;
   // Reveal Korean translation only after BOTH sub-picks are answered.
-  const showTranslation =
-    readingPicked !== null && meaningPicked !== null;
+  const showTranslation = readingPicked !== null && meaningPicked !== null;
   const meaningEnabled = readingPicked !== null;
 
   // Example-level explanation (cached on the source example row, shared with the word pack).
   const [exampleExpl, setExampleExpl] = useState<ExampleExplanation | null>(
     item.example?.explanation ?? null,
   );
+  // Single section. Reading picked → instantly swap to the meaning step;
+  // step 2 surfaces the previous-step answer at the top for context.
+  const onStep2 = !!readingPicked;
+
   const [exampleExplOpen, setExampleExplOpen] = useState(false);
   const [exampleExplStatus, setExampleExplStatus] = useState<ExampleExplStatus>(
     { kind: "idle" },
@@ -699,25 +701,67 @@ function ReadingCard({
 
   return (
     <div className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-10 dark:border-neutral-800 dark:bg-neutral-900">
-      <div className="mb-3 flex items-center gap-2">
-        {item.focusKanji && (
-          <button
-            type="button"
-            onClick={() => setShowKanjiModal(true)}
-            title={`출처 한자 — ${item.focusKanji.character} (${item.focusKanji.packKey}). 클릭하면 한자 카드`}
-            className="group inline-flex items-center gap-1.5 rounded-md border border-neutral-200 bg-white px-2 py-0.5 text-base text-neutral-800 transition hover:border-neutral-400 hover:bg-neutral-50 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800"
-          >
-            <span className="text-lg leading-none [font-family:'Noto_Sans_JP',sans-serif]">
-              {item.focusKanji.character}
-            </span>
-            <span className="text-[10px] uppercase tracking-wide text-neutral-500 group-hover:text-neutral-700 dark:text-neutral-400 dark:group-hover:text-neutral-200">
-              한자 카드
-            </span>
-          </button>
+      <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+        <div className="flex items-center gap-2">
+          {item.focusKanji && (
+            <button
+              type="button"
+              onClick={() => setShowKanjiModal(true)}
+              title={`출처 한자 — ${item.focusKanji.character} (${item.focusKanji.packKey}). 클릭하면 한자 카드`}
+              className="group inline-flex items-center gap-1.5 rounded-md border border-neutral-200 bg-white px-2 py-0.5 text-base text-neutral-800 transition hover:border-neutral-400 hover:bg-neutral-50 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800"
+            >
+              <span className="text-lg leading-none [font-family:'Noto_Sans_JP',sans-serif]">
+                {item.focusKanji.character}
+              </span>
+              <span className="text-[10px] uppercase tracking-wide text-neutral-500 group-hover:text-neutral-700 dark:text-neutral-400 dark:group-hover:text-neutral-200">
+                한자 카드
+              </span>
+            </button>
+          )}
+          <span className="rounded bg-sky-100 px-2 py-0.5 text-[10px] uppercase tracking-wide text-sky-700 dark:bg-sky-950 dark:text-sky-300">
+            한자 읽기
+          </span>
+        </div>
+        {item.example && (
+          <div className="flex items-center gap-2">
+            <button
+              type="button"
+              disabled={ttsLoading}
+              onClick={() => play(sentencePlain)}
+              aria-label="예문 발음"
+              title="예문 발음 듣기"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-200 text-base text-neutral-600 hover:bg-neutral-100 disabled:opacity-50 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+            >
+              {sentenceTtsLoading ? <Spinner className="h-4 w-4" /> : "♪"}
+            </button>
+            <button
+              type="button"
+              disabled={
+                exampleExplStatus.kind === "loading" ||
+                (!exampleExpl && !ai.hasAi)
+              }
+              onClick={toggleExplanation}
+              aria-label="예문 해설"
+              aria-pressed={exampleExplOpen}
+              title={
+                !exampleExpl && !ai.hasAi
+                  ? "AI 키 미설정"
+                  : "예문 전체에 대한 해설 (늬앙스/문법/표현)"
+              }
+              className={`inline-flex h-9 w-9 items-center justify-center rounded-full border text-base transition disabled:opacity-50 ${
+                exampleExplOpen
+                  ? "border-sky-400 bg-sky-50 text-sky-900 dark:border-sky-500 dark:bg-sky-950 dark:text-sky-200"
+                  : "border-neutral-200 text-neutral-600 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+              }`}
+            >
+              {exampleExplStatus.kind === "loading" ? (
+                <Spinner className="h-4 w-4" />
+              ) : (
+                <span aria-hidden>📖</span>
+              )}
+            </button>
+          </div>
         )}
-        <span className="rounded bg-sky-100 px-2 py-0.5 text-[10px] uppercase tracking-wide text-sky-700 dark:bg-sky-950 dark:text-sky-300">
-          한자 읽기
-        </span>
       </div>
 
       {showKanjiModal && item.focusKanji && (
@@ -730,52 +774,13 @@ function ReadingCard({
       {item.example ? (
         <>
           <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4 sm:p-6 dark:border-neutral-800 dark:bg-neutral-950">
-            <div className="flex items-start gap-3">
-              <p className="flex-1 text-lg leading-loose text-neutral-800 sm:text-2xl dark:text-neutral-200 [font-family:'Noto_Sans_JP',sans-serif]">
-                <SentenceRender
-                  tokens={item.example.sentence as SentenceToken[]}
-                  revealTarget={showTargetReading}
-                  wordReading={item.wordReading}
-                />
-              </p>
-              <div className="mt-1 flex shrink-0 items-center gap-2 sm:mt-2">
-                <button
-                  type="button"
-                  disabled={ttsLoading}
-                  onClick={() => play(sentencePlain)}
-                  aria-label="예문 발음"
-                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-200 text-base text-neutral-600 hover:bg-neutral-100 disabled:opacity-50 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
-                >
-                  {sentenceTtsLoading ? <Spinner className="h-4 w-4" /> : "♪"}
-                </button>
-                <button
-                  type="button"
-                  disabled={
-                    exampleExplStatus.kind === "loading" ||
-                    (!exampleExpl && !ai.hasAi)
-                  }
-                  onClick={toggleExplanation}
-                  aria-label="예문 해설"
-                  aria-pressed={exampleExplOpen}
-                  title={
-                    !exampleExpl && !ai.hasAi
-                      ? "AI 키 미설정"
-                      : "예문 전체에 대한 해설 (늬앙스/문법/표현)"
-                  }
-                  className={`inline-flex h-9 w-9 items-center justify-center rounded-full border text-base transition disabled:opacity-50 ${
-                    exampleExplOpen
-                      ? "border-sky-400 bg-sky-50 text-sky-900 dark:border-sky-500 dark:bg-sky-950 dark:text-sky-200"
-                      : "border-neutral-200 text-neutral-600 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
-                  }`}
-                >
-                  {exampleExplStatus.kind === "loading" ? (
-                    <Spinner className="h-4 w-4" />
-                  ) : (
-                    <span aria-hidden>📖</span>
-                  )}
-                </button>
-              </div>
-            </div>
+            <p className="text-lg leading-loose text-neutral-800 sm:text-2xl dark:text-neutral-200 [font-family:'Noto_Sans_JP',sans-serif]">
+              <SentenceRender
+                tokens={item.example.sentence as SentenceToken[]}
+                revealTarget={showTargetReading}
+                wordReading={item.wordReading}
+              />
+            </p>
             {item.example.sentenceTranslationKo && (
               <p
                 className={`mt-3 text-sm transition-colors duration-300 sm:text-base ${
@@ -824,55 +829,54 @@ function ReadingCard({
         <NoExampleFallback item={item} />
       )}
 
-      {/* Step 1: pick the reading */}
+      {/* Single section. Header label (1/2 발음 → 2/2 뜻) and choice content
+          swap based on onStep2. Result indicator on header right. Step 2
+          surfaces the previous-step answer at the top so the user keeps
+          context without a delay/animation. */}
       <SubSection
-        step="1 / 2"
-        label="발음"
-        active={!readingPicked}
-        done={!!readingPicked}
+        step={onStep2 ? "2 / 2" : "1 / 2"}
+        label={onStep2 ? "뜻" : "발음"}
+        active={onStep2 ? !meaningPicked : !readingPicked}
+        done={onStep2 ? !!meaningPicked : !!readingPicked}
+        result={onStep2 ? (meaningPicked?.isCorrect ?? null) : null}
       >
-        <ChoiceGrid
-          choices={readingChoices}
-          picked={readingPicked}
-          submitting={submitting}
-          onPick={(c) => onPick(c, "reading")}
-          japanese
-        />
-        {readingPicked && (
-          <MiniResult
-            picked={readingPicked}
-            hint="발음"
-            correctText={item.wordReading}
-          />
+        {onStep2 && readingPicked && (
+          <div className="mb-3 flex flex-wrap items-center gap-2 rounded-md bg-neutral-50 px-3 py-1.5 text-xs dark:bg-neutral-950">
+            <span className="text-neutral-500">발음</span>
+            <span
+              className={
+                readingPicked.isCorrect
+                  ? "text-emerald-600 dark:text-emerald-400"
+                  : "text-rose-600 dark:text-rose-400"
+              }
+            >
+              {readingPicked.isCorrect ? "✓" : "✗"}
+            </span>
+            <span className="[font-family:'Noto_Sans_JP',sans-serif] text-neutral-700 dark:text-neutral-300">
+              {item.wordReading}
+            </span>
+          </div>
         )}
-      </SubSection>
-
-      {/* Step 2: pick the meaning */}
-      <SubSection
-        step="2 / 2"
-        label="뜻"
-        active={meaningEnabled && !meaningPicked}
-        done={!!meaningPicked}
-        disabled={!meaningEnabled}
-      >
-        <ChoiceGrid
-          choices={meaningChoices}
-          picked={meaningPicked}
-          submitting={submitting}
-          onPick={(c) => onPick(c, "meaning")}
-          disabled={!meaningEnabled}
-        />
-        {meaningPicked && (
-          <MiniResult
+        {onStep2 ? (
+          <ChoiceGrid
+            choices={meaningChoices}
             picked={meaningPicked}
-            hint="뜻"
-            correctText={item.meaningsKo.join(" · ")}
+            submitting={submitting}
+            onPick={(c) => onPick(c, "meaning")}
+          />
+        ) : (
+          <ChoiceGrid
+            choices={readingChoices}
+            picked={readingPicked}
+            submitting={submitting}
+            onPick={(c) => onPick(c, "reading")}
+            japanese
           />
         )}
       </SubSection>
 
       {readingPicked && meaningPicked && (
-        <div className="mt-5 rounded-lg bg-neutral-50 p-3 text-sm text-neutral-600 dark:bg-neutral-950 dark:text-neutral-400">
+        <div className="mt-4 rounded-lg bg-neutral-50 p-3 text-sm text-neutral-600 dark:bg-neutral-950 dark:text-neutral-400">
           {item.word} ({item.wordReading}) — {item.meaningsKo.join(", ")}
         </div>
       )}
@@ -886,6 +890,7 @@ function SubSection({
   active,
   done,
   disabled,
+  result,
   children,
 }: {
   step: string;
@@ -893,6 +898,8 @@ function SubSection({
   active: boolean;
   done: boolean;
   disabled?: boolean;
+  /** null = no answer yet; true = correct; false = wrong. Shown on header right. */
+  result?: boolean | null;
   children: React.ReactNode;
 }) {
   return (
@@ -905,47 +912,32 @@ function SubSection({
             : "border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-900"
       }`}
     >
-      <div className="mb-2 flex items-center gap-2">
-        <span className="text-[10px] uppercase tracking-wide text-neutral-500">
-          {step}
-        </span>
-        <span className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">
-          {label}
-        </span>
-        {done && (
-          <span className="text-xs text-emerald-600 dark:text-emerald-400">
-            ✓
+      <div className="mb-2 flex items-center justify-between gap-2">
+        <div className="flex items-center gap-2">
+          <span className="text-[10px] uppercase tracking-wide text-neutral-500">
+            {step}
+          </span>
+          <span className="text-sm font-semibold text-neutral-800 dark:text-neutral-200">
+            {label}
+          </span>
+          {done && result === undefined && (
+            <span className="text-xs text-emerald-600 dark:text-emerald-400">
+              ✓
+            </span>
+          )}
+        </div>
+        {result === true && (
+          <span className="text-xs font-medium text-emerald-600 dark:text-emerald-400">
+            ✓ 정답
+          </span>
+        )}
+        {result === false && (
+          <span className="text-xs font-medium text-rose-600 dark:text-rose-400">
+            ✗ 틀림
           </span>
         )}
       </div>
       {children}
-    </div>
-  );
-}
-
-function MiniResult({
-  picked,
-  hint,
-  correctText,
-}: {
-  picked: Pick_;
-  hint: string;
-  correctText: string;
-}) {
-  return (
-    <div className="mt-3 text-sm">
-      <span
-        className={`font-medium ${
-          picked.isCorrect ? "text-emerald-600" : "text-rose-600"
-        }`}
-      >
-        {picked.isCorrect ? `${hint} 정답!` : `${hint} 틀림`}
-      </span>
-      {!picked.isCorrect && (
-        <span className="ml-3 text-neutral-600 dark:text-neutral-300">
-          정답 — {correctText}
-        </span>
-      )}
     </div>
   );
 }
@@ -992,9 +984,7 @@ function NoExampleFallback({ item }: { item: ItemWithExample }) {
   const revalidator = useRevalidator();
   const ai = useAiAvailability();
   const [status, setStatus] = useState<
-    | { kind: "idle" }
-    | { kind: "loading" }
-    | { kind: "error"; message: string }
+    { kind: "idle" } | { kind: "loading" } | { kind: "error"; message: string }
   >({ kind: "idle" });
 
   async function generate() {
@@ -1276,7 +1266,9 @@ function StatusDot({
         : active
           ? "bg-neutral-400 dark:bg-neutral-500"
           : "bg-neutral-300 dark:bg-neutral-700";
-  return <span className={`inline-block h-2 w-2 shrink-0 rounded-full ${cls}`} />;
+  return (
+    <span className={`inline-block h-2 w-2 shrink-0 rounded-full ${cls}`} />
+  );
 }
 
 function KindBadge({ kind }: { kind: WordTestKind }) {

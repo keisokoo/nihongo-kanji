@@ -227,7 +227,15 @@ function SeedInstaller({ setPhase }: { setPhase: (p: Phase) => void }) {
         await installSeeds((p) => {
           if (!cancelled) setProgress(p);
         });
-        if (!cancelled) setPhase({ kind: "ready" });
+        if (cancelled) return;
+        // Hard reload — clientLoaders that already ran with empty IDB need to
+        // re-fetch with the new state. Cheaper / more reliable than threading
+        // revalidation through the gate.
+        if (typeof window !== "undefined") {
+          window.location.reload();
+        } else {
+          setPhase({ kind: "ready" });
+        }
       } catch (err) {
         const message = err instanceof Error ? err.message : "install failed";
         if (!cancelled) setError(message);
