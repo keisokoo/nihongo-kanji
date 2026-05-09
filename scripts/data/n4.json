@@ -6,7 +6,7 @@
   "kanji": [
     {
       "character": "不",
-      "meaningKo": "“아닐 부(불)”. 아니다, 부정",
+      "meaningKo": "아닐 부 — 아니다, 부정",
       "strokeCount": 4,
       "readings": [
         {
@@ -95,7 +95,7 @@
     },
     {
       "character": "世",
-      "meaningKo": "“세상 세”. 세상, 세계, 세대",
+      "meaningKo": "세상 세 — 세상, 세계, 세대",
       "strokeCount": 5,
       "readings": [
         {
@@ -220,7 +220,7 @@
     },
     {
       "character": "主",
-      "meaningKo": "“주인 주”. 주인",
+      "meaningKo": "주인 주 — 주인, 주된",
       "strokeCount": 5,
       "readings": [
         {
@@ -385,7 +385,7 @@
     },
     {
       "character": "事",
-      "meaningKo": "“일 사”. 일, 사항, 사건",
+      "meaningKo": "일 사 — 일, 사항, 사건",
       "strokeCount": 8,
       "readings": [
         {
@@ -515,7 +515,7 @@
     },
     {
       "character": "京",
-      "meaningKo": "“서울 경”. 수도",
+      "meaningKo": "서울 경 — 수도",
       "strokeCount": 8,
       "readings": [
         {
@@ -596,7 +596,7 @@
     },
     {
       "character": "仕",
-      "meaningKo": "“섬길 사”. 섬기다, 시중들다",
+      "meaningKo": "섬길 사 — 섬기다, 시중들다",
       "strokeCount": 5,
       "readings": [
         {
@@ -661,7 +661,7 @@
     },
     {
       "character": "代",
-      "meaningKo": "“대신할 대”. 대신하다, 시대",
+      "meaningKo": "대신할 대 — 대신하다, 시대",
       "strokeCount": 5,
       "readings": [
         {
@@ -759,7 +759,7 @@
     },
     {
       "character": "以",
-      "meaningKo": "“써 이”. ~로써, ~부터",
+      "meaningKo": "써 이 — ~로써, ~부터",
       "strokeCount": 5,
       "readings": [
         {
@@ -835,7 +835,7 @@
     },
     {
       "character": "会",
-      "meaningKo": "“모일 회”. 모이다, 만나다",
+      "meaningKo": "모일 회 — 모이다, 만나다",
       "strokeCount": 6,
       "readings": [
         {
@@ -922,7 +922,7 @@
     },
     {
       "character": "住",
-      "meaningKo": "“살 주”. 살다, 거주하다",
+      "meaningKo": "살 주 — 살다, 거주하다",
       "strokeCount": 7,
       "readings": [
         {
@@ -999,7 +999,7 @@
     },
     {
       "character": "体",
-      "meaningKo": "“몸 체”. 몸",
+      "meaningKo": "몸 체 — 몸, 신체",
       "strokeCount": 7,
       "readings": [
         {
@@ -1111,7 +1111,7 @@
     },
     {
       "character": "作",
-      "meaningKo": "“지을 작”. 만들다",
+      "meaningKo": "지을 작 — 만들다",
       "strokeCount": 7,
       "readings": [
         {
@@ -1225,7 +1225,7 @@
     },
     {
       "character": "使",
-      "meaningKo": "“부릴 사”. 쓰다, 사용하다",
+      "meaningKo": "부릴 사 — 쓰다, 사용하다",
       "strokeCount": 8,
       "readings": [
         {
@@ -1382,7 +1382,7 @@
     },
     {
       "character": "元",
-      "meaningKo": "“으뜸 원”. 근본, 근원, 으뜸",
+      "meaningKo": "으뜸 원 — 근본, 으뜸",
       "strokeCount": 4,
       "readings": [
         {
@@ -1738,7 +1738,7 @@
     },
     {
       "character": "写",
-      "meaningKo": "“베낄 사”. 베끼다, 사진",
+      "meaningKo": "베낄 사 — 베끼다, 사진",
       "strokeCount": 5,
       "readings": [
         {
@@ -1815,7 +1815,7 @@
     },
     {
       "character": "冬",
-      "meaningKo": "겨울 동",
+      "meaningKo": "겨울 동 — 겨울, 동절기",
       "strokeCount": 5,
       "readings": [
         {
@@ -1919,7 +1919,7 @@
     },
     {
       "character": "切",
-      "meaningKo": "“끊을 절”. 자르다",
+      "meaningKo": "끊을 절 — 자르다, 끊다",
       "strokeCount": 4,
       "readings": [
         {
@@ -2034,7 +2034,7 @@
     },
     {
       "character": "別",
-      "meaningKo": "“다를/나눌 별”. 나누다, 다르다",
+      "meaningKo": "다를 별 — 나누다, 다르다",
       "strokeCount": 7,
       "readings": [
         {
@@ -2084,7 +2084,7 @@
     },
     {
       "character": "力",
-      "meaningKo": "“힘 력(역)”. 힘",
+      "meaningKo": "힘 력 — 힘, 능력",
       "strokeCount": 2,
       "readings": [
         {
@@ -2305,7 +2305,7 @@
     },
     {
       "character": "動",
-      "meaningKo": "“움직일 동”. 움직이다",
+      "meaningKo": "움직일 동 — 움직이다",
       "strokeCount": 11,
       "readings": [
         {
@@ -2370,7 +2370,7 @@
     },
     {
       "character": "医",
-      "meaningKo": "“의원 의”. 의사",
+      "meaningKo": "의원 의 — 의사, 의술",
       "strokeCount": 7,
       "readings": [
         {
@@ -2439,7 +2439,7 @@
     },
     {
       "character": "去",
-      "meaningKo": "“갈 거”. 떠나가다, 지나가다",
+      "meaningKo": "갈 거 — 떠나가다, 지나가다",
       "strokeCount": 5,
       "readings": [
         {
@@ -2519,7 +2519,7 @@
     },
     {
       "character": "口",
-      "meaningKo": "“입 구”. 입",
+      "meaningKo": "입 구 — 입, 출입구",
       "strokeCount": 3,
       "readings": [
         {
@@ -2682,7 +2682,7 @@
     },
     {
       "character": "古",
-      "meaningKo": "“옛 고”. 오래된",
+      "meaningKo": "옛 고 — 오래된, 옛날",
       "strokeCount": 5,
       "readings": [
         {
@@ -2735,7 +2735,7 @@
     },
     {
       "character": "台",
-      "meaningKo": "“대 대”. 받침대",
+      "meaningKo": "대 대 — 받침대, 대(臺)",
       "strokeCount": 5,
       "readings": [
         {
@@ -2848,7 +2848,7 @@
     },
     {
       "character": "同",
-      "meaningKo": "“한가지 동”. 같다, 동일",
+      "meaningKo": "한가지 동 — 같다, 동일",
       "strokeCount": 6,
       "readings": [
         {
@@ -2894,7 +2894,7 @@
     },
     {
       "character": "味",
-      "meaningKo": "“맛 미”. 맛, 맛보다, 흥미, 재미",
+      "meaningKo": "맛 미 — 맛, 흥미, 재미",
       "strokeCount": 8,
       "readings": [
         {
@@ -3000,7 +3000,7 @@
     },
     {
       "character": "品",
-      "meaningKo": "“물건 품”. 물건, 물품",
+      "meaningKo": "물건 품 — 물건, 물품, 품격",
       "strokeCount": 9,
       "readings": [
         {
@@ -3092,7 +3092,7 @@
     },
     {
       "character": "員",
-      "meaningKo": "“인원 원”. 인원, 점원",
+      "meaningKo": "인원 원 — 인원, 점원",
       "strokeCount": 10,
       "readings": [
         {
@@ -3163,7 +3163,7 @@
     },
     {
       "character": "問",
-      "meaningKo": "“물을 문”. 묻다",
+      "meaningKo": "물을 문 — 묻다, 질문",
       "strokeCount": 11,
       "readings": [
         {
@@ -3245,7 +3245,7 @@
     },
     {
       "character": "図",
-      "meaningKo": "“그림 도”. 그림, 지도",
+      "meaningKo": "그림 도 — 그림, 지도, 도면",
       "strokeCount": 7,
       "readings": [
         {
@@ -3355,7 +3355,7 @@
     },
     {
       "character": "地",
-      "meaningKo": "“땅 지”. 땅, 대지",
+      "meaningKo": "땅 지 — 땅, 대지",
       "strokeCount": 6,
       "readings": [
         {
@@ -3526,7 +3526,7 @@
     },
     {
       "character": "場",
-      "meaningKo": "“마당 장”. 장소, 곳",
+      "meaningKo": "마당 장 — 장소, 곳",
       "strokeCount": 12,
       "readings": [
         {
@@ -3648,7 +3648,7 @@
     },
     {
       "character": "売",
-      "meaningKo": "“팔 매”. 팔다",
+      "meaningKo": "팔 매 — 팔다, 매매",
       "strokeCount": 7,
       "readings": [
         {
@@ -3697,7 +3697,7 @@
     },
     {
       "character": "夏",
-      "meaningKo": "“여름 하”. 여름",
+      "meaningKo": "여름 하 — 여름, 하절기",
       "strokeCount": 10,
       "readings": [
         {
@@ -3792,7 +3792,7 @@
     },
     {
       "character": "夕",
-      "meaningKo": "저녁 석",
+      "meaningKo": "저녁 석 — 저녁, 해질녘",
       "strokeCount": 3,
       "readings": [
         {
@@ -3898,7 +3898,7 @@
     },
     {
       "character": "多",
-      "meaningKo": "“많을 다”. 많다",
+      "meaningKo": "많을 다 — 많다",
       "strokeCount": 6,
       "readings": [
         {
@@ -3967,7 +3967,7 @@
     },
     {
       "character": "夜",
-      "meaningKo": "“밤 야”. 밤",
+      "meaningKo": "밤 야 — 밤",
       "strokeCount": 8,
       "readings": [
         {
@@ -4216,7 +4216,7 @@
     },
     {
       "character": "始",
-      "meaningKo": "“시작 시”. 시작, 시작하다",
+      "meaningKo": "시작 시 — 시작, 시작하다",
       "strokeCount": 8,
       "readings": [
         {
@@ -4266,7 +4266,7 @@
     },
     {
       "character": "字",
-      "meaningKo": "“글자 자”. 글자",
+      "meaningKo": "글자 자 — 글자, 문자",
       "strokeCount": 6,
       "readings": [
         {
@@ -4335,7 +4335,7 @@
     },
     {
       "character": "安",
-      "meaningKo": "“편안 안”. 편안하다",
+      "meaningKo": "편안 안 — 편안하다, 싸다",
       "strokeCount": 6,
       "readings": [
         {
@@ -4392,7 +4392,7 @@
     },
     {
       "character": "室",
-      "meaningKo": "“집 실”. 방, 거실, 아내",
+      "meaningKo": "집 실 — 방, 거실, 아내",
       "strokeCount": 9,
       "readings": [
         {
@@ -4509,7 +4509,7 @@
     },
     {
       "character": "家",
-      "meaningKo": "“집 가”. 집",
+      "meaningKo": "집 가 — 집, 가족, 전문가",
       "strokeCount": 10,
       "readings": [
         {
@@ -4694,7 +4694,7 @@
     },
     {
       "character": "少",
-      "meaningKo": "“적을 소”. 적다",
+      "meaningKo": "적을 소 — 적다",
       "strokeCount": 4,
       "readings": [
         {
@@ -4758,7 +4758,7 @@
     },
     {
       "character": "屋",
-      "meaningKo": "“집 옥”. 지붕, 집",
+      "meaningKo": "집 옥 — 지붕, 집, 가게",
       "strokeCount": 9,
       "readings": [
         {
@@ -4874,7 +4874,7 @@
     },
     {
       "character": "工",
-      "meaningKo": "“장인 공”. 공작, 공정, 가공",
+      "meaningKo": "장인 공 — 공작, 공정, 가공",
       "strokeCount": 3,
       "readings": [
         {
@@ -4979,7 +4979,7 @@
     },
     {
       "character": "帰",
-      "meaningKo": "“돌아갈 귀”. 돌아가다, 돌아오다, 귀가하다",
+      "meaningKo": "돌아갈 귀 — 돌아가다, 돌아오다",
       "strokeCount": 10,
       "readings": [
         {
@@ -5051,7 +5051,7 @@
     },
     {
       "character": "広",
-      "meaningKo": "“넓을 광”. 넓다",
+      "meaningKo": "넓을 광 — 넓다",
       "strokeCount": 5,
       "readings": [
         {
@@ -5113,7 +5113,7 @@
     },
     {
       "character": "店",
-      "meaningKo": "“가게 점”. 가게",
+      "meaningKo": "가게 점 — 가게, 상점",
       "strokeCount": 8,
       "readings": [
         {
@@ -5207,7 +5207,7 @@
     },
     {
       "character": "度",
-      "meaningKo": "“법도 도”. 정도, 횟수, 제도",
+      "meaningKo": "법도 도 — 정도, 횟수, 제도",
       "strokeCount": 9,
       "readings": [
         {
@@ -5381,7 +5381,7 @@
     },
     {
       "character": "建",
-      "meaningKo": "“세울 건”. 설립하다, 세우다, 건설하다",
+      "meaningKo": "세울 건 — 설립하다, 건설하다",
       "strokeCount": 9,
       "readings": [
         {
@@ -5582,7 +5582,7 @@
     },
     {
       "character": "強",
-      "meaningKo": "“강할 강”. 강하다",
+      "meaningKo": "강할 강 — 강하다, 튼튼하다",
       "strokeCount": 11,
       "readings": [
         {
@@ -5706,7 +5706,7 @@
     },
     {
       "character": "待",
-      "meaningKo": "“기다릴 대”. 기다리다, 대기하다",
+      "meaningKo": "기다릴 대 — 기다리다, 대기하다",
       "strokeCount": 9,
       "readings": [
         {
@@ -5770,7 +5770,7 @@
     },
     {
       "character": "心",
-      "meaningKo": "“마음 심”. 마음, 의식, 정신",
+      "meaningKo": "마음 심 — 마음, 의식, 정신",
       "strokeCount": 4,
       "readings": [
         {
@@ -5894,7 +5894,7 @@
     },
     {
       "character": "思",
-      "meaningKo": "“생각 사”. 생각하다",
+      "meaningKo": "생각 사 — 생각하다",
       "strokeCount": 9,
       "readings": [
         {
@@ -5962,7 +5962,7 @@
     },
     {
       "character": "急",
-      "meaningKo": "“급할 급”. 급하다, 갑작스럽다",
+      "meaningKo": "급할 급 — 급하다, 갑작스럽다",
       "strokeCount": 9,
       "readings": [
         {
@@ -6029,7 +6029,7 @@
     },
     {
       "character": "悪",
-      "meaningKo": "“악할 악/미워할 오”. 악, 나쁘다, 미워하다",
+      "meaningKo": "악할 악 — 악, 나쁘다",
       "strokeCount": 11,
       "readings": [
         {
@@ -6191,7 +6191,7 @@
     },
     {
       "character": "意",
-      "meaningKo": "“뜻 의”. 뜻, 생각, 의미",
+      "meaningKo": "뜻 의 — 뜻, 생각, 의미",
       "strokeCount": 13,
       "readings": [
         {
@@ -6260,7 +6260,7 @@
     },
     {
       "character": "手",
-      "meaningKo": "“손 수”. 손",
+      "meaningKo": "손 수 — 손, 솜씨",
       "strokeCount": 4,
       "readings": [
         {
@@ -6398,7 +6398,7 @@
     },
     {
       "character": "持",
-      "meaningKo": "“가질 지”. 가지다, 지니다",
+      "meaningKo": "가질 지 — 가지다, 지니다",
       "strokeCount": 9,
       "readings": [
         {
@@ -6466,7 +6466,7 @@
     },
     {
       "character": "教",
-      "meaningKo": "“가르칠 교”. 가르치다",
+      "meaningKo": "가르칠 교 — 가르치다, 교육",
       "strokeCount": 11,
       "readings": [
         {
@@ -6529,7 +6529,7 @@
     },
     {
       "character": "文",
-      "meaningKo": "“글월 문”. 문장, 문예, 글자",
+      "meaningKo": "글월 문 — 문장, 문예, 글자",
       "strokeCount": 4,
       "readings": [
         {
@@ -6682,7 +6682,7 @@
     },
     {
       "character": "料",
-      "meaningKo": "“헤아릴 료”. 요금, 재료",
+      "meaningKo": "헤아릴 료 — 요금, 재료",
       "strokeCount": 10,
       "readings": [
         {
@@ -6737,7 +6737,7 @@
     },
     {
       "character": "新",
-      "meaningKo": "“새 신”. 새롭다, 새것, 새로운",
+      "meaningKo": "새 신 — 새롭다, 새것",
       "strokeCount": 13,
       "readings": [
         {
@@ -6853,7 +6853,7 @@
     },
     {
       "character": "方",
-      "meaningKo": "“모 방”. 방향, 방법",
+      "meaningKo": "모 방 — 방향, 방법",
       "strokeCount": 4,
       "readings": [
         {
@@ -7111,7 +7111,7 @@
     },
     {
       "character": "族",
-      "meaningKo": "“겨레 족”. 가족, 일족, 민족",
+      "meaningKo": "겨레 족 — 가족, 일족, 민족",
       "strokeCount": 11,
       "readings": [
         {
@@ -7167,7 +7167,7 @@
     },
     {
       "character": "早",
-      "meaningKo": "“이를 조”. 이르다, (시간적으로) 빠르다",
+      "meaningKo": "이를 조 — 이르다, 빠르다",
       "strokeCount": 6,
       "readings": [
         {
@@ -7278,7 +7278,7 @@
     },
     {
       "character": "明",
-      "meaningKo": "“밝을 명”. 밝다",
+      "meaningKo": "밝을 명 — 밝다, 분명하다",
       "strokeCount": 8,
       "readings": [
         {
@@ -7441,7 +7441,7 @@
     },
     {
       "character": "映",
-      "meaningKo": "“비칠 영”. 비추다, 비치다",
+      "meaningKo": "비칠 영 — 비추다, 비치다",
       "strokeCount": 9,
       "readings": [
         {
@@ -7514,7 +7514,7 @@
     },
     {
       "character": "春",
-      "meaningKo": "“봄 춘”. 봄",
+      "meaningKo": "봄 춘 — 봄, 춘절",
       "strokeCount": 9,
       "readings": [
         {
@@ -7847,7 +7847,7 @@
     },
     {
       "character": "有",
-      "meaningKo": "“있을 유”. 있다, 가지다",
+      "meaningKo": "있을 유 — 있다, 가지다",
       "strokeCount": 6,
       "readings": [
         {
@@ -8040,7 +8040,7 @@
     },
     {
       "character": "朝",
-      "meaningKo": "“아침 조”. 아침",
+      "meaningKo": "아침 조 — 아침, 조정",
       "strokeCount": 12,
       "readings": [
         {
@@ -8129,7 +8129,7 @@
     },
     {
       "character": "業",
-      "meaningKo": "“업 업”. 직업, 사업, 일",
+      "meaningKo": "업 업 — 직업, 사업, 일",
       "strokeCount": 13,
       "readings": [
         {
@@ -8262,7 +8262,7 @@
     },
     {
       "character": "楽",
-      "meaningKo": "“즐길 락”. 즐겁다, 편안함, 음악",
+      "meaningKo": "즐길 락 — 즐겁다, 음악, 편안함",
       "strokeCount": 13,
       "readings": [
         {
@@ -8379,7 +8379,7 @@
     },
     {
       "character": "歌",
-      "meaningKo": "“노래 가”. 노래, 노래하다",
+      "meaningKo": "노래 가 — 노래, 노래하다",
       "strokeCount": 14,
       "readings": [
         {
@@ -8457,7 +8457,7 @@
     },
     {
       "character": "止",
-      "meaningKo": "“그칠 지”. 멈추다, 중지하다",
+      "meaningKo": "그칠 지 — 멈추다, 중지하다",
       "strokeCount": 4,
       "readings": [
         {
@@ -8546,7 +8546,7 @@
     },
     {
       "character": "正",
-      "meaningKo": "“바를 정”. 바르다",
+      "meaningKo": "바를 정 — 바르다, 정확하다",
       "strokeCount": 5,
       "readings": [
         {
@@ -8692,7 +8692,7 @@
     },
     {
       "character": "歩",
-      "meaningKo": "“걸음 보”. 걸음, 걷다",
+      "meaningKo": "걸음 보 — 걸음, 걷다",
       "strokeCount": 8,
       "readings": [
         {
@@ -8792,7 +8792,7 @@
     },
     {
       "character": "死",
-      "meaningKo": "“죽을 사”. 죽음, 죽다",
+      "meaningKo": "죽을 사 — 죽음, 죽다",
       "strokeCount": 6,
       "readings": [
         {
@@ -8869,7 +8869,7 @@
     },
     {
       "character": "注",
-      "meaningKo": "“부을 주”. 쏟다, 집중하다",
+      "meaningKo": "부을 주 — 쏟다, 집중하다",
       "strokeCount": 8,
       "readings": [
         {
@@ -9036,7 +9036,7 @@
     },
     {
       "character": "海",
-      "meaningKo": "“바다 해”. 바다",
+      "meaningKo": "바다 해 — 바다",
       "strokeCount": 9,
       "readings": [
         {
@@ -9295,7 +9295,7 @@
     },
     {
       "character": "物",
-      "meaningKo": "“물건 물”. 물건",
+      "meaningKo": "물건 물 — 물건, 물질",
       "strokeCount": 8,
       "readings": [
         {
@@ -9456,7 +9456,7 @@
     },
     {
       "character": "特",
-      "meaningKo": "“특별할 특”. 특별함",
+      "meaningKo": "특별할 특 — 특별함, 독특함",
       "strokeCount": 10,
       "readings": [
         {
@@ -9601,7 +9601,7 @@
     },
     {
       "character": "理",
-      "meaningKo": "“다스릴 리”. 이치, 진리, 논리",
+      "meaningKo": "다스릴 리 — 이치, 진리, 논리",
       "strokeCount": 11,
       "readings": [
         {
@@ -9661,7 +9661,7 @@
     },
     {
       "character": "用",
-      "meaningKo": "“쓸 용”. 쓰다, 사용하다, 이용하다",
+      "meaningKo": "쓸 용 — 쓰다, 사용하다",
       "strokeCount": 5,
       "readings": [
         {
@@ -9720,7 +9720,7 @@
     },
     {
       "character": "田",
-      "meaningKo": "“밭 전”. 밭",
+      "meaningKo": "밭 전 — 밭, 논",
       "strokeCount": 5,
       "readings": [
         {
@@ -9793,7 +9793,7 @@
     },
     {
       "character": "町",
-      "meaningKo": "“밭두둑 정”. 시가지, 일본의 행정 구역(한국의 “읍”에 해당)",
+      "meaningKo": "밭두둑 정 — 시가지, 행정 구역",
       "strokeCount": 7,
       "readings": [
         {
@@ -9854,7 +9854,7 @@
     },
     {
       "character": "画",
-      "meaningKo": "“그림 화/그을 획”. 그림/획",
+      "meaningKo": "그림 화 — 그림, 영화, 획",
       "strokeCount": 8,
       "readings": [
         {
@@ -10013,7 +10013,7 @@
     },
     {
       "character": "界",
-      "meaningKo": "“지경 계”. 경계, 범위 안",
+      "meaningKo": "지경 계 — 경계, 범위",
       "strokeCount": 9,
       "readings": [
         {
@@ -10070,7 +10070,7 @@
     },
     {
       "character": "病",
-      "meaningKo": "“병 병”. 질병, 아프다",
+      "meaningKo": "병 병 — 질병, 아프다",
       "strokeCount": 10,
       "readings": [
         {
@@ -10172,7 +10172,7 @@
     },
     {
       "character": "発",
-      "meaningKo": "“쏠 발”. 쏘다, 일으키다, 발생하다",
+      "meaningKo": "쏠 발 — 쏘다, 일으키다, 발생",
       "strokeCount": 9,
       "readings": [
         {
@@ -10296,7 +10296,7 @@
     },
     {
       "character": "目",
-      "meaningKo": "“눈 목”. 눈",
+      "meaningKo": "눈 목 — 눈, 항목",
       "strokeCount": 5,
       "readings": [
         {
@@ -10440,7 +10440,7 @@
     },
     {
       "character": "真",
-      "meaningKo": "“참 진”. 참, 진실",
+      "meaningKo": "참 진 — 참, 진실",
       "strokeCount": 10,
       "readings": [
         {
@@ -10581,7 +10581,7 @@
     },
     {
       "character": "着",
-      "meaningKo": "“붙을 착”. 붙다, 입다",
+      "meaningKo": "붙을 착 — 붙다, 입다, 도착",
       "strokeCount": 12,
       "readings": [
         {
@@ -10688,7 +10688,7 @@
     },
     {
       "character": "知",
-      "meaningKo": "“알 지”. 알다, 지혜",
+      "meaningKo": "알 지 — 알다, 지혜",
       "strokeCount": 8,
       "readings": [
         {
@@ -10753,7 +10753,7 @@
     },
     {
       "character": "研",
-      "meaningKo": "“갈 연”. 갈다, 갈고닦다, 노력하다, 연구하다",
+      "meaningKo": "갈 연 — 갈고닦다, 연구하다",
       "strokeCount": 9,
       "readings": [
         {
@@ -10800,7 +10800,7 @@
     },
     {
       "character": "社",
-      "meaningKo": "“모일 사”. 모이다, 단체, 사회, 신사",
+      "meaningKo": "모일 사 — 단체, 사회, 신사",
       "strokeCount": 7,
       "readings": [
         {
@@ -10876,7 +10876,7 @@
     },
     {
       "character": "私",
-      "meaningKo": "“사사로울 사”. 나, 개인",
+      "meaningKo": "사사로울 사 — 나, 개인",
       "strokeCount": 7,
       "readings": [
         {
@@ -10942,7 +10942,7 @@
     },
     {
       "character": "秋",
-      "meaningKo": "“가을 추”. 가을",
+      "meaningKo": "가을 추 — 가을, 추절",
       "strokeCount": 9,
       "readings": [
         {
@@ -11023,7 +11023,7 @@
     },
     {
       "character": "究",
-      "meaningKo": "“연구할 구”. 연구하다, 탐구하다",
+      "meaningKo": "연구할 구 — 연구하다, 탐구하다",
       "strokeCount": 7,
       "readings": [
         {
@@ -11074,7 +11074,7 @@
     },
     {
       "character": "空",
-      "meaningKo": "“빌 공”. 허공, 비어있음",
+      "meaningKo": "빌 공 — 허공, 비어있음, 하늘",
       "strokeCount": 8,
       "readings": [
         {
@@ -11176,7 +11176,7 @@
     },
     {
       "character": "立",
-      "meaningKo": "“설 립”. 서다",
+      "meaningKo": "설 립 — 서다, 세우다",
       "strokeCount": 5,
       "readings": [
         {
@@ -11277,7 +11277,7 @@
     },
     {
       "character": "答",
-      "meaningKo": "“대답 답”. 대답하다",
+      "meaningKo": "대답 답 — 대답하다",
       "strokeCount": 12,
       "readings": [
         {
@@ -11340,7 +11340,7 @@
     },
     {
       "character": "紙",
-      "meaningKo": "“종이 지”. 종이",
+      "meaningKo": "종이 지 — 종이",
       "strokeCount": 10,
       "readings": [
         {
@@ -11413,7 +11413,7 @@
     },
     {
       "character": "終",
-      "meaningKo": "“마칠 종”. 끝나다, 마지막",
+      "meaningKo": "마칠 종 — 끝나다, 마지막",
       "strokeCount": 11,
       "readings": [
         {
@@ -11621,7 +11621,7 @@
     },
     {
       "character": "考",
-      "meaningKo": "“생각할 고”. 생각하다, 깊이 헤아리다, 조사하다",
+      "meaningKo": "생각할 고 — 생각하다, 헤아리다",
       "strokeCount": 6,
       "readings": [
         {
@@ -11684,7 +11684,7 @@
     },
     {
       "character": "者",
-      "meaningKo": "“놈 자”. 사람; 행동의 주체",
+      "meaningKo": "놈 자 — 사람, 행동의 주체",
       "strokeCount": 8,
       "readings": [
         {
@@ -11876,7 +11876,7 @@
     },
     {
       "character": "自",
-      "meaningKo": "“스스로 자”. 자신, 자기",
+      "meaningKo": "스스로 자 — 자신, 스스로",
       "strokeCount": 6,
       "readings": [
         {
@@ -11962,7 +11962,7 @@
     },
     {
       "character": "色",
-      "meaningKo": "“빛 색”. 색, 색깔, 정욕",
+      "meaningKo": "빛 색 — 색, 색깔",
       "strokeCount": 6,
       "readings": [
         {
@@ -12100,7 +12100,7 @@
     },
     {
       "character": "花",
-      "meaningKo": "“꽃 화”. 꽃",
+      "meaningKo": "꽃 화 — 꽃",
       "strokeCount": 7,
       "readings": [
         {
@@ -12221,7 +12221,7 @@
     },
     {
       "character": "英",
-      "meaningKo": "“꽃부리/뛰어날 영”. 뛰어나다, 영국",
+      "meaningKo": "꽃부리 영 — 뛰어나다, 영국",
       "strokeCount": 8,
       "readings": [
         {
@@ -12383,7 +12383,7 @@
     },
     {
       "character": "親",
-      "meaningKo": "“친할 친”. 부모, 친밀한",
+      "meaningKo": "친할 친 — 부모, 친밀한",
       "strokeCount": 16,
       "readings": [
         {
@@ -12510,7 +12510,7 @@
     },
     {
       "character": "言",
-      "meaningKo": "“말씀 언”. 말, 단어, 말하다",
+      "meaningKo": "말씀 언 — 말, 말하다",
       "strokeCount": 7,
       "readings": [
         {
@@ -12651,7 +12651,7 @@
     },
     {
       "character": "計",
-      "meaningKo": "“셀 계”. 수를 세다, 계산하다",
+      "meaningKo": "셀 계 — 수를 세다, 계산하다",
       "strokeCount": 9,
       "readings": [
         {
@@ -12715,7 +12715,7 @@
     },
     {
       "character": "試",
-      "meaningKo": "“시험 시”. 시험하다",
+      "meaningKo": "시험 시 — 시험하다",
       "strokeCount": 13,
       "readings": [
         {
@@ -12779,7 +12779,7 @@
     },
     {
       "character": "買",
-      "meaningKo": "“살 매”. 사다, 구매하다",
+      "meaningKo": "살 매 — 사다, 구매하다",
       "strokeCount": 12,
       "readings": [
         {
@@ -12933,7 +12933,7 @@
     },
     {
       "character": "質",
-      "meaningKo": "“바탕 질”. 성질, 기질, 물질",
+      "meaningKo": "바탕 질 — 성질, 물질",
       "strokeCount": 15,
       "readings": [
         {
@@ -13054,7 +13054,7 @@
     },
     {
       "character": "赤",
-      "meaningKo": "“붉을 적”. 빨강",
+      "meaningKo": "붉을 적 — 빨강, 붉다",
       "strokeCount": 7,
       "readings": [
         {
@@ -13131,7 +13131,7 @@
     },
     {
       "character": "走",
-      "meaningKo": "“달릴 주”. 달리다",
+      "meaningKo": "달릴 주 — 달리다",
       "strokeCount": 7,
       "readings": [
         {
@@ -13176,7 +13176,7 @@
     },
     {
       "character": "起",
-      "meaningKo": "“일어날 기”. 일어나다",
+      "meaningKo": "일어날 기 — 일어나다",
       "strokeCount": 10,
       "readings": [
         {
@@ -13233,7 +13233,7 @@
     },
     {
       "character": "足",
-      "meaningKo": "“발 족”. 발",
+      "meaningKo": "발 족 — 발, 다리",
       "strokeCount": 7,
       "readings": [
         {
@@ -13333,7 +13333,7 @@
     },
     {
       "character": "転",
-      "meaningKo": "“구를 전”. 구르다, 돌다, 방향을 전환하다",
+      "meaningKo": "구를 전 — 구르다, 돌다, 전환하다",
       "strokeCount": 11,
       "readings": [
         {
@@ -13421,7 +13421,7 @@
     },
     {
       "character": "近",
-      "meaningKo": "“가까울 근”. 가깝다",
+      "meaningKo": "가까울 근 — 가깝다",
       "strokeCount": 7,
       "readings": [
         {
@@ -13487,7 +13487,7 @@
     },
     {
       "character": "送",
-      "meaningKo": "“보낼 송”. 보내다, 전송하다",
+      "meaningKo": "보낼 송 — 보내다, 전송하다",
       "strokeCount": 9,
       "readings": [
         {
@@ -13546,7 +13546,7 @@
     },
     {
       "character": "通",
-      "meaningKo": "“통할 통”. 통하다, 지나가다",
+      "meaningKo": "통할 통 — 통하다, 지나가다",
       "strokeCount": 10,
       "readings": [
         {
@@ -13649,7 +13649,7 @@
     },
     {
       "character": "週",
-      "meaningKo": "“돌 주”. 1주일(week)",
+      "meaningKo": "돌 주 — 일주일, 주",
       "strokeCount": 11,
       "readings": [
         {
@@ -13706,7 +13706,7 @@
     },
     {
       "character": "運",
-      "meaningKo": "“옮길 운”. 옮기다, 운반하다, 나르다, 운/행운",
+      "meaningKo": "옮길 운 — 옮기다, 운반, 운명",
       "strokeCount": 12,
       "readings": [
         {
@@ -13795,7 +13795,7 @@
     },
     {
       "character": "道",
-      "meaningKo": "“길 도”. 길, 도로",
+      "meaningKo": "길 도 — 길, 도로, 도리",
       "strokeCount": 12,
       "readings": [
         {
@@ -13921,7 +13921,7 @@
     },
     {
       "character": "重",
-      "meaningKo": "“무거울 중”. 무겁다, 겹치다",
+      "meaningKo": "무거울 중 — 무겁다, 겹치다",
       "strokeCount": 9,
       "readings": [
         {
@@ -14136,7 +14136,7 @@
     },
     {
       "character": "野",
-      "meaningKo": "“들 야”. 들, 벌판",
+      "meaningKo": "들 야 — 들, 벌판, 야생",
       "strokeCount": 11,
       "readings": [
         {
@@ -14227,7 +14227,7 @@
     },
     {
       "character": "銀",
-      "meaningKo": "“은 은”. 은(silver)",
+      "meaningKo": "은 은 — 은, 은빛",
       "strokeCount": 14,
       "readings": [
         {
@@ -14272,7 +14272,7 @@
     },
     {
       "character": "開",
-      "meaningKo": "“열 개”. 열다",
+      "meaningKo": "열 개 — 열다",
       "strokeCount": 12,
       "readings": [
         {
@@ -14366,7 +14366,7 @@
     },
     {
       "character": "院",
-      "meaningKo": "“집 원”. 관청/학교/병원 등 각종 기관",
+      "meaningKo": "집 원 — 관청, 학교, 기관",
       "strokeCount": 10,
       "readings": [
         {
@@ -14407,7 +14407,7 @@
     },
     {
       "character": "集",
-      "meaningKo": "“모을 집”. 모이다, 모으다",
+      "meaningKo": "모을 집 — 모이다, 모으다",
       "strokeCount": 12,
       "readings": [
         {
@@ -14475,7 +14475,7 @@
     },
     {
       "character": "青",
-      "meaningKo": "“푸를 청”. 푸르다",
+      "meaningKo": "푸를 청 — 푸르다, 파랑",
       "strokeCount": 8,
       "readings": [
         {
@@ -14614,7 +14614,7 @@
     },
     {
       "character": "音",
-      "meaningKo": "“소리 음”. 소리, 음",
+      "meaningKo": "소리 음 — 소리, 음",
       "strokeCount": 9,
       "readings": [
         {
@@ -14785,7 +14785,7 @@
     },
     {
       "character": "題",
-      "meaningKo": "“제목 제”. 제목, 주제",
+      "meaningKo": "제목 제 — 제목, 주제",
       "strokeCount": 18,
       "readings": [
         {
@@ -14840,7 +14840,7 @@
     },
     {
       "character": "風",
-      "meaningKo": "“바람 풍”. 바람",
+      "meaningKo": "바람 풍 — 바람, 풍습",
       "strokeCount": 9,
       "readings": [
         {
@@ -15114,7 +15114,7 @@
     },
     {
       "character": "飲",
-      "meaningKo": "“마실 음”. 마시다",
+      "meaningKo": "마실 음 — 마시다",
       "strokeCount": 12,
       "readings": [
         {
@@ -15167,7 +15167,7 @@
     },
     {
       "character": "館",
-      "meaningKo": "“집 관”. 큰 건물",
+      "meaningKo": "집 관 — 큰 건물, 회관",
       "strokeCount": 16,
       "readings": [
         {
@@ -15246,7 +15246,7 @@
     },
     {
       "character": "駅",
-      "meaningKo": "“역 역”. 역(station)",
+      "meaningKo": "역 역 — 역, 정거장",
       "strokeCount": 14,
       "readings": [
         {
@@ -15301,7 +15301,7 @@
     },
     {
       "character": "験",
-      "meaningKo": "“시험 험”. 시험하다, 경험, 효과",
+      "meaningKo": "시험 험 — 시험하다, 경험",
       "strokeCount": 18,
       "readings": [
         {
@@ -15405,7 +15405,7 @@
     },
     {
       "character": "魚",
-      "meaningKo": "“물고기 어”. 물고기",
+      "meaningKo": "물고기 어 — 물고기",
       "strokeCount": 11,
       "readings": [
         {
@@ -15604,7 +15604,7 @@
     },
     {
       "character": "黒",
-      "meaningKo": "“검을 흑”. 검정",
+      "meaningKo": "검을 흑 — 검정, 검다",
       "strokeCount": 11,
       "readings": [
         {

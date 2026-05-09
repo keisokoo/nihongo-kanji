@@ -6,7 +6,7 @@
   "kanji": [
     {
       "character": "一",
-      "meaningKo": "“한 일”. 하나, 1",
+      "meaningKo": "한 일 — 하나, 1",
       "strokeCount": 1,
       "readings": [
         {
@@ -206,7 +206,7 @@
     },
     {
       "character": "七",
-      "meaningKo": "“일곱 칠”. 일곱",
+      "meaningKo": "일곱 칠 — 일곱, 7",
       "strokeCount": 2,
       "readings": [
         {
@@ -290,7 +290,7 @@
     },
     {
       "character": "万",
-      "meaningKo": "“일만 만”. 일만",
+      "meaningKo": "일만 만 — 일만, 10000",
       "strokeCount": 3,
       "readings": [
         {
@@ -411,7 +411,7 @@
     },
     {
       "character": "三",
-      "meaningKo": "“셋 삼”. 3",
+      "meaningKo": "셋 삼 — 셋, 3",
       "strokeCount": 3,
       "readings": [
         {
@@ -543,7 +543,7 @@
     },
     {
       "character": "上",
-      "meaningKo": "“윗 상”. 위, 위쪽, 오르다",
+      "meaningKo": "윗 상 — 위, 위쪽, 오르다",
       "strokeCount": 3,
       "readings": [
         {
@@ -743,7 +743,7 @@
     },
     {
       "character": "下",
-      "meaningKo": "“아래 하”. 아래, 아래쪽",
+      "meaningKo": "아래 하 — 아래, 아래쪽",
       "strokeCount": 3,
       "readings": [
         {
@@ -937,7 +937,7 @@
     },
     {
       "character": "中",
-      "meaningKo": "“가운데 중”. 중간, 가운데",
+      "meaningKo": "가운데 중 — 중간, 가운데",
       "strokeCount": 4,
       "readings": [
         {
@@ -1020,7 +1020,7 @@
     },
     {
       "character": "九",
-      "meaningKo": "“아홉 구”. 아홉",
+      "meaningKo": "아홉 구 — 아홉, 9",
       "strokeCount": 2,
       "readings": [
         {
@@ -1116,7 +1116,7 @@
     },
     {
       "character": "二",
-      "meaningKo": "“두 이”. 2",
+      "meaningKo": "두 이 — 둘, 2",
       "strokeCount": 2,
       "readings": [
         {
@@ -1204,7 +1204,7 @@
     },
     {
       "character": "五",
-      "meaningKo": "“다섯 오”. 다섯",
+      "meaningKo": "다섯 오 — 다섯, 5",
       "strokeCount": 4,
       "readings": [
         {
@@ -1269,7 +1269,7 @@
     },
     {
       "character": "人",
-      "meaningKo": "“사람 인”. 사람",
+      "meaningKo": "사람 인 — 사람",
       "strokeCount": 2,
       "readings": [
         {
@@ -1413,7 +1413,7 @@
     },
     {
       "character": "今",
-      "meaningKo": "“이제 금”. 지금, 현재",
+      "meaningKo": "이제 금 — 지금, 현재",
       "strokeCount": 4,
       "readings": [
         {
@@ -1505,7 +1505,7 @@
     },
     {
       "character": "休",
-      "meaningKo": "“쉴 휴”. 쉬다, 휴식",
+      "meaningKo": "쉴 휴 — 쉬다, 휴식",
       "strokeCount": 6,
       "readings": [
         {
@@ -1572,7 +1572,7 @@
     },
     {
       "character": "何",
-      "meaningKo": "“어찌 하”. 무엇(what)",
+      "meaningKo": "어찌 하 — 무엇, 어떤",
       "strokeCount": 7,
       "readings": [
         {
@@ -1635,7 +1635,7 @@
     },
     {
       "character": "先",
-      "meaningKo": "“먼저 선”. 먼저, 앞서",
+      "meaningKo": "먼저 선 — 먼저, 앞서, 미리",
       "strokeCount": 6,
       "readings": [
         {
@@ -1698,7 +1698,7 @@
     },
     {
       "character": "入",
-      "meaningKo": "“들 입”. 들어가다, 집어넣다",
+      "meaningKo": "들 입 — 들어가다, 집어넣다",
       "strokeCount": 2,
       "readings": [
         {
@@ -1777,7 +1777,7 @@
     },
     {
       "character": "八",
-      "meaningKo": "“여덟 팔”. 여덟",
+      "meaningKo": "여덟 팔 — 여덟, 8",
       "strokeCount": 2,
       "readings": [
         {
@@ -1897,7 +1897,7 @@
     },
     {
       "character": "六",
-      "meaningKo": "“여섯 육”. 여섯",
+      "meaningKo": "여섯 육 — 여섯, 6",
       "strokeCount": 4,
       "readings": [
         {
@@ -2003,7 +2003,7 @@
     },
     {
       "character": "円",
-      "meaningKo": "“둥글 원”. 둥글다, 원",
+      "meaningKo": "둥글 원 — 원형, 엔(화폐)",
       "strokeCount": 4,
       "readings": [
         {
@@ -2094,7 +2094,7 @@
     },
     {
       "character": "出",
-      "meaningKo": "“날 출”. 나가다, 내보내다",
+      "meaningKo": "날 출 — 나가다, 내보내다",
       "strokeCount": 5,
       "readings": [
         {
@@ -2218,7 +2218,7 @@
     },
     {
       "character": "前",
-      "meaningKo": "“앞 전”. 앞",
+      "meaningKo": "앞 전 — 앞, 이전",
       "strokeCount": 9,
       "readings": [
         {
@@ -2306,7 +2306,7 @@
     },
     {
       "character": "北",
-      "meaningKo": "“북녘 북”. 북쪽",
+      "meaningKo": "북녘 북 — 북쪽",
       "strokeCount": 5,
       "readings": [
         {
@@ -2394,7 +2394,7 @@
     },
     {
       "character": "十",
-      "meaningKo": "“열 십”. 10",
+      "meaningKo": "열 십 — 열, 10",
       "strokeCount": 2,
       "readings": [
         {
@@ -2544,7 +2544,7 @@
     },
     {
       "character": "千",
-      "meaningKo": "“일천 천”. 1000",
+      "meaningKo": "일천 천 — 일천, 1000",
       "strokeCount": 3,
       "readings": [
         {
@@ -2619,7 +2619,7 @@
     },
     {
       "character": "午",
-      "meaningKo": "“낮 오”. 정오",
+      "meaningKo": "낮 오 — 정오, 낮",
       "strokeCount": 4,
       "readings": [
         {
@@ -2678,7 +2678,7 @@
     },
     {
       "character": "半",
-      "meaningKo": "“반 반”. 절반",
+      "meaningKo": "반 반 — 절반",
       "strokeCount": 5,
       "readings": [
         {
@@ -2740,7 +2740,7 @@
     },
     {
       "character": "南",
-      "meaningKo": "“남녘 남”. 남쪽",
+      "meaningKo": "남녘 남 — 남쪽",
       "strokeCount": 9,
       "readings": [
         {
@@ -2832,7 +2832,7 @@
     },
     {
       "character": "友",
-      "meaningKo": "“벗 우”. 친구",
+      "meaningKo": "벗 우 — 친구, 벗",
       "strokeCount": 4,
       "readings": [
         {
@@ -2906,7 +2906,7 @@
     },
     {
       "character": "右",
-      "meaningKo": "“오른 우”. 오른쪽",
+      "meaningKo": "오른 우 — 오른쪽",
       "strokeCount": 5,
       "readings": [
         {
@@ -2997,7 +2997,7 @@
     },
     {
       "character": "名",
-      "meaningKo": "“이름 명”. 이름",
+      "meaningKo": "이름 명 — 이름, 명성",
       "strokeCount": 6,
       "readings": [
         {
@@ -3118,7 +3118,7 @@
     },
     {
       "character": "四",
-      "meaningKo": "“넷 사”. 넷",
+      "meaningKo": "넷 사 — 넷, 4",
       "strokeCount": 5,
       "readings": [
         {
@@ -3250,7 +3250,7 @@
     },
     {
       "character": "国",
-      "meaningKo": "“나라 국”. 나라, 국가",
+      "meaningKo": "나라 국 — 나라, 국가",
       "strokeCount": 8,
       "readings": [
         {
@@ -3323,7 +3323,7 @@
     },
     {
       "character": "土",
-      "meaningKo": "“흙 토”. 흙, 땅",
+      "meaningKo": "흙 토 — 흙, 땅",
       "strokeCount": 3,
       "readings": [
         {
@@ -3445,7 +3445,7 @@
     },
     {
       "character": "外",
-      "meaningKo": "“바깥 외”. 바깥",
+      "meaningKo": "바깥 외 — 바깥, 외부",
       "strokeCount": 5,
       "readings": [
         {
@@ -3524,7 +3524,7 @@
     },
     {
       "character": "大",
-      "meaningKo": "“클 대”. 크다",
+      "meaningKo": "클 대 — 크다",
       "strokeCount": 3,
       "readings": [
         {
@@ -3668,7 +3668,7 @@
     },
     {
       "character": "天",
-      "meaningKo": "“하늘 천”. 하늘",
+      "meaningKo": "하늘 천 — 하늘",
       "strokeCount": 4,
       "readings": [
         {
@@ -3749,7 +3749,7 @@
     },
     {
       "character": "女",
-      "meaningKo": "“계집 녀”. 여자",
+      "meaningKo": "계집 녀 — 여자",
       "strokeCount": 3,
       "readings": [
         {
@@ -3893,7 +3893,7 @@
     },
     {
       "character": "子",
-      "meaningKo": "“아들 자”. 아이",
+      "meaningKo": "아들 자 — 아이, 자식",
       "strokeCount": 3,
       "readings": [
         {
@@ -4052,7 +4052,7 @@
     },
     {
       "character": "学",
-      "meaningKo": "“배울 학”. 배우다",
+      "meaningKo": "배울 학 — 배우다, 학문",
       "strokeCount": 8,
       "readings": [
         {
@@ -4125,7 +4125,7 @@
     },
     {
       "character": "小",
-      "meaningKo": "“작을 소”. 작다",
+      "meaningKo": "작을 소 — 작다",
       "strokeCount": 3,
       "readings": [
         {
@@ -4225,7 +4225,7 @@
     },
     {
       "character": "山",
-      "meaningKo": "“메 산”. 산",
+      "meaningKo": "메 산 — 산",
       "strokeCount": 3,
       "readings": [
         {
@@ -4303,7 +4303,7 @@
     },
     {
       "character": "川",
-      "meaningKo": "“내 천”. 강, 하천, 시내",
+      "meaningKo": "내 천 — 강, 하천, 시내",
       "strokeCount": 3,
       "readings": [
         {
@@ -4377,7 +4377,7 @@
     },
     {
       "character": "左",
-      "meaningKo": "“왼 좌”. 왼쪽",
+      "meaningKo": "왼 좌 — 왼쪽",
       "strokeCount": 5,
       "readings": [
         {
@@ -4468,7 +4468,7 @@
     },
     {
       "character": "年",
-      "meaningKo": "“해 년”. 해(year)",
+      "meaningKo": "해 년 — 해, 연도",
       "strokeCount": 6,
       "readings": [
         {
@@ -4557,7 +4557,7 @@
     },
     {
       "character": "後",
-      "meaningKo": "“뒤 후”. 뒤, 이후, 나중.",
+      "meaningKo": "뒤 후 — 뒤, 이후, 나중",
       "strokeCount": 9,
       "readings": [
         {
@@ -4661,7 +4661,7 @@
     },
     {
       "character": "日",
-      "meaningKo": "“날 일”. 하루, 날, 태양",
+      "meaningKo": "날 일 — 하루, 날, 태양",
       "strokeCount": 4,
       "readings": [
         {
@@ -4834,7 +4834,7 @@
     },
     {
       "character": "時",
-      "meaningKo": "“때 시”. 시간",
+      "meaningKo": "때 시 — 시간, 때",
       "strokeCount": 10,
       "readings": [
         {
@@ -4913,7 +4913,7 @@
     },
     {
       "character": "書",
-      "meaningKo": "“글 서”. 글, 쓰다",
+      "meaningKo": "글 서 — 글, 쓰다",
       "strokeCount": 10,
       "readings": [
         {
@@ -4962,7 +4962,7 @@
     },
     {
       "character": "月",
-      "meaningKo": "“달 월”. 달",
+      "meaningKo": "달 월 — 달, 월",
       "strokeCount": 4,
       "readings": [
         {
@@ -5139,7 +5139,7 @@
     },
     {
       "character": "木",
-      "meaningKo": "“나무 목”. 나무",
+      "meaningKo": "나무 목 — 나무",
       "strokeCount": 4,
       "readings": [
         {
@@ -5323,7 +5323,7 @@
     },
     {
       "character": "本",
-      "meaningKo": "“근본 본”. 근본, 본질, 본래",
+      "meaningKo": "근본 본 — 근본, 책, 본래",
       "strokeCount": 5,
       "readings": [
         {
@@ -5412,7 +5412,7 @@
     },
     {
       "character": "来",
-      "meaningKo": "“올 래”. 오다",
+      "meaningKo": "올 래 — 오다",
       "strokeCount": 7,
       "readings": [
         {
@@ -5491,7 +5491,7 @@
     },
     {
       "character": "東",
-      "meaningKo": "“동녘 동”. 동쪽",
+      "meaningKo": "동녘 동 — 동쪽",
       "strokeCount": 8,
       "readings": [
         {
@@ -5565,7 +5565,7 @@
     },
     {
       "character": "校",
-      "meaningKo": "“학교 교”. 학교",
+      "meaningKo": "학교 교 — 학교",
       "strokeCount": 10,
       "readings": [
         {
@@ -5625,7 +5625,7 @@
     },
     {
       "character": "母",
-      "meaningKo": "“어미 모”. 어머니",
+      "meaningKo": "어미 모 — 어머니",
       "strokeCount": 5,
       "readings": [
         {
@@ -5731,7 +5731,7 @@
     },
     {
       "character": "毎",
-      "meaningKo": "“매양 매”. 매번",
+      "meaningKo": "매양 매 — 매번, 늘",
       "strokeCount": 6,
       "readings": [
         {
@@ -5794,7 +5794,7 @@
     },
     {
       "character": "気",
-      "meaningKo": "“기운 기”. 기운, 정신, 기체",
+      "meaningKo": "기운 기 — 기운, 정신, 기체",
       "strokeCount": 6,
       "readings": [
         {
@@ -5887,7 +5887,7 @@
     },
     {
       "character": "水",
-      "meaningKo": "“물 수”. 물",
+      "meaningKo": "물 수 — 물",
       "strokeCount": 4,
       "readings": [
         {
@@ -5990,7 +5990,7 @@
     },
     {
       "character": "火",
-      "meaningKo": "“불 화”. 불",
+      "meaningKo": "불 화 — 불",
       "strokeCount": 4,
       "readings": [
         {
@@ -6115,7 +6115,7 @@
     },
     {
       "character": "父",
-      "meaningKo": "“아비 부”. 아버지",
+      "meaningKo": "아비 부 — 아버지",
       "strokeCount": 4,
       "readings": [
         {
@@ -6188,7 +6188,7 @@
     },
     {
       "character": "生",
-      "meaningKo": "“살 생”. 살다, 태어나다, 생명",
+      "meaningKo": "살 생 — 살다, 태어나다, 생명",
       "strokeCount": 5,
       "readings": [
         {
@@ -6412,7 +6412,7 @@
     },
     {
       "character": "男",
-      "meaningKo": "“사내 남”. 남자",
+      "meaningKo": "사내 남 — 남자",
       "strokeCount": 7,
       "readings": [
         {
@@ -6526,7 +6526,7 @@
     },
     {
       "character": "白",
-      "meaningKo": "“흰 백”. 흰색",
+      "meaningKo": "흰 백 — 흰색, 희다",
       "strokeCount": 5,
       "readings": [
         {
@@ -6687,7 +6687,7 @@
     },
     {
       "character": "百",
-      "meaningKo": "“일백 백”. 100",
+      "meaningKo": "일백 백 — 일백, 100",
       "strokeCount": 6,
       "readings": [
         {
@@ -6751,7 +6751,7 @@
     },
     {
       "character": "聞",
-      "meaningKo": "“들을 문”. 듣다",
+      "meaningKo": "들을 문 — 듣다",
       "strokeCount": 14,
       "readings": [
         {
@@ -6849,7 +6849,7 @@
     },
     {
       "character": "行",
-      "meaningKo": "“다닐 행”. 가다, 행하다, 행(row)",
+      "meaningKo": "다닐 행 — 가다, 행하다",
       "strokeCount": 6,
       "readings": [
         {
@@ -7021,7 +7021,7 @@
     },
     {
       "character": "西",
-      "meaningKo": "“서녘 서”. 서쪽",
+      "meaningKo": "서녘 서 — 서쪽",
       "strokeCount": 6,
       "readings": [
         {
@@ -7131,7 +7131,7 @@
     },
     {
       "character": "見",
-      "meaningKo": "“볼 견”. 보다",
+      "meaningKo": "볼 견 — 보다",
       "strokeCount": 7,
       "readings": [
         {
@@ -7185,7 +7185,7 @@
     },
     {
       "character": "話",
-      "meaningKo": "“말씀 화”. 이야기, 대화",
+      "meaningKo": "말씀 화 — 이야기, 대화",
       "strokeCount": 13,
       "readings": [
         {
@@ -7265,7 +7265,7 @@
     },
     {
       "character": "語",
-      "meaningKo": "“말씀 어”. 단어, 언어",
+      "meaningKo": "말씀 어 — 단어, 언어",
       "strokeCount": 14,
       "readings": [
         {
@@ -7328,7 +7328,7 @@
     },
     {
       "character": "読",
-      "meaningKo": "“읽을 독”. 읽다",
+      "meaningKo": "읽을 독 — 읽다",
       "strokeCount": 14,
       "readings": [
         {
@@ -7430,7 +7430,7 @@
     },
     {
       "character": "車",
-      "meaningKo": "“수레 차(거)”. 차량, 수레",
+      "meaningKo": "수레 차 — 차량, 수레",
       "strokeCount": 7,
       "readings": [
         {
@@ -7504,7 +7504,7 @@
     },
     {
       "character": "金",
-      "meaningKo": "“쇠 금”. 금, 금속, 쇠, 돈",
+      "meaningKo": "쇠 금 — 금, 금속, 돈",
       "strokeCount": 8,
       "readings": [
         {
@@ -7665,7 +7665,7 @@
     },
     {
       "character": "長",
-      "meaningKo": "“길 장”. 길다",
+      "meaningKo": "길 장 — 길다, 장(長)",
       "strokeCount": 8,
       "readings": [
         {
@@ -7729,7 +7729,7 @@
     },
     {
       "character": "間",
-      "meaningKo": "“사이 간”. 사이, 간격, 틈새",
+      "meaningKo": "사이 간 — 사이, 간격",
       "strokeCount": 12,
       "readings": [
         {
@@ -7919,7 +7919,7 @@
     },
     {
       "character": "雨",
-      "meaningKo": "“비 우”. 비",
+      "meaningKo": "비 우 — 비",
       "strokeCount": 8,
       "readings": [
         {
@@ -8043,7 +8043,7 @@
     },
     {
       "character": "電",
-      "meaningKo": "“번개 전”. 전기, 번개",
+      "meaningKo": "번개 전 — 전기, 번개",
       "strokeCount": 13,
       "readings": [
         {
@@ -8099,7 +8099,7 @@
     },
     {
       "character": "食",
-      "meaningKo": "“먹을 식”. 먹다",
+      "meaningKo": "먹을 식 — 먹다, 음식",
       "strokeCount": 9,
       "readings": [
         {
@@ -8202,7 +8202,7 @@
     },
     {
       "character": "高",
-      "meaningKo": "“높을 고”. 높다",
+      "meaningKo": "높을 고 — 높다",
       "strokeCount": 10,
       "readings": [
         {

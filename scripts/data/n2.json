@@ -607,7 +607,7 @@
     },
     {
       "character": "了",
-      "meaningKo": "마칠 료",
+      "meaningKo": "마칠 료 — 마치다, 끝나다",
       "strokeCount": 2,
       "readings": [
         {
@@ -775,7 +775,7 @@
     },
     {
       "character": "仏",
-      "meaningKo": "부처 불",
+      "meaningKo": "부처 불 — 부처, 프랑스",
       "strokeCount": 4,
       "readings": [
         {
@@ -1188,7 +1188,7 @@
     },
     {
       "character": "低",
-      "meaningKo": "“낮을 저”. 낮다",
+      "meaningKo": "낮을 저 — 낮다",
       "strokeCount": 7,
       "readings": [
         {
@@ -1769,7 +1769,7 @@
     },
     {
       "character": "億",
-      "meaningKo": "억 억",
+      "meaningKo": "억 억 — 억, 큰 수",
       "strokeCount": 15,
       "readings": [
         {
@@ -2214,7 +2214,7 @@
     },
     {
       "character": "冊",
-      "meaningKo": "책 책",
+      "meaningKo": "책 책 — 책, 권",
       "strokeCount": 5,
       "readings": [
         {
@@ -2291,7 +2291,7 @@
     },
     {
       "character": "再",
-      "meaningKo": "다시 재",
+      "meaningKo": "다시 재 — 다시, 재차",
       "strokeCount": 6,
       "readings": [
         {
@@ -3431,7 +3431,7 @@
     },
     {
       "character": "包",
-      "meaningKo": "쌀 포",
+      "meaningKo": "쌀 포 — 싸다, 포장",
       "strokeCount": 5,
       "readings": [
         {
@@ -3582,7 +3582,7 @@
     },
     {
       "character": "区",
-      "meaningKo": "“구역 구”. 구역, 구획, 경계",
+      "meaningKo": "구역 구 — 구역, 경계",
       "strokeCount": 4,
       "readings": [
         {
@@ -4491,7 +4491,7 @@
     },
     {
       "character": "各",
-      "meaningKo": "“각각 각”. 각자의, 각각",
+      "meaningKo": "각각 각 — 각자, 각각",
       "strokeCount": 6,
       "readings": [
         {
@@ -6054,7 +6054,7 @@
     },
     {
       "character": "塩",
-      "meaningKo": "소금 염",
+      "meaningKo": "소금 염 — 소금, 염분",
       "strokeCount": 13,
       "readings": [
         {
@@ -6860,7 +6860,7 @@
     },
     {
       "character": "寺",
-      "meaningKo": "절 사",
+      "meaningKo": "절 사 — 절, 사찰",
       "strokeCount": 6,
       "readings": [
         {
@@ -7554,7 +7554,7 @@
     },
     {
       "character": "岩",
-      "meaningKo": "바위 암",
+      "meaningKo": "바위 암 — 바위",
       "strokeCount": 8,
       "readings": [
         {
@@ -7729,7 +7729,7 @@
     },
     {
       "character": "島",
-      "meaningKo": "“섬 도”. 섬",
+      "meaningKo": "섬 도 — 섬",
       "strokeCount": 10,
       "readings": [
         {
@@ -7816,7 +7816,7 @@
     },
     {
       "character": "州",
-      "meaningKo": "고을 주",
+      "meaningKo": "고을 주 — 고을, 주(州)",
       "strokeCount": 6,
       "readings": [
         {
@@ -8358,7 +8358,7 @@
     },
     {
       "character": "帽",
-      "meaningKo": "모자 모",
+      "meaningKo": "모자 모 — 모자",
       "strokeCount": 12,
       "readings": [
         {
@@ -8700,7 +8700,7 @@
     },
     {
       "character": "庁",
-      "meaningKo": "관청 청",
+      "meaningKo": "관청 청 — 관청, 정부 기관",
       "strokeCount": 5,
       "readings": [
         {
@@ -9053,7 +9053,7 @@
     },
     {
       "character": "庫",
-      "meaningKo": "곳간 고",
+      "meaningKo": "곳간 고 — 곳간, 창고",
       "strokeCount": 10,
       "readings": [
         {
@@ -9244,7 +9244,7 @@
     },
     {
       "character": "弱",
-      "meaningKo": "약할 약",
+      "meaningKo": "약할 약 — 약하다",
       "strokeCount": 10,
       "readings": [
         {
@@ -9864,7 +9864,7 @@
     },
     {
       "character": "憎",
-      "meaningKo": "미워할 증",
+      "meaningKo": "미워할 증 — 미워하다, 증오",
       "strokeCount": 14,
       "readings": [
         {
@@ -10698,7 +10698,7 @@
     },
     {
       "character": "掃",
-      "meaningKo": "쓸 소",
+      "meaningKo": "쓸 소 — 쓸다, 청소",
       "strokeCount": 11,
       "readings": [
         {
@@ -12211,7 +12211,7 @@
     },
     {
       "character": "村",
-      "meaningKo": "“마을 촌”. 마을",
+      "meaningKo": "마을 촌 — 마을, 촌",
       "strokeCount": 7,
       "readings": [
         {
@@ -12390,7 +12390,7 @@
     },
     {
       "character": "林",
-      "meaningKo": "“수풀 림”. 수풀, 숲",
+      "meaningKo": "수풀 림 — 수풀, 숲",
       "strokeCount": 8,
       "readings": [
         {
@@ -13258,7 +13258,7 @@
     },
     {
       "character": "森",
-      "meaningKo": "“숲 삼”. 숲",
+      "meaningKo": "숲 삼 — 숲, 삼림",
       "strokeCount": 12,
       "readings": [
         {
@@ -13599,7 +13599,7 @@
     },
     {
       "character": "欧",
-      "meaningKo": "유럽 구",
+      "meaningKo": "유럽 구 — 유럽",
       "strokeCount": 8,
       "readings": [
         {
@@ -14138,7 +14138,7 @@
     },
     {
       "character": "毛",
-      "meaningKo": "털 모",
+      "meaningKo": "털 모 — 털",
       "strokeCount": 4,
       "readings": [
         {
@@ -14408,7 +14408,7 @@
     },
     {
       "character": "汗",
-      "meaningKo": "땀 한",
+      "meaningKo": "땀 한 — 땀",
       "strokeCount": 6,
       "readings": [
         {
@@ -14910,7 +14910,7 @@
     },
     {
       "character": "油",
-      "meaningKo": "기름 유",
+      "meaningKo": "기름 유 — 기름",
       "strokeCount": 8,
       "readings": [
         {
@@ -16329,7 +16329,7 @@
     },
     {
       "character": "湖",
-      "meaningKo": "호수 호",
+      "meaningKo": "호수 호 — 호수",
       "strokeCount": 12,
       "readings": [
         {
@@ -17597,7 +17597,7 @@
     },
     {
       "character": "燃",
-      "meaningKo": "탈 연",
+      "meaningKo": "탈 연 — 타다, 연소",
       "strokeCount": 16,
       "readings": [
         {
@@ -17692,7 +17692,7 @@
     },
     {
       "character": "燥",
-      "meaningKo": "바싹 조",
+      "meaningKo": "바싹 조 — 마르다, 건조",
       "strokeCount": 17,
       "readings": [
         {
@@ -17751,7 +17751,7 @@
     },
     {
       "character": "爆",
-      "meaningKo": "터질 폭",
+      "meaningKo": "터질 폭 — 터지다, 폭발",
       "strokeCount": 19,
       "readings": [
         {
@@ -17824,7 +17824,7 @@
     },
     {
       "character": "片",
-      "meaningKo": "조각 편",
+      "meaningKo": "조각 편 — 조각, 한쪽",
       "strokeCount": 4,
       "readings": [
         {
@@ -17911,7 +17911,7 @@
     },
     {
       "character": "版",
-      "meaningKo": "판 판",
+      "meaningKo": "판 판 — 판, 출판",
       "strokeCount": 8,
       "readings": [
         {
@@ -18167,7 +18167,7 @@
     },
     {
       "character": "瓶",
-      "meaningKo": "병 병",
+      "meaningKo": "병 병 — 병, 항아리",
       "strokeCount": 11,
       "readings": [
         {
@@ -18230,7 +18230,7 @@
     },
     {
       "character": "甘",
-      "meaningKo": "달 감",
+      "meaningKo": "달 감 — 달다, 단맛",
       "strokeCount": 5,
       "readings": [
         {
@@ -18329,7 +18329,7 @@
     },
     {
       "character": "畜",
-      "meaningKo": "짐승 축",
+      "meaningKo": "짐승 축 — 가축, 짐승",
       "strokeCount": 10,
       "readings": [
         {
@@ -18577,7 +18577,7 @@
     },
     {
       "character": "療",
-      "meaningKo": "고칠 료",
+      "meaningKo": "고칠 료 — 치료하다",
       "strokeCount": 17,
       "readings": [
         {
@@ -18646,7 +18646,7 @@
     },
     {
       "character": "皮",
-      "meaningKo": "가죽 피",
+      "meaningKo": "가죽 피 — 가죽, 껍질",
       "strokeCount": 5,
       "readings": [
         {
@@ -18734,7 +18734,7 @@
     },
     {
       "character": "皿",
-      "meaningKo": "접시 명",
+      "meaningKo": "접시 명 — 접시",
       "strokeCount": 5,
       "readings": [
         {
@@ -18903,7 +18903,7 @@
     },
     {
       "character": "県",
-      "meaningKo": "“고을 현”. 현(일본의 행정 구역)",
+      "meaningKo": "고을 현 — 현(행정 구역)",
       "strokeCount": 9,
       "readings": [
         {
@@ -18948,7 +18948,7 @@
     },
     {
       "character": "短",
-      "meaningKo": "짧을 단",
+      "meaningKo": "짧을 단 — 짧다",
       "strokeCount": 12,
       "readings": [
         {
@@ -19035,7 +19035,7 @@
     },
     {
       "character": "砂",
-      "meaningKo": "모래 사",
+      "meaningKo": "모래 사 — 모래",
       "strokeCount": 9,
       "readings": [
         {
@@ -19126,7 +19126,7 @@
     },
     {
       "character": "硬",
-      "meaningKo": "굳을 경",
+      "meaningKo": "굳을 경 — 굳다, 단단하다",
       "strokeCount": 12,
       "readings": [
         {
@@ -19262,7 +19262,7 @@
     },
     {
       "character": "祈",
-      "meaningKo": "빌 기",
+      "meaningKo": "빌 기 — 빌다, 기도",
       "strokeCount": 8,
       "readings": [
         {
@@ -19335,7 +19335,7 @@
     },
     {
       "character": "祝",
-      "meaningKo": "축할 축",
+      "meaningKo": "축할 축 — 축하하다",
       "strokeCount": 9,
       "readings": [
         {
@@ -19426,7 +19426,7 @@
     },
     {
       "character": "祭",
-      "meaningKo": "제사 제",
+      "meaningKo": "제사 제 — 제사, 축제",
       "strokeCount": 11,
       "readings": [
         {
@@ -19519,7 +19519,7 @@
     },
     {
       "character": "禁",
-      "meaningKo": "금할 금",
+      "meaningKo": "금할 금 — 금지하다",
       "strokeCount": 13,
       "readings": [
         {
@@ -19602,7 +19602,7 @@
     },
     {
       "character": "秒",
-      "meaningKo": "초 초",
+      "meaningKo": "초 초 — 초, 짧은 시간",
       "strokeCount": 9,
       "readings": [
         {
@@ -19762,7 +19762,7 @@
     },
     {
       "character": "税",
-      "meaningKo": "세금 세",
+      "meaningKo": "세금 세 — 세금",
       "strokeCount": 12,
       "readings": [
         {
@@ -19929,7 +19929,7 @@
     },
     {
       "character": "童",
-      "meaningKo": "아이 동",
+      "meaningKo": "아이 동 — 아이, 어린이",
       "strokeCount": 12,
       "readings": [
         {
@@ -20101,7 +20101,7 @@
     },
     {
       "character": "竹",
-      "meaningKo": "대나무 죽",
+      "meaningKo": "대나무 죽 — 대나무",
       "strokeCount": 6,
       "readings": [
         {
@@ -20330,7 +20330,7 @@
     },
     {
       "character": "筒",
-      "meaningKo": "통 통",
+      "meaningKo": "통 통 — 통, 원통",
       "strokeCount": 12,
       "readings": [
         {
@@ -20577,7 +20577,7 @@
     },
     {
       "character": "築",
-      "meaningKo": "쌓을 축",
+      "meaningKo": "쌓을 축 — 쌓다, 건축",
       "strokeCount": 16,
       "readings": [
         {
@@ -20971,7 +20971,7 @@
     },
     {
       "character": "糸",
-      "meaningKo": "실 사",
+      "meaningKo": "실 사 — 실",
       "strokeCount": 6,
       "readings": [
         {
@@ -21444,7 +21444,7 @@
     },
     {
       "character": "綿",
-      "meaningKo": "솜 면",
+      "meaningKo": "솜 면 — 솜, 면",
       "strokeCount": 14,
       "readings": [
         {
@@ -21609,7 +21609,7 @@
     },
     {
       "character": "緑",
-      "meaningKo": "푸름 록",
+      "meaningKo": "푸를 록 — 녹색, 초록",
       "strokeCount": 14,
       "readings": [
         {
@@ -22434,7 +22434,7 @@
     },
     {
       "character": "耕",
-      "meaningKo": "밭갈 경",
+      "meaningKo": "밭갈 경 — 밭갈다, 경작",
       "strokeCount": 10,
       "readings": [
         {
@@ -22581,7 +22581,7 @@
     },
     {
       "character": "肩",
-      "meaningKo": "어깨 견",
+      "meaningKo": "어깨 견 — 어깨",
       "strokeCount": 8,
       "readings": [
         {
@@ -23097,7 +23097,7 @@
     },
     {
       "character": "腰",
-      "meaningKo": "허리 요",
+      "meaningKo": "허리 요 — 허리",
       "strokeCount": 13,
       "readings": [
         {
@@ -23317,7 +23317,7 @@
     },
     {
       "character": "臣",
-      "meaningKo": "신하 신",
+      "meaningKo": "신하 신 — 신하",
       "strokeCount": 7,
       "readings": [
         {
@@ -23472,7 +23472,7 @@
     },
     {
       "character": "航",
-      "meaningKo": "항해 항",
+      "meaningKo": "항해 항 — 항해, 비행",
       "strokeCount": 10,
       "readings": [
         {
@@ -24386,7 +24386,7 @@
     },
     {
       "character": "虫",
-      "meaningKo": "벌레 충",
+      "meaningKo": "벌레 충 — 벌레",
       "strokeCount": 6,
       "readings": [
         {
@@ -24463,7 +24463,7 @@
     },
     {
       "character": "血",
-      "meaningKo": "피 혈",
+      "meaningKo": "피 혈 — 피, 혈액",
       "strokeCount": 6,
       "readings": [
         {
@@ -24536,7 +24536,7 @@
     },
     {
       "character": "衣",
-      "meaningKo": "옷 의",
+      "meaningKo": "옷 의 — 옷, 의복",
       "strokeCount": 6,
       "readings": [
         {
@@ -27345,7 +27345,7 @@
     },
     {
       "character": "軽",
-      "meaningKo": "가벼울 경",
+      "meaningKo": "가벼울 경 — 가볍다",
       "strokeCount": 12,
       "readings": [
         {
@@ -28519,7 +28519,7 @@
     },
     {
       "character": "鉄",
-      "meaningKo": "쇠 철",
+      "meaningKo": "쇠 철 — 쇠, 철",
       "strokeCount": 13,
       "readings": [
         {
@@ -28902,7 +28902,7 @@
     },
     {
       "character": "門",
-      "meaningKo": "“문 문”. 문",
+      "meaningKo": "문 문 — 문, 출입구",
       "strokeCount": 8,
       "readings": [
         {
@@ -29434,7 +29434,7 @@
     },
     {
       "character": "雲",
-      "meaningKo": "구름 운",
+      "meaningKo": "구름 운 — 구름",
       "strokeCount": 12,
       "readings": [
         {
@@ -30498,7 +30498,7 @@
     },
     {
       "character": "鼻",
-      "meaningKo": "코 비",
+      "meaningKo": "코 비 — 코",
       "strokeCount": 14,
       "readings": [
         {
