@@ -1,0 +1,682 @@
+import Anthropic from "@anthropic-ai/sdk";
+import { GoogleGenAI } from "@google/genai";
+import { loadSettings } from "./settings";
+
+export type Tier = "default" | "premium";
+
+const DEFAULT_ANTHROPIC = "claude-haiku-4-5";
+const PREMIUM_ANTHROPIC = "claude-sonnet-4-6";
+const DEFAULT_GEMINI = "gemini-3.1-flash-lite";
+const PREMIUM_GEMINI = "gemini-3-flash-preview";
+
+const SUPPORTS_EFFORT = new Set([
+  "claude-opus-4-7",
+  "claude-opus-4-6",
+  "claude-opus-4-5",
+  "claude-sonnet-4-6",
+]);
+
+type Provider = "anthropic" | "gemini";
+
+type Resolved = {
+  provider: Provider;
+  defaultModel: string;
+  premiumModel: string;
+  anthropicKey: string | null;
+  geminiKey: string | null;
+};
+
+/**
+ * Resolve which provider to use based on saved keys. Anthropic preferred,
+ * Gemini fallback. Throws if neither is set.
+ */
+async function resolveProvider(): Promise<Resolved> {
+  const s = await loadSettings();
+  const useAnthropic = !!s.anthropicApiKey;
+  const useGemini = !s.anthropicApiKey && !!s.geminiApiKey;
+  if (!useAnthropic && !useGemini) {
+    throw new Error(
+      "AI 키 미설정 — 설정에서 ANTHROPIC_API_KEY 또는 GEMINI_API_KEY를 입력해 주세요.",
+    );
+  }
+  return {
+    provider: useAnthropic ? "anthropic" : "gemini",
+    defaultModel: useAnthropic ? DEFAULT_ANTHROPIC : DEFAULT_GEMINI,
+    premiumModel: useAnthropic ? PREMIUM_ANTHROPIC : PREMIUM_GEMINI,
+    anthropicKey: s.anthropicApiKey,
+    geminiKey: s.geminiApiKey,
+  };
+}
+
+export type Usage = {
+  inputTokens: number;
+  outputTokens: number;
+  cacheCreationInputTokens: number;
+  cacheReadInputTokens: number;
+};
+
+export const ZERO_USAGE: Usage = {
+  inputTokens: 0,
+  outputTokens: 0,
+  cacheCreationInputTokens: 0,
+  cacheReadInputTokens: 0,
+};
+
+export function addUsage(a: Usage, b: Usage): Usage {
+  return {
+    inputTokens: a.inputTokens + b.inputTokens,
+    outputTokens: a.outputTokens + b.outputTokens,
+    cacheCreationInputTokens:
+      a.cacheCreationInputTokens + b.cacheCreationInputTokens,
+    cacheReadInputTokens: a.cacheReadInputTokens + b.cacheReadInputTokens,
+  };
+}
+
+type Schema = Record<string, unknown>;
+
+function geminiSchema(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(geminiSchema);
+  if (value && typeof value === "object") {
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(value)) {
+      if (k === "additionalProperties") continue;
+      out[k] = geminiSchema(v);
+    }
+    return out;
+  }
+  return value;
+}
+
+async function callAnthropic(
+  apiKey: string,
+  model: string,
+  systemPrompt: string,
+  userMessage: string,
+  schema: Schema,
+): Promise<{ data: unknown; usage: Usage }> {
+  const client = new Anthropic({ apiKey, dangerouslyAllowBrowser: true });
+  const outputConfig: Record<string, unknown> = {
+    format: { type: "json_schema", schema },
+  };
+  if (SUPPORTS_EFFORT.has(model)) outputConfig.effort = "low";
+
+  const response = await client.messages.create({
+    model,
+    max_tokens: 2048,
+    system: [
+      {
+        type: "text",
+        text: systemPrompt,
+        cache_control: { type: "ephemeral" },
+      },
+    ],
+    output_config: outputConfig as never,
+    messages: [{ role: "user", content: userMessage }],
+  });
+
+  const u = response.usage;
+  const usage: Usage = {
+    inputTokens: u?.input_tokens ?? 0,
+    outputTokens: u?.output_tokens ?? 0,
+    cacheCreationInputTokens: u?.cache_creation_input_tokens ?? 0,
+    cacheReadInputTokens: u?.cache_read_input_tokens ?? 0,
+  };
+
+  const textBlock = response.content.find((b) => b.type === "text");
+  if (!textBlock || textBlock.type !== "text") {
+    console.error("[claude] no text content", response);
+    throw new Error("Claude returned no text content");
+  }
+
+  try {
+    return { data: JSON.parse(textBlock.text), usage };
+  } catch {
+    console.error("[claude] JSON parse failed:", textBlock.text);
+    throw new Error("Claude returned invalid JSON");
+  }
+}
+
+async function callGemini(
+  apiKey: string,
+  model: string,
+  systemPrompt: string,
+  userMessage: string,
+  schema: Schema,
+): Promise<{ data: unknown; usage: Usage }> {
+  const client = new GoogleGenAI({ apiKey });
+  const response = await client.models.generateContent({
+    model,
+    contents: [{ role: "user", parts: [{ text: userMessage }] }],
+    config: {
+      systemInstruction: systemPrompt,
+      responseMimeType: "application/json",
+      responseSchema: geminiSchema(schema) as never,
+      maxOutputTokens: 2048,
+    },
+  });
+
+  const text = response.text;
+  if (!text) {
+    console.error("[gemini] no text in response", response);
+    throw new Error("Gemini returned no text");
+  }
+
+  const meta = response.usageMetadata;
+  const usage: Usage = {
+    inputTokens: meta?.promptTokenCount ?? 0,
+    outputTokens: meta?.candidatesTokenCount ?? 0,
+    cacheCreationInputTokens: 0,
+    cacheReadInputTokens: meta?.cachedContentTokenCount ?? 0,
+  };
+
+  try {
+    return { data: JSON.parse(text), usage };
+  } catch {
+    console.error("[gemini] JSON parse failed:", text);
+    throw new Error("Gemini returned invalid JSON");
+  }
+}
+
+async function callJson(
+  resolved: Resolved,
+  model: string,
+  systemPrompt: string,
+  userMessage: string,
+  schema: Schema,
+): Promise<{ data: unknown; usage: Usage }> {
+  if (resolved.provider === "anthropic") {
+    return callAnthropic(
+      resolved.anthropicKey!,
+      model,
+      systemPrompt,
+      userMessage,
+      schema,
+    );
+  }
+  return callGemini(
+    resolved.geminiKey!,
+    model,
+    systemPrompt,
+    userMessage,
+    schema,
+  );
+}
+
+async function withFallback<T>(
+  tier: Tier,
+  validate: (out: unknown) => out is T,
+  call: (
+    resolved: Resolved,
+    model: string,
+  ) => Promise<{ data: unknown; usage: Usage }>,
+  label: string,
+): Promise<{ result: T; modelUsed: string; usage: Usage }> {
+  const resolved = await resolveProvider();
+  const primary = tier === "premium" ? resolved.premiumModel : resolved.defaultModel;
+  const fallback = resolved.premiumModel;
+  let lastErr: unknown = null;
+  let aggregated: Usage = ZERO_USAGE;
+
+  try {
+    const { data, usage } = await call(resolved, primary);
+    aggregated = addUsage(aggregated, usage);
+    if (validate(data))
+      return { result: data, modelUsed: primary, usage: aggregated };
+    lastErr = new Error("validation failed");
+    console.warn(`[claude:${label}] ${primary} produced invalid output:`, data);
+  } catch (err) {
+    lastErr = err;
+    console.warn(`[claude:${label}] ${primary} threw:`, err);
+  }
+
+  if (tier === "default" && primary !== fallback) {
+    try {
+      const { data, usage } = await call(resolved, fallback);
+      aggregated = addUsage(aggregated, usage);
+      if (validate(data)) {
+        console.warn(
+          `[claude:${label}] fell back to ${fallback} successfully`,
+        );
+        return { result: data, modelUsed: fallback, usage: aggregated };
+      }
+      lastErr = new Error("fallback validation failed");
+    } catch (err) {
+      lastErr = err;
+      console.error(`[claude:${label}] ${fallback} fallback threw:`, err);
+    }
+  }
+
+  throw lastErr instanceof Error ? lastErr : new Error(String(lastErr));
+}
+
+// ─── generateExample ────────────────────────────────────────────────────────
+
+const EXAMPLE_SCHEMA = {
+  type: "object",
+  properties: {
+    sentence: { type: "string" },
+    translationKo: { type: "string" },
+  },
+  required: ["sentence", "translationKo"],
+  additionalProperties: false,
+} as const;
+
+const EXAMPLE_SYSTEM_PROMPT = `You are an example-sentence generator for Korean speakers studying JLPT Japanese.
+
+Your job: produce ONE natural Japanese sentence using a specific target word, plus a Korean translation. The sentence will be shown to a learner who must guess the reading of the target word as a quiz.
+
+OUTPUT — return JSON with exactly two fields:
+- "sentence": the Japanese sentence in inline-markup form (rules below)
+- "translationKo": natural Korean translation of the sentence
+
+INLINE MARKUP for "sentence":
+- Wrap the target word EXACTLY once as {{TARGET}} — no reading shown (it's the quiz answer)
+- Wrap EVERY other kanji segment as {kanji|hiragana} — the reading must be how it's actually pronounced in this sentence (account for rendaku, sokuon, etc.)
+- Hiragana, katakana, particles, punctuation appear as plain text outside braces
+
+Examples:
+- target "一月" (いちがつ) → "{{一月}}は{寒|さむ}いです。"
+- target "学校" (がっこう) → "{毎日|まいにち}{{学校}}に{通|かよ}っています。"
+- target "食べる" (たべる) → "{毎朝|まいあさ}パンを{{食べます}}。"
+- target "三人" (さんにん) → "{家族|かぞく}は{{三人}}です。"
+
+CONSTRAINTS:
+- Sentence appropriate for the given JLPT level (N5 = simplest, N4 = elementary, N3 = intermediate)
+- The target word must appear exactly once in the sentence
+- Every non-target kanji MUST have a {kanji|hiragana} annotation — leaving any kanji unannotated breaks the renderer
+- Do NOT use the focus kanji elsewhere in the sentence (only inside the target word)
+- Sentence ends with 。 or appropriate punctuation
+- Keep it short and natural; avoid overly complex grammar
+- If "Existing examples" are given, generate a DIFFERENT sentence (different topic/structure)`;
+
+export type GenerateExampleInput = {
+  word: string;
+  wordReading: string;
+  kanjiChar: string;
+  level: string;
+  excludeSentences?: string[];
+};
+
+export type GenerateExampleOutput = {
+  sentence: string;
+  translationKo: string;
+};
+
+function isExampleOutput(x: unknown): x is GenerateExampleOutput {
+  if (!x || typeof x !== "object") return false;
+  const o = x as Record<string, unknown>;
+  return typeof o.sentence === "string" && typeof o.translationKo === "string";
+}
+
+export async function generateExample(
+  input: GenerateExampleInput,
+  tier: Tier = "default",
+): Promise<{ result: GenerateExampleOutput; modelUsed: string; usage: Usage }> {
+  const userMessage = [
+    `Target word: ${input.word}`,
+    `Reading: ${input.wordReading}`,
+    `Focus kanji: ${input.kanjiChar}`,
+    `JLPT Level: ${input.level}`,
+    input.excludeSentences && input.excludeSentences.length > 0
+      ? `\nExisting examples (DO NOT duplicate these or vary only slightly):\n${input.excludeSentences.map((s) => `- ${s}`).join("\n")}`
+      : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  return withFallback<GenerateExampleOutput>(
+    tier,
+    isExampleOutput,
+    (resolved, model) =>
+      callJson(resolved, model, EXAMPLE_SYSTEM_PROMPT, userMessage, EXAMPLE_SCHEMA),
+    "example",
+  );
+}
+
+// ─── generateWord ───────────────────────────────────────────────────────────
+
+const WORD_SCHEMA = {
+  type: "object",
+  properties: {
+    word: { type: "string" },
+    wordReading: { type: "string" },
+    kanjiReading: { type: "string" },
+    meaningsKo: {
+      type: "array",
+      items: { type: "string" },
+    },
+  },
+  required: ["word", "wordReading", "kanjiReading", "meaningsKo"],
+  additionalProperties: false,
+} as const;
+
+const WORD_SYSTEM_PROMPT = `You are a Japanese vocabulary generator for Korean JLPT learners.
+
+Given a target kanji and JLPT level, output ONE Japanese word that contains the target kanji. Return JSON:
+{
+  "word": "<word containing the target kanji, e.g. 学校>",
+  "wordReading": "<full hiragana reading of the word, e.g. がっこう>",
+  "kanjiReading": "<reading of the TARGET KANJI within this word — KATAKANA for on-yomi (音読み), HIRAGANA for kun-yomi (訓読み)>",
+  "meaningsKo": ["<1-3 short Korean translations>"]
+}
+
+CONSTRAINTS:
+- The "word" MUST contain the target kanji exactly as given
+- Word vocabulary must match the JLPT level (N5 = beginner everyday vocab, N4 = elementary, N3 = intermediate)
+- Prefer common, useful vocabulary actual learners encounter
+- DO NOT duplicate or vary slightly from words in the "Existing words" list
+- "kanjiReading" must be the actual reading of the target kanji within "word" — katakana for on-yomi, hiragana for kun-yomi
+- For mixed/special readings, use whichever style fits the reading type best
+- "meaningsKo": 1-3 short Korean translations. ONLY Korean (Hangul / digits / 월·일 etc.). Never include the Japanese word, English, or romaji. Order from most common to least.`;
+
+export type GenerateWordInput = {
+  kanjiChar: string;
+  level: string;
+  existingWords?: { word: string; wordReading: string }[];
+};
+
+export type GenerateWordOutput = {
+  word: string;
+  wordReading: string;
+  kanjiReading: string;
+  meaningsKo: string[];
+};
+
+function isWordOutput(x: unknown): x is GenerateWordOutput {
+  if (!x || typeof x !== "object") return false;
+  const o = x as Record<string, unknown>;
+  return (
+    typeof o.word === "string" &&
+    typeof o.wordReading === "string" &&
+    typeof o.kanjiReading === "string" &&
+    Array.isArray(o.meaningsKo) &&
+    o.meaningsKo.every((m) => typeof m === "string")
+  );
+}
+
+export async function generateWord(
+  input: GenerateWordInput,
+  tier: Tier = "default",
+): Promise<{ result: GenerateWordOutput; modelUsed: string; usage: Usage }> {
+  const userMessage = [
+    `Target kanji: ${input.kanjiChar}`,
+    `JLPT Level: ${input.level}`,
+    input.existingWords && input.existingWords.length > 0
+      ? `\nExisting words (DO NOT duplicate or vary slightly):\n${input.existingWords.map((w) => `- ${w.word} (${w.wordReading})`).join("\n")}`
+      : "",
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  return withFallback<GenerateWordOutput>(
+    tier,
+    isWordOutput,
+    (resolved, model) =>
+      callJson(resolved, model, WORD_SYSTEM_PROMPT, userMessage, WORD_SCHEMA),
+    "word",
+  );
+}
+
+// ─── generateExplanation ────────────────────────────────────────────────────
+
+const EXPLANATION_SCHEMA = {
+  type: "object",
+  properties: {
+    reasoning: { type: "string" },
+    mnemonic: { type: "string" },
+  },
+  required: ["reasoning", "mnemonic"],
+  additionalProperties: false,
+} as const;
+
+const EXPLANATION_SYSTEM_PROMPT = `You are a Japanese language tutor for Korean speakers studying JLPT.
+
+Given a Japanese word, its reading, and the focus kanji being studied, explain (IN KOREAN) why the word has this specific reading. Identify which phenomenon applies and explain naturally.
+
+Phenomena to recognize and use the proper Korean term:
+- 음편화 (おんびん, sound euphony) — sokuon (っ), nasal change (ん). e.g. 学校(がっこう): ガク+コウ → 促音便
+- 연탁 (れんだく, rendaku) — voicing of the second element's initial consonant in compounds. e.g. 手紙(てがみ): て+かみ→がみ
+- 연성 (れんじょう, sandhi) — adding ん/m after kanji ending in n/ti. e.g. 観音(かんのん)
+- 아테지 (あてじ, ateji) — kanji used purely phonetically, ignoring meaning. e.g. 寿司(すし)
+- 숙자훈 (じゅくじくん, jukujikun) — special whole-word reading not derivable from individual kanji. e.g. 今日(きょう), 大人(おとな)
+- 그냥 음독 / 훈독 — straightforward on-yomi or kun-yomi with no special change
+
+Output JSON:
+{
+  "reasoning": "<2-3 sentences in Korean. Identify the phenomenon (use the Japanese term + Korean), explain how the reading was formed.>",
+  "mnemonic": "<1-2 sentences in Korean. A vivid, concrete memory tip linking the kanji's meaning/image to the reading sound. Avoid generic advice.>"
+}
+
+CONSTRAINTS:
+- Korean explanation, but Japanese terms are fine when natural (음편화, 연탁, etc.)
+- Be specific: cite the actual kanji and how its reading shifted
+- For straightforward readings without sound change, briefly say which reading (음독/훈독) and why it was chosen here
+- The mnemonic should be specific to THIS word, not a generic study tip
+- Skip sycophancy, praise, and meta-commentary about Korean language`;
+
+export type GenerateExplanationInput = {
+  word: string;
+  wordReading: string;
+  kanjiChar: string;
+  level: string;
+};
+
+export type GenerateExplanationOutput = {
+  reasoning: string;
+  mnemonic: string;
+};
+
+function isExplanationOutput(x: unknown): x is GenerateExplanationOutput {
+  if (!x || typeof x !== "object") return false;
+  const o = x as Record<string, unknown>;
+  return typeof o.reasoning === "string" && typeof o.mnemonic === "string";
+}
+
+export async function generateExplanation(
+  input: GenerateExplanationInput,
+  tier: Tier = "default",
+): Promise<{
+  result: GenerateExplanationOutput;
+  modelUsed: string;
+  usage: Usage;
+}> {
+  const userMessage = [
+    `Word: ${input.word}`,
+    `Reading: ${input.wordReading}`,
+    `Focus kanji: ${input.kanjiChar}`,
+    `JLPT Level: ${input.level}`,
+  ].join("\n");
+
+  return withFallback<GenerateExplanationOutput>(
+    tier,
+    isExplanationOutput,
+    (resolved, model) =>
+      callJson(
+        resolved,
+        model,
+        EXPLANATION_SYSTEM_PROMPT,
+        userMessage,
+        EXPLANATION_SCHEMA,
+      ),
+    "explanation",
+  );
+}
+
+// ─── generateMeaning + Readings (combined; replaces kanjipedia scraping) ────
+
+const READINGS_SCHEMA = {
+  type: "object",
+  properties: {
+    on: { type: "array", items: { type: "string" } },
+    kun: { type: "array", items: { type: "string" } },
+    meaningKo: { type: "string" },
+  },
+  required: ["on", "kun", "meaningKo"],
+  additionalProperties: false,
+} as const;
+
+const READINGS_SYSTEM_PROMPT = `You generate kanji readings + Korean meaning for JLPT learners.
+
+For a given kanji, return:
+- "on":  array of common 音読み (on-yomi) in KATAKANA. e.g. 日 → ["ニチ", "ジツ"]. Order: most common first. Empty array if none.
+- "kun": array of common 訓読み (kun-yomi) in HIRAGANA, WITHOUT okurigana parens. e.g. 食 → ["た", "く"], 大 → ["おお"]. Empty array if none.
+- "meaningKo": Korean reading-translation in the format "<훈독> <음독> — <부가 의미>".
+  - 훈독: native Korean meaning word (날, 한, 메, 큰, 줄, …)
+  - 음독: Korean Hanja reading (일, 산, 대, 여, …)
+  - 부가 의미 (optional): 1-3 short extra senses, comma-separated
+  - Output ONLY Korean (Hangul). Never reuse the kanji or English.
+
+Examples:
+- 日 → { "on": ["ニチ","ジツ"], "kun": ["ひ","か"], "meaningKo": "날 일 — 해, 날, 일본" }
+- 一 → { "on": ["イチ","イツ"], "kun": ["ひと","ひとつ"], "meaningKo": "한 일 — 하나" }
+- 山 → { "on": ["サン"], "kun": ["やま"], "meaningKo": "메 산" }
+- 与 → { "on": ["ヨ"], "kun": ["あた","くみ"], "meaningKo": "줄 여 — 주다, 베풀다" }
+
+CONSTRAINTS:
+- Return only standard, taught readings. Skip rare/obsolete unless they're educationally important.
+- meaningKo MUST follow the "훈독 음독 — 부가" format with em-dash (—).
+- Limit to 5 on-readings and 5 kun-readings each.`;
+
+export type GenerateReadingsInput = {
+  kanjiChar: string;
+};
+
+export type GenerateReadingsOutput = {
+  on: string[];
+  kun: string[];
+  meaningKo: string;
+};
+
+function isReadingsOutput(x: unknown): x is GenerateReadingsOutput {
+  if (!x || typeof x !== "object") return false;
+  const o = x as Record<string, unknown>;
+  return (
+    Array.isArray(o.on) &&
+    o.on.every((s) => typeof s === "string") &&
+    Array.isArray(o.kun) &&
+    o.kun.every((s) => typeof s === "string") &&
+    typeof o.meaningKo === "string" &&
+    /[가-힣]/.test(o.meaningKo)
+  );
+}
+
+export async function generateReadings(
+  input: GenerateReadingsInput,
+  tier: Tier = "default",
+): Promise<{ result: GenerateReadingsOutput; modelUsed: string; usage: Usage }> {
+  const userMessage = `Kanji: ${input.kanjiChar}`;
+  return withFallback<GenerateReadingsOutput>(
+    tier,
+    isReadingsOutput,
+    (resolved, model) =>
+      callJson(resolved, model, READINGS_SYSTEM_PROMPT, userMessage, READINGS_SCHEMA),
+    "readings",
+  );
+}
+
+// Legacy generateMeaning kept as a thin wrapper for any caller that only
+// wants the meaning without re-fetching readings.
+export type GenerateMeaningInput = { kanjiChar: string; hint?: string };
+export type GenerateMeaningOutput = { meaningKo: string };
+
+export async function generateMeaning(
+  input: GenerateMeaningInput,
+  tier: Tier = "default",
+): Promise<{ result: GenerateMeaningOutput; modelUsed: string; usage: Usage }> {
+  const r = await generateReadings({ kanjiChar: input.kanjiChar }, tier);
+  return {
+    result: { meaningKo: r.result.meaningKo },
+    modelUsed: r.modelUsed,
+    usage: r.usage,
+  };
+}
+
+// ─── generateExampleExplanation ─────────────────────────────────────────────
+
+const EXAMPLE_EXPLANATION_SCHEMA = {
+  type: "object",
+  properties: {
+    nuance: { type: "string" },
+    grammar: { type: "string" },
+    pronunciation: { type: "string" },
+    takeaways: { type: "string" },
+  },
+  required: ["nuance", "grammar", "pronunciation", "takeaways"],
+  additionalProperties: false,
+} as const;
+
+const EXAMPLE_EXPLANATION_SYSTEM_PROMPT = `You are a Japanese language tutor for Korean speakers studying JLPT. Given a Japanese example sentence with its Korean translation, explain (IN KOREAN) the whole sentence — not just one word — across four lenses.
+
+Output JSON with these four fields, ALL written in Korean (Japanese terms in original kana/kanji are fine):
+
+{
+  "nuance": "<2-4 sentences. Explain Japanese expressions and nuances that don't map 1:1 to Korean. Where the Korean translation simplifies or shifts meaning, say what's actually happening in the Japanese. Cite specific words/particles in 「」 quotes.>",
+  "grammar": "<2-4 sentences. Break down notable grammar: particles (は/が/を/に/で/と/から/まで/の/も/や/か), verb forms (て-form, た-form, 〜ている, 〜ます, 〜ない, conditional, passive, causative), adjective inflections, copula, sentence-final particles. Pick the 1-3 most instructive points; don't list everything.>",
+  "pronunciation": "<1-3 sentences. ONLY if the sentence has interesting reading phenomena: 연탁(rendaku), 음편화(sokuon/onbin), 숙자훈(jukujikun), 아테지, irregular kanji readings, or non-obvious pitch. If nothing notable, write '특이사항 없음.'>",
+  "takeaways": "<2-3 sentences. Idioms, useful patterns, common collocations, JLPT-relevant expressions to memorize. Be concrete with what to learn.>"
+}
+
+CONSTRAINTS:
+- Korean explanation throughout; quote Japanese in 「」 when citing.
+- Be specific to THIS sentence — no generic study advice.
+- Skip sycophancy and meta-commentary.
+- If a section truly has nothing useful, say so briefly (don't pad).
+- The "focus word" is the quiz target inside the sentence — you can mention it but don't repeat the word-level explanation; explain the SENTENCE.`;
+
+export type GenerateExampleExplanationInput = {
+  sentence: string;
+  translationKo: string;
+  focusWord: string;
+  focusWordReading: string;
+  level: string;
+};
+
+export type GenerateExampleExplanationOutput = {
+  nuance: string;
+  grammar: string;
+  pronunciation: string;
+  takeaways: string;
+};
+
+function isExampleExplanationOutput(
+  x: unknown,
+): x is GenerateExampleExplanationOutput {
+  if (!x || typeof x !== "object") return false;
+  const o = x as Record<string, unknown>;
+  return (
+    typeof o.nuance === "string" &&
+    typeof o.grammar === "string" &&
+    typeof o.pronunciation === "string" &&
+    typeof o.takeaways === "string"
+  );
+}
+
+export async function generateExampleExplanation(
+  input: GenerateExampleExplanationInput,
+  tier: Tier = "default",
+): Promise<{
+  result: GenerateExampleExplanationOutput;
+  modelUsed: string;
+  usage: Usage;
+}> {
+  const userMessage = [
+    `Sentence (Japanese, plain): ${input.sentence}`,
+    `Translation (Korean): ${input.translationKo}`,
+    `Focus word: ${input.focusWord} (${input.focusWordReading})`,
+    `JLPT Level: ${input.level}`,
+  ].join("\n");
+
+  return withFallback<GenerateExampleExplanationOutput>(
+    tier,
+    isExampleExplanationOutput,
+    (resolved, model) =>
+      callJson(
+        resolved,
+        model,
+        EXAMPLE_EXPLANATION_SYSTEM_PROMPT,
+        userMessage,
+        EXAMPLE_EXPLANATION_SCHEMA,
+      ),
+    "example-explanation",
+  );
+}

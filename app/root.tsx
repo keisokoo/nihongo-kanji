@@ -9,9 +9,12 @@ import {
 
 import type { Route } from "./+types/root";
 import { Toaster } from "~/components/Toast";
+import { InitGate } from "~/components/InitGate";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
+  { rel: "icon", href: "/pwa-icon.svg", type: "image/svg+xml" },
+  { rel: "apple-touch-icon", href: "/pwa-icon.svg" },
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
@@ -44,7 +47,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <InitGate>
+      <Outlet />
+    </InitGate>
+  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {

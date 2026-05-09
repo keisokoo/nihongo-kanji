@@ -1,12 +1,13 @@
 import { useState } from "react";
+import { Link } from "react-router";
 import type { Route } from "./+types/home";
-import { loadHomeData } from "~/lib/home.server";
+import { loadHomeData } from "~/lib/idb/home";
 import { PackCard } from "~/components/home/PackCard";
 import { TestCard } from "~/components/home/TestCard";
 import { ImportButton } from "~/components/home/ImportButton";
 import { CreateTestModal } from "~/components/home/CreateTestModal";
 
-export async function loader() {
+export async function clientLoader() {
   return loadHomeData();
 }
 
@@ -34,7 +35,16 @@ export default function Home({ loaderData }: Route.ComponentProps) {
               일본어 한자 학습
             </p>
           </div>
-          <ImportButton />
+          <div className="flex items-center gap-3">
+            <ImportButton />
+            <Link
+              to="/settings"
+              className="text-sm text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100"
+              title="설정"
+            >
+              ⚙
+            </Link>
+          </div>
         </header>
 
         <section className="mb-10">

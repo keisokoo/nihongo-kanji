@@ -1,20 +1,16 @@
 import { redirect } from "react-router";
-import { asc, eq } from "drizzle-orm";
 import type { Route } from "./+types/study-index";
-import { db, kanji as kanjiTable, packs as packsTable } from "~/lib/db";
+import { db } from "~/lib/idb/db";
 
-export async function loader({ params }: Route.LoaderArgs) {
-  const packKey = params.level; // URL segment is the pack key (kept named "level" for back-compat)
-  const pack = await db.query.packs.findFirst({
-    where: eq(packsTable.key, packKey),
-  });
+export async function clientLoader({ params }: Route.ClientLoaderArgs) {
+  const packKey = params.level;
+  const pack = await db().packs.get(packKey);
   if (!pack) throw redirect("/");
 
-  const first = await db.query.kanji.findFirst({
-    where: eq(kanjiTable.packKey, pack.key),
-    orderBy: asc(kanjiTable.id),
-    columns: { id: true },
-  });
+  const first = await db()
+    .kanji.where("packKey")
+    .equals(pack.key)
+    .first();
 
   if (!first) throw redirect("/");
   throw redirect(`/study/${encodeURIComponent(pack.key)}/${first.id}`);

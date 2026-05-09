@@ -1,8 +1,9 @@
 import { useState } from "react";
 import { useNavigate } from "react-router";
 import { Spinner } from "~/components/Spinner";
-import type { WordTestKind } from "~/lib/db";
-import type { HomePack } from "~/lib/home.server";
+import type { WordTestKind } from "~/lib/idb/types";
+import type { HomePack } from "~/lib/idb/home";
+import { createWordTest } from "~/lib/idb/word-test";
 
 type Status =
   | { kind: "idle" }
@@ -62,23 +63,14 @@ export function CreateTestModal({
     }
     setStatus({ kind: "loading" });
     try {
-      const res = await fetch("/api/word-test/create", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: trimmed,
-          kind: testKind,
-          packs: [...selected.entries()].map(([packKey, v]) => ({
-            packKey,
-            count: v.count,
-          })),
-        }),
+      const data = await createWordTest({
+        name: trimmed,
+        kind: testKind,
+        packs: [...selected.entries()].map(([packKey, v]) => ({
+          packKey,
+          count: v.count,
+        })),
       });
-      if (!res.ok) {
-        const body = (await res.json().catch(() => ({}))) as { error?: string };
-        throw new Error(body.error ?? `request failed (${res.status})`);
-      }
-      const data = (await res.json()) as { testId: number };
       onClose();
       navigate(`/word-test/${data.testId}`);
     } catch (err) {

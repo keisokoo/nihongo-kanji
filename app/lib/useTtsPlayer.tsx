@@ -1,5 +1,6 @@
 import { useCallback, useEffect, useRef, useState } from "react";
 import { showToast } from "~/components/Toast";
+import { synthesize } from "~/lib/idb/tts";
 
 const blobUrlCache = new Map<string, string>();
 
@@ -24,37 +25,17 @@ export function useTtsPlayer() {
     };
   }, []);
 
-  const play = useCallback(async (text: string, voice?: string) => {
+  const play = useCallback(async (text: string) => {
     audioRef.current?.pause();
     setState({ loading: true, loadingText: text, error: null });
 
-    const key = `${voice ?? ""}|${text}`;
-    let url = blobUrlCache.get(key);
+    let url = blobUrlCache.get(text);
 
     if (!url) {
       try {
-        const res = await fetch("/api/tts", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ text, voice }),
-        });
-        if (!res.ok) {
-          let message = `TTS request failed (${res.status})`;
-          try {
-            const body = (await res.json()) as { error?: string };
-            if (body.error) message = body.error;
-          } catch {
-            // not JSON; keep default message
-          }
-          throw new Error(message);
-        }
-        const cached = res.headers.get("X-Cached") === "1";
-        const ttsModel = res.headers.get("X-Tts-Model");
-        const inTok = Number(res.headers.get("X-Tts-Input-Tokens") ?? "0");
-        const outTok = Number(res.headers.get("X-Tts-Output-Tokens") ?? "0");
-        const totalTok = Number(res.headers.get("X-Tts-Total-Tokens") ?? "0");
-        if (!cached && ttsModel) {
-          const total = totalTok || inTok + outTok;
+        const { blob, cached, usage } = await synthesize(text);
+        if (!cached && usage) {
+          const total = usage.totalTokens || usage.inputTokens + usage.outputTokens;
           showToast(
             <div className="min-w-[16rem]">
               <div className="flex items-center justify-between gap-3">
@@ -62,12 +43,12 @@ export function useTtsPlayer() {
                   ♪ TTS 생성
                 </span>
                 <span className="rounded bg-neutral-100 px-1.5 py-0.5 text-[10px] uppercase tracking-wide text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400">
-                  {ttsModel.replace(/^gemini-/, "")}
+                  {usage.model.replace(/^gemini-/, "")}
                 </span>
               </div>
               <div className="mt-1 flex flex-wrap gap-x-3 gap-y-0.5 text-xs text-neutral-500 dark:text-neutral-400 tabular-nums">
-                <span>입력 {inTok.toLocaleString()}</span>
-                <span>출력 {outTok.toLocaleString()}</span>
+                <span>입력 {usage.inputTokens.toLocaleString()}</span>
+                <span>출력 {usage.outputTokens.toLocaleString()}</span>
                 <span className="text-neutral-400">
                   합계 {total.toLocaleString()}
                 </span>
@@ -75,9 +56,8 @@ export function useTtsPlayer() {
             </div>,
           );
         }
-        const blob = await res.blob();
         url = URL.createObjectURL(blob);
-        blobUrlCache.set(key, url);
+        blobUrlCache.set(text, url);
       } catch (err) {
         if (!aliveRef.current) return;
         const message = err instanceof Error ? err.message : "TTS failed";
@@ -92,7 +72,6 @@ export function useTtsPlayer() {
     audioRef.current = audio;
 
     try {
-      // play() resolves once playback has actually started.
       await audio.play();
       if (aliveRef.current) {
         setState({ loading: false, loadingText: null, error: null });

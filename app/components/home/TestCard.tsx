@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Link, useRevalidator } from "react-router";
 import { Spinner } from "~/components/Spinner";
 import { ConfirmModal } from "~/components/ConfirmModal";
-import type { HomeTest } from "~/lib/home.server";
+import type { HomeTest } from "~/lib/idb/home";
+import { deleteWordTest } from "~/lib/idb/word-test";
 
 export function TestCard({ test }: { test: HomeTest }) {
   const revalidator = useRevalidator();
@@ -18,15 +19,7 @@ export function TestCard({ test }: { test: HomeTest }) {
     setDeleting(true);
     setError(null);
     try {
-      const res = await fetch("/api/word-test/delete", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ testId: test.id }),
-      });
-      if (!res.ok) {
-        const body = (await res.json().catch(() => ({}))) as { error?: string };
-        throw new Error(body.error ?? `request failed (${res.status})`);
-      }
+      await deleteWordTest(test.id);
       revalidator.revalidate();
     } catch (err) {
       const message = err instanceof Error ? err.message : "failed";

@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "files": [
+    {
+      "level": "N5",
+      "path": "/seed/n5.json",
+      "kanji": 79,
+      "words": 436,
+      "examples": 436,
+      "bytes": 230071
+    },
+    {
+      "level": "N4",
+      "path": "/seed/n4.json",
+      "kanji": 166,
+      "words": 818,
+      "examples": 818,
+      "bytes": 444194
+    },
+    {
+      "level": "N3",
+      "path": "/seed/n3.json",
+      "kanji": 367,
+      "words": 1811,
+      "examples": 1811,
+      "bytes": 964238
+    },
+    {
+      "level": "N2",
+      "path": "/seed/n2.json",
+      "kanji": 367,
+      "words": 1639,
+      "examples": 1639,
+      "bytes": 858866
+    },
+    {
+      "level": "N1",
+      "path": "/seed/n1.json",
+      "kanji": 1232,
+      "words": 2819,
+      "examples": 2819,
+      "bytes": 1653772
+    }
+  ]
+}

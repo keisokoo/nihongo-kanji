@@ -1,10 +1,12 @@
 import { useState } from "react";
 import { useRevalidator } from "react-router";
 import { useTtsPlayer } from "~/lib/useTtsPlayer";
-import type { Kanji, Reading } from "~/lib/db";
+import type { Kanji, Reading } from "~/lib/idb/types";
+import { regenerateKanjiReadings } from "~/lib/idb/example-actions";
+import { useAiAvailability } from "~/lib/idb/use-ai-availability";
 import { Spinner } from "./Spinner";
 import { ConfirmModal } from "./ConfirmModal";
-import { showUsageToast, type ApiUsage } from "./Toast";
+import { showUsageToast } from "./Toast";
 
 type Props = {
   kanji: Pick<Kanji, "id" | "character" | "packKey" | "meaningKo">;
@@ -14,6 +16,7 @@ type Props = {
 export function KanjiCard({ kanji, readings }: Props) {
   const { play, loading, loadingText, error } = useTtsPlayer();
   const revalidator = useRevalidator();
+  const ai = useAiAvailability();
 
   const [refetch, setRefetch] = useState<
     null | { state: "loading" } | { state: "error"; message: string }
@@ -24,20 +27,8 @@ export function KanjiCard({ kanji, readings }: Props) {
     setShowModal(false);
     setRefetch({ state: "loading" });
     try {
-      const res = await fetch("/api/readings", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ kanjiId: kanji.id }),
-      });
-      if (!res.ok) {
-        const body = (await res.json().catch(() => ({}))) as { error?: string };
-        throw new Error(body.error ?? `request failed (${res.status})`);
-      }
-      const body = (await res.json().catch(() => ({}))) as {
-        usage?: ApiUsage | null;
-      };
-      if (body.usage) showUsageToast("↻ 한자 의미 재생성", body.usage);
-      // Re-run loader to pick up the new readings.
+      const data = await regenerateKanjiReadings(kanji.id);
+      if (data.usage) showUsageToast("↻ 한자 의미 재생성", data.usage);
       revalidator.revalidate();
       setRefetch(null);
     } catch (err) {
@@ -53,10 +44,14 @@ export function KanjiCard({ kanji, readings }: Props) {
     <article className="relative rounded-2xl border border-neutral-200 bg-white p-5 sm:p-10 dark:border-neutral-800 dark:bg-neutral-900">
       <button
         type="button"
-        disabled={refetch?.state === "loading"}
+        disabled={refetch?.state === "loading" || !ai.hasAi}
         onClick={() => setShowModal(true)}
         aria-label="음/훈독 + 의미 다시 생성"
-        title="Kanjipedia에서 음/훈독 재추출 + Haiku로 한국어 의미 재생성"
+        title={
+          ai.hasAi
+            ? "AI로 음/훈독 + 한국어 의미 재생성"
+            : "AI 키 미설정 — 설정에서 입력해 주세요"
+        }
         className="absolute right-3 top-3 inline-flex h-8 w-8 items-center justify-center rounded-full border border-neutral-300 bg-white text-base text-neutral-600 opacity-30 transition hover:opacity-100 disabled:opacity-20 sm:right-4 sm:top-4 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
       >
         {refetch?.state === "loading" ? (

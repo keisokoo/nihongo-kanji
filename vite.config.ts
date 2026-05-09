@@ -1,15 +1,55 @@
-import dotenv from "dotenv";
-// Load .env into process.env, overriding any pre-existing values from the
-// parent shell. Without `override: true`, an empty ANTHROPIC_API_KEY exported
-// by some IDE / desktop tooling can shadow the value in .env.
-dotenv.config({ override: true, quiet: true });
-
 import { reactRouter } from "@react-router/dev/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
+import { VitePWA } from "vite-plugin-pwa";
 
 export default defineConfig({
-  plugins: [tailwindcss(), reactRouter()],
+  plugins: [
+    tailwindcss(),
+    reactRouter(),
+    // Manifest only — the SW is built separately by scripts/build-sw.mjs because
+    // vite-plugin-pwa's SW step doesn't survive RR7's dual vite passes.
+    VitePWA({
+      // Disable both SW strategies; we build sw.js ourselves post-build.
+      injectRegister: "auto",
+      strategies: "injectManifest",
+      srcDir: "app",
+      filename: "sw.ts",
+      // Skip workbox SW generation — only emit manifest + register script.
+      disable: false,
+      injectManifest: {
+        injectionPoint: undefined,
+      },
+      registerType: "autoUpdate",
+      manifest: {
+        name: "Nihongo — 일본어 한자 학습",
+        short_name: "Nihongo",
+        description: "JLPT N5–N1 한자/단어/예문 학습 PWA",
+        theme_color: "#0a0a0a",
+        background_color: "#fafafa",
+        display: "standalone",
+        start_url: "/",
+        scope: "/",
+        lang: "ko",
+        icons: [
+          {
+            src: "/pwa-icon.svg",
+            sizes: "any",
+            type: "image/svg+xml",
+            purpose: "any",
+          },
+          {
+            src: "/pwa-icon.svg",
+            sizes: "any",
+            type: "image/svg+xml",
+            purpose: "maskable",
+          },
+          { src: "/pwa-192x192.png", sizes: "192x192", type: "image/png" },
+          { src: "/pwa-512x512.png", sizes: "512x512", type: "image/png" },
+        ],
+      },
+    }),
+  ],
   resolve: {
     tsconfigPaths: true,
   },

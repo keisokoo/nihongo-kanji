@@ -1,4 +1,4 @@
-import type { SentenceToken } from "~/lib/db";
+import type { SentenceToken } from "~/lib/idb/types";
 
 /**
  * Render an annotated Japanese sentence:

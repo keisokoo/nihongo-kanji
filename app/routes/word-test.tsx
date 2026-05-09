@@ -1,24 +1,27 @@
 import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, redirect, useRevalidator } from "react-router";
-import { asc, eq } from "drizzle-orm";
 import type { Route } from "./+types/word-test";
+import { db } from "~/lib/idb/db";
+import type {
+  Example,
+  ExampleExplanation,
+  ReadingSubPick,
+  SentenceToken,
+  WordTestItem,
+  WordTestKind,
+  WordTestMode,
+} from "~/lib/idb/types";
 import {
-  db,
-  wordTestItems,
-  wordTests,
-  type Example,
-  type ExampleExplanation,
-  type ReadingSubPick,
-  type SentenceToken,
-  type WordTestItem,
-  type WordTestKind,
-  type WordTestMode,
-} from "~/lib/db";
-import {
+  answerItem,
   loadExamplesForSourceWords,
   loadFocusKanjiForSourceWords,
   type FocusKanji,
-} from "~/lib/word-test.server";
+} from "~/lib/idb/word-test";
+import {
+  addExampleExplanation,
+  addExampleToWord,
+} from "~/lib/idb/example-actions";
+import { useAiAvailability } from "~/lib/idb/use-ai-availability";
 import { KanjiCard } from "~/components/KanjiCard";
 import { tokensToPlain } from "~/lib/sentence";
 import { Spinner } from "~/components/Spinner";
@@ -33,19 +36,18 @@ import { useTtsPlayer } from "~/lib/useTtsPlayer";
 
 const CHOICE_COUNT = 4;
 
-export async function loader({ params }: Route.LoaderArgs) {
+export async function clientLoader({ params }: Route.ClientLoaderArgs) {
   const id = Number(params.id);
   if (!Number.isFinite(id)) throw redirect("/");
 
-  const test = await db.query.wordTests.findFirst({
-    where: eq(wordTests.id, id),
-  });
+  const d = db();
+  const test = await d.wordTests.get(id);
   if (!test) throw redirect("/");
 
-  const items = await db.query.wordTestItems.findMany({
-    where: eq(wordTestItems.testId, id),
-    orderBy: asc(wordTestItems.position),
-  });
+  const items = await d.wordTestItems
+    .where("testId")
+    .equals(id)
+    .sortBy("position");
 
   // For reading kind, fetch each source word's first example AND focus kanji
   // (with readings) — same data as the word pack's KanjiCard.
@@ -343,13 +345,7 @@ export default function WordTest({ loaderData }: Route.ComponentProps) {
     if (!current || meaningPicked || submitting) return;
     setSubmitting(true);
     try {
-      const res = await fetch("/api/word-test/answer", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ itemId: current.id, choice }),
-      });
-      if (!res.ok) throw new Error(`request failed (${res.status})`);
-      const data = (await res.json()) as AnswerResp;
+      const data = await answerItem({ itemId: current.id, choice });
       setMeaningPicks((prev) => {
         const next = new Map(prev);
         next.set(current.id, {
@@ -372,13 +368,11 @@ export default function WordTest({ loaderData }: Route.ComponentProps) {
     if (prev?.[sub]) return;
     setSubmitting(true);
     try {
-      const res = await fetch("/api/word-test/answer", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ itemId: current.id, choice, subPick: sub }),
+      const data = await answerItem({
+        itemId: current.id,
+        choice,
+        subPick: sub,
       });
-      if (!res.ok) throw new Error(`request failed (${res.status})`);
-      const data = (await res.json()) as AnswerResp;
       setReadingPicks((curr) => {
         const next = new Map(curr);
         const existing = next.get(current.id) ?? {};
@@ -646,6 +640,7 @@ function ReadingCard({
   onPick: (choice: string, sub: ReadingSubPick) => void;
 }) {
   const { play, loading: ttsLoading, loadingText } = useTtsPlayer();
+  const ai = useAiAvailability();
   const sentencePlain = item.example
     ? tokensToPlain(item.example.sentence)
     : "";
@@ -686,20 +681,7 @@ function ReadingCard({
     setExampleExplOpen(true);
     setExampleExplStatus({ kind: "loading", tier });
     try {
-      const res = await fetch("/api/example-explanation", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ exampleId, tier }),
-      });
-      if (!res.ok) {
-        const body = (await res.json().catch(() => ({}))) as { error?: string };
-        throw new Error(body.error ?? `request failed (${res.status})`);
-      }
-      const data = (await res.json()) as {
-        explanation: ExampleExplanation;
-        cached: boolean;
-        usage?: ApiUsage | null;
-      };
+      const data = await addExampleExplanation(exampleId, tier);
       if (data.usage) showUsageToast("📖 예문 해설", data.usage);
       setExampleExpl(data.explanation);
       setExampleExplStatus({ kind: "idle" });
@@ -768,11 +750,18 @@ function ReadingCard({
                 </button>
                 <button
                   type="button"
-                  disabled={exampleExplStatus.kind === "loading"}
+                  disabled={
+                    exampleExplStatus.kind === "loading" ||
+                    (!exampleExpl && !ai.hasAi)
+                  }
                   onClick={toggleExplanation}
                   aria-label="예문 해설"
                   aria-pressed={exampleExplOpen}
-                  title="예문 전체에 대한 해설 (늬앙스/문법/표현)"
+                  title={
+                    !exampleExpl && !ai.hasAi
+                      ? "AI 키 미설정"
+                      : "예문 전체에 대한 해설 (늬앙스/문법/표현)"
+                  }
                   className={`inline-flex h-9 w-9 items-center justify-center rounded-full border text-base transition disabled:opacity-50 ${
                     exampleExplOpen
                       ? "border-sky-400 bg-sky-50 text-sky-900 dark:border-sky-500 dark:bg-sky-950 dark:text-sky-200"
@@ -1001,6 +990,7 @@ function KanjiHintModal({
 
 function NoExampleFallback({ item }: { item: ItemWithExample }) {
   const revalidator = useRevalidator();
+  const ai = useAiAvailability();
   const [status, setStatus] = useState<
     | { kind: "idle" }
     | { kind: "loading" }
@@ -1017,16 +1007,7 @@ function NoExampleFallback({ item }: { item: ItemWithExample }) {
     }
     setStatus({ kind: "loading" });
     try {
-      const res = await fetch("/api/example", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ wordId: item.sourceWordId, tier: "default" }),
-      });
-      if (!res.ok) {
-        const body = (await res.json().catch(() => ({}))) as { error?: string };
-        throw new Error(body.error ?? `request failed (${res.status})`);
-      }
-      const data = (await res.json()) as { usage?: ApiUsage | null };
+      const data = await addExampleToWord(item.sourceWordId, "default");
       if (data.usage) showUsageToast("✦ 예문 생성", data.usage);
       // Re-run loader; the new example shows up in this card.
       revalidator.revalidate();
@@ -1043,14 +1024,16 @@ function NoExampleFallback({ item }: { item: ItemWithExample }) {
         {item.word}
       </div>
       <p className="text-sm text-neutral-500">
-        이 단어에 등록된 예문이 없습니다.
+        {ai.hasAi
+          ? "이 단어에 등록된 예문이 없습니다."
+          : "이 단어에 등록된 예문이 없습니다. AI 키 미설정이라 생성 불가."}
       </p>
       {status.kind === "error" && (
         <p className="mt-2 text-sm text-rose-600">{status.message}</p>
       )}
       <button
         type="button"
-        disabled={status.kind === "loading"}
+        disabled={status.kind === "loading" || !ai.hasAi}
         onClick={generate}
         className="mt-3 inline-flex items-center gap-2 rounded-md bg-neutral-900 px-4 py-2 text-sm text-white hover:bg-neutral-700 disabled:opacity-50 dark:bg-neutral-100 dark:text-neutral-900"
       >

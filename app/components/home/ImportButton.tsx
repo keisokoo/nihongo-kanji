@@ -1,7 +1,11 @@
 import { useRef, useState } from "react";
 import { useNavigate, useRevalidator } from "react-router";
 import { Spinner } from "~/components/Spinner";
-import type { Pack } from "~/lib/db";
+import { importPack, type PackImportInput } from "~/lib/idb/pack";
+import {
+  importJlptDelta,
+  type PackExport,
+} from "~/lib/idb/pack-import-delta";
 
 type Status =
   | { kind: "idle" }
@@ -15,18 +19,6 @@ type DeltaBody = {
   key: string;
   title: string;
   items: Array<{ kanjiCharacter: string; words: unknown[] }>;
-};
-
-type DeltaResult = {
-  packKey: string;
-  mode: "replace" | "merge";
-  insertedWords: number;
-  insertedExamples: number;
-  attachedWordExplanations: number;
-  attachedExampleExplanations: number;
-  skippedWords: number;
-  unknownKanji: string[];
-  warnings: string[];
 };
 
 export function ImportButton() {
@@ -55,45 +47,46 @@ export function ImportButton() {
     }
   }
 
-  async function runImport(payload: unknown, filename: string) {
+  async function runImport(
+    payload: PackImportInput | (PackExport & { mode?: "replace" | "merge" }),
+    filename: string,
+  ) {
     setStatus({ kind: "loading", filename });
-    const res = await fetch("/api/pack/import", {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload),
-    });
-    if (!res.ok) {
-      const body = (await res.json().catch(() => ({}))) as { error?: string };
-      throw new Error(body.error ?? `request failed (${res.status})`);
-    }
-    const data = (await res.json()) as
-      | { kind: "custom"; pack: Pack }
-      | { kind: "jlpt-delta"; result: DeltaResult };
-    setStatus({ kind: "idle" });
 
-    if (data.kind === "custom") {
-      navigate(`/study/${encodeURIComponent(data.pack.key)}`);
+    if ((payload as PackExport).kind === "jlpt-delta") {
+      const exp = payload as PackExport & { mode?: "replace" | "merge" };
+      const mode = exp.mode === "merge" ? "merge" : "replace";
+      const r = await importJlptDelta(exp, mode);
+      setStatus({ kind: "idle" });
+      revalidator.revalidate();
+      const summary =
+        `${r.packKey} ${r.mode === "replace" ? "교체" : "병합"} 완료 — ` +
+        `+${r.insertedWords} 단어 / +${r.insertedExamples} 예문` +
+        (r.skippedWords > 0 ? ` · 중복 ${r.skippedWords} 건 스킵` : "") +
+        (r.unknownKanji.length > 0
+          ? ` · 알 수 없는 한자 ${r.unknownKanji.length} 건`
+          : "");
+      if (typeof window !== "undefined") window.alert(summary);
       return;
     }
-    // jlpt-delta — stay on home, refresh the loader to update counts/cards.
-    revalidator.revalidate();
-    const r = data.result;
-    const summary =
-      `${r.packKey} ${r.mode === "replace" ? "교체" : "병합"} 완료 — ` +
-      `+${r.insertedWords} 단어 / +${r.insertedExamples} 예문` +
-      (r.skippedWords > 0 ? ` · 중복 ${r.skippedWords} 건 스킵` : "") +
-      (r.unknownKanji.length > 0
-        ? ` · 알 수 없는 한자 ${r.unknownKanji.length} 건`
-        : "");
-    // Use a quick alert so the user knows it worked. Toast system is for AI cost only.
-    if (typeof window !== "undefined") window.alert(summary);
+
+    // Custom-full export OR raw seed JSON
+    const { pack } = await importPack(payload as PackImportInput, {
+      allowJlpt: false,
+    });
+    setStatus({ kind: "idle" });
+    navigate(`/study/${encodeURIComponent(pack.key)}`);
   }
 
   async function applyDelta(mode: "replace" | "merge") {
     if (status.kind !== "delta-pending") return;
     const { body, filename } = status;
     try {
-      await runImport({ ...body, mode }, filename);
+      // DeltaBody is a subset of PackExport; the file we read had the full shape.
+      await runImport(
+        { ...(body as unknown as PackExport), mode },
+        filename,
+      );
     } catch (err) {
       const message = err instanceof Error ? err.message : "import failed";
       setStatus({ kind: "error", message });

@@ -1,4 +1,4 @@
-import type { SentenceToken } from "./db";
+import type { SentenceToken } from "./idb/types";
 
 export type { SentenceToken };
 

@@ -4,36 +4,22 @@ import { useTtsPlayer } from "~/lib/useTtsPlayer";
 import type {
   Example,
   ExampleExplanation,
-  SentenceToken,
   Word,
   WordExplanation,
-} from "~/lib/db";
+} from "~/lib/idb/types";
+import {
+  addExampleExplanation,
+  addExampleToWord,
+  addWordExplanation,
+} from "~/lib/idb/example-actions";
+import { addAiWord } from "~/lib/idb/word-add";
+import { useAiAvailability } from "~/lib/idb/use-ai-availability";
 import { tokensToPlain } from "~/lib/sentence";
 import { Spinner } from "./Spinner";
 import { ConfirmModal } from "./ConfirmModal";
 import { SentenceRender } from "./SentenceRender";
 import { ExampleExplanationPanel } from "./ExampleExplanationPanel";
-import { showUsageToast, type ApiUsage } from "./Toast";
-
-type ApiExample = {
-  example: {
-    id: number;
-    sentence: SentenceToken[];
-    sentenceTranslationKo: string | null;
-    source: "seed" | "generated";
-  };
-  cached: boolean;
-  modelUsed?: string;
-  usage?: ApiUsage | null;
-};
-
-type WordResponse = {
-  word: Word;
-  kanjiReading: string;
-  matched: boolean;
-  modelUsed: string;
-  usage?: ApiUsage | null;
-};
+import { showUsageToast } from "./Toast";
 
 type GenStatus =
   | { kind: "idle" }
@@ -58,6 +44,7 @@ export function WordQuizSection({
   distractorPool,
 }: Props) {
   const navigate = useNavigate();
+  const ai = useAiAvailability();
   const [addingWord, setAddingWord] = useState<
     | null
     | { state: "loading" }
@@ -69,18 +56,8 @@ export function WordQuizSection({
     setShowAddModal(false);
     setAddingWord({ state: "loading" });
     try {
-      const res = await fetch("/api/word", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ kanjiId, tier: "premium" }),
-      });
-      if (!res.ok) {
-        const body = (await res.json().catch(() => ({}))) as { error?: string };
-        throw new Error(body.error ?? `request failed (${res.status})`);
-      }
-      const data = (await res.json()) as WordResponse;
-      if (data.usage) showUsageToast("✦ 단어 + 예문 추가", data.usage);
-      // Soft-navigate to the new word — loader re-runs and picks it up.
+      const data = await addAiWord({ kanjiId, tier: "premium" });
+      showUsageToast("✦ 단어 + 예문 추가", data.usage);
       navigate(
         `/study/${encodeURIComponent(packKey)}/${kanjiId}?word=${encodeURIComponent(data.word.word)}`,
       );
@@ -102,10 +79,14 @@ export function WordQuizSection({
           )}
           <button
             type="button"
-            disabled={addingWord?.state === "loading"}
+            disabled={addingWord?.state === "loading" || !ai.hasAi}
             onClick={() => setShowAddModal(true)}
             className="group inline-flex items-center gap-1.5 rounded-md border border-neutral-300 bg-white px-2.5 py-1.5 text-sm text-neutral-700 opacity-50 transition hover:border-neutral-400 hover:opacity-100 disabled:opacity-50 sm:px-3 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
-            title="이 한자를 쓰는 새 단어 + 예문 1개를 Sonnet으로 생성"
+            title={
+              ai.hasAi
+                ? "이 한자를 쓰는 새 단어 + 예문 1개를 Sonnet으로 생성"
+                : "AI 키 미설정 — 설정에서 입력해 주세요"
+            }
           >
             {addingWord?.state === "loading" ? (
               <>
@@ -194,6 +175,7 @@ function ActiveWordQuiz({
   initialExamples: Example[];
   distractorPool: string[];
 }) {
+  const ai = useAiAvailability();
   const [examples, setExamples] = useState<Example[]>(initialExamples);
   const [currentIndex, setCurrentIndex] = useState(0);
   const [picks, setPicks] = useState<Map<number, string>>(new Map());
@@ -258,32 +240,12 @@ function ActiveWordQuiz({
   async function generate(tier: "default" | "premium") {
     setGenStatus({ kind: "loading", tier });
     try {
-      const res = await fetch("/api/example", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          wordId: word.id,
-          excludeIds: examples.map((e) => e.id),
-          tier,
-        }),
+      const data = await addExampleToWord(word.id, tier, {
+        excludeIds: examples.map((e) => e.id),
       });
-      if (!res.ok) {
-        const body = (await res.json().catch(() => ({}))) as { error?: string };
-        throw new Error(body.error ?? `request failed (${res.status})`);
-      }
-      const data = (await res.json()) as ApiExample;
       if (data.usage) showUsageToast("✦ 예문 생성", data.usage);
-      const newRow: Example = {
-        id: data.example.id,
-        wordId: word.id,
-        sentence: data.example.sentence,
-        sentenceTranslationKo: data.example.sentenceTranslationKo,
-        source: data.example.source,
-        createdAt: new Date(),
-        explanation: null,
-      };
+      const newRow = data.example;
       setExamples((prev) => {
-        // dedupe in case API returned an existing one
         if (prev.some((e) => e.id === newRow.id)) return prev;
         return [...prev, newRow];
       });
@@ -304,20 +266,7 @@ function ActiveWordQuiz({
     setExplanationOpen(true);
     setExplanationStatus({ kind: "loading", tier });
     try {
-      const res = await fetch("/api/explanation", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ wordId: word.id, tier }),
-      });
-      if (!res.ok) {
-        const body = (await res.json().catch(() => ({}))) as { error?: string };
-        throw new Error(body.error ?? `request failed (${res.status})`);
-      }
-      const data = (await res.json()) as {
-        explanation: WordExplanation;
-        cached: boolean;
-        usage?: ApiUsage | null;
-      };
+      const data = await addWordExplanation(word.id, tier);
       if (data.usage) showUsageToast("💡 해설 생성", data.usage);
       setExplanation(data.explanation);
       setExplanationStatus({ kind: "idle" });
@@ -347,20 +296,7 @@ function ActiveWordQuiz({
     setExampleExplOpen(true);
     setExampleExplStatus({ kind: "loading", tier });
     try {
-      const res = await fetch("/api/example-explanation", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ exampleId, tier }),
-      });
-      if (!res.ok) {
-        const body = (await res.json().catch(() => ({}))) as { error?: string };
-        throw new Error(body.error ?? `request failed (${res.status})`);
-      }
-      const data = (await res.json()) as {
-        explanation: ExampleExplanation;
-        cached: boolean;
-        usage?: ApiUsage | null;
-      };
+      const data = await addExampleExplanation(exampleId, tier);
       if (data.usage) showUsageToast("📖 예문 해설", data.usage);
       setExamples((prev) =>
         prev.map((e) =>
@@ -414,6 +350,7 @@ function ActiveWordQuiz({
           regenDisabled={true}
           explanationOpen={explanationOpen}
           explanationLoading={explanationStatus.kind === "loading"}
+          explanationDisabled={!explanation && !ai.hasAi}
           onToggleExplanation={handleExplanationToggle}
         />
         {explanationOpen && (
@@ -446,8 +383,9 @@ function ActiveWordQuiz({
               </p>
               <button
                 type="button"
-                disabled={genStatus.kind === "loading"}
+                disabled={genStatus.kind === "loading" || !ai.hasAi}
                 onClick={() => generate("default")}
+                title={ai.hasAi ? undefined : "AI 키 미설정"}
                 className="inline-flex items-center gap-2 rounded-md bg-neutral-900 px-5 py-2.5 text-base text-white hover:bg-neutral-700 disabled:opacity-50 dark:bg-neutral-100 dark:text-neutral-900"
               >
                 {genStatus.kind === "loading" ? (
@@ -525,11 +463,18 @@ function ActiveWordQuiz({
               </button>
               <button
                 type="button"
-                disabled={exampleExplStatus.kind === "loading"}
+                disabled={
+                  exampleExplStatus.kind === "loading" ||
+                  (!current!.explanation && !ai.hasAi)
+                }
                 onClick={handleExampleExplToggle}
                 aria-label="예문 해설"
                 aria-pressed={exampleExplOpen}
-                title="예문 전체에 대한 해설 (늬앙스/문법/표현)"
+                title={
+                  !current!.explanation && !ai.hasAi
+                    ? "AI 키 미설정 — 설정에서 입력해 주세요"
+                    : "예문 전체에 대한 해설 (늬앙스/문법/표현)"
+                }
                 className={cn(
                   "inline-flex h-9 w-9 items-center justify-center rounded-full border text-base transition disabled:opacity-50",
                   exampleExplOpen
@@ -631,8 +576,9 @@ function ActiveWordQuiz({
         </div>
         <button
           type="button"
-          disabled={isGenerating}
+          disabled={isGenerating || !ai.hasAi}
           onClick={() => generate("default")}
+          title={ai.hasAi ? undefined : "AI 키 미설정"}
           className="inline-flex items-center gap-2 rounded-md bg-neutral-900 px-4 py-2 text-sm text-white hover:bg-neutral-700 disabled:opacity-50 dark:bg-neutral-100 dark:text-neutral-900"
         >
           {isGenerating && genStatus.tier === "default" ? (
@@ -728,6 +674,7 @@ function WordHeader({
   regenDisabled,
   explanationOpen,
   explanationLoading,
+  explanationDisabled,
   onToggleExplanation,
 }: {
   word: Word;
@@ -740,6 +687,7 @@ function WordHeader({
   regenDisabled: boolean;
   explanationOpen: boolean;
   explanationLoading: boolean;
+  explanationDisabled?: boolean;
   onToggleExplanation: () => void;
 }) {
   return (
@@ -779,10 +727,14 @@ function WordHeader({
         )}
         <button
           type="button"
-          disabled={explanationLoading}
+          disabled={explanationLoading || explanationDisabled}
           onClick={onToggleExplanation}
           aria-label="해설 보기"
-          title="이 단어 발음의 음편화/연탁/아테지 등 해설"
+          title={
+            explanationDisabled
+              ? "AI 키 미설정 — 설정에서 입력해 주세요"
+              : "이 단어 발음의 음편화/연탁/아테지 등 해설"
+          }
           aria-pressed={explanationOpen}
           className={cn(
             "inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1.5 text-sm transition disabled:opacity-50 sm:px-3",

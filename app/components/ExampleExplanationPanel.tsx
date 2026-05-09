@@ -1,4 +1,4 @@
-import type { ExampleExplanation } from "~/lib/db";
+import type { ExampleExplanation } from "~/lib/idb/types";
 import { Spinner } from "./Spinner";
 
 export type ExampleExplStatus =

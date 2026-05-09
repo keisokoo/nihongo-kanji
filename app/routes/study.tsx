@@ -1,84 +1,84 @@
 import { useEffect, useRef, useState } from "react";
 import { Link, redirect, useNavigate } from "react-router";
-import { asc, eq, ne, sql } from "drizzle-orm";
 import type { Route } from "./+types/study";
-import {
-  db,
-  examples as examplesTable,
-  kanji as kanjiTable,
-  words as wordsTable,
-  type Word,
-} from "~/lib/db";
+import { db } from "~/lib/idb/db";
 import { KanjiCard } from "~/components/KanjiCard";
 import { WordQuizSection } from "~/components/WordQuizSection";
 import { Spinner } from "~/components/Spinner";
-import { showUsageToast, type ApiUsage } from "~/components/Toast";
+import { showUsageToast } from "~/components/Toast";
+import { addAiWord } from "~/lib/idb/word-add";
+import { useAiAvailability } from "~/lib/idb/use-ai-availability";
 
 const DISTRACTOR_POOL_SIZE = 200;
 
-export async function loader({ params, request }: Route.LoaderArgs) {
+export async function clientLoader({ params, request }: Route.ClientLoaderArgs) {
   const id = Number(params.id);
   if (!Number.isFinite(id)) throw redirect("/");
 
-  const target = await db.query.kanji.findFirst({
-    where: eq(kanjiTable.id, id),
-    with: {
-      readings: true,
-      words: true,
-      pack: true,
-    },
-  });
+  const d = db();
+  const target = await d.kanji.get(id);
   if (!target) throw redirect("/");
   if (target.packKey !== params.level) {
     throw redirect(`/study/${encodeURIComponent(target.packKey)}/${target.id}`);
   }
 
+  const pack = await d.packs.get(target.packKey);
+  const readings = await d.readings.where("kanjiId").equals(target.id).sortBy("id");
+  const words = await d.words.where("kanjiId").equals(target.id).sortBy("id");
+
   const url = new URL(request.url);
   const wordParam = url.searchParams.get("word");
   const activeWord =
-    (wordParam && target.words.find((w) => w.word === wordParam)) ||
-    target.words[0] ||
+    (wordParam && words.find((w) => w.word === wordParam)) ||
+    words[0] ||
     null;
 
   const initialExamples = activeWord
-    ? await db.query.examples.findMany({
-        where: eq(examplesTable.wordId, activeWord.id),
-        orderBy: asc(examplesTable.id),
-      })
+    ? await d.examples.where("wordId").equals(activeWord.id).sortBy("id")
     : [];
 
-  // Distractor pool: random other word readings (excluding the active word's).
-  const poolRows = activeWord
-    ? await db
-        .select({ wordReading: wordsTable.wordReading })
-        .from(wordsTable)
-        .where(ne(wordsTable.id, activeWord.id))
-        .orderBy(sql`random()`)
-        .limit(DISTRACTOR_POOL_SIZE)
-    : [];
-  const distractorPool = poolRows
-    .map((r) => r.wordReading)
-    .filter((r) => r !== activeWord?.wordReading);
+  // Distractor pool: sample of other word readings (excluding active word's).
+  let distractorPool: string[] = [];
+  if (activeWord) {
+    // For SPA: simple sampling — take readings from up to N other words.
+    const all = await d.words
+      .filter((w) => w.id !== activeWord.id)
+      .limit(DISTRACTOR_POOL_SIZE * 4)
+      .toArray();
+    // Shuffle + slice
+    for (let i = all.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [all[i], all[j]] = [all[j], all[i]];
+    }
+    distractorPool = all
+      .slice(0, DISTRACTOR_POOL_SIZE)
+      .map((w) => w.wordReading)
+      .filter((r) => r !== activeWord.wordReading);
+  }
 
-  const allInPack = await db.query.kanji.findMany({
-    where: eq(kanjiTable.packKey, target.packKey),
-    orderBy: asc(kanjiTable.id),
-    columns: { id: true, character: true, meaningKo: true },
-  });
+  const allInPack = await d.kanji
+    .where("packKey")
+    .equals(target.packKey)
+    .sortBy("id");
   const idx = allInPack.findIndex((k) => k.id === target.id);
   const prev = idx > 0 ? allInPack[idx - 1] : null;
   const next = idx < allInPack.length - 1 ? allInPack[idx + 1] : null;
+  const trimmedAllInPack = allInPack.map((k) => ({
+    id: k.id,
+    character: k.character,
+    meaningKo: k.meaningKo,
+  }));
 
   return {
-    kanji: target,
-    pack: target.pack,
+    kanji: { ...target, readings },
+    pack: pack ?? null,
     packKey: target.packKey,
     position: idx + 1,
     total: allInPack.length,
-    prev,
-    next,
-    allInPack,
-    words: target.words,
+    prev: prev ? { id: prev.id, character: prev.character } : null,
+    next: next ? { id: next.id, character: next.character } : null,
+    allInPack: trimmedAllInPack,
+    words,
     activeWord,
     initialExamples,
     distractorPool,
@@ -307,6 +307,7 @@ function EmptyWordsCta({
   kanjiId: number;
 }) {
   const navigate = useNavigate();
+  const ai = useAiAvailability();
   const [status, setStatus] = useState<
     | { kind: "idle" }
     | { kind: "loading"; tier: "default" | "premium" }
@@ -316,20 +317,8 @@ function EmptyWordsCta({
   async function generate(tier: "default" | "premium") {
     setStatus({ kind: "loading", tier });
     try {
-      const res = await fetch("/api/word", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ kanjiId, tier }),
-      });
-      if (!res.ok) {
-        const body = (await res.json().catch(() => ({}))) as { error?: string };
-        throw new Error(body.error ?? `request failed (${res.status})`);
-      }
-      const data = (await res.json()) as {
-        word: Word;
-        usage?: ApiUsage | null;
-      };
-      if (data.usage) showUsageToast("✦ 단어 + 예문 생성", data.usage);
+      const data = await addAiWord({ kanjiId, tier });
+      showUsageToast("✦ 단어 + 예문 생성", data.usage);
       navigate(
         `/study/${encodeURIComponent(packKey)}/${kanjiId}?word=${encodeURIComponent(data.word.word)}`,
       );
@@ -345,12 +334,14 @@ function EmptyWordsCta({
     <div className="rounded-2xl border border-dashed border-neutral-300 p-12 text-center dark:border-neutral-700">
       <p className="text-base text-neutral-500">아직 등록된 단어가 없습니다.</p>
       <p className="mt-1 text-sm text-neutral-400">
-        AI로 이 한자를 쓰는 단어와 예문 1개를 같이 생성해보세요.
+        {ai.hasAi
+          ? "AI로 이 한자를 쓰는 단어와 예문 1개를 같이 생성해보세요."
+          : "AI 키가 설정되지 않아 단어 생성이 불가합니다. 설정에서 키를 입력해 주세요."}
       </p>
       <div className="mt-6 flex items-center justify-center gap-3">
         <button
           type="button"
-          disabled={isLoading}
+          disabled={isLoading || !ai.hasAi}
           onClick={() => generate("default")}
           className="inline-flex items-center gap-2 rounded-md bg-neutral-900 px-5 py-2.5 text-base text-white hover:bg-neutral-700 disabled:opacity-50 dark:bg-neutral-100 dark:text-neutral-900"
         >
@@ -365,7 +356,7 @@ function EmptyWordsCta({
         </button>
         <button
           type="button"
-          disabled={isLoading}
+          disabled={isLoading || !ai.hasAi}
           onClick={() => generate("premium")}
           className="inline-flex items-center gap-2 rounded-md border border-neutral-300 bg-white px-4 py-2.5 text-sm text-neutral-700 hover:border-neutral-400 disabled:opacity-50 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
           title="고품질 모델 — 비용 발생"
