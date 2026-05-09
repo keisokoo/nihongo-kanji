@@ -33,6 +33,12 @@
           "wordReading": "いちがつ",
           "meaningsKo": [
             "1월"
+          ],
+          "examples": [
+            {
+              "sentence": "{{一月}}に{雪|ゆき}が{降|ふ}ります。",
+              "sentenceTranslationKo": "1월에 눈이 내립니다."
+            }
           ]
         },
         {
