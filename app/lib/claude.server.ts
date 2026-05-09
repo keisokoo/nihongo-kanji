@@ -1,14 +1,24 @@
 import Anthropic from "@anthropic-ai/sdk";
+import { GoogleGenAI } from "@google/genai";
 
 export type Tier = "default" | "premium";
 
-const DEFAULT_MODEL =
-  process.env.ANTHROPIC_DEFAULT_MODEL ?? "claude-haiku-4-5";
-const PREMIUM_MODEL =
-  process.env.ANTHROPIC_PREMIUM_MODEL ?? "claude-sonnet-4-6";
+/**
+ * Provider selection: prefer Anthropic when ANTHROPIC_API_KEY is set,
+ * otherwise fall back to Gemini. Enables running the app on a Gemini-only
+ * quota (e.g. free Google AI Studio).
+ */
+const USE_GEMINI = !process.env.ANTHROPIC_API_KEY;
 
-// Models that accept `output_config.effort`. Haiku 4.5 returns 400 when given
-// effort, so we omit it for Haiku.
+const DEFAULT_MODEL = USE_GEMINI
+  ? (process.env.GEMINI_DEFAULT_MODEL ?? "gemini-3.1-flash-lite")
+  : (process.env.ANTHROPIC_DEFAULT_MODEL ?? "claude-haiku-4-5");
+const PREMIUM_MODEL = USE_GEMINI
+  ? (process.env.GEMINI_PREMIUM_MODEL ?? "gemini-3-flash-preview")
+  : (process.env.ANTHROPIC_PREMIUM_MODEL ?? "claude-sonnet-4-6");
+
+// Models that accept `output_config.effort` on Anthropic. Haiku 4.5 returns
+// 400 when given effort, so we omit it for Haiku. Gemini ignores this entirely.
 const SUPPORTS_EFFORT = new Set([
   "claude-opus-4-7",
   "claude-opus-4-6",
@@ -16,13 +26,22 @@ const SUPPORTS_EFFORT = new Set([
   "claude-sonnet-4-6",
 ]);
 
-let _client: Anthropic | null = null;
-function client() {
-  if (_client) return _client;
+let _anthropicClient: Anthropic | null = null;
+function anthropicClient() {
+  if (_anthropicClient) return _anthropicClient;
   const apiKey = process.env.ANTHROPIC_API_KEY;
   if (!apiKey) throw new Error("ANTHROPIC_API_KEY is not set");
-  _client = new Anthropic({ apiKey });
-  return _client;
+  _anthropicClient = new Anthropic({ apiKey });
+  return _anthropicClient;
+}
+
+let _geminiClient: GoogleGenAI | null = null;
+function geminiClient() {
+  if (_geminiClient) return _geminiClient;
+  const apiKey = process.env.GEMINI_API_KEY;
+  if (!apiKey) throw new Error("GEMINI_API_KEY is not set");
+  _geminiClient = new GoogleGenAI({ apiKey });
+  return _geminiClient;
 }
 
 function modelFor(tier: Tier) {
@@ -30,6 +49,24 @@ function modelFor(tier: Tier) {
 }
 
 type Schema = Record<string, unknown>;
+
+/**
+ * Strip JSON-Schema fields Gemini rejects (e.g. `additionalProperties`),
+ * recursively. The remaining shape (`type`, `properties`, `required`,
+ * `items`) is compatible with Gemini's `responseSchema`.
+ */
+function geminiSchema(value: unknown): unknown {
+  if (Array.isArray(value)) return value.map(geminiSchema);
+  if (value && typeof value === "object") {
+    const out: Record<string, unknown> = {};
+    for (const [k, v] of Object.entries(value)) {
+      if (k === "additionalProperties") continue;
+      out[k] = geminiSchema(v);
+    }
+    return out;
+  }
+  return value;
+}
 
 export type Usage = {
   inputTokens: number;
@@ -55,7 +92,7 @@ export function addUsage(a: Usage, b: Usage): Usage {
   };
 }
 
-async function callJson(
+async function callAnthropic(
   model: string,
   systemPrompt: string,
   userMessage: string,
@@ -66,7 +103,7 @@ async function callJson(
   };
   if (SUPPORTS_EFFORT.has(model)) outputConfig.effort = "low";
 
-  const response = await client().messages.create({
+  const response = await anthropicClient().messages.create({
     model,
     max_tokens: 2048,
     system: [
@@ -100,6 +137,57 @@ async function callJson(
     console.error("[claude] JSON parse failed:", textBlock.text);
     throw new Error("Claude returned invalid JSON");
   }
+}
+
+async function callGemini(
+  model: string,
+  systemPrompt: string,
+  userMessage: string,
+  schema: Schema,
+): Promise<{ data: unknown; usage: Usage }> {
+  const response = await geminiClient().models.generateContent({
+    model,
+    contents: [{ role: "user", parts: [{ text: userMessage }] }],
+    config: {
+      systemInstruction: systemPrompt,
+      responseMimeType: "application/json",
+      responseSchema: geminiSchema(schema) as never,
+      maxOutputTokens: 2048,
+    },
+  });
+
+  const text = response.text;
+  if (!text) {
+    console.error("[gemini] no text in response", response);
+    throw new Error("Gemini returned no text");
+  }
+
+  const meta = response.usageMetadata;
+  const usage: Usage = {
+    inputTokens: meta?.promptTokenCount ?? 0,
+    outputTokens: meta?.candidatesTokenCount ?? 0,
+    cacheCreationInputTokens: 0,
+    cacheReadInputTokens: meta?.cachedContentTokenCount ?? 0,
+  };
+
+  try {
+    return { data: JSON.parse(text), usage };
+  } catch {
+    console.error("[gemini] JSON parse failed:", text);
+    throw new Error("Gemini returned invalid JSON");
+  }
+}
+
+async function callJson(
+  model: string,
+  systemPrompt: string,
+  userMessage: string,
+  schema: Schema,
+): Promise<{ data: unknown; usage: Usage }> {
+  if (USE_GEMINI) {
+    return callGemini(model, systemPrompt, userMessage, schema);
+  }
+  return callAnthropic(model, systemPrompt, userMessage, schema);
 }
 
 /**
