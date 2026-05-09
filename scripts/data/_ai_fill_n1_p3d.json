@@ -1,0 +1,80 @@
+{
+  "_comment": "N1 Phase 3-D: 妄 妊 妙 妥 妨 姫 姻 姿 威 娠 娯 婆 婿 媒 媛 嫁 嫌",
+  "fills": {
+    "妄": [
+      { "readingRef": "モウ", "word": "妄想", "wordReading": "もうそう", "meaningsKo": ["망상"], "examples": [] },
+      { "readingRef": "モウ", "word": "妄言", "wordReading": "もうげん", "meaningsKo": ["망언"], "examples": [] },
+      { "readingRef": "ボウ", "word": "妄動", "wordReading": "ぼうどう", "meaningsKo": ["망동"], "examples": [] }
+    ],
+    "妊": [
+      { "readingRef": "ニン", "word": "妊娠", "wordReading": "にんしん", "meaningsKo": ["임신"], "examples": [] },
+      { "readingRef": "ニン", "word": "妊婦", "wordReading": "にんぷ", "meaningsKo": ["임산부"], "examples": [] },
+      { "readingRef": "ニン", "word": "避妊", "wordReading": "ひにん", "meaningsKo": ["피임"], "examples": [] }
+    ],
+    "妙": [
+      { "readingRef": "ミョウ", "word": "微妙", "wordReading": "びみょう", "meaningsKo": ["미묘"], "examples": [] },
+      { "readingRef": "ミョウ", "word": "絶妙", "wordReading": "ぜつみょう", "meaningsKo": ["절묘"], "examples": [] },
+      { "readingRef": "ミョウ", "word": "奇妙", "wordReading": "きみょう", "meaningsKo": ["기묘"], "examples": [] }
+    ],
+    "妥": [
+      { "readingRef": "ダ", "word": "妥協", "wordReading": "だきょう", "meaningsKo": ["타협"], "examples": [] },
+      { "readingRef": "ダ", "word": "妥当", "wordReading": "だとう", "meaningsKo": ["타당"], "examples": [] },
+      { "readingRef": "ダ", "word": "妥結", "wordReading": "だけつ", "meaningsKo": ["타결"], "examples": [] }
+    ],
+    "妨": [
+      { "readingRef": "ボウ", "word": "妨害", "wordReading": "ぼうがい", "meaningsKo": ["방해"], "examples": [] },
+      { "readingRef": "さまたげる", "word": "妨げる", "wordReading": "さまたげる", "meaningsKo": ["방해하다", "막다"], "examples": [] }
+    ],
+    "姫": [
+      { "readingRef": "ひめ", "word": "姫", "wordReading": "ひめ", "meaningsKo": ["공주", "아씨"], "examples": [] },
+      { "readingRef": "ひめ", "word": "歌姫", "wordReading": "うたひめ", "meaningsKo": ["가희", "여가수"], "examples": [] }
+    ],
+    "姻": [
+      { "readingRef": "イン", "word": "婚姻", "wordReading": "こんいん", "meaningsKo": ["혼인"], "examples": [] },
+      { "readingRef": "イン", "word": "姻戚", "wordReading": "いんせき", "meaningsKo": ["인척"], "examples": [] }
+    ],
+    "姿": [
+      { "readingRef": "すがた", "word": "姿", "wordReading": "すがた", "meaningsKo": ["모습", "자태"], "examples": [] },
+      { "readingRef": "シ", "word": "姿勢", "wordReading": "しせい", "meaningsKo": ["자세"], "examples": [] },
+      { "readingRef": "シ", "word": "容姿", "wordReading": "ようし", "meaningsKo": ["용모", "외모"], "examples": [] }
+    ],
+    "威": [
+      { "readingRef": "イ", "word": "権威", "wordReading": "けんい", "meaningsKo": ["권위"], "examples": [] },
+      { "readingRef": "イ", "word": "威厳", "wordReading": "いげん", "meaningsKo": ["위엄"], "examples": [] },
+      { "readingRef": "おどす", "word": "威す", "wordReading": "おどす", "meaningsKo": ["위협하다", "협박하다"], "examples": [] }
+    ],
+    "娠": [
+      { "readingRef": "シン", "word": "妊娠", "wordReading": "にんしん", "meaningsKo": ["임신"], "examples": [] }
+    ],
+    "娯": [
+      { "readingRef": "ゴ", "word": "娯楽", "wordReading": "ごらく", "meaningsKo": ["오락"], "examples": [] }
+    ],
+    "婆": [
+      { "readingRef": "バ", "word": "老婆", "wordReading": "ろうば", "meaningsKo": ["노파", "할머니"], "examples": [] },
+      { "readingRef": "バ", "word": "産婆", "wordReading": "さんば", "meaningsKo": ["산파"], "examples": [] }
+    ],
+    "婿": [
+      { "readingRef": "むこ", "word": "婿", "wordReading": "むこ", "meaningsKo": ["사위"], "examples": [] },
+      { "readingRef": "むこ", "word": "花婿", "wordReading": "はなむこ", "meaningsKo": ["신랑"], "examples": [] }
+    ],
+    "媒": [
+      { "readingRef": "バイ", "word": "媒介", "wordReading": "ばいかい", "meaningsKo": ["매개"], "examples": [] },
+      { "readingRef": "バイ", "word": "媒体", "wordReading": "ばいたい", "meaningsKo": ["매체"], "examples": [] },
+      { "readingRef": "バイ", "word": "触媒", "wordReading": "しょくばい", "meaningsKo": ["촉매"], "examples": [] }
+    ],
+    "媛": [
+      { "readingRef": "エン", "word": "才媛", "wordReading": "さいえん", "meaningsKo": ["재원", "재능 있는 여성"], "examples": [] },
+      { "readingRef": "ひめ", "word": "愛媛県", "wordReading": "えひめけん", "meaningsKo": ["에히메현"], "examples": [] }
+    ],
+    "嫁": [
+      { "readingRef": "よめ", "word": "嫁", "wordReading": "よめ", "meaningsKo": ["며느리", "신부"], "examples": [] },
+      { "readingRef": "とつぐ", "word": "嫁ぐ", "wordReading": "とつぐ", "meaningsKo": ["시집가다"], "examples": [] },
+      { "readingRef": "カ", "word": "転嫁", "wordReading": "てんか", "meaningsKo": ["전가"], "examples": [] }
+    ],
+    "嫌": [
+      { "readingRef": "きらう", "word": "嫌う", "wordReading": "きらう", "meaningsKo": ["싫어하다"], "examples": [] },
+      { "readingRef": "いや", "word": "嫌", "wordReading": "いや", "meaningsKo": ["싫음"], "examples": [] },
+      { "readingRef": "ケン", "word": "嫌悪", "wordReading": "けんお", "meaningsKo": ["혐오"], "examples": [] }
+    ]
+  }
+}

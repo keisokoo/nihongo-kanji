@@ -1,0 +1,76 @@
+{
+  "_comment": "N1 Phase 7-E: 樺 橘 檀 欄 欣 欺 欽 款 歓 殉 殊 殖 殴 殻 毅 毬 氏",
+  "fills": {
+    "樺": [
+      { "readingRef": "かば", "word": "樺", "wordReading": "かば", "meaningsKo": ["자작나무"], "examples": [] },
+      { "readingRef": "かば", "word": "白樺", "wordReading": "しらかば", "meaningsKo": ["흰자작나무"], "examples": [] }
+    ],
+    "橘": [
+      { "readingRef": "たちばな", "word": "橘", "wordReading": "たちばな", "meaningsKo": ["귤(고유종)"], "examples": [] }
+    ],
+    "檀": [
+      { "readingRef": "ダン", "word": "白檀", "wordReading": "びゃくだん", "meaningsKo": ["백단향"], "examples": [] },
+      { "readingRef": "ダン", "word": "檀家", "wordReading": "だんか", "meaningsKo": ["단가", "절의 시주"], "examples": [] }
+    ],
+    "欄": [
+      { "readingRef": "ラン", "word": "欄", "wordReading": "らん", "meaningsKo": ["난", "칸"], "examples": [] },
+      { "readingRef": "ラン", "word": "空欄", "wordReading": "くうらん", "meaningsKo": ["공란"], "examples": [] },
+      { "readingRef": "ラン", "word": "欄干", "wordReading": "らんかん", "meaningsKo": ["난간"], "examples": [] }
+    ],
+    "欣": [
+      { "readingRef": "キン", "word": "欣喜", "wordReading": "きんき", "meaningsKo": ["흔희", "기쁨"], "examples": [] }
+    ],
+    "欺": [
+      { "readingRef": "ギ", "word": "詐欺", "wordReading": "さぎ", "meaningsKo": ["사기"], "examples": [] },
+      { "readingRef": "あざむく", "word": "欺く", "wordReading": "あざむく", "meaningsKo": ["속이다", "기만하다"], "examples": [] },
+      { "readingRef": "ギ", "word": "欺瞞", "wordReading": "ぎまん", "meaningsKo": ["기만"], "examples": [] }
+    ],
+    "欽": [
+      { "readingRef": "キン", "word": "欽定", "wordReading": "きんてい", "meaningsKo": ["흠정", "임금이 직접 정함"], "examples": [] }
+    ],
+    "款": [
+      { "readingRef": "カン", "word": "定款", "wordReading": "ていかん", "meaningsKo": ["정관"], "examples": [] },
+      { "readingRef": "カン", "word": "借款", "wordReading": "しゃっかん", "meaningsKo": ["차관"], "examples": [] },
+      { "readingRef": "カン", "word": "約款", "wordReading": "やっかん", "meaningsKo": ["약관"], "examples": [] }
+    ],
+    "歓": [
+      { "readingRef": "カン", "word": "歓迎", "wordReading": "かんげい", "meaningsKo": ["환영"], "examples": [] },
+      { "readingRef": "カン", "word": "歓喜", "wordReading": "かんき", "meaningsKo": ["환희"], "examples": [] },
+      { "readingRef": "カン", "word": "歓声", "wordReading": "かんせい", "meaningsKo": ["환성"], "examples": [] }
+    ],
+    "殉": [
+      { "readingRef": "ジュン", "word": "殉職", "wordReading": "じゅんしょく", "meaningsKo": ["순직"], "examples": [] },
+      { "readingRef": "ジュン", "word": "殉教", "wordReading": "じゅんきょう", "meaningsKo": ["순교"], "examples": [] }
+    ],
+    "殊": [
+      { "readingRef": "シュ", "word": "特殊", "wordReading": "とくしゅ", "meaningsKo": ["특수"], "examples": [] },
+      { "readingRef": "こと", "word": "殊に", "wordReading": "ことに", "meaningsKo": ["특히"], "examples": [] },
+      { "readingRef": "シュ", "word": "殊勝", "wordReading": "しゅしょう", "meaningsKo": ["기특함", "갸륵함"], "examples": [] }
+    ],
+    "殖": [
+      { "readingRef": "ショク", "word": "繁殖", "wordReading": "はんしょく", "meaningsKo": ["번식"], "examples": [] },
+      { "readingRef": "ふえる", "word": "殖える", "wordReading": "ふえる", "meaningsKo": ["불어나다"], "examples": [] },
+      { "readingRef": "ショク", "word": "養殖", "wordReading": "ようしょく", "meaningsKo": ["양식"], "examples": [] }
+    ],
+    "殴": [
+      { "readingRef": "なぐる", "word": "殴る", "wordReading": "なぐる", "meaningsKo": ["때리다"], "examples": [] },
+      { "readingRef": "オウ", "word": "殴打", "wordReading": "おうだ", "meaningsKo": ["구타"], "examples": [] }
+    ],
+    "殻": [
+      { "readingRef": "から", "word": "殻", "wordReading": "から", "meaningsKo": ["껍질", "껍데기"], "examples": [] },
+      { "readingRef": "カク", "word": "地殻", "wordReading": "ちかく", "meaningsKo": ["지각"], "examples": [] },
+      { "readingRef": "カク", "word": "甲殻類", "wordReading": "こうかくるい", "meaningsKo": ["갑각류"], "examples": [] }
+    ],
+    "毅": [
+      { "readingRef": "キ", "word": "毅然", "wordReading": "きぜん", "meaningsKo": ["의연"], "examples": [] }
+    ],
+    "毬": [
+      { "readingRef": "まり", "word": "毬", "wordReading": "まり", "meaningsKo": ["공"], "examples": [] }
+    ],
+    "氏": [
+      { "readingRef": "シ", "word": "氏名", "wordReading": "しめい", "meaningsKo": ["성명"], "examples": [] },
+      { "readingRef": "うじ", "word": "氏", "wordReading": "うじ", "meaningsKo": ["씨족", "성"], "examples": [] },
+      { "readingRef": "シ", "word": "彼氏", "wordReading": "かれし", "meaningsKo": ["남자친구"], "examples": [] }
+    ]
+  }
+}

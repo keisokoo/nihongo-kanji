@@ -1,0 +1,79 @@
+{
+  "_comment": "N1 Phase 8-E: 災 炉 炊 炎 為 烈 焦 煩 煮 熊 熙 熟 燎 燦 燿 爵 爽",
+  "fills": {
+    "災": [
+      { "readingRef": "サイ", "word": "災害", "wordReading": "さいがい", "meaningsKo": ["재해"], "examples": [] },
+      { "readingRef": "サイ", "word": "災難", "wordReading": "さいなん", "meaningsKo": ["재난"], "examples": [] },
+      { "readingRef": "わざわい", "word": "災い", "wordReading": "わざわい", "meaningsKo": ["재앙", "화"], "examples": [] }
+    ],
+    "炉": [
+      { "readingRef": "ロ", "word": "暖炉", "wordReading": "だんろ", "meaningsKo": ["벽난로"], "examples": [] },
+      { "readingRef": "ロ", "word": "原子炉", "wordReading": "げんしろ", "meaningsKo": ["원자로"], "examples": [] },
+      { "readingRef": "いろり", "word": "囲炉裏", "wordReading": "いろり", "meaningsKo": ["전통 화덕"], "examples": [] }
+    ],
+    "炊": [
+      { "readingRef": "スイ", "word": "炊飯", "wordReading": "すいはん", "meaningsKo": ["취반", "밥 짓기"], "examples": [] },
+      { "readingRef": "たく", "word": "炊く", "wordReading": "たく", "meaningsKo": ["밥짓다"], "examples": [] },
+      { "readingRef": "スイ", "word": "自炊", "wordReading": "じすい", "meaningsKo": ["자취", "스스로 밥짓기"], "examples": [] }
+    ],
+    "炎": [
+      { "readingRef": "ほのお", "word": "炎", "wordReading": "ほのお", "meaningsKo": ["불꽃", "화염"], "examples": [] },
+      { "readingRef": "エン", "word": "炎症", "wordReading": "えんしょう", "meaningsKo": ["염증"], "examples": [] },
+      { "readingRef": "エン", "word": "火炎", "wordReading": "かえん", "meaningsKo": ["화염"], "examples": [] }
+    ],
+    "為": [
+      { "readingRef": "ため", "word": "為", "wordReading": "ため", "meaningsKo": ["때문에", "위하여"], "examples": [] },
+      { "readingRef": "イ", "word": "行為", "wordReading": "こうい", "meaningsKo": ["행위"], "examples": [] },
+      { "readingRef": "イ", "word": "為替", "wordReading": "かわせ", "meaningsKo": ["환율", "환"], "examples": [] }
+    ],
+    "烈": [
+      { "readingRef": "レツ", "word": "激烈", "wordReading": "げきれつ", "meaningsKo": ["격렬"], "examples": [] },
+      { "readingRef": "レツ", "word": "猛烈", "wordReading": "もうれつ", "meaningsKo": ["맹렬"], "examples": [] },
+      { "readingRef": "レツ", "word": "熱烈", "wordReading": "ねつれつ", "meaningsKo": ["열렬"], "examples": [] }
+    ],
+    "焦": [
+      { "readingRef": "ショウ", "word": "焦点", "wordReading": "しょうてん", "meaningsKo": ["초점"], "examples": [] },
+      { "readingRef": "あせる", "word": "焦る", "wordReading": "あせる", "meaningsKo": ["조급해하다"], "examples": [] },
+      { "readingRef": "こげる", "word": "焦げる", "wordReading": "こげる", "meaningsKo": ["타다", "눋다"], "examples": [] }
+    ],
+    "煩": [
+      { "readingRef": "ハン", "word": "煩雑", "wordReading": "はんざつ", "meaningsKo": ["번잡"], "examples": [] },
+      { "readingRef": "わずらう", "word": "煩う", "wordReading": "わずらう", "meaningsKo": ["고민하다", "근심하다"], "examples": [] },
+      { "readingRef": "ボン", "word": "煩悩", "wordReading": "ぼんのう", "meaningsKo": ["번뇌"], "examples": [] }
+    ],
+    "煮": [
+      { "readingRef": "にる", "word": "煮る", "wordReading": "にる", "meaningsKo": ["삶다", "끓이다"], "examples": [] },
+      { "readingRef": "に", "word": "煮物", "wordReading": "にもの", "meaningsKo": ["조림"], "examples": [] },
+      { "readingRef": "シャ", "word": "煮沸", "wordReading": "しゃふつ", "meaningsKo": ["자비", "끓임"], "examples": [] }
+    ],
+    "熊": [
+      { "readingRef": "くま", "word": "熊", "wordReading": "くま", "meaningsKo": ["곰"], "examples": [] },
+      { "readingRef": "くま", "word": "白熊", "wordReading": "しろくま", "meaningsKo": ["북극곰"], "examples": [] }
+    ],
+    "熙": [
+      { "readingRef": "キ", "word": "熙熙", "wordReading": "きき", "meaningsKo": ["화락한 모양", "번영하는 모양"], "examples": [] }
+    ],
+    "熟": [
+      { "readingRef": "ジュク", "word": "熟練", "wordReading": "じゅくれん", "meaningsKo": ["숙련"], "examples": [] },
+      { "readingRef": "うれる", "word": "熟れる", "wordReading": "うれる", "meaningsKo": ["익다"], "examples": [] },
+      { "readingRef": "ジュク", "word": "成熟", "wordReading": "せいじゅく", "meaningsKo": ["성숙"], "examples": [] }
+    ],
+    "燎": [
+      { "readingRef": "リョウ", "word": "燎原", "wordReading": "りょうげん", "meaningsKo": ["요원", "들판의 불"], "examples": [] }
+    ],
+    "燦": [
+      { "readingRef": "サン", "word": "燦然", "wordReading": "さんぜん", "meaningsKo": ["찬연"], "examples": [] }
+    ],
+    "燿": [
+      { "readingRef": "ヨウ", "word": "燿燿", "wordReading": "ようよう", "meaningsKo": ["빛나는 모양"], "examples": [] }
+    ],
+    "爵": [
+      { "readingRef": "シャク", "word": "爵位", "wordReading": "しゃくい", "meaningsKo": ["작위"], "examples": [] },
+      { "readingRef": "シャク", "word": "公爵", "wordReading": "こうしゃく", "meaningsKo": ["공작"], "examples": [] }
+    ],
+    "爽": [
+      { "readingRef": "さわやか", "word": "爽やか", "wordReading": "さわやか", "meaningsKo": ["상쾌함", "산뜻함"], "examples": [] },
+      { "readingRef": "ソウ", "word": "爽快", "wordReading": "そうかい", "meaningsKo": ["상쾌"], "examples": [] }
+    ]
+  }
+}

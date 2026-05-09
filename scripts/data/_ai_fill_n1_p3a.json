@@ -1,0 +1,80 @@
+{
+  "_comment": "N1 Phase 3-A: 嘉 嘱 器 噴 嚇 囚 圏 圭 坑 坪 垂 垣 執 培 基 堀 堅",
+  "fills": {
+    "嘉": [
+      { "readingRef": "カ", "word": "嘉賞", "wordReading": "かしょう", "meaningsKo": ["가상", "칭찬"], "examples": [] },
+      { "readingRef": "カ", "word": "嘉日", "wordReading": "かじつ", "meaningsKo": ["좋은 날", "길일"], "examples": [] }
+    ],
+    "嘱": [
+      { "readingRef": "ショク", "word": "委嘱", "wordReading": "いしょく", "meaningsKo": ["위촉"], "examples": [] },
+      { "readingRef": "ショク", "word": "嘱託", "wordReading": "しょくたく", "meaningsKo": ["촉탁", "위탁"], "examples": [] },
+      { "readingRef": "ショク", "word": "嘱望", "wordReading": "しょくぼう", "meaningsKo": ["촉망", "기대를 걺"], "examples": [] }
+    ],
+    "器": [
+      { "readingRef": "キ", "word": "器具", "wordReading": "きぐ", "meaningsKo": ["기구", "도구"], "examples": [] },
+      { "readingRef": "キ", "word": "楽器", "wordReading": "がっき", "meaningsKo": ["악기"], "examples": [] },
+      { "readingRef": "うつわ", "word": "器", "wordReading": "うつわ", "meaningsKo": ["그릇", "용기"], "examples": [] }
+    ],
+    "噴": [
+      { "readingRef": "フン", "word": "噴火", "wordReading": "ふんか", "meaningsKo": ["분화", "화산 폭발"], "examples": [] },
+      { "readingRef": "フン", "word": "噴水", "wordReading": "ふんすい", "meaningsKo": ["분수"], "examples": [] },
+      { "readingRef": "ふく", "word": "噴く", "wordReading": "ふく", "meaningsKo": ["뿜다", "내뿜다"], "examples": [] }
+    ],
+    "嚇": [
+      { "readingRef": "カク", "word": "威嚇", "wordReading": "いかく", "meaningsKo": ["위협", "위하"], "examples": [] }
+    ],
+    "囚": [
+      { "readingRef": "シュウ", "word": "囚人", "wordReading": "しゅうじん", "meaningsKo": ["수인", "죄수"], "examples": [] },
+      { "readingRef": "シュウ", "word": "死刑囚", "wordReading": "しけいしゅう", "meaningsKo": ["사형수"], "examples": [] }
+    ],
+    "圏": [
+      { "readingRef": "ケン", "word": "圏内", "wordReading": "けんない", "meaningsKo": ["권내", "범위 안"], "examples": [] },
+      { "readingRef": "ケン", "word": "首都圏", "wordReading": "しゅとけん", "meaningsKo": ["수도권"], "examples": [] },
+      { "readingRef": "ケン", "word": "大気圏", "wordReading": "たいきけん", "meaningsKo": ["대기권"], "examples": [] }
+    ],
+    "圭": [
+      { "readingRef": "ケイ", "word": "圭角", "wordReading": "けいかく", "meaningsKo": ["규각", "모난 행동"], "examples": [] }
+    ],
+    "坑": [
+      { "readingRef": "コウ", "word": "炭坑", "wordReading": "たんこう", "meaningsKo": ["탄광"], "examples": [] },
+      { "readingRef": "コウ", "word": "坑道", "wordReading": "こうどう", "meaningsKo": ["갱도"], "examples": [] }
+    ],
+    "坪": [
+      { "readingRef": "つぼ", "word": "坪", "wordReading": "つぼ", "meaningsKo": ["평(면적 단위)"], "examples": [] },
+      { "readingRef": "つぼ", "word": "建坪", "wordReading": "たてつぼ", "meaningsKo": ["건평", "건물 면적"], "examples": [] }
+    ],
+    "垂": [
+      { "readingRef": "スイ", "word": "垂直", "wordReading": "すいちょく", "meaningsKo": ["수직"], "examples": [] },
+      { "readingRef": "たれる", "word": "垂れる", "wordReading": "たれる", "meaningsKo": ["드리워지다", "늘어지다"], "examples": [] },
+      { "readingRef": "たらす", "word": "垂らす", "wordReading": "たらす", "meaningsKo": ["늘어뜨리다"], "examples": [] }
+    ],
+    "垣": [
+      { "readingRef": "かき", "word": "垣", "wordReading": "かき", "meaningsKo": ["담", "울타리"], "examples": [] },
+      { "readingRef": "かき", "word": "垣根", "wordReading": "かきね", "meaningsKo": ["울타리"], "examples": [] }
+    ],
+    "執": [
+      { "readingRef": "シツ", "word": "執筆", "wordReading": "しっぴつ", "meaningsKo": ["집필"], "examples": [] },
+      { "readingRef": "シュウ", "word": "執着", "wordReading": "しゅうちゃく", "meaningsKo": ["집착"], "examples": [] },
+      { "readingRef": "とる", "word": "執る", "wordReading": "とる", "meaningsKo": ["잡다", "집행하다"], "examples": [] }
+    ],
+    "培": [
+      { "readingRef": "バイ", "word": "栽培", "wordReading": "さいばい", "meaningsKo": ["재배"], "examples": [] },
+      { "readingRef": "バイ", "word": "培養", "wordReading": "ばいよう", "meaningsKo": ["배양"], "examples": [] },
+      { "readingRef": "つちかう", "word": "培う", "wordReading": "つちかう", "meaningsKo": ["기르다", "배양하다"], "examples": [] }
+    ],
+    "基": [
+      { "readingRef": "キ", "word": "基本", "wordReading": "きほん", "meaningsKo": ["기본"], "examples": [] },
+      { "readingRef": "キ", "word": "基礎", "wordReading": "きそ", "meaningsKo": ["기초"], "examples": [] },
+      { "readingRef": "もと", "word": "基", "wordReading": "もと", "meaningsKo": ["바탕", "근거"], "examples": [] }
+    ],
+    "堀": [
+      { "readingRef": "ほり", "word": "堀", "wordReading": "ほり", "meaningsKo": ["해자", "도랑"], "examples": [] },
+      { "readingRef": "ほり", "word": "外堀", "wordReading": "そとぼり", "meaningsKo": ["바깥 해자"], "examples": [] }
+    ],
+    "堅": [
+      { "readingRef": "ケン", "word": "堅固", "wordReading": "けんご", "meaningsKo": ["견고"], "examples": [] },
+      { "readingRef": "ケン", "word": "堅実", "wordReading": "けんじつ", "meaningsKo": ["견실"], "examples": [] },
+      { "readingRef": "かたい", "word": "堅い", "wordReading": "かたい", "meaningsKo": ["굳다", "단단하다"], "examples": [] }
+    ]
+  }
+}

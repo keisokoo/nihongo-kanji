@@ -1,0 +1,81 @@
+{
+  "_comment": "N1 Phase 2-E: 哀 哉 哲 唄 唆 唇 唯 唱 啄 啓 善 喚 喝 喪 喬 嗣 嘆",
+  "fills": {
+    "哀": [
+      { "readingRef": "アイ", "word": "悲哀", "wordReading": "ひあい", "meaningsKo": ["비애", "슬픔"], "examples": [] },
+      { "readingRef": "アイ", "word": "哀愁", "wordReading": "あいしゅう", "meaningsKo": ["애수", "쓸쓸한 슬픔"], "examples": [] },
+      { "readingRef": "あわれ", "word": "哀れ", "wordReading": "あわれ", "meaningsKo": ["불쌍함", "가엾음"], "examples": [] }
+    ],
+    "哉": [
+      { "readingRef": "かな", "word": "哉", "wordReading": "かな", "meaningsKo": ["~로구나(감탄)"], "examples": [] }
+    ],
+    "哲": [
+      { "readingRef": "テツ", "word": "哲学", "wordReading": "てつがく", "meaningsKo": ["철학"], "examples": [] },
+      { "readingRef": "テツ", "word": "哲人", "wordReading": "てつじん", "meaningsKo": ["철인", "철학자"], "examples": [] },
+      { "readingRef": "テツ", "word": "先哲", "wordReading": "せんてつ", "meaningsKo": ["선철", "옛 현자"], "examples": [] }
+    ],
+    "唄": [
+      { "readingRef": "うた", "word": "唄", "wordReading": "うた", "meaningsKo": ["민요", "노래"], "examples": [] },
+      { "readingRef": "うた", "word": "子守唄", "wordReading": "こもりうた", "meaningsKo": ["자장가"], "examples": [] }
+    ],
+    "唆": [
+      { "readingRef": "サ", "word": "示唆", "wordReading": "しさ", "meaningsKo": ["시사", "암시"], "examples": [] },
+      { "readingRef": "サ", "word": "教唆", "wordReading": "きょうさ", "meaningsKo": ["교사", "부추김"], "examples": [] },
+      { "readingRef": "そそのかす", "word": "唆す", "wordReading": "そそのかす", "meaningsKo": ["부추기다", "꼬드기다"], "examples": [] }
+    ],
+    "唇": [
+      { "readingRef": "くちびる", "word": "唇", "wordReading": "くちびる", "meaningsKo": ["입술"], "examples": [] },
+      { "readingRef": "シン", "word": "口唇", "wordReading": "こうしん", "meaningsKo": ["구순", "입술"], "examples": [] }
+    ],
+    "唯": [
+      { "readingRef": "ユイ", "word": "唯一", "wordReading": "ゆいいつ", "meaningsKo": ["유일"], "examples": [] },
+      { "readingRef": "ただ", "word": "唯", "wordReading": "ただ", "meaningsKo": ["다만", "오직"], "examples": [] },
+      { "readingRef": "ユイ", "word": "唯物論", "wordReading": "ゆいぶつろん", "meaningsKo": ["유물론"], "examples": [] }
+    ],
+    "唱": [
+      { "readingRef": "ショウ", "word": "合唱", "wordReading": "がっしょう", "meaningsKo": ["합창"], "examples": [] },
+      { "readingRef": "ショウ", "word": "提唱", "wordReading": "ていしょう", "meaningsKo": ["제창", "제안"], "examples": [] },
+      { "readingRef": "となえる", "word": "唱える", "wordReading": "となえる", "meaningsKo": ["주창하다", "외치다"], "examples": [] }
+    ],
+    "啄": [
+      { "readingRef": "タク", "word": "啄木鳥", "wordReading": "きつつき", "meaningsKo": ["딱따구리"], "examples": [] }
+    ],
+    "啓": [
+      { "readingRef": "ケイ", "word": "啓発", "wordReading": "けいはつ", "meaningsKo": ["계발", "깨우침"], "examples": [] },
+      { "readingRef": "ケイ", "word": "啓蒙", "wordReading": "けいもう", "meaningsKo": ["계몽"], "examples": [] },
+      { "readingRef": "ケイ", "word": "拝啓", "wordReading": "はいけい", "meaningsKo": ["배계", "삼가 아룀(편지 첫머리)"], "examples": [] }
+    ],
+    "善": [
+      { "readingRef": "ゼン", "word": "善悪", "wordReading": "ぜんあく", "meaningsKo": ["선악"], "examples": [] },
+      { "readingRef": "ゼン", "word": "改善", "wordReading": "かいぜん", "meaningsKo": ["개선"], "examples": [] },
+      { "readingRef": "よい", "word": "善い", "wordReading": "よい", "meaningsKo": ["좋다", "선하다"], "examples": [] }
+    ],
+    "喚": [
+      { "readingRef": "カン", "word": "召喚", "wordReading": "しょうかん", "meaningsKo": ["소환"], "examples": [] },
+      { "readingRef": "カン", "word": "喚起", "wordReading": "かんき", "meaningsKo": ["환기", "불러일으킴"], "examples": [] },
+      { "readingRef": "わめく", "word": "喚く", "wordReading": "わめく", "meaningsKo": ["고함치다", "외치다"], "examples": [] }
+    ],
+    "喝": [
+      { "readingRef": "カツ", "word": "恐喝", "wordReading": "きょうかつ", "meaningsKo": ["공갈", "협박"], "examples": [] },
+      { "readingRef": "カツ", "word": "一喝", "wordReading": "いっかつ", "meaningsKo": ["일갈", "호통"], "examples": [] },
+      { "readingRef": "カツ", "word": "喝采", "wordReading": "かっさい", "meaningsKo": ["갈채", "환호"], "examples": [] }
+    ],
+    "喪": [
+      { "readingRef": "ソウ", "word": "喪失", "wordReading": "そうしつ", "meaningsKo": ["상실"], "examples": [] },
+      { "readingRef": "も", "word": "喪", "wordReading": "も", "meaningsKo": ["상", "초상"], "examples": [] },
+      { "readingRef": "も", "word": "喪服", "wordReading": "もふく", "meaningsKo": ["상복"], "examples": [] }
+    ],
+    "喬": [
+      { "readingRef": "キョウ", "word": "喬木", "wordReading": "きょうぼく", "meaningsKo": ["교목", "큰키나무"], "examples": [] }
+    ],
+    "嗣": [
+      { "readingRef": "シ", "word": "嗣子", "wordReading": "しし", "meaningsKo": ["사자", "후계자"], "examples": [] },
+      { "readingRef": "シ", "word": "後嗣", "wordReading": "こうし", "meaningsKo": ["후사", "후계자"], "examples": [] }
+    ],
+    "嘆": [
+      { "readingRef": "タン", "word": "感嘆", "wordReading": "かんたん", "meaningsKo": ["감탄"], "examples": [] },
+      { "readingRef": "タン", "word": "悲嘆", "wordReading": "ひたん", "meaningsKo": ["비탄"], "examples": [] },
+      { "readingRef": "なげく", "word": "嘆く", "wordReading": "なげく", "meaningsKo": ["한탄하다", "슬퍼하다"], "examples": [] }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "_comment": "N1 Phase 11-D: 脹 腐 腸 膜 膨 臨 臭 至 致 興 舌 舎 舗 舜 舶 艇 艦",
+  "fills": {
+    "脹": [
+      { "readingRef": "チョウ", "word": "膨脹", "wordReading": "ぼうちょう", "meaningsKo": ["팽창"], "examples": [] },
+      { "readingRef": "ふくらむ", "word": "脹らむ", "wordReading": "ふくらむ", "meaningsKo": ["부풀다"], "examples": [] }
+    ],
+    "腐": [
+      { "readingRef": "くさる", "word": "腐る", "wordReading": "くさる", "meaningsKo": ["썩다"], "examples": [] },
+      { "readingRef": "フ", "word": "腐敗", "wordReading": "ふはい", "meaningsKo": ["부패"], "examples": [] },
+      { "readingRef": "フ", "word": "豆腐", "wordReading": "とうふ", "meaningsKo": ["두부"], "examples": [] }
+    ],
+    "腸": [
+      { "readingRef": "チョウ", "word": "大腸", "wordReading": "だいちょう", "meaningsKo": ["대장"], "examples": [] },
+      { "readingRef": "チョウ", "word": "胃腸", "wordReading": "いちょう", "meaningsKo": ["위장"], "examples": [] },
+      { "readingRef": "チョウ", "word": "盲腸", "wordReading": "もうちょう", "meaningsKo": ["맹장"], "examples": [] }
+    ],
+    "膜": [
+      { "readingRef": "マク", "word": "膜", "wordReading": "まく", "meaningsKo": ["막"], "examples": [] },
+      { "readingRef": "マク", "word": "粘膜", "wordReading": "ねんまく", "meaningsKo": ["점막"], "examples": [] },
+      { "readingRef": "マク", "word": "鼓膜", "wordReading": "こまく", "meaningsKo": ["고막"], "examples": [] }
+    ],
+    "膨": [
+      { "readingRef": "ボウ", "word": "膨大", "wordReading": "ぼうだい", "meaningsKo": ["방대"], "examples": [] },
+      { "readingRef": "ふくらむ", "word": "膨らむ", "wordReading": "ふくらむ", "meaningsKo": ["부풀다"], "examples": [] },
+      { "readingRef": "ボウ", "word": "膨張", "wordReading": "ぼうちょう", "meaningsKo": ["팽창"], "examples": [] }
+    ],
+    "臨": [
+      { "readingRef": "リン", "word": "臨時", "wordReading": "りんじ", "meaningsKo": ["임시"], "examples": [] },
+      { "readingRef": "のぞむ", "word": "臨む", "wordReading": "のぞむ", "meaningsKo": ["임하다", "맞이하다"], "examples": [] },
+      { "readingRef": "リン", "word": "臨床", "wordReading": "りんしょう", "meaningsKo": ["임상"], "examples": [] }
+    ],
+    "臭": [
+      { "readingRef": "くさい", "word": "臭い", "wordReading": "くさい", "meaningsKo": ["냄새 나다", "수상하다"], "examples": [] },
+      { "readingRef": "におい", "word": "臭い", "wordReading": "におい", "meaningsKo": ["냄새"], "examples": [] },
+      { "readingRef": "シュウ", "word": "悪臭", "wordReading": "あくしゅう", "meaningsKo": ["악취"], "examples": [] }
+    ],
+    "至": [
+      { "readingRef": "シ", "word": "至急", "wordReading": "しきゅう", "meaningsKo": ["지급", "긴급"], "examples": [] },
+      { "readingRef": "いたる", "word": "至る", "wordReading": "いたる", "meaningsKo": ["이르다"], "examples": [] },
+      { "readingRef": "シ", "word": "夏至", "wordReading": "げし", "meaningsKo": ["하지"], "examples": [] }
+    ],
+    "致": [
+      { "readingRef": "チ", "word": "一致", "wordReading": "いっち", "meaningsKo": ["일치"], "examples": [] },
+      { "readingRef": "いたす", "word": "致す", "wordReading": "いたす", "meaningsKo": ["하다(겸양)"], "examples": [] },
+      { "readingRef": "チ", "word": "誘致", "wordReading": "ゆうち", "meaningsKo": ["유치"], "examples": [] }
+    ],
+    "興": [
+      { "readingRef": "コウ", "word": "興味", "wordReading": "きょうみ", "meaningsKo": ["흥미"], "examples": [] },
+      { "readingRef": "コウ", "word": "復興", "wordReading": "ふっこう", "meaningsKo": ["부흥"], "examples": [] },
+      { "readingRef": "おこす", "word": "興す", "wordReading": "おこす", "meaningsKo": ["일으키다"], "examples": [] }
+    ],
+    "舌": [
+      { "readingRef": "した", "word": "舌", "wordReading": "した", "meaningsKo": ["혀"], "examples": [] },
+      { "readingRef": "ゼツ", "word": "舌打ち", "wordReading": "したうち", "meaningsKo": ["혀를 참"], "examples": [] },
+      { "readingRef": "ゼツ", "word": "毒舌", "wordReading": "どくぜつ", "meaningsKo": ["독설"], "examples": [] }
+    ],
+    "舎": [
+      { "readingRef": "シャ", "word": "校舎", "wordReading": "こうしゃ", "meaningsKo": ["교사", "학교 건물"], "examples": [] },
+      { "readingRef": "シャ", "word": "宿舎", "wordReading": "しゅくしゃ", "meaningsKo": ["숙사", "숙소"], "examples": [] },
+      { "readingRef": "シャ", "word": "田舎", "wordReading": "いなか", "meaningsKo": ["시골"], "examples": [] }
+    ],
+    "舗": [
+      { "readingRef": "ホ", "word": "店舗", "wordReading": "てんぽ", "meaningsKo": ["점포"], "examples": [] },
+      { "readingRef": "ホ", "word": "舗装", "wordReading": "ほそう", "meaningsKo": ["포장"], "examples": [] },
+      { "readingRef": "ホ", "word": "老舗", "wordReading": "しにせ", "meaningsKo": ["노포", "오래된 가게"], "examples": [] }
+    ],
+    "舜": [
+      { "readingRef": "シュン", "word": "尭舜", "wordReading": "ぎょうしゅん", "meaningsKo": ["요순(고대 성군)"], "examples": [] }
+    ],
+    "舶": [
+      { "readingRef": "ハク", "word": "船舶", "wordReading": "せんぱく", "meaningsKo": ["선박"], "examples": [] },
+      { "readingRef": "ハク", "word": "舶来", "wordReading": "はくらい", "meaningsKo": ["박래", "외국에서 들여옴"], "examples": [] }
+    ],
+    "艇": [
+      { "readingRef": "テイ", "word": "艦艇", "wordReading": "かんてい", "meaningsKo": ["함정"], "examples": [] },
+      { "readingRef": "テイ", "word": "競艇", "wordReading": "きょうてい", "meaningsKo": ["경정"], "examples": [] }
+    ],
+    "艦": [
+      { "readingRef": "カン", "word": "軍艦", "wordReading": "ぐんかん", "meaningsKo": ["군함"], "examples": [] },
+      { "readingRef": "カン", "word": "戦艦", "wordReading": "せんかん", "meaningsKo": ["전함"], "examples": [] },
+      { "readingRef": "カン", "word": "艦隊", "wordReading": "かんたい", "meaningsKo": ["함대"], "examples": [] }
+    ]
+  }
+}

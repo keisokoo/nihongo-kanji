@@ -1,0 +1,74 @@
+{
+  "_comment": "N1 Phase 7-B: 析 枠 枢 架 柄 柊 某 染 柚 柳 柾 栓 栗 栞 株 核 栽",
+  "fills": {
+    "析": [
+      { "readingRef": "セキ", "word": "分析", "wordReading": "ぶんせき", "meaningsKo": ["분석"], "examples": [] },
+      { "readingRef": "セキ", "word": "解析", "wordReading": "かいせき", "meaningsKo": ["해석", "분석"], "examples": [] }
+    ],
+    "枠": [
+      { "readingRef": "わく", "word": "枠", "wordReading": "わく", "meaningsKo": ["틀", "테두리"], "examples": [] },
+      { "readingRef": "わく", "word": "窓枠", "wordReading": "まどわく", "meaningsKo": ["창틀"], "examples": [] }
+    ],
+    "枢": [
+      { "readingRef": "スウ", "word": "中枢", "wordReading": "ちゅうすう", "meaningsKo": ["중추"], "examples": [] },
+      { "readingRef": "スウ", "word": "枢密", "wordReading": "すうみつ", "meaningsKo": ["추밀"], "examples": [] }
+    ],
+    "架": [
+      { "readingRef": "カ", "word": "架空", "wordReading": "かくう", "meaningsKo": ["가공", "허구"], "examples": [] },
+      { "readingRef": "カ", "word": "書架", "wordReading": "しょか", "meaningsKo": ["서가"], "examples": [] },
+      { "readingRef": "かける", "word": "架ける", "wordReading": "かける", "meaningsKo": ["가설하다", "걸치다"], "examples": [] }
+    ],
+    "柄": [
+      { "readingRef": "がら", "word": "柄", "wordReading": "がら", "meaningsKo": ["무늬", "성질"], "examples": [] },
+      { "readingRef": "え", "word": "柄", "wordReading": "え", "meaningsKo": ["손잡이", "자루"], "examples": [] },
+      { "readingRef": "ヘイ", "word": "横柄", "wordReading": "おうへい", "meaningsKo": ["거만", "오만"], "examples": [] }
+    ],
+    "柊": [
+      { "readingRef": "ひいらぎ", "word": "柊", "wordReading": "ひいらぎ", "meaningsKo": ["호랑가시나무"], "examples": [] }
+    ],
+    "某": [
+      { "readingRef": "ボウ", "word": "某氏", "wordReading": "ぼうし", "meaningsKo": ["모씨"], "examples": [] },
+      { "readingRef": "ボウ", "word": "某所", "wordReading": "ぼうしょ", "meaningsKo": ["모처"], "examples": [] }
+    ],
+    "染": [
+      { "readingRef": "セン", "word": "汚染", "wordReading": "おせん", "meaningsKo": ["오염"], "examples": [] },
+      { "readingRef": "そめる", "word": "染める", "wordReading": "そめる", "meaningsKo": ["염색하다", "물들이다"], "examples": [] },
+      { "readingRef": "しみる", "word": "染みる", "wordReading": "しみる", "meaningsKo": ["스미다"], "examples": [] }
+    ],
+    "柚": [
+      { "readingRef": "ゆず", "word": "柚", "wordReading": "ゆず", "meaningsKo": ["유자"], "examples": [] }
+    ],
+    "柳": [
+      { "readingRef": "やなぎ", "word": "柳", "wordReading": "やなぎ", "meaningsKo": ["버드나무"], "examples": [] },
+      { "readingRef": "リュウ", "word": "川柳", "wordReading": "せんりゅう", "meaningsKo": ["센류(짧은 시)"], "examples": [] }
+    ],
+    "柾": [
+      { "readingRef": "まさ", "word": "柾", "wordReading": "まさ", "meaningsKo": ["곧은 결의 나무"], "examples": [] }
+    ],
+    "栓": [
+      { "readingRef": "セン", "word": "栓", "wordReading": "せん", "meaningsKo": ["마개", "코르크"], "examples": [] },
+      { "readingRef": "セン", "word": "消火栓", "wordReading": "しょうかせん", "meaningsKo": ["소화전"], "examples": [] }
+    ],
+    "栗": [
+      { "readingRef": "くり", "word": "栗", "wordReading": "くり", "meaningsKo": ["밤"], "examples": [] },
+      { "readingRef": "くり", "word": "栗色", "wordReading": "くりいろ", "meaningsKo": ["밤색"], "examples": [] }
+    ],
+    "栞": [
+      { "readingRef": "しおり", "word": "栞", "wordReading": "しおり", "meaningsKo": ["책갈피"], "examples": [] }
+    ],
+    "株": [
+      { "readingRef": "かぶ", "word": "株", "wordReading": "かぶ", "meaningsKo": ["주식", "그루"], "examples": [] },
+      { "readingRef": "かぶ", "word": "株式", "wordReading": "かぶしき", "meaningsKo": ["주식"], "examples": [] },
+      { "readingRef": "かぶ", "word": "株主", "wordReading": "かぶぬし", "meaningsKo": ["주주"], "examples": [] }
+    ],
+    "核": [
+      { "readingRef": "カク", "word": "核", "wordReading": "かく", "meaningsKo": ["핵"], "examples": [] },
+      { "readingRef": "カク", "word": "核心", "wordReading": "かくしん", "meaningsKo": ["핵심"], "examples": [] },
+      { "readingRef": "カク", "word": "核兵器", "wordReading": "かくへいき", "meaningsKo": ["핵무기"], "examples": [] }
+    ],
+    "栽": [
+      { "readingRef": "サイ", "word": "栽培", "wordReading": "さいばい", "meaningsKo": ["재배"], "examples": [] },
+      { "readingRef": "サイ", "word": "盆栽", "wordReading": "ぼんさい", "meaningsKo": ["분재"], "examples": [] }
+    ]
+  }
+}

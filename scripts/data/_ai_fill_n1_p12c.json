@@ -1,0 +1,80 @@
+{
+  "_comment": "N1 Phase 12-C: 蛇 蛍 蛮 蝶 融 衆 街 衛 衝 衡 衰 衷 衿 袈 裁 裂 裕",
+  "fills": {
+    "蛇": [
+      { "readingRef": "へび", "word": "蛇", "wordReading": "へび", "meaningsKo": ["뱀"], "examples": [] },
+      { "readingRef": "ジャ", "word": "蛇口", "wordReading": "じゃぐち", "meaningsKo": ["수도꼭지"], "examples": [] },
+      { "readingRef": "ダ", "word": "蛇足", "wordReading": "だそく", "meaningsKo": ["사족"], "examples": [] }
+    ],
+    "蛍": [
+      { "readingRef": "ほたる", "word": "蛍", "wordReading": "ほたる", "meaningsKo": ["반딧불이"], "examples": [] },
+      { "readingRef": "ケイ", "word": "蛍光灯", "wordReading": "けいこうとう", "meaningsKo": ["형광등"], "examples": [] }
+    ],
+    "蛮": [
+      { "readingRef": "バン", "word": "野蛮", "wordReading": "やばん", "meaningsKo": ["야만"], "examples": [] },
+      { "readingRef": "バン", "word": "蛮行", "wordReading": "ばんこう", "meaningsKo": ["만행"], "examples": [] }
+    ],
+    "蝶": [
+      { "readingRef": "チョウ", "word": "蝶", "wordReading": "ちょう", "meaningsKo": ["나비"], "examples": [] },
+      { "readingRef": "チョウ", "word": "蝶々", "wordReading": "ちょうちょう", "meaningsKo": ["나비"], "examples": [] }
+    ],
+    "融": [
+      { "readingRef": "ユウ", "word": "金融", "wordReading": "きんゆう", "meaningsKo": ["금융"], "examples": [] },
+      { "readingRef": "とける", "word": "融ける", "wordReading": "とける", "meaningsKo": ["녹다"], "examples": [] },
+      { "readingRef": "ユウ", "word": "融合", "wordReading": "ゆうごう", "meaningsKo": ["융합"], "examples": [] }
+    ],
+    "衆": [
+      { "readingRef": "シュウ", "word": "観衆", "wordReading": "かんしゅう", "meaningsKo": ["관중"], "examples": [] },
+      { "readingRef": "シュウ", "word": "大衆", "wordReading": "たいしゅう", "meaningsKo": ["대중"], "examples": [] },
+      { "readingRef": "シュウ", "word": "民衆", "wordReading": "みんしゅう", "meaningsKo": ["민중"], "examples": [] }
+    ],
+    "街": [
+      { "readingRef": "まち", "word": "街", "wordReading": "まち", "meaningsKo": ["거리", "마을"], "examples": [] },
+      { "readingRef": "ガイ", "word": "街道", "wordReading": "かいどう", "meaningsKo": ["가도", "큰길"], "examples": [] },
+      { "readingRef": "ガイ", "word": "街路", "wordReading": "がいろ", "meaningsKo": ["가로"], "examples": [] }
+    ],
+    "衛": [
+      { "readingRef": "エイ", "word": "防衛", "wordReading": "ぼうえい", "meaningsKo": ["방위"], "examples": [] },
+      { "readingRef": "エイ", "word": "衛生", "wordReading": "えいせい", "meaningsKo": ["위생"], "examples": [] },
+      { "readingRef": "エイ", "word": "衛星", "wordReading": "えいせい", "meaningsKo": ["위성"], "examples": [] }
+    ],
+    "衝": [
+      { "readingRef": "ショウ", "word": "衝突", "wordReading": "しょうとつ", "meaningsKo": ["충돌"], "examples": [] },
+      { "readingRef": "ショウ", "word": "衝撃", "wordReading": "しょうげき", "meaningsKo": ["충격"], "examples": [] },
+      { "readingRef": "つく", "word": "衝く", "wordReading": "つく", "meaningsKo": ["찌르다", "공격하다"], "examples": [] }
+    ],
+    "衡": [
+      { "readingRef": "コウ", "word": "均衡", "wordReading": "きんこう", "meaningsKo": ["균형"], "examples": [] },
+      { "readingRef": "コウ", "word": "平衡", "wordReading": "へいこう", "meaningsKo": ["평형"], "examples": [] }
+    ],
+    "衰": [
+      { "readingRef": "おとろえる", "word": "衰える", "wordReading": "おとろえる", "meaningsKo": ["쇠퇴하다"], "examples": [] },
+      { "readingRef": "スイ", "word": "衰退", "wordReading": "すいたい", "meaningsKo": ["쇠퇴"], "examples": [] },
+      { "readingRef": "スイ", "word": "盛衰", "wordReading": "せいすい", "meaningsKo": ["성쇠"], "examples": [] }
+    ],
+    "衷": [
+      { "readingRef": "チュウ", "word": "折衷", "wordReading": "せっちゅう", "meaningsKo": ["절충"], "examples": [] },
+      { "readingRef": "チュウ", "word": "苦衷", "wordReading": "くちゅう", "meaningsKo": ["고충"], "examples": [] }
+    ],
+    "衿": [
+      { "readingRef": "えり", "word": "衿", "wordReading": "えり", "meaningsKo": ["옷깃"], "examples": [] }
+    ],
+    "袈": [
+      { "readingRef": "ケ", "word": "袈裟", "wordReading": "けさ", "meaningsKo": ["가사(승복)"], "examples": [] }
+    ],
+    "裁": [
+      { "readingRef": "サイ", "word": "裁判", "wordReading": "さいばん", "meaningsKo": ["재판"], "examples": [] },
+      { "readingRef": "さばく", "word": "裁く", "wordReading": "さばく", "meaningsKo": ["재판하다", "심판하다"], "examples": [] },
+      { "readingRef": "サイ", "word": "独裁", "wordReading": "どくさい", "meaningsKo": ["독재"], "examples": [] }
+    ],
+    "裂": [
+      { "readingRef": "レツ", "word": "分裂", "wordReading": "ぶんれつ", "meaningsKo": ["분열"], "examples": [] },
+      { "readingRef": "さける", "word": "裂ける", "wordReading": "さける", "meaningsKo": ["찢어지다"], "examples": [] },
+      { "readingRef": "レツ", "word": "破裂", "wordReading": "はれつ", "meaningsKo": ["파열"], "examples": [] }
+    ],
+    "裕": [
+      { "readingRef": "ユウ", "word": "余裕", "wordReading": "よゆう", "meaningsKo": ["여유"], "examples": [] },
+      { "readingRef": "ユウ", "word": "裕福", "wordReading": "ゆうふく", "meaningsKo": ["유복"], "examples": [] }
+    ]
+  }
+}

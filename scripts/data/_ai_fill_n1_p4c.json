@@ -1,0 +1,77 @@
+{
+  "_comment": "N1 Phase 4-C: 崩 嵐 嵩 嵯 嶺 巌 巡 巣 巧 己 巳 巴 巽 帆 帝 帥 帳",
+  "fills": {
+    "崩": [
+      { "readingRef": "ホウ", "word": "崩壊", "wordReading": "ほうかい", "meaningsKo": ["붕괴"], "examples": [] },
+      { "readingRef": "くずれる", "word": "崩れる", "wordReading": "くずれる", "meaningsKo": ["무너지다"], "examples": [] },
+      { "readingRef": "くずす", "word": "崩す", "wordReading": "くずす", "meaningsKo": ["무너뜨리다"], "examples": [] }
+    ],
+    "嵐": [
+      { "readingRef": "あらし", "word": "嵐", "wordReading": "あらし", "meaningsKo": ["폭풍", "태풍"], "examples": [] },
+      { "readingRef": "あらし", "word": "砂嵐", "wordReading": "すなあらし", "meaningsKo": ["모래 폭풍"], "examples": [] }
+    ],
+    "嵩": [
+      { "readingRef": "かさ", "word": "嵩", "wordReading": "かさ", "meaningsKo": ["부피", "분량"], "examples": [] },
+      { "readingRef": "かさむ", "word": "嵩む", "wordReading": "かさむ", "meaningsKo": ["부풀어나다", "늘다"], "examples": [] }
+    ],
+    "嵯": [
+      { "readingRef": "サ", "word": "嵯峨", "wordReading": "さが", "meaningsKo": ["사가(지명, 산이 험한 모양)"], "examples": [] }
+    ],
+    "嶺": [
+      { "readingRef": "みね", "word": "嶺", "wordReading": "みね", "meaningsKo": ["봉우리", "산마루"], "examples": [] },
+      { "readingRef": "レイ", "word": "分水嶺", "wordReading": "ぶんすいれい", "meaningsKo": ["분수령"], "examples": [] }
+    ],
+    "巌": [
+      { "readingRef": "いわ", "word": "巌", "wordReading": "いわ", "meaningsKo": ["바위"], "examples": [] },
+      { "readingRef": "ガン", "word": "巌石", "wordReading": "がんせき", "meaningsKo": ["암석"], "examples": [] }
+    ],
+    "巡": [
+      { "readingRef": "ジュン", "word": "巡回", "wordReading": "じゅんかい", "meaningsKo": ["순회"], "examples": [] },
+      { "readingRef": "めぐる", "word": "巡る", "wordReading": "めぐる", "meaningsKo": ["돌다", "순회하다"], "examples": [] },
+      { "readingRef": "ジュン", "word": "巡査", "wordReading": "じゅんさ", "meaningsKo": ["순경"], "examples": [] }
+    ],
+    "巣": [
+      { "readingRef": "す", "word": "巣", "wordReading": "す", "meaningsKo": ["둥지"], "examples": [] },
+      { "readingRef": "ソウ", "word": "巣窟", "wordReading": "そうくつ", "meaningsKo": ["소굴"], "examples": [] },
+      { "readingRef": "す", "word": "鳥の巣", "wordReading": "とりのす", "meaningsKo": ["새 둥지"], "examples": [] }
+    ],
+    "巧": [
+      { "readingRef": "コウ", "word": "巧妙", "wordReading": "こうみょう", "meaningsKo": ["교묘"], "examples": [] },
+      { "readingRef": "コウ", "word": "技巧", "wordReading": "ぎこう", "meaningsKo": ["기교"], "examples": [] },
+      { "readingRef": "たくみ", "word": "巧み", "wordReading": "たくみ", "meaningsKo": ["솜씨가 좋음"], "examples": [] }
+    ],
+    "己": [
+      { "readingRef": "コ", "word": "自己", "wordReading": "じこ", "meaningsKo": ["자기"], "examples": [] },
+      { "readingRef": "おのれ", "word": "己", "wordReading": "おのれ", "meaningsKo": ["자기 자신"], "examples": [] },
+      { "readingRef": "コ", "word": "利己", "wordReading": "りこ", "meaningsKo": ["이기"], "examples": [] }
+    ],
+    "巳": [
+      { "readingRef": "み", "word": "巳", "wordReading": "み", "meaningsKo": ["사(십이지의 여섯째)", "뱀띠"], "examples": [] }
+    ],
+    "巴": [
+      { "readingRef": "ともえ", "word": "巴", "wordReading": "ともえ", "meaningsKo": ["파(소용돌이 무늬)"], "examples": [] }
+    ],
+    "巽": [
+      { "readingRef": "たつみ", "word": "巽", "wordReading": "たつみ", "meaningsKo": ["동남쪽"], "examples": [] }
+    ],
+    "帆": [
+      { "readingRef": "ほ", "word": "帆", "wordReading": "ほ", "meaningsKo": ["돛"], "examples": [] },
+      { "readingRef": "ハン", "word": "帆船", "wordReading": "はんせん", "meaningsKo": ["범선"], "examples": [] },
+      { "readingRef": "ほ", "word": "帆船", "wordReading": "ほぶね", "meaningsKo": ["범선", "돛단배"], "examples": [] }
+    ],
+    "帝": [
+      { "readingRef": "テイ", "word": "皇帝", "wordReading": "こうてい", "meaningsKo": ["황제"], "examples": [] },
+      { "readingRef": "テイ", "word": "帝国", "wordReading": "ていこく", "meaningsKo": ["제국"], "examples": [] },
+      { "readingRef": "テイ", "word": "帝王", "wordReading": "ていおう", "meaningsKo": ["제왕"], "examples": [] }
+    ],
+    "帥": [
+      { "readingRef": "スイ", "word": "元帥", "wordReading": "げんすい", "meaningsKo": ["원수(군 최고 계급)"], "examples": [] },
+      { "readingRef": "スイ", "word": "統帥", "wordReading": "とうすい", "meaningsKo": ["통수"], "examples": [] }
+    ],
+    "帳": [
+      { "readingRef": "チョウ", "word": "手帳", "wordReading": "てちょう", "meaningsKo": ["수첩"], "examples": [] },
+      { "readingRef": "チョウ", "word": "通帳", "wordReading": "つうちょう", "meaningsKo": ["통장"], "examples": [] },
+      { "readingRef": "チョウ", "word": "帳簿", "wordReading": "ちょうぼ", "meaningsKo": ["장부"], "examples": [] }
+    ]
+  }
+}

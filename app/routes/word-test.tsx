@@ -205,6 +205,7 @@ export default function WordTest({ loaderData }: Route.ComponentProps) {
   }, [items, test.kind]);
 
   const [currentIndex, setCurrentIndex] = useState(initialIndex);
+  const [listOpen, setListOpen] = useState(false);
   const [meaningPicks, setMeaningPicks] = useState<Map<number, Pick_>>(() => {
     const init = new Map<number, Pick_>();
     if (test.kind !== "meaning") return init;
@@ -313,6 +314,20 @@ export default function WordTest({ loaderData }: Route.ComponentProps) {
   const progressPct = total > 0 ? Math.round((answeredCount / total) * 100) : 0;
   const finishedAll = answeredCount === total;
 
+  // Per-item status for the sidebar list.
+  const itemStatuses: Array<"unanswered" | "correct" | "wrong"> = useMemo(() => {
+    return items.map((it) => {
+      if (test.kind === "meaning") {
+        const p = meaningPicks.get(it.id);
+        if (!p) return "unanswered";
+        return p.isCorrect ? "correct" : "wrong";
+      }
+      const r = readingPicks.get(it.id);
+      if (!r?.reading || !r?.meaning) return "unanswered";
+      return r.reading.isCorrect && r.meaning.isCorrect ? "correct" : "wrong";
+    });
+  }, [items, test.kind, meaningPicks, readingPicks]);
+
   const meaningPicked = current
     ? (meaningPicks.get(current.id) ?? null)
     : null;
@@ -400,7 +415,9 @@ export default function WordTest({ loaderData }: Route.ComponentProps) {
       )
         return;
       if (e.key === "ArrowLeft") prev();
-      else if (e.key === "ArrowRight" || e.key === "Enter") {
+      else if (e.key === "ArrowRight") next();
+      else if (e.key === "Enter") {
+        // Enter = "next" only if you've answered (preserve "lock-in" feeling).
         if (itemFullyDone) next();
       }
     }
@@ -435,7 +452,7 @@ export default function WordTest({ loaderData }: Route.ComponentProps) {
           >
             ← 메인
           </button>
-          <div className="flex items-baseline gap-3">
+          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
             <span className="text-sm sm:text-base font-medium text-neutral-800 dark:text-neutral-200">
               {test.name}
             </span>
@@ -443,8 +460,33 @@ export default function WordTest({ loaderData }: Route.ComponentProps) {
             <span className="text-xs tabular-nums text-neutral-500 sm:text-sm">
               {currentIndex + 1} / {total}
             </span>
+            <button
+              type="button"
+              onClick={() => setListOpen(true)}
+              aria-label="문제 목록 열기"
+              title="문제 목록"
+              className="rounded-md border border-neutral-200 bg-white px-2.5 py-1 text-sm text-neutral-700 transition hover:border-neutral-400 dark:border-neutral-800 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:border-neutral-600"
+            >
+              ☰ <span className="hidden sm:inline">목록</span>
+            </button>
           </div>
         </header>
+
+        <WordTestListSidebar
+          open={listOpen}
+          onClose={() => setListOpen(false)}
+          items={items}
+          statuses={itemStatuses}
+          activeIndex={currentIndex}
+          onJump={(i) => {
+            setCurrentIndex(i);
+            setListOpen(false);
+          }}
+          testName={test.name}
+          testKind={test.kind}
+          answeredCount={answeredCount}
+          correctCount={correctCount}
+        />
 
         <div className="mb-6 h-1.5 overflow-hidden rounded-full bg-neutral-100 dark:bg-neutral-800">
           <div
@@ -480,9 +522,9 @@ export default function WordTest({ loaderData }: Route.ComponentProps) {
               label="◀ 이전"
             />
             <NavBtn
-              disabled={currentIndex >= total - 1 || !itemFullyDone}
+              disabled={currentIndex >= total - 1}
               onClick={next}
-              label="다음 ▶"
+              label={itemFullyDone ? "다음 ▶" : "건너뛰기 →"}
             />
           </div>
           <div className="text-sm tabular-nums text-neutral-500">
@@ -1105,6 +1147,153 @@ function ResultRow({
       )}
     </div>
   );
+}
+
+function WordTestListSidebar({
+  open,
+  onClose,
+  items,
+  statuses,
+  activeIndex,
+  onJump,
+  testName,
+  testKind,
+  answeredCount,
+  correctCount,
+}: {
+  open: boolean;
+  onClose: () => void;
+  items: ItemWithExample[];
+  statuses: Array<"unanswered" | "correct" | "wrong">;
+  activeIndex: number;
+  onJump: (index: number) => void;
+  testName: string;
+  testKind: WordTestKind;
+  answeredCount: number;
+  correctCount: number;
+}) {
+  const activeRef = useRef<HTMLButtonElement>(null);
+
+  useEffect(() => {
+    if (!open) return;
+    const onKey = (e: KeyboardEvent) => {
+      if (e.key === "Escape") onClose();
+    };
+    window.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [open, onClose]);
+
+  useEffect(() => {
+    if (!open) return;
+    activeRef.current?.scrollIntoView({ block: "center" });
+  }, [open]);
+
+  return (
+    <div
+      aria-hidden={!open}
+      className={`fixed inset-0 z-40 ${open ? "" : "pointer-events-none"}`}
+    >
+      <div
+        onClick={onClose}
+        className={`absolute inset-0 bg-neutral-900/40 transition-opacity ${
+          open ? "opacity-100" : "opacity-0"
+        }`}
+      />
+      <aside
+        role="dialog"
+        aria-label="문제 목록"
+        className={`absolute right-0 top-0 flex h-full w-[min(420px,100vw)] flex-col border-l border-neutral-200 bg-white shadow-xl transition-transform duration-200 ease-out dark:border-neutral-800 dark:bg-neutral-950 ${
+          open ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <header className="flex items-start justify-between gap-3 border-b border-neutral-200 px-5 py-4 dark:border-neutral-800">
+          <div className="min-w-0">
+            <div className="truncate text-sm font-medium text-neutral-800 dark:text-neutral-200">
+              {testName}
+            </div>
+            <div className="mt-0.5 text-xs text-neutral-500 tabular-nums">
+              {testKind === "reading" ? "한자 읽기" : "단어 시험"} · 답변{" "}
+              {answeredCount} / {items.length} · 맞춤 {correctCount}
+            </div>
+          </div>
+          <button
+            type="button"
+            onClick={onClose}
+            aria-label="닫기"
+            className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-md text-neutral-500 hover:bg-neutral-100 hover:text-neutral-900 dark:hover:bg-neutral-800 dark:hover:text-neutral-100"
+          >
+            ✕
+          </button>
+        </header>
+        <ol className="flex-1 overflow-y-auto py-2">
+          {items.map((item, i) => {
+            const isActive = i === activeIndex;
+            const status = statuses[i];
+            return (
+              <li key={item.id}>
+                <button
+                  ref={isActive ? activeRef : undefined}
+                  type="button"
+                  onClick={() => onJump(i)}
+                  className={`flex w-full items-center gap-3 px-5 py-2.5 text-left transition ${
+                    isActive
+                      ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900"
+                      : "text-neutral-800 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-800"
+                  }`}
+                >
+                  <span
+                    className={`w-7 shrink-0 text-xs tabular-nums ${
+                      isActive
+                        ? "opacity-70"
+                        : "text-neutral-400 dark:text-neutral-500"
+                    }`}
+                  >
+                    {i + 1}
+                  </span>
+                  <StatusDot status={status} active={isActive} />
+                  <span className="flex-1 truncate text-base [font-family:'Noto_Sans_JP',sans-serif]">
+                    {item.word}
+                  </span>
+                  <span
+                    className={`truncate text-xs ${
+                      isActive
+                        ? "opacity-70"
+                        : "text-neutral-500 dark:text-neutral-400"
+                    }`}
+                  >
+                    {item.meaningsKo[0] ?? ""}
+                  </span>
+                </button>
+              </li>
+            );
+          })}
+        </ol>
+      </aside>
+    </div>
+  );
+}
+
+function StatusDot({
+  status,
+  active,
+}: {
+  status: "unanswered" | "correct" | "wrong";
+  active: boolean;
+}) {
+  const cls =
+    status === "correct"
+      ? "bg-emerald-500"
+      : status === "wrong"
+        ? "bg-rose-500"
+        : active
+          ? "bg-neutral-400 dark:bg-neutral-500"
+          : "bg-neutral-300 dark:bg-neutral-700";
+  return <span className={`inline-block h-2 w-2 shrink-0 rounded-full ${cls}`} />;
 }
 
 function KindBadge({ kind }: { kind: WordTestKind }) {

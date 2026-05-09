@@ -1,0 +1,67 @@
+{
+  "_comment": "N1 Phase 11-E: 艶 芋 芙 芝 芳 芹 芽 苑 苗 茂 茄 茅 茉 茎 茜 荘 莉",
+  "fills": {
+    "艶": [
+      { "readingRef": "つや", "word": "艶", "wordReading": "つや", "meaningsKo": ["광택", "윤기"], "examples": [] },
+      { "readingRef": "エン", "word": "妖艶", "wordReading": "ようえん", "meaningsKo": ["요염"], "examples": [] }
+    ],
+    "芋": [
+      { "readingRef": "いも", "word": "芋", "wordReading": "いも", "meaningsKo": ["감자류", "고구마류"], "examples": [] },
+      { "readingRef": "いも", "word": "里芋", "wordReading": "さといも", "meaningsKo": ["토란"], "examples": [] }
+    ],
+    "芙": [
+      { "readingRef": "フ", "word": "芙蓉", "wordReading": "ふよう", "meaningsKo": ["부용", "연꽃"], "examples": [] }
+    ],
+    "芝": [
+      { "readingRef": "しば", "word": "芝", "wordReading": "しば", "meaningsKo": ["잔디"], "examples": [] },
+      { "readingRef": "しば", "word": "芝生", "wordReading": "しばふ", "meaningsKo": ["잔디밭"], "examples": [] },
+      { "readingRef": "しば", "word": "芝居", "wordReading": "しばい", "meaningsKo": ["연극"], "examples": [] }
+    ],
+    "芳": [
+      { "readingRef": "ホウ", "word": "芳香", "wordReading": "ほうこう", "meaningsKo": ["방향", "좋은 향기"], "examples": [] },
+      { "readingRef": "かんばしい", "word": "芳しい", "wordReading": "かんばしい", "meaningsKo": ["향기롭다", "훌륭하다"], "examples": [] }
+    ],
+    "芹": [
+      { "readingRef": "せり", "word": "芹", "wordReading": "せり", "meaningsKo": ["미나리"], "examples": [] }
+    ],
+    "芽": [
+      { "readingRef": "め", "word": "芽", "wordReading": "め", "meaningsKo": ["싹"], "examples": [] },
+      { "readingRef": "ガ", "word": "発芽", "wordReading": "はつが", "meaningsKo": ["발아"], "examples": [] },
+      { "readingRef": "ガ", "word": "新芽", "wordReading": "しんめ", "meaningsKo": ["새싹"], "examples": [] }
+    ],
+    "苑": [
+      { "readingRef": "エン", "word": "学苑", "wordReading": "がくえん", "meaningsKo": ["학원", "학교"], "examples": [] }
+    ],
+    "苗": [
+      { "readingRef": "なえ", "word": "苗", "wordReading": "なえ", "meaningsKo": ["모종", "묘목"], "examples": [] },
+      { "readingRef": "ビョウ", "word": "苗木", "wordReading": "なえぎ", "meaningsKo": ["묘목"], "examples": [] }
+    ],
+    "茂": [
+      { "readingRef": "しげる", "word": "茂る", "wordReading": "しげる", "meaningsKo": ["무성하다", "우거지다"], "examples": [] },
+      { "readingRef": "モ", "word": "繁茂", "wordReading": "はんも", "meaningsKo": ["번무", "무성함"], "examples": [] }
+    ],
+    "茄": [
+      { "readingRef": "カ", "word": "茄子", "wordReading": "なす", "meaningsKo": ["가지"], "examples": [] }
+    ],
+    "茅": [
+      { "readingRef": "かや", "word": "茅", "wordReading": "かや", "meaningsKo": ["띠풀"], "examples": [] }
+    ],
+    "茉": [
+      { "readingRef": "マツ", "word": "茉莉花", "wordReading": "まつりか", "meaningsKo": ["말리화", "재스민"], "examples": [] }
+    ],
+    "茎": [
+      { "readingRef": "くき", "word": "茎", "wordReading": "くき", "meaningsKo": ["줄기"], "examples": [] }
+    ],
+    "茜": [
+      { "readingRef": "あかね", "word": "茜", "wordReading": "あかね", "meaningsKo": ["꼭두서니", "선홍색"], "examples": [] }
+    ],
+    "荘": [
+      { "readingRef": "ソウ", "word": "荘厳", "wordReading": "そうごん", "meaningsKo": ["장엄"], "examples": [] },
+      { "readingRef": "ソウ", "word": "山荘", "wordReading": "さんそう", "meaningsKo": ["산장"], "examples": [] },
+      { "readingRef": "ソウ", "word": "別荘", "wordReading": "べっそう", "meaningsKo": ["별장"], "examples": [] }
+    ],
+    "莉": [
+      { "readingRef": "リ", "word": "茉莉", "wordReading": "まつり", "meaningsKo": ["재스민"], "examples": [] }
+    ]
+  }
+}

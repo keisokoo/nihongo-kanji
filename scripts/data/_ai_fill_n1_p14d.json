@@ -1,0 +1,97 @@
+{
+  "_comment": "N1 Phase 14-D: 雌 雛 離 雰 雷 需 霊 霜 霞 霧 露 靖 鞠 韻 響 項 須 頌 頑 頒 頻 顕",
+  "fills": {
+    "雌": [
+      { "readingRef": "めす", "word": "雌", "wordReading": "めす", "meaningsKo": ["암컷"], "examples": [] },
+      { "readingRef": "シ", "word": "雌雄", "wordReading": "しゆう", "meaningsKo": ["자웅", "암수"], "examples": [] }
+    ],
+    "雛": [
+      { "readingRef": "ひな", "word": "雛", "wordReading": "ひな", "meaningsKo": ["병아리", "히나 인형"], "examples": [] },
+      { "readingRef": "ひな", "word": "雛祭り", "wordReading": "ひなまつり", "meaningsKo": ["히나마쓰리", "여자아이의 날"], "examples": [] }
+    ],
+    "離": [
+      { "readingRef": "はなれる", "word": "離れる", "wordReading": "はなれる", "meaningsKo": ["떨어지다", "헤어지다"], "examples": [] },
+      { "readingRef": "リ", "word": "分離", "wordReading": "ぶんり", "meaningsKo": ["분리"], "examples": [] },
+      { "readingRef": "リ", "word": "距離", "wordReading": "きょり", "meaningsKo": ["거리"], "examples": [] }
+    ],
+    "雰": [
+      { "readingRef": "フン", "word": "雰囲気", "wordReading": "ふんいき", "meaningsKo": ["분위기"], "examples": [] }
+    ],
+    "雷": [
+      { "readingRef": "かみなり", "word": "雷", "wordReading": "かみなり", "meaningsKo": ["천둥", "벼락"], "examples": [] },
+      { "readingRef": "ライ", "word": "雷鳴", "wordReading": "らいめい", "meaningsKo": ["뇌명", "천둥소리"], "examples": [] },
+      { "readingRef": "ライ", "word": "落雷", "wordReading": "らくらい", "meaningsKo": ["낙뢰"], "examples": [] }
+    ],
+    "需": [
+      { "readingRef": "ジュ", "word": "需要", "wordReading": "じゅよう", "meaningsKo": ["수요"], "examples": [] },
+      { "readingRef": "ジュ", "word": "需給", "wordReading": "じゅきゅう", "meaningsKo": ["수급"], "examples": [] }
+    ],
+    "霊": [
+      { "readingRef": "レイ", "word": "霊魂", "wordReading": "れいこん", "meaningsKo": ["영혼"], "examples": [] },
+      { "readingRef": "レイ", "word": "幽霊", "wordReading": "ゆうれい", "meaningsKo": ["유령"], "examples": [] },
+      { "readingRef": "たま", "word": "霊", "wordReading": "たま", "meaningsKo": ["영혼"], "examples": [] }
+    ],
+    "霜": [
+      { "readingRef": "しも", "word": "霜", "wordReading": "しも", "meaningsKo": ["서리"], "examples": [] },
+      { "readingRef": "ソウ", "word": "霜害", "wordReading": "そうがい", "meaningsKo": ["상해", "서리 피해"], "examples": [] }
+    ],
+    "霞": [
+      { "readingRef": "かすみ", "word": "霞", "wordReading": "かすみ", "meaningsKo": ["안개", "노을"], "examples": [] },
+      { "readingRef": "かすむ", "word": "霞む", "wordReading": "かすむ", "meaningsKo": ["흐려지다"], "examples": [] }
+    ],
+    "霧": [
+      { "readingRef": "きり", "word": "霧", "wordReading": "きり", "meaningsKo": ["안개"], "examples": [] },
+      { "readingRef": "ム", "word": "霧雨", "wordReading": "きりさめ", "meaningsKo": ["이슬비"], "examples": [] }
+    ],
+    "露": [
+      { "readingRef": "つゆ", "word": "露", "wordReading": "つゆ", "meaningsKo": ["이슬"], "examples": [] },
+      { "readingRef": "ロ", "word": "露出", "wordReading": "ろしゅつ", "meaningsKo": ["노출"], "examples": [] },
+      { "readingRef": "ロ", "word": "披露", "wordReading": "ひろう", "meaningsKo": ["피로", "공개"], "examples": [] }
+    ],
+    "靖": [
+      { "readingRef": "セイ", "word": "靖国", "wordReading": "やすくに", "meaningsKo": ["야스쿠니"], "examples": [] }
+    ],
+    "鞠": [
+      { "readingRef": "まり", "word": "鞠", "wordReading": "まり", "meaningsKo": ["공"], "examples": [] }
+    ],
+    "韻": [
+      { "readingRef": "イン", "word": "韻律", "wordReading": "いんりつ", "meaningsKo": ["운율"], "examples": [] },
+      { "readingRef": "イン", "word": "押韻", "wordReading": "おういん", "meaningsKo": ["압운"], "examples": [] },
+      { "readingRef": "イン", "word": "余韻", "wordReading": "よいん", "meaningsKo": ["여운"], "examples": [] }
+    ],
+    "響": [
+      { "readingRef": "ひびく", "word": "響く", "wordReading": "ひびく", "meaningsKo": ["울리다"], "examples": [] },
+      { "readingRef": "キョウ", "word": "影響", "wordReading": "えいきょう", "meaningsKo": ["영향"], "examples": [] },
+      { "readingRef": "キョウ", "word": "音響", "wordReading": "おんきょう", "meaningsKo": ["음향"], "examples": [] }
+    ],
+    "項": [
+      { "readingRef": "コウ", "word": "項目", "wordReading": "こうもく", "meaningsKo": ["항목"], "examples": [] },
+      { "readingRef": "コウ", "word": "事項", "wordReading": "じこう", "meaningsKo": ["사항"], "examples": [] }
+    ],
+    "須": [
+      { "readingRef": "ス", "word": "必須", "wordReading": "ひっす", "meaningsKo": ["필수"], "examples": [] },
+      { "readingRef": "ス", "word": "急須", "wordReading": "きゅうす", "meaningsKo": ["찻주전자"], "examples": [] }
+    ],
+    "頌": [
+      { "readingRef": "ショウ", "word": "頌歌", "wordReading": "しょうか", "meaningsKo": ["송가"], "examples": [] }
+    ],
+    "頑": [
+      { "readingRef": "ガン", "word": "頑固", "wordReading": "がんこ", "meaningsKo": ["완고"], "examples": [] },
+      { "readingRef": "ガン", "word": "頑張る", "wordReading": "がんばる", "meaningsKo": ["힘내다", "노력하다"], "examples": [] },
+      { "readingRef": "ガン", "word": "頑丈", "wordReading": "がんじょう", "meaningsKo": ["튼튼함"], "examples": [] }
+    ],
+    "頒": [
+      { "readingRef": "ハン", "word": "頒布", "wordReading": "はんぷ", "meaningsKo": ["반포", "배포"], "examples": [] }
+    ],
+    "頻": [
+      { "readingRef": "ヒン", "word": "頻繁", "wordReading": "ひんぱん", "meaningsKo": ["빈번"], "examples": [] },
+      { "readingRef": "ヒン", "word": "頻度", "wordReading": "ひんど", "meaningsKo": ["빈도"], "examples": [] },
+      { "readingRef": "しきりに", "word": "頻りに", "wordReading": "しきりに", "meaningsKo": ["빈번히", "잇따라"], "examples": [] }
+    ],
+    "顕": [
+      { "readingRef": "ケン", "word": "顕著", "wordReading": "けんちょ", "meaningsKo": ["현저"], "examples": [] },
+      { "readingRef": "ケン", "word": "顕微鏡", "wordReading": "けんびきょう", "meaningsKo": ["현미경"], "examples": [] },
+      { "readingRef": "あらわれる", "word": "顕れる", "wordReading": "あらわれる", "meaningsKo": ["나타나다"], "examples": [] }
+    ]
+  }
+}

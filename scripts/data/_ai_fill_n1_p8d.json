@@ -1,0 +1,81 @@
+{
+  "_comment": "N1 Phase 8-D: 漏 漠 漫 漬 漱 漸 潔 潜 潟 潤 潮 澄 澪 激 濁 濫 瀬",
+  "fills": {
+    "漏": [
+      { "readingRef": "もる", "word": "漏る", "wordReading": "もる", "meaningsKo": ["새다"], "examples": [] },
+      { "readingRef": "ロウ", "word": "漏水", "wordReading": "ろうすい", "meaningsKo": ["누수"], "examples": [] },
+      { "readingRef": "ロウ", "word": "漏電", "wordReading": "ろうでん", "meaningsKo": ["누전"], "examples": [] }
+    ],
+    "漠": [
+      { "readingRef": "バク", "word": "砂漠", "wordReading": "さばく", "meaningsKo": ["사막"], "examples": [] },
+      { "readingRef": "バク", "word": "漠然", "wordReading": "ばくぜん", "meaningsKo": ["막연"], "examples": [] },
+      { "readingRef": "バク", "word": "広漠", "wordReading": "こうばく", "meaningsKo": ["광막"], "examples": [] }
+    ],
+    "漫": [
+      { "readingRef": "マン", "word": "漫画", "wordReading": "まんが", "meaningsKo": ["만화"], "examples": [] },
+      { "readingRef": "マン", "word": "散漫", "wordReading": "さんまん", "meaningsKo": ["산만"], "examples": [] },
+      { "readingRef": "マン", "word": "漫才", "wordReading": "まんざい", "meaningsKo": ["만담", "만자이"], "examples": [] }
+    ],
+    "漬": [
+      { "readingRef": "つける", "word": "漬ける", "wordReading": "つける", "meaningsKo": ["담그다", "절이다"], "examples": [] },
+      { "readingRef": "づけ", "word": "漬物", "wordReading": "つけもの", "meaningsKo": ["절임"], "examples": [] }
+    ],
+    "漱": [
+      { "readingRef": "ソウ", "word": "漱石", "wordReading": "そうせき", "meaningsKo": ["소세키(인명)"], "examples": [] }
+    ],
+    "漸": [
+      { "readingRef": "ゼン", "word": "漸次", "wordReading": "ぜんじ", "meaningsKo": ["점차"], "examples": [] },
+      { "readingRef": "ようやく", "word": "漸く", "wordReading": "ようやく", "meaningsKo": ["겨우", "마침내"], "examples": [] },
+      { "readingRef": "ゼン", "word": "漸進", "wordReading": "ぜんしん", "meaningsKo": ["점진"], "examples": [] }
+    ],
+    "潔": [
+      { "readingRef": "ケツ", "word": "清潔", "wordReading": "せいけつ", "meaningsKo": ["청결"], "examples": [] },
+      { "readingRef": "いさぎよい", "word": "潔い", "wordReading": "いさぎよい", "meaningsKo": ["깨끗하다", "당당하다"], "examples": [] },
+      { "readingRef": "ケツ", "word": "簡潔", "wordReading": "かんけつ", "meaningsKo": ["간결"], "examples": [] }
+    ],
+    "潜": [
+      { "readingRef": "セン", "word": "潜在", "wordReading": "せんざい", "meaningsKo": ["잠재"], "examples": [] },
+      { "readingRef": "もぐる", "word": "潜る", "wordReading": "もぐる", "meaningsKo": ["잠기다", "잠수하다"], "examples": [] },
+      { "readingRef": "セン", "word": "潜水", "wordReading": "せんすい", "meaningsKo": ["잠수"], "examples": [] }
+    ],
+    "潟": [
+      { "readingRef": "かた", "word": "潟", "wordReading": "かた", "meaningsKo": ["석호", "갯벌"], "examples": [] },
+      { "readingRef": "かた", "word": "新潟", "wordReading": "にいがた", "meaningsKo": ["니가타(지명)"], "examples": [] }
+    ],
+    "潤": [
+      { "readingRef": "ジュン", "word": "利潤", "wordReading": "りじゅん", "meaningsKo": ["이윤"], "examples": [] },
+      { "readingRef": "うるおう", "word": "潤う", "wordReading": "うるおう", "meaningsKo": ["촉촉해지다", "윤택해지다"], "examples": [] },
+      { "readingRef": "ジュン", "word": "湿潤", "wordReading": "しつじゅん", "meaningsKo": ["습윤"], "examples": [] }
+    ],
+    "潮": [
+      { "readingRef": "しお", "word": "潮", "wordReading": "しお", "meaningsKo": ["조수", "바닷물"], "examples": [] },
+      { "readingRef": "チョウ", "word": "潮流", "wordReading": "ちょうりゅう", "meaningsKo": ["조류"], "examples": [] },
+      { "readingRef": "チョウ", "word": "風潮", "wordReading": "ふうちょう", "meaningsKo": ["풍조"], "examples": [] }
+    ],
+    "澄": [
+      { "readingRef": "すむ", "word": "澄む", "wordReading": "すむ", "meaningsKo": ["맑아지다"], "examples": [] },
+      { "readingRef": "チョウ", "word": "清澄", "wordReading": "せいちょう", "meaningsKo": ["청징", "맑음"], "examples": [] }
+    ],
+    "澪": [
+      { "readingRef": "みお", "word": "澪", "wordReading": "みお", "meaningsKo": ["뱃길", "수로"], "examples": [] }
+    ],
+    "激": [
+      { "readingRef": "ゲキ", "word": "激しい", "wordReading": "はげしい", "meaningsKo": ["격하다", "심하다"], "examples": [] },
+      { "readingRef": "ゲキ", "word": "感激", "wordReading": "かんげき", "meaningsKo": ["감격"], "examples": [] },
+      { "readingRef": "ゲキ", "word": "激励", "wordReading": "げきれい", "meaningsKo": ["격려"], "examples": [] }
+    ],
+    "濁": [
+      { "readingRef": "ダク", "word": "濁流", "wordReading": "だくりゅう", "meaningsKo": ["탁류"], "examples": [] },
+      { "readingRef": "にごる", "word": "濁る", "wordReading": "にごる", "meaningsKo": ["흐려지다"], "examples": [] },
+      { "readingRef": "ダク", "word": "汚濁", "wordReading": "おだく", "meaningsKo": ["오탁", "오염"], "examples": [] }
+    ],
+    "濫": [
+      { "readingRef": "ラン", "word": "濫用", "wordReading": "らんよう", "meaningsKo": ["남용"], "examples": [] },
+      { "readingRef": "ラン", "word": "氾濫", "wordReading": "はんらん", "meaningsKo": ["범람"], "examples": [] }
+    ],
+    "瀬": [
+      { "readingRef": "せ", "word": "瀬", "wordReading": "せ", "meaningsKo": ["여울", "기회"], "examples": [] },
+      { "readingRef": "せ", "word": "浅瀬", "wordReading": "あさせ", "meaningsKo": ["여울목", "얕은 곳"], "examples": [] }
+    ]
+  }
+}

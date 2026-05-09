@@ -1,0 +1,80 @@
+{
+  "_comment": "N1 Phase 11-A: 緋 締 緩 緯 縁 縄 縛 縦 縫 縮 繁 繊 織 繕 繭 繰 罰",
+  "fills": {
+    "緋": [
+      { "readingRef": "ヒ", "word": "緋色", "wordReading": "ひいろ", "meaningsKo": ["주홍색", "진홍색"], "examples": [] }
+    ],
+    "締": [
+      { "readingRef": "しめる", "word": "締める", "wordReading": "しめる", "meaningsKo": ["조이다", "매다"], "examples": [] },
+      { "readingRef": "テイ", "word": "締結", "wordReading": "ていけつ", "meaningsKo": ["체결"], "examples": [] },
+      { "readingRef": "テイ", "word": "締切", "wordReading": "しめきり", "meaningsKo": ["마감"], "examples": [] }
+    ],
+    "緩": [
+      { "readingRef": "カン", "word": "緩和", "wordReading": "かんわ", "meaningsKo": ["완화"], "examples": [] },
+      { "readingRef": "ゆるい", "word": "緩い", "wordReading": "ゆるい", "meaningsKo": ["느슨하다"], "examples": [] },
+      { "readingRef": "ゆるやか", "word": "緩やか", "wordReading": "ゆるやか", "meaningsKo": ["완만함"], "examples": [] }
+    ],
+    "緯": [
+      { "readingRef": "イ", "word": "緯度", "wordReading": "いど", "meaningsKo": ["위도"], "examples": [] },
+      { "readingRef": "イ", "word": "経緯", "wordReading": "けいい", "meaningsKo": ["경위", "전말"], "examples": [] }
+    ],
+    "縁": [
+      { "readingRef": "エン", "word": "縁", "wordReading": "えん", "meaningsKo": ["인연"], "examples": [] },
+      { "readingRef": "ふち", "word": "縁", "wordReading": "ふち", "meaningsKo": ["가장자리", "테두리"], "examples": [] },
+      { "readingRef": "エン", "word": "縁起", "wordReading": "えんぎ", "meaningsKo": ["연기", "운수"], "examples": [] }
+    ],
+    "縄": [
+      { "readingRef": "なわ", "word": "縄", "wordReading": "なわ", "meaningsKo": ["줄", "새끼줄"], "examples": [] },
+      { "readingRef": "なわ", "word": "縄跳び", "wordReading": "なわとび", "meaningsKo": ["줄넘기"], "examples": [] }
+    ],
+    "縛": [
+      { "readingRef": "しばる", "word": "縛る", "wordReading": "しばる", "meaningsKo": ["묶다"], "examples": [] },
+      { "readingRef": "バク", "word": "束縛", "wordReading": "そくばく", "meaningsKo": ["속박"], "examples": [] }
+    ],
+    "縦": [
+      { "readingRef": "たて", "word": "縦", "wordReading": "たて", "meaningsKo": ["세로"], "examples": [] },
+      { "readingRef": "ジュウ", "word": "縦断", "wordReading": "じゅうだん", "meaningsKo": ["종단"], "examples": [] },
+      { "readingRef": "ジュウ", "word": "操縦", "wordReading": "そうじゅう", "meaningsKo": ["조종"], "examples": [] }
+    ],
+    "縫": [
+      { "readingRef": "ぬう", "word": "縫う", "wordReading": "ぬう", "meaningsKo": ["꿰매다"], "examples": [] },
+      { "readingRef": "ホウ", "word": "縫合", "wordReading": "ほうごう", "meaningsKo": ["봉합"], "examples": [] },
+      { "readingRef": "ホウ", "word": "裁縫", "wordReading": "さいほう", "meaningsKo": ["재봉"], "examples": [] }
+    ],
+    "縮": [
+      { "readingRef": "シュク", "word": "縮小", "wordReading": "しゅくしょう", "meaningsKo": ["축소"], "examples": [] },
+      { "readingRef": "ちぢむ", "word": "縮む", "wordReading": "ちぢむ", "meaningsKo": ["줄어들다"], "examples": [] },
+      { "readingRef": "シュク", "word": "短縮", "wordReading": "たんしゅく", "meaningsKo": ["단축"], "examples": [] }
+    ],
+    "繁": [
+      { "readingRef": "ハン", "word": "繁栄", "wordReading": "はんえい", "meaningsKo": ["번영"], "examples": [] },
+      { "readingRef": "ハン", "word": "繁華街", "wordReading": "はんかがい", "meaningsKo": ["번화가"], "examples": [] },
+      { "readingRef": "ハン", "word": "頻繁", "wordReading": "ひんぱん", "meaningsKo": ["빈번"], "examples": [] }
+    ],
+    "繊": [
+      { "readingRef": "セン", "word": "繊維", "wordReading": "せんい", "meaningsKo": ["섬유"], "examples": [] },
+      { "readingRef": "セン", "word": "繊細", "wordReading": "せんさい", "meaningsKo": ["섬세"], "examples": [] }
+    ],
+    "織": [
+      { "readingRef": "おる", "word": "織る", "wordReading": "おる", "meaningsKo": ["짜다", "엮다"], "examples": [] },
+      { "readingRef": "ショク", "word": "組織", "wordReading": "そしき", "meaningsKo": ["조직"], "examples": [] },
+      { "readingRef": "ショク", "word": "織物", "wordReading": "おりもの", "meaningsKo": ["직물"], "examples": [] }
+    ],
+    "繕": [
+      { "readingRef": "つくろう", "word": "繕う", "wordReading": "つくろう", "meaningsKo": ["수선하다", "고치다"], "examples": [] },
+      { "readingRef": "ゼン", "word": "修繕", "wordReading": "しゅうぜん", "meaningsKo": ["수선"], "examples": [] }
+    ],
+    "繭": [
+      { "readingRef": "まゆ", "word": "繭", "wordReading": "まゆ", "meaningsKo": ["고치"], "examples": [] }
+    ],
+    "繰": [
+      { "readingRef": "くる", "word": "繰る", "wordReading": "くる", "meaningsKo": ["감다", "넘기다"], "examples": [] },
+      { "readingRef": "くる", "word": "繰り返す", "wordReading": "くりかえす", "meaningsKo": ["반복하다"], "examples": [] }
+    ],
+    "罰": [
+      { "readingRef": "バツ", "word": "罰金", "wordReading": "ばっきん", "meaningsKo": ["벌금"], "examples": [] },
+      { "readingRef": "バツ", "word": "罰", "wordReading": "ばつ", "meaningsKo": ["벌"], "examples": [] },
+      { "readingRef": "バツ", "word": "処罰", "wordReading": "しょばつ", "meaningsKo": ["처벌"], "examples": [] }
+    ]
+  }
+}

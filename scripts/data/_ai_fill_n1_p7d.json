@@ -1,0 +1,70 @@
+{
+  "_comment": "N1 Phase 7-D: 椋 椎 検 椰 椿 楊 楓 楠 楼 概 榛 槙 槻 槽 標 模 樹",
+  "fills": {
+    "椋": [
+      { "readingRef": "むく", "word": "椋鳥", "wordReading": "むくどり", "meaningsKo": ["찌르레기"], "examples": [] }
+    ],
+    "椎": [
+      { "readingRef": "ツイ", "word": "脊椎", "wordReading": "せきつい", "meaningsKo": ["척추"], "examples": [] },
+      { "readingRef": "ツイ", "word": "椎間板", "wordReading": "ついかんばん", "meaningsKo": ["추간판", "디스크"], "examples": [] }
+    ],
+    "検": [
+      { "readingRef": "ケン", "word": "検査", "wordReading": "けんさ", "meaningsKo": ["검사"], "examples": [] },
+      { "readingRef": "ケン", "word": "検討", "wordReading": "けんとう", "meaningsKo": ["검토"], "examples": [] },
+      { "readingRef": "ケン", "word": "検索", "wordReading": "けんさく", "meaningsKo": ["검색"], "examples": [] }
+    ],
+    "椰": [
+      { "readingRef": "やし", "word": "椰子", "wordReading": "やし", "meaningsKo": ["야자수"], "examples": [] }
+    ],
+    "椿": [
+      { "readingRef": "つばき", "word": "椿", "wordReading": "つばき", "meaningsKo": ["동백나무"], "examples": [] }
+    ],
+    "楊": [
+      { "readingRef": "ヨウ", "word": "楊枝", "wordReading": "ようじ", "meaningsKo": ["이쑤시개"], "examples": [] }
+    ],
+    "楓": [
+      { "readingRef": "かえで", "word": "楓", "wordReading": "かえで", "meaningsKo": ["단풍나무"], "examples": [] }
+    ],
+    "楠": [
+      { "readingRef": "くす", "word": "楠", "wordReading": "くす", "meaningsKo": ["녹나무", "장뇌목"], "examples": [] }
+    ],
+    "楼": [
+      { "readingRef": "ロウ", "word": "鐘楼", "wordReading": "しょうろう", "meaningsKo": ["종루"], "examples": [] },
+      { "readingRef": "ロウ", "word": "楼閣", "wordReading": "ろうかく", "meaningsKo": ["누각"], "examples": [] },
+      { "readingRef": "ロウ", "word": "摩天楼", "wordReading": "まてんろう", "meaningsKo": ["마천루"], "examples": [] }
+    ],
+    "概": [
+      { "readingRef": "ガイ", "word": "概念", "wordReading": "がいねん", "meaningsKo": ["개념"], "examples": [] },
+      { "readingRef": "ガイ", "word": "概要", "wordReading": "がいよう", "meaningsKo": ["개요"], "examples": [] },
+      { "readingRef": "ガイ", "word": "概略", "wordReading": "がいりゃく", "meaningsKo": ["개략"], "examples": [] }
+    ],
+    "榛": [
+      { "readingRef": "はしばみ", "word": "榛", "wordReading": "はしばみ", "meaningsKo": ["개암나무"], "examples": [] }
+    ],
+    "槙": [
+      { "readingRef": "まき", "word": "槙", "wordReading": "まき", "meaningsKo": ["나한송"], "examples": [] }
+    ],
+    "槻": [
+      { "readingRef": "つき", "word": "槻", "wordReading": "つき", "meaningsKo": ["느티나무"], "examples": [] }
+    ],
+    "槽": [
+      { "readingRef": "ソウ", "word": "水槽", "wordReading": "すいそう", "meaningsKo": ["수조"], "examples": [] },
+      { "readingRef": "ソウ", "word": "浴槽", "wordReading": "よくそう", "meaningsKo": ["욕조"], "examples": [] }
+    ],
+    "標": [
+      { "readingRef": "ヒョウ", "word": "目標", "wordReading": "もくひょう", "meaningsKo": ["목표"], "examples": [] },
+      { "readingRef": "ヒョウ", "word": "標準", "wordReading": "ひょうじゅん", "meaningsKo": ["표준"], "examples": [] },
+      { "readingRef": "ヒョウ", "word": "標識", "wordReading": "ひょうしき", "meaningsKo": ["표지", "표식"], "examples": [] }
+    ],
+    "模": [
+      { "readingRef": "モ", "word": "模型", "wordReading": "もけい", "meaningsKo": ["모형"], "examples": [] },
+      { "readingRef": "モ", "word": "模倣", "wordReading": "もほう", "meaningsKo": ["모방"], "examples": [] },
+      { "readingRef": "モ", "word": "規模", "wordReading": "きぼ", "meaningsKo": ["규모"], "examples": [] }
+    ],
+    "樹": [
+      { "readingRef": "ジュ", "word": "樹木", "wordReading": "じゅもく", "meaningsKo": ["수목", "나무"], "examples": [] },
+      { "readingRef": "ジュ", "word": "街路樹", "wordReading": "がいろじゅ", "meaningsKo": ["가로수"], "examples": [] },
+      { "readingRef": "ジュ", "word": "樹立", "wordReading": "じゅりつ", "meaningsKo": ["수립"], "examples": [] }
+    ]
+  }
+}

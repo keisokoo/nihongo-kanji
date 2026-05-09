@@ -1,0 +1,86 @@
+{
+  "_comment": "N1 Phase 5-A: 征 径 徐 従 循 微 徳 徴 徹 忌 忍 志 応 忠 怜 怠 怪",
+  "fills": {
+    "征": [
+      { "readingRef": "セイ", "word": "征服", "wordReading": "せいふく", "meaningsKo": ["정복"], "examples": [] },
+      { "readingRef": "セイ", "word": "遠征", "wordReading": "えんせい", "meaningsKo": ["원정"], "examples": [] },
+      { "readingRef": "セイ", "word": "出征", "wordReading": "しゅっせい", "meaningsKo": ["출정"], "examples": [] }
+    ],
+    "径": [
+      { "readingRef": "ケイ", "word": "直径", "wordReading": "ちょっけい", "meaningsKo": ["직경", "지름"], "examples": [] },
+      { "readingRef": "ケイ", "word": "半径", "wordReading": "はんけい", "meaningsKo": ["반지름"], "examples": [] },
+      { "readingRef": "ケイ", "word": "口径", "wordReading": "こうけい", "meaningsKo": ["구경"], "examples": [] }
+    ],
+    "徐": [
+      { "readingRef": "ジョ", "word": "徐行", "wordReading": "じょこう", "meaningsKo": ["서행"], "examples": [] },
+      { "readingRef": "ジョ", "word": "徐々に", "wordReading": "じょじょに", "meaningsKo": ["서서히", "점차"], "examples": [] }
+    ],
+    "従": [
+      { "readingRef": "ジュウ", "word": "従業員", "wordReading": "じゅうぎょういん", "meaningsKo": ["종업원"], "examples": [] },
+      { "readingRef": "ジュウ", "word": "服従", "wordReading": "ふくじゅう", "meaningsKo": ["복종"], "examples": [] },
+      { "readingRef": "したがう", "word": "従う", "wordReading": "したがう", "meaningsKo": ["따르다"], "examples": [] }
+    ],
+    "循": [
+      { "readingRef": "ジュン", "word": "循環", "wordReading": "じゅんかん", "meaningsKo": ["순환"], "examples": [] },
+      { "readingRef": "ジュン", "word": "因循", "wordReading": "いんじゅん", "meaningsKo": ["인순", "구습 답습"], "examples": [] }
+    ],
+    "微": [
+      { "readingRef": "ビ", "word": "微妙", "wordReading": "びみょう", "meaningsKo": ["미묘"], "examples": [] },
+      { "readingRef": "ビ", "word": "微笑", "wordReading": "びしょう", "meaningsKo": ["미소"], "examples": [] },
+      { "readingRef": "かすか", "word": "微か", "wordReading": "かすか", "meaningsKo": ["희미함"], "examples": [] }
+    ],
+    "徳": [
+      { "readingRef": "トク", "word": "道徳", "wordReading": "どうとく", "meaningsKo": ["도덕"], "examples": [] },
+      { "readingRef": "トク", "word": "美徳", "wordReading": "びとく", "meaningsKo": ["미덕"], "examples": [] },
+      { "readingRef": "トク", "word": "人徳", "wordReading": "じんとく", "meaningsKo": ["인덕"], "examples": [] }
+    ],
+    "徴": [
+      { "readingRef": "チョウ", "word": "特徴", "wordReading": "とくちょう", "meaningsKo": ["특징"], "examples": [] },
+      { "readingRef": "チョウ", "word": "象徴", "wordReading": "しょうちょう", "meaningsKo": ["상징"], "examples": [] },
+      { "readingRef": "チョウ", "word": "徴収", "wordReading": "ちょうしゅう", "meaningsKo": ["징수"], "examples": [] }
+    ],
+    "徹": [
+      { "readingRef": "テツ", "word": "徹底", "wordReading": "てってい", "meaningsKo": ["철저"], "examples": [] },
+      { "readingRef": "テツ", "word": "徹夜", "wordReading": "てつや", "meaningsKo": ["철야", "밤샘"], "examples": [] },
+      { "readingRef": "テツ", "word": "貫徹", "wordReading": "かんてつ", "meaningsKo": ["관철"], "examples": [] }
+    ],
+    "忌": [
+      { "readingRef": "キ", "word": "忌避", "wordReading": "きひ", "meaningsKo": ["기피"], "examples": [] },
+      { "readingRef": "いむ", "word": "忌む", "wordReading": "いむ", "meaningsKo": ["꺼리다", "금기시하다"], "examples": [] },
+      { "readingRef": "キ", "word": "禁忌", "wordReading": "きんき", "meaningsKo": ["금기"], "examples": [] }
+    ],
+    "忍": [
+      { "readingRef": "ニン", "word": "忍耐", "wordReading": "にんたい", "meaningsKo": ["인내"], "examples": [] },
+      { "readingRef": "しのぶ", "word": "忍ぶ", "wordReading": "しのぶ", "meaningsKo": ["참다", "숨다"], "examples": [] },
+      { "readingRef": "ニン", "word": "忍者", "wordReading": "にんじゃ", "meaningsKo": ["닌자"], "examples": [] }
+    ],
+    "志": [
+      { "readingRef": "シ", "word": "志望", "wordReading": "しぼう", "meaningsKo": ["지망"], "examples": [] },
+      { "readingRef": "シ", "word": "意志", "wordReading": "いし", "meaningsKo": ["의지"], "examples": [] },
+      { "readingRef": "こころざす", "word": "志す", "wordReading": "こころざす", "meaningsKo": ["뜻을 두다", "지망하다"], "examples": [] }
+    ],
+    "応": [
+      { "readingRef": "オウ", "word": "応援", "wordReading": "おうえん", "meaningsKo": ["응원"], "examples": [] },
+      { "readingRef": "オウ", "word": "対応", "wordReading": "たいおう", "meaningsKo": ["대응"], "examples": [] },
+      { "readingRef": "こたえる", "word": "応える", "wordReading": "こたえる", "meaningsKo": ["응하다", "부응하다"], "examples": [] }
+    ],
+    "忠": [
+      { "readingRef": "チュウ", "word": "忠実", "wordReading": "ちゅうじつ", "meaningsKo": ["충실"], "examples": [] },
+      { "readingRef": "チュウ", "word": "忠誠", "wordReading": "ちゅうせい", "meaningsKo": ["충성"], "examples": [] },
+      { "readingRef": "チュウ", "word": "忠告", "wordReading": "ちゅうこく", "meaningsKo": ["충고"], "examples": [] }
+    ],
+    "怜": [
+      { "readingRef": "レイ", "word": "怜悧", "wordReading": "れいり", "meaningsKo": ["영리", "총명"], "examples": [] }
+    ],
+    "怠": [
+      { "readingRef": "タイ", "word": "怠惰", "wordReading": "たいだ", "meaningsKo": ["태만", "게으름"], "examples": [] },
+      { "readingRef": "おこたる", "word": "怠る", "wordReading": "おこたる", "meaningsKo": ["게을리하다"], "examples": [] },
+      { "readingRef": "なまける", "word": "怠ける", "wordReading": "なまける", "meaningsKo": ["게으름 피우다"], "examples": [] }
+    ],
+    "怪": [
+      { "readingRef": "カイ", "word": "怪物", "wordReading": "かいぶつ", "meaningsKo": ["괴물"], "examples": [] },
+      { "readingRef": "カイ", "word": "怪奇", "wordReading": "かいき", "meaningsKo": ["괴기"], "examples": [] },
+      { "readingRef": "あやしい", "word": "怪しい", "wordReading": "あやしい", "meaningsKo": ["수상하다"], "examples": [] }
+    ]
+  }
+}

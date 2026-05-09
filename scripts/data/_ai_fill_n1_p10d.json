@@ -1,0 +1,79 @@
+{
+  "_comment": "N1 Phase 10-D: 糖 糧 系 糾 紀 紋 納 紗 紘 級 紛 素 紡 索 紫 紬 累",
+  "fills": {
+    "糖": [
+      { "readingRef": "トウ", "word": "砂糖", "wordReading": "さとう", "meaningsKo": ["설탕"], "examples": [] },
+      { "readingRef": "トウ", "word": "糖分", "wordReading": "とうぶん", "meaningsKo": ["당분"], "examples": [] },
+      { "readingRef": "トウ", "word": "糖尿病", "wordReading": "とうにょうびょう", "meaningsKo": ["당뇨병"], "examples": [] }
+    ],
+    "糧": [
+      { "readingRef": "リョウ", "word": "食糧", "wordReading": "しょくりょう", "meaningsKo": ["식량"], "examples": [] },
+      { "readingRef": "かて", "word": "糧", "wordReading": "かて", "meaningsKo": ["양식", "원동력"], "examples": [] }
+    ],
+    "系": [
+      { "readingRef": "ケイ", "word": "系統", "wordReading": "けいとう", "meaningsKo": ["계통"], "examples": [] },
+      { "readingRef": "ケイ", "word": "体系", "wordReading": "たいけい", "meaningsKo": ["체계"], "examples": [] },
+      { "readingRef": "ケイ", "word": "家系", "wordReading": "かけい", "meaningsKo": ["가계"], "examples": [] }
+    ],
+    "糾": [
+      { "readingRef": "キュウ", "word": "糾弾", "wordReading": "きゅうだん", "meaningsKo": ["규탄"], "examples": [] },
+      { "readingRef": "キュウ", "word": "紛糾", "wordReading": "ふんきゅう", "meaningsKo": ["분규"], "examples": [] }
+    ],
+    "紀": [
+      { "readingRef": "キ", "word": "世紀", "wordReading": "せいき", "meaningsKo": ["세기"], "examples": [] },
+      { "readingRef": "キ", "word": "紀元", "wordReading": "きげん", "meaningsKo": ["기원"], "examples": [] },
+      { "readingRef": "キ", "word": "風紀", "wordReading": "ふうき", "meaningsKo": ["풍기"], "examples": [] }
+    ],
+    "紋": [
+      { "readingRef": "モン", "word": "紋章", "wordReading": "もんしょう", "meaningsKo": ["문장"], "examples": [] },
+      { "readingRef": "モン", "word": "波紋", "wordReading": "はもん", "meaningsKo": ["파문"], "examples": [] },
+      { "readingRef": "モン", "word": "指紋", "wordReading": "しもん", "meaningsKo": ["지문"], "examples": [] }
+    ],
+    "納": [
+      { "readingRef": "ノウ", "word": "納税", "wordReading": "のうぜい", "meaningsKo": ["납세"], "examples": [] },
+      { "readingRef": "おさめる", "word": "納める", "wordReading": "おさめる", "meaningsKo": ["납부하다", "거두다"], "examples": [] },
+      { "readingRef": "ノウ", "word": "納得", "wordReading": "なっとく", "meaningsKo": ["납득"], "examples": [] }
+    ],
+    "紗": [
+      { "readingRef": "シャ", "word": "更紗", "wordReading": "サラサ", "meaningsKo": ["사라사 무늬 천"], "examples": [] }
+    ],
+    "紘": [
+      { "readingRef": "コウ", "word": "紘", "wordReading": "こう", "meaningsKo": ["갓끈"], "examples": [] }
+    ],
+    "級": [
+      { "readingRef": "キュウ", "word": "学級", "wordReading": "がっきゅう", "meaningsKo": ["학급"], "examples": [] },
+      { "readingRef": "キュウ", "word": "高級", "wordReading": "こうきゅう", "meaningsKo": ["고급"], "examples": [] },
+      { "readingRef": "キュウ", "word": "階級", "wordReading": "かいきゅう", "meaningsKo": ["계급"], "examples": [] }
+    ],
+    "紛": [
+      { "readingRef": "フン", "word": "紛争", "wordReading": "ふんそう", "meaningsKo": ["분쟁"], "examples": [] },
+      { "readingRef": "まぎれる", "word": "紛れる", "wordReading": "まぎれる", "meaningsKo": ["섞이다", "헷갈리다"], "examples": [] },
+      { "readingRef": "フン", "word": "紛失", "wordReading": "ふんしつ", "meaningsKo": ["분실"], "examples": [] }
+    ],
+    "素": [
+      { "readingRef": "ソ", "word": "素材", "wordReading": "そざい", "meaningsKo": ["소재"], "examples": [] },
+      { "readingRef": "ス", "word": "素直", "wordReading": "すなお", "meaningsKo": ["솔직함", "순순함"], "examples": [] },
+      { "readingRef": "ソ", "word": "要素", "wordReading": "ようそ", "meaningsKo": ["요소"], "examples": [] }
+    ],
+    "紡": [
+      { "readingRef": "つむぐ", "word": "紡ぐ", "wordReading": "つむぐ", "meaningsKo": ["실을 잣다", "엮다"], "examples": [] },
+      { "readingRef": "ボウ", "word": "紡績", "wordReading": "ぼうせき", "meaningsKo": ["방적"], "examples": [] }
+    ],
+    "索": [
+      { "readingRef": "サク", "word": "検索", "wordReading": "けんさく", "meaningsKo": ["검색"], "examples": [] },
+      { "readingRef": "サク", "word": "模索", "wordReading": "もさく", "meaningsKo": ["모색"], "examples": [] },
+      { "readingRef": "サク", "word": "思索", "wordReading": "しさく", "meaningsKo": ["사색"], "examples": [] }
+    ],
+    "紫": [
+      { "readingRef": "むらさき", "word": "紫", "wordReading": "むらさき", "meaningsKo": ["보라색"], "examples": [] },
+      { "readingRef": "シ", "word": "紫外線", "wordReading": "しがいせん", "meaningsKo": ["자외선"], "examples": [] }
+    ],
+    "紬": [
+      { "readingRef": "つむぎ", "word": "紬", "wordReading": "つむぎ", "meaningsKo": ["명주", "쓰무기"], "examples": [] }
+    ],
+    "累": [
+      { "readingRef": "ルイ", "word": "累計", "wordReading": "るいけい", "meaningsKo": ["누계"], "examples": [] },
+      { "readingRef": "ルイ", "word": "累積", "wordReading": "るいせき", "meaningsKo": ["누적"], "examples": [] }
+    ]
+  }
+}

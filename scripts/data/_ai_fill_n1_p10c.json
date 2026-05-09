@@ -1,0 +1,81 @@
+{
+  "_comment": "N1 Phase 10-C: 竣 端 笙 笛 第 笹 筋 策 箇 節 範 篤 簿 粋 粗 粘 粛",
+  "fills": {
+    "竣": [
+      { "readingRef": "シュン", "word": "竣工", "wordReading": "しゅんこう", "meaningsKo": ["준공"], "examples": [] }
+    ],
+    "端": [
+      { "readingRef": "はし", "word": "端", "wordReading": "はし", "meaningsKo": ["끝", "가장자리"], "examples": [] },
+      { "readingRef": "タン", "word": "極端", "wordReading": "きょくたん", "meaningsKo": ["극단"], "examples": [] },
+      { "readingRef": "タン", "word": "端的", "wordReading": "たんてき", "meaningsKo": ["단적"], "examples": [] }
+    ],
+    "笙": [
+      { "readingRef": "ショウ", "word": "笙", "wordReading": "しょう", "meaningsKo": ["생황"], "examples": [] }
+    ],
+    "笛": [
+      { "readingRef": "ふえ", "word": "笛", "wordReading": "ふえ", "meaningsKo": ["피리"], "examples": [] },
+      { "readingRef": "テキ", "word": "汽笛", "wordReading": "きてき", "meaningsKo": ["기적"], "examples": [] },
+      { "readingRef": "ふえ", "word": "口笛", "wordReading": "くちぶえ", "meaningsKo": ["휘파람"], "examples": [] }
+    ],
+    "第": [
+      { "readingRef": "ダイ", "word": "第一", "wordReading": "だいいち", "meaningsKo": ["제일", "가장 중요"], "examples": [] },
+      { "readingRef": "ダイ", "word": "次第", "wordReading": "しだい", "meaningsKo": ["순서", "~하기 나름"], "examples": [] },
+      { "readingRef": "ダイ", "word": "落第", "wordReading": "らくだい", "meaningsKo": ["낙제"], "examples": [] }
+    ],
+    "笹": [
+      { "readingRef": "ささ", "word": "笹", "wordReading": "ささ", "meaningsKo": ["조릿대"], "examples": [] }
+    ],
+    "筋": [
+      { "readingRef": "すじ", "word": "筋", "wordReading": "すじ", "meaningsKo": ["줄기", "근육", "줄거리"], "examples": [] },
+      { "readingRef": "キン", "word": "筋肉", "wordReading": "きんにく", "meaningsKo": ["근육"], "examples": [] },
+      { "readingRef": "キン", "word": "鉄筋", "wordReading": "てっきん", "meaningsKo": ["철근"], "examples": [] }
+    ],
+    "策": [
+      { "readingRef": "サク", "word": "政策", "wordReading": "せいさく", "meaningsKo": ["정책"], "examples": [] },
+      { "readingRef": "サク", "word": "対策", "wordReading": "たいさく", "meaningsKo": ["대책"], "examples": [] },
+      { "readingRef": "サク", "word": "策略", "wordReading": "さくりゃく", "meaningsKo": ["책략"], "examples": [] }
+    ],
+    "箇": [
+      { "readingRef": "カ", "word": "箇所", "wordReading": "かしょ", "meaningsKo": ["곳", "부분"], "examples": [] },
+      { "readingRef": "カ", "word": "箇条", "wordReading": "かじょう", "meaningsKo": ["조항"], "examples": [] }
+    ],
+    "節": [
+      { "readingRef": "セツ", "word": "季節", "wordReading": "きせつ", "meaningsKo": ["계절"], "examples": [] },
+      { "readingRef": "ふし", "word": "節", "wordReading": "ふし", "meaningsKo": ["마디", "관절"], "examples": [] },
+      { "readingRef": "セツ", "word": "節約", "wordReading": "せつやく", "meaningsKo": ["절약"], "examples": [] }
+    ],
+    "範": [
+      { "readingRef": "ハン", "word": "範囲", "wordReading": "はんい", "meaningsKo": ["범위"], "examples": [] },
+      { "readingRef": "ハン", "word": "模範", "wordReading": "もはん", "meaningsKo": ["모범"], "examples": [] },
+      { "readingRef": "ハン", "word": "規範", "wordReading": "きはん", "meaningsKo": ["규범"], "examples": [] }
+    ],
+    "篤": [
+      { "readingRef": "トク", "word": "篤志", "wordReading": "とくし", "meaningsKo": ["독지"], "examples": [] },
+      { "readingRef": "トク", "word": "危篤", "wordReading": "きとく", "meaningsKo": ["위독"], "examples": [] }
+    ],
+    "簿": [
+      { "readingRef": "ボ", "word": "名簿", "wordReading": "めいぼ", "meaningsKo": ["명부"], "examples": [] },
+      { "readingRef": "ボ", "word": "帳簿", "wordReading": "ちょうぼ", "meaningsKo": ["장부"], "examples": [] },
+      { "readingRef": "ボ", "word": "家計簿", "wordReading": "かけいぼ", "meaningsKo": ["가계부"], "examples": [] }
+    ],
+    "粋": [
+      { "readingRef": "スイ", "word": "純粋", "wordReading": "じゅんすい", "meaningsKo": ["순수"], "examples": [] },
+      { "readingRef": "スイ", "word": "抜粋", "wordReading": "ばっすい", "meaningsKo": ["발췌"], "examples": [] },
+      { "readingRef": "いき", "word": "粋", "wordReading": "いき", "meaningsKo": ["세련됨", "멋"], "examples": [] }
+    ],
+    "粗": [
+      { "readingRef": "あらい", "word": "粗い", "wordReading": "あらい", "meaningsKo": ["거칠다"], "examples": [] },
+      { "readingRef": "ソ", "word": "粗末", "wordReading": "そまつ", "meaningsKo": ["허술함", "조잡"], "examples": [] },
+      { "readingRef": "ソ", "word": "粗野", "wordReading": "そや", "meaningsKo": ["조야", "야비"], "examples": [] }
+    ],
+    "粘": [
+      { "readingRef": "ねばる", "word": "粘る", "wordReading": "ねばる", "meaningsKo": ["끈적이다", "끈기를 보이다"], "examples": [] },
+      { "readingRef": "ネン", "word": "粘土", "wordReading": "ねんど", "meaningsKo": ["점토"], "examples": [] },
+      { "readingRef": "ネン", "word": "粘着", "wordReading": "ねんちゃく", "meaningsKo": ["점착"], "examples": [] }
+    ],
+    "粛": [
+      { "readingRef": "シュク", "word": "厳粛", "wordReading": "げんしゅく", "meaningsKo": ["엄숙"], "examples": [] },
+      { "readingRef": "シュク", "word": "自粛", "wordReading": "じしゅく", "meaningsKo": ["자숙"], "examples": [] }
+    ]
+  }
+}

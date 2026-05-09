@@ -1,0 +1,78 @@
+{
+  "_comment": "N1 Phase 4-E: 弓 弔 弘 弥 弦 弧 張 弾 彗 彦 彩 彪 彫 彬 彰 影 往",
+  "fills": {
+    "弓": [
+      { "readingRef": "ゆみ", "word": "弓", "wordReading": "ゆみ", "meaningsKo": ["활"], "examples": [] },
+      { "readingRef": "キュウ", "word": "弓道", "wordReading": "きゅうどう", "meaningsKo": ["궁도"], "examples": [] },
+      { "readingRef": "ゆみ", "word": "弓矢", "wordReading": "ゆみや", "meaningsKo": ["활과 화살"], "examples": [] }
+    ],
+    "弔": [
+      { "readingRef": "チョウ", "word": "弔問", "wordReading": "ちょうもん", "meaningsKo": ["조문"], "examples": [] },
+      { "readingRef": "チョウ", "word": "慶弔", "wordReading": "けいちょう", "meaningsKo": ["경조"], "examples": [] },
+      { "readingRef": "とむらう", "word": "弔う", "wordReading": "とむらう", "meaningsKo": ["조문하다", "애도하다"], "examples": [] }
+    ],
+    "弘": [
+      { "readingRef": "コウ", "word": "弘法", "wordReading": "こうぼう", "meaningsKo": ["홍법", "홍법대사"], "examples": [] },
+      { "readingRef": "ひろい", "word": "弘い", "wordReading": "ひろい", "meaningsKo": ["넓다"], "examples": [] }
+    ],
+    "弥": [
+      { "readingRef": "ミ", "word": "弥生", "wordReading": "やよい", "meaningsKo": ["야요이(3월)", "야요이 시대"], "examples": [] },
+      { "readingRef": "いよいよ", "word": "弥", "wordReading": "いよいよ", "meaningsKo": ["점점", "더욱더"], "examples": [] }
+    ],
+    "弦": [
+      { "readingRef": "つる", "word": "弦", "wordReading": "つる", "meaningsKo": ["활시위", "현"], "examples": [] },
+      { "readingRef": "ゲン", "word": "弦楽器", "wordReading": "げんがっき", "meaningsKo": ["현악기"], "examples": [] },
+      { "readingRef": "ゲン", "word": "管弦楽", "wordReading": "かんげんがく", "meaningsKo": ["관현악"], "examples": [] }
+    ],
+    "弧": [
+      { "readingRef": "コ", "word": "円弧", "wordReading": "えんこ", "meaningsKo": ["원호"], "examples": [] },
+      { "readingRef": "コ", "word": "括弧", "wordReading": "かっこ", "meaningsKo": ["괄호"], "examples": [] }
+    ],
+    "張": [
+      { "readingRef": "チョウ", "word": "緊張", "wordReading": "きんちょう", "meaningsKo": ["긴장"], "examples": [] },
+      { "readingRef": "チョウ", "word": "主張", "wordReading": "しゅちょう", "meaningsKo": ["주장"], "examples": [] },
+      { "readingRef": "はる", "word": "張る", "wordReading": "はる", "meaningsKo": ["펴다", "치다", "붙이다"], "examples": [] }
+    ],
+    "弾": [
+      { "readingRef": "ダン", "word": "弾丸", "wordReading": "だんがん", "meaningsKo": ["탄환"], "examples": [] },
+      { "readingRef": "ダン", "word": "爆弾", "wordReading": "ばくだん", "meaningsKo": ["폭탄"], "examples": [] },
+      { "readingRef": "ひく", "word": "弾く", "wordReading": "ひく", "meaningsKo": ["연주하다", "치다(현악기)"], "examples": [] }
+    ],
+    "彗": [
+      { "readingRef": "スイ", "word": "彗星", "wordReading": "すいせい", "meaningsKo": ["혜성"], "examples": [] }
+    ],
+    "彦": [
+      { "readingRef": "ひこ", "word": "彦", "wordReading": "ひこ", "meaningsKo": ["남자(미칭)"], "examples": [] }
+    ],
+    "彩": [
+      { "readingRef": "サイ", "word": "色彩", "wordReading": "しきさい", "meaningsKo": ["색채"], "examples": [] },
+      { "readingRef": "サイ", "word": "多彩", "wordReading": "たさい", "meaningsKo": ["다채"], "examples": [] },
+      { "readingRef": "いろどる", "word": "彩る", "wordReading": "いろどる", "meaningsKo": ["채색하다", "수놓다"], "examples": [] }
+    ],
+    "彪": [
+      { "readingRef": "ヒョウ", "word": "彪炳", "wordReading": "ひょうへい", "meaningsKo": ["빛남", "찬란"], "examples": [] }
+    ],
+    "彫": [
+      { "readingRef": "チョウ", "word": "彫刻", "wordReading": "ちょうこく", "meaningsKo": ["조각"], "examples": [] },
+      { "readingRef": "ほる", "word": "彫る", "wordReading": "ほる", "meaningsKo": ["새기다", "조각하다"], "examples": [] },
+      { "readingRef": "チョウ", "word": "木彫", "wordReading": "もくちょう", "meaningsKo": ["목조각"], "examples": [] }
+    ],
+    "彬": [
+      { "readingRef": "ヒン", "word": "彬彬", "wordReading": "ひんぴん", "meaningsKo": ["빛나는 모양", "정제된 모양"], "examples": [] }
+    ],
+    "彰": [
+      { "readingRef": "ショウ", "word": "表彰", "wordReading": "ひょうしょう", "meaningsKo": ["표창"], "examples": [] },
+      { "readingRef": "ショウ", "word": "顕彰", "wordReading": "けんしょう", "meaningsKo": ["현창"], "examples": [] }
+    ],
+    "影": [
+      { "readingRef": "かげ", "word": "影", "wordReading": "かげ", "meaningsKo": ["그림자", "그림"], "examples": [] },
+      { "readingRef": "エイ", "word": "影響", "wordReading": "えいきょう", "meaningsKo": ["영향"], "examples": [] },
+      { "readingRef": "エイ", "word": "撮影", "wordReading": "さつえい", "meaningsKo": ["촬영"], "examples": [] }
+    ],
+    "往": [
+      { "readingRef": "オウ", "word": "往復", "wordReading": "おうふく", "meaningsKo": ["왕복"], "examples": [] },
+      { "readingRef": "オウ", "word": "往来", "wordReading": "おうらい", "meaningsKo": ["왕래"], "examples": [] },
+      { "readingRef": "オウ", "word": "立ち往生", "wordReading": "たちおうじょう", "meaningsKo": ["입장 곤란", "꼼짝 못함"], "examples": [] }
+    ]
+  }
+}

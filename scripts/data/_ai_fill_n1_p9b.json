@@ -1,0 +1,67 @@
+{
+  "_comment": "N1 Phase 9-B: 玄 率 玖 玲 珠 班 琉 琢 琳 琴 瑚 瑛 瑞 瑠 瑳 瑶 璃",
+  "fills": {
+    "玄": [
+      { "readingRef": "ゲン", "word": "玄関", "wordReading": "げんかん", "meaningsKo": ["현관"], "examples": [] },
+      { "readingRef": "ゲン", "word": "玄米", "wordReading": "げんまい", "meaningsKo": ["현미"], "examples": [] },
+      { "readingRef": "くろ", "word": "玄人", "wordReading": "くろうと", "meaningsKo": ["전문가", "프로"], "examples": [] }
+    ],
+    "率": [
+      { "readingRef": "リツ", "word": "効率", "wordReading": "こうりつ", "meaningsKo": ["효율"], "examples": [] },
+      { "readingRef": "ソツ", "word": "率直", "wordReading": "そっちょく", "meaningsKo": ["솔직"], "examples": [] },
+      { "readingRef": "ひきいる", "word": "率いる", "wordReading": "ひきいる", "meaningsKo": ["거느리다", "이끌다"], "examples": [] }
+    ],
+    "玖": [
+      { "readingRef": "キュウ", "word": "玖", "wordReading": "きゅう", "meaningsKo": ["검은 옥돌"], "examples": [] }
+    ],
+    "玲": [
+      { "readingRef": "レイ", "word": "玲瓏", "wordReading": "れいろう", "meaningsKo": ["영롱"], "examples": [] }
+    ],
+    "珠": [
+      { "readingRef": "シュ", "word": "真珠", "wordReading": "しんじゅ", "meaningsKo": ["진주"], "examples": [] },
+      { "readingRef": "たま", "word": "珠", "wordReading": "たま", "meaningsKo": ["구슬"], "examples": [] },
+      { "readingRef": "シュ", "word": "珠玉", "wordReading": "しゅぎょく", "meaningsKo": ["주옥"], "examples": [] }
+    ],
+    "班": [
+      { "readingRef": "ハン", "word": "班", "wordReading": "はん", "meaningsKo": ["반", "조"], "examples": [] },
+      { "readingRef": "ハン", "word": "班長", "wordReading": "はんちょう", "meaningsKo": ["반장"], "examples": [] },
+      { "readingRef": "ハン", "word": "首班", "wordReading": "しゅはん", "meaningsKo": ["수반"], "examples": [] }
+    ],
+    "琉": [
+      { "readingRef": "リュウ", "word": "琉球", "wordReading": "りゅうきゅう", "meaningsKo": ["류큐(오키나와의 옛 이름)"], "examples": [] }
+    ],
+    "琢": [
+      { "readingRef": "タク", "word": "琢磨", "wordReading": "たくま", "meaningsKo": ["탁마", "갈고닦음"], "examples": [] }
+    ],
+    "琳": [
+      { "readingRef": "リン", "word": "琳琅", "wordReading": "りんろう", "meaningsKo": ["임랑", "옥의 빛남"], "examples": [] }
+    ],
+    "琴": [
+      { "readingRef": "こと", "word": "琴", "wordReading": "こと", "meaningsKo": ["거문고", "고토"], "examples": [] },
+      { "readingRef": "キン", "word": "木琴", "wordReading": "もっきん", "meaningsKo": ["실로폰"], "examples": [] }
+    ],
+    "瑚": [
+      { "readingRef": "ゴ", "word": "珊瑚", "wordReading": "さんご", "meaningsKo": ["산호"], "examples": [] }
+    ],
+    "瑛": [
+      { "readingRef": "エイ", "word": "瑛", "wordReading": "えい", "meaningsKo": ["옥의 광채"], "examples": [] }
+    ],
+    "瑞": [
+      { "readingRef": "ズイ", "word": "瑞祥", "wordReading": "ずいしょう", "meaningsKo": ["서상", "상서로운 조짐"], "examples": [] },
+      { "readingRef": "みず", "word": "瑞々しい", "wordReading": "みずみずしい", "meaningsKo": ["싱싱하다"], "examples": [] }
+    ],
+    "瑠": [
+      { "readingRef": "ル", "word": "瑠璃", "wordReading": "るり", "meaningsKo": ["유리", "유리색"], "examples": [] }
+    ],
+    "瑳": [
+      { "readingRef": "サ", "word": "切瑳琢磨", "wordReading": "せっさたくま", "meaningsKo": ["절차탁마"], "examples": [] }
+    ],
+    "瑶": [
+      { "readingRef": "ヨウ", "word": "瑶玉", "wordReading": "ようぎょく", "meaningsKo": ["요옥", "아름다운 옥"], "examples": [] }
+    ],
+    "璃": [
+      { "readingRef": "リ", "word": "瑠璃", "wordReading": "るり", "meaningsKo": ["유리", "유리색"], "examples": [] },
+      { "readingRef": "リ", "word": "玻璃", "wordReading": "はり", "meaningsKo": ["파리", "수정"], "examples": [] }
+    ]
+  }
+}

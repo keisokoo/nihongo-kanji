@@ -1,0 +1,71 @@
+{
+  "_comment": "N1 Phase 12-B: 蕗 薦 薪 薫 藍 藤 藩 藻 蘭 虎 虐 虚 虜 虞 虹 蚊 蚕",
+  "fills": {
+    "蕗": [
+      { "readingRef": "ふき", "word": "蕗", "wordReading": "ふき", "meaningsKo": ["머위"], "examples": [] }
+    ],
+    "薦": [
+      { "readingRef": "セン", "word": "推薦", "wordReading": "すいせん", "meaningsKo": ["추천"], "examples": [] },
+      { "readingRef": "すすめる", "word": "薦める", "wordReading": "すすめる", "meaningsKo": ["추천하다"], "examples": [] },
+      { "readingRef": "セン", "word": "自薦", "wordReading": "じせん", "meaningsKo": ["자천"], "examples": [] }
+    ],
+    "薪": [
+      { "readingRef": "たきぎ", "word": "薪", "wordReading": "たきぎ", "meaningsKo": ["장작", "땔나무"], "examples": [] },
+      { "readingRef": "シン", "word": "薪炭", "wordReading": "しんたん", "meaningsKo": ["신탄", "장작과 숯"], "examples": [] }
+    ],
+    "薫": [
+      { "readingRef": "かおる", "word": "薫る", "wordReading": "かおる", "meaningsKo": ["향기가 나다"], "examples": [] },
+      { "readingRef": "クン", "word": "薫陶", "wordReading": "くんとう", "meaningsKo": ["훈도", "교화"], "examples": [] }
+    ],
+    "藍": [
+      { "readingRef": "あい", "word": "藍", "wordReading": "あい", "meaningsKo": ["쪽빛", "남색"], "examples": [] },
+      { "readingRef": "ラン", "word": "出藍", "wordReading": "しゅつらん", "meaningsKo": ["출람", "청출어람"], "examples": [] }
+    ],
+    "藤": [
+      { "readingRef": "ふじ", "word": "藤", "wordReading": "ふじ", "meaningsKo": ["등나무"], "examples": [] },
+      { "readingRef": "トウ", "word": "葛藤", "wordReading": "かっとう", "meaningsKo": ["갈등"], "examples": [] }
+    ],
+    "藩": [
+      { "readingRef": "ハン", "word": "藩", "wordReading": "はん", "meaningsKo": ["번(에도시대 영지)"], "examples": [] },
+      { "readingRef": "ハン", "word": "藩主", "wordReading": "はんしゅ", "meaningsKo": ["번주", "영주"], "examples": [] }
+    ],
+    "藻": [
+      { "readingRef": "も", "word": "藻", "wordReading": "も", "meaningsKo": ["해조", "조류"], "examples": [] },
+      { "readingRef": "ソウ", "word": "海藻", "wordReading": "かいそう", "meaningsKo": ["해초"], "examples": [] }
+    ],
+    "蘭": [
+      { "readingRef": "ラン", "word": "蘭", "wordReading": "らん", "meaningsKo": ["난초"], "examples": [] }
+    ],
+    "虎": [
+      { "readingRef": "とら", "word": "虎", "wordReading": "とら", "meaningsKo": ["호랑이"], "examples": [] }
+    ],
+    "虐": [
+      { "readingRef": "ギャク", "word": "虐待", "wordReading": "ぎゃくたい", "meaningsKo": ["학대"], "examples": [] },
+      { "readingRef": "しいたげる", "word": "虐げる", "wordReading": "しいたげる", "meaningsKo": ["학대하다"], "examples": [] },
+      { "readingRef": "ギャク", "word": "残虐", "wordReading": "ざんぎゃく", "meaningsKo": ["잔학"], "examples": [] }
+    ],
+    "虚": [
+      { "readingRef": "キョ", "word": "虚偽", "wordReading": "きょぎ", "meaningsKo": ["허위"], "examples": [] },
+      { "readingRef": "むなしい", "word": "虚しい", "wordReading": "むなしい", "meaningsKo": ["허무하다"], "examples": [] },
+      { "readingRef": "キョ", "word": "謙虚", "wordReading": "けんきょ", "meaningsKo": ["겸허"], "examples": [] }
+    ],
+    "虜": [
+      { "readingRef": "リョ", "word": "捕虜", "wordReading": "ほりょ", "meaningsKo": ["포로"], "examples": [] },
+      { "readingRef": "とりこ", "word": "虜", "wordReading": "とりこ", "meaningsKo": ["포로", "사로잡힘"], "examples": [] }
+    ],
+    "虞": [
+      { "readingRef": "おそれ", "word": "虞", "wordReading": "おそれ", "meaningsKo": ["우려", "근심"], "examples": [] }
+    ],
+    "虹": [
+      { "readingRef": "にじ", "word": "虹", "wordReading": "にじ", "meaningsKo": ["무지개"], "examples": [] }
+    ],
+    "蚊": [
+      { "readingRef": "か", "word": "蚊", "wordReading": "か", "meaningsKo": ["모기"], "examples": [] },
+      { "readingRef": "か", "word": "蚊取り線香", "wordReading": "かとりせんこう", "meaningsKo": ["모기향"], "examples": [] }
+    ],
+    "蚕": [
+      { "readingRef": "かいこ", "word": "蚕", "wordReading": "かいこ", "meaningsKo": ["누에"], "examples": [] },
+      { "readingRef": "サン", "word": "養蚕", "wordReading": "ようさん", "meaningsKo": ["양잠"], "examples": [] }
+    ]
+  }
+}

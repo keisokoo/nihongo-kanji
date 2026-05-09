@@ -1,0 +1,81 @@
+{
+  "_comment": "N1 Phase 3-C: 壌 士 壮 壱 奇 奈 奉 奎 奏 契 奔 奨 奪 奮 奴 如 妃",
+  "fills": {
+    "壌": [
+      { "readingRef": "ジョウ", "word": "土壌", "wordReading": "どじょう", "meaningsKo": ["토양"], "examples": [] },
+      { "readingRef": "ジョウ", "word": "壌土", "wordReading": "じょうど", "meaningsKo": ["양토", "옥토"], "examples": [] }
+    ],
+    "士": [
+      { "readingRef": "シ", "word": "紳士", "wordReading": "しんし", "meaningsKo": ["신사"], "examples": [] },
+      { "readingRef": "シ", "word": "弁護士", "wordReading": "べんごし", "meaningsKo": ["변호사"], "examples": [] },
+      { "readingRef": "シ", "word": "博士", "wordReading": "はかせ", "meaningsKo": ["박사"], "examples": [] }
+    ],
+    "壮": [
+      { "readingRef": "ソウ", "word": "壮大", "wordReading": "そうだい", "meaningsKo": ["장대", "웅장"], "examples": [] },
+      { "readingRef": "ソウ", "word": "壮絶", "wordReading": "そうぜつ", "meaningsKo": ["장렬"], "examples": [] },
+      { "readingRef": "ソウ", "word": "壮快", "wordReading": "そうかい", "meaningsKo": ["장쾌", "통쾌"], "examples": [] }
+    ],
+    "壱": [
+      { "readingRef": "イチ", "word": "壱万円", "wordReading": "いちまんえん", "meaningsKo": ["일만 엔(증서용)"], "examples": [] }
+    ],
+    "奇": [
+      { "readingRef": "キ", "word": "奇跡", "wordReading": "きせき", "meaningsKo": ["기적"], "examples": [] },
+      { "readingRef": "キ", "word": "奇妙", "wordReading": "きみょう", "meaningsKo": ["기묘"], "examples": [] },
+      { "readingRef": "キ", "word": "好奇心", "wordReading": "こうきしん", "meaningsKo": ["호기심"], "examples": [] }
+    ],
+    "奈": [
+      { "readingRef": "ナ", "word": "奈良", "wordReading": "なら", "meaningsKo": ["나라(지명)"], "examples": [] },
+      { "readingRef": "ナ", "word": "奈落", "wordReading": "ならく", "meaningsKo": ["나락", "지옥"], "examples": [] }
+    ],
+    "奉": [
+      { "readingRef": "ホウ", "word": "奉仕", "wordReading": "ほうし", "meaningsKo": ["봉사"], "examples": [] },
+      { "readingRef": "ホウ", "word": "信奉", "wordReading": "しんぽう", "meaningsKo": ["신봉"], "examples": [] },
+      { "readingRef": "たてまつる", "word": "奉る", "wordReading": "たてまつる", "meaningsKo": ["받들다", "올리다"], "examples": [] }
+    ],
+    "奎": [
+      { "readingRef": "ケイ", "word": "奎章", "wordReading": "けいしょう", "meaningsKo": ["규장", "임금의 글"], "examples": [] }
+    ],
+    "奏": [
+      { "readingRef": "ソウ", "word": "演奏", "wordReading": "えんそう", "meaningsKo": ["연주"], "examples": [] },
+      { "readingRef": "ソウ", "word": "合奏", "wordReading": "がっそう", "meaningsKo": ["합주"], "examples": [] },
+      { "readingRef": "かなでる", "word": "奏でる", "wordReading": "かなでる", "meaningsKo": ["연주하다"], "examples": [] }
+    ],
+    "契": [
+      { "readingRef": "ケイ", "word": "契約", "wordReading": "けいやく", "meaningsKo": ["계약"], "examples": [] },
+      { "readingRef": "ケイ", "word": "契機", "wordReading": "けいき", "meaningsKo": ["계기"], "examples": [] },
+      { "readingRef": "ちぎる", "word": "契る", "wordReading": "ちぎる", "meaningsKo": ["언약하다", "맹세하다"], "examples": [] }
+    ],
+    "奔": [
+      { "readingRef": "ホン", "word": "奔走", "wordReading": "ほんそう", "meaningsKo": ["분주", "뛰어다님"], "examples": [] },
+      { "readingRef": "ホン", "word": "奔放", "wordReading": "ほんぽう", "meaningsKo": ["분방", "자유분방"], "examples": [] }
+    ],
+    "奨": [
+      { "readingRef": "ショウ", "word": "奨学金", "wordReading": "しょうがくきん", "meaningsKo": ["장학금"], "examples": [] },
+      { "readingRef": "ショウ", "word": "推奨", "wordReading": "すいしょう", "meaningsKo": ["추천", "권장"], "examples": [] },
+      { "readingRef": "ショウ", "word": "奨励", "wordReading": "しょうれい", "meaningsKo": ["장려"], "examples": [] }
+    ],
+    "奪": [
+      { "readingRef": "ダツ", "word": "奪取", "wordReading": "だっしゅ", "meaningsKo": ["탈취"], "examples": [] },
+      { "readingRef": "ダツ", "word": "略奪", "wordReading": "りゃくだつ", "meaningsKo": ["약탈"], "examples": [] },
+      { "readingRef": "うばう", "word": "奪う", "wordReading": "うばう", "meaningsKo": ["빼앗다"], "examples": [] }
+    ],
+    "奮": [
+      { "readingRef": "フン", "word": "興奮", "wordReading": "こうふん", "meaningsKo": ["흥분"], "examples": [] },
+      { "readingRef": "フン", "word": "奮闘", "wordReading": "ふんとう", "meaningsKo": ["분투"], "examples": [] },
+      { "readingRef": "ふるう", "word": "奮う", "wordReading": "ふるう", "meaningsKo": ["떨치다", "분발하다"], "examples": [] }
+    ],
+    "奴": [
+      { "readingRef": "ド", "word": "奴隷", "wordReading": "どれい", "meaningsKo": ["노예"], "examples": [] },
+      { "readingRef": "やつ", "word": "奴", "wordReading": "やつ", "meaningsKo": ["놈", "녀석"], "examples": [] }
+    ],
+    "如": [
+      { "readingRef": "ジョ", "word": "如実", "wordReading": "にょじつ", "meaningsKo": ["여실", "있는 그대로"], "examples": [] },
+      { "readingRef": "ニョ", "word": "突如", "wordReading": "とつじょ", "meaningsKo": ["돌연", "갑자기"], "examples": [] },
+      { "readingRef": "ジョ", "word": "欠如", "wordReading": "けつじょ", "meaningsKo": ["결여"], "examples": [] }
+    ],
+    "妃": [
+      { "readingRef": "ヒ", "word": "王妃", "wordReading": "おうひ", "meaningsKo": ["왕비"], "examples": [] },
+      { "readingRef": "ヒ", "word": "妃殿下", "wordReading": "ひでんか", "meaningsKo": ["비전하"], "examples": [] }
+    ]
+  }
+}

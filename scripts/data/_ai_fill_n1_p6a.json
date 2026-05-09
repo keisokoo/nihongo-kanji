@@ -1,0 +1,82 @@
+{
+  "_comment": "N1 Phase 6-A: 拡 括 拳 拷 挑 挙 振 挿 据 捷 捺 授 掌 排 控 推 措",
+  "fills": {
+    "拡": [
+      { "readingRef": "カク", "word": "拡大", "wordReading": "かくだい", "meaningsKo": ["확대"], "examples": [] },
+      { "readingRef": "カク", "word": "拡張", "wordReading": "かくちょう", "meaningsKo": ["확장"], "examples": [] },
+      { "readingRef": "カク", "word": "拡散", "wordReading": "かくさん", "meaningsKo": ["확산"], "examples": [] }
+    ],
+    "括": [
+      { "readingRef": "カツ", "word": "括弧", "wordReading": "かっこ", "meaningsKo": ["괄호"], "examples": [] },
+      { "readingRef": "カツ", "word": "包括", "wordReading": "ほうかつ", "meaningsKo": ["포괄"], "examples": [] },
+      { "readingRef": "カツ", "word": "総括", "wordReading": "そうかつ", "meaningsKo": ["총괄"], "examples": [] }
+    ],
+    "拳": [
+      { "readingRef": "こぶし", "word": "拳", "wordReading": "こぶし", "meaningsKo": ["주먹"], "examples": [] },
+      { "readingRef": "ケン", "word": "拳銃", "wordReading": "けんじゅう", "meaningsKo": ["권총"], "examples": [] },
+      { "readingRef": "ケン", "word": "拳法", "wordReading": "けんぽう", "meaningsKo": ["권법"], "examples": [] }
+    ],
+    "拷": [
+      { "readingRef": "ゴウ", "word": "拷問", "wordReading": "ごうもん", "meaningsKo": ["고문"], "examples": [] }
+    ],
+    "挑": [
+      { "readingRef": "チョウ", "word": "挑戦", "wordReading": "ちょうせん", "meaningsKo": ["도전"], "examples": [] },
+      { "readingRef": "チョウ", "word": "挑発", "wordReading": "ちょうはつ", "meaningsKo": ["도발"], "examples": [] },
+      { "readingRef": "いどむ", "word": "挑む", "wordReading": "いどむ", "meaningsKo": ["도전하다"], "examples": [] }
+    ],
+    "挙": [
+      { "readingRef": "キョ", "word": "選挙", "wordReading": "せんきょ", "meaningsKo": ["선거"], "examples": [] },
+      { "readingRef": "あげる", "word": "挙げる", "wordReading": "あげる", "meaningsKo": ["들다", "예시하다"], "examples": [] },
+      { "readingRef": "キョ", "word": "挙動", "wordReading": "きょどう", "meaningsKo": ["거동"], "examples": [] }
+    ],
+    "振": [
+      { "readingRef": "ふる", "word": "振る", "wordReading": "ふる", "meaningsKo": ["흔들다"], "examples": [] },
+      { "readingRef": "シン", "word": "振動", "wordReading": "しんどう", "meaningsKo": ["진동"], "examples": [] },
+      { "readingRef": "シン", "word": "振興", "wordReading": "しんこう", "meaningsKo": ["진흥"], "examples": [] }
+    ],
+    "挿": [
+      { "readingRef": "ソウ", "word": "挿入", "wordReading": "そうにゅう", "meaningsKo": ["삽입"], "examples": [] },
+      { "readingRef": "さす", "word": "挿す", "wordReading": "さす", "meaningsKo": ["꽂다", "끼우다"], "examples": [] },
+      { "readingRef": "ソウ", "word": "挿絵", "wordReading": "さしえ", "meaningsKo": ["삽화"], "examples": [] }
+    ],
+    "据": [
+      { "readingRef": "すえる", "word": "据える", "wordReading": "すえる", "meaningsKo": ["놓다", "두다", "앉히다"], "examples": [] },
+      { "readingRef": "すわる", "word": "据わる", "wordReading": "すわる", "meaningsKo": ["자리잡다", "놓이다"], "examples": [] }
+    ],
+    "捷": [
+      { "readingRef": "ショウ", "word": "敏捷", "wordReading": "びんしょう", "meaningsKo": ["민첩"], "examples": [] }
+    ],
+    "捺": [
+      { "readingRef": "ナツ", "word": "捺印", "wordReading": "なついん", "meaningsKo": ["날인"], "examples": [] }
+    ],
+    "授": [
+      { "readingRef": "ジュ", "word": "授業", "wordReading": "じゅぎょう", "meaningsKo": ["수업"], "examples": [] },
+      { "readingRef": "ジュ", "word": "教授", "wordReading": "きょうじゅ", "meaningsKo": ["교수"], "examples": [] },
+      { "readingRef": "さずける", "word": "授ける", "wordReading": "さずける", "meaningsKo": ["주다", "내려주다"], "examples": [] }
+    ],
+    "掌": [
+      { "readingRef": "ショウ", "word": "車掌", "wordReading": "しゃしょう", "meaningsKo": ["차장"], "examples": [] },
+      { "readingRef": "ショウ", "word": "掌握", "wordReading": "しょうあく", "meaningsKo": ["장악"], "examples": [] },
+      { "readingRef": "てのひら", "word": "掌", "wordReading": "てのひら", "meaningsKo": ["손바닥"], "examples": [] }
+    ],
+    "排": [
+      { "readingRef": "ハイ", "word": "排除", "wordReading": "はいじょ", "meaningsKo": ["배제"], "examples": [] },
+      { "readingRef": "ハイ", "word": "排出", "wordReading": "はいしゅつ", "meaningsKo": ["배출"], "examples": [] },
+      { "readingRef": "ハイ", "word": "排気", "wordReading": "はいき", "meaningsKo": ["배기"], "examples": [] }
+    ],
+    "控": [
+      { "readingRef": "ひかえる", "word": "控える", "wordReading": "ひかえる", "meaningsKo": ["삼가다", "대기하다"], "examples": [] },
+      { "readingRef": "コウ", "word": "控訴", "wordReading": "こうそ", "meaningsKo": ["공소", "항소"], "examples": [] },
+      { "readingRef": "コウ", "word": "控除", "wordReading": "こうじょ", "meaningsKo": ["공제"], "examples": [] }
+    ],
+    "推": [
+      { "readingRef": "スイ", "word": "推薦", "wordReading": "すいせん", "meaningsKo": ["추천"], "examples": [] },
+      { "readingRef": "スイ", "word": "推測", "wordReading": "すいそく", "meaningsKo": ["추측"], "examples": [] },
+      { "readingRef": "おす", "word": "推す", "wordReading": "おす", "meaningsKo": ["추천하다", "밀다"], "examples": [] }
+    ],
+    "措": [
+      { "readingRef": "ソ", "word": "措置", "wordReading": "そち", "meaningsKo": ["조치"], "examples": [] },
+      { "readingRef": "ソ", "word": "挙措", "wordReading": "きょそ", "meaningsKo": ["거조", "행동"], "examples": [] }
+    ]
+  }
+}

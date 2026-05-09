@@ -1,0 +1,75 @@
+{
+  "_comment": "N1 Phase 8-B: 洪 洲 洵 洸 派 浄 浜 浦 浩 浪 浸 涯 淑 淡 淳 添 渇",
+  "fills": {
+    "洪": [
+      { "readingRef": "コウ", "word": "洪水", "wordReading": "こうずい", "meaningsKo": ["홍수"], "examples": [] }
+    ],
+    "洲": [
+      { "readingRef": "シュウ", "word": "三角洲", "wordReading": "さんかくす", "meaningsKo": ["삼각주"], "examples": [] }
+    ],
+    "洵": [
+      { "readingRef": "ジュン", "word": "洵に", "wordReading": "まことに", "meaningsKo": ["참으로", "진실로"], "examples": [] }
+    ],
+    "洸": [
+      { "readingRef": "コウ", "word": "洸洋", "wordReading": "こうよう", "meaningsKo": ["깊고 넓음"], "examples": [] }
+    ],
+    "派": [
+      { "readingRef": "ハ", "word": "派遣", "wordReading": "はけん", "meaningsKo": ["파견"], "examples": [] },
+      { "readingRef": "ハ", "word": "派閥", "wordReading": "はばつ", "meaningsKo": ["파벌"], "examples": [] },
+      { "readingRef": "ハ", "word": "立派", "wordReading": "りっぱ", "meaningsKo": ["훌륭함"], "examples": [] }
+    ],
+    "浄": [
+      { "readingRef": "ジョウ", "word": "清浄", "wordReading": "せいじょう", "meaningsKo": ["청정"], "examples": [] },
+      { "readingRef": "ジョウ", "word": "浄水", "wordReading": "じょうすい", "meaningsKo": ["정수"], "examples": [] },
+      { "readingRef": "ジョウ", "word": "浄化", "wordReading": "じょうか", "meaningsKo": ["정화"], "examples": [] }
+    ],
+    "浜": [
+      { "readingRef": "はま", "word": "浜", "wordReading": "はま", "meaningsKo": ["해변", "바닷가"], "examples": [] },
+      { "readingRef": "はま", "word": "砂浜", "wordReading": "すなはま", "meaningsKo": ["모래사장"], "examples": [] },
+      { "readingRef": "はま", "word": "横浜", "wordReading": "よこはま", "meaningsKo": ["요코하마"], "examples": [] }
+    ],
+    "浦": [
+      { "readingRef": "うら", "word": "浦", "wordReading": "うら", "meaningsKo": ["포구", "해변"], "examples": [] }
+    ],
+    "浩": [
+      { "readingRef": "コウ", "word": "浩大", "wordReading": "こうだい", "meaningsKo": ["호대", "호한", "광대"], "examples": [] }
+    ],
+    "浪": [
+      { "readingRef": "ロウ", "word": "波浪", "wordReading": "はろう", "meaningsKo": ["파랑", "큰 파도"], "examples": [] },
+      { "readingRef": "ロウ", "word": "浪費", "wordReading": "ろうひ", "meaningsKo": ["낭비"], "examples": [] },
+      { "readingRef": "ロウ", "word": "放浪", "wordReading": "ほうろう", "meaningsKo": ["방랑"], "examples": [] }
+    ],
+    "浸": [
+      { "readingRef": "シン", "word": "浸透", "wordReading": "しんとう", "meaningsKo": ["침투"], "examples": [] },
+      { "readingRef": "ひたす", "word": "浸す", "wordReading": "ひたす", "meaningsKo": ["담그다", "적시다"], "examples": [] },
+      { "readingRef": "シン", "word": "浸水", "wordReading": "しんすい", "meaningsKo": ["침수"], "examples": [] }
+    ],
+    "涯": [
+      { "readingRef": "ガイ", "word": "生涯", "wordReading": "しょうがい", "meaningsKo": ["생애"], "examples": [] },
+      { "readingRef": "ガイ", "word": "天涯", "wordReading": "てんがい", "meaningsKo": ["천애", "하늘 끝"], "examples": [] },
+      { "readingRef": "ガイ", "word": "境涯", "wordReading": "きょうがい", "meaningsKo": ["경애", "처지"], "examples": [] }
+    ],
+    "淑": [
+      { "readingRef": "シュク", "word": "淑女", "wordReading": "しゅくじょ", "meaningsKo": ["숙녀"], "examples": [] },
+      { "readingRef": "シュク", "word": "貞淑", "wordReading": "ていしゅく", "meaningsKo": ["정숙"], "examples": [] }
+    ],
+    "淡": [
+      { "readingRef": "あわい", "word": "淡い", "wordReading": "あわい", "meaningsKo": ["옅다", "희미하다"], "examples": [] },
+      { "readingRef": "タン", "word": "淡水", "wordReading": "たんすい", "meaningsKo": ["담수", "민물"], "examples": [] },
+      { "readingRef": "タン", "word": "冷淡", "wordReading": "れいたん", "meaningsKo": ["냉담"], "examples": [] }
+    ],
+    "淳": [
+      { "readingRef": "ジュン", "word": "淳朴", "wordReading": "じゅんぼく", "meaningsKo": ["순박"], "examples": [] }
+    ],
+    "添": [
+      { "readingRef": "テン", "word": "添加", "wordReading": "てんか", "meaningsKo": ["첨가"], "examples": [] },
+      { "readingRef": "そえる", "word": "添える", "wordReading": "そえる", "meaningsKo": ["곁들이다", "덧붙이다"], "examples": [] },
+      { "readingRef": "テン", "word": "添付", "wordReading": "てんぷ", "meaningsKo": ["첨부"], "examples": [] }
+    ],
+    "渇": [
+      { "readingRef": "カツ", "word": "渇望", "wordReading": "かつぼう", "meaningsKo": ["갈망"], "examples": [] },
+      { "readingRef": "かわく", "word": "渇く", "wordReading": "かわく", "meaningsKo": ["목마르다"], "examples": [] },
+      { "readingRef": "カツ", "word": "渇水", "wordReading": "かっすい", "meaningsKo": ["갈수", "물부족"], "examples": [] }
+    ]
+  }
+}

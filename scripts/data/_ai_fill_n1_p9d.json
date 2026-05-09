@@ -1,0 +1,80 @@
+{
+  "_comment": "N1 Phase 9-D: 皐 皓 盆 益 盛 盟 監 盤 盲 盾 眉 看 眸 眺 眼 睡 督",
+  "fills": {
+    "皐": [
+      { "readingRef": "さつき", "word": "皐月", "wordReading": "さつき", "meaningsKo": ["사쓰키(5월)"], "examples": [] }
+    ],
+    "皓": [
+      { "readingRef": "コウ", "word": "皓歯", "wordReading": "こうし", "meaningsKo": ["호치", "흰 이"], "examples": [] }
+    ],
+    "盆": [
+      { "readingRef": "ボン", "word": "盆", "wordReading": "ぼん", "meaningsKo": ["쟁반", "오봉"], "examples": [] },
+      { "readingRef": "ボン", "word": "盆地", "wordReading": "ぼんち", "meaningsKo": ["분지"], "examples": [] },
+      { "readingRef": "ボン", "word": "お盆", "wordReading": "おぼん", "meaningsKo": ["오봉(추석)"], "examples": [] }
+    ],
+    "益": [
+      { "readingRef": "エキ", "word": "利益", "wordReading": "りえき", "meaningsKo": ["이익"], "examples": [] },
+      { "readingRef": "エキ", "word": "有益", "wordReading": "ゆうえき", "meaningsKo": ["유익"], "examples": [] },
+      { "readingRef": "ヤク", "word": "御利益", "wordReading": "ごりやく", "meaningsKo": ["은혜", "효험"], "examples": [] }
+    ],
+    "盛": [
+      { "readingRef": "セイ", "word": "盛大", "wordReading": "せいだい", "meaningsKo": ["성대"], "examples": [] },
+      { "readingRef": "さかん", "word": "盛ん", "wordReading": "さかん", "meaningsKo": ["왕성함"], "examples": [] },
+      { "readingRef": "もる", "word": "盛る", "wordReading": "もる", "meaningsKo": ["담다", "쌓다"], "examples": [] }
+    ],
+    "盟": [
+      { "readingRef": "メイ", "word": "同盟", "wordReading": "どうめい", "meaningsKo": ["동맹"], "examples": [] },
+      { "readingRef": "メイ", "word": "加盟", "wordReading": "かめい", "meaningsKo": ["가맹"], "examples": [] },
+      { "readingRef": "メイ", "word": "連盟", "wordReading": "れんめい", "meaningsKo": ["연맹"], "examples": [] }
+    ],
+    "監": [
+      { "readingRef": "カン", "word": "監督", "wordReading": "かんとく", "meaningsKo": ["감독"], "examples": [] },
+      { "readingRef": "カン", "word": "監視", "wordReading": "かんし", "meaningsKo": ["감시"], "examples": [] },
+      { "readingRef": "カン", "word": "監査", "wordReading": "かんさ", "meaningsKo": ["감사"], "examples": [] }
+    ],
+    "盤": [
+      { "readingRef": "バン", "word": "基盤", "wordReading": "きばん", "meaningsKo": ["기반"], "examples": [] },
+      { "readingRef": "バン", "word": "円盤", "wordReading": "えんばん", "meaningsKo": ["원반"], "examples": [] },
+      { "readingRef": "バン", "word": "地盤", "wordReading": "じばん", "meaningsKo": ["지반"], "examples": [] }
+    ],
+    "盲": [
+      { "readingRef": "モウ", "word": "盲目", "wordReading": "もうもく", "meaningsKo": ["맹목"], "examples": [] },
+      { "readingRef": "モウ", "word": "盲点", "wordReading": "もうてん", "meaningsKo": ["맹점"], "examples": [] },
+      { "readingRef": "モウ", "word": "色盲", "wordReading": "しきもう", "meaningsKo": ["색맹"], "examples": [] }
+    ],
+    "盾": [
+      { "readingRef": "たて", "word": "盾", "wordReading": "たて", "meaningsKo": ["방패"], "examples": [] },
+      { "readingRef": "ジュン", "word": "矛盾", "wordReading": "むじゅん", "meaningsKo": ["모순"], "examples": [] },
+      { "readingRef": "ジュン", "word": "後ろ盾", "wordReading": "うしろだて", "meaningsKo": ["후원자"], "examples": [] }
+    ],
+    "眉": [
+      { "readingRef": "まゆ", "word": "眉", "wordReading": "まゆ", "meaningsKo": ["눈썹"], "examples": [] },
+      { "readingRef": "まゆ", "word": "眉毛", "wordReading": "まゆげ", "meaningsKo": ["눈썹"], "examples": [] }
+    ],
+    "看": [
+      { "readingRef": "カン", "word": "看護", "wordReading": "かんご", "meaningsKo": ["간호"], "examples": [] },
+      { "readingRef": "カン", "word": "看板", "wordReading": "かんばん", "meaningsKo": ["간판"], "examples": [] },
+      { "readingRef": "カン", "word": "看過", "wordReading": "かんか", "meaningsKo": ["간과"], "examples": [] }
+    ],
+    "眸": [
+      { "readingRef": "ひとみ", "word": "眸", "wordReading": "ひとみ", "meaningsKo": ["눈동자"], "examples": [] }
+    ],
+    "眺": [
+      { "readingRef": "ながめる", "word": "眺める", "wordReading": "ながめる", "meaningsKo": ["바라보다"], "examples": [] },
+      { "readingRef": "チョウ", "word": "眺望", "wordReading": "ちょうぼう", "meaningsKo": ["조망", "전망"], "examples": [] }
+    ],
+    "眼": [
+      { "readingRef": "ガン", "word": "眼科", "wordReading": "がんか", "meaningsKo": ["안과"], "examples": [] },
+      { "readingRef": "め", "word": "眼", "wordReading": "め", "meaningsKo": ["눈"], "examples": [] },
+      { "readingRef": "ガン", "word": "近眼", "wordReading": "きんがん", "meaningsKo": ["근시"], "examples": [] }
+    ],
+    "睡": [
+      { "readingRef": "スイ", "word": "睡眠", "wordReading": "すいみん", "meaningsKo": ["수면"], "examples": [] },
+      { "readingRef": "スイ", "word": "熟睡", "wordReading": "じゅくすい", "meaningsKo": ["숙면"], "examples": [] }
+    ],
+    "督": [
+      { "readingRef": "トク", "word": "監督", "wordReading": "かんとく", "meaningsKo": ["감독"], "examples": [] },
+      { "readingRef": "トク", "word": "督促", "wordReading": "とくそく", "meaningsKo": ["독촉"], "examples": [] }
+    ]
+  }
+}

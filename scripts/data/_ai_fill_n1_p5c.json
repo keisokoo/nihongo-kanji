@@ -1,0 +1,83 @@
+{
+  "_comment": "N1 Phase 5-C: 惨 惰 愁 愉 愚 慈 態 慎 慕 慢 慧 慨 慮 慰 慶 憂 憤",
+  "fills": {
+    "惨": [
+      { "readingRef": "サン", "word": "悲惨", "wordReading": "ひさん", "meaningsKo": ["비참"], "examples": [] },
+      { "readingRef": "サン", "word": "惨事", "wordReading": "さんじ", "meaningsKo": ["참사"], "examples": [] },
+      { "readingRef": "みじめ", "word": "惨め", "wordReading": "みじめ", "meaningsKo": ["비참함", "참담함"], "examples": [] }
+    ],
+    "惰": [
+      { "readingRef": "ダ", "word": "惰性", "wordReading": "だせい", "meaningsKo": ["타성"], "examples": [] },
+      { "readingRef": "ダ", "word": "怠惰", "wordReading": "たいだ", "meaningsKo": ["태만", "게으름"], "examples": [] }
+    ],
+    "愁": [
+      { "readingRef": "シュウ", "word": "愁傷", "wordReading": "しゅうしょう", "meaningsKo": ["수심", "비탄"], "examples": [] },
+      { "readingRef": "シュウ", "word": "郷愁", "wordReading": "きょうしゅう", "meaningsKo": ["향수"], "examples": [] }
+    ],
+    "愉": [
+      { "readingRef": "ユ", "word": "愉快", "wordReading": "ゆかい", "meaningsKo": ["유쾌"], "examples": [] },
+      { "readingRef": "ユ", "word": "愉悦", "wordReading": "ゆえつ", "meaningsKo": ["유열", "기쁨"], "examples": [] }
+    ],
+    "愚": [
+      { "readingRef": "グ", "word": "愚痴", "wordReading": "ぐち", "meaningsKo": ["푸념", "넋두리"], "examples": [] },
+      { "readingRef": "グ", "word": "愚問", "wordReading": "ぐもん", "meaningsKo": ["우문"], "examples": [] },
+      { "readingRef": "おろか", "word": "愚か", "wordReading": "おろか", "meaningsKo": ["어리석음"], "examples": [] }
+    ],
+    "慈": [
+      { "readingRef": "ジ", "word": "慈悲", "wordReading": "じひ", "meaningsKo": ["자비"], "examples": [] },
+      { "readingRef": "ジ", "word": "慈善", "wordReading": "じぜん", "meaningsKo": ["자선"], "examples": [] },
+      { "readingRef": "いつくしむ", "word": "慈しむ", "wordReading": "いつくしむ", "meaningsKo": ["사랑하다", "아끼다"], "examples": [] }
+    ],
+    "態": [
+      { "readingRef": "タイ", "word": "態度", "wordReading": "たいど", "meaningsKo": ["태도"], "examples": [] },
+      { "readingRef": "タイ", "word": "状態", "wordReading": "じょうたい", "meaningsKo": ["상태"], "examples": [] },
+      { "readingRef": "わざと", "word": "態と", "wordReading": "わざと", "meaningsKo": ["일부러"], "examples": [] }
+    ],
+    "慎": [
+      { "readingRef": "シン", "word": "慎重", "wordReading": "しんちょう", "meaningsKo": ["신중"], "examples": [] },
+      { "readingRef": "つつしむ", "word": "慎む", "wordReading": "つつしむ", "meaningsKo": ["삼가다"], "examples": [] },
+      { "readingRef": "シン", "word": "謹慎", "wordReading": "きんしん", "meaningsKo": ["근신"], "examples": [] }
+    ],
+    "慕": [
+      { "readingRef": "ボ", "word": "思慕", "wordReading": "しぼ", "meaningsKo": ["사모"], "examples": [] },
+      { "readingRef": "したう", "word": "慕う", "wordReading": "したう", "meaningsKo": ["사모하다"], "examples": [] },
+      { "readingRef": "ボ", "word": "敬慕", "wordReading": "けいぼ", "meaningsKo": ["경모"], "examples": [] }
+    ],
+    "慢": [
+      { "readingRef": "マン", "word": "我慢", "wordReading": "がまん", "meaningsKo": ["참음", "인내"], "examples": [] },
+      { "readingRef": "マン", "word": "自慢", "wordReading": "じまん", "meaningsKo": ["자랑"], "examples": [] },
+      { "readingRef": "マン", "word": "慢性", "wordReading": "まんせい", "meaningsKo": ["만성"], "examples": [] }
+    ],
+    "慧": [
+      { "readingRef": "ケイ", "word": "智慧", "wordReading": "ちえ", "meaningsKo": ["지혜"], "examples": [] }
+    ],
+    "慨": [
+      { "readingRef": "ガイ", "word": "感慨", "wordReading": "かんがい", "meaningsKo": ["감개"], "examples": [] },
+      { "readingRef": "ガイ", "word": "憤慨", "wordReading": "ふんがい", "meaningsKo": ["분개"], "examples": [] }
+    ],
+    "慮": [
+      { "readingRef": "リョ", "word": "考慮", "wordReading": "こうりょ", "meaningsKo": ["고려"], "examples": [] },
+      { "readingRef": "リョ", "word": "遠慮", "wordReading": "えんりょ", "meaningsKo": ["사양", "삼감"], "examples": [] },
+      { "readingRef": "リョ", "word": "配慮", "wordReading": "はいりょ", "meaningsKo": ["배려"], "examples": [] }
+    ],
+    "慰": [
+      { "readingRef": "イ", "word": "慰問", "wordReading": "いもん", "meaningsKo": ["위문"], "examples": [] },
+      { "readingRef": "なぐさめる", "word": "慰める", "wordReading": "なぐさめる", "meaningsKo": ["위로하다"], "examples": [] },
+      { "readingRef": "イ", "word": "慰労", "wordReading": "いろう", "meaningsKo": ["위로"], "examples": [] }
+    ],
+    "慶": [
+      { "readingRef": "ケイ", "word": "慶祝", "wordReading": "けいしゅく", "meaningsKo": ["경축"], "examples": [] },
+      { "readingRef": "ケイ", "word": "慶弔", "wordReading": "けいちょう", "meaningsKo": ["경조"], "examples": [] }
+    ],
+    "憂": [
+      { "readingRef": "ユウ", "word": "憂鬱", "wordReading": "ゆううつ", "meaningsKo": ["우울"], "examples": [] },
+      { "readingRef": "うれえる", "word": "憂える", "wordReading": "うれえる", "meaningsKo": ["근심하다"], "examples": [] },
+      { "readingRef": "ユウ", "word": "憂慮", "wordReading": "ゆうりょ", "meaningsKo": ["우려"], "examples": [] }
+    ],
+    "憤": [
+      { "readingRef": "フン", "word": "憤怒", "wordReading": "ふんぬ", "meaningsKo": ["분노"], "examples": [] },
+      { "readingRef": "いきどおる", "word": "憤る", "wordReading": "いきどおる", "meaningsKo": ["분개하다"], "examples": [] },
+      { "readingRef": "フン", "word": "憤慨", "wordReading": "ふんがい", "meaningsKo": ["분개"], "examples": [] }
+    ]
+  }
+}

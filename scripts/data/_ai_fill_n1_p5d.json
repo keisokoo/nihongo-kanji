@@ -1,0 +1,85 @@
+{
+  "_comment": "N1 Phase 5-D: 憧 憩 憲 憶 憾 懇 懐 懲 懸 我 戒 戯 房 扇 扉 扱 扶",
+  "fills": {
+    "憧": [
+      { "readingRef": "あこがれる", "word": "憧れる", "wordReading": "あこがれる", "meaningsKo": ["동경하다"], "examples": [] },
+      { "readingRef": "ドウ", "word": "憧憬", "wordReading": "どうけい", "meaningsKo": ["동경"], "examples": [] }
+    ],
+    "憩": [
+      { "readingRef": "ケイ", "word": "休憩", "wordReading": "きゅうけい", "meaningsKo": ["휴식"], "examples": [] },
+      { "readingRef": "いこい", "word": "憩い", "wordReading": "いこい", "meaningsKo": ["휴식", "안식"], "examples": [] },
+      { "readingRef": "いこう", "word": "憩う", "wordReading": "いこう", "meaningsKo": ["쉬다"], "examples": [] }
+    ],
+    "憲": [
+      { "readingRef": "ケン", "word": "憲法", "wordReading": "けんぽう", "meaningsKo": ["헌법"], "examples": [] },
+      { "readingRef": "ケン", "word": "立憲", "wordReading": "りっけん", "meaningsKo": ["입헌"], "examples": [] },
+      { "readingRef": "ケン", "word": "改憲", "wordReading": "かいけん", "meaningsKo": ["개헌"], "examples": [] }
+    ],
+    "憶": [
+      { "readingRef": "オク", "word": "記憶", "wordReading": "きおく", "meaningsKo": ["기억"], "examples": [] },
+      { "readingRef": "オク", "word": "追憶", "wordReading": "ついおく", "meaningsKo": ["추억"], "examples": [] },
+      { "readingRef": "オク", "word": "憶測", "wordReading": "おくそく", "meaningsKo": ["억측"], "examples": [] }
+    ],
+    "憾": [
+      { "readingRef": "カン", "word": "遺憾", "wordReading": "いかん", "meaningsKo": ["유감"], "examples": [] }
+    ],
+    "懇": [
+      { "readingRef": "コン", "word": "懇親", "wordReading": "こんしん", "meaningsKo": ["친목"], "examples": [] },
+      { "readingRef": "コン", "word": "懇願", "wordReading": "こんがん", "meaningsKo": ["간원", "간곡한 부탁"], "examples": [] },
+      { "readingRef": "ねんごろ", "word": "懇ろ", "wordReading": "ねんごろ", "meaningsKo": ["간곡함", "친밀함"], "examples": [] }
+    ],
+    "懐": [
+      { "readingRef": "ふところ", "word": "懐", "wordReading": "ふところ", "meaningsKo": ["품", "주머니 사정"], "examples": [] },
+      { "readingRef": "なつかしい", "word": "懐かしい", "wordReading": "なつかしい", "meaningsKo": ["그립다"], "examples": [] },
+      { "readingRef": "カイ", "word": "懐疑", "wordReading": "かいぎ", "meaningsKo": ["회의"], "examples": [] }
+    ],
+    "懲": [
+      { "readingRef": "チョウ", "word": "懲役", "wordReading": "ちょうえき", "meaningsKo": ["징역"], "examples": [] },
+      { "readingRef": "チョウ", "word": "懲戒", "wordReading": "ちょうかい", "meaningsKo": ["징계"], "examples": [] },
+      { "readingRef": "こりる", "word": "懲りる", "wordReading": "こりる", "meaningsKo": ["질리다", "혼나다"], "examples": [] }
+    ],
+    "懸": [
+      { "readingRef": "ケン", "word": "懸命", "wordReading": "けんめい", "meaningsKo": ["열심히 함"], "examples": [] },
+      { "readingRef": "ケン", "word": "懸念", "wordReading": "けねん", "meaningsKo": ["우려"], "examples": [] },
+      { "readingRef": "かかる", "word": "懸かる", "wordReading": "かかる", "meaningsKo": ["걸리다", "달려있다"], "examples": [] }
+    ],
+    "我": [
+      { "readingRef": "われ", "word": "我", "wordReading": "われ", "meaningsKo": ["나"], "examples": [] },
+      { "readingRef": "ガ", "word": "自我", "wordReading": "じが", "meaningsKo": ["자아"], "examples": [] },
+      { "readingRef": "ガ", "word": "我慢", "wordReading": "がまん", "meaningsKo": ["참음", "인내"], "examples": [] }
+    ],
+    "戒": [
+      { "readingRef": "カイ", "word": "警戒", "wordReading": "けいかい", "meaningsKo": ["경계"], "examples": [] },
+      { "readingRef": "カイ", "word": "戒律", "wordReading": "かいりつ", "meaningsKo": ["계율"], "examples": [] },
+      { "readingRef": "いましめる", "word": "戒める", "wordReading": "いましめる", "meaningsKo": ["경계하다", "훈계하다"], "examples": [] }
+    ],
+    "戯": [
+      { "readingRef": "ギ", "word": "戯曲", "wordReading": "ぎきょく", "meaningsKo": ["희곡"], "examples": [] },
+      { "readingRef": "たわむれる", "word": "戯れる", "wordReading": "たわむれる", "meaningsKo": ["장난하다", "놀다"], "examples": [] },
+      { "readingRef": "ギ", "word": "遊戯", "wordReading": "ゆうぎ", "meaningsKo": ["유희", "놀이"], "examples": [] }
+    ],
+    "房": [
+      { "readingRef": "ふさ", "word": "房", "wordReading": "ふさ", "meaningsKo": ["송이", "다발"], "examples": [] },
+      { "readingRef": "ボウ", "word": "暖房", "wordReading": "だんぼう", "meaningsKo": ["난방"], "examples": [] },
+      { "readingRef": "ボウ", "word": "冷房", "wordReading": "れいぼう", "meaningsKo": ["냉방"], "examples": [] }
+    ],
+    "扇": [
+      { "readingRef": "おうぎ", "word": "扇", "wordReading": "おうぎ", "meaningsKo": ["부채"], "examples": [] },
+      { "readingRef": "セン", "word": "扇風機", "wordReading": "せんぷうき", "meaningsKo": ["선풍기"], "examples": [] },
+      { "readingRef": "セン", "word": "扇動", "wordReading": "せんどう", "meaningsKo": ["선동"], "examples": [] }
+    ],
+    "扉": [
+      { "readingRef": "とびら", "word": "扉", "wordReading": "とびら", "meaningsKo": ["문", "문짝"], "examples": [] },
+      { "readingRef": "ヒ", "word": "開扉", "wordReading": "かいひ", "meaningsKo": ["개문"], "examples": [] }
+    ],
+    "扱": [
+      { "readingRef": "あつかう", "word": "扱う", "wordReading": "あつかう", "meaningsKo": ["다루다", "취급하다"], "examples": [] },
+      { "readingRef": "あつかい", "word": "扱い", "wordReading": "あつかい", "meaningsKo": ["취급", "대우"], "examples": [] }
+    ],
+    "扶": [
+      { "readingRef": "フ", "word": "扶養", "wordReading": "ふよう", "meaningsKo": ["부양"], "examples": [] },
+      { "readingRef": "フ", "word": "扶助", "wordReading": "ふじょ", "meaningsKo": ["부조"], "examples": [] },
+      { "readingRef": "たすける", "word": "扶ける", "wordReading": "たすける", "meaningsKo": ["돕다", "부조하다"], "examples": [] }
+    ]
+  }
+}

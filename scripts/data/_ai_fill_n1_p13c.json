@@ -1,0 +1,76 @@
+{
+  "_comment": "N1 Phase 13-C: 赴 趣 距 跳 践 踏 躍 軌 軸 較 載 輔 輝 輩 轄 辰 辱",
+  "fills": {
+    "赴": [
+      { "readingRef": "おもむく", "word": "赴く", "wordReading": "おもむく", "meaningsKo": ["향하다", "가다"], "examples": [] },
+      { "readingRef": "フ", "word": "赴任", "wordReading": "ふにん", "meaningsKo": ["부임"], "examples": [] }
+    ],
+    "趣": [
+      { "readingRef": "シュ", "word": "趣味", "wordReading": "しゅみ", "meaningsKo": ["취미"], "examples": [] },
+      { "readingRef": "おもむき", "word": "趣", "wordReading": "おもむき", "meaningsKo": ["풍취", "정취"], "examples": [] },
+      { "readingRef": "シュ", "word": "趣旨", "wordReading": "しゅし", "meaningsKo": ["취지"], "examples": [] }
+    ],
+    "距": [
+      { "readingRef": "キョ", "word": "距離", "wordReading": "きょり", "meaningsKo": ["거리"], "examples": [] }
+    ],
+    "跳": [
+      { "readingRef": "とぶ", "word": "跳ぶ", "wordReading": "とぶ", "meaningsKo": ["뛰다"], "examples": [] },
+      { "readingRef": "はねる", "word": "跳ねる", "wordReading": "はねる", "meaningsKo": ["뛰어오르다"], "examples": [] },
+      { "readingRef": "チョウ", "word": "跳躍", "wordReading": "ちょうやく", "meaningsKo": ["도약"], "examples": [] }
+    ],
+    "践": [
+      { "readingRef": "セン", "word": "実践", "wordReading": "じっせん", "meaningsKo": ["실천"], "examples": [] }
+    ],
+    "踏": [
+      { "readingRef": "ふむ", "word": "踏む", "wordReading": "ふむ", "meaningsKo": ["밟다"], "examples": [] },
+      { "readingRef": "トウ", "word": "踏襲", "wordReading": "とうしゅう", "meaningsKo": ["답습"], "examples": [] },
+      { "readingRef": "トウ", "word": "雑踏", "wordReading": "ざっとう", "meaningsKo": ["혼잡", "잡답"], "examples": [] }
+    ],
+    "躍": [
+      { "readingRef": "おどる", "word": "躍る", "wordReading": "おどる", "meaningsKo": ["춤추다", "뛰다"], "examples": [] },
+      { "readingRef": "ヤク", "word": "活躍", "wordReading": "かつやく", "meaningsKo": ["활약"], "examples": [] },
+      { "readingRef": "ヤク", "word": "飛躍", "wordReading": "ひやく", "meaningsKo": ["비약"], "examples": [] }
+    ],
+    "軌": [
+      { "readingRef": "キ", "word": "軌道", "wordReading": "きどう", "meaningsKo": ["궤도"], "examples": [] },
+      { "readingRef": "キ", "word": "軌跡", "wordReading": "きせき", "meaningsKo": ["궤적"], "examples": [] }
+    ],
+    "軸": [
+      { "readingRef": "ジク", "word": "軸", "wordReading": "じく", "meaningsKo": ["축"], "examples": [] },
+      { "readingRef": "ジク", "word": "枢軸", "wordReading": "すうじく", "meaningsKo": ["추축"], "examples": [] }
+    ],
+    "較": [
+      { "readingRef": "カク", "word": "比較", "wordReading": "ひかく", "meaningsKo": ["비교"], "examples": [] },
+      { "readingRef": "くらべる", "word": "較べる", "wordReading": "くらべる", "meaningsKo": ["비교하다"], "examples": [] }
+    ],
+    "載": [
+      { "readingRef": "のせる", "word": "載せる", "wordReading": "のせる", "meaningsKo": ["싣다", "올리다"], "examples": [] },
+      { "readingRef": "サイ", "word": "掲載", "wordReading": "けいさい", "meaningsKo": ["게재"], "examples": [] },
+      { "readingRef": "サイ", "word": "記載", "wordReading": "きさい", "meaningsKo": ["기재"], "examples": [] }
+    ],
+    "輔": [
+      { "readingRef": "ホ", "word": "輔佐", "wordReading": "ほさ", "meaningsKo": ["보좌"], "examples": [] }
+    ],
+    "輝": [
+      { "readingRef": "かがやく", "word": "輝く", "wordReading": "かがやく", "meaningsKo": ["빛나다"], "examples": [] },
+      { "readingRef": "キ", "word": "光輝", "wordReading": "こうき", "meaningsKo": ["광휘"], "examples": [] }
+    ],
+    "輩": [
+      { "readingRef": "ハイ", "word": "先輩", "wordReading": "せんぱい", "meaningsKo": ["선배"], "examples": [] },
+      { "readingRef": "ハイ", "word": "後輩", "wordReading": "こうはい", "meaningsKo": ["후배"], "examples": [] },
+      { "readingRef": "ハイ", "word": "輩出", "wordReading": "はいしゅつ", "meaningsKo": ["배출"], "examples": [] }
+    ],
+    "轄": [
+      { "readingRef": "カツ", "word": "管轄", "wordReading": "かんかつ", "meaningsKo": ["관할"], "examples": [] },
+      { "readingRef": "カツ", "word": "直轄", "wordReading": "ちょっかつ", "meaningsKo": ["직할"], "examples": [] }
+    ],
+    "辰": [
+      { "readingRef": "たつ", "word": "辰", "wordReading": "たつ", "meaningsKo": ["진(십이지의 다섯째)", "용띠"], "examples": [] }
+    ],
+    "辱": [
+      { "readingRef": "ジョク", "word": "屈辱", "wordReading": "くつじょく", "meaningsKo": ["굴욕"], "examples": [] },
+      { "readingRef": "はずかしめる", "word": "辱める", "wordReading": "はずかしめる", "meaningsKo": ["욕보이다", "모욕하다"], "examples": [] },
+      { "readingRef": "ジョク", "word": "侮辱", "wordReading": "ぶじょく", "meaningsKo": ["모욕"], "examples": [] }
+    ]
+  }
+}

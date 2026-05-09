@@ -1,0 +1,81 @@
+{
+  "_comment": "N1 Phase 12-D: 裟 裸 製 褐 褒 襟 襲 覆 覇 視 覧 訂 討 託 訟 訳 訴",
+  "fills": {
+    "裟": [
+      { "readingRef": "サ", "word": "袈裟", "wordReading": "けさ", "meaningsKo": ["가사(승복)"], "examples": [] }
+    ],
+    "裸": [
+      { "readingRef": "はだか", "word": "裸", "wordReading": "はだか", "meaningsKo": ["알몸", "벌거벗음"], "examples": [] },
+      { "readingRef": "ラ", "word": "裸眼", "wordReading": "らがん", "meaningsKo": ["나안", "맨눈"], "examples": [] },
+      { "readingRef": "ラ", "word": "全裸", "wordReading": "ぜんら", "meaningsKo": ["전라"], "examples": [] }
+    ],
+    "製": [
+      { "readingRef": "セイ", "word": "製品", "wordReading": "せいひん", "meaningsKo": ["제품"], "examples": [] },
+      { "readingRef": "セイ", "word": "製造", "wordReading": "せいぞう", "meaningsKo": ["제조"], "examples": [] },
+      { "readingRef": "セイ", "word": "製作", "wordReading": "せいさく", "meaningsKo": ["제작"], "examples": [] }
+    ],
+    "褐": [
+      { "readingRef": "カツ", "word": "褐色", "wordReading": "かっしょく", "meaningsKo": ["갈색"], "examples": [] }
+    ],
+    "褒": [
+      { "readingRef": "ほめる", "word": "褒める", "wordReading": "ほめる", "meaningsKo": ["칭찬하다"], "examples": [] },
+      { "readingRef": "ホウ", "word": "褒美", "wordReading": "ほうび", "meaningsKo": ["포상", "상"], "examples": [] }
+    ],
+    "襟": [
+      { "readingRef": "えり", "word": "襟", "wordReading": "えり", "meaningsKo": ["옷깃"], "examples": [] },
+      { "readingRef": "キン", "word": "胸襟", "wordReading": "きょうきん", "meaningsKo": ["흉금"], "examples": [] }
+    ],
+    "襲": [
+      { "readingRef": "おそう", "word": "襲う", "wordReading": "おそう", "meaningsKo": ["습격하다"], "examples": [] },
+      { "readingRef": "シュウ", "word": "襲撃", "wordReading": "しゅうげき", "meaningsKo": ["습격"], "examples": [] },
+      { "readingRef": "シュウ", "word": "踏襲", "wordReading": "とうしゅう", "meaningsKo": ["답습"], "examples": [] }
+    ],
+    "覆": [
+      { "readingRef": "フク", "word": "覆面", "wordReading": "ふくめん", "meaningsKo": ["복면"], "examples": [] },
+      { "readingRef": "おおう", "word": "覆う", "wordReading": "おおう", "meaningsKo": ["덮다"], "examples": [] },
+      { "readingRef": "くつがえす", "word": "覆す", "wordReading": "くつがえす", "meaningsKo": ["뒤집다", "전복하다"], "examples": [] }
+    ],
+    "覇": [
+      { "readingRef": "ハ", "word": "覇権", "wordReading": "はけん", "meaningsKo": ["패권"], "examples": [] },
+      { "readingRef": "ハ", "word": "覇者", "wordReading": "はしゃ", "meaningsKo": ["패자", "패권자"], "examples": [] },
+      { "readingRef": "ハ", "word": "制覇", "wordReading": "せいは", "meaningsKo": ["제패"], "examples": [] }
+    ],
+    "視": [
+      { "readingRef": "シ", "word": "視点", "wordReading": "してん", "meaningsKo": ["시점"], "examples": [] },
+      { "readingRef": "シ", "word": "視察", "wordReading": "しさつ", "meaningsKo": ["시찰"], "examples": [] },
+      { "readingRef": "シ", "word": "監視", "wordReading": "かんし", "meaningsKo": ["감시"], "examples": [] }
+    ],
+    "覧": [
+      { "readingRef": "ラン", "word": "覧", "wordReading": "らん", "meaningsKo": ["봄", "열람"], "examples": [] },
+      { "readingRef": "ラン", "word": "観覧", "wordReading": "かんらん", "meaningsKo": ["관람"], "examples": [] },
+      { "readingRef": "ラン", "word": "閲覧", "wordReading": "えつらん", "meaningsKo": ["열람"], "examples": [] }
+    ],
+    "訂": [
+      { "readingRef": "テイ", "word": "訂正", "wordReading": "ていせい", "meaningsKo": ["정정"], "examples": [] },
+      { "readingRef": "テイ", "word": "改訂", "wordReading": "かいてい", "meaningsKo": ["개정"], "examples": [] }
+    ],
+    "討": [
+      { "readingRef": "トウ", "word": "討論", "wordReading": "とうろん", "meaningsKo": ["토론"], "examples": [] },
+      { "readingRef": "トウ", "word": "検討", "wordReading": "けんとう", "meaningsKo": ["검토"], "examples": [] },
+      { "readingRef": "うつ", "word": "討つ", "wordReading": "うつ", "meaningsKo": ["치다", "토벌하다"], "examples": [] }
+    ],
+    "託": [
+      { "readingRef": "タク", "word": "委託", "wordReading": "いたく", "meaningsKo": ["위탁"], "examples": [] },
+      { "readingRef": "タク", "word": "信託", "wordReading": "しんたく", "meaningsKo": ["신탁"], "examples": [] },
+      { "readingRef": "タク", "word": "託す", "wordReading": "たくす", "meaningsKo": ["맡기다"], "examples": [] }
+    ],
+    "訟": [
+      { "readingRef": "ショウ", "word": "訴訟", "wordReading": "そしょう", "meaningsKo": ["소송"], "examples": [] }
+    ],
+    "訳": [
+      { "readingRef": "わけ", "word": "訳", "wordReading": "わけ", "meaningsKo": ["이유", "사정"], "examples": [] },
+      { "readingRef": "ヤク", "word": "翻訳", "wordReading": "ほんやく", "meaningsKo": ["번역"], "examples": [] },
+      { "readingRef": "ヤク", "word": "通訳", "wordReading": "つうやく", "meaningsKo": ["통역"], "examples": [] }
+    ],
+    "訴": [
+      { "readingRef": "うったえる", "word": "訴える", "wordReading": "うったえる", "meaningsKo": ["호소하다", "고소하다"], "examples": [] },
+      { "readingRef": "ソ", "word": "訴訟", "wordReading": "そしょう", "meaningsKo": ["소송"], "examples": [] },
+      { "readingRef": "ソ", "word": "告訴", "wordReading": "こくそ", "meaningsKo": ["고소"], "examples": [] }
+    ]
+  }
+}
