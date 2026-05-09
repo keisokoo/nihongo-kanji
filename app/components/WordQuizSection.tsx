@@ -690,22 +690,64 @@ function WordHeader({
   explanationDisabled?: boolean;
   onToggleExplanation: () => void;
 }) {
+  // Tap on the kanji word peeks the reading for a few seconds. Re-tapping
+  // extends the timer. On mobile this avoids the finger covering the small
+  // reading text below.
+  const [peeking, setPeeking] = useState(false);
+  const peekTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
+  const peekMs = Math.max(2500, word.wordReading.length * 250);
+
+  function peek() {
+    if (revealReading) return;
+    if (peekTimerRef.current) clearTimeout(peekTimerRef.current);
+    setPeeking(true);
+    peekTimerRef.current = setTimeout(() => setPeeking(false), peekMs);
+  }
+
+  useEffect(() => {
+    return () => {
+      if (peekTimerRef.current) clearTimeout(peekTimerRef.current);
+    };
+  }, []);
+
+  const showReading = revealReading || peeking;
+
   return (
     <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-3">
       <div className="flex flex-wrap items-baseline gap-x-3 gap-y-1">
-        <span className="text-3xl font-semibold sm:text-4xl text-neutral-900 dark:text-neutral-100 [font-family:'Noto_Sans_JP',sans-serif]">
+        <span
+          onPointerDown={(e) => {
+            if (revealReading) return;
+            e.preventDefault();
+            peek();
+          }}
+          onContextMenu={(e) => {
+            if (!revealReading) e.preventDefault();
+          }}
+          role={revealReading ? undefined : "button"}
+          aria-label={
+            revealReading
+              ? word.word
+              : `${word.word} — 눌러서 발음 보기`
+          }
+          className={cn(
+            "text-3xl font-semibold sm:text-4xl text-neutral-900 dark:text-neutral-100 [font-family:'Noto_Sans_JP',sans-serif]",
+            !revealReading &&
+              "select-none touch-manipulation cursor-pointer",
+          )}
+        >
           {word.word}
         </span>
         <span
-          className={cn(
-            "text-base sm:text-lg [font-family:'Noto_Sans_JP',sans-serif] selection:bg-amber-200 selection:text-neutral-900 dark:selection:bg-amber-300 dark:selection:text-neutral-900",
-            revealReading
-              ? "text-neutral-500 transition-colors duration-300"
-              : "text-transparent",
-          )}
           aria-label={
-            revealReading ? word.wordReading : "단어 발음 (정답을 맞추면 표시)"
+            showReading ? word.wordReading : "발음 (한자 누르면 보기)"
           }
+          className={cn(
+            "select-none [font-family:'Noto_Sans_JP',sans-serif] text-base sm:text-lg",
+            showReading
+              ? "text-neutral-500 transition-colors duration-150"
+              : "text-transparent underline decoration-dotted decoration-neutral-400 underline-offset-4 dark:decoration-neutral-600",
+          )}
         >
           {word.wordReading}
         </span>

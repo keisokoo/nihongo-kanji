@@ -2,9 +2,18 @@ import { reactRouter } from "@react-router/dev/vite";
 import tailwindcss from "@tailwindcss/vite";
 import { defineConfig } from "vite";
 import { VitePWA } from "vite-plugin-pwa";
+import basicSsl from "@vitejs/plugin-basic-ssl";
 
 export default defineConfig({
+  // Dev over LAN (e.g. https://192.168.x.x:5173 from phone). Required because
+  // crypto.subtle / service workers only work in secure contexts. Browsers
+  // will prompt to trust the self-signed cert once.
+  server: {
+    host: true,
+    https: {},
+  },
   plugins: [
+    basicSsl(),
     tailwindcss(),
     reactRouter(),
     // Manifest only — the SW is built separately by scripts/build-sw.mjs because

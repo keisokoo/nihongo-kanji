@@ -72,6 +72,8 @@ function SetupWizard({
 }) {
   const [anthropic, setAnthropic] = useState("");
   const [gemini, setGemini] = useState("");
+  const [saveError, setSaveError] = useState<string | null>(null);
+  const [secureCtxOk, setSecureCtxOk] = useState<boolean>(true);
 
   // Pre-fill any previously saved keys.
   useEffect(() => {
@@ -80,7 +82,31 @@ function SetupWizard({
       if (s.anthropicApiKey) setAnthropic(s.anthropicApiKey);
       if (s.geminiApiKey) setGemini(s.geminiApiKey);
     })();
+    // crypto.subtle is gated to secure contexts (HTTPS/localhost). LAN-IP HTTP
+    // dev (e.g. http://192.168.x.x:5173) fails silently here without a hint.
+    if (typeof window !== "undefined") {
+      const isSecure =
+        window.isSecureContext === true && !!window.crypto?.subtle;
+      setSecureCtxOk(isSecure);
+    }
   }, []);
+
+  async function handleSave() {
+    setSaveError(null);
+    try {
+      await saveSettings({
+        anthropicApiKey: anthropic.trim() || null,
+        geminiApiKey: gemini.trim() || null,
+      });
+      setPhase({
+        kind: "wizard",
+        step: { kind: "installing", progress: null, error: null },
+      });
+    } catch (err) {
+      const message = err instanceof Error ? err.message : String(err);
+      setSaveError(message);
+    }
+  }
 
   if (step.kind === "keys") {
     return (
@@ -118,20 +144,27 @@ function SetupWizard({
             같은 origin에서 JS를 실행하는 위협으로부터는 보호되지 않습니다.
           </div>
 
+          {!secureCtxOk && (
+            <div className="mt-3 rounded-md bg-rose-50 p-3 text-xs text-rose-800 dark:bg-rose-950/30 dark:text-rose-200">
+              ❌ 보안 컨텍스트(secure context)가 아닙니다 — WebCrypto가
+              비활성화되어 키 저장이 불가합니다. <strong>HTTPS</strong> 또는{" "}
+              <code>http://localhost</code> 로 접속해 주세요. LAN IP HTTP에선
+              동작하지 않습니다.
+            </div>
+          )}
+
+          {saveError && (
+            <div className="mt-3 rounded-md bg-rose-50 p-3 text-xs text-rose-800 dark:bg-rose-950/30 dark:text-rose-200">
+              저장 실패: {saveError}
+            </div>
+          )}
+
           <div className="mt-6 flex justify-end gap-2">
             <button
               type="button"
-              onClick={async () => {
-                await saveSettings({
-                  anthropicApiKey: anthropic.trim() || null,
-                  geminiApiKey: gemini.trim() || null,
-                });
-                setPhase({
-                  kind: "wizard",
-                  step: { kind: "installing", progress: null, error: null },
-                });
-              }}
-              className="inline-flex items-center gap-2 rounded-md bg-neutral-900 px-5 py-2.5 text-sm text-white hover:bg-neutral-700 dark:bg-neutral-100 dark:text-neutral-900"
+              onClick={handleSave}
+              disabled={!secureCtxOk}
+              className="inline-flex items-center gap-2 rounded-md bg-neutral-900 px-5 py-2.5 text-sm text-white hover:bg-neutral-700 disabled:opacity-50 dark:bg-neutral-100 dark:text-neutral-900"
             >
               다음 — 시드 데이터 설치
             </button>
