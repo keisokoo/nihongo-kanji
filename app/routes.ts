@@ -11,7 +11,9 @@ export default [
   route("api/explanation", "routes/api.explanation.ts"),
   route("api/example-explanation", "routes/api.example-explanation.ts"),
   route("api/pack/import", "routes/api.pack.import.ts"),
+  route("api/pack/export", "routes/api.pack.export.ts"),
   route("api/word-test/create", "routes/api.word-test.create.ts"),
   route("api/word-test/answer", "routes/api.word-test.answer.ts"),
+  route("api/word-test/delete", "routes/api.word-test.delete.ts"),
   route("word-test/:id", "routes/word-test.tsx"),
 ] satisfies RouteConfig;

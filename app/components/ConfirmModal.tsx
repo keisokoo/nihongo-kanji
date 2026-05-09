@@ -6,6 +6,8 @@ type Props = {
   body?: React.ReactNode;
   confirmLabel?: string;
   cancelLabel?: string;
+  /** Use a rose-tinted confirm button for destructive actions. */
+  destructive?: boolean;
   onConfirm: () => void;
   onCancel: () => void;
 };
@@ -16,6 +18,7 @@ export function ConfirmModal({
   body,
   confirmLabel = "확인",
   cancelLabel = "취소",
+  destructive,
   onConfirm,
   onCancel,
 }: Props) {
@@ -62,7 +65,11 @@ export function ConfirmModal({
             type="button"
             onClick={onConfirm}
             autoFocus
-            className="rounded-md bg-neutral-900 px-4 py-2 text-sm text-white hover:bg-neutral-700 dark:bg-neutral-100 dark:text-neutral-900"
+            className={
+              destructive
+                ? "rounded-md bg-rose-600 px-4 py-2 text-sm text-white hover:bg-rose-700"
+                : "rounded-md bg-neutral-900 px-4 py-2 text-sm text-white hover:bg-neutral-700 dark:bg-neutral-100 dark:text-neutral-900"
+            }
           >
             {confirmLabel}
           </button>

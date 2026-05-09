@@ -25,13 +25,16 @@ export default function Home({ loaderData }: Route.ComponentProps) {
   return (
     <main className="min-h-screen bg-neutral-50 dark:bg-neutral-950">
       <div className="mx-auto max-w-[80rem] px-4 py-10 sm:px-8 sm:py-16">
-        <header className="mb-8 sm:mb-12">
-          <h1 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl dark:text-neutral-100">
-            Nihongo
-          </h1>
-          <p className="mt-2 text-sm text-neutral-600 sm:text-base dark:text-neutral-400">
-            일본어 한자 학습
-          </p>
+        <header className="mb-8 flex flex-wrap items-start justify-between gap-4 sm:mb-12">
+          <div>
+            <h1 className="text-2xl font-bold tracking-tight text-neutral-900 sm:text-3xl dark:text-neutral-100">
+              Nihongo
+            </h1>
+            <p className="mt-2 text-sm text-neutral-600 sm:text-base dark:text-neutral-400">
+              일본어 한자 학습
+            </p>
+          </div>
+          <ImportButton />
         </header>
 
         <section className="mb-10">
@@ -45,25 +48,18 @@ export default function Home({ loaderData }: Route.ComponentProps) {
           </div>
         </section>
 
-        <section className="mb-10">
-          <div className="mb-4 flex items-center justify-between">
-            <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+        {custom.length > 0 && (
+          <section className="mb-10">
+            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-500">
               내 팩
             </h2>
-            <ImportButton />
-          </div>
-          {custom.length === 0 ? (
-            <EmptyState>
-              아직 추가한 팩이 없습니다. JSON 파일을 가져와 보세요.
-            </EmptyState>
-          ) : (
             <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
               {custom.map((pack) => (
                 <PackCard key={pack.key} pack={pack} showDescription />
               ))}
             </div>
-          )}
-        </section>
+          </section>
+        )}
 
         <section>
           <div className="mb-4 flex items-center justify-between">

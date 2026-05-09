@@ -1,0 +1,69 @@
+{
+  "_comment": "N1 Phase 1-A: 17한자 (丁,丑,且,丘,丙,丞,丹,乃,之,乏,乙,也,亀,井,亘,亜,亥)",
+  "fills": {
+    "丁": [
+      { "readingRef": "チョウ", "word": "丁寧", "wordReading": "ていねい", "meaningsKo": ["정중함", "꼼꼼함"], "examples": [{ "sentence": "{先生|せんせい}が{{丁寧}}に{説明|せつめい}してくれました。", "sentenceTranslationKo": "선생님이 정중하게 설명해 주셨습니다." }] },
+      { "readingRef": "テイ", "word": "丁度", "wordReading": "ちょうど", "meaningsKo": ["딱", "마침"], "examples": [{ "sentence": "{{丁度}}{今|いま}{食事中|しょくじちゅう}でした。", "sentenceTranslationKo": "마침 지금 식사 중이었습니다." }] },
+      { "readingRef": "チョウ", "word": "包丁", "wordReading": "ほうちょう", "meaningsKo": ["식칼"], "examples": [{ "sentence": "{切|き}れない{{包丁}}を{研|と}ぎました。", "sentenceTranslationKo": "잘 안 드는 식칼을 갈았습니다." }] },
+      { "readingRef": "チョウ", "word": "丁目", "wordReading": "ちょうめ", "meaningsKo": ["정목 (주소 단위)"], "examples": [{ "sentence": "{二|に}{{丁目}}に{住|す}んでいます。", "sentenceTranslationKo": "2정목에 살고 있습니다." }] }
+    ],
+    "丑": [
+      { "readingRef": "うし", "word": "丑年", "wordReading": "うしどし", "meaningsKo": ["축년", "소띠 해"], "examples": [{ "sentence": "{今年|ことし}は{{丑年}}です。", "sentenceTranslationKo": "올해는 축년입니다." }] },
+      { "readingRef": "うし", "word": "丑", "wordReading": "うし", "meaningsKo": ["축 (12지)"], "examples": [{ "sentence": "{私|わたし}は{{丑}}{年生|どしう}まれです。", "sentenceTranslationKo": "저는 소띠입니다." }] }
+    ],
+    "且": [
+      { "readingRef": "かつ", "word": "且つ", "wordReading": "かつ", "meaningsKo": ["또한", "게다가"], "examples": [{ "sentence": "{彼|かれ}は{優秀|ゆうしゅう}で{{且つ}}{真面目|まじめ}です。", "sentenceTranslationKo": "그는 우수하고 또한 성실합니다." }] }
+    ],
+    "丘": [
+      { "readingRef": "キュウ", "word": "丘陵", "wordReading": "きゅうりょう", "meaningsKo": ["구릉", "언덕"], "examples": [{ "sentence": "{広|ひろ}い{{丘陵}}{地帯|ちたい}を{歩|ある}きました。", "sentenceTranslationKo": "넓은 구릉지대를 걸었습니다." }] },
+      { "readingRef": "おか", "word": "丘", "wordReading": "おか", "meaningsKo": ["언덕"], "examples": [{ "sentence": "{小|ちい}さな{{丘}}の{上|うえ}に{家|いえ}があります。", "sentenceTranslationKo": "작은 언덕 위에 집이 있습니다." }] },
+      { "readingRef": "おか", "word": "砂丘", "wordReading": "さきゅう", "meaningsKo": ["사구"], "examples": [{ "sentence": "{鳥取|とっとり}の{{砂丘}}を{訪|たず}ねました。", "sentenceTranslationKo": "돗토리 사구를 방문했습니다." }] }
+    ],
+    "丙": [
+      { "readingRef": "ヘイ", "word": "丙", "wordReading": "へい", "meaningsKo": ["병 (셋째)"], "examples": [{ "sentence": "{順位|じゅんい}は{甲乙|こうおつ}{{丙}}{丁|てい}と{書|か}きます。", "sentenceTranslationKo": "순위는 갑을병정이라고 씁니다." }] }
+    ],
+    "丞": [
+      { "readingRef": "ジョウ", "word": "丞", "wordReading": "じょう", "meaningsKo": ["승 (옛 관직)"], "examples": [{ "sentence": "{古代|こだい}{中国|ちゅうごく}の{{丞}}{相|しょう}は{重要|じゅうよう}な{役職|やくしょく}でした。", "sentenceTranslationKo": "고대 중국의 승상은 중요한 직책이었습니다." }] }
+    ],
+    "丹": [
+      { "readingRef": "タン", "word": "丹念", "wordReading": "たんねん", "meaningsKo": ["정성", "꼼꼼함"], "examples": [{ "sentence": "{彼|かれ}は{{丹念}}に{資料|しりょう}を{調|しら}べました。", "sentenceTranslationKo": "그는 정성껏 자료를 조사했습니다." }] },
+      { "readingRef": "タン", "word": "丹精", "wordReading": "たんせい", "meaningsKo": ["정성"], "examples": [{ "sentence": "{祖母|そぼ}は{{丹精}}{込|こ}めて{花|はな}を{育|そだ}てています。", "sentenceTranslationKo": "할머니는 정성껏 꽃을 기르고 계십니다." }] }
+    ],
+    "乃": [
+      { "readingRef": "ノ", "word": "乃至", "wordReading": "ないし", "meaningsKo": ["내지", "또는"], "examples": [{ "sentence": "{三|さん}{人|にん}{{乃至}}{五|ご}{人|にん}が{参加|さんか}します。", "sentenceTranslationKo": "3명 내지 5명이 참가합니다." }] }
+    ],
+    "之": [
+      { "readingRef": "シ", "word": "之", "wordReading": "の", "meaningsKo": ["~의 (고풍)"], "examples": [{ "sentence": "{古文|こぶん}で「{{之}}」は{現代|げんだい}の「の」と{同|おな}じ{意味|いみ}です。", "sentenceTranslationKo": "고문에서 '之'는 현대의 'の'와 같은 뜻입니다." }] }
+    ],
+    "乏": [
+      { "readingRef": "ボウ", "word": "欠乏", "wordReading": "けつぼう", "meaningsKo": ["결핍"], "examples": [{ "sentence": "ビタミンの{{欠乏}}に{気|き}をつけてください。", "sentenceTranslationKo": "비타민 결핍에 주의해 주세요." }] },
+      { "readingRef": "ボウ", "word": "貧乏", "wordReading": "びんぼう", "meaningsKo": ["가난"], "examples": [{ "sentence": "{昔|むかし}は{{貧乏}}でしたが{今|いま}は{違|ちが}います。", "sentenceTranslationKo": "옛날에는 가난했지만 지금은 다릅니다." }] },
+      { "readingRef": "とぼしい", "word": "乏しい", "wordReading": "とぼしい", "meaningsKo": ["부족하다", "모자라다"], "examples": [{ "sentence": "{経験|けいけん}が{{乏しい}}ので{勉強|べんきょう}しています。", "sentenceTranslationKo": "경험이 부족해서 공부하고 있습니다." }] }
+    ],
+    "乙": [
+      { "readingRef": "オツ", "word": "甲乙", "wordReading": "こうおつ", "meaningsKo": ["갑을"], "examples": [{ "sentence": "{二人|ふたり}の{実力|じつりょく}は{{甲乙}}つけがたいです。", "sentenceTranslationKo": "두 사람의 실력은 우열을 가리기 어렵습니다." }] },
+      { "readingRef": "オツ", "word": "乙女", "wordReading": "おとめ", "meaningsKo": ["소녀"], "examples": [{ "sentence": "{物語|ものがたり}に{美|うつく}しい{{乙女}}が{登場|とうじょう}します。", "sentenceTranslationKo": "이야기에 아름다운 소녀가 등장합니다." }] }
+    ],
+    "也": [
+      { "readingRef": "ヤ", "word": "也", "wordReading": "や", "meaningsKo": ["~이로다 (고문)"], "examples": [{ "sentence": "{古文|こぶん}で{{也}}は{断定|だんてい}を{表|あらわ}します。", "sentenceTranslationKo": "고문에서 也는 단정을 나타냅니다." }] }
+    ],
+    "亀": [
+      { "readingRef": "キ", "word": "亀裂", "wordReading": "きれつ", "meaningsKo": ["균열"], "examples": [{ "sentence": "{壁|かべ}に{{亀裂}}が{入|はい}っています。", "sentenceTranslationKo": "벽에 균열이 가 있습니다." }] },
+      { "readingRef": "キ", "word": "亀", "wordReading": "かめ", "meaningsKo": ["거북"], "examples": [{ "sentence": "{水族館|すいぞくかん}で{大|おお}きな{{亀}}を{見|み}ました。", "sentenceTranslationKo": "수족관에서 큰 거북을 봤습니다." }] }
+    ],
+    "井": [
+      { "readingRef": "セイ", "word": "井戸", "wordReading": "いど", "meaningsKo": ["우물"], "examples": [{ "sentence": "{古|ふる}い{村|むら}に{{井戸}}があります。", "sentenceTranslationKo": "오래된 마을에 우물이 있습니다." }] },
+      { "readingRef": "い", "word": "天井", "wordReading": "てんじょう", "meaningsKo": ["천장"], "examples": [{ "sentence": "{部屋|へや}の{{天井}}が{高|たか}いです。", "sentenceTranslationKo": "방의 천장이 높습니다." }] }
+    ],
+    "亘": [
+      { "readingRef": "コウ", "word": "亘る", "wordReading": "わたる", "meaningsKo": ["걸치다"], "examples": [{ "sentence": "{長期間|ちょうきかん}に{{亘る}}{交渉|こうしょう}が{続|つづ}いています。", "sentenceTranslationKo": "장기간에 걸친 협상이 계속되고 있습니다." }] }
+    ],
+    "亜": [
+      { "readingRef": "ア", "word": "亜熱帯", "wordReading": "あねったい", "meaningsKo": ["아열대"], "examples": [{ "sentence": "{沖縄|おきなわ}は{{亜熱帯}}{気候|きこう}です。", "sentenceTranslationKo": "오키나와는 아열대 기후입니다." }] },
+      { "readingRef": "ア", "word": "東亜", "wordReading": "とうあ", "meaningsKo": ["동아"], "examples": [{ "sentence": "{{東亜}}{諸国|しょこく}の{文化|ぶんか}を{研究|けんきゅう}しています。", "sentenceTranslationKo": "동아 여러 나라의 문화를 연구하고 있습니다." }] }
+    ],
+    "亥": [
+      { "readingRef": "い", "word": "亥年", "wordReading": "いどし", "meaningsKo": ["해년", "돼지띠 해"], "examples": [{ "sentence": "{父|ちち}は{{亥年}}{生|う}まれです。", "sentenceTranslationKo": "아버지는 돼지띠입니다." }] }
+    ]
+  }
+}

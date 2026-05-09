@@ -1,0 +1,72 @@
+{
+  "_comment": "N1 Phase 1-B: 17한자 (亦,亨,享,亭,亮,仁,仙,仮,仰,企,伊,伍,伎,伏,伐,伯,伴)",
+  "fills": {
+    "亦": [
+      { "readingRef": "また", "word": "亦", "wordReading": "また", "meaningsKo": ["또한", "역시"], "examples": [{ "sentence": "{彼|かれ}{{亦}}{同|おな}じ{意見|いけん}でした。", "sentenceTranslationKo": "그도 또한 같은 의견이었습니다." }] }
+    ],
+    "亨": [
+      { "readingRef": "コウ", "word": "亨通", "wordReading": "こうつう", "meaningsKo": ["형통", "잘 풀림"], "examples": [{ "sentence": "{彼|かれ}の{事業|じぎょう}は{{亨通}}しています。", "sentenceTranslationKo": "그의 사업은 형통합니다." }] }
+    ],
+    "享": [
+      { "readingRef": "キョウ", "word": "享受", "wordReading": "きょうじゅ", "meaningsKo": ["향수", "누림"], "examples": [{ "sentence": "{自由|じゆう}を{{享受}}しています。", "sentenceTranslationKo": "자유를 누리고 있습니다." }] },
+      { "readingRef": "キョウ", "word": "享楽", "wordReading": "きょうらく", "meaningsKo": ["향락"], "examples": [{ "sentence": "{若|わか}い{頃|ころ}は{{享楽}}{的|てき}な{生活|せいかつ}でした。", "sentenceTranslationKo": "젊을 때는 향락적인 생활이었습니다." }] }
+    ],
+    "亭": [
+      { "readingRef": "テイ", "word": "料亭", "wordReading": "りょうてい", "meaningsKo": ["요정"], "examples": [{ "sentence": "{京都|きょうと}の{有名|ゆうめい}な{{料亭}}で{食事|しょくじ}しました。", "sentenceTranslationKo": "교토의 유명한 요정에서 식사했습니다." }] },
+      { "readingRef": "テイ", "word": "亭主", "wordReading": "ていしゅ", "meaningsKo": ["주인", "남편"], "examples": [{ "sentence": "{店|みせ}の{{亭主}}は{腕|うで}のいい{料理人|りょうりにん}です。", "sentenceTranslationKo": "가게 주인은 솜씨 좋은 요리사입니다." }] }
+    ],
+    "亮": [
+      { "readingRef": "リョウ", "word": "明亮", "wordReading": "めいりょう", "meaningsKo": ["명료"], "examples": [{ "sentence": "{彼|かれ}の{答|こた}えは{{明亮}}でした。", "sentenceTranslationKo": "그의 답은 명료했습니다." }] }
+    ],
+    "仁": [
+      { "readingRef": "ジン", "word": "仁愛", "wordReading": "じんあい", "meaningsKo": ["인애", "사랑"], "examples": [{ "sentence": "{{仁愛}}の{心|こころ}を{大切|たいせつ}にします。", "sentenceTranslationKo": "인애의 마음을 소중히 합니다." }] },
+      { "readingRef": "ジン", "word": "仁義", "wordReading": "じんぎ", "meaningsKo": ["인의"], "examples": [{ "sentence": "{昔|むかし}の{武士|ぶし}は{{仁義}}を{重|おも}んじました。", "sentenceTranslationKo": "옛날 무사는 인의를 중시했습니다." }] }
+    ],
+    "仙": [
+      { "readingRef": "セン", "word": "仙人", "wordReading": "せんにん", "meaningsKo": ["선인"], "examples": [{ "sentence": "{物語|ものがたり}に{白|しろ}い{髭|ひげ}の{{仙人}}が{登場|とうじょう}します。", "sentenceTranslationKo": "이야기에 흰 수염의 선인이 등장합니다." }] },
+      { "readingRef": "セン", "word": "神仙", "wordReading": "しんせん", "meaningsKo": ["신선"], "examples": [{ "sentence": "{{神仙}}の{世界|せかい}を{描|えが}いた{絵|え}です。", "sentenceTranslationKo": "신선의 세계를 그린 그림입니다." }] }
+    ],
+    "仮": [
+      { "readingRef": "カ", "word": "仮定", "wordReading": "かてい", "meaningsKo": ["가정"], "examples": [{ "sentence": "もし{雨|あめ}が{降|ふ}ったらと{{仮定}}してみましょう。", "sentenceTranslationKo": "만약 비가 내린다고 가정해 봅시다." }] },
+      { "readingRef": "カ", "word": "仮名", "wordReading": "かな", "meaningsKo": ["가나"], "examples": [{ "sentence": "{日本語|にほんご}は{{仮名}}と{漢字|かんじ}を{使|つか}います。", "sentenceTranslationKo": "일본어는 가나와 한자를 사용합니다." }] },
+      { "readingRef": "かり", "word": "仮", "wordReading": "かり", "meaningsKo": ["임시", "가짜"], "examples": [{ "sentence": "{{仮}}に{予定|よてい}を{立|た}てておきました。", "sentenceTranslationKo": "임시로 일정을 세워 두었습니다." }] }
+    ],
+    "仰": [
+      { "readingRef": "ギョウ", "word": "信仰", "wordReading": "しんこう", "meaningsKo": ["신앙"], "examples": [{ "sentence": "{祖母|そぼ}は{深|ふか}い{{信仰}}を{持|も}っています。", "sentenceTranslationKo": "할머니는 깊은 신앙을 가지고 계십니다." }] },
+      { "readingRef": "あおぐ", "word": "仰ぐ", "wordReading": "あおぐ", "meaningsKo": ["우러러보다"], "examples": [{ "sentence": "{空|そら}を{{仰ぐ}}と{星|ほし}が{見|み}えます。", "sentenceTranslationKo": "하늘을 우러러보면 별이 보입니다." }] }
+    ],
+    "企": [
+      { "readingRef": "キ", "word": "企業", "wordReading": "きぎょう", "meaningsKo": ["기업"], "examples": [{ "sentence": "{大手|おおて}{{企業}}に{就職|しゅうしょく}しました。", "sentenceTranslationKo": "대기업에 취직했습니다." }] },
+      { "readingRef": "キ", "word": "企画", "wordReading": "きかく", "meaningsKo": ["기획"], "examples": [{ "sentence": "{新|あたら}しいイベントを{{企画}}しました。", "sentenceTranslationKo": "새 이벤트를 기획했습니다." }] },
+      { "readingRef": "くわだてる", "word": "企てる", "wordReading": "くわだてる", "meaningsKo": ["꾀하다"], "examples": [{ "sentence": "{新|あたら}しい{事業|じぎょう}を{{企てる}}{予定|よてい}です。", "sentenceTranslationKo": "새 사업을 꾀할 예정입니다." }] }
+    ],
+    "伊": [
+      { "readingRef": "イ", "word": "伊豆", "wordReading": "いず", "meaningsKo": ["이즈"], "examples": [{ "sentence": "{週末|しゅうまつ}に{{伊豆}}{半島|はんとう}へ{旅行|りょこう}しました。", "sentenceTranslationKo": "주말에 이즈 반도로 여행했습니다." }] }
+    ],
+    "伍": [
+      { "readingRef": "ゴ", "word": "伍長", "wordReading": "ごちょう", "meaningsKo": ["오장 (군 계급)"], "examples": [{ "sentence": "{祖父|そふ}は{昔|むかし}{{伍長}}でした。", "sentenceTranslationKo": "할아버지는 옛날에 오장이었습니다." }] }
+    ],
+    "伎": [
+      { "readingRef": "キ", "word": "歌舞伎", "wordReading": "かぶき", "meaningsKo": ["가부키"], "examples": [{ "sentence": "{京都|きょうと}で{{歌舞伎}}を{見|み}ました。", "sentenceTranslationKo": "교토에서 가부키를 봤습니다." }] }
+    ],
+    "伏": [
+      { "readingRef": "フク", "word": "伏線", "wordReading": "ふくせん", "meaningsKo": ["복선"], "examples": [{ "sentence": "{物語|ものがたり}に{巧|たく}みな{{伏線}}が{張|は}られています。", "sentenceTranslationKo": "이야기에 교묘한 복선이 깔려 있습니다." }] },
+      { "readingRef": "フク", "word": "起伏", "wordReading": "きふく", "meaningsKo": ["기복"], "examples": [{ "sentence": "{人生|じんせい}には{{起伏}}があります。", "sentenceTranslationKo": "인생에는 기복이 있습니다." }] },
+      { "readingRef": "ふす", "word": "伏す", "wordReading": "ふす", "meaningsKo": ["엎드리다"], "examples": [{ "sentence": "{病|やまい}で{床|とこ}に{{伏す}}{日|ひ}が{続|つづ}きました。", "sentenceTranslationKo": "병으로 자리에 누워 있는 날이 이어졌습니다." }] }
+    ],
+    "伐": [
+      { "readingRef": "バツ", "word": "伐採", "wordReading": "ばっさい", "meaningsKo": ["벌채"], "examples": [{ "sentence": "{森林|しんりん}の{{伐採}}が{問題|もんだい}になっています。", "sentenceTranslationKo": "삼림 벌채가 문제가 되고 있습니다." }] },
+      { "readingRef": "バツ", "word": "征伐", "wordReading": "せいばつ", "meaningsKo": ["정벌"], "examples": [{ "sentence": "{昔話|むかしばなし}に{鬼|おに}{{征伐}}の{物語|ものがたり}があります。", "sentenceTranslationKo": "옛이야기에 도깨비 정벌 이야기가 있습니다." }] }
+    ],
+    "伯": [
+      { "readingRef": "ハク", "word": "伯爵", "wordReading": "はくしゃく", "meaningsKo": ["백작"], "examples": [{ "sentence": "{古|ふる}い{物語|ものがたり}に{{伯爵}}が{登場|とうじょう}します。", "sentenceTranslationKo": "옛 이야기에 백작이 등장합니다." }] },
+      { "readingRef": "ハク", "word": "伯父", "wordReading": "おじ", "meaningsKo": ["큰아버지", "삼촌"], "examples": [{ "sentence": "{{伯父}}が{遊|あそ}びに{来|き}ました。", "sentenceTranslationKo": "큰아버지가 놀러 오셨습니다." }] },
+      { "readingRef": "ハク", "word": "伯母", "wordReading": "おば", "meaningsKo": ["큰어머니"], "examples": [{ "sentence": "{{伯母}}は{料理|りょうり}{上手|じょうず}です。", "sentenceTranslationKo": "큰어머니는 요리를 잘하십니다." }] }
+    ],
+    "伴": [
+      { "readingRef": "ハン", "word": "伴侶", "wordReading": "はんりょ", "meaningsKo": ["반려"], "examples": [{ "sentence": "{人生|じんせい}の{{伴侶}}と{出会|であ}いました。", "sentenceTranslationKo": "인생의 반려를 만났습니다." }] },
+      { "readingRef": "バン", "word": "伴奏", "wordReading": "ばんそう", "meaningsKo": ["반주"], "examples": [{ "sentence": "ピアノの{{伴奏}}で{歌|うた}いました。", "sentenceTranslationKo": "피아노 반주로 노래했습니다." }] },
+      { "readingRef": "ともなう", "word": "伴う", "wordReading": "ともなう", "meaningsKo": ["수반하다", "동반하다"], "examples": [{ "sentence": "{危険|きけん}を{{伴う}}{仕事|しごと}です。", "sentenceTranslationKo": "위험을 수반하는 일입니다." }] }
+    ]
+  }
+}

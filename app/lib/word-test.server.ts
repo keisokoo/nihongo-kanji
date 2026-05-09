@@ -124,6 +124,12 @@ export async function createWordTest(
   return { testId: test.id, total: ordered.length };
 }
 
+export async function deleteWordTest(id: number): Promise<void> {
+  if (!Number.isFinite(id)) throw new Error("testId required");
+  // word_test_items has ON DELETE CASCADE → items go with it.
+  await db.delete(wordTests).where(eq(wordTests.id, id));
+}
+
 export type AnswerInput = {
   itemId: number;
   choice: string;
