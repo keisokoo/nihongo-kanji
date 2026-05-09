@@ -1,0 +1,109 @@
+{
+  "_comment": "N2 Phase 5-A: 17한자 (羽,翌,耕,肌,肩,肯,胃,胸,脂,脳,腕,腰,膚,臓,臣,舟,航)",
+  "fills": {
+    "羽": [
+      { "readingRef": "ウ", "word": "羽毛", "wordReading": "うもう", "meaningsKo": ["깃털"], "examples": [{ "sentence": "{冬|ふゆ}は{暖|あたた}かい{{羽毛}}{布団|ぶとん}を{使|つか}います。", "sentenceTranslationKo": "겨울은 따뜻한 깃털 이불을 씁니다." }] },
+      { "readingRef": "はね", "word": "羽", "wordReading": "はね", "meaningsKo": ["날개"], "examples": [{ "sentence": "{蝶|ちょう}の{{羽}}は{きれい|きれい}です。", "sentenceTranslationKo": "나비의 날개는 아름답습니다." }] },
+      { "readingRef": "はね", "word": "羽根", "wordReading": "はね", "meaningsKo": ["깃털", "날개"], "examples": [{ "sentence": "{鳥|とり}の{{羽根}}が{落|お}ちていました。", "sentenceTranslationKo": "새의 깃털이 떨어져 있었습니다." }] },
+      { "readingRef": "わ", "word": "三羽", "wordReading": "さんわ", "meaningsKo": ["세 마리(새)"], "examples": [{ "sentence": "{庭|にわ}に{雀|すずめ}が{{三羽}}{来|き}ました。", "sentenceTranslationKo": "정원에 참새가 세 마리 왔습니다." }] }
+    ],
+    "翌": [
+      { "readingRef": "ヨク", "word": "翌日", "wordReading": "よくじつ", "meaningsKo": ["다음 날"], "examples": [{ "sentence": "{試験|しけん}の{{翌日}}は{ゆっくり|ゆっくり}{休|やす}みました。", "sentenceTranslationKo": "시험 다음 날은 푹 쉬었습니다." }] },
+      { "readingRef": "ヨク", "word": "翌週", "wordReading": "よくしゅう", "meaningsKo": ["다음 주"], "examples": [{ "sentence": "{連絡|れんらく}は{{翌週}}にします。", "sentenceTranslationKo": "연락은 다음 주에 하겠습니다." }] },
+      { "readingRef": "ヨク", "word": "翌月", "wordReading": "よくげつ", "meaningsKo": ["다음 달"], "examples": [{ "sentence": "{今月|こんげつ}の{支払|しはら}いは{{翌月}}に{回|まわ}します。", "sentenceTranslationKo": "이번 달 지불은 다음 달로 미룹니다." }] },
+      { "readingRef": "ヨク", "word": "翌年", "wordReading": "よくねん", "meaningsKo": ["다음 해"], "examples": [{ "sentence": "{結婚|けっこん}の{{翌年}}に{子|こ}どもが{生|う}まれました。", "sentenceTranslationKo": "결혼한 다음 해에 아이가 태어났습니다." }] },
+      { "readingRef": "ヨク", "word": "翌朝", "wordReading": "よくあさ", "meaningsKo": ["다음 날 아침"], "examples": [{ "sentence": "{雨|あめ}の{{翌朝}}は{空気|くうき}が{きれい|きれい}です。", "sentenceTranslationKo": "비 온 다음 날 아침은 공기가 깨끗합니다." }] }
+    ],
+    "耕": [
+      { "readingRef": "コウ", "word": "耕作", "wordReading": "こうさく", "meaningsKo": ["경작"], "examples": [{ "sentence": "{田畑|たはた}の{{耕作}}を{続|つづ}けています。", "sentenceTranslationKo": "논밭의 경작을 이어가고 있습니다." }] },
+      { "readingRef": "コウ", "word": "耕地", "wordReading": "こうち", "meaningsKo": ["경지"], "examples": [{ "sentence": "{広|ひろ}い{{耕地}}が{広|ひろ}がっています。", "sentenceTranslationKo": "넓은 경지가 펼쳐져 있습니다." }] },
+      { "readingRef": "たがやす", "word": "耕す", "wordReading": "たがやす", "meaningsKo": ["갈다", "경작하다"], "examples": [{ "sentence": "{農家|のうか}の{人|ひと}が{田|た}んぼを{{耕す}}{季節|きせつ}になりました。", "sentenceTranslationKo": "농부가 논을 갈 계절이 되었습니다." }] },
+      { "readingRef": "コウ", "word": "農耕", "wordReading": "のうこう", "meaningsKo": ["농경"], "examples": [{ "sentence": "{古代|こだい}から{{農耕}}が{行|おこな}われていました。", "sentenceTranslationKo": "고대부터 농경이 이루어지고 있었습니다." }] }
+    ],
+    "肌": [
+      { "readingRef": "はだ", "word": "肌", "wordReading": "はだ", "meaningsKo": ["피부"], "examples": [{ "sentence": "{冬|ふゆ}は{{肌}}が{乾燥|かんそう}します。", "sentenceTranslationKo": "겨울은 피부가 건조해집니다." }] },
+      { "readingRef": "はだ", "word": "肌寒い", "wordReading": "はだざむい", "meaningsKo": ["쌀쌀하다"], "examples": [{ "sentence": "{秋|あき}の{朝|あさ}は{{肌寒い}}です。", "sentenceTranslationKo": "가을 아침은 쌀쌀합니다." }] },
+      { "readingRef": "はだ", "word": "素肌", "wordReading": "すはだ", "meaningsKo": ["맨살"], "examples": [{ "sentence": "{きれい|きれい}な{{素肌}}を{保|たも}っています。", "sentenceTranslationKo": "깨끗한 맨살을 유지하고 있습니다." }] },
+      { "readingRef": "はだ", "word": "肌着", "wordReading": "はだぎ", "meaningsKo": ["속옷"], "examples": [{ "sentence": "{冬|ふゆ}は{暖|あたた}かい{{肌着}}を{着|き}ます。", "sentenceTranslationKo": "겨울은 따뜻한 속옷을 입습니다." }] }
+    ],
+    "肩": [
+      { "readingRef": "ケン", "word": "肩書", "wordReading": "かたがき", "meaningsKo": ["직함"], "examples": [{ "sentence": "{名刺|めいし}の{{肩書}}を{確認|かくにん}しました。", "sentenceTranslationKo": "명함의 직함을 확인했습니다." }] },
+      { "readingRef": "かた", "word": "肩", "wordReading": "かた", "meaningsKo": ["어깨"], "examples": [{ "sentence": "{重|おも}い{荷物|にもつ}で{{肩}}が{痛|いた}いです。", "sentenceTranslationKo": "무거운 짐으로 어깨가 아픕니다." }] },
+      { "readingRef": "かた", "word": "肩こり", "wordReading": "かたこり", "meaningsKo": ["어깨 결림"], "examples": [{ "sentence": "{デスク|ですく}{ワーク|わーく}で{{肩こり}}になりました。", "sentenceTranslationKo": "사무직 일로 어깨 결림이 생겼습니다." }] },
+      { "readingRef": "かた", "word": "両肩", "wordReading": "りょうかた", "meaningsKo": ["양어깨"], "examples": [{ "sentence": "{重|おも}い{荷物|にもつ}を{{両肩}}で{支|ささ}えました。", "sentenceTranslationKo": "무거운 짐을 양어깨로 지탱했습니다." }] }
+    ],
+    "肯": [
+      { "readingRef": "コウ", "word": "肯定", "wordReading": "こうてい", "meaningsKo": ["긍정"], "examples": [{ "sentence": "{彼|かれ}は{私|わたし}の{意見|いけん}を{{肯定}}しました。", "sentenceTranslationKo": "그는 제 의견을 긍정했습니다." }] },
+      { "readingRef": "コウ", "word": "肯定的", "wordReading": "こうていてき", "meaningsKo": ["긍정적"], "examples": [{ "sentence": "{{肯定的}}な{態度|たいど}が{大切|たいせつ}です。", "sentenceTranslationKo": "긍정적인 태도가 중요합니다." }] }
+    ],
+    "胃": [
+      { "readingRef": "イ", "word": "胃", "wordReading": "い", "meaningsKo": ["위"], "examples": [{ "sentence": "{食|た}べすぎて{{胃}}が{痛|いた}いです。", "sentenceTranslationKo": "과식해서 위가 아픕니다." }] },
+      { "readingRef": "イ", "word": "胃腸", "wordReading": "いちょう", "meaningsKo": ["위장"], "examples": [{ "sentence": "{{胃腸}}{薬|やく}を{飲|の}みました。", "sentenceTranslationKo": "위장약을 먹었습니다." }] },
+      { "readingRef": "イ", "word": "胃痛", "wordReading": "いつう", "meaningsKo": ["위통"], "examples": [{ "sentence": "ストレスで{{胃痛}}になりました。", "sentenceTranslationKo": "스트레스로 위통이 생겼습니다." }] },
+      { "readingRef": "イ", "word": "胃酸", "wordReading": "いさん", "meaningsKo": ["위산"], "examples": [{ "sentence": "{{胃酸}}が{多|おお}く{出|で}ています。", "sentenceTranslationKo": "위산이 많이 나옵니다." }] }
+    ],
+    "胸": [
+      { "readingRef": "キョウ", "word": "胸囲", "wordReading": "きょうい", "meaningsKo": ["흉위"], "examples": [{ "sentence": "{シャツ|しゃつ}を{選|えら}ぶ{時|とき}は{{胸囲}}が{大切|たいせつ}です。", "sentenceTranslationKo": "셔츠를 고를 때는 흉위가 중요합니다." }] },
+      { "readingRef": "むね", "word": "胸", "wordReading": "むね", "meaningsKo": ["가슴"], "examples": [{ "sentence": "{緊張|きんちょう}で{{胸}}がドキドキしました。", "sentenceTranslationKo": "긴장으로 가슴이 두근거렸습니다." }] },
+      { "readingRef": "むな", "word": "胸元", "wordReading": "むなもと", "meaningsKo": ["가슴 부분"], "examples": [{ "sentence": "{{胸元}}にバッジをつけました。", "sentenceTranslationKo": "가슴 부분에 배지를 달았습니다." }] },
+      { "readingRef": "キョウ", "word": "度胸", "wordReading": "どきょう", "meaningsKo": ["배짱"], "examples": [{ "sentence": "{彼|かれ}は{{度胸}}のある{人|ひと}です。", "sentenceTranslationKo": "그는 배짱 있는 사람입니다." }] }
+    ],
+    "脂": [
+      { "readingRef": "シ", "word": "脂肪", "wordReading": "しぼう", "meaningsKo": ["지방"], "examples": [{ "sentence": "{{脂肪}}の{多|おお}い{食事|しょくじ}は{避|さ}けています。", "sentenceTranslationKo": "지방이 많은 식사는 피하고 있습니다." }] },
+      { "readingRef": "シ", "word": "油脂", "wordReading": "ゆし", "meaningsKo": ["유지"], "examples": [{ "sentence": "{植物|しょくぶつ}{性|せい}{{油脂}}を{使|つか}います。", "sentenceTranslationKo": "식물성 유지를 사용합니다." }] },
+      { "readingRef": "あぶら", "word": "脂", "wordReading": "あぶら", "meaningsKo": ["기름"], "examples": [{ "sentence": "{肉|にく}の{{脂}}が{多|おお}くて{重|おも}たいです。", "sentenceTranslationKo": "고기 기름이 많아서 부담스럽습니다." }] },
+      { "readingRef": "あぶら", "word": "脂っこい", "wordReading": "あぶらっこい", "meaningsKo": ["기름지다"], "examples": [{ "sentence": "{{脂っこい}}{料理|りょうり}は{苦手|にがて}です。", "sentenceTranslationKo": "기름진 요리는 잘 못 먹습니다." }] }
+    ],
+    "脳": [
+      { "readingRef": "ノウ", "word": "頭脳", "wordReading": "ずのう", "meaningsKo": ["두뇌"], "examples": [{ "sentence": "{彼女|かのじょ}は{優|すぐ}れた{{頭脳}}の{持|も}ち{主|ぬし}です。", "sentenceTranslationKo": "그녀는 뛰어난 두뇌의 소유자입니다." }] },
+      { "readingRef": "ノウ", "word": "脳", "wordReading": "のう", "meaningsKo": ["뇌"], "examples": [{ "sentence": "{{脳}}{科学|かがく}を{研究|けんきゅう}しています。", "sentenceTranslationKo": "뇌과학을 연구하고 있습니다." }] },
+      { "readingRef": "ノウ", "word": "首脳", "wordReading": "しゅのう", "meaningsKo": ["수뇌"], "examples": [{ "sentence": "{各国|かっこく}の{{首脳}}が{集|あつ}まりました。", "sentenceTranslationKo": "각국의 수뇌가 모였습니다." }] },
+      { "readingRef": "ノウ", "word": "脳波", "wordReading": "のうは", "meaningsKo": ["뇌파"], "examples": [{ "sentence": "{病院|びょういん}で{{脳波}}を{測定|そくてい}しました。", "sentenceTranslationKo": "병원에서 뇌파를 측정했습니다." }] },
+      { "readingRef": "ノウ", "word": "洗脳", "wordReading": "せんのう", "meaningsKo": ["세뇌"], "examples": [{ "sentence": "メディアによる{{洗脳}}が{問題|もんだい}です。", "sentenceTranslationKo": "미디어에 의한 세뇌가 문제입니다." }] }
+    ],
+    "腕": [
+      { "readingRef": "ワン", "word": "腕力", "wordReading": "わんりょく", "meaningsKo": ["완력"], "examples": [{ "sentence": "{{腕力}}{勝負|しょうぶ}には{自信|じしん}があります。", "sentenceTranslationKo": "완력 승부에는 자신이 있습니다." }] },
+      { "readingRef": "うで", "word": "腕", "wordReading": "うで", "meaningsKo": ["팔", "솜씨"], "examples": [{ "sentence": "{彼|かれ}は{料理|りょうり}の{{腕}}がいいです。", "sentenceTranslationKo": "그는 요리 솜씨가 좋습니다." }] },
+      { "readingRef": "うで", "word": "腕時計", "wordReading": "うでどけい", "meaningsKo": ["손목시계"], "examples": [{ "sentence": "{父|ちち}に{{腕時計}}をもらいました。", "sentenceTranslationKo": "아버지께 손목시계를 받았습니다." }] },
+      { "readingRef": "うで", "word": "腕前", "wordReading": "うでまえ", "meaningsKo": ["솜씨"], "examples": [{ "sentence": "{彼|かれ}の{ピアノ|ぴあの}の{{腕前}}は{素晴|すば}らしいです。", "sentenceTranslationKo": "그의 피아노 솜씨는 훌륭합니다." }] },
+      { "readingRef": "うで", "word": "両腕", "wordReading": "りょううで", "meaningsKo": ["양팔"], "examples": [{ "sentence": "{重|おも}い{箱|はこ}を{{両腕}}で{抱|かか}えました。", "sentenceTranslationKo": "무거운 상자를 양팔로 안았습니다." }] }
+    ],
+    "腰": [
+      { "readingRef": "ヨウ", "word": "腰部", "wordReading": "ようぶ", "meaningsKo": ["요부", "허리 부위"], "examples": [{ "sentence": "{{腰部}}を{丁寧|ていねい}にマッサージしました。", "sentenceTranslationKo": "허리 부위를 정성껏 마사지했습니다." }] },
+      { "readingRef": "こし", "word": "腰", "wordReading": "こし", "meaningsKo": ["허리"], "examples": [{ "sentence": "{長時間|ちょうじかん}{座|すわ}って{{腰}}が{痛|いた}いです。", "sentenceTranslationKo": "장시간 앉아서 허리가 아픕니다." }] },
+      { "readingRef": "こし", "word": "腰掛け", "wordReading": "こしかけ", "meaningsKo": ["걸상"], "examples": [{ "sentence": "{公園|こうえん}の{{腰掛け}}で{休|やす}みました。", "sentenceTranslationKo": "공원의 걸상에서 쉬었습니다." }] },
+      { "readingRef": "こし", "word": "腰痛", "wordReading": "ようつう", "meaningsKo": ["요통"], "examples": [{ "sentence": "{{腰痛}}で{病院|びょういん}に{行|い}きました。", "sentenceTranslationKo": "요통으로 병원에 갔습니다." }] }
+    ],
+    "膚": [
+      { "readingRef": "フ", "word": "皮膚", "wordReading": "ひふ", "meaningsKo": ["피부"], "examples": [{ "sentence": "{乾燥|かんそう}で{{皮膚}}が{荒|あ}れました。", "sentenceTranslationKo": "건조로 피부가 거칠어졌습니다." }] },
+      { "readingRef": "フ", "word": "皮膚科", "wordReading": "ひふか", "meaningsKo": ["피부과"], "examples": [{ "sentence": "{湿疹|しっしん}で{{皮膚科}}に{行|い}きました。", "sentenceTranslationKo": "습진으로 피부과에 갔습니다." }] },
+      { "readingRef": "フ", "word": "完膚", "wordReading": "かんぷ", "meaningsKo": ["성한 곳"], "examples": [{ "sentence": "{試合|しあい}で{{完膚}}なきまでに{敗|やぶ}れました。", "sentenceTranslationKo": "시합에서 완전히 패했습니다." }] }
+    ],
+    "臓": [
+      { "readingRef": "ゾウ", "word": "心臓", "wordReading": "しんぞう", "meaningsKo": ["심장"], "examples": [{ "sentence": "{祖父|そふ}は{{心臓}}の{病気|びょうき}があります。", "sentenceTranslationKo": "할아버지는 심장 질환이 있습니다." }] },
+      { "readingRef": "ゾウ", "word": "内臓", "wordReading": "ないぞう", "meaningsKo": ["내장"], "examples": [{ "sentence": "{{内臓}}{脂肪|しぼう}を{減|へ}らすために{運動|うんどう}しています。", "sentenceTranslationKo": "내장지방을 줄이기 위해 운동하고 있습니다." }] },
+      { "readingRef": "ゾウ", "word": "肝臓", "wordReading": "かんぞう", "meaningsKo": ["간"], "examples": [{ "sentence": "お{酒|さけ}の{飲|の}みすぎは{{肝臓}}に{悪|わる}いです。", "sentenceTranslationKo": "술의 과음은 간에 나쁩니다." }] },
+      { "readingRef": "ゾウ", "word": "腎臓", "wordReading": "じんぞう", "meaningsKo": ["신장"], "examples": [{ "sentence": "{{腎臓}}は{体内|たいない}の{老廃物|ろうはいぶつ}を{排出|はいしゅつ}します。", "sentenceTranslationKo": "신장은 체내 노폐물을 배출합니다." }] },
+      { "readingRef": "ゾウ", "word": "臓器", "wordReading": "ぞうき", "meaningsKo": ["장기"], "examples": [{ "sentence": "{{臓器}}{移植|いしょく}の{研究|けんきゅう}が{進|すす}んでいます。", "sentenceTranslationKo": "장기 이식의 연구가 진행되고 있습니다." }] }
+    ],
+    "臣": [
+      { "readingRef": "シン", "word": "大臣", "wordReading": "だいじん", "meaningsKo": ["대신", "장관"], "examples": [{ "sentence": "{新|あたら}しい{総理|そうり}{{大臣}}が{選|えら}ばれました。", "sentenceTranslationKo": "새 총리대신이 선출되었습니다." }] },
+      { "readingRef": "シン", "word": "家臣", "wordReading": "かしん", "meaningsKo": ["가신"], "examples": [{ "sentence": "{将軍|しょうぐん}の{{家臣}}が{多|おお}くいました。", "sentenceTranslationKo": "쇼군의 가신이 많이 있었습니다." }] },
+      { "readingRef": "シン", "word": "君臣", "wordReading": "くんしん", "meaningsKo": ["군신"], "examples": [{ "sentence": "{古代|こだい}の{{君臣}}{関係|かんけい}を{学|まな}びました。", "sentenceTranslationKo": "고대의 군신관계를 배웠습니다." }] },
+      { "readingRef": "ジン", "word": "忠臣", "wordReading": "ちゅうしん", "meaningsKo": ["충신"], "examples": [{ "sentence": "{物語|ものがたり}に{{忠臣}}が{登場|とうじょう}します。", "sentenceTranslationKo": "이야기에 충신이 등장합니다." }] }
+    ],
+    "舟": [
+      { "readingRef": "シュウ", "word": "舟", "wordReading": "ふね", "meaningsKo": ["배"], "examples": [{ "sentence": "{湖|みずうみ}で{小|ちい}さな{{舟}}に{乗|の}りました。", "sentenceTranslationKo": "호수에서 작은 배를 탔습니다." }] },
+      { "readingRef": "ふね", "word": "小舟", "wordReading": "こぶね", "meaningsKo": ["작은 배"], "examples": [{ "sentence": "{川|かわ}を{{小舟}}で{下|くだ}りました。", "sentenceTranslationKo": "강을 작은 배로 내려갔습니다." }] },
+      { "readingRef": "ふな", "word": "舟旅", "wordReading": "ふなたび", "meaningsKo": ["뱃길 여행"], "examples": [{ "sentence": "{{舟旅}}で{湖|みずうみ}を{巡|めぐ}りました。", "sentenceTranslationKo": "뱃길 여행으로 호수를 돌았습니다." }] },
+      { "readingRef": "ふね", "word": "舟唄", "wordReading": "ふなうた", "meaningsKo": ["뱃노래"], "examples": [{ "sentence": "{古|ふる}い{{舟唄}}を{聞|き}きました。", "sentenceTranslationKo": "오래된 뱃노래를 들었습니다." }] }
+    ],
+    "航": [
+      { "readingRef": "コウ", "word": "航空", "wordReading": "こうくう", "meaningsKo": ["항공"], "examples": [{ "sentence": "{{航空}}{券|けん}を{予約|よやく}しました。", "sentenceTranslationKo": "항공권을 예약했습니다." }] },
+      { "readingRef": "コウ", "word": "航海", "wordReading": "こうかい", "meaningsKo": ["항해"], "examples": [{ "sentence": "{長|なが}い{{航海}}に{出|で}ました。", "sentenceTranslationKo": "긴 항해에 나섰습니다." }] },
+      { "readingRef": "コウ", "word": "出航", "wordReading": "しゅっこう", "meaningsKo": ["출항"], "examples": [{ "sentence": "{船|ふね}が{予定|よてい}{通|どお}り{{出航}}しました。", "sentenceTranslationKo": "배가 예정대로 출항했습니다." }] },
+      { "readingRef": "コウ", "word": "欠航", "wordReading": "けっこう", "meaningsKo": ["결항"], "examples": [{ "sentence": "{台風|たいふう}で{飛行機|ひこうき}が{{欠航}}になりました。", "sentenceTranslationKo": "태풍으로 비행기가 결항되었습니다." }] },
+      { "readingRef": "コウ", "word": "渡航", "wordReading": "とこう", "meaningsKo": ["도항"], "examples": [{ "sentence": "{海外|かいがい}{{渡航}}{前|まえ}に{保険|ほけん}に{入|はい}りました。", "sentenceTranslationKo": "해외 도항 전에 보험에 가입했습니다." }] }
+    ]
+  }
+}
