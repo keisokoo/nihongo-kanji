@@ -1,0 +1,8339 @@
+{
+  "key": "N5",
+  "title": "N5",
+  "kind": "jlpt",
+  "description": "JLPT N5 한자 (kanjiapi.dev)",
+  "kanji": [
+    {
+      "character": "一",
+      "meaningKo": "한 일 — 하나, 1",
+      "strokeCount": 1,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "イチ"
+        },
+        {
+          "type": "on",
+          "reading": "イツ"
+        },
+        {
+          "type": "kun",
+          "reading": "ひと"
+        },
+        {
+          "type": "kun",
+          "reading": "ひとつ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "イチ",
+          "word": "一月",
+          "wordReading": "いちがつ",
+          "meaningsKo": [
+            "1월"
+          ],
+          "examples": [
+            {
+              "sentence": "{{一月}}に{雪|ゆき}が{降|ふ}ります。",
+              "sentenceTranslationKo": "1월에 눈이 내립니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "イチ",
+          "word": "一日",
+          "wordReading": "いちにち",
+          "meaningsKo": [
+            "하루",
+            "1일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{一日}}に{二|に}{回|かい}{薬|くすり}を{飲|の}みます。",
+              "sentenceTranslationKo": "하루에 두 번 약을 먹습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "イチ",
+          "word": "一年",
+          "wordReading": "いちねん",
+          "meaningsKo": [
+            "1년"
+          ],
+          "examples": [
+            {
+              "sentence": "{{一年}}は{十二|じゅうに}か{月|げつ}です。",
+              "sentenceTranslationKo": "1년은 12개월입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "イチ",
+          "word": "一応",
+          "wordReading": "いちおう",
+          "meaningsKo": [
+            "일단",
+            "우선"
+          ],
+          "examples": [
+            {
+              "sentence": "{{一応}}{予約|よやく}しておきました。",
+              "sentenceTranslationKo": "일단 예약해 두었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "イチ",
+          "word": "一部",
+          "wordReading": "いちぶ",
+          "meaningsKo": [
+            "일부",
+            "일부분"
+          ],
+          "examples": [
+            {
+              "sentence": "この{本|ほん}の{{一部}}を{読|よ}みました。",
+              "sentenceTranslationKo": "이 책의 일부를 읽었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "イチ",
+          "word": "万一",
+          "wordReading": "まんいち",
+          "meaningsKo": [
+            "만약",
+            "혹시"
+          ],
+          "examples": [
+            {
+              "sentence": "{{万一}}{遅|おく}れたら{連絡|れんらく}してください。",
+              "sentenceTranslationKo": "만약 늦으면 연락해 주세요."
+            }
+          ]
+        },
+        {
+          "readingRef": "イツ",
+          "word": "唯一",
+          "wordReading": "ゆいいつ",
+          "meaningsKo": [
+            "유일하다"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{{唯一}}{私|わたし}を{信|しん}じてくれた{人|ひと}です。",
+              "sentenceTranslationKo": "그는 유일하게 저를 믿어 준 사람입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "イツ",
+          "word": "同一",
+          "wordReading": "どういつ",
+          "meaningsKo": [
+            "동일",
+            "같다"
+          ],
+          "examples": [
+            {
+              "sentence": "{二|ふた}つの{答|こた}えは{{同一}}でした。",
+              "sentenceTranslationKo": "두 답은 동일했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "イツ",
+          "word": "単一",
+          "wordReading": "たんいつ",
+          "meaningsKo": [
+            "단일하다"
+          ],
+          "examples": [
+            {
+              "sentence": "この{部品|ぶひん}は{{単一}}の{素材|そざい}でできています。",
+              "sentenceTranslationKo": "이 부품은 단일 소재로 만들어졌습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "イツ",
+          "word": "均一",
+          "wordReading": "きんいつ",
+          "meaningsKo": [
+            "균일하다"
+          ],
+          "examples": [
+            {
+              "sentence": "この{店|みせ}は{値段|ねだん}が{{均一}}です。",
+              "sentenceTranslationKo": "이 가게는 가격이 균일합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひと",
+          "word": "一人",
+          "wordReading": "ひとり",
+          "meaningsKo": [
+            "한 명",
+            "혼자"
+          ],
+          "examples": [
+            {
+              "sentence": "{{一人}}で{映画|えいが}を{見|み}に{行|い}きました。",
+              "sentenceTranslationKo": "혼자서 영화를 보러 갔습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひと",
+          "word": "一",
+          "wordReading": "ひと",
+          "meaningsKo": [
+            "하나",
+            "1"
+          ],
+          "examples": [
+            {
+              "sentence": "りんごを{{一}}つください。",
+              "sentenceTranslationKo": "사과를 하나 주세요."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "七",
+      "meaningKo": "일곱 칠 — 일곱, 7",
+      "strokeCount": 2,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シチ"
+        },
+        {
+          "type": "kun",
+          "reading": "なな"
+        },
+        {
+          "type": "kun",
+          "reading": "ななつ"
+        },
+        {
+          "type": "kun",
+          "reading": "なの"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "シチ",
+          "word": "七月",
+          "wordReading": "しちがつ",
+          "meaningsKo": [
+            "7월"
+          ],
+          "examples": [
+            {
+              "sentence": "{日本|にほん}の{{七月}}はとても{暑|あつ}いです。",
+              "sentenceTranslationKo": "일본의 7월은 매우 덥습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "なな",
+          "word": "七色",
+          "wordReading": "なないろ",
+          "meaningsKo": [
+            "무지개색",
+            "일곱 가지 색"
+          ],
+          "examples": [
+            {
+              "sentence": "{虹|にじ}は{{七色}}に{見|み}えます。",
+              "sentenceTranslationKo": "무지개는 일곱 가지 색으로 보입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "なな",
+          "word": "七",
+          "wordReading": "なな",
+          "meaningsKo": [
+            "일곱",
+            "7"
+          ],
+          "examples": [
+            {
+              "sentence": "{机|つくえ}の{上|うえ}に{鉛筆|えんぴつ}が{{七}}{本|ほん}あります。",
+              "sentenceTranslationKo": "책상 위에 연필이 일곱 자루 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "なの",
+          "word": "七日",
+          "wordReading": "なのか",
+          "meaningsKo": [
+            "이레",
+            "7일"
+          ],
+          "examples": [
+            {
+              "sentence": "{今月|こんげつ}の{{七日}}は{月曜日|げつようび}です。",
+              "sentenceTranslationKo": "이번 달 7일은 월요일입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "万",
+      "meaningKo": "일만 만 — 일만, 10000",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "バン"
+        },
+        {
+          "type": "on",
+          "reading": "マン"
+        },
+        {
+          "type": "kun",
+          "reading": "よろず"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "マン",
+          "word": "一万",
+          "wordReading": "いちまん",
+          "meaningsKo": [
+            "1만"
+          ],
+          "examples": [
+            {
+              "sentence": "{財布|さいふ}に{{一万}}{円|えん}{入|はい}っています。",
+              "sentenceTranslationKo": "지갑에 1만 엔 들어 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "マン",
+          "word": "万",
+          "wordReading": "まん",
+          "meaningsKo": [
+            "만"
+          ],
+          "examples": [
+            {
+              "sentence": "この{町|まち}の{人口|じんこう}は{二|に}{{万}}{人|にん}です。",
+              "sentenceTranslationKo": "이 마을의 인구는 2만 명입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "マン",
+          "word": "万一",
+          "wordReading": "まんいち",
+          "meaningsKo": [
+            "만일",
+            "만에 하나"
+          ],
+          "examples": [
+            {
+              "sentence": "{{万一}}に{備|そな}えて{保険|ほけん}に{入|はい}りました。",
+              "sentenceTranslationKo": "만일에 대비해 보험에 가입했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "マン",
+          "word": "万年筆",
+          "wordReading": "まんねんひつ",
+          "meaningsKo": [
+            "만년필"
+          ],
+          "examples": [
+            {
+              "sentence": "{誕生日|たんじょうび}に{{万年筆}}をもらいました。",
+              "sentenceTranslationKo": "생일에 만년필을 받았습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "バン",
+          "word": "万歳",
+          "wordReading": "ばんざい",
+          "meaningsKo": [
+            "만세"
+          ],
+          "examples": [
+            {
+              "sentence": "ゴールしたとき{みんな|みんな}で{{万歳}}しました。",
+              "sentenceTranslationKo": "골인했을 때 다 같이 만세를 했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "バン",
+          "word": "万国",
+          "wordReading": "ばんこく",
+          "meaningsKo": [
+            "만국"
+          ],
+          "examples": [
+            {
+              "sentence": "{オリンピック|おりんぴっく}は{{万国}}{共通|きょうつう}の{祭|まつ}りです。",
+              "sentenceTranslationKo": "올림픽은 만국 공통의 축제입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "バン",
+          "word": "万全",
+          "wordReading": "ばんぜん",
+          "meaningsKo": [
+            "만전",
+            "완벽하다"
+          ],
+          "examples": [
+            {
+              "sentence": "{試験|しけん}の{準備|じゅんび}は{{万全}}です。",
+              "sentenceTranslationKo": "시험 준비는 완벽합니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "三",
+      "meaningKo": "셋 삼 — 셋, 3",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サン"
+        },
+        {
+          "type": "on",
+          "reading": "ゾウ"
+        },
+        {
+          "type": "kun",
+          "reading": "み"
+        },
+        {
+          "type": "kun",
+          "reading": "みつ"
+        },
+        {
+          "type": "kun",
+          "reading": "みっつ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "サン",
+          "word": "三十",
+          "wordReading": "さんじゅう",
+          "meaningsKo": [
+            "30",
+            "서른"
+          ],
+          "examples": [
+            {
+              "sentence": "{母|はは}は{{三十}}{年|ねん}{前|まえ}{結婚|けっこん}しました。",
+              "sentenceTranslationKo": "어머니는 30년 전에 결혼하셨습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "サン",
+          "word": "三人",
+          "wordReading": "さんにん",
+          "meaningsKo": [
+            "3명",
+            "세 명"
+          ],
+          "examples": [
+            {
+              "sentence": "{家族|かぞく}は{{三人}}です。",
+              "sentenceTranslationKo": "가족은 세 명입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "み",
+          "word": "三日月",
+          "wordReading": "みかづき",
+          "meaningsKo": [
+            "초승달"
+          ],
+          "examples": [
+            {
+              "sentence": "{今夜|こんや}は{きれい|きれい}な{{三日月}}が{見|み}えます。",
+              "sentenceTranslationKo": "오늘 밤은 예쁜 초승달이 보입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "み",
+          "word": "三日",
+          "wordReading": "みっか",
+          "meaningsKo": [
+            "사흘",
+            "3일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{三日}}{後|ご}に{帰|かえ}ってきます。",
+              "sentenceTranslationKo": "사흘 뒤에 돌아옵니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "み",
+          "word": "三",
+          "wordReading": "みっ",
+          "meaningsKo": [
+            "셋",
+            "3"
+          ],
+          "examples": [
+            {
+              "sentence": "りんごが{{三}}つあります。",
+              "sentenceTranslationKo": "사과가 세 개 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "み",
+          "word": "三",
+          "wordReading": "み",
+          "meaningsKo": [
+            "셋",
+            "3"
+          ],
+          "examples": [
+            {
+              "sentence": "{{三}}つの{箱|はこ}を{並|なら}べました。",
+              "sentenceTranslationKo": "세 상자를 늘어놓았습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "サン",
+          "word": "三月",
+          "wordReading": "さんがつ",
+          "meaningsKo": [
+            "3월"
+          ],
+          "examples": [
+            {
+              "sentence": "{日本|にほん}の{学校|がっこう}は{{三月}}に{卒業式|そつぎょうしき}があります。",
+              "sentenceTranslationKo": "일본의 학교는 3월에 졸업식이 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "上",
+      "meaningKo": "윗 상 — 위, 위쪽, 오르다",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シャン"
+        },
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "on",
+          "reading": "ジョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "あがり"
+        },
+        {
+          "type": "kun",
+          "reading": "あがる"
+        },
+        {
+          "type": "kun",
+          "reading": "あげる"
+        },
+        {
+          "type": "kun",
+          "reading": "うえ"
+        },
+        {
+          "type": "kun",
+          "reading": "うわ"
+        },
+        {
+          "type": "kun",
+          "reading": "かみ"
+        },
+        {
+          "type": "kun",
+          "reading": "たてまつる"
+        },
+        {
+          "type": "kun",
+          "reading": "のぼす"
+        },
+        {
+          "type": "kun",
+          "reading": "のぼせる"
+        },
+        {
+          "type": "kun",
+          "reading": "のぼり"
+        },
+        {
+          "type": "kun",
+          "reading": "のぼる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ジョウ",
+          "word": "地上",
+          "wordReading": "ちじょう",
+          "meaningsKo": [
+            "지면",
+            "땅 위"
+          ],
+          "examples": [
+            {
+              "sentence": "{{地上}}{二十|にじゅう}{階|かい}にレストランがあります。",
+              "sentenceTranslationKo": "지상 20층에 레스토랑이 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジョウ",
+          "word": "海上",
+          "wordReading": "かいじょう",
+          "meaningsKo": [
+            "해상",
+            "바다 위"
+          ],
+          "examples": [
+            {
+              "sentence": "{{海上}}を{船|ふね}が{走|はし}っています。",
+              "sentenceTranslationKo": "바다 위를 배가 달리고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジョウ",
+          "word": "上下",
+          "wordReading": "じょうげ",
+          "meaningsKo": [
+            "상하",
+            "위아래"
+          ],
+          "examples": [
+            {
+              "sentence": "この{服|ふく}は{{上下}}セットで{売|う}っています。",
+              "sentenceTranslationKo": "이 옷은 상하 세트로 팔고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジョウ",
+          "word": "上位",
+          "wordReading": "じょうい",
+          "meaningsKo": [
+            "상위",
+            "윗자리"
+          ],
+          "examples": [
+            {
+              "sentence": "{試験|しけん}で{{上位}}{十|じゅう}{人|にん}に{入|はい}りました。",
+              "sentenceTranslationKo": "시험에서 상위 열 명에 들었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ショウ",
+          "word": "上人",
+          "wordReading": "しょうにん",
+          "meaningsKo": [
+            "고승",
+            "스님"
+          ],
+          "examples": [
+            {
+              "sentence": "お{寺|てら}の{{上人}}に{挨拶|あいさつ}しました。",
+              "sentenceTranslationKo": "절의 고승께 인사를 드렸습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "うえ",
+          "word": "年上",
+          "wordReading": "としうえ",
+          "meaningsKo": [
+            "연상",
+            "손위"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{私|わたし}より{二|に}つ{{年上}}です。",
+              "sentenceTranslationKo": "그는 저보다 두 살 연상입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "うえ",
+          "word": "上",
+          "wordReading": "うえ",
+          "meaningsKo": [
+            "위",
+            "올라가다"
+          ],
+          "examples": [
+            {
+              "sentence": "{机|つくえ}の{{上}}に{本|ほん}があります。",
+              "sentenceTranslationKo": "책상 위에 책이 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "うわ",
+          "word": "上着",
+          "wordReading": "うわぎ",
+          "meaningsKo": [
+            "윗옷",
+            "겉옷"
+          ],
+          "examples": [
+            {
+              "sentence": "{寒|さむ}いので{{上着}}を{着|き}ました。",
+              "sentenceTranslationKo": "추워서 겉옷을 입었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "かみ",
+          "word": "川上",
+          "wordReading": "かわかみ",
+          "meaningsKo": [
+            "강 위쪽",
+            "상류"
+          ],
+          "examples": [
+            {
+              "sentence": "{{川上}}には{滝|たき}があります。",
+              "sentenceTranslationKo": "강 상류에는 폭포가 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "下",
+      "meaningKo": "아래 하 — 아래, 아래쪽",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カ"
+        },
+        {
+          "type": "on",
+          "reading": "ゲ"
+        },
+        {
+          "type": "kun",
+          "reading": "くだす"
+        },
+        {
+          "type": "kun",
+          "reading": "おりる"
+        },
+        {
+          "type": "kun",
+          "reading": "おろす"
+        },
+        {
+          "type": "kun",
+          "reading": "くださる"
+        },
+        {
+          "type": "kun",
+          "reading": "くだり"
+        },
+        {
+          "type": "kun",
+          "reading": "くだる"
+        },
+        {
+          "type": "kun",
+          "reading": "さがる"
+        },
+        {
+          "type": "kun",
+          "reading": "さげる"
+        },
+        {
+          "type": "kun",
+          "reading": "した"
+        },
+        {
+          "type": "kun",
+          "reading": "しも"
+        },
+        {
+          "type": "kun",
+          "reading": "もと"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "カ",
+          "word": "地下鉄",
+          "wordReading": "ちかてつ",
+          "meaningsKo": [
+            "지하철"
+          ],
+          "examples": [
+            {
+              "sentence": "{毎日|まいにち}{{地下鉄}}で{学校|がっこう}に{行|い}きます。",
+              "sentenceTranslationKo": "매일 지하철로 학교에 갑니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "カ",
+          "word": "以下",
+          "wordReading": "いか",
+          "meaningsKo": [
+            "이하",
+            "~아래"
+          ],
+          "examples": [
+            {
+              "sentence": "{十八|じゅうはち}{歳|さい}{{以下}}は{無料|むりょう}です。",
+              "sentenceTranslationKo": "18세 이하는 무료입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゲ",
+          "word": "下水",
+          "wordReading": "げすい",
+          "meaningsKo": [
+            "하수",
+            "오수"
+          ],
+          "examples": [
+            {
+              "sentence": "{町|まち}の{{下水}}{工事|こうじ}が{始|はじ}まりました。",
+              "sentenceTranslationKo": "마을의 하수 공사가 시작되었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゲ",
+          "word": "下車",
+          "wordReading": "げしゃ",
+          "meaningsKo": [
+            "하차",
+            "내리다"
+          ],
+          "examples": [
+            {
+              "sentence": "{次|つぎ}の{駅|えき}で{{下車}}します。",
+              "sentenceTranslationKo": "다음 역에서 하차합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "した",
+          "word": "下",
+          "wordReading": "した",
+          "meaningsKo": [
+            "아래",
+            "밑"
+          ],
+          "examples": [
+            {
+              "sentence": "テーブルの{{下}}に{猫|ねこ}がいます。",
+              "sentenceTranslationKo": "테이블 아래에 고양이가 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゲ",
+          "word": "下宿",
+          "wordReading": "げしゅく",
+          "meaningsKo": [
+            "하숙"
+          ],
+          "examples": [
+            {
+              "sentence": "{大学|だいがく}の{近|ちか}くで{{下宿}}しています。",
+              "sentenceTranslationKo": "대학 근처에서 하숙하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "しも",
+          "word": "川下",
+          "wordReading": "かわしも",
+          "meaningsKo": [
+            "강 아래쪽",
+            "하류"
+          ],
+          "examples": [
+            {
+              "sentence": "{{川下}}には{小|ちい}さな{町|まち}があります。",
+              "sentenceTranslationKo": "강 하류에는 작은 마을이 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "カ",
+          "word": "下記",
+          "wordReading": "かき",
+          "meaningsKo": [
+            "하기",
+            "아래에 적은 것"
+          ],
+          "examples": [
+            {
+              "sentence": "{詳|くわ}しい{内容|ないよう}は{{下記}}をご{覧|らん}ください。",
+              "sentenceTranslationKo": "자세한 내용은 하기를 봐 주세요."
+            }
+          ]
+        },
+        {
+          "readingRef": "もと",
+          "word": "下",
+          "wordReading": "もと",
+          "meaningsKo": [
+            "아래",
+            "밑"
+          ],
+          "examples": [
+            {
+              "sentence": "{先生|せんせい}の{{下}}で{勉強|べんきょう}しています。",
+              "sentenceTranslationKo": "선생님 밑에서 공부하고 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "中",
+      "meaningKo": "가운데 중 — 중간, 가운데",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "あたる"
+        },
+        {
+          "type": "kun",
+          "reading": "うち"
+        },
+        {
+          "type": "kun",
+          "reading": "なか"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "チュウ",
+          "word": "掃除中",
+          "wordReading": "そうじちゅう",
+          "meaningsKo": [
+            "청소 중"
+          ],
+          "examples": [
+            {
+              "sentence": "ただいま{{掃除中}}です。",
+              "sentenceTranslationKo": "지금 청소 중입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "チュウ",
+          "word": "準備中",
+          "wordReading": "じゅんびちゅう",
+          "meaningsKo": [
+            "준비 중"
+          ],
+          "examples": [
+            {
+              "sentence": "この{店|みせ}はまだ{{準備中}}です。",
+              "sentenceTranslationKo": "이 가게는 아직 준비 중입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "なか",
+          "word": "背中",
+          "wordReading": "せなか",
+          "meaningsKo": [
+            "등",
+            "뒤"
+          ],
+          "examples": [
+            {
+              "sentence": "{{背中}}が{痛|いた}くて{病院|びょういん}に{行|い}きました。",
+              "sentenceTranslationKo": "등이 아파서 병원에 갔습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "なか",
+          "word": "中身",
+          "wordReading": "なかみ",
+          "meaningsKo": [
+            "속",
+            "내용물"
+          ],
+          "examples": [
+            {
+              "sentence": "{箱|はこ}の{{中身}}は{何|なん}ですか。",
+              "sentenceTranslationKo": "상자의 내용물은 무엇입니까?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "九",
+      "meaningKo": "아홉 구 — 아홉, 9",
+      "strokeCount": 2,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キュウ"
+        },
+        {
+          "type": "on",
+          "reading": "ク"
+        },
+        {
+          "type": "kun",
+          "reading": "ここの"
+        },
+        {
+          "type": "kun",
+          "reading": "ここのつ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "キュウ",
+          "word": "九百",
+          "wordReading": "きゅうひゃく",
+          "meaningsKo": [
+            "900"
+          ],
+          "examples": [
+            {
+              "sentence": "このノートは{{九百}}{円|えん}です。",
+              "sentenceTranslationKo": "이 공책은 900엔입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ク",
+          "word": "九月",
+          "wordReading": "くがつ",
+          "meaningsKo": [
+            "9월"
+          ],
+          "examples": [
+            {
+              "sentence": "{{九月}}になって{涼|すず}しくなりました。",
+              "sentenceTranslationKo": "9월이 되어 시원해졌습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ク",
+          "word": "九九",
+          "wordReading": "くく",
+          "meaningsKo": [
+            "구구단"
+          ],
+          "examples": [
+            {
+              "sentence": "{小学校|しょうがっこう}で{{九九}}を{覚|おぼ}えました。",
+              "sentenceTranslationKo": "초등학교에서 구구단을 외웠습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ここの",
+          "word": "九日",
+          "wordReading": "ここのか",
+          "meaningsKo": [
+            "9일"
+          ],
+          "examples": [
+            {
+              "sentence": "{今月|こんげつ}の{{九日}}に{会|あ}いましょう。",
+              "sentenceTranslationKo": "이번 달 9일에 만납시다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ここの",
+          "word": "九",
+          "wordReading": "ここの",
+          "meaningsKo": [
+            "9",
+            "아홉"
+          ],
+          "examples": [
+            {
+              "sentence": "{時計|とけい}が{{九}}{時|じ}を{指|さ}しています。",
+              "sentenceTranslationKo": "시계가 9시를 가리키고 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "二",
+      "meaningKo": "두 이 — 둘, 2",
+      "strokeCount": 2,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジ"
+        },
+        {
+          "type": "on",
+          "reading": "ニ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふた"
+        },
+        {
+          "type": "kun",
+          "reading": "ふたつ"
+        },
+        {
+          "type": "kun",
+          "reading": "ふたたび"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ニ",
+          "word": "二月",
+          "wordReading": "にがつ",
+          "meaningsKo": [
+            "2월"
+          ],
+          "examples": [
+            {
+              "sentence": "{日本|にほん}の{{二月}}は{雪|ゆき}がよく{降|ふ}ります。",
+              "sentenceTranslationKo": "일본의 2월은 눈이 자주 내립니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ニ",
+          "word": "二十",
+          "wordReading": "にじゅう",
+          "meaningsKo": [
+            "20",
+            "스물"
+          ],
+          "examples": [
+            {
+              "sentence": "{兄|あに}は{今|いま}{{二十}}{歳|さい}です。",
+              "sentenceTranslationKo": "형은 지금 스무 살입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ふた",
+          "word": "二人",
+          "wordReading": "ふたり",
+          "meaningsKo": [
+            "두 명",
+            "2명"
+          ],
+          "examples": [
+            {
+              "sentence": "{{二人}}で{映画|えいが}を{見|み}に{行|い}きました。",
+              "sentenceTranslationKo": "둘이서 영화를 보러 갔습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ふた",
+          "word": "二",
+          "wordReading": "ふた",
+          "meaningsKo": [
+            "둘",
+            "2"
+          ],
+          "examples": [
+            {
+              "sentence": "{犬|いぬ}が{{二}}{匹|ひき}います。",
+              "sentenceTranslationKo": "개가 두 마리 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "五",
+      "meaningKo": "다섯 오 — 다섯, 5",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゴ"
+        },
+        {
+          "type": "kun",
+          "reading": "いつ"
+        },
+        {
+          "type": "kun",
+          "reading": "いつつ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ゴ",
+          "word": "五月",
+          "wordReading": "ごがつ",
+          "meaningsKo": [
+            "5월"
+          ],
+          "examples": [
+            {
+              "sentence": "{{五月}}は{気持|きも}ちのいい{季節|きせつ}です。",
+              "sentenceTranslationKo": "5월은 기분 좋은 계절입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "いつ",
+          "word": "五日",
+          "wordReading": "いつか",
+          "meaningsKo": [
+            "닷째",
+            "5일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{五日}}までに{報告|ほうこく}してください。",
+              "sentenceTranslationKo": "5일까지 보고해 주세요."
+            }
+          ]
+        },
+        {
+          "readingRef": "いつ",
+          "word": "五",
+          "wordReading": "いつ",
+          "meaningsKo": [
+            "다섯",
+            "5"
+          ],
+          "examples": [
+            {
+              "sentence": "りんごを{{五}}つ{買|か}いました。",
+              "sentenceTranslationKo": "사과를 다섯 개 샀습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "人",
+      "meaningKo": "사람 인 — 사람",
+      "strokeCount": 2,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジン"
+        },
+        {
+          "type": "on",
+          "reading": "ニン"
+        },
+        {
+          "type": "kun",
+          "reading": "と"
+        },
+        {
+          "type": "kun",
+          "reading": "り"
+        },
+        {
+          "type": "kun",
+          "reading": "ひと"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ジン",
+          "word": "日本人",
+          "wordReading": "にほんじん",
+          "meaningsKo": [
+            "일본인"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{{日本人}}ですが{韓国語|かんこくご}もできます。",
+              "sentenceTranslationKo": "그는 일본인이지만 한국어도 할 수 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジン",
+          "word": "主人",
+          "wordReading": "しゅじん",
+          "meaningsKo": [
+            "남편",
+            "주인"
+          ],
+          "examples": [
+            {
+              "sentence": "{{主人}}と{一緒|いっしょ}に{買|か}い{物|もの}に{行|い}きました。",
+              "sentenceTranslationKo": "남편과 함께 장보러 갔습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジン",
+          "word": "人生",
+          "wordReading": "じんせい",
+          "meaningsKo": [
+            "인생"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}の{{人生}}には{多|おお}くの{物語|ものがたり}があります。",
+              "sentenceTranslationKo": "그의 인생에는 많은 이야기가 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ニン",
+          "word": "本人",
+          "wordReading": "ほんにん",
+          "meaningsKo": [
+            "본인"
+          ],
+          "examples": [
+            {
+              "sentence": "{{本人}}が{直接|ちょくせつ}{来|き}てください。",
+              "sentenceTranslationKo": "본인이 직접 와 주세요."
+            }
+          ]
+        },
+        {
+          "readingRef": "ニン",
+          "word": "他人",
+          "wordReading": "たにん",
+          "meaningsKo": [
+            "남",
+            "다른 사람"
+          ],
+          "examples": [
+            {
+              "sentence": "{{他人}}に{迷惑|めいわく}をかけてはいけません。",
+              "sentenceTranslationKo": "남에게 폐를 끼쳐서는 안 됩니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ニン",
+          "word": "人形",
+          "wordReading": "にんぎょう",
+          "meaningsKo": [
+            "인형"
+          ],
+          "examples": [
+            {
+              "sentence": "{娘|むすめ}は{{人形}}が{大好|だいす}きです。",
+              "sentenceTranslationKo": "딸은 인형을 매우 좋아합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひと",
+          "word": "人",
+          "wordReading": "ひと",
+          "meaningsKo": [
+            "사람"
+          ],
+          "examples": [
+            {
+              "sentence": "あの{{人}}は{私|わたし}の{先生|せんせい}です。",
+              "sentenceTranslationKo": "저 사람은 제 선생님입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひと",
+          "word": "人手",
+          "wordReading": "ひとで",
+          "meaningsKo": [
+            "일손",
+            "인원"
+          ],
+          "examples": [
+            {
+              "sentence": "{忙|いそが}しくて{{人手}}が{足|た}りません。",
+              "sentenceTranslationKo": "바빠서 일손이 부족합니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "今",
+      "meaningKo": "이제 금 — 지금, 현재",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キン"
+        },
+        {
+          "type": "on",
+          "reading": "コン"
+        },
+        {
+          "type": "kun",
+          "reading": "いま"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "コン",
+          "word": "今週",
+          "wordReading": "こんしゅう",
+          "meaningsKo": [
+            "이번 주"
+          ],
+          "examples": [
+            {
+              "sentence": "{{今週}}は{忙|いそが}しいです。",
+              "sentenceTranslationKo": "이번 주는 바쁩니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コン",
+          "word": "今月",
+          "wordReading": "こんげつ",
+          "meaningsKo": [
+            "이번 달"
+          ],
+          "examples": [
+            {
+              "sentence": "{{今月}}の{二十日|はつか}は{祝日|しゅくじつ}です。",
+              "sentenceTranslationKo": "이번 달 20일은 공휴일입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "キン",
+          "word": "今上",
+          "wordReading": "きんじょう",
+          "meaningsKo": [
+            "현 천황"
+          ],
+          "examples": [
+            {
+              "sentence": "{{今上}}{陛下|へいか}のご{即位|そくい}を{祝|いわ}いました。",
+              "sentenceTranslationKo": "현 천황 폐하의 즉위를 축하했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "いま",
+          "word": "今",
+          "wordReading": "いま",
+          "meaningsKo": [
+            "지금",
+            "이제"
+          ],
+          "examples": [
+            {
+              "sentence": "{{今}}{何時|なんじ}ですか。",
+              "sentenceTranslationKo": "지금 몇 시입니까?"
+            }
+          ]
+        },
+        {
+          "readingRef": "いま",
+          "word": "今日",
+          "wordReading": "きょう",
+          "meaningsKo": [
+            "오늘"
+          ],
+          "examples": [
+            {
+              "sentence": "{{今日}}はとてもいい{天気|てんき}です。",
+              "sentenceTranslationKo": "오늘은 아주 좋은 날씨입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "休",
+      "meaningKo": "쉴 휴 — 쉬다, 휴식",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "やすまる"
+        },
+        {
+          "type": "kun",
+          "reading": "やすむ"
+        },
+        {
+          "type": "kun",
+          "reading": "やすめる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "キュウ",
+          "word": "休日",
+          "wordReading": "きゅうじつ",
+          "meaningsKo": [
+            "휴일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{休日}}は{家族|かぞく}と{過|す}ごします。",
+              "sentenceTranslationKo": "휴일은 가족과 보냅니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "キュウ",
+          "word": "休暇",
+          "wordReading": "きゅうか",
+          "meaningsKo": [
+            "휴가"
+          ],
+          "examples": [
+            {
+              "sentence": "{夏|なつ}の{{休暇}}に{海|うみ}へ{行|い}きました。",
+              "sentenceTranslationKo": "여름휴가에 바다로 갔습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "キュウ",
+          "word": "休養",
+          "wordReading": "きゅうよう",
+          "meaningsKo": [
+            "휴식"
+          ],
+          "examples": [
+            {
+              "sentence": "{病気|びょうき}のあと{ゆっくり|ゆっくり}{{休養}}しました。",
+              "sentenceTranslationKo": "병이 난 뒤 푹 휴식했습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "何",
+      "meaningKo": "어찌 하 — 무엇, 어떤",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カ"
+        },
+        {
+          "type": "kun",
+          "reading": "なに"
+        },
+        {
+          "type": "kun",
+          "reading": "なん"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "カ",
+          "word": "幾何学",
+          "wordReading": "きかがく",
+          "meaningsKo": [
+            "기하학"
+          ],
+          "examples": [
+            {
+              "sentence": "{高校|こうこう}で{{幾何学}}を{習|なら}いました。",
+              "sentenceTranslationKo": "고등학교에서 기하학을 배웠습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "なに",
+          "word": "何",
+          "wordReading": "なに",
+          "meaningsKo": [
+            "몇"
+          ],
+          "examples": [
+            {
+              "sentence": "{{何}}か{食|た}べたいです。",
+              "sentenceTranslationKo": "뭔가 먹고 싶습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "なん",
+          "word": "何",
+          "wordReading": "なん",
+          "meaningsKo": [
+            "몇"
+          ],
+          "examples": [
+            {
+              "sentence": "これは{{何}}ですか。",
+              "sentenceTranslationKo": "이것은 무엇입니까?"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "先",
+      "meaningKo": "먼저 선 — 먼저, 앞서, 미리",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セン"
+        },
+        {
+          "type": "kun",
+          "reading": "さき"
+        },
+        {
+          "type": "kun",
+          "reading": "まず"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "セン",
+          "word": "先生",
+          "wordReading": "せんせい",
+          "meaningsKo": [
+            "선생님"
+          ],
+          "examples": [
+            {
+              "sentence": "{{先生}}に{質問|しつもん}しました。",
+              "sentenceTranslationKo": "선생님께 질문했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "セン",
+          "word": "先月",
+          "wordReading": "せんげつ",
+          "meaningsKo": [
+            "지난달"
+          ],
+          "examples": [
+            {
+              "sentence": "{{先月}}{日本|にほん}へ{行|い}きました。",
+              "sentenceTranslationKo": "지난달에 일본에 갔습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "セン",
+          "word": "先輩",
+          "wordReading": "せんぱい",
+          "meaningsKo": [
+            "선배"
+          ],
+          "examples": [
+            {
+              "sentence": "{大学|だいがく}の{{先輩}}にアドバイスをもらいました。",
+              "sentenceTranslationKo": "대학 선배에게 조언을 받았습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "入",
+      "meaningKo": "들 입 — 들어가다, 집어넣다",
+      "strokeCount": 2,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジュ"
+        },
+        {
+          "type": "on",
+          "reading": "ニュウ"
+        },
+        {
+          "type": "kun",
+          "reading": "いり"
+        },
+        {
+          "type": "kun",
+          "reading": "いる"
+        },
+        {
+          "type": "kun",
+          "reading": "いれ"
+        },
+        {
+          "type": "kun",
+          "reading": "いれる"
+        },
+        {
+          "type": "kun",
+          "reading": "はいる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ニュウ",
+          "word": "入国",
+          "wordReading": "にゅうこく",
+          "meaningsKo": [
+            "입국"
+          ],
+          "examples": [
+            {
+              "sentence": "{空港|くうこう}で{{入国}}{審査|しんさ}を{受|う}けました。",
+              "sentenceTranslationKo": "공항에서 입국 심사를 받았습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ニュウ",
+          "word": "入学",
+          "wordReading": "にゅうがく",
+          "meaningsKo": [
+            "입학"
+          ],
+          "examples": [
+            {
+              "sentence": "{弟|おとうと}は{今年|ことし}{大学|だいがく}に{{入学}}しました。",
+              "sentenceTranslationKo": "남동생은 올해 대학에 입학했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ニュウ",
+          "word": "入院",
+          "wordReading": "にゅういん",
+          "meaningsKo": [
+            "입원"
+          ],
+          "examples": [
+            {
+              "sentence": "{祖父|そふ}が{病気|びょうき}で{{入院}}しています。",
+              "sentenceTranslationKo": "할아버지가 병으로 입원해 계십니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "八",
+      "meaningKo": "여덟 팔 — 여덟, 8",
+      "strokeCount": 2,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハチ"
+        },
+        {
+          "type": "on",
+          "reading": "ハツ"
+        },
+        {
+          "type": "kun",
+          "reading": "や"
+        },
+        {
+          "type": "kun",
+          "reading": "やつ"
+        },
+        {
+          "type": "kun",
+          "reading": "やっつ"
+        },
+        {
+          "type": "kun",
+          "reading": "よう"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ハチ",
+          "word": "八月",
+          "wordReading": "はちがつ",
+          "meaningsKo": [
+            "8월"
+          ],
+          "examples": [
+            {
+              "sentence": "{{八月}}に{家族|かぞく}と{旅行|りょこう}に{行|い}きます。",
+              "sentenceTranslationKo": "8월에 가족과 여행을 갑니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "や",
+          "word": "八重桜",
+          "wordReading": "やえざくら",
+          "meaningsKo": [
+            "겹벚꽃"
+          ],
+          "examples": [
+            {
+              "sentence": "{春|はる}になると{{八重桜}}が{咲|さ}きます。",
+              "sentenceTranslationKo": "봄이 되면 겹벚꽃이 핍니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "や",
+          "word": "八",
+          "wordReading": "や",
+          "meaningsKo": [
+            "여덟",
+            "8"
+          ],
+          "examples": [
+            {
+              "sentence": "{箱|はこ}に{鉛筆|えんぴつ}が{{八}}{本|ほん}{入|はい}っています。",
+              "sentenceTranslationKo": "상자에 연필이 여덟 자루 들어 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "やっつ",
+          "word": "八つ",
+          "wordReading": "やっつ",
+          "meaningsKo": [
+            "여덟",
+            "여덟 개"
+          ],
+          "examples": [
+            {
+              "sentence": "りんごが{{八つ}}{机|つくえ}の{上|うえ}にあります。",
+              "sentenceTranslationKo": "사과가 여덟 개 책상 위에 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "や",
+          "word": "八",
+          "wordReading": "やっ",
+          "meaningsKo": [
+            "여덟",
+            "8"
+          ],
+          "examples": [
+            {
+              "sentence": "りんごを{{八}}つ{買|か}いました。",
+              "sentenceTranslationKo": "사과를 여덟 개 샀습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "よう",
+          "word": "八日",
+          "wordReading": "ようか",
+          "meaningsKo": [
+            "8일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{八日}}に{友|とも}だちと{会|あ}います。",
+              "sentenceTranslationKo": "8일에 친구와 만납니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "六",
+      "meaningKo": "여섯 육 — 여섯, 6",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "リク"
+        },
+        {
+          "type": "on",
+          "reading": "ロク"
+        },
+        {
+          "type": "kun",
+          "reading": "む"
+        },
+        {
+          "type": "kun",
+          "reading": "むつ"
+        },
+        {
+          "type": "kun",
+          "reading": "むい"
+        },
+        {
+          "type": "kun",
+          "reading": "むっつ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ロク",
+          "word": "六月",
+          "wordReading": "ろくがつ",
+          "meaningsKo": [
+            "6월"
+          ],
+          "examples": [
+            {
+              "sentence": "{{六月}}は{雨|あめ}が{多|おお}い{季節|きせつ}です。",
+              "sentenceTranslationKo": "6월은 비가 많은 계절입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "む",
+          "word": "六",
+          "wordReading": "む",
+          "meaningsKo": [
+            "여섯",
+            "6"
+          ],
+          "examples": [
+            {
+              "sentence": "{{六}}{時|じ}に{駅|えき}で{待|ま}ち{合|あ}わせます。",
+              "sentenceTranslationKo": "여섯 시에 역에서 만납니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "むっつ",
+          "word": "六つ",
+          "wordReading": "むっつ",
+          "meaningsKo": [
+            "여섯",
+            "여섯 개"
+          ],
+          "examples": [
+            {
+              "sentence": "ケーキを{{六つ}}{買|か}いました。",
+              "sentenceTranslationKo": "케이크를 여섯 개 샀습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "む",
+          "word": "六",
+          "wordReading": "むっ",
+          "meaningsKo": [
+            "여섯",
+            "6"
+          ],
+          "examples": [
+            {
+              "sentence": "ケーキが{{六}}つ{残|のこ}っています。",
+              "sentenceTranslationKo": "케이크가 여섯 개 남아 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "む",
+          "word": "六日",
+          "wordReading": "むいか",
+          "meaningsKo": [
+            "6일"
+          ],
+          "examples": [
+            {
+              "sentence": "{今月|こんげつ}の{{六日}}は{土曜日|どようび}です。",
+              "sentenceTranslationKo": "이번 달 6일은 토요일입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "円",
+      "meaningKo": "둥글 원 — 원형, 엔(화폐)",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "エン"
+        },
+        {
+          "type": "kun",
+          "reading": "まど"
+        },
+        {
+          "type": "kun",
+          "reading": "まどか"
+        },
+        {
+          "type": "kun",
+          "reading": "まる"
+        },
+        {
+          "type": "kun",
+          "reading": "まるい"
+        },
+        {
+          "type": "kun",
+          "reading": "まろやか"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "エン",
+          "word": "円",
+          "wordReading": "えん",
+          "meaningsKo": [
+            "엔",
+            "원 (화폐 단위)"
+          ],
+          "examples": [
+            {
+              "sentence": "このパンは{二百|にひゃく}{{円}}です。",
+              "sentenceTranslationKo": "이 빵은 200엔입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "エン",
+          "word": "円形",
+          "wordReading": "えんけい",
+          "meaningsKo": [
+            "원형"
+          ],
+          "examples": [
+            {
+              "sentence": "{{円形}}のテーブルを{買|か}いました。",
+              "sentenceTranslationKo": "원형 테이블을 샀습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "まる",
+          "word": "円",
+          "wordReading": "まる",
+          "meaningsKo": [
+            "원",
+            "동그라미"
+          ],
+          "examples": [
+            {
+              "sentence": "{紙|かみ}に{{円}}を{描|えが}きました。",
+              "sentenceTranslationKo": "종이에 원을 그렸습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "まるい",
+          "word": "円い",
+          "wordReading": "まるい",
+          "meaningsKo": [
+            "둥글다"
+          ],
+          "examples": [
+            {
+              "sentence": "{{円い}}テーブルを{囲|かこ}んで{食事|しょくじ}しました。",
+              "sentenceTranslationKo": "둥근 테이블을 둘러싸고 식사했습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "出",
+      "meaningKo": "날 출 — 나가다, 내보내다",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シュツ"
+        },
+        {
+          "type": "on",
+          "reading": "スイ"
+        },
+        {
+          "type": "kun",
+          "reading": "だす"
+        },
+        {
+          "type": "kun",
+          "reading": "で"
+        },
+        {
+          "type": "kun",
+          "reading": "いだす"
+        },
+        {
+          "type": "kun",
+          "reading": "いでる"
+        },
+        {
+          "type": "kun",
+          "reading": "でる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "シュツ",
+          "word": "出入",
+          "wordReading": "しゅつにゅう",
+          "meaningsKo": [
+            "드나들다",
+            "출입"
+          ],
+          "examples": [
+            {
+              "sentence": "この{建物|たてもの}は{自由|じゆう}に{{出入}}できます。",
+              "sentenceTranslationKo": "이 건물은 자유롭게 드나들 수 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "シュツ",
+          "word": "出現",
+          "wordReading": "しゅつげん",
+          "meaningsKo": [
+            "나타나다",
+            "출현"
+          ],
+          "examples": [
+            {
+              "sentence": "{庭|にわ}にめずらしい{鳥|とり}が{{出現}}しました。",
+              "sentenceTranslationKo": "정원에 진귀한 새가 출현했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "シュツ",
+          "word": "出席",
+          "wordReading": "しゅっせき",
+          "meaningsKo": [
+            "참석하다"
+          ],
+          "examples": [
+            {
+              "sentence": "{明日|あした}の{会議|かいぎ}に{{出席}}します。",
+              "sentenceTranslationKo": "내일 회의에 참석합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "スイ",
+          "word": "出納",
+          "wordReading": "すいとう",
+          "meaningsKo": [
+            "출납"
+          ],
+          "examples": [
+            {
+              "sentence": "{毎月|まいつき}{家計|かけい}の{{出納}}を{記録|きろく}しています。",
+              "sentenceTranslationKo": "매달 가계의 출납을 기록하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "で",
+          "word": "出口",
+          "wordReading": "でぐち",
+          "meaningsKo": [
+            "출구"
+          ],
+          "examples": [
+            {
+              "sentence": "{駅|えき}の{南|みなみ}{{出口}}で{待|ま}ち{合|あ}わせします。",
+              "sentenceTranslationKo": "역의 남쪽 출구에서 만나기로 했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "で",
+          "word": "出",
+          "wordReading": "で",
+          "meaningsKo": [
+            "나가다",
+            "나오다"
+          ],
+          "examples": [
+            {
+              "sentence": "{家|いえ}を{{出}}る{時間|じかん}になりました。",
+              "sentenceTranslationKo": "집을 나갈 시간이 되었습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "前",
+      "meaningKo": "앞 전 — 앞, 이전",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゼン"
+        },
+        {
+          "type": "kun",
+          "reading": "まえ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ゼン",
+          "word": "午前",
+          "wordReading": "ごぜん",
+          "meaningsKo": [
+            "오전"
+          ],
+          "examples": [
+            {
+              "sentence": "{{午前}}{九|く}{時|じ}に{会|あ}いましょう。",
+              "sentenceTranslationKo": "오전 9시에 만납시다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゼン",
+          "word": "以前",
+          "wordReading": "いぜん",
+          "meaningsKo": [
+            "이전",
+            "전에"
+          ],
+          "examples": [
+            {
+              "sentence": "{{以前}}この{町|まち}に{住|す}んでいました。",
+              "sentenceTranslationKo": "이전에 이 동네에 살았습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゼン",
+          "word": "前進",
+          "wordReading": "ぜんしん",
+          "meaningsKo": [
+            "전진"
+          ],
+          "examples": [
+            {
+              "sentence": "{一歩|いっぽ}ずつ{{前進}}しましょう。",
+              "sentenceTranslationKo": "한 걸음씩 전진합시다."
+            }
+          ]
+        },
+        {
+          "readingRef": "まえ",
+          "word": "名前",
+          "wordReading": "なまえ",
+          "meaningsKo": [
+            "이름"
+          ],
+          "examples": [
+            {
+              "sentence": "あなたの{{名前}}は{何|なん}ですか。",
+              "sentenceTranslationKo": "당신의 이름은 무엇입니까?"
+            }
+          ]
+        },
+        {
+          "readingRef": "まえ",
+          "word": "三日前",
+          "wordReading": "みっかまえ",
+          "meaningsKo": [
+            "3일 전"
+          ],
+          "examples": [
+            {
+              "sentence": "{{三日前}}に{手紙|てがみ}を{書|か}きました。",
+              "sentenceTranslationKo": "3일 전에 편지를 썼습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "北",
+      "meaningKo": "북녘 북 — 북쪽",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ホク"
+        },
+        {
+          "type": "kun",
+          "reading": "きた"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ホク",
+          "word": "東北",
+          "wordReading": "とうほく",
+          "meaningsKo": [
+            "동북"
+          ],
+          "examples": [
+            {
+              "sentence": "{祖母|そぼ}は{{東北}}{地方|ちほう}に{住|す}んでいます。",
+              "sentenceTranslationKo": "할머니는 동북 지방에 살고 계십니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ホク",
+          "word": "北部",
+          "wordReading": "ほくぶ",
+          "meaningsKo": [
+            "북부"
+          ],
+          "examples": [
+            {
+              "sentence": "{日本|にほん}の{{北部}}は{雪|ゆき}が{多|おお}いです。",
+              "sentenceTranslationKo": "일본 북부는 눈이 많습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "きた",
+          "word": "北",
+          "wordReading": "きた",
+          "meaningsKo": [
+            "북쪽",
+            "북"
+          ],
+          "examples": [
+            {
+              "sentence": "{{北}}の{方|ほう}から{冷|つめ}たい{風|かぜ}が{吹|ふ}いてきます。",
+              "sentenceTranslationKo": "북쪽에서 차가운 바람이 불어옵니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "きた",
+          "word": "北風",
+          "wordReading": "きたかぜ",
+          "meaningsKo": [
+            "북풍"
+          ],
+          "examples": [
+            {
+              "sentence": "{冬|ふゆ}は{{北風}}が{冷|つめ}たいです。",
+              "sentenceTranslationKo": "겨울은 북풍이 차갑습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "きた",
+          "word": "北側",
+          "wordReading": "きたがわ",
+          "meaningsKo": [
+            "북쪽"
+          ],
+          "examples": [
+            {
+              "sentence": "{部屋|へや}の{{北側}}に{窓|まど}があります。",
+              "sentenceTranslationKo": "방의 북쪽에 창문이 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "十",
+      "meaningKo": "열 십 — 열, 10",
+      "strokeCount": 2,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジッ"
+        },
+        {
+          "type": "on",
+          "reading": "ジュウ"
+        },
+        {
+          "type": "on",
+          "reading": "ジュッ"
+        },
+        {
+          "type": "kun",
+          "reading": "そ"
+        },
+        {
+          "type": "kun",
+          "reading": "と"
+        },
+        {
+          "type": "kun",
+          "reading": "とお"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ジュウ",
+          "word": "十月",
+          "wordReading": "じゅうがつ",
+          "meaningsKo": [
+            "10월"
+          ],
+          "examples": [
+            {
+              "sentence": "{{十月}}は{紅葉|こうよう}がきれいです。",
+              "sentenceTranslationKo": "10월은 단풍이 아름답습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジュウ",
+          "word": "十人",
+          "wordReading": "じゅうにん",
+          "meaningsKo": [
+            "열 명",
+            "10명"
+          ],
+          "examples": [
+            {
+              "sentence": "クラスに{{十人}}の{学生|がくせい}がいます。",
+              "sentenceTranslationKo": "반에 열 명의 학생이 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジュウ",
+          "word": "二十",
+          "wordReading": "にじゅう",
+          "meaningsKo": [
+            "20",
+            "스물"
+          ],
+          "examples": [
+            {
+              "sentence": "{兄|あに}は{今|いま}{{二十}}{歳|さい}です。",
+              "sentenceTranslationKo": "형은 지금 스무 살입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジッ",
+          "word": "十中八九",
+          "wordReading": "じっちゅうはっく",
+          "meaningsKo": [
+            "대부분",
+            "십중팔구"
+          ],
+          "examples": [
+            {
+              "sentence": "{{十中八九}}{彼|かれ}は{来|く}ると{思|おも}います。",
+              "sentenceTranslationKo": "십중팔구 그는 올 거라고 생각합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジッ",
+          "word": "十個",
+          "wordReading": "じっこ",
+          "meaningsKo": [
+            "열 개",
+            "10개"
+          ],
+          "examples": [
+            {
+              "sentence": "りんごを{{十個}}{買|か}いました。",
+              "sentenceTranslationKo": "사과를 열 개 샀습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジッ",
+          "word": "十分",
+          "wordReading": "じっぷん",
+          "meaningsKo": [
+            "10분"
+          ],
+          "examples": [
+            {
+              "sentence": "あと{{十分}}で{授業|じゅぎょう}が{始|はじ}まります。",
+              "sentenceTranslationKo": "앞으로 10분이면 수업이 시작됩니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "とお",
+          "word": "十日",
+          "wordReading": "とおか",
+          "meaningsKo": [
+            "10일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{十日}}に{試験|しけん}があります。",
+              "sentenceTranslationKo": "10일에 시험이 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "と",
+          "word": "十人十色",
+          "wordReading": "じゅうにんといろ",
+          "meaningsKo": [
+            "각각 다르다",
+            "십인십색"
+          ],
+          "examples": [
+            {
+              "sentence": "{好|す}きな{食|た}べ{物|もの}は{{十人十色}}です。",
+              "sentenceTranslationKo": "좋아하는 음식은 사람마다 제각각입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "千",
+      "meaningKo": "일천 천 — 일천, 1000",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セン"
+        },
+        {
+          "type": "kun",
+          "reading": "ち"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "セン",
+          "word": "千円",
+          "wordReading": "せんえん",
+          "meaningsKo": [
+            "1000엔"
+          ],
+          "examples": [
+            {
+              "sentence": "このシャツは{{千円}}でした。",
+              "sentenceTranslationKo": "이 셔츠는 천 엔이었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "セン",
+          "word": "千差万別",
+          "wordReading": "せんさばんべつ",
+          "meaningsKo": [
+            "가지각색",
+            "천차만별"
+          ],
+          "examples": [
+            {
+              "sentence": "{人|ひと}の{考|かんが}え{方|かた}は{{千差万別}}です。",
+              "sentenceTranslationKo": "사람의 생각은 천차만별입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ち",
+          "word": "千切",
+          "wordReading": "ちぎ",
+          "meaningsKo": [
+            "채 썬다",
+            "가늘게 자르다"
+          ],
+          "examples": [
+            {
+              "sentence": "キャベツを{{千切}}りにしました。",
+              "sentenceTranslationKo": "양배추를 채 썰었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ち",
+          "word": "千草",
+          "wordReading": "ちぐさ",
+          "meaningsKo": [
+            "여러 풀"
+          ],
+          "examples": [
+            {
+              "sentence": "{庭|にわ}に{{千草}}が{咲|さ}いています。",
+              "sentenceTranslationKo": "정원에 여러 풀이 피어 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "午",
+      "meaningKo": "낮 오 — 정오, 낮",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゴ"
+        },
+        {
+          "type": "kun",
+          "reading": "うま"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ゴ",
+          "word": "午前",
+          "wordReading": "ごぜん",
+          "meaningsKo": [
+            "오전"
+          ],
+          "examples": [
+            {
+              "sentence": "{{午前}}{中|ちゅう}に{宿題|しゅくだい}を{終|お}わらせます。",
+              "sentenceTranslationKo": "오전 중에 숙제를 마치겠습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゴ",
+          "word": "午後",
+          "wordReading": "ごご",
+          "meaningsKo": [
+            "오후"
+          ],
+          "examples": [
+            {
+              "sentence": "{{午後}}は{図書館|としょかん}で{勉強|べんきょう}します。",
+              "sentenceTranslationKo": "오후는 도서관에서 공부합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゴ",
+          "word": "正午",
+          "wordReading": "しょうご",
+          "meaningsKo": [
+            "정오"
+          ],
+          "examples": [
+            {
+              "sentence": "{会議|かいぎ}は{{正午}}から{始|はじ}まります。",
+              "sentenceTranslationKo": "회의는 정오부터 시작됩니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "半",
+      "meaningKo": "반 반 — 절반",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハン"
+        },
+        {
+          "type": "kun",
+          "reading": "なかば"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ハン",
+          "word": "半分",
+          "wordReading": "はんぶん",
+          "meaningsKo": [
+            "반",
+            "절반"
+          ],
+          "examples": [
+            {
+              "sentence": "ケーキを{{半分}}に{切|き}りました。",
+              "sentenceTranslationKo": "케이크를 반으로 잘랐습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ハン",
+          "word": "半時間",
+          "wordReading": "はんじかん",
+          "meaningsKo": [
+            "30분",
+            "반시간"
+          ],
+          "examples": [
+            {
+              "sentence": "{{半時間}}{歩|ある}いて{駅|えき}に{着|つ}きました。",
+              "sentenceTranslationKo": "30분 걸어서 역에 도착했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ハン",
+          "word": "半年",
+          "wordReading": "はんねん",
+          "meaningsKo": [
+            "6개월",
+            "반년"
+          ],
+          "examples": [
+            {
+              "sentence": "{日本語|にほんご}を{習|なら}って{{半年}}になります。",
+              "sentenceTranslationKo": "일본어를 배운 지 반년이 됩니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "南",
+      "meaningKo": "남녘 남 — 남쪽",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ナ"
+        },
+        {
+          "type": "on",
+          "reading": "ナン"
+        },
+        {
+          "type": "kun",
+          "reading": "みなみ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ナン",
+          "word": "南北",
+          "wordReading": "なんぼく",
+          "meaningsKo": [
+            "남북"
+          ],
+          "examples": [
+            {
+              "sentence": "{日本|にほん}は{{南北}}に{長|なが}い{国|くに}です。",
+              "sentenceTranslationKo": "일본은 남북으로 긴 나라입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ナン",
+          "word": "南方",
+          "wordReading": "なんぽう",
+          "meaningsKo": [
+            "남쪽",
+            "남방"
+          ],
+          "examples": [
+            {
+              "sentence": "{冬|ふゆ}の{鳥|とり}は{{南方}}へ{飛|と}んでいきます。",
+              "sentenceTranslationKo": "겨울 새는 남쪽으로 날아갑니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ナ",
+          "word": "南無阿弥陀仏",
+          "wordReading": "なむあみだぶつ",
+          "meaningsKo": [
+            "나무아미타불"
+          ],
+          "examples": [
+            {
+              "sentence": "お{寺|てら}でみんなで{{南無阿弥陀仏}}と{唱|とな}えました。",
+              "sentenceTranslationKo": "절에서 다 함께 나무아미타불을 외웠습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "みなみ",
+          "word": "南",
+          "wordReading": "みなみ",
+          "meaningsKo": [
+            "남쪽"
+          ],
+          "examples": [
+            {
+              "sentence": "この{窓|まど}は{{南}}に{向|む}いています。",
+              "sentenceTranslationKo": "이 창문은 남쪽을 향하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "みなみ",
+          "word": "南口",
+          "wordReading": "みなみぐち",
+          "meaningsKo": [
+            "남쪽 출구"
+          ],
+          "examples": [
+            {
+              "sentence": "{駅|えき}の{{南口}}で{友|とも}だちと{会|あ}いました。",
+              "sentenceTranslationKo": "역의 남쪽 출구에서 친구를 만났습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "友",
+      "meaningKo": "벗 우 — 친구, 벗",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ユウ"
+        },
+        {
+          "type": "kun",
+          "reading": "とも"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ユウ",
+          "word": "友情",
+          "wordReading": "ゆうじょう",
+          "meaningsKo": [
+            "우정"
+          ],
+          "examples": [
+            {
+              "sentence": "{長年|ながねん}の{{友情}}を{大切|たいせつ}にしています。",
+              "sentenceTranslationKo": "오랜 우정을 소중히 하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ユウ",
+          "word": "親友",
+          "wordReading": "しんゆう",
+          "meaningsKo": [
+            "친구",
+            "친한 친구"
+          ],
+          "examples": [
+            {
+              "sentence": "{{親友}}の{結婚式|けっこんしき}に{出|で}ました。",
+              "sentenceTranslationKo": "친한 친구의 결혼식에 갔습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ユウ",
+          "word": "友人",
+          "wordReading": "ゆうじん",
+          "meaningsKo": [
+            "친구"
+          ],
+          "examples": [
+            {
+              "sentence": "{大学|だいがく}{時代|じだい}の{{友人}}と{食事|しょくじ}しました。",
+              "sentenceTranslationKo": "대학 시절 친구와 식사했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "とも",
+          "word": "友達",
+          "wordReading": "ともだち",
+          "meaningsKo": [
+            "친구"
+          ],
+          "examples": [
+            {
+              "sentence": "{{友達}}と{一緒|いっしょ}に{公園|こうえん}に{行|い}きました。",
+              "sentenceTranslationKo": "친구와 함께 공원에 갔습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "右",
+      "meaningKo": "오른 우 — 오른쪽",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ウ"
+        },
+        {
+          "type": "on",
+          "reading": "ユウ"
+        },
+        {
+          "type": "kun",
+          "reading": "みぎ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ウ",
+          "word": "右翼",
+          "wordReading": "うよく",
+          "meaningsKo": [
+            "우익"
+          ],
+          "examples": [
+            {
+              "sentence": "{政治|せいじ}の{{右翼}}と{左翼|さよく}の{違|ちが}いを{学|まな}びました。",
+              "sentenceTranslationKo": "정치의 우익과 좌익의 차이를 배웠습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ウ",
+          "word": "右派",
+          "wordReading": "うは",
+          "meaningsKo": [
+            "우파"
+          ],
+          "examples": [
+            {
+              "sentence": "この{党|とう}は{{右派}}と{言|い}われています。",
+              "sentenceTranslationKo": "이 당은 우파라고 불립니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ユウ",
+          "word": "左右",
+          "wordReading": "さゆう",
+          "meaningsKo": [
+            "좌우"
+          ],
+          "examples": [
+            {
+              "sentence": "{道|みち}を{渡|わた}る{時|とき}は{{左右}}を{確認|かくにん}してください。",
+              "sentenceTranslationKo": "길을 건널 때는 좌우를 확인해 주세요."
+            }
+          ]
+        },
+        {
+          "readingRef": "みぎ",
+          "word": "右手",
+          "wordReading": "みぎて",
+          "meaningsKo": [
+            "오른손"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{{右手}}でペンを{持|も}ちます。",
+              "sentenceTranslationKo": "그는 오른손으로 펜을 듭니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "みぎ",
+          "word": "右側",
+          "wordReading": "みぎがわ",
+          "meaningsKo": [
+            "오른쪽"
+          ],
+          "examples": [
+            {
+              "sentence": "{銀行|ぎんこう}は{道|みち}の{{右側}}にあります。",
+              "sentenceTranslationKo": "은행은 길의 오른쪽에 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "名",
+      "meaningKo": "이름 명 — 이름, 명성",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ミョウ"
+        },
+        {
+          "type": "on",
+          "reading": "メイ"
+        },
+        {
+          "type": "kun",
+          "reading": "な"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "メイ",
+          "word": "名人",
+          "wordReading": "めいじん",
+          "meaningsKo": [
+            "명인",
+            "전문가"
+          ],
+          "examples": [
+            {
+              "sentence": "{祖父|そふ}は{将棋|しょうぎ}の{{名人}}です。",
+              "sentenceTranslationKo": "할아버지는 장기의 명인입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "メイ",
+          "word": "有名",
+          "wordReading": "ゆうめい",
+          "meaningsKo": [
+            "유명하다"
+          ],
+          "examples": [
+            {
+              "sentence": "この{店|みせ}のラーメンは{{有名}}です。",
+              "sentenceTranslationKo": "이 가게의 라멘은 유명합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "メイ",
+          "word": "名誉",
+          "wordReading": "めいよ",
+          "meaningsKo": [
+            "명예"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{{名誉}}{市民|しみん}に{選|えら}ばれました。",
+              "sentenceTranslationKo": "그는 명예 시민으로 선정되었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ミョウ",
+          "word": "本名",
+          "wordReading": "ほんみょう",
+          "meaningsKo": [
+            "본명"
+          ],
+          "examples": [
+            {
+              "sentence": "{芸|げい}{能人|のうじん}の{{本名}}を{知|し}っていますか。",
+              "sentenceTranslationKo": "연예인의 본명을 알고 있습니까?"
+            }
+          ]
+        },
+        {
+          "readingRef": "ミョウ",
+          "word": "異名",
+          "wordReading": "いみょう",
+          "meaningsKo": [
+            "이명",
+            "별명"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}には{多|おお}くの{{異名}}があります。",
+              "sentenceTranslationKo": "그에게는 많은 별명이 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "な",
+          "word": "名前",
+          "wordReading": "なまえ",
+          "meaningsKo": [
+            "이름"
+          ],
+          "examples": [
+            {
+              "sentence": "あなたの{{名前}}を{教|おし}えてください。",
+              "sentenceTranslationKo": "당신의 이름을 알려 주세요."
+            }
+          ]
+        },
+        {
+          "readingRef": "な",
+          "word": "名付",
+          "wordReading": "なづ",
+          "meaningsKo": [
+            "이름 짓다"
+          ],
+          "examples": [
+            {
+              "sentence": "{赤|あか}ちゃんに{{名付}}けるのは{大切|たいせつ}な{仕事|しごと}です。",
+              "sentenceTranslationKo": "아기에게 이름을 짓는 것은 중요한 일입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "四",
+      "meaningKo": "넷 사 — 넷, 4",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シ"
+        },
+        {
+          "type": "kun",
+          "reading": "よ"
+        },
+        {
+          "type": "kun",
+          "reading": "よつ"
+        },
+        {
+          "type": "kun",
+          "reading": "よっつ"
+        },
+        {
+          "type": "kun",
+          "reading": "よん"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "シ",
+          "word": "四月",
+          "wordReading": "しがつ",
+          "meaningsKo": [
+            "4월"
+          ],
+          "examples": [
+            {
+              "sentence": "{日本|にほん}の{学校|がっこう}は{{四月}}から{始|はじ}まります。",
+              "sentenceTranslationKo": "일본 학교는 4월부터 시작합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "よ",
+          "word": "四人",
+          "wordReading": "よにん",
+          "meaningsKo": [
+            "네 명",
+            "4명"
+          ],
+          "examples": [
+            {
+              "sentence": "{家族|かぞく}は{{四人}}です。",
+              "sentenceTranslationKo": "가족은 네 명입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "よ",
+          "word": "四千",
+          "wordReading": "よんせん",
+          "meaningsKo": [
+            "4천"
+          ],
+          "examples": [
+            {
+              "sentence": "このカメラは{{四千}}{円|えん}で{買|か}いました。",
+              "sentenceTranslationKo": "이 카메라는 사천 엔에 샀습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "よ",
+          "word": "四",
+          "wordReading": "よっ",
+          "meaningsKo": [
+            "넷",
+            "4"
+          ],
+          "examples": [
+            {
+              "sentence": "りんごを{{四}}つ{買|か}いました。",
+              "sentenceTranslationKo": "사과를 네 개 샀습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "よ",
+          "word": "四つ角",
+          "wordReading": "よつかど",
+          "meaningsKo": [
+            "네거리",
+            "사거리"
+          ],
+          "examples": [
+            {
+              "sentence": "{{四つ角}}を{右|みぎ}に{曲|ま}がってください。",
+              "sentenceTranslationKo": "사거리를 오른쪽으로 돌아 주세요."
+            }
+          ]
+        },
+        {
+          "readingRef": "よ",
+          "word": "四",
+          "wordReading": "よ",
+          "meaningsKo": [
+            "넷",
+            "4"
+          ],
+          "examples": [
+            {
+              "sentence": "テーブルに{席|せき}が{{四}}つあります。",
+              "sentenceTranslationKo": "테이블에 자리가 네 개 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "シ",
+          "word": "四角",
+          "wordReading": "しかく",
+          "meaningsKo": [
+            "사각",
+            "네모"
+          ],
+          "examples": [
+            {
+              "sentence": "{{四角}}い{箱|はこ}にプレゼントを{入|い}れました。",
+              "sentenceTranslationKo": "네모난 상자에 선물을 넣었습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "国",
+      "meaningKo": "나라 국 — 나라, 국가",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コク"
+        },
+        {
+          "type": "kun",
+          "reading": "くに"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "コク",
+          "word": "国王",
+          "wordReading": "こくおう",
+          "meaningsKo": [
+            "국왕"
+          ],
+          "examples": [
+            {
+              "sentence": "{物語|ものがたり}の{中|なか}で{{国王}}が{登場|とうじょう}します。",
+              "sentenceTranslationKo": "이야기 속에 국왕이 등장합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コク",
+          "word": "国土",
+          "wordReading": "こくど",
+          "meaningsKo": [
+            "국토"
+          ],
+          "examples": [
+            {
+              "sentence": "{日本|にほん}の{{国土}}は{南北|なんぼく}に{長|なが}いです。",
+              "sentenceTranslationKo": "일본의 국토는 남북으로 깁니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "くに",
+          "word": "国",
+          "wordReading": "くに",
+          "meaningsKo": [
+            "나라"
+          ],
+          "examples": [
+            {
+              "sentence": "あなたの{{国}}はどこですか。",
+              "sentenceTranslationKo": "당신의 나라는 어디입니까?"
+            }
+          ]
+        },
+        {
+          "readingRef": "くに",
+          "word": "島国",
+          "wordReading": "しまぐに",
+          "meaningsKo": [
+            "도서국"
+          ],
+          "examples": [
+            {
+              "sentence": "{日本|にほん}は{{島国}}です。",
+              "sentenceTranslationKo": "일본은 도서국입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "土",
+      "meaningKo": "흙 토 — 흙, 땅",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ト"
+        },
+        {
+          "type": "on",
+          "reading": "ド"
+        },
+        {
+          "type": "kun",
+          "reading": "つち"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ド",
+          "word": "土曜日",
+          "wordReading": "どようび",
+          "meaningsKo": [
+            "토요일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{土曜日}}に{家族|かぞく}と{出|で}かけます。",
+              "sentenceTranslationKo": "토요일에 가족과 외출합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ド",
+          "word": "土木",
+          "wordReading": "どぼく",
+          "meaningsKo": [
+            "토목",
+            "건설"
+          ],
+          "examples": [
+            {
+              "sentence": "{兄|あに}は{{土木}}{工事|こうじ}の{現場|げんば}で{働|はたら}いています。",
+              "sentenceTranslationKo": "형은 토목 공사 현장에서 일하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ド",
+          "word": "国土",
+          "wordReading": "こくど",
+          "meaningsKo": [
+            "국토"
+          ],
+          "examples": [
+            {
+              "sentence": "{日本|にほん}は{狭|せま}い{{国土}}に{多|おお}くの{人|ひと}が{住|す}んでいます。",
+              "sentenceTranslationKo": "일본은 좁은 국토에 많은 사람이 살고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ド",
+          "word": "本土",
+          "wordReading": "ほんど",
+          "meaningsKo": [
+            "본토"
+          ],
+          "examples": [
+            {
+              "sentence": "{離島|りとう}から{{本土}}へ{船|ふね}で{帰|かえ}りました。",
+              "sentenceTranslationKo": "외딴 섬에서 본토로 배로 돌아왔습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ト",
+          "word": "土地",
+          "wordReading": "とち",
+          "meaningsKo": [
+            "땅",
+            "부지"
+          ],
+          "examples": [
+            {
+              "sentence": "この{{土地}}は{昔|むかし}{田|た}んぼでした。",
+              "sentenceTranslationKo": "이 땅은 옛날에 논이었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "つち",
+          "word": "土",
+          "wordReading": "つち",
+          "meaningsKo": [
+            "흙",
+            "땅"
+          ],
+          "examples": [
+            {
+              "sentence": "{庭|にわ}の{{土}}に{種|たね}をまきました。",
+              "sentenceTranslationKo": "정원의 흙에 씨를 뿌렸습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "つち",
+          "word": "土色",
+          "wordReading": "つちいろ",
+          "meaningsKo": [
+            "황토색"
+          ],
+          "examples": [
+            {
+              "sentence": "{病気|びょうき}で{顔|かお}が{{土色}}になりました。",
+              "sentenceTranslationKo": "병으로 얼굴이 황토색이 되었습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "外",
+      "meaningKo": "바깥 외 — 바깥, 외부",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ガイ"
+        },
+        {
+          "type": "on",
+          "reading": "ゲ"
+        },
+        {
+          "type": "kun",
+          "reading": "そと"
+        },
+        {
+          "type": "kun",
+          "reading": "と"
+        },
+        {
+          "type": "kun",
+          "reading": "はずす"
+        },
+        {
+          "type": "kun",
+          "reading": "はずれる"
+        },
+        {
+          "type": "kun",
+          "reading": "ほか"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ガイ",
+          "word": "外国",
+          "wordReading": "がいこく",
+          "meaningsKo": [
+            "외국"
+          ],
+          "examples": [
+            {
+              "sentence": "{将来|しょうらい}{{外国}}で{働|はたら}きたいです。",
+              "sentenceTranslationKo": "장래에 외국에서 일하고 싶습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ガイ",
+          "word": "海外",
+          "wordReading": "かいがい",
+          "meaningsKo": [
+            "해외"
+          ],
+          "examples": [
+            {
+              "sentence": "{初|はじ}めて{{海外}}{旅行|りょこう}に{行|い}きました。",
+              "sentenceTranslationKo": "처음으로 해외 여행을 갔습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゲ",
+          "word": "外科",
+          "wordReading": "げか",
+          "meaningsKo": [
+            "외과"
+          ],
+          "examples": [
+            {
+              "sentence": "{祖父|そふ}は{{外科}}の{医者|いしゃ}です。",
+              "sentenceTranslationKo": "할아버지는 외과 의사입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "大",
+      "meaningKo": "클 대 — 크다",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "タイ"
+        },
+        {
+          "type": "on",
+          "reading": "ダイ"
+        },
+        {
+          "type": "kun",
+          "reading": "おおいに"
+        },
+        {
+          "type": "kun",
+          "reading": "おお"
+        },
+        {
+          "type": "kun",
+          "reading": "おおきい"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ダイ",
+          "word": "大学",
+          "wordReading": "だいがく",
+          "meaningsKo": [
+            "대학"
+          ],
+          "examples": [
+            {
+              "sentence": "{兄|あに}は{東京|とうきょう}の{{大学}}に{通|かよ}っています。",
+              "sentenceTranslationKo": "형은 도쿄의 대학에 다니고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ダイ",
+          "word": "大地",
+          "wordReading": "だいち",
+          "meaningsKo": [
+            "대지"
+          ],
+          "examples": [
+            {
+              "sentence": "{雨|あめ}が{{大地}}をうるおします。",
+              "sentenceTranslationKo": "비가 대지를 적십니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "タイ",
+          "word": "大会",
+          "wordReading": "たいかい",
+          "meaningsKo": [
+            "대회"
+          ],
+          "examples": [
+            {
+              "sentence": "{来週|らいしゅう}サッカーの{{大会}}があります。",
+              "sentenceTranslationKo": "다음 주에 축구 대회가 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "おお",
+          "word": "大雨",
+          "wordReading": "おおあめ",
+          "meaningsKo": [
+            "큰비",
+            "폭우"
+          ],
+          "examples": [
+            {
+              "sentence": "{{大雨}}で{電車|でんしゃ}が{止|と}まりました。",
+              "sentenceTranslationKo": "폭우로 전철이 멈췄습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "おお",
+          "word": "大昔",
+          "wordReading": "おおむかし",
+          "meaningsKo": [
+            "먼옛날"
+          ],
+          "examples": [
+            {
+              "sentence": "{{大昔}}この{町|まち}に{城|しろ}がありました。",
+              "sentenceTranslationKo": "먼 옛날 이 동네에 성이 있었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "おお",
+          "word": "大",
+          "wordReading": "おお",
+          "meaningsKo": [
+            "크다",
+            "큰"
+          ],
+          "examples": [
+            {
+              "sentence": "{外|そと}で{{大}}きな{音|おと}がしました。",
+              "sentenceTranslationKo": "밖에서 큰 소리가 났습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "おおきい",
+          "word": "大きい",
+          "wordReading": "おおきい",
+          "meaningsKo": [
+            "크다"
+          ],
+          "examples": [
+            {
+              "sentence": "あの{建物|たてもの}はとても{{大きい}}です。",
+              "sentenceTranslationKo": "저 건물은 아주 큽니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ダイ",
+          "word": "大人",
+          "wordReading": "おとな",
+          "meaningsKo": [
+            "어른",
+            "성인"
+          ],
+          "examples": [
+            {
+              "sentence": "{{大人}}になったら{自分|じぶん}で{決|き}められます。",
+              "sentenceTranslationKo": "어른이 되면 스스로 결정할 수 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "天",
+      "meaningKo": "하늘 천 — 하늘",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "テン"
+        },
+        {
+          "type": "kun",
+          "reading": "あま"
+        },
+        {
+          "type": "kun",
+          "reading": "あまつ"
+        },
+        {
+          "type": "kun",
+          "reading": "あめ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "テン",
+          "word": "天下",
+          "wordReading": "てんか",
+          "meaningsKo": [
+            "천하"
+          ],
+          "examples": [
+            {
+              "sentence": "{戦国|せんごく}{時代|じだい}に{{天下}}を{取|と}った{武将|ぶしょう}がいます。",
+              "sentenceTranslationKo": "전국 시대에 천하를 차지한 무장이 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "テン",
+          "word": "天然",
+          "wordReading": "てんねん",
+          "meaningsKo": [
+            "천연"
+          ],
+          "examples": [
+            {
+              "sentence": "この{化粧水|けしょうすい}は{{天然}}{素材|そざい}です。",
+              "sentenceTranslationKo": "이 화장수는 천연 소재입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "あめ",
+          "word": "天地",
+          "wordReading": "あめつち",
+          "meaningsKo": [
+            "천지"
+          ],
+          "examples": [
+            {
+              "sentence": "古い物語に{{天地}}を{創|つく}る{話|はなし}があります。",
+              "sentenceTranslationKo": "옛이야기에 천지를 만드는 이야기가 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "あま",
+          "word": "天下",
+          "wordReading": "あまくだ",
+          "meaningsKo": [
+            "천하"
+          ],
+          "examples": [
+            {
+              "sentence": "{役人|やくにん}の{{天下}}りが{問題|もんだい}になっています。",
+              "sentenceTranslationKo": "관료의 낙하산 인사가 문제가 되고 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "女",
+      "meaningKo": "계집 녀 — 여자",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジョ"
+        },
+        {
+          "type": "on",
+          "reading": "ニョ"
+        },
+        {
+          "type": "on",
+          "reading": "ニョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "おんな"
+        },
+        {
+          "type": "kun",
+          "reading": "め"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ジョ",
+          "word": "男女",
+          "wordReading": "だんじょ",
+          "meaningsKo": [
+            "남녀"
+          ],
+          "examples": [
+            {
+              "sentence": "この{学校|がっこう}は{{男女}}{共学|きょうがく}です。",
+              "sentenceTranslationKo": "이 학교는 남녀공학입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジョ",
+          "word": "女子",
+          "wordReading": "じょし",
+          "meaningsKo": [
+            "여자",
+            "여성"
+          ],
+          "examples": [
+            {
+              "sentence": "{{女子}}{大学|だいがく}に{合格|ごうかく}しました。",
+              "sentenceTranslationKo": "여자대학에 합격했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジョ",
+          "word": "少女",
+          "wordReading": "しょうじょ",
+          "meaningsKo": [
+            "소녀"
+          ],
+          "examples": [
+            {
+              "sentence": "{公園|こうえん}で{{少女}}が{遊|あそ}んでいます。",
+              "sentenceTranslationKo": "공원에서 소녀가 놀고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ニョ",
+          "word": "善男善女",
+          "wordReading": "ぜんなんぜんにょ",
+          "meaningsKo": [
+            "착한남녀"
+          ],
+          "examples": [
+            {
+              "sentence": "お{寺|てら}に{{善男善女}}が{集|あつ}まりました。",
+              "sentenceTranslationKo": "절에 착한 남녀가 모였습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ニョ",
+          "word": "女房",
+          "wordReading": "にょうぼう",
+          "meaningsKo": [
+            "아내"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{{女房}}{思|おも}いの{人|ひと}です。",
+              "sentenceTranslationKo": "그는 아내를 아끼는 사람입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "おんな",
+          "word": "女",
+          "wordReading": "おんな",
+          "meaningsKo": [
+            "여자",
+            "여성"
+          ],
+          "examples": [
+            {
+              "sentence": "あの{{女}}の{人|ひと}は{先生|せんせい}です。",
+              "sentenceTranslationKo": "저 여자분은 선생님입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "おんな",
+          "word": "女心",
+          "wordReading": "おんなごころ",
+          "meaningsKo": [
+            "여심",
+            "여자마음"
+          ],
+          "examples": [
+            {
+              "sentence": "{{女心}}は{秋|あき}の{空|そら}と{言|い}います。",
+              "sentenceTranslationKo": "여심은 가을 하늘과 같다고 합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "め",
+          "word": "女々",
+          "wordReading": "めめ",
+          "meaningsKo": [
+            "여자다운"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{{女々}}しい{態度|たいど}を{取|と}りました。",
+              "sentenceTranslationKo": "그는 여자다운 태도를 취했습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "子",
+      "meaningKo": "아들 자 — 아이, 자식",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シ"
+        },
+        {
+          "type": "on",
+          "reading": "ス"
+        },
+        {
+          "type": "on",
+          "reading": "ツ"
+        },
+        {
+          "type": "kun",
+          "reading": "こ"
+        },
+        {
+          "type": "kun",
+          "reading": "ね"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "シ",
+          "word": "男子",
+          "wordReading": "だんし",
+          "meaningsKo": [
+            "남자",
+            "남학생"
+          ],
+          "examples": [
+            {
+              "sentence": "この{学校|がっこう}には{{男子}}{学生|がくせい}が{多|おお}いです。",
+              "sentenceTranslationKo": "이 학교에는 남학생이 많습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "シ",
+          "word": "女子",
+          "wordReading": "じょし",
+          "meaningsKo": [
+            "여자",
+            "여성"
+          ],
+          "examples": [
+            {
+              "sentence": "{妹|いもうと}は{{女子}}{校|こう}に{通|かよ}っています。",
+              "sentenceTranslationKo": "여동생은 여자고에 다니고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "シ",
+          "word": "子宮",
+          "wordReading": "しきゅう",
+          "meaningsKo": [
+            "자궁"
+          ],
+          "examples": [
+            {
+              "sentence": "{{子宮}}の{病気|びょうき}で{病院|びょういん}に{行|い}きました。",
+              "sentenceTranslationKo": "자궁 질병으로 병원에 갔습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "シ",
+          "word": "分子",
+          "wordReading": "ぶんし",
+          "meaningsKo": [
+            "분자"
+          ],
+          "examples": [
+            {
+              "sentence": "{水|みず}の{{分子}}は{H|エイチ}{2|ツー}{O|オー}です。",
+              "sentenceTranslationKo": "물의 분자는 H2O입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ス",
+          "word": "椅子",
+          "wordReading": "いす",
+          "meaningsKo": [
+            "의자"
+          ],
+          "examples": [
+            {
+              "sentence": "この{{椅子}}はとても{座|すわ}り{心地|ごこち}がいいです。",
+              "sentenceTranslationKo": "이 의자는 아주 앉기 편합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ス",
+          "word": "様子",
+          "wordReading": "ようす",
+          "meaningsKo": [
+            "모양",
+            "상태"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}の{{様子}}が{少|すこ}し{変|へん}でした。",
+              "sentenceTranslationKo": "그의 모습이 조금 이상했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "こ",
+          "word": "子",
+          "wordReading": "こ",
+          "meaningsKo": [
+            "아이"
+          ],
+          "examples": [
+            {
+              "sentence": "あの{{子}}はとても{元気|げんき}です。",
+              "sentenceTranslationKo": "저 아이는 아주 활기찹니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "こ",
+          "word": "子供",
+          "wordReading": "こども",
+          "meaningsKo": [
+            "아이",
+            "어린이"
+          ],
+          "examples": [
+            {
+              "sentence": "{公園|こうえん}で{{子供}}たちが{遊|あそ}んでいます。",
+              "sentenceTranslationKo": "공원에서 아이들이 놀고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "こ",
+          "word": "親子",
+          "wordReading": "おやこ",
+          "meaningsKo": [
+            "부모자식"
+          ],
+          "examples": [
+            {
+              "sentence": "{{親子}}でラーメンを{食|た}べに{行|い}きました。",
+              "sentenceTranslationKo": "부모와 자식이 라멘을 먹으러 갔습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "学",
+      "meaningKo": "배울 학 — 배우다, 학문",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ガク"
+        },
+        {
+          "type": "kun",
+          "reading": "まなぶ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ガク",
+          "word": "大学",
+          "wordReading": "だいがく",
+          "meaningsKo": [
+            "대학"
+          ],
+          "examples": [
+            {
+              "sentence": "{{大学}}{生活|せいかつ}を{楽|たの}しんでいます。",
+              "sentenceTranslationKo": "대학 생활을 즐기고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ガク",
+          "word": "学生",
+          "wordReading": "がくせい",
+          "meaningsKo": [
+            "학생"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}はまだ{{学生}}です。",
+              "sentenceTranslationKo": "그는 아직 학생입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ガク",
+          "word": "学会",
+          "wordReading": "がっかい",
+          "meaningsKo": [
+            "학회"
+          ],
+          "examples": [
+            {
+              "sentence": "{先生|せんせい}は{{学会}}で{発表|はっぴょう}しました。",
+              "sentenceTranslationKo": "선생님은 학회에서 발표했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ガク",
+          "word": "学習",
+          "wordReading": "がくしゅう",
+          "meaningsKo": [
+            "학습"
+          ],
+          "examples": [
+            {
+              "sentence": "{毎日|まいにち}{{学習}}するのが{大切|たいせつ}です。",
+              "sentenceTranslationKo": "매일 학습하는 것이 중요합니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "小",
+      "meaningKo": "작을 소 — 작다",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "kun",
+          "reading": "お"
+        },
+        {
+          "type": "kun",
+          "reading": "こ"
+        },
+        {
+          "type": "kun",
+          "reading": "さ"
+        },
+        {
+          "type": "kun",
+          "reading": "ちいさい"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ショウ",
+          "word": "小説",
+          "wordReading": "しょうせつ",
+          "meaningsKo": [
+            "소설"
+          ],
+          "examples": [
+            {
+              "sentence": "{昨日|きのう}おもしろい{{小説}}を{読|よ}みました。",
+              "sentenceTranslationKo": "어제 재미있는 소설을 읽었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ショウ",
+          "word": "小学生",
+          "wordReading": "しょうがくせい",
+          "meaningsKo": [
+            "초등학생"
+          ],
+          "examples": [
+            {
+              "sentence": "{弟|おとうと}はまだ{{小学生}}です。",
+              "sentenceTranslationKo": "남동생은 아직 초등학생입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "こ",
+          "word": "小鳥",
+          "wordReading": "ことり",
+          "meaningsKo": [
+            "작은새",
+            "소조"
+          ],
+          "examples": [
+            {
+              "sentence": "{庭|にわ}で{{小鳥}}が{鳴|な}いています。",
+              "sentenceTranslationKo": "정원에서 작은 새가 울고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "こ",
+          "word": "小麦",
+          "wordReading": "こむぎ",
+          "meaningsKo": [
+            "밀"
+          ],
+          "examples": [
+            {
+              "sentence": "パンは{{小麦}}{粉|こ}から{作|つく}ります。",
+              "sentenceTranslationKo": "빵은 밀가루로 만듭니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "お",
+          "word": "小川",
+          "wordReading": "おがわ",
+          "meaningsKo": [
+            "작은개울"
+          ],
+          "examples": [
+            {
+              "sentence": "{村|むら}の{{小川}}で{魚|さかな}が{泳|およ}いでいます。",
+              "sentenceTranslationKo": "마을의 작은 개울에서 물고기가 헤엄치고 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "山",
+      "meaningKo": "메 산 — 산",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サン"
+        },
+        {
+          "type": "on",
+          "reading": "セン"
+        },
+        {
+          "type": "kun",
+          "reading": "やま"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "サン",
+          "word": "山林",
+          "wordReading": "さんりん",
+          "meaningsKo": [
+            "산림"
+          ],
+          "examples": [
+            {
+              "sentence": "{祖父|そふ}は{{山林}}を{管理|かんり}しています。",
+              "sentenceTranslationKo": "할아버지는 산림을 관리하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "サン",
+          "word": "高山",
+          "wordReading": "こうざん",
+          "meaningsKo": [
+            "높은산",
+            "고산"
+          ],
+          "examples": [
+            {
+              "sentence": "{{高山}}{植物|しょくぶつ}を{観察|かんさつ}しに{行|い}きました。",
+              "sentenceTranslationKo": "고산 식물을 관찰하러 갔습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "やま",
+          "word": "山",
+          "wordReading": "やま",
+          "meaningsKo": [
+            "산"
+          ],
+          "examples": [
+            {
+              "sentence": "{毎週|まいしゅう}{{山}}に{登|のぼ}っています。",
+              "sentenceTranslationKo": "매주 산에 오르고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "やま",
+          "word": "山登",
+          "wordReading": "やまのぼ",
+          "meaningsKo": [
+            "등산"
+          ],
+          "examples": [
+            {
+              "sentence": "{週末|しゅうまつ}{家族|かぞく}で{{山登}}りに{行|い}きました。",
+              "sentenceTranslationKo": "주말에 가족과 등산을 갔습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "川",
+      "meaningKo": "내 천 — 강, 하천, 시내",
+      "strokeCount": 3,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "セン"
+        },
+        {
+          "type": "kun",
+          "reading": "かわ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "セン",
+          "word": "山川",
+          "wordReading": "さんせん",
+          "meaningsKo": [
+            "산천"
+          ],
+          "examples": [
+            {
+              "sentence": "{{山川}}の{美|うつく}しい{景色|けしき}を{楽|たの}しみました。",
+              "sentenceTranslationKo": "산천의 아름다운 풍경을 즐겼습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "セン",
+          "word": "河川",
+          "wordReading": "かせん",
+          "meaningsKo": [
+            "하천"
+          ],
+          "examples": [
+            {
+              "sentence": "{台風|たいふう}で{{河川}}が{増水|ぞうすい}しました。",
+              "sentenceTranslationKo": "태풍으로 하천이 불어났습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "かわ",
+          "word": "川",
+          "wordReading": "かわ",
+          "meaningsKo": [
+            "강",
+            "개울"
+          ],
+          "examples": [
+            {
+              "sentence": "{夏|なつ}は{{川}}で{泳|およ}ぐのが{楽|たの}しいです。",
+              "sentenceTranslationKo": "여름은 강에서 헤엄치는 것이 즐겁습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "かわ",
+          "word": "川辺",
+          "wordReading": "かわべ",
+          "meaningsKo": [
+            "강가"
+          ],
+          "examples": [
+            {
+              "sentence": "{{川辺}}を{歩|ある}くのが{好|す}きです。",
+              "sentenceTranslationKo": "강가를 걷는 것을 좋아합니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "左",
+      "meaningKo": "왼 좌 — 왼쪽",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サ"
+        },
+        {
+          "type": "on",
+          "reading": "シャ"
+        },
+        {
+          "type": "kun",
+          "reading": "ひだり"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "サ",
+          "word": "左右",
+          "wordReading": "さゆう",
+          "meaningsKo": [
+            "좌우"
+          ],
+          "examples": [
+            {
+              "sentence": "{道|みち}を{渡|わた}る{前|まえ}に{{左右}}を{確認|かくにん}しましょう。",
+              "sentenceTranslationKo": "길을 건너기 전에 좌우를 확인합시다."
+            }
+          ]
+        },
+        {
+          "readingRef": "サ",
+          "word": "左翼",
+          "wordReading": "さよく",
+          "meaningsKo": [
+            "좌익"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{政治|せいじ}の{{左翼}}{思想|しそう}を{持|も}っています。",
+              "sentenceTranslationKo": "그는 정치의 좌익 사상을 가지고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "サ",
+          "word": "左派",
+          "wordReading": "さは",
+          "meaningsKo": [
+            "좌파"
+          ],
+          "examples": [
+            {
+              "sentence": "この{党|とう}は{{左派}}と{呼|よ}ばれています。",
+              "sentenceTranslationKo": "이 당은 좌파라고 불립니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひだり",
+          "word": "左手",
+          "wordReading": "ひだりて",
+          "meaningsKo": [
+            "왼손"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{{左手}}でペンを{使|つか}います。",
+              "sentenceTranslationKo": "그는 왼손으로 펜을 씁니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひだり",
+          "word": "左側",
+          "wordReading": "ひだりがわ",
+          "meaningsKo": [
+            "왼쪽"
+          ],
+          "examples": [
+            {
+              "sentence": "{銀行|ぎんこう}は{道|みち}の{{左側}}にあります。",
+              "sentenceTranslationKo": "은행은 길의 왼쪽에 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "年",
+      "meaningKo": "해 년 — 해, 연도",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ネン"
+        },
+        {
+          "type": "kun",
+          "reading": "とし"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ネン",
+          "word": "三年",
+          "wordReading": "さんねん",
+          "meaningsKo": [
+            "3년"
+          ],
+          "examples": [
+            {
+              "sentence": "{兄|あに}は{大学|だいがく}{{三年}}{生|せい}です。",
+              "sentenceTranslationKo": "형은 대학 3학년입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ネン",
+          "word": "少年",
+          "wordReading": "しょうねん",
+          "meaningsKo": [
+            "소년"
+          ],
+          "examples": [
+            {
+              "sentence": "あの{{少年}}は{元気|げんき}に{走|はし}っています。",
+              "sentenceTranslationKo": "저 소년은 활기차게 달리고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "とし",
+          "word": "毎年",
+          "wordReading": "まいとし",
+          "meaningsKo": [
+            "매년"
+          ],
+          "examples": [
+            {
+              "sentence": "{{毎年}}{夏|なつ}に{家族|かぞく}で{旅行|りょこう}します。",
+              "sentenceTranslationKo": "매년 여름에 가족과 여행합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "とし",
+          "word": "年上",
+          "wordReading": "としうえ",
+          "meaningsKo": [
+            "나이 많은",
+            "연상"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼女|かのじょ}は{私|わたし}より{二|に}つ{{年上}}です。",
+              "sentenceTranslationKo": "그녀는 저보다 두 살 연상입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "とし",
+          "word": "年下",
+          "wordReading": "としした",
+          "meaningsKo": [
+            "나이 적은",
+            "연하"
+          ],
+          "examples": [
+            {
+              "sentence": "{弟|おとうと}は{私|わたし}より{三|みっ}つ{{年下}}です。",
+              "sentenceTranslationKo": "남동생은 저보다 세 살 연하입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "後",
+      "meaningKo": "뒤 후 — 뒤, 이후, 나중",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "on",
+          "reading": "ゴ"
+        },
+        {
+          "type": "kun",
+          "reading": "あと"
+        },
+        {
+          "type": "kun",
+          "reading": "うしろ"
+        },
+        {
+          "type": "kun",
+          "reading": "おくれる"
+        },
+        {
+          "type": "kun",
+          "reading": "のち"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ゴ",
+          "word": "午後",
+          "wordReading": "ごご",
+          "meaningsKo": [
+            "오후"
+          ],
+          "examples": [
+            {
+              "sentence": "{{午後}}は{雨|あめ}が{降|ふ}るそうです。",
+              "sentenceTranslationKo": "오후는 비가 온다고 합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゴ",
+          "word": "最後",
+          "wordReading": "さいご",
+          "meaningsKo": [
+            "마지막"
+          ],
+          "examples": [
+            {
+              "sentence": "{{最後}}までがんばりましょう。",
+              "sentenceTranslationKo": "마지막까지 힘냅시다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コウ",
+          "word": "後半",
+          "wordReading": "こうはん",
+          "meaningsKo": [
+            "후반"
+          ],
+          "examples": [
+            {
+              "sentence": "{試合|しあい}の{{後半}}で{点|てん}を{取|と}りました。",
+              "sentenceTranslationKo": "경기 후반에 점수를 냈습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コウ",
+          "word": "後悔",
+          "wordReading": "こうかい",
+          "meaningsKo": [
+            "후회하다",
+            "뉘우치다"
+          ],
+          "examples": [
+            {
+              "sentence": "{今|いま}{勉強|べんきょう}しないと{あとで|あとで}{{後悔}}します。",
+              "sentenceTranslationKo": "지금 공부하지 않으면 나중에 후회합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コウ",
+          "word": "後輩",
+          "wordReading": "こうはい",
+          "meaningsKo": [
+            "후배"
+          ],
+          "examples": [
+            {
+              "sentence": "{大学|だいがく}の{{後輩}}とご{飯|はん}を{食|た}べました。",
+              "sentenceTranslationKo": "대학 후배와 밥을 먹었습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "日",
+      "meaningKo": "날 일 — 하루, 날, 태양",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジツ"
+        },
+        {
+          "type": "on",
+          "reading": "ニチ"
+        },
+        {
+          "type": "kun",
+          "reading": "か"
+        },
+        {
+          "type": "kun",
+          "reading": "び"
+        },
+        {
+          "type": "kun",
+          "reading": "ひ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ニチ",
+          "word": "一日",
+          "wordReading": "いちにち",
+          "meaningsKo": [
+            "하루",
+            "1일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{一日}}{中|じゅう}{家|いえ}にいました。",
+              "sentenceTranslationKo": "하루 종일 집에 있었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ニチ",
+          "word": "毎日",
+          "wordReading": "まいにち",
+          "meaningsKo": [
+            "매일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{毎日}}{運動|うんどう}しています。",
+              "sentenceTranslationKo": "매일 운동하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジツ",
+          "word": "休日",
+          "wordReading": "きゅうじつ",
+          "meaningsKo": [
+            "휴일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{休日}}は{家族|かぞく}とゆっくり{過|す}ごします。",
+              "sentenceTranslationKo": "휴일은 가족과 느긋하게 보냅니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジツ",
+          "word": "平日",
+          "wordReading": "へいじつ",
+          "meaningsKo": [
+            "평일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{平日}}は{忙|いそが}しいです。",
+              "sentenceTranslationKo": "평일은 바쁩니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひ",
+          "word": "月日",
+          "wordReading": "つきひ",
+          "meaningsKo": [
+            "세월"
+          ],
+          "examples": [
+            {
+              "sentence": "{{月日}}が{過|す}ぎるのは{早|はや}いです。",
+              "sentenceTranslationKo": "세월이 지나는 것은 빠릅니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひ",
+          "word": "朝日",
+          "wordReading": "あさひ",
+          "meaningsKo": [
+            "아침 해"
+          ],
+          "examples": [
+            {
+              "sentence": "{{朝日}}が{窓|まど}から{差|さ}し{込|こ}みます。",
+              "sentenceTranslationKo": "아침 해가 창문에서 비쳐듭니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひ",
+          "word": "夕日",
+          "wordReading": "ゆうひ",
+          "meaningsKo": [
+            "저녁 해"
+          ],
+          "examples": [
+            {
+              "sentence": "{海|うみ}に{沈|しず}む{{夕日}}はとてもきれいです。",
+              "sentenceTranslationKo": "바다에 지는 저녁 해는 매우 아름답습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "か",
+          "word": "三日",
+          "wordReading": "みっか",
+          "meaningsKo": [
+            "사흘",
+            "3일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{三日}}{後|ご}にまた{会|あ}いましょう。",
+              "sentenceTranslationKo": "사흘 뒤에 다시 만납시다."
+            }
+          ]
+        },
+        {
+          "readingRef": "か",
+          "word": "七日",
+          "wordReading": "なのか",
+          "meaningsKo": [
+            "이레",
+            "7일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{七日}}{後|ご}にまた{会|あ}いましょう。",
+              "sentenceTranslationKo": "이레 뒤에 다시 만납시다."
+            }
+          ]
+        },
+        {
+          "readingRef": "か",
+          "word": "二日",
+          "wordReading": "ふつか",
+          "meaningsKo": [
+            "이틀",
+            "2일"
+          ],
+          "examples": [
+            {
+              "sentence": "{熱|ねつ}が{{二日}}{続|つづ}きました。",
+              "sentenceTranslationKo": "열이 이틀 동안 이어졌습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "時",
+      "meaningKo": "때 시 — 시간, 때",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ジ"
+        },
+        {
+          "type": "kun",
+          "reading": "どき"
+        },
+        {
+          "type": "kun",
+          "reading": "とき"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ジ",
+          "word": "時間",
+          "wordReading": "じかん",
+          "meaningsKo": [
+            "시간"
+          ],
+          "examples": [
+            {
+              "sentence": "{今|いま}{何|なん}{{時間}}ありますか。",
+              "sentenceTranslationKo": "지금 몇 시간 있습니까?"
+            }
+          ]
+        },
+        {
+          "readingRef": "ジ",
+          "word": "時代",
+          "wordReading": "じだい",
+          "meaningsKo": [
+            "시대"
+          ],
+          "examples": [
+            {
+              "sentence": "{平安|へいあん}{{時代}}の{文学|ぶんがく}を{勉強|べんきょう}しています。",
+              "sentenceTranslationKo": "헤이안 시대의 문학을 공부하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "とき",
+          "word": "時",
+          "wordReading": "とき",
+          "meaningsKo": [
+            "때",
+            "시간"
+          ],
+          "examples": [
+            {
+              "sentence": "{忙|いそが}しい{{時}}でも{食事|しょくじ}は{大切|たいせつ}です。",
+              "sentenceTranslationKo": "바쁜 때라도 식사는 중요합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "とき",
+          "word": "時々",
+          "wordReading": "ときどき",
+          "meaningsKo": [
+            "때때로",
+            "가끔"
+          ],
+          "examples": [
+            {
+              "sentence": "{{時々}}{母|はは}に{電話|でんわ}します。",
+              "sentenceTranslationKo": "가끔 어머니께 전화합니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "書",
+      "meaningKo": "글 서 — 글, 쓰다",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショ"
+        },
+        {
+          "type": "kun",
+          "reading": "がき"
+        },
+        {
+          "type": "kun",
+          "reading": "かく"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ショ",
+          "word": "読書",
+          "wordReading": "どくしょ",
+          "meaningsKo": [
+            "독서"
+          ],
+          "examples": [
+            {
+              "sentence": "{秋|あき}は{{読書}}に{良|よ}い{季節|きせつ}です。",
+              "sentenceTranslationKo": "가을은 독서하기 좋은 계절입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ショ",
+          "word": "書店",
+          "wordReading": "しょてん",
+          "meaningsKo": [
+            "서점"
+          ],
+          "examples": [
+            {
+              "sentence": "{駅前|えきまえ}の{{書店}}で{本|ほん}を{買|か}いました。",
+              "sentenceTranslationKo": "역 앞 서점에서 책을 샀습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "月",
+      "meaningKo": "달 월 — 달, 월",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ガツ"
+        },
+        {
+          "type": "on",
+          "reading": "ゲツ"
+        },
+        {
+          "type": "kun",
+          "reading": "つき"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ゲツ",
+          "word": "月曜日",
+          "wordReading": "げつようび",
+          "meaningsKo": [
+            "월요일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{月曜日}}から{新|あたら}しい{授業|じゅぎょう}が{始|はじ}まります。",
+              "sentenceTranslationKo": "월요일부터 새 수업이 시작됩니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゲツ",
+          "word": "今月",
+          "wordReading": "こんげつ",
+          "meaningsKo": [
+            "이번 달"
+          ],
+          "examples": [
+            {
+              "sentence": "{{今月}}は{忙|いそが}しいです。",
+              "sentenceTranslationKo": "이번 달은 바쁩니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゲツ",
+          "word": "先月",
+          "wordReading": "せんげつ",
+          "meaningsKo": [
+            "지난달"
+          ],
+          "examples": [
+            {
+              "sentence": "{{先月}}{京都|きょうと}へ{行|い}きました。",
+              "sentenceTranslationKo": "지난달에 교토에 갔습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゲツ",
+          "word": "来月",
+          "wordReading": "らいげつ",
+          "meaningsKo": [
+            "내월"
+          ],
+          "examples": [
+            {
+              "sentence": "{{来月}}{試験|しけん}があります。",
+              "sentenceTranslationKo": "내월에 시험이 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ガツ",
+          "word": "一月",
+          "wordReading": "いちがつ",
+          "meaningsKo": [
+            "1월"
+          ],
+          "examples": [
+            {
+              "sentence": "{{一月}}に{雪|ゆき}が{降|ふ}ります。",
+              "sentenceTranslationKo": "1월에 눈이 내립니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ガツ",
+          "word": "三月",
+          "wordReading": "さんがつ",
+          "meaningsKo": [
+            "3월"
+          ],
+          "examples": [
+            {
+              "sentence": "{日本|にほん}の{学校|がっこう}は{{三月}}に{卒業式|そつぎょうしき}があります。",
+              "sentenceTranslationKo": "일본 학교는 3월에 졸업식이 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ガツ",
+          "word": "九月",
+          "wordReading": "くがつ",
+          "meaningsKo": [
+            "9월"
+          ],
+          "examples": [
+            {
+              "sentence": "{{九月}}になって{秋|あき}を{感|かん}じます。",
+              "sentenceTranslationKo": "9월이 되어 가을을 느낍니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ガツ",
+          "word": "正月",
+          "wordReading": "しょうがつ",
+          "meaningsKo": [
+            "정월",
+            "1월"
+          ],
+          "examples": [
+            {
+              "sentence": "お{{正月}}は{家族|かぞく}と{過|す}ごします。",
+              "sentenceTranslationKo": "정월은 가족과 보냅니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "つき",
+          "word": "月",
+          "wordReading": "つき",
+          "meaningsKo": [
+            "달",
+            "월"
+          ],
+          "examples": [
+            {
+              "sentence": "{今夜|こんや}の{{月}}はとても{大|おお}きいです。",
+              "sentenceTranslationKo": "오늘 밤의 달은 아주 큽니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "つき",
+          "word": "月日",
+          "wordReading": "つきひ",
+          "meaningsKo": [
+            "세월"
+          ],
+          "examples": [
+            {
+              "sentence": "{長|なが}い{{月日}}が{過|す}ぎました。",
+              "sentenceTranslationKo": "긴 세월이 지났습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "つき",
+          "word": "三日月",
+          "wordReading": "みかづき",
+          "meaningsKo": [
+            "초승달"
+          ],
+          "examples": [
+            {
+              "sentence": "{今夜|こんや}は{きれい|きれい}な{{三日月}}が{見|み}えます。",
+              "sentenceTranslationKo": "오늘 밤은 예쁜 초승달이 보입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "木",
+      "meaningKo": "나무 목 — 나무",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ボク"
+        },
+        {
+          "type": "on",
+          "reading": "モク"
+        },
+        {
+          "type": "kun",
+          "reading": "き"
+        },
+        {
+          "type": "kun",
+          "reading": "こ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ボク",
+          "word": "大木",
+          "wordReading": "たいぼく",
+          "meaningsKo": [
+            "큰 나무"
+          ],
+          "examples": [
+            {
+              "sentence": "{公園|こうえん}に{古|ふる}い{{大木}}があります。",
+              "sentenceTranslationKo": "공원에 오래된 큰 나무가 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ボク",
+          "word": "土木",
+          "wordReading": "どぼく",
+          "meaningsKo": [
+            "토목",
+            "건설"
+          ],
+          "examples": [
+            {
+              "sentence": "{父|ちち}は{{土木}}{会社|かいしゃ}で{働|はたら}いています。",
+              "sentenceTranslationKo": "아버지는 토목 회사에서 일하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ボク",
+          "word": "高木",
+          "wordReading": "こうぼく",
+          "meaningsKo": [
+            "큰나무",
+            "교목"
+          ],
+          "examples": [
+            {
+              "sentence": "この{森|もり}には{多|おお}くの{{高木}}があります。",
+              "sentenceTranslationKo": "이 숲에는 많은 큰 나무가 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "モク",
+          "word": "木造",
+          "wordReading": "もくぞう",
+          "meaningsKo": [
+            "목조"
+          ],
+          "examples": [
+            {
+              "sentence": "{{木造}}の{家|いえ}は{暖|あたた}かいです。",
+              "sentenceTranslationKo": "목조 집은 따뜻합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "モク",
+          "word": "材木",
+          "wordReading": "ざいもく",
+          "meaningsKo": [
+            "목재",
+            "재목"
+          ],
+          "examples": [
+            {
+              "sentence": "{家|いえ}を{建|た}てるための{{材木}}を{買|か}いました。",
+              "sentenceTranslationKo": "집을 짓기 위한 목재를 샀습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "モク",
+          "word": "樹木",
+          "wordReading": "じゅもく",
+          "meaningsKo": [
+            "나무",
+            "수목"
+          ],
+          "examples": [
+            {
+              "sentence": "この{庭|にわ}には{多|おお}くの{{樹木}}があります。",
+              "sentenceTranslationKo": "이 정원에는 많은 나무가 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "モク",
+          "word": "木曜日",
+          "wordReading": "もくようび",
+          "meaningsKo": [
+            "목요일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{木曜日}}に{病院|びょういん}に{行|い}きます。",
+              "sentenceTranslationKo": "목요일에 병원에 갑니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "き",
+          "word": "木",
+          "wordReading": "き",
+          "meaningsKo": [
+            "나무"
+          ],
+          "examples": [
+            {
+              "sentence": "{庭|にわ}の{{木}}が{大|おお}きくなりました。",
+              "sentenceTranslationKo": "정원의 나무가 커졌습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "き",
+          "word": "並木",
+          "wordReading": "なみき",
+          "meaningsKo": [
+            "가로수"
+          ],
+          "examples": [
+            {
+              "sentence": "この{道|みち}は{桜|さくら}の{{並木}}できれいです。",
+              "sentenceTranslationKo": "이 길은 벚꽃 가로수로 아름답습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "き",
+          "word": "草木",
+          "wordReading": "くさき",
+          "meaningsKo": [
+            "초목",
+            "풀과나무"
+          ],
+          "examples": [
+            {
+              "sentence": "{春|はる}になると{{草木}}が{芽吹|めぶ}きます。",
+              "sentenceTranslationKo": "봄이 되면 초목이 싹틉니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "こ",
+          "word": "木枯",
+          "wordReading": "こが",
+          "meaningsKo": [
+            "목가을바람"
+          ],
+          "examples": [
+            {
+              "sentence": "{{木枯}}らしが{吹|ふ}く{季節|きせつ}になりました。",
+              "sentenceTranslationKo": "찬 바람이 부는 계절이 되었습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "本",
+      "meaningKo": "근본 본 — 근본, 책, 본래",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ホン"
+        },
+        {
+          "type": "kun",
+          "reading": "もと"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ホン",
+          "word": "本",
+          "wordReading": "ほん",
+          "meaningsKo": [
+            "책",
+            "권"
+          ],
+          "examples": [
+            {
+              "sentence": "{毎晩|まいばん}{寝|ね}る{前|まえ}に{{本}}を{読|よ}みます。",
+              "sentenceTranslationKo": "매일 밤 자기 전에 책을 읽습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ホン",
+          "word": "本名",
+          "wordReading": "ほんみょう",
+          "meaningsKo": [
+            "본명"
+          ],
+          "examples": [
+            {
+              "sentence": "{有名|ゆうめい}な{歌手|かしゅ}の{{本名}}を{知|し}っています。",
+              "sentenceTranslationKo": "유명한 가수의 본명을 알고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ホン",
+          "word": "本人",
+          "wordReading": "ほんにん",
+          "meaningsKo": [
+            "본인"
+          ],
+          "examples": [
+            {
+              "sentence": "{{本人}}{確認|かくにん}のため{身分証|みぶんしょう}を{見|み}せてください。",
+              "sentenceTranslationKo": "본인 확인을 위해 신분증을 보여주세요."
+            }
+          ]
+        },
+        {
+          "readingRef": "ホン",
+          "word": "鉛筆一本",
+          "wordReading": "えんぴついっぽん",
+          "meaningsKo": [
+            "연필한자루"
+          ],
+          "examples": [
+            {
+              "sentence": "{机|つくえ}の{上|うえ}に{{鉛筆一本}}{置|お}いてあります。",
+              "sentenceTranslationKo": "책상 위에 연필 한 자루 놓여 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "もと",
+          "word": "根本",
+          "wordReading": "ねもと",
+          "meaningsKo": [
+            "근본",
+            "밑"
+          ],
+          "examples": [
+            {
+              "sentence": "{問題|もんだい}の{{根本}}を{解決|かいけつ}しないといけません。",
+              "sentenceTranslationKo": "문제의 근본을 해결해야 합니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "来",
+      "meaningKo": "올 래 — 오다",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "タイ"
+        },
+        {
+          "type": "on",
+          "reading": "ライ"
+        },
+        {
+          "type": "kun",
+          "reading": "き"
+        },
+        {
+          "type": "kun",
+          "reading": "きたす"
+        },
+        {
+          "type": "kun",
+          "reading": "きたる"
+        },
+        {
+          "type": "kun",
+          "reading": "くる"
+        },
+        {
+          "type": "kun",
+          "reading": "こ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ライ",
+          "word": "未来",
+          "wordReading": "みらい",
+          "meaningsKo": [
+            "미래"
+          ],
+          "examples": [
+            {
+              "sentence": "{{未来}}の{自分|じぶん}に{手紙|てがみ}を{書|か}きました。",
+              "sentenceTranslationKo": "미래의 자신에게 편지를 썼습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ライ",
+          "word": "来年",
+          "wordReading": "らいねん",
+          "meaningsKo": [
+            "내년"
+          ],
+          "examples": [
+            {
+              "sentence": "{{来年}}{大学|だいがく}を{卒業|そつぎょう}します。",
+              "sentenceTranslationKo": "내년에 대학을 졸업합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ライ",
+          "word": "来月",
+          "wordReading": "らいげつ",
+          "meaningsKo": [
+            "내월"
+          ],
+          "examples": [
+            {
+              "sentence": "{{来月}}{京都|きょうと}へ{旅行|りょこう}に{行|い}きます。",
+              "sentenceTranslationKo": "내월에 교토로 여행을 갑니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "東",
+      "meaningKo": "동녘 동 — 동쪽",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "トウ"
+        },
+        {
+          "type": "kun",
+          "reading": "ひがし"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "トウ",
+          "word": "東洋",
+          "wordReading": "とうよう",
+          "meaningsKo": [
+            "동양"
+          ],
+          "examples": [
+            {
+              "sentence": "{{東洋}}の{文化|ぶんか}に{興味|きょうみ}があります。",
+              "sentenceTranslationKo": "동양 문화에 관심이 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "トウ",
+          "word": "東京",
+          "wordReading": "とうきょう",
+          "meaningsKo": [
+            "도쿄"
+          ],
+          "examples": [
+            {
+              "sentence": "{来年|らいねん}{{東京}}に{引|ひ}っ{越|こ}します。",
+              "sentenceTranslationKo": "내년에 도쿄로 이사합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひがし",
+          "word": "東日本",
+          "wordReading": "ひがしにほん",
+          "meaningsKo": [
+            "동일본"
+          ],
+          "examples": [
+            {
+              "sentence": "{{東日本}}は{雪|ゆき}が{多|おお}い{地域|ちいき}です。",
+              "sentenceTranslationKo": "동일본은 눈이 많은 지역입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひがし",
+          "word": "東",
+          "wordReading": "ひがし",
+          "meaningsKo": [
+            "동쪽",
+            "동"
+          ],
+          "examples": [
+            {
+              "sentence": "{太陽|たいよう}は{{東}}から{昇|のぼ}ります。",
+              "sentenceTranslationKo": "태양은 동쪽에서 떠오릅니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "校",
+      "meaningKo": "학교 교 — 학교",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キョウ"
+        },
+        {
+          "type": "on",
+          "reading": "コウ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "コウ",
+          "word": "学校",
+          "wordReading": "がっこう",
+          "meaningsKo": [
+            "학교"
+          ],
+          "examples": [
+            {
+              "sentence": "{毎日|まいにち}{自転車|じてんしゃ}で{{学校}}に{行|い}きます。",
+              "sentenceTranslationKo": "매일 자전거로 학교에 갑니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コウ",
+          "word": "校門",
+          "wordReading": "こうもん",
+          "meaningsKo": [
+            "교문"
+          ],
+          "examples": [
+            {
+              "sentence": "{先生|せんせい}が{{校門}}で{挨拶|あいさつ}しています。",
+              "sentenceTranslationKo": "선생님이 교문에서 인사하고 계십니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コウ",
+          "word": "校庭",
+          "wordReading": "こうてい",
+          "meaningsKo": [
+            "교정",
+            "운동장"
+          ],
+          "examples": [
+            {
+              "sentence": "{昼休|ひるやす}みに{{校庭}}で{遊|あそ}びます。",
+              "sentenceTranslationKo": "점심시간에 운동장에서 놉니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "母",
+      "meaningKo": "어미 모 — 어머니",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ボ"
+        },
+        {
+          "type": "kun",
+          "reading": "はは"
+        },
+        {
+          "type": "kun",
+          "reading": "も"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ボ",
+          "word": "父母",
+          "wordReading": "ふぼ",
+          "meaningsKo": [
+            "부모"
+          ],
+          "examples": [
+            {
+              "sentence": "{{父母}}に{感謝|かんしゃ}の{気持|きも}ちを{伝|つた}えました。",
+              "sentenceTranslationKo": "부모님께 감사한 마음을 전했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ボ",
+          "word": "良妻賢母",
+          "wordReading": "りょうさいけんぼ",
+          "meaningsKo": [
+            "현모양처"
+          ],
+          "examples": [
+            {
+              "sentence": "{昔|むかし}は{{良妻賢母}}という{言葉|ことば}がよく{使|つか}われました。",
+              "sentenceTranslationKo": "옛날에는 현모양처라는 말이 자주 쓰였습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ボ",
+          "word": "母体",
+          "wordReading": "ぼたい",
+          "meaningsKo": [
+            "모체"
+          ],
+          "examples": [
+            {
+              "sentence": "{赤|あか}ちゃんと{{母体}}の{健康|けんこう}が{大切|たいせつ}です。",
+              "sentenceTranslationKo": "아기와 모체의 건강이 중요합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ボ",
+          "word": "分母",
+          "wordReading": "ぶんぼ",
+          "meaningsKo": [
+            "분모"
+          ],
+          "examples": [
+            {
+              "sentence": "{算数|さんすう}で{{分母}}と{分子|ぶんし}を{習|なら}いました。",
+              "sentenceTranslationKo": "산수에서 분모와 분자를 배웠습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "はは",
+          "word": "母",
+          "wordReading": "はは",
+          "meaningsKo": [
+            "어머니",
+            "엄마"
+          ],
+          "examples": [
+            {
+              "sentence": "{{母}}は{毎日|まいにち}{料理|りょうり}を{作|つく}ってくれます。",
+              "sentenceTranslationKo": "어머니는 매일 요리를 만들어 주십니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "はは",
+          "word": "母親",
+          "wordReading": "ははおや",
+          "meaningsKo": [
+            "어머니"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}の{{母親}}はとてもやさしい{人|ひと}です。",
+              "sentenceTranslationKo": "그의 어머니는 아주 다정한 분입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "毎",
+      "meaningKo": "매양 매 — 매번, 늘",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "マイ"
+        },
+        {
+          "type": "kun",
+          "reading": "ごとに"
+        },
+        {
+          "type": "kun",
+          "reading": "ごと"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "マイ",
+          "word": "毎日",
+          "wordReading": "まいにち",
+          "meaningsKo": [
+            "매일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{毎日}}{日本語|にほんご}を{勉強|べんきょう}しています。",
+              "sentenceTranslationKo": "매일 일본어를 공부하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "マイ",
+          "word": "毎年",
+          "wordReading": "まいとし",
+          "meaningsKo": [
+            "매년"
+          ],
+          "examples": [
+            {
+              "sentence": "{{毎年}}お{正月|しょうがつ}に{家族|かぞく}が{集|あつ}まります。",
+              "sentenceTranslationKo": "매년 정월에 가족이 모입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "マイ",
+          "word": "毎月",
+          "wordReading": "まいつき",
+          "meaningsKo": [
+            "매달"
+          ],
+          "examples": [
+            {
+              "sentence": "{{毎月}}お{給料|きゅうりょう}{日|び}が{楽|たの}しみです。",
+              "sentenceTranslationKo": "매달 급료 날이 기대됩니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "気",
+      "meaningKo": "기운 기 — 기운, 정신, 기체",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キ"
+        },
+        {
+          "type": "on",
+          "reading": "ケ"
+        },
+        {
+          "type": "kun",
+          "reading": "き"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "キ",
+          "word": "天気",
+          "wordReading": "てんき",
+          "meaningsKo": [
+            "날씨"
+          ],
+          "examples": [
+            {
+              "sentence": "{今日|きょう}の{{天気}}はとてもいいです。",
+              "sentenceTranslationKo": "오늘 날씨는 아주 좋습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "キ",
+          "word": "人気",
+          "wordReading": "にんき",
+          "meaningsKo": [
+            "인기"
+          ],
+          "examples": [
+            {
+              "sentence": "この{歌手|かしゅ}は{若|わか}い{人|ひと}に{{人気}}です。",
+              "sentenceTranslationKo": "이 가수는 젊은 사람들에게 인기입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "キ",
+          "word": "空気",
+          "wordReading": "くうき",
+          "meaningsKo": [
+            "공기",
+            "대기"
+          ],
+          "examples": [
+            {
+              "sentence": "{山|やま}の{{空気}}はおいしいです。",
+              "sentenceTranslationKo": "산의 공기는 상쾌합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ケ",
+          "word": "気配",
+          "wordReading": "けはい",
+          "meaningsKo": [
+            "기색",
+            "기미"
+          ],
+          "examples": [
+            {
+              "sentence": "{部屋|へや}に{誰|だれ}かいる{{気配}}がしました。",
+              "sentenceTranslationKo": "방에 누군가 있는 기색이 들었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ケ",
+          "word": "湿気",
+          "wordReading": "しっけ",
+          "meaningsKo": [
+            "습기"
+          ],
+          "examples": [
+            {
+              "sentence": "{夏|なつ}は{{湿気}}が{多|おお}くて{大変|たいへん}です。",
+              "sentenceTranslationKo": "여름은 습기가 많아서 힘듭니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "水",
+      "meaningKo": "물 수 — 물",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "スイ"
+        },
+        {
+          "type": "kun",
+          "reading": "みず"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "スイ",
+          "word": "水分",
+          "wordReading": "すいぶん",
+          "meaningsKo": [
+            "수분"
+          ],
+          "examples": [
+            {
+              "sentence": "{暑|あつ}い{日|ひ}は{{水分}}を{多|おお}く{取|と}りましょう。",
+              "sentenceTranslationKo": "더운 날은 수분을 많이 섭취합시다."
+            }
+          ]
+        },
+        {
+          "readingRef": "スイ",
+          "word": "海水",
+          "wordReading": "かいすい",
+          "meaningsKo": [
+            "바닷물"
+          ],
+          "examples": [
+            {
+              "sentence": "{{海水}}は{塩辛|しおから}いです。",
+              "sentenceTranslationKo": "바닷물은 짭니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "スイ",
+          "word": "水曜日",
+          "wordReading": "すいようび",
+          "meaningsKo": [
+            "수요일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{水曜日}}に{歯医者|はいしゃ}に{行|い}きます。",
+              "sentenceTranslationKo": "수요일에 치과에 갑니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "みず",
+          "word": "水",
+          "wordReading": "みず",
+          "meaningsKo": [
+            "물"
+          ],
+          "examples": [
+            {
+              "sentence": "{冷|つめ}たい{{水}}を{一杯|いっぱい}ください。",
+              "sentenceTranslationKo": "차가운 물 한 잔 주세요."
+            }
+          ]
+        },
+        {
+          "readingRef": "みず",
+          "word": "水色",
+          "wordReading": "みずいろ",
+          "meaningsKo": [
+            "연파랑",
+            "하늘색"
+          ],
+          "examples": [
+            {
+              "sentence": "{{水色}}のシャツを{買|か}いました。",
+              "sentenceTranslationKo": "하늘색 셔츠를 샀습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "みず",
+          "word": "水玉",
+          "wordReading": "みずたま",
+          "meaningsKo": [
+            "물방울",
+            "점무늬"
+          ],
+          "examples": [
+            {
+              "sentence": "{{水玉}}{模様|もよう}のスカートが{好|す}きです。",
+              "sentenceTranslationKo": "물방울 무늬 치마를 좋아합니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "火",
+      "meaningKo": "불 화 — 불",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カ"
+        },
+        {
+          "type": "kun",
+          "reading": "び"
+        },
+        {
+          "type": "kun",
+          "reading": "ひ"
+        },
+        {
+          "type": "kun",
+          "reading": "ほ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "カ",
+          "word": "火曜日",
+          "wordReading": "かようび",
+          "meaningsKo": [
+            "화요일"
+          ],
+          "examples": [
+            {
+              "sentence": "{{火曜日}}に{病院|びょういん}に{行|い}きます。",
+              "sentenceTranslationKo": "화요일에 병원에 갑니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "カ",
+          "word": "火事",
+          "wordReading": "かじ",
+          "meaningsKo": [
+            "불",
+            "화재"
+          ],
+          "examples": [
+            {
+              "sentence": "{昨夜|さくや}{近所|きんじょ}で{{火事}}がありました。",
+              "sentenceTranslationKo": "어젯밤 이웃에서 불이 났습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "カ",
+          "word": "火山",
+          "wordReading": "かざん",
+          "meaningsKo": [
+            "화산"
+          ],
+          "examples": [
+            {
+              "sentence": "{日本|にほん}には{多|おお}くの{{火山}}があります。",
+              "sentenceTranslationKo": "일본에는 많은 화산이 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひ",
+          "word": "火花",
+          "wordReading": "ひばな",
+          "meaningsKo": [
+            "불똥"
+          ],
+          "examples": [
+            {
+              "sentence": "{鉄|てつ}を{切|き}ると{{火花}}が{散|ち}ります。",
+              "sentenceTranslationKo": "철을 자르면 불똥이 튑니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひ",
+          "word": "火口",
+          "wordReading": "ひぐち",
+          "meaningsKo": [
+            "화구"
+          ],
+          "examples": [
+            {
+              "sentence": "ガスコンロの{{火口}}を{掃除|そうじ}しました。",
+              "sentenceTranslationKo": "가스레인지의 불구멍을 청소했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ひ",
+          "word": "花火",
+          "wordReading": "はなび",
+          "meaningsKo": [
+            "불꽃",
+            "불놀이"
+          ],
+          "examples": [
+            {
+              "sentence": "{夏|なつ}の{夜|よる}に{{花火}}を{楽|たの}しみました。",
+              "sentenceTranslationKo": "여름밤에 불꽃놀이를 즐겼습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ほ",
+          "word": "火影",
+          "wordReading": "ほかげ",
+          "meaningsKo": [
+            "불그림자"
+          ],
+          "examples": [
+            {
+              "sentence": "{暗|くら}い{部屋|へや}に{{火影}}が{揺|ゆ}れています。",
+              "sentenceTranslationKo": "어두운 방에 불빛이 흔들리고 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "父",
+      "meaningKo": "아비 부 — 아버지",
+      "strokeCount": 4,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "フ"
+        },
+        {
+          "type": "kun",
+          "reading": "ちち"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "フ",
+          "word": "父母",
+          "wordReading": "ふぼ",
+          "meaningsKo": [
+            "부모"
+          ],
+          "examples": [
+            {
+              "sentence": "{{父母}}{会|かい}に{出席|しゅっせき}しました。",
+              "sentenceTranslationKo": "부모회에 출석했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "フ",
+          "word": "祖父",
+          "wordReading": "そふ",
+          "meaningsKo": [
+            "할아버지"
+          ],
+          "examples": [
+            {
+              "sentence": "{{祖父}}は{今|いま}{八十|はちじゅう}{歳|さい}です。",
+              "sentenceTranslationKo": "할아버지는 지금 80세입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ちち",
+          "word": "父",
+          "wordReading": "ちち",
+          "meaningsKo": [
+            "아버지"
+          ],
+          "examples": [
+            {
+              "sentence": "{{父}}は{毎朝|まいあさ}{早|はや}く{起|お}きます。",
+              "sentenceTranslationKo": "아버지는 매일 아침 일찍 일어나십니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ちち",
+          "word": "父親",
+          "wordReading": "ちちおや",
+          "meaningsKo": [
+            "아버지"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}の{{父親}}は{医者|いしゃ}です。",
+              "sentenceTranslationKo": "그의 아버지는 의사입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "生",
+      "meaningKo": "살 생 — 살다, 태어나다, 생명",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショウ"
+        },
+        {
+          "type": "on",
+          "reading": "セイ"
+        },
+        {
+          "type": "kun",
+          "reading": "う"
+        },
+        {
+          "type": "kun",
+          "reading": "いかす"
+        },
+        {
+          "type": "kun",
+          "reading": "いきる"
+        },
+        {
+          "type": "kun",
+          "reading": "いける"
+        },
+        {
+          "type": "kun",
+          "reading": "うまれ"
+        },
+        {
+          "type": "kun",
+          "reading": "うまれる"
+        },
+        {
+          "type": "kun",
+          "reading": "うむ"
+        },
+        {
+          "type": "kun",
+          "reading": "おう"
+        },
+        {
+          "type": "kun",
+          "reading": "き"
+        },
+        {
+          "type": "kun",
+          "reading": "なす"
+        },
+        {
+          "type": "kun",
+          "reading": "なる"
+        },
+        {
+          "type": "kun",
+          "reading": "なま"
+        },
+        {
+          "type": "kun",
+          "reading": "はえる"
+        },
+        {
+          "type": "kun",
+          "reading": "はやす"
+        },
+        {
+          "type": "kun",
+          "reading": "むす"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "セイ",
+          "word": "生命",
+          "wordReading": "せいめい",
+          "meaningsKo": [
+            "생명"
+          ],
+          "examples": [
+            {
+              "sentence": "{{生命}}は{何|なに}よりも{大切|たいせつ}です。",
+              "sentenceTranslationKo": "생명은 무엇보다 소중합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "セイ",
+          "word": "人生",
+          "wordReading": "じんせい",
+          "meaningsKo": [
+            "인생"
+          ],
+          "examples": [
+            {
+              "sentence": "{{人生}}には{楽|たの}しいことも{辛|つら}いこともあります。",
+              "sentenceTranslationKo": "인생에는 즐거운 일도 힘든 일도 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "セイ",
+          "word": "先生",
+          "wordReading": "せんせい",
+          "meaningsKo": [
+            "선생님"
+          ],
+          "examples": [
+            {
+              "sentence": "{{先生}}は{授業|じゅぎょう}が{上手|じょうず}です。",
+              "sentenceTranslationKo": "선생님은 수업을 잘하십니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ショウ",
+          "word": "一生",
+          "wordReading": "いっしょう",
+          "meaningsKo": [
+            "평생",
+            "일생"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{{一生}}{独身|どくしん}でした。",
+              "sentenceTranslationKo": "그는 평생 독신이었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ショウ",
+          "word": "生涯",
+          "wordReading": "しょうがい",
+          "meaningsKo": [
+            "일생",
+            "평생"
+          ],
+          "examples": [
+            {
+              "sentence": "{祖父|そふ}は{{生涯}}{勉強|べんきょう}を{続|つづ}けました。",
+              "sentenceTranslationKo": "할아버지는 평생 공부를 계속하셨습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ショウ",
+          "word": "一生懸命",
+          "wordReading": "いっしょうけんめい",
+          "meaningsKo": [
+            "온힘을 다해",
+            "열심히"
+          ],
+          "examples": [
+            {
+              "sentence": "{試験|しけん}のために{{一生懸命}}{勉強|べんきょう}しました。",
+              "sentenceTranslationKo": "시험을 위해 열심히 공부했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "き",
+          "word": "生地",
+          "wordReading": "きじ",
+          "meaningsKo": [
+            "천",
+            "직물"
+          ],
+          "examples": [
+            {
+              "sentence": "この{服|ふく}の{{生地}}は{柔|やわ}らかいです。",
+              "sentenceTranslationKo": "이 옷의 천은 부드럽습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "なま",
+          "word": "生身",
+          "wordReading": "なまみ",
+          "meaningsKo": [
+            "생몸",
+            "육체"
+          ],
+          "examples": [
+            {
+              "sentence": "{私|わたし}たちは{{生身}}の{人間|にんげん}です。",
+              "sentenceTranslationKo": "우리는 생몸을 가진 인간입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "なま",
+          "word": "生意気",
+          "wordReading": "なまいき",
+          "meaningsKo": [
+            "건방진",
+            "주제넘는"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{{生意気}}な{態度|たいど}を{取|と}りました。",
+              "sentenceTranslationKo": "그는 건방진 태도를 취했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "なま",
+          "word": "生物",
+          "wordReading": "なまもの",
+          "meaningsKo": [
+            "생물",
+            "생명"
+          ],
+          "examples": [
+            {
+              "sentence": "{冷蔵庫|れいぞうこ}に{{生物}}が{多|おお}いです。",
+              "sentenceTranslationKo": "냉장고에 생것이 많습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "男",
+      "meaningKo": "사내 남 — 남자",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ダン"
+        },
+        {
+          "type": "on",
+          "reading": "ナン"
+        },
+        {
+          "type": "kun",
+          "reading": "お"
+        },
+        {
+          "type": "kun",
+          "reading": "おとこ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ダン",
+          "word": "男性",
+          "wordReading": "だんせい",
+          "meaningsKo": [
+            "남성",
+            "남자"
+          ],
+          "examples": [
+            {
+              "sentence": "あの{{男性}}は{私|わたし}の{兄|あに}です。",
+              "sentenceTranslationKo": "저 남성은 제 형입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ダン",
+          "word": "男子",
+          "wordReading": "だんし",
+          "meaningsKo": [
+            "남자",
+            "남학생"
+          ],
+          "examples": [
+            {
+              "sentence": "この{学校|がっこう}には{{男子}}{学生|がくせい}が{多|おお}いです。",
+              "sentenceTranslationKo": "이 학교에는 남학생이 많습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ダン",
+          "word": "男女",
+          "wordReading": "だんじょ",
+          "meaningsKo": [
+            "남녀"
+          ],
+          "examples": [
+            {
+              "sentence": "{{男女}}{平等|びょうどう}が{大切|たいせつ}です。",
+              "sentenceTranslationKo": "남녀평등이 중요합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ナン",
+          "word": "長男",
+          "wordReading": "ちょうなん",
+          "meaningsKo": [
+            "큰아들",
+            "장남"
+          ],
+          "examples": [
+            {
+              "sentence": "{兄|あに}は{家|いえ}の{{長男}}です。",
+              "sentenceTranslationKo": "형은 집안의 장남입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ナン",
+          "word": "美男",
+          "wordReading": "びなん",
+          "meaningsKo": [
+            "미남",
+            "잘생긴남자"
+          ],
+          "examples": [
+            {
+              "sentence": "あの{俳優|はいゆう}は{有名|ゆうめい}な{{美男}}です。",
+              "sentenceTranslationKo": "저 배우는 유명한 미남입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "おとこ",
+          "word": "男",
+          "wordReading": "おとこ",
+          "meaningsKo": [
+            "남자",
+            "남성"
+          ],
+          "examples": [
+            {
+              "sentence": "{駐車場|ちゅうしゃじょう}に{{男}}の{人|ひと}がいます。",
+              "sentenceTranslationKo": "주차장에 남자가 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "白",
+      "meaningKo": "흰 백 — 흰색, 희다",
+      "strokeCount": 5,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ハク"
+        },
+        {
+          "type": "on",
+          "reading": "ビャク"
+        },
+        {
+          "type": "kun",
+          "reading": "しら"
+        },
+        {
+          "type": "kun",
+          "reading": "しろ"
+        },
+        {
+          "type": "kun",
+          "reading": "しろい"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ハク",
+          "word": "明白",
+          "wordReading": "めいはく",
+          "meaningsKo": [
+            "분명하다",
+            "명백"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}の{過|あやま}ちは{{明白}}です。",
+              "sentenceTranslationKo": "그의 잘못은 명백합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ハク",
+          "word": "空白",
+          "wordReading": "くうはく",
+          "meaningsKo": [
+            "공백",
+            "빈 곳"
+          ],
+          "examples": [
+            {
+              "sentence": "ノートに{{空白}}を{残|のこ}しておきます。",
+              "sentenceTranslationKo": "공책에 공백을 남겨 둡니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ハク",
+          "word": "告白",
+          "wordReading": "こくはく",
+          "meaningsKo": [
+            "고백",
+            "자백"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{彼女|かのじょ}に{{告白}}しました。",
+              "sentenceTranslationKo": "그는 그녀에게 고백했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ビャク",
+          "word": "白衣",
+          "wordReading": "びゃくえ",
+          "meaningsKo": [
+            "흰옷"
+          ],
+          "examples": [
+            {
+              "sentence": "お{医者|いしゃ}さんが{{白衣}}を{着|き}ています。",
+              "sentenceTranslationKo": "의사 선생님이 흰옷을 입고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "しろ",
+          "word": "白",
+          "wordReading": "しろ",
+          "meaningsKo": [
+            "하얀",
+            "하양"
+          ],
+          "examples": [
+            {
+              "sentence": "{{白}}いシャツを{買|か}いました。",
+              "sentenceTranslationKo": "하얀 셔츠를 샀습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "しろい",
+          "word": "白い",
+          "wordReading": "しろい",
+          "meaningsKo": [
+            "하얗다",
+            "흰"
+          ],
+          "examples": [
+            {
+              "sentence": "{雪|ゆき}が{降|ふ}って{{白い}}{世界|せかい}になりました。",
+              "sentenceTranslationKo": "눈이 내려서 하얀 세상이 되었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "しろ",
+          "word": "黒白",
+          "wordReading": "くろしろ",
+          "meaningsKo": [
+            "검은색과 흰색"
+          ],
+          "examples": [
+            {
+              "sentence": "{古|ふる}い{写真|しゃしん}は{{黒白}}でした。",
+              "sentenceTranslationKo": "옛날 사진은 흑백이었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "しら",
+          "word": "白髪",
+          "wordReading": "しらが",
+          "meaningsKo": [
+            "하얀머리",
+            "백발"
+          ],
+          "examples": [
+            {
+              "sentence": "{祖父|そふ}には{{白髪}}が{増|ふ}えました。",
+              "sentenceTranslationKo": "할아버지께 백발이 늘었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "しら",
+          "word": "白鳥",
+          "wordReading": "しらとり",
+          "meaningsKo": [
+            "백조"
+          ],
+          "examples": [
+            {
+              "sentence": "{湖|みずうみ}に{{白鳥}}が{泳|およ}いでいます。",
+              "sentenceTranslationKo": "호수에 백조가 헤엄치고 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "百",
+      "meaningKo": "일백 백 — 일백, 100",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ヒャク"
+        },
+        {
+          "type": "on",
+          "reading": "ビャク"
+        },
+        {
+          "type": "kun",
+          "reading": "もも"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ヒャク",
+          "word": "百円",
+          "wordReading": "ひゃくえん",
+          "meaningsKo": [
+            "100엔"
+          ],
+          "examples": [
+            {
+              "sentence": "このパンは{{百円}}でした。",
+              "sentenceTranslationKo": "이 빵은 백 엔이었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ヒャク",
+          "word": "百貨店",
+          "wordReading": "ひゃっかてん",
+          "meaningsKo": [
+            "백화점"
+          ],
+          "examples": [
+            {
+              "sentence": "{駅前|えきまえ}の{{百貨店}}で{買|か}い{物|もの}をしました。",
+              "sentenceTranslationKo": "역 앞 백화점에서 쇼핑을 했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ヒャク",
+          "word": "二百",
+          "wordReading": "にひゃく",
+          "meaningsKo": [
+            "200",
+            "이백"
+          ],
+          "examples": [
+            {
+              "sentence": "{合計|ごうけい}{{二百}}{円|えん}でした。",
+              "sentenceTranslationKo": "합계 이백 엔이었습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "聞",
+      "meaningKo": "들을 문 — 듣다",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ブン"
+        },
+        {
+          "type": "on",
+          "reading": "モン"
+        },
+        {
+          "type": "kun",
+          "reading": "きく"
+        },
+        {
+          "type": "kun",
+          "reading": "きこえる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ブン",
+          "word": "新聞",
+          "wordReading": "しんぶん",
+          "meaningsKo": [
+            "신문"
+          ],
+          "examples": [
+            {
+              "sentence": "{毎朝|まいあさ}{{新聞}}を{読|よ}みます。",
+              "sentenceTranslationKo": "매일 아침 신문을 읽습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ブン",
+          "word": "見聞",
+          "wordReading": "けんぶん",
+          "meaningsKo": [
+            "견문",
+            "보고들은것"
+          ],
+          "examples": [
+            {
+              "sentence": "{旅行|りょこう}で{{見聞}}を{広|ひろ}げました。",
+              "sentenceTranslationKo": "여행으로 견문을 넓혔습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ブン",
+          "word": "風聞",
+          "wordReading": "ふうぶん",
+          "meaningsKo": [
+            "풍문",
+            "소문"
+          ],
+          "examples": [
+            {
+              "sentence": "{町|まち}には{いろいろ|いろいろ}な{{風聞}}が{流|なが}れています。",
+              "sentenceTranslationKo": "동네에는 여러 소문이 돌고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "モン",
+          "word": "聴聞会",
+          "wordReading": "ちょうもんかい",
+          "meaningsKo": [
+            "청문회"
+          ],
+          "examples": [
+            {
+              "sentence": "{国会|こっかい}で{{聴聞会}}が{開|ひら}かれました。",
+              "sentenceTranslationKo": "국회에서 청문회가 열렸습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "モン",
+          "word": "前代未聞",
+          "wordReading": "ぜんだいみもん",
+          "meaningsKo": [
+            "전대미문",
+            "전례없는"
+          ],
+          "examples": [
+            {
+              "sentence": "それは{{前代未聞}}の{出来事|できごと}でした。",
+              "sentenceTranslationKo": "그것은 전례 없는 사건이었습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "行",
+      "meaningKo": "다닐 행 — 가다, 행하다",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "アン"
+        },
+        {
+          "type": "on",
+          "reading": "ギョウ"
+        },
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "いき"
+        },
+        {
+          "type": "kun",
+          "reading": "ゆき"
+        },
+        {
+          "type": "kun",
+          "reading": "いく"
+        },
+        {
+          "type": "kun",
+          "reading": "おこなう"
+        },
+        {
+          "type": "kun",
+          "reading": "ゆく"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "コウ",
+          "word": "行進",
+          "wordReading": "こうしん",
+          "meaningsKo": [
+            "행진",
+            "진군"
+          ],
+          "examples": [
+            {
+              "sentence": "{運動会|うんどうかい}で{{行進}}しました。",
+              "sentenceTranslationKo": "운동회에서 행진했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コウ",
+          "word": "旅行",
+          "wordReading": "りょこう",
+          "meaningsKo": [
+            "여행"
+          ],
+          "examples": [
+            {
+              "sentence": "{夏休|なつやす}みに{家族|かぞく}と{{旅行}}を{楽|たの}しみました。",
+              "sentenceTranslationKo": "여름방학에 가족과 여행을 즐겼습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コウ",
+          "word": "行動",
+          "wordReading": "こうどう",
+          "meaningsKo": [
+            "행동"
+          ],
+          "examples": [
+            {
+              "sentence": "{言葉|ことば}よりも{{行動}}が{大切|たいせつ}です。",
+              "sentenceTranslationKo": "말보다 행동이 중요합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コウ",
+          "word": "実行",
+          "wordReading": "じっこう",
+          "meaningsKo": [
+            "실행"
+          ],
+          "examples": [
+            {
+              "sentence": "{計画|けいかく}を{すぐ|すぐ}{{実行}}に{移|うつ}しましょう。",
+              "sentenceTranslationKo": "계획을 곧바로 실행에 옮깁시다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ギョウ",
+          "word": "行列",
+          "wordReading": "ぎょうれつ",
+          "meaningsKo": [
+            "행렬",
+            "줄"
+          ],
+          "examples": [
+            {
+              "sentence": "{有名|ゆうめい}なお{店|みせ}に{長|なが}い{{行列}}ができていました。",
+              "sentenceTranslationKo": "유명한 가게에 긴 행렬이 생겼습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ギョウ",
+          "word": "行政",
+          "wordReading": "ぎょうせい",
+          "meaningsKo": [
+            "행정"
+          ],
+          "examples": [
+            {
+              "sentence": "この{町|まち}の{{行政}}は{市役所|しやくしょ}が{担当|たんとう}しています。",
+              "sentenceTranslationKo": "이 동네의 행정은 시청이 담당하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ギョウ",
+          "word": "行事",
+          "wordReading": "ぎょうじ",
+          "meaningsKo": [
+            "행사",
+            "행사"
+          ],
+          "examples": [
+            {
+              "sentence": "{学校|がっこう}の{{行事}}に{参加|さんか}しました。",
+              "sentenceTranslationKo": "학교의 행사에 참가했습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ギョウ",
+          "word": "修行",
+          "wordReading": "しゅぎょう",
+          "meaningsKo": [
+            "수행",
+            "수련"
+          ],
+          "examples": [
+            {
+              "sentence": "お{坊|ぼう}さんがお{寺|てら}で{{修行}}しています。",
+              "sentenceTranslationKo": "스님이 절에서 수행하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "アン",
+          "word": "行灯",
+          "wordReading": "あんどう",
+          "meaningsKo": [
+            "등불",
+            "행등"
+          ],
+          "examples": [
+            {
+              "sentence": "{古|ふる}い{旅館|りょかん}に{{行灯}}が{置|お}かれていました。",
+              "sentenceTranslationKo": "오래된 여관에 등불이 놓여 있었습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "西",
+      "meaningKo": "서녘 서 — 서쪽",
+      "strokeCount": 6,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "サイ"
+        },
+        {
+          "type": "on",
+          "reading": "ス"
+        },
+        {
+          "type": "on",
+          "reading": "セイ"
+        },
+        {
+          "type": "kun",
+          "reading": "にし"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "セイ",
+          "word": "西洋",
+          "wordReading": "せいよう",
+          "meaningsKo": [
+            "서양"
+          ],
+          "examples": [
+            {
+              "sentence": "{{西洋}}の{文化|ぶんか}に{興味|きょうみ}があります。",
+              "sentenceTranslationKo": "서양 문화에 관심이 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "セイ",
+          "word": "西暦",
+          "wordReading": "せいれき",
+          "meaningsKo": [
+            "서력",
+            "기독교력"
+          ],
+          "examples": [
+            {
+              "sentence": "{{西暦}}{二千|にせん}{年|ねん}に{生|う}まれました。",
+              "sentenceTranslationKo": "서력 2000년에 태어났습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "サイ",
+          "word": "関西",
+          "wordReading": "かんさい",
+          "meaningsKo": [
+            "간사이"
+          ],
+          "examples": [
+            {
+              "sentence": "{{関西}}{地方|ちほう}は{食|た}べ{物|もの}がおいしいです。",
+              "sentenceTranslationKo": "간사이 지방은 음식이 맛있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "サイ",
+          "word": "東西",
+          "wordReading": "とうざい",
+          "meaningsKo": [
+            "동서"
+          ],
+          "examples": [
+            {
+              "sentence": "この{道|みち}は{{東西}}に{走|はし}っています。",
+              "sentenceTranslationKo": "이 길은 동서로 뻗어 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "にし",
+          "word": "西",
+          "wordReading": "にし",
+          "meaningsKo": [
+            "서쪽"
+          ],
+          "examples": [
+            {
+              "sentence": "{太陽|たいよう}は{{西}}に{沈|しず}みます。",
+              "sentenceTranslationKo": "태양은 서쪽으로 집니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "にし",
+          "word": "西日本",
+          "wordReading": "にしにほん",
+          "meaningsKo": [
+            "니시니혼"
+          ],
+          "examples": [
+            {
+              "sentence": "{{西日本}}は{暖|あたた}かい{地域|ちいき}です。",
+              "sentenceTranslationKo": "니시니혼은 따뜻한 지역입니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "見",
+      "meaningKo": "볼 견 — 보다",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ケン"
+        },
+        {
+          "type": "kun",
+          "reading": "みえる"
+        },
+        {
+          "type": "kun",
+          "reading": "みせる"
+        },
+        {
+          "type": "kun",
+          "reading": "みる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ケン",
+          "word": "意見",
+          "wordReading": "いけん",
+          "meaningsKo": [
+            "의견"
+          ],
+          "examples": [
+            {
+              "sentence": "みんなの{{意見}}を{聞|き}きたいです。",
+              "sentenceTranslationKo": "모두의 의견을 듣고 싶습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ケン",
+          "word": "見物",
+          "wordReading": "けんぶつ",
+          "meaningsKo": [
+            "관광",
+            "구경"
+          ],
+          "examples": [
+            {
+              "sentence": "{京都|きょうと}でお{寺|てら}を{{見物}}しました。",
+              "sentenceTranslationKo": "교토에서 절을 구경했습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "話",
+      "meaningKo": "말씀 화 — 이야기, 대화",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ワ"
+        },
+        {
+          "type": "kun",
+          "reading": "はなす"
+        },
+        {
+          "type": "kun",
+          "reading": "はなし"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ワ",
+          "word": "会話",
+          "wordReading": "かいわ",
+          "meaningsKo": [
+            "회화",
+            "대화"
+          ],
+          "examples": [
+            {
+              "sentence": "{英語|えいご}の{{会話}}を{練習|れんしゅう}しています。",
+              "sentenceTranslationKo": "영어 회화를 연습하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ワ",
+          "word": "話題",
+          "wordReading": "わだい",
+          "meaningsKo": [
+            "화제"
+          ],
+          "examples": [
+            {
+              "sentence": "{昨日|きのう}の{映画|えいが}が{{話題}}になっています。",
+              "sentenceTranslationKo": "어제 영화가 화제가 되고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "はなす",
+          "word": "話す",
+          "wordReading": "はなす",
+          "meaningsKo": [
+            "이야기하다",
+            "말하다"
+          ],
+          "examples": [
+            {
+              "sentence": "{友|とも}だちと{長|なが}い{時間|じかん}{{話す}}のが{楽|たの}しいです。",
+              "sentenceTranslationKo": "친구와 오랜 시간 이야기하는 것이 즐겁습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "はなし",
+          "word": "話",
+          "wordReading": "はなし",
+          "meaningsKo": [
+            "말",
+            "이야기"
+          ],
+          "examples": [
+            {
+              "sentence": "{先生|せんせい}の{{話}}は{面白|おもしろ}かったです。",
+              "sentenceTranslationKo": "선생님의 이야기는 재미있었습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "語",
+      "meaningKo": "말씀 어 — 단어, 언어",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ゴ"
+        },
+        {
+          "type": "kun",
+          "reading": "かたらう"
+        },
+        {
+          "type": "kun",
+          "reading": "かたる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ゴ",
+          "word": "言語",
+          "wordReading": "げんご",
+          "meaningsKo": [
+            "언어"
+          ],
+          "examples": [
+            {
+              "sentence": "{世界|せかい}にはたくさんの{{言語}}があります。",
+              "sentenceTranslationKo": "세계에는 많은 언어가 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゴ",
+          "word": "日本語",
+          "wordReading": "にほんご",
+          "meaningsKo": [
+            "일본어"
+          ],
+          "examples": [
+            {
+              "sentence": "{毎日|まいにち}{{日本語}}を{勉強|べんきょう}しています。",
+              "sentenceTranslationKo": "매일 일본어를 공부하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ゴ",
+          "word": "外国語",
+          "wordReading": "がいこくご",
+          "meaningsKo": [
+            "외국어"
+          ],
+          "examples": [
+            {
+              "sentence": "{{外国語}}を{二|に}つ{話|はな}せます。",
+              "sentenceTranslationKo": "외국어를 두 개 할 수 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "読",
+      "meaningKo": "읽을 독 — 읽다",
+      "strokeCount": 14,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "トウ"
+        },
+        {
+          "type": "on",
+          "reading": "トク"
+        },
+        {
+          "type": "on",
+          "reading": "ドク"
+        },
+        {
+          "type": "kun",
+          "reading": "よみ"
+        },
+        {
+          "type": "kun",
+          "reading": "よむ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ドク",
+          "word": "読書",
+          "wordReading": "どくしょ",
+          "meaningsKo": [
+            "독서"
+          ],
+          "examples": [
+            {
+              "sentence": "{秋|あき}は{{読書}}の{季節|きせつ}です。",
+              "sentenceTranslationKo": "가을은 독서의 계절입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ドク",
+          "word": "読者",
+          "wordReading": "どくしゃ",
+          "meaningsKo": [
+            "독자"
+          ],
+          "examples": [
+            {
+              "sentence": "この{本|ほん}は{若|わか}い{{読者}}に{人気|にんき}です。",
+              "sentenceTranslationKo": "이 책은 젊은 독자에게 인기입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "トク",
+          "word": "読本",
+          "wordReading": "とくほん",
+          "meaningsKo": [
+            "독본",
+            "읽을 책"
+          ],
+          "examples": [
+            {
+              "sentence": "{小学校|しょうがっこう}の{{読本}}を{懐|なつ}かしく{思|おも}い{出|だ}します。",
+              "sentenceTranslationKo": "초등학교의 독본을 그립게 떠올립니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "トウ",
+          "word": "句読点",
+          "wordReading": "くとうてん",
+          "meaningsKo": [
+            "구두점",
+            "문장 부호"
+          ],
+          "examples": [
+            {
+              "sentence": "{文章|ぶんしょう}には{{句読点}}が{大切|たいせつ}です。",
+              "sentenceTranslationKo": "문장에는 구두점이 중요합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "トウ",
+          "word": "読点",
+          "wordReading": "とうてん",
+          "meaningsKo": [
+            "쉼표",
+            "쉼표"
+          ],
+          "examples": [
+            {
+              "sentence": "{長|なが}い{文|ぶん}には{{読点}}を{適切|てきせつ}に{打|う}ちましょう。",
+              "sentenceTranslationKo": "긴 문장에는 쉼표를 적절히 찍읍시다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "車",
+      "meaningKo": "수레 차 — 차량, 수레",
+      "strokeCount": 7,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "シャ"
+        },
+        {
+          "type": "kun",
+          "reading": "くるま"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "シャ",
+          "word": "車庫",
+          "wordReading": "しゃこ",
+          "meaningsKo": [
+            "차고"
+          ],
+          "examples": [
+            {
+              "sentence": "{家|いえ}の{{車庫}}は{二|ふた}つあります。",
+              "sentenceTranslationKo": "집의 차고는 두 개 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "シャ",
+          "word": "車道",
+          "wordReading": "しゃどう",
+          "meaningsKo": [
+            "차도"
+          ],
+          "examples": [
+            {
+              "sentence": "{歩行者|ほこうしゃ}は{{車道}}を{歩|ある}いてはいけません。",
+              "sentenceTranslationKo": "보행자는 차도를 걸어서는 안 됩니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "くるま",
+          "word": "車",
+          "wordReading": "くるま",
+          "meaningsKo": [
+            "자동차",
+            "차"
+          ],
+          "examples": [
+            {
+              "sentence": "{父|ちち}は{新|あたら}しい{{車}}を{買|か}いました。",
+              "sentenceTranslationKo": "아버지는 새 자동차를 사셨습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "くるま",
+          "word": "乳母車",
+          "wordReading": "うばぐるま",
+          "meaningsKo": [
+            "유모차"
+          ],
+          "examples": [
+            {
+              "sentence": "{母|はは}が{赤|あか}ちゃんを{{乳母車}}に{乗|の}せています。",
+              "sentenceTranslationKo": "어머니가 아기를 유모차에 태우고 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "金",
+      "meaningKo": "쇠 금 — 금, 금속, 돈",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "キン"
+        },
+        {
+          "type": "on",
+          "reading": "コン"
+        },
+        {
+          "type": "on",
+          "reading": "ゴン"
+        },
+        {
+          "type": "kun",
+          "reading": "がね"
+        },
+        {
+          "type": "kun",
+          "reading": "かな"
+        },
+        {
+          "type": "kun",
+          "reading": "かね"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "キン",
+          "word": "現金",
+          "wordReading": "げんきん",
+          "meaningsKo": [
+            "현금"
+          ],
+          "examples": [
+            {
+              "sentence": "この{店|みせ}は{{現金}}しか{使|つか}えません。",
+              "sentenceTranslationKo": "이 가게는 현금밖에 쓸 수 없습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "キン",
+          "word": "金星",
+          "wordReading": "きんせい",
+          "meaningsKo": [
+            "금성"
+          ],
+          "examples": [
+            {
+              "sentence": "{夕方|ゆうがた}{{金星}}が{見|み}えます。",
+              "sentenceTranslationKo": "저녁때 금성이 보입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "キン",
+          "word": "純金",
+          "wordReading": "じゅんきん",
+          "meaningsKo": [
+            "순금"
+          ],
+          "examples": [
+            {
+              "sentence": "{母|はは}の{指輪|ゆびわ}は{{純金}}です。",
+              "sentenceTranslationKo": "어머니의 반지는 순금입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コン",
+          "word": "金剛",
+          "wordReading": "こんごう",
+          "meaningsKo": [
+            "금강"
+          ],
+          "examples": [
+            {
+              "sentence": "{昔話|むかしばなし}に{{金剛}}{力|りき}{士|し}が{出|で}てきます。",
+              "sentenceTranslationKo": "옛이야기에 금강역사가 나옵니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コン",
+          "word": "黄金",
+          "wordReading": "おうごん",
+          "meaningsKo": [
+            "황금"
+          ],
+          "examples": [
+            {
+              "sentence": "{秋|あき}の{田|た}んぼは{{黄金}}{色|いろ}に{光|ひか}ります。",
+              "sentenceTranslationKo": "가을 논은 황금색으로 빛납니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "かね",
+          "word": "金",
+          "wordReading": "かね",
+          "meaningsKo": [
+            "돈",
+            "금"
+          ],
+          "examples": [
+            {
+              "sentence": "{財布|さいふ}に{{金}}があまりありません。",
+              "sentenceTranslationKo": "지갑에 돈이 별로 없습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "かね",
+          "word": "金持",
+          "wordReading": "かねも",
+          "meaningsKo": [
+            "부자"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{有名|ゆうめい}な{{金持}}ちです。",
+              "sentenceTranslationKo": "그는 유명한 부자입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "かね",
+          "word": "針金",
+          "wordReading": "はりがね",
+          "meaningsKo": [
+            "철사"
+          ],
+          "examples": [
+            {
+              "sentence": "{{針金}}で{形|かたち}を{作|つく}りました。",
+              "sentenceTranslationKo": "철사로 모양을 만들었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "かな",
+          "word": "金物",
+          "wordReading": "かなもの",
+          "meaningsKo": [
+            "금속제품",
+            "쇠"
+          ],
+          "examples": [
+            {
+              "sentence": "{近所|きんじょ}の{{金物}}{屋|や}で{釘|くぎ}を{買|か}いました。",
+              "sentenceTranslationKo": "근처 철물점에서 못을 샀습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "長",
+      "meaningKo": "길 장 — 길다, 장(長)",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "チョウ"
+        },
+        {
+          "type": "kun",
+          "reading": "おさ"
+        },
+        {
+          "type": "kun",
+          "reading": "ながい"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "チョウ",
+          "word": "長男",
+          "wordReading": "ちょうなん",
+          "meaningsKo": [
+            "큰아들",
+            "장남"
+          ],
+          "examples": [
+            {
+              "sentence": "{兄|あに}は{家|いえ}の{{長男}}です。",
+              "sentenceTranslationKo": "형은 집안의 장남입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "チョウ",
+          "word": "社長",
+          "wordReading": "しゃちょう",
+          "meaningsKo": [
+            "사장"
+          ],
+          "examples": [
+            {
+              "sentence": "{父|ちち}は{小|ちい}さい{会社|かいしゃ}の{{社長}}です。",
+              "sentenceTranslationKo": "아버지는 작은 회사의 사장입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "チョウ",
+          "word": "成長",
+          "wordReading": "せいちょう",
+          "meaningsKo": [
+            "성장"
+          ],
+          "examples": [
+            {
+              "sentence": "{子|こ}どもの{{成長}}は{早|はや}いです。",
+              "sentenceTranslationKo": "아이의 성장은 빠릅니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "間",
+      "meaningKo": "사이 간 — 사이, 간격",
+      "strokeCount": 12,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "カン"
+        },
+        {
+          "type": "on",
+          "reading": "ケン"
+        },
+        {
+          "type": "kun",
+          "reading": "あい"
+        },
+        {
+          "type": "kun",
+          "reading": "あいだ"
+        },
+        {
+          "type": "kun",
+          "reading": "ま"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "カン",
+          "word": "時間",
+          "wordReading": "じかん",
+          "meaningsKo": [
+            "시간"
+          ],
+          "examples": [
+            {
+              "sentence": "{今日|きょう}は{{時間}}があまりありません。",
+              "sentenceTranslationKo": "오늘은 시간이 별로 없습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "カン",
+          "word": "年間",
+          "wordReading": "ねんかん",
+          "meaningsKo": [
+            "1년",
+            "연간"
+          ],
+          "examples": [
+            {
+              "sentence": "{{年間}}{計画|けいかく}を{立|た}てました。",
+              "sentenceTranslationKo": "연간 계획을 세웠습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "カン",
+          "word": "週間",
+          "wordReading": "しゅうかん",
+          "meaningsKo": [
+            "주간",
+            "일주일"
+          ],
+          "examples": [
+            {
+              "sentence": "{一|いっ}{{週間}}に{三|さん}{回|かい}ジムに{通|かよ}っています。",
+              "sentenceTranslationKo": "일주일에 세 번 헬스장에 다닙니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ケン",
+          "word": "世間",
+          "wordReading": "せけん",
+          "meaningsKo": [
+            "세상",
+            "사회"
+          ],
+          "examples": [
+            {
+              "sentence": "この{話|はなし}は{{世間}}に{広|ひろ}まりました。",
+              "sentenceTranslationKo": "이 이야기는 세상에 퍼졌습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ケン",
+          "word": "眉間",
+          "wordReading": "みけん",
+          "meaningsKo": [
+            "눈썹 사이"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{{眉間}}にしわを{寄|よ}せました。",
+              "sentenceTranslationKo": "그는 미간에 주름을 잡았습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "カン",
+          "word": "間隔",
+          "wordReading": "かんかく",
+          "meaningsKo": [
+            "간격"
+          ],
+          "examples": [
+            {
+              "sentence": "{席|せき}と{席|せき}の{{間隔}}を{広|ひろ}く{取|と}ってください。",
+              "sentenceTranslationKo": "자리와 자리 간격을 넓게 잡아 주세요."
+            }
+          ]
+        },
+        {
+          "readingRef": "あいだ",
+          "word": "間",
+          "wordReading": "あいだ",
+          "meaningsKo": [
+            "방",
+            "칸"
+          ],
+          "examples": [
+            {
+              "sentence": "{授業|じゅぎょう}の{{間}}{眠|ねむ}くなりました。",
+              "sentenceTranslationKo": "수업 동안 졸렸습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ま",
+          "word": "仲間",
+          "wordReading": "なかま",
+          "meaningsKo": [
+            "동료",
+            "친구"
+          ],
+          "examples": [
+            {
+              "sentence": "{大切|たいせつ}な{{仲間}}と{一緒|いっしょ}に{働|はたら}いています。",
+              "sentenceTranslationKo": "소중한 동료와 함께 일하고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ま",
+          "word": "間",
+          "wordReading": "ま",
+          "meaningsKo": [
+            "방",
+            "칸"
+          ],
+          "examples": [
+            {
+              "sentence": "この{家|いえ}は{六|ろく}{畳|じょう}{{間}}が{二|ふた}つあります。",
+              "sentenceTranslationKo": "이 집은 다다미 6장 방이 두 개 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ま",
+          "word": "居間",
+          "wordReading": "いま",
+          "meaningsKo": [
+            "거실"
+          ],
+          "examples": [
+            {
+              "sentence": "{家族|かぞく}みんなで{{居間}}でテレビを{見|み}ました。",
+              "sentenceTranslationKo": "가족 모두가 거실에서 텔레비전을 봤습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ま",
+          "word": "間違い",
+          "wordReading": "まちがい",
+          "meaningsKo": [
+            "잘못",
+            "실수"
+          ],
+          "examples": [
+            {
+              "sentence": "テストの{答|こた}えに{{間違い}}が{二|に}つありました。",
+              "sentenceTranslationKo": "시험 답에 잘못된 곳이 두 군데 있었습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "雨",
+      "meaningKo": "비 우 — 비",
+      "strokeCount": 8,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ウ"
+        },
+        {
+          "type": "kun",
+          "reading": "さめ"
+        },
+        {
+          "type": "kun",
+          "reading": "あま"
+        },
+        {
+          "type": "kun",
+          "reading": "あめ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ウ",
+          "word": "梅雨",
+          "wordReading": "ばいう",
+          "meaningsKo": [
+            "장마"
+          ],
+          "examples": [
+            {
+              "sentence": "{六月|ろくがつ}は{{梅雨}}の{時期|じき}です。",
+              "sentenceTranslationKo": "6월은 장마철입니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ウ",
+          "word": "雨天",
+          "wordReading": "うてん",
+          "meaningsKo": [
+            "비 오는 날"
+          ],
+          "examples": [
+            {
+              "sentence": "{{雨天}}のため{試合|しあい}は{中止|ちゅうし}になりました。",
+              "sentenceTranslationKo": "비가 와서 시합이 중지되었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "あめ",
+          "word": "雨",
+          "wordReading": "あめ",
+          "meaningsKo": [
+            "비"
+          ],
+          "examples": [
+            {
+              "sentence": "{今日|きょう}は{朝|あさ}から{{雨}}が{降|ふ}っています。",
+              "sentenceTranslationKo": "오늘은 아침부터 비가 내리고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "あめ",
+          "word": "大雨",
+          "wordReading": "おおあめ",
+          "meaningsKo": [
+            "큰비",
+            "폭우"
+          ],
+          "examples": [
+            {
+              "sentence": "{{大雨}}で{道路|どうろ}が{冠水|かんすい}しました。",
+              "sentenceTranslationKo": "폭우로 도로가 침수됐습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "あま",
+          "word": "雨水",
+          "wordReading": "あまみず",
+          "meaningsKo": [
+            "빗물"
+          ],
+          "examples": [
+            {
+              "sentence": "{{雨水}}を{庭|にわ}の{植物|しょくぶつ}に{使|つか}っています。",
+              "sentenceTranslationKo": "빗물을 정원의 식물에 쓰고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "あま",
+          "word": "雨音",
+          "wordReading": "あまおと",
+          "meaningsKo": [
+            "빗소리"
+          ],
+          "examples": [
+            {
+              "sentence": "{窓|まど}の{外|そと}の{{雨音}}が{心地|ここち}よいです。",
+              "sentenceTranslationKo": "창밖의 빗소리가 기분 좋습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "あま",
+          "word": "雨雲",
+          "wordReading": "あまぐも",
+          "meaningsKo": [
+            "빗구름"
+          ],
+          "examples": [
+            {
+              "sentence": "{空|そら}に{{雨雲}}が{広|ひろ}がっています。",
+              "sentenceTranslationKo": "하늘에 빗구름이 퍼지고 있습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "電",
+      "meaningKo": "번개 전 — 전기, 번개",
+      "strokeCount": 13,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "デン"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "デン",
+          "word": "電気",
+          "wordReading": "でんき",
+          "meaningsKo": [
+            "전기"
+          ],
+          "examples": [
+            {
+              "sentence": "{部屋|へや}の{{電気}}を{消|け}してください。",
+              "sentenceTranslationKo": "방의 전기를 꺼 주세요."
+            }
+          ]
+        },
+        {
+          "readingRef": "デン",
+          "word": "発電",
+          "wordReading": "はつでん",
+          "meaningsKo": [
+            "발전"
+          ],
+          "examples": [
+            {
+              "sentence": "この{町|まち}には{水力|すいりょく}{{発電}}{所|しょ}があります。",
+              "sentenceTranslationKo": "이 동네에는 수력 발전소가 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "デン",
+          "word": "雷電",
+          "wordReading": "らいでん",
+          "meaningsKo": [
+            "벼락",
+            "번개"
+          ],
+          "examples": [
+            {
+              "sentence": "{昨夜|さくや}{激|はげ}しい{{雷電}}がありました。",
+              "sentenceTranslationKo": "어젯밤 격렬한 번개가 쳤습니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "食",
+      "meaningKo": "먹을 식 — 먹다, 음식",
+      "strokeCount": 9,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "ショク"
+        },
+        {
+          "type": "on",
+          "reading": "ジキ"
+        },
+        {
+          "type": "kun",
+          "reading": "くう"
+        },
+        {
+          "type": "kun",
+          "reading": "くらう"
+        },
+        {
+          "type": "kun",
+          "reading": "たべる"
+        },
+        {
+          "type": "kun",
+          "reading": "はむ"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "ショク",
+          "word": "食事",
+          "wordReading": "しょくじ",
+          "meaningsKo": [
+            "식사"
+          ],
+          "examples": [
+            {
+              "sentence": "{毎日|まいにち}{家族|かぞく}と{{食事}}します。",
+              "sentenceTranslationKo": "매일 가족과 식사합니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ショク",
+          "word": "食料",
+          "wordReading": "しょくりょう",
+          "meaningsKo": [
+            "식량"
+          ],
+          "examples": [
+            {
+              "sentence": "{災害|さいがい}に{備|そな}えて{{食料}}を{買|か}っておきました。",
+              "sentenceTranslationKo": "재해에 대비해 식량을 사 두었습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ショク",
+          "word": "食品",
+          "wordReading": "しょくひん",
+          "meaningsKo": [
+            "식품"
+          ],
+          "examples": [
+            {
+              "sentence": "スーパーで{{食品}}を{買|か}いました。",
+              "sentenceTranslationKo": "슈퍼에서 식품을 샀습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジキ",
+          "word": "断食",
+          "wordReading": "だんじき",
+          "meaningsKo": [
+            "단식"
+          ],
+          "examples": [
+            {
+              "sentence": "{宗教的|しゅうきょうてき}な{理由|りゆう}で{{断食}}している{人|ひと}もいます。",
+              "sentenceTranslationKo": "종교적인 이유로 단식하는 사람도 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "ジキ",
+          "word": "乞食",
+          "wordReading": "こじき",
+          "meaningsKo": [
+            "거지"
+          ],
+          "examples": [
+            {
+              "sentence": "{昔|むかし}の{物語|ものがたり}に{{乞食}}が{出|で}てきます。",
+              "sentenceTranslationKo": "옛 이야기에 거지가 나옵니다."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "character": "高",
+      "meaningKo": "높을 고 — 높다",
+      "strokeCount": 10,
+      "readings": [
+        {
+          "type": "on",
+          "reading": "コウ"
+        },
+        {
+          "type": "kun",
+          "reading": "だか"
+        },
+        {
+          "type": "kun",
+          "reading": "たか"
+        },
+        {
+          "type": "kun",
+          "reading": "たかい"
+        },
+        {
+          "type": "kun",
+          "reading": "たかまる"
+        },
+        {
+          "type": "kun",
+          "reading": "たかめる"
+        }
+      ],
+      "words": [
+        {
+          "readingRef": "コウ",
+          "word": "高度",
+          "wordReading": "こうど",
+          "meaningsKo": [
+            "높이",
+            "고도"
+          ],
+          "examples": [
+            {
+              "sentence": "{飛行機|ひこうき}は{{高度}}{一万|いちまん}メートルを{飛|と}んでいます。",
+              "sentenceTranslationKo": "비행기는 고도 1만 미터를 날고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コウ",
+          "word": "最高",
+          "wordReading": "さいこう",
+          "meaningsKo": [
+            "최고"
+          ],
+          "examples": [
+            {
+              "sentence": "{昨日|きのう}の{試合|しあい}は{{最高}}でした。",
+              "sentenceTranslationKo": "어제 경기는 최고였습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コウ",
+          "word": "高速",
+          "wordReading": "こうそく",
+          "meaningsKo": [
+            "고속"
+          ],
+          "examples": [
+            {
+              "sentence": "{{高速}}{道路|どうろ}が{混|こ}んでいます。",
+              "sentenceTranslationKo": "고속도로가 막히고 있습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "たか",
+          "word": "高々",
+          "wordReading": "たかだか",
+          "meaningsKo": [
+            "겨우",
+            "기껏"
+          ],
+          "examples": [
+            {
+              "sentence": "{値段|ねだん}は{{高々}}{千円|せんえん}でしょう。",
+              "sentenceTranslationKo": "가격은 기껏해야 천 엔 정도일 겁니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "たかい",
+          "word": "高い",
+          "wordReading": "たかい",
+          "meaningsKo": [
+            "높다",
+            "비싸다"
+          ],
+          "examples": [
+            {
+              "sentence": "この{山|やま}は{富士山|ふじさん}より{{高い}}です。",
+              "sentenceTranslationKo": "이 산은 후지산보다 높습니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "たか",
+          "word": "高",
+          "wordReading": "たか",
+          "meaningsKo": [
+            "높다",
+            "높이"
+          ],
+          "examples": [
+            {
+              "sentence": "{彼|かれ}は{背|せ}が{{高}}いです。",
+              "sentenceTranslationKo": "그는 키가 큽니다."
+            }
+          ]
+        },
+        {
+          "readingRef": "コウ",
+          "word": "高校",
+          "wordReading": "こうこう",
+          "meaningsKo": [
+            "고등학교"
+          ],
+          "examples": [
+            {
+              "sentence": "{弟|おとうと}は{今|いま}{{高校}}{二|に}{年生|ねんせい}です。",
+              "sentenceTranslationKo": "남동생은 지금 고등학교 2학년입니다."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
