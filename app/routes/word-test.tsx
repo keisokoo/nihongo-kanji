@@ -7,16 +7,27 @@ import {
   wordTestItems,
   wordTests,
   type Example,
+  type ExampleExplanation,
   type ReadingSubPick,
   type SentenceToken,
   type WordTestItem,
   type WordTestKind,
   type WordTestMode,
 } from "~/lib/db";
-import { loadExamplesForSourceWords } from "~/lib/word-test.server";
+import {
+  loadExamplesForSourceWords,
+  loadFocusKanjiForSourceWords,
+  type FocusKanji,
+} from "~/lib/word-test.server";
+import { KanjiCard } from "~/components/KanjiCard";
 import { tokensToPlain } from "~/lib/sentence";
 import { Spinner } from "~/components/Spinner";
 import { SentenceRender } from "~/components/SentenceRender";
+import {
+  ExampleExplanationPanel,
+  type ExampleExplStatus,
+} from "~/components/ExampleExplanationPanel";
+import { ConfirmModal } from "~/components/ConfirmModal";
 import { showUsageToast, type ApiUsage } from "~/components/Toast";
 import { useTtsPlayer } from "~/lib/useTtsPlayer";
 
@@ -36,22 +47,32 @@ export async function loader({ params }: Route.LoaderArgs) {
     orderBy: asc(wordTestItems.position),
   });
 
-  // For reading kind, fetch the first example for each source word.
-  const examplesByWordId =
+  // For reading kind, fetch each source word's first example AND focus kanji
+  // (with readings) — same data as the word pack's KanjiCard.
+  const sourceWordIds =
     test.kind === "reading"
-      ? await loadExamplesForSourceWords(
-          items.map((i) => i.sourceWordId).filter((x): x is number => !!x),
-        )
-      : new Map<number, Example>();
+      ? items.map((i) => i.sourceWordId).filter((x): x is number => !!x)
+      : [];
+  const [examplesByWordId, focusKanjiByWordId] = await Promise.all([
+    test.kind === "reading"
+      ? loadExamplesForSourceWords(sourceWordIds)
+      : Promise.resolve(new Map<number, Example>()),
+    test.kind === "reading"
+      ? loadFocusKanjiForSourceWords(sourceWordIds)
+      : Promise.resolve(new Map<number, FocusKanji>()),
+  ]);
 
-  const itemsWithExample = items.map((it) => ({
+  const itemsWithExtras = items.map((it) => ({
     ...it,
     example: it.sourceWordId
       ? (examplesByWordId.get(it.sourceWordId) ?? null)
       : null,
+    focusKanji: it.sourceWordId
+      ? (focusKanjiByWordId.get(it.sourceWordId) ?? null)
+      : null,
   }));
 
-  return { test, items: itemsWithExample };
+  return { test, items: itemsWithExtras };
 }
 
 export function meta({ data }: Route.MetaArgs) {
@@ -64,7 +85,10 @@ export function meta({ data }: Route.MetaArgs) {
   ];
 }
 
-type ItemWithExample = WordTestItem & { example: Example | null };
+type ItemWithExample = WordTestItem & {
+  example: Example | null;
+  focusKanji: FocusKanji | null;
+};
 
 type Pick_ = {
   choice: string;
@@ -594,47 +618,177 @@ function ReadingCard({
     readingPicked !== null && meaningPicked !== null;
   const meaningEnabled = readingPicked !== null;
 
+  // Example-level explanation (cached on the source example row, shared with the word pack).
+  const [exampleExpl, setExampleExpl] = useState<ExampleExplanation | null>(
+    item.example?.explanation ?? null,
+  );
+  const [exampleExplOpen, setExampleExplOpen] = useState(false);
+  const [exampleExplStatus, setExampleExplStatus] = useState<ExampleExplStatus>(
+    { kind: "idle" },
+  );
+  const [showExplRegenModal, setShowExplRegenModal] = useState(false);
+  const [showKanjiModal, setShowKanjiModal] = useState(false);
+
+  // Reset explanation/modal state when the card changes.
+  useEffect(() => {
+    setExampleExpl(item.example?.explanation ?? null);
+    setExampleExplOpen(false);
+    setExampleExplStatus({ kind: "idle" });
+    setShowKanjiModal(false);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [item.id]);
+
+  async function fetchExplanation(tier: "default" | "premium") {
+    if (!item.example) return;
+    const exampleId = item.example.id;
+    setExampleExplOpen(true);
+    setExampleExplStatus({ kind: "loading", tier });
+    try {
+      const res = await fetch("/api/example-explanation", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ exampleId, tier }),
+      });
+      if (!res.ok) {
+        const body = (await res.json().catch(() => ({}))) as { error?: string };
+        throw new Error(body.error ?? `request failed (${res.status})`);
+      }
+      const data = (await res.json()) as {
+        explanation: ExampleExplanation;
+        cached: boolean;
+        usage?: ApiUsage | null;
+      };
+      if (data.usage) showUsageToast("📖 예문 해설", data.usage);
+      setExampleExpl(data.explanation);
+      setExampleExplStatus({ kind: "idle" });
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "failed";
+      setExampleExplStatus({ kind: "error", message });
+    }
+  }
+
+  function toggleExplanation() {
+    if (!item.example) return;
+    if (!exampleExpl) fetchExplanation("default");
+    else setExampleExplOpen((v) => !v);
+  }
+
   return (
     <div className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-10 dark:border-neutral-800 dark:bg-neutral-900">
       <div className="mb-3 flex items-center gap-2">
+        {item.focusKanji && (
+          <button
+            type="button"
+            onClick={() => setShowKanjiModal(true)}
+            title={`출처 한자 — ${item.focusKanji.character} (${item.focusKanji.packKey}). 클릭하면 한자 카드`}
+            className="group inline-flex items-center gap-1.5 rounded-md border border-neutral-200 bg-white px-2 py-0.5 text-base text-neutral-800 transition hover:border-neutral-400 hover:bg-neutral-50 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-200 dark:hover:bg-neutral-800"
+          >
+            <span className="text-lg leading-none [font-family:'Noto_Sans_JP',sans-serif]">
+              {item.focusKanji.character}
+            </span>
+            <span className="text-[10px] uppercase tracking-wide text-neutral-500 group-hover:text-neutral-700 dark:text-neutral-400 dark:group-hover:text-neutral-200">
+              한자 카드
+            </span>
+          </button>
+        )}
         <span className="rounded bg-sky-100 px-2 py-0.5 text-[10px] uppercase tracking-wide text-sky-700 dark:bg-sky-950 dark:text-sky-300">
           한자 읽기
         </span>
       </div>
 
+      {showKanjiModal && item.focusKanji && (
+        <KanjiHintModal
+          kanji={item.focusKanji}
+          onClose={() => setShowKanjiModal(false)}
+        />
+      )}
+
       {item.example ? (
-        <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4 sm:p-6 dark:border-neutral-800 dark:bg-neutral-950">
-          <div className="flex items-start gap-3">
-            <p className="flex-1 text-lg leading-loose text-neutral-800 sm:text-2xl dark:text-neutral-200 [font-family:'Noto_Sans_JP',sans-serif]">
-              <SentenceRender
-                tokens={item.example.sentence as SentenceToken[]}
-                revealTarget={showTargetReading}
-                wordReading={item.wordReading}
-              />
-            </p>
-            <button
-              type="button"
-              disabled={ttsLoading}
-              onClick={() => play(sentencePlain)}
-              aria-label="예문 발음"
-              className="mt-1 inline-flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-neutral-200 text-base text-neutral-600 hover:bg-neutral-100 disabled:opacity-50 sm:mt-2 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
-            >
-              {sentenceTtsLoading ? <Spinner className="h-4 w-4" /> : "♪"}
-            </button>
+        <>
+          <div className="rounded-xl border border-neutral-200 bg-neutral-50 p-4 sm:p-6 dark:border-neutral-800 dark:bg-neutral-950">
+            <div className="flex items-start gap-3">
+              <p className="flex-1 text-lg leading-loose text-neutral-800 sm:text-2xl dark:text-neutral-200 [font-family:'Noto_Sans_JP',sans-serif]">
+                <SentenceRender
+                  tokens={item.example.sentence as SentenceToken[]}
+                  revealTarget={showTargetReading}
+                  wordReading={item.wordReading}
+                />
+              </p>
+              <div className="mt-1 flex shrink-0 items-center gap-2 sm:mt-2">
+                <button
+                  type="button"
+                  disabled={ttsLoading}
+                  onClick={() => play(sentencePlain)}
+                  aria-label="예문 발음"
+                  className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-neutral-200 text-base text-neutral-600 hover:bg-neutral-100 disabled:opacity-50 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+                >
+                  {sentenceTtsLoading ? <Spinner className="h-4 w-4" /> : "♪"}
+                </button>
+                <button
+                  type="button"
+                  disabled={exampleExplStatus.kind === "loading"}
+                  onClick={toggleExplanation}
+                  aria-label="예문 해설"
+                  aria-pressed={exampleExplOpen}
+                  title="예문 전체에 대한 해설 (늬앙스/문법/표현)"
+                  className={`inline-flex h-9 w-9 items-center justify-center rounded-full border text-base transition disabled:opacity-50 ${
+                    exampleExplOpen
+                      ? "border-sky-400 bg-sky-50 text-sky-900 dark:border-sky-500 dark:bg-sky-950 dark:text-sky-200"
+                      : "border-neutral-200 text-neutral-600 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+                  }`}
+                >
+                  {exampleExplStatus.kind === "loading" ? (
+                    <Spinner className="h-4 w-4" />
+                  ) : (
+                    <span aria-hidden>📖</span>
+                  )}
+                </button>
+              </div>
+            </div>
+            {item.example.sentenceTranslationKo && (
+              <p
+                className={`mt-3 text-sm transition-colors duration-300 sm:text-base ${
+                  showTranslation
+                    ? "text-neutral-500 dark:text-neutral-400"
+                    : "select-none text-transparent"
+                }`}
+                aria-hidden={!showTranslation}
+              >
+                {item.example.sentenceTranslationKo}
+              </p>
+            )}
           </div>
-          {item.example.sentenceTranslationKo && (
-            <p
-              className={`mt-3 text-sm transition-colors duration-300 sm:text-base ${
-                showTranslation
-                  ? "text-neutral-500 dark:text-neutral-400"
-                  : "select-none text-transparent"
-              }`}
-              aria-hidden={!showTranslation}
-            >
-              {item.example.sentenceTranslationKo}
-            </p>
+
+          {exampleExplOpen && (
+            <ExampleExplanationPanel
+              explanation={exampleExpl}
+              status={exampleExplStatus}
+              onRegenerate={() => setShowExplRegenModal(true)}
+              onRetry={() => fetchExplanation("default")}
+            />
           )}
-        </div>
+
+          <ConfirmModal
+            open={showExplRegenModal}
+            title="예문 해설 다시 생성"
+            body={
+              <>
+                <p>
+                  <strong>Sonnet</strong> 으로 예문 해설을 다시 생성합니다.
+                </p>
+                <p className="mt-2 text-xs text-neutral-500">
+                  기존 예문 해설을 덮어씁니다. 비용이 더 발생합니다.
+                </p>
+              </>
+            }
+            confirmLabel="생성"
+            onConfirm={() => {
+              setShowExplRegenModal(false);
+              fetchExplanation("premium");
+            }}
+            onCancel={() => setShowExplRegenModal(false)}
+          />
+        </>
       ) : (
         <NoExampleFallback item={item} />
       )}
@@ -761,6 +915,44 @@ function MiniResult({
           정답 — {correctText}
         </span>
       )}
+    </div>
+  );
+}
+
+function KanjiHintModal({
+  kanji,
+  onClose,
+}: {
+  kanji: FocusKanji;
+  onClose: () => void;
+}) {
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") onClose();
+    }
+    window.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [onClose]);
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      <div className="absolute inset-0 bg-neutral-900/40" onClick={onClose} />
+      <div className="relative w-full max-w-3xl">
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="닫기"
+          className="absolute -top-3 -right-3 z-10 inline-flex h-8 w-8 items-center justify-center rounded-full border border-neutral-200 bg-white text-neutral-600 shadow hover:bg-neutral-100 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300 dark:hover:bg-neutral-800"
+        >
+          ✕
+        </button>
+        <KanjiCard kanji={kanji} readings={kanji.readings} />
+      </div>
     </div>
   );
 }

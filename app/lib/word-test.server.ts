@@ -3,10 +3,13 @@ import {
   db,
   examples as examplesTable,
   kanji as kanjiTable,
+  readings as readingsTable,
   words as wordsTable,
   wordTests,
   wordTestItems,
   type Example,
+  type Kanji,
+  type Reading,
   type ReadingSubPick,
   type WordTestKind,
   type WordTestMode,
@@ -231,6 +234,66 @@ export async function loadExamplesForSourceWords(
     .orderBy(asc(examplesTable.wordId), asc(examplesTable.id));
   for (const row of rows) {
     if (!map.has(row.wordId)) map.set(row.wordId, row);
+  }
+  return map;
+}
+
+export type FocusKanji = Pick<
+  Kanji,
+  "id" | "character" | "packKey" | "meaningKo" | "strokeCount"
+> & {
+  readings: Reading[];
+};
+
+/**
+ * For reading-kind tests, fetch each source word's focus kanji + its readings
+ * (live — same data as the word pack's KanjiCard). Returns a Map keyed by
+ * sourceWordId.
+ */
+export async function loadFocusKanjiForSourceWords(
+  sourceWordIds: number[],
+): Promise<Map<number, FocusKanji>> {
+  const map = new Map<number, FocusKanji>();
+  if (sourceWordIds.length === 0) return map;
+
+  const wordKanjiRows = await db
+    .select({
+      wordId: wordsTable.id,
+      id: kanjiTable.id,
+      character: kanjiTable.character,
+      packKey: kanjiTable.packKey,
+      meaningKo: kanjiTable.meaningKo,
+      strokeCount: kanjiTable.strokeCount,
+    })
+    .from(wordsTable)
+    .innerJoin(kanjiTable, eq(wordsTable.kanjiId, kanjiTable.id))
+    .where(inArray(wordsTable.id, sourceWordIds));
+
+  if (wordKanjiRows.length === 0) return map;
+
+  const kanjiIds = [...new Set(wordKanjiRows.map((r) => r.id))];
+  const readingRows = await db
+    .select()
+    .from(readingsTable)
+    .where(inArray(readingsTable.kanjiId, kanjiIds))
+    .orderBy(asc(readingsTable.kanjiId), asc(readingsTable.id));
+
+  const readingsByKanjiId = new Map<number, Reading[]>();
+  for (const r of readingRows) {
+    const list = readingsByKanjiId.get(r.kanjiId) ?? [];
+    list.push(r);
+    readingsByKanjiId.set(r.kanjiId, list);
+  }
+
+  for (const r of wordKanjiRows) {
+    map.set(r.wordId, {
+      id: r.id,
+      character: r.character,
+      packKey: r.packKey,
+      meaningKo: r.meaningKo,
+      strokeCount: r.strokeCount,
+      readings: readingsByKanjiId.get(r.id) ?? [],
+    });
   }
   return map;
 }

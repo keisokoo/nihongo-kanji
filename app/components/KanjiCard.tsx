@@ -161,9 +161,17 @@ function ReadingRow({
               type="button"
               disabled={loading}
               onClick={() => onPlay(r.reading)}
-              className="inline-flex min-w-[3rem] items-center justify-center gap-1.5 rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-1.5 text-base text-neutral-800 transition hover:border-neutral-400 hover:bg-neutral-100 disabled:opacity-50 sm:min-w-[4rem] sm:px-4 sm:py-2 sm:text-lg dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 [font-family:'Noto_Sans_JP',sans-serif]"
+              className="relative inline-flex min-w-[3rem] items-center justify-center gap-1.5 rounded-lg border border-neutral-200 bg-neutral-50 px-3 py-1.5 text-base text-neutral-800 transition hover:border-neutral-400 hover:bg-neutral-100 disabled:opacity-50 sm:min-w-[4rem] sm:px-4 sm:py-2 sm:text-lg dark:border-neutral-700 dark:bg-neutral-800 dark:text-neutral-200 dark:hover:bg-neutral-700 [font-family:'Noto_Sans_JP',sans-serif]"
             >
-              {isLoading ? <Spinner className="h-5 w-5" /> : r.reading}
+              {r.reading}
+              {isLoading && (
+                <span
+                  aria-hidden
+                  className="pointer-events-none absolute inset-0 flex items-center justify-center rounded-lg bg-neutral-50/80 backdrop-blur-[1px] dark:bg-neutral-800/80"
+                >
+                  <Spinner className="h-5 w-5" />
+                </span>
+              )}
             </button>
           );
         })}

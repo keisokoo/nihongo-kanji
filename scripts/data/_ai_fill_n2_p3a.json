@@ -1,0 +1,121 @@
+{
+  "_comment": "N2 Phase 3-A: 17한자 (岩,岸,州,巨,巻,布,希,帯,帽,幅,干,幼,庁,床,底,府,庫)",
+  "fills": {
+    "岩": [
+      { "readingRef": "ガン", "word": "岩石", "wordReading": "がんせき", "meaningsKo": ["암석"], "examples": [{ "sentence": "{山|やま}で{珍|めずら}しい{{岩石}}を{見|み}つけました。", "sentenceTranslationKo": "산에서 진귀한 암석을 발견했습니다." }] },
+      { "readingRef": "ガン", "word": "溶岩", "wordReading": "ようがん", "meaningsKo": ["용암"], "examples": [{ "sentence": "{火山|かざん}から{{溶岩}}が{流|なが}れ{出|だ}しました。", "sentenceTranslationKo": "화산에서 용암이 흘러나왔습니다." }] },
+      { "readingRef": "いわ", "word": "岩", "wordReading": "いわ", "meaningsKo": ["바위"], "examples": [{ "sentence": "{大|おお}きな{{岩}}が{道|みち}を{塞|ふさ}いでいました。", "sentenceTranslationKo": "큰 바위가 길을 막고 있었습니다." }] },
+      { "readingRef": "いわ", "word": "岩場", "wordReading": "いわば", "meaningsKo": ["바위 지대"], "examples": [{ "sentence": "{海岸|かいがん}の{{岩場}}で{釣|つ}りをしました。", "sentenceTranslationKo": "해안의 바위 지대에서 낚시를 했습니다." }] },
+      { "readingRef": "いわ", "word": "岩山", "wordReading": "いわやま", "meaningsKo": ["바위산"], "examples": [{ "sentence": "{険|けわ}しい{{岩山}}を{登|のぼ}りました。", "sentenceTranslationKo": "험한 바위산을 올랐습니다." }] }
+    ],
+    "岸": [
+      { "readingRef": "ガン", "word": "海岸", "wordReading": "かいがん", "meaningsKo": ["해안"], "examples": [{ "sentence": "{夕方|ゆうがた}{{海岸}}を{散歩|さんぽ}しました。", "sentenceTranslationKo": "저녁때 해안을 산책했습니다." }] },
+      { "readingRef": "ガン", "word": "沿岸", "wordReading": "えんがん", "meaningsKo": ["연안"], "examples": [{ "sentence": "{日本|にほん}の{{沿岸}}には{多|おお}くの{港|みなと}があります。", "sentenceTranslationKo": "일본 연안에는 많은 항구가 있습니다." }] },
+      { "readingRef": "ガン", "word": "対岸", "wordReading": "たいがん", "meaningsKo": ["대안", "건너편 강가"], "examples": [{ "sentence": "{川|かわ}の{{対岸}}に{町|まち}が{見|み}えます。", "sentenceTranslationKo": "강 건너편에 마을이 보입니다." }] },
+      { "readingRef": "きし", "word": "岸", "wordReading": "きし", "meaningsKo": ["물가"], "examples": [{ "sentence": "{湖|みずうみ}の{{岸}}でお{弁当|べんとう}を{食|た}べました。", "sentenceTranslationKo": "호숫가에서 도시락을 먹었습니다." }] },
+      { "readingRef": "きし", "word": "川岸", "wordReading": "かわぎし", "meaningsKo": ["강가"], "examples": [{ "sentence": "{{川岸}}を{歩|ある}くのが{気持|きも}ちいいです。", "sentenceTranslationKo": "강가를 걷는 것이 기분 좋습니다." }] }
+    ],
+    "州": [
+      { "readingRef": "シュウ", "word": "九州", "wordReading": "きゅうしゅう", "meaningsKo": ["규슈"], "examples": [{ "sentence": "{夏休|なつやす}みに{{九州}}を{旅行|りょこう}しました。", "sentenceTranslationKo": "여름방학에 규슈를 여행했습니다." }] },
+      { "readingRef": "シュウ", "word": "本州", "wordReading": "ほんしゅう", "meaningsKo": ["혼슈"], "examples": [{ "sentence": "{日本|にほん}で{一番|いちばん}{大|おお}きな{島|しま}は{{本州}}です。", "sentenceTranslationKo": "일본에서 가장 큰 섬은 혼슈입니다." }] },
+      { "readingRef": "シュウ", "word": "欧州", "wordReading": "おうしゅう", "meaningsKo": ["유럽"], "examples": [{ "sentence": "{{欧州}}{各国|かっこく}を{訪|たず}ねました。", "sentenceTranslationKo": "유럽 각국을 방문했습니다." }] },
+      { "readingRef": "シュウ", "word": "州", "wordReading": "しゅう", "meaningsKo": ["주"], "examples": [{ "sentence": "アメリカは{五十|ごじゅう}の{{州}}があります。", "sentenceTranslationKo": "미국은 50개의 주가 있습니다." }] },
+      { "readingRef": "シュウ", "word": "三角州", "wordReading": "さんかくす", "meaningsKo": ["삼각주"], "examples": [{ "sentence": "{川|かわ}の{下流|かりゅう}に{{三角州}}があります。", "sentenceTranslationKo": "강 하류에 삼각주가 있습니다." }] }
+    ],
+    "巨": [
+      { "readingRef": "キョ", "word": "巨大", "wordReading": "きょだい", "meaningsKo": ["거대"], "examples": [{ "sentence": "{{巨大}}な{建物|たてもの}が{建|た}ちました。", "sentenceTranslationKo": "거대한 건물이 지어졌습니다." }] },
+      { "readingRef": "キョ", "word": "巨人", "wordReading": "きょじん", "meaningsKo": ["거인"], "examples": [{ "sentence": "{物語|ものがたり}に{{巨人}}が{登場|とうじょう}します。", "sentenceTranslationKo": "이야기에 거인이 등장합니다." }] },
+      { "readingRef": "キョ", "word": "巨額", "wordReading": "きょがく", "meaningsKo": ["거액"], "examples": [{ "sentence": "{彼|かれ}は{{巨額}}の{資産|しさん}を{持|も}っています。", "sentenceTranslationKo": "그는 거액의 자산을 가지고 있습니다." }] },
+      { "readingRef": "キョ", "word": "巨匠", "wordReading": "きょしょう", "meaningsKo": ["거장"], "examples": [{ "sentence": "{映画|えいが}{界|かい}の{{巨匠}}が{亡|な}くなりました。", "sentenceTranslationKo": "영화계의 거장이 별세했습니다." }] },
+      { "readingRef": "キョ", "word": "巨星", "wordReading": "きょせい", "meaningsKo": ["거성"], "examples": [{ "sentence": "{音楽|おんがく}{界|かい}の{{巨星}}が{現|あらわ}れました。", "sentenceTranslationKo": "음악계의 거성이 나타났습니다." }] }
+    ],
+    "巻": [
+      { "readingRef": "カン", "word": "圧巻", "wordReading": "あっかん", "meaningsKo": ["압권"], "examples": [{ "sentence": "{彼女|かのじょ}の{演技|えんぎ}は{{圧巻}}でした。", "sentenceTranslationKo": "그녀의 연기는 압권이었습니다." }] },
+      { "readingRef": "カン", "word": "全巻", "wordReading": "ぜんかん", "meaningsKo": ["전권"], "examples": [{ "sentence": "{好|す}きな{漫画|まんが}の{{全巻}}を{揃|そろ}えました。", "sentenceTranslationKo": "좋아하는 만화의 전권을 갖췄습니다." }] },
+      { "readingRef": "まく", "word": "巻く", "wordReading": "まく", "meaningsKo": ["감다", "말다"], "examples": [{ "sentence": "{首|くび}にマフラーを{{巻く}}{季節|きせつ}になりました。", "sentenceTranslationKo": "목에 머플러를 감는 계절이 되었습니다." }] },
+      { "readingRef": "まき", "word": "巻物", "wordReading": "まきもの", "meaningsKo": ["두루마리"], "examples": [{ "sentence": "{古|ふる}い{{巻物}}を{博物館|はくぶつかん}で{見|み}ました。", "sentenceTranslationKo": "오래된 두루마리를 박물관에서 봤습니다." }] },
+      { "readingRef": "まき", "word": "上巻", "wordReading": "じょうかん", "meaningsKo": ["상권"], "examples": [{ "sentence": "{小説|しょうせつ}の{{上巻}}を{読|よ}み{終|お}わりました。", "sentenceTranslationKo": "소설의 상권을 다 읽었습니다." }] }
+    ],
+    "布": [
+      { "readingRef": "フ", "word": "布教", "wordReading": "ふきょう", "meaningsKo": ["포교"], "examples": [{ "sentence": "{宣教師|せんきょうし}が{{布教}}{活動|かつどう}をしています。", "sentenceTranslationKo": "선교사가 포교 활동을 하고 있습니다." }] },
+      { "readingRef": "フ", "word": "分布", "wordReading": "ぶんぷ", "meaningsKo": ["분포"], "examples": [{ "sentence": "{動物|どうぶつ}の{{分布}}を{調|しら}べました。", "sentenceTranslationKo": "동물의 분포를 조사했습니다." }] },
+      { "readingRef": "フ", "word": "公布", "wordReading": "こうふ", "meaningsKo": ["공포"], "examples": [{ "sentence": "{新|あたら}しい{法律|ほうりつ}が{{公布}}されました。", "sentenceTranslationKo": "새 법률이 공포되었습니다." }] },
+      { "readingRef": "ぬの", "word": "布", "wordReading": "ぬの", "meaningsKo": ["천"], "examples": [{ "sentence": "{きれい|きれい}な{{布}}でカバンを{作|つく}りました。", "sentenceTranslationKo": "예쁜 천으로 가방을 만들었습니다." }] },
+      { "readingRef": "フ", "word": "財布", "wordReading": "さいふ", "meaningsKo": ["지갑"], "examples": [{ "sentence": "{新|あたら}しい{{財布}}を{買|か}いました。", "sentenceTranslationKo": "새 지갑을 샀습니다." }] }
+    ],
+    "希": [
+      { "readingRef": "キ", "word": "希望", "wordReading": "きぼう", "meaningsKo": ["희망"], "examples": [{ "sentence": "{未来|みらい}に{{希望}}を{持|も}っています。", "sentenceTranslationKo": "미래에 희망을 가지고 있습니다." }] },
+      { "readingRef": "キ", "word": "希少", "wordReading": "きしょう", "meaningsKo": ["희소"], "examples": [{ "sentence": "これは{{希少}}な{品|しな}です。", "sentenceTranslationKo": "이것은 희소한 물품입니다." }] },
+      { "readingRef": "キ", "word": "希薄", "wordReading": "きはく", "meaningsKo": ["희박"], "examples": [{ "sentence": "{高山|こうざん}では{空気|くうき}が{{希薄}}です。", "sentenceTranslationKo": "고산에서는 공기가 희박합니다." }] },
+      { "readingRef": "まれ", "word": "希", "wordReading": "まれ", "meaningsKo": ["드물다"], "examples": [{ "sentence": "{こんな|こんな}{機会|きかい}は{{希}}です。", "sentenceTranslationKo": "이런 기회는 드뭅니다." }] }
+    ],
+    "帯": [
+      { "readingRef": "タイ", "word": "携帯", "wordReading": "けいたい", "meaningsKo": ["휴대"], "examples": [{ "sentence": "{{携帯}}{電話|でんわ}を{忘|わす}れてしまいました。", "sentenceTranslationKo": "휴대전화를 두고 와 버렸습니다." }] },
+      { "readingRef": "タイ", "word": "熱帯", "wordReading": "ねったい", "meaningsKo": ["열대"], "examples": [{ "sentence": "{{熱帯}}{植物|しょくぶつ}を{育|そだ}てています。", "sentenceTranslationKo": "열대 식물을 키우고 있습니다." }] },
+      { "readingRef": "タイ", "word": "包帯", "wordReading": "ほうたい", "meaningsKo": ["붕대"], "examples": [{ "sentence": "{傷|きず}に{{包帯}}を{巻|ま}きました。", "sentenceTranslationKo": "상처에 붕대를 감았습니다." }] },
+      { "readingRef": "おび", "word": "帯", "wordReading": "おび", "meaningsKo": ["띠", "허리띠"], "examples": [{ "sentence": "{着物|きもの}の{{帯}}を{締|し}めました。", "sentenceTranslationKo": "기모노의 띠를 묶었습니다." }] },
+      { "readingRef": "タイ", "word": "世帯", "wordReading": "せたい", "meaningsKo": ["세대"], "examples": [{ "sentence": "この{町|まち}には{多|おお}くの{{世帯}}があります。", "sentenceTranslationKo": "이 동네에는 많은 세대가 있습니다." }] }
+    ],
+    "帽": [
+      { "readingRef": "ボウ", "word": "帽子", "wordReading": "ぼうし", "meaningsKo": ["모자"], "examples": [{ "sentence": "{暑|あつ}いので{{帽子}}をかぶりました。", "sentenceTranslationKo": "더워서 모자를 썼습니다." }] },
+      { "readingRef": "ボウ", "word": "脱帽", "wordReading": "だつぼう", "meaningsKo": ["탈모", "감복"], "examples": [{ "sentence": "{彼|かれ}の{才能|さいのう}には{{脱帽}}しました。", "sentenceTranslationKo": "그의 재능에는 감복했습니다." }] },
+      { "readingRef": "ボウ", "word": "麦藁帽", "wordReading": "むぎわらぼう", "meaningsKo": ["밀짚모자"], "examples": [{ "sentence": "{夏|なつ}は{{麦藁帽}}が{似合|にあ}います。", "sentenceTranslationKo": "여름은 밀짚모자가 어울립니다." }] }
+    ],
+    "幅": [
+      { "readingRef": "フク", "word": "全幅", "wordReading": "ぜんぷく", "meaningsKo": ["전폭"], "examples": [{ "sentence": "{先生|せんせい}に{{全幅}}の{信頼|しんらい}を{置|お}いています。", "sentenceTranslationKo": "선생님께 전폭적인 신뢰를 두고 있습니다." }] },
+      { "readingRef": "はば", "word": "幅", "wordReading": "はば", "meaningsKo": ["폭"], "examples": [{ "sentence": "この{道|みち}は{{幅}}が{狭|せま}いです。", "sentenceTranslationKo": "이 길은 폭이 좁습니다." }] },
+      { "readingRef": "はば", "word": "幅広い", "wordReading": "はばひろい", "meaningsKo": ["폭넓다"], "examples": [{ "sentence": "{彼|かれ}は{{幅広い}}{知識|ちしき}を{持|も}っています。", "sentenceTranslationKo": "그는 폭넓은 지식을 가지고 있습니다." }] },
+      { "readingRef": "はば", "word": "大幅", "wordReading": "おおはば", "meaningsKo": ["대폭"], "examples": [{ "sentence": "{売上|うりあげ}が{{大幅}}に{増|ふ}えました。", "sentenceTranslationKo": "매출이 대폭 늘었습니다." }] },
+      { "readingRef": "はば", "word": "歩幅", "wordReading": "ほはば", "meaningsKo": ["보폭"], "examples": [{ "sentence": "{彼|かれ}の{{歩幅}}は{大|おお}きいです。", "sentenceTranslationKo": "그의 보폭은 큽니다." }] }
+    ],
+    "干": [
+      { "readingRef": "カン", "word": "干渉", "wordReading": "かんしょう", "meaningsKo": ["간섭"], "examples": [{ "sentence": "{他人|たにん}の{家庭|かてい}に{{干渉}}しないでください。", "sentenceTranslationKo": "타인의 가정에 간섭하지 마세요." }] },
+      { "readingRef": "カン", "word": "若干", "wordReading": "じゃっかん", "meaningsKo": ["약간"], "examples": [{ "sentence": "{予算|よさん}が{{若干}}{足|た}りません。", "sentenceTranslationKo": "예산이 약간 부족합니다." }] },
+      { "readingRef": "ほす", "word": "干す", "wordReading": "ほす", "meaningsKo": ["말리다"], "examples": [{ "sentence": "{洗濯物|せんたくもの}を{ベランダ|べらんだ}に{{干す}}{習慣|しゅうかん}があります。", "sentenceTranslationKo": "빨래를 베란다에 말리는 습관이 있습니다." }] },
+      { "readingRef": "ひる", "word": "干る", "wordReading": "ひる", "meaningsKo": ["마르다"], "examples": [{ "sentence": "{潮|しお}が{{干る}}と{砂浜|すなはま}が{広|ひろ}がります。", "sentenceTranslationKo": "조수가 빠지면 모래사장이 넓어집니다." }] },
+      { "readingRef": "ほし", "word": "干物", "wordReading": "ひもの", "meaningsKo": ["건어물"], "examples": [{ "sentence": "{朝食|ちょうしょく}に{{干物}}を{食|た}べました。", "sentenceTranslationKo": "아침에 건어물을 먹었습니다." }] }
+    ],
+    "幼": [
+      { "readingRef": "ヨウ", "word": "幼児", "wordReading": "ようじ", "meaningsKo": ["유아"], "examples": [{ "sentence": "{{幼児}}{教育|きょういく}に{関心|かんしん}があります。", "sentenceTranslationKo": "유아 교육에 관심이 있습니다." }] },
+      { "readingRef": "ヨウ", "word": "幼稚園", "wordReading": "ようちえん", "meaningsKo": ["유치원"], "examples": [{ "sentence": "{弟|おとうと}は{{幼稚園}}に{通|かよ}っています。", "sentenceTranslationKo": "남동생은 유치원에 다닙니다." }] },
+      { "readingRef": "ヨウ", "word": "幼少", "wordReading": "ようしょう", "meaningsKo": ["유소", "어린 시절"], "examples": [{ "sentence": "{彼|かれ}の{{幼少}}{期|き}は{苦労|くろう}が{多|おお}かったです。", "sentenceTranslationKo": "그의 어린 시절은 고생이 많았습니다." }] },
+      { "readingRef": "おさない", "word": "幼い", "wordReading": "おさない", "meaningsKo": ["어리다"], "examples": [{ "sentence": "{まだ|まだ}{{幼い}}{子|こ}どもがいます。", "sentenceTranslationKo": "아직 어린 아이가 있습니다." }] },
+      { "readingRef": "おさない", "word": "幼なじみ", "wordReading": "おさななじみ", "meaningsKo": ["소꿉친구"], "examples": [{ "sentence": "{彼|かれ}とは{{幼なじみ}}です。", "sentenceTranslationKo": "그와는 소꿉친구입니다." }] }
+    ],
+    "庁": [
+      { "readingRef": "チョウ", "word": "庁", "wordReading": "ちょう", "meaningsKo": ["청"], "examples": [{ "sentence": "{気象|きしょう}{{庁}}が{警報|けいほう}を{出|だ}しました。", "sentenceTranslationKo": "기상청이 경보를 발령했습니다." }] },
+      { "readingRef": "チョウ", "word": "県庁", "wordReading": "けんちょう", "meaningsKo": ["현청"], "examples": [{ "sentence": "{{県庁}}{所在地|しょざいち}を{覚|おぼ}えました。", "sentenceTranslationKo": "현청 소재지를 외웠습니다." }] },
+      { "readingRef": "チョウ", "word": "官庁", "wordReading": "かんちょう", "meaningsKo": ["관청"], "examples": [{ "sentence": "{中央|ちゅうおう}{{官庁}}で{働|はたら}いています。", "sentenceTranslationKo": "중앙 관청에서 일하고 있습니다." }] },
+      { "readingRef": "チョウ", "word": "警察庁", "wordReading": "けいさつちょう", "meaningsKo": ["경찰청"], "examples": [{ "sentence": "{{警察庁}}が{発表|はっぴょう}しました。", "sentenceTranslationKo": "경찰청이 발표했습니다." }] },
+      { "readingRef": "チョウ", "word": "庁舎", "wordReading": "ちょうしゃ", "meaningsKo": ["청사"], "examples": [{ "sentence": "{新|あたら}しい{{庁舎}}が{完成|かんせい}しました。", "sentenceTranslationKo": "새 청사가 완성되었습니다." }] }
+    ],
+    "床": [
+      { "readingRef": "ショウ", "word": "起床", "wordReading": "きしょう", "meaningsKo": ["기상"], "examples": [{ "sentence": "{毎朝|まいあさ}{六時|ろくじ}に{{起床}}します。", "sentenceTranslationKo": "매일 아침 6시에 기상합니다." }] },
+      { "readingRef": "ショウ", "word": "病床", "wordReading": "びょうしょう", "meaningsKo": ["병상"], "examples": [{ "sentence": "{祖父|そふ}が{{病床}}にあります。", "sentenceTranslationKo": "할아버지가 병상에 계십니다." }] },
+      { "readingRef": "ゆか", "word": "床", "wordReading": "ゆか", "meaningsKo": ["바닥"], "examples": [{ "sentence": "{{床}}を{掃除|そうじ}しました。", "sentenceTranslationKo": "바닥을 청소했습니다." }] },
+      { "readingRef": "とこ", "word": "床屋", "wordReading": "とこや", "meaningsKo": ["이발소"], "examples": [{ "sentence": "{月|つき}に{一度|いちど}{{床屋}}に{行|い}きます。", "sentenceTranslationKo": "한 달에 한 번 이발소에 갑니다." }] },
+      { "readingRef": "とこ", "word": "寝床", "wordReading": "ねどこ", "meaningsKo": ["잠자리"], "examples": [{ "sentence": "{暖|あたた}かい{{寝床}}に{入|はい}りました。", "sentenceTranslationKo": "따뜻한 잠자리에 들었습니다." }] }
+    ],
+    "底": [
+      { "readingRef": "テイ", "word": "海底", "wordReading": "かいてい", "meaningsKo": ["해저"], "examples": [{ "sentence": "{{海底}}には{多|おお}くの{生|い}き{物|もの}がいます。", "sentenceTranslationKo": "해저에는 많은 생물이 있습니다." }] },
+      { "readingRef": "テイ", "word": "徹底", "wordReading": "てってい", "meaningsKo": ["철저"], "examples": [{ "sentence": "{安全|あんぜん}{管理|かんり}を{{徹底}}しています。", "sentenceTranslationKo": "안전 관리를 철저히 하고 있습니다." }] },
+      { "readingRef": "テイ", "word": "到底", "wordReading": "とうてい", "meaningsKo": ["도저히"], "examples": [{ "sentence": "{{到底}}{解|と}けない{問題|もんだい}でした。", "sentenceTranslationKo": "도저히 풀 수 없는 문제였습니다." }] },
+      { "readingRef": "そこ", "word": "底", "wordReading": "そこ", "meaningsKo": ["바닥", "밑"], "examples": [{ "sentence": "{川|かわ}の{{底}}に{きれい|きれい}な{石|いし}がありました。", "sentenceTranslationKo": "강바닥에 예쁜 돌이 있었습니다." }] },
+      { "readingRef": "そこ", "word": "靴底", "wordReading": "くつぞこ", "meaningsKo": ["구두 바닥"], "examples": [{ "sentence": "{古|ふる}い{靴|くつ}の{{靴底}}が{減|へ}りました。", "sentenceTranslationKo": "낡은 신발의 밑창이 닳았습니다." }] }
+    ],
+    "府": [
+      { "readingRef": "フ", "word": "政府", "wordReading": "せいふ", "meaningsKo": ["정부"], "examples": [{ "sentence": "{{政府}}が{災害|さいがい}{支援|しえん}を{決|き}めました。", "sentenceTranslationKo": "정부가 재해 지원을 결정했습니다." }] },
+      { "readingRef": "フ", "word": "首府", "wordReading": "しゅふ", "meaningsKo": ["수도"], "examples": [{ "sentence": "{韓国|かんこく}の{{首府}}はソウルです。", "sentenceTranslationKo": "한국의 수도는 서울입니다." }] },
+      { "readingRef": "フ", "word": "京都府", "wordReading": "きょうとふ", "meaningsKo": ["교토부"], "examples": [{ "sentence": "{{京都府}}には{有名|ゆうめい}な{観光地|かんこうち}が{多|おお}いです。", "sentenceTranslationKo": "교토부에는 유명한 관광지가 많습니다." }] },
+      { "readingRef": "フ", "word": "大阪府", "wordReading": "おおさかふ", "meaningsKo": ["오사카부"], "examples": [{ "sentence": "{{大阪府}}に{引|ひ}っ{越|こ}しました。", "sentenceTranslationKo": "오사카부로 이사했습니다." }] },
+      { "readingRef": "フ", "word": "幕府", "wordReading": "ばくふ", "meaningsKo": ["막부"], "examples": [{ "sentence": "{江戸|えど}{{幕府}}の{歴史|れきし}を{学|まな}びました。", "sentenceTranslationKo": "에도 막부의 역사를 배웠습니다." }] }
+    ],
+    "庫": [
+      { "readingRef": "コ", "word": "倉庫", "wordReading": "そうこ", "meaningsKo": ["창고"], "examples": [{ "sentence": "{{倉庫}}に{古|ふる}い{家具|かぐ}が{置|お}いてあります。", "sentenceTranslationKo": "창고에 오래된 가구가 놓여 있습니다." }] },
+      { "readingRef": "コ", "word": "金庫", "wordReading": "きんこ", "meaningsKo": ["금고"], "examples": [{ "sentence": "{大切|たいせつ}な{書類|しょるい}を{{金庫}}に{入|い}れました。", "sentenceTranslationKo": "중요한 서류를 금고에 넣었습니다." }] },
+      { "readingRef": "コ", "word": "車庫", "wordReading": "しゃこ", "meaningsKo": ["차고"], "examples": [{ "sentence": "{家|いえ}の{{車庫}}に{自転車|じてんしゃ}を{置|お}いています。", "sentenceTranslationKo": "집 차고에 자전거를 두고 있습니다." }] },
+      { "readingRef": "コ", "word": "在庫", "wordReading": "ざいこ", "meaningsKo": ["재고"], "examples": [{ "sentence": "{今|いま}この{商品|しょうひん}は{{在庫}}が{ありません|ありません}。", "sentenceTranslationKo": "지금 이 상품은 재고가 없습니다." }] },
+      { "readingRef": "コ", "word": "冷蔵庫", "wordReading": "れいぞうこ", "meaningsKo": ["냉장고"], "examples": [{ "sentence": "{{冷蔵庫}}に{牛乳|ぎゅうにゅう}を{入|い}れました。", "sentenceTranslationKo": "냉장고에 우유를 넣었습니다." }] }
+    ]
+  }
+}

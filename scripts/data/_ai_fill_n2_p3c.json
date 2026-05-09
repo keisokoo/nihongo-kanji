@@ -1,0 +1,118 @@
+{
+  "_comment": "N2 Phase 3-C: 17한자 (捨,掃,掘,採,接,換,損,改,敬,旧,昇,星,普,暴,曇,替,札)",
+  "fills": {
+    "捨": [
+      { "readingRef": "シャ", "word": "取捨", "wordReading": "しゅしゃ", "meaningsKo": ["취사", "취사선택"], "examples": [{ "sentence": "{情報|じょうほう}を{{取捨}}{選択|せんたく}します。", "sentenceTranslationKo": "정보를 취사선택합니다." }] },
+      { "readingRef": "シャ", "word": "四捨五入", "wordReading": "ししゃごにゅう", "meaningsKo": ["사사오입"], "examples": [{ "sentence": "{数字|すうじ}を{{四捨五入}}しました。", "sentenceTranslationKo": "숫자를 사사오입했습니다." }] },
+      { "readingRef": "すてる", "word": "捨てる", "wordReading": "すてる", "meaningsKo": ["버리다"], "examples": [{ "sentence": "{古|ふる}い{服|ふく}を{{捨てる}}{こと|こと}にしました。", "sentenceTranslationKo": "오래된 옷을 버리기로 했습니다." }] },
+      { "readingRef": "すてる", "word": "見捨てる", "wordReading": "みすてる", "meaningsKo": ["버리고 떠나다"], "examples": [{ "sentence": "{家族|かぞく}を{{見捨てる}}{こと|こと}はできません。", "sentenceTranslationKo": "가족을 버리고 떠날 수는 없습니다." }] },
+      { "readingRef": "すてる", "word": "捨て身", "wordReading": "すてみ", "meaningsKo": ["사력을 다함"], "examples": [{ "sentence": "{彼|かれ}は{{捨て身}}の{戦|たたか}いをしました。", "sentenceTranslationKo": "그는 사력을 다한 싸움을 했습니다." }] }
+    ],
+    "掃": [
+      { "readingRef": "ソウ", "word": "掃除", "wordReading": "そうじ", "meaningsKo": ["청소"], "examples": [{ "sentence": "{毎週|まいしゅう}{部屋|へや}の{{掃除}}をします。", "sentenceTranslationKo": "매주 방 청소를 합니다." }] },
+      { "readingRef": "ソウ", "word": "清掃", "wordReading": "せいそう", "meaningsKo": ["청소"], "examples": [{ "sentence": "{町|まち}の{{清掃}}{活動|かつどう}に{参加|さんか}しました。", "sentenceTranslationKo": "마을의 청소 활동에 참가했습니다." }] },
+      { "readingRef": "ソウ", "word": "一掃", "wordReading": "いっそう", "meaningsKo": ["일소"], "examples": [{ "sentence": "{古|ふる}い{在庫|ざいこ}を{{一掃}}しました。", "sentenceTranslationKo": "오래된 재고를 일소했습니다." }] },
+      { "readingRef": "はく", "word": "掃く", "wordReading": "はく", "meaningsKo": ["쓸다"], "examples": [{ "sentence": "{庭|にわ}を{ほうき|ほうき}で{{掃く}}{習慣|しゅうかん}があります。", "sentenceTranslationKo": "정원을 빗자루로 쓰는 습관이 있습니다." }] }
+    ],
+    "掘": [
+      { "readingRef": "クツ", "word": "発掘", "wordReading": "はっくつ", "meaningsKo": ["발굴"], "examples": [{ "sentence": "{遺跡|いせき}の{{発掘}}{調査|ちょうさ}が{進|すす}んでいます。", "sentenceTranslationKo": "유적의 발굴 조사가 진행되고 있습니다." }] },
+      { "readingRef": "クツ", "word": "採掘", "wordReading": "さいくつ", "meaningsKo": ["채굴"], "examples": [{ "sentence": "{鉱山|こうざん}で{資源|しげん}を{{採掘}}しています。", "sentenceTranslationKo": "광산에서 자원을 채굴하고 있습니다." }] },
+      { "readingRef": "ほる", "word": "掘る", "wordReading": "ほる", "meaningsKo": ["파다"], "examples": [{ "sentence": "{庭|にわ}に{穴|あな}を{{掘る}}{ために|ために}スコップを{使|つか}いました。", "sentenceTranslationKo": "정원에 구멍을 파기 위해 삽을 사용했습니다." }] }
+    ],
+    "採": [
+      { "readingRef": "サイ", "word": "採用", "wordReading": "さいよう", "meaningsKo": ["채용"], "examples": [{ "sentence": "{新入|しんにゅう}{社員|しゃいん}の{{採用}}が{決|き}まりました。", "sentenceTranslationKo": "신입사원 채용이 결정되었습니다." }] },
+      { "readingRef": "サイ", "word": "採点", "wordReading": "さいてん", "meaningsKo": ["채점"], "examples": [{ "sentence": "{先生|せんせい}が{試験|しけん}を{{採点}}しています。", "sentenceTranslationKo": "선생님이 시험을 채점하고 있습니다." }] },
+      { "readingRef": "サイ", "word": "採取", "wordReading": "さいしゅ", "meaningsKo": ["채취"], "examples": [{ "sentence": "{植物|しょくぶつ}の{標本|ひょうほん}を{{採取}}しました。", "sentenceTranslationKo": "식물 표본을 채취했습니다." }] },
+      { "readingRef": "サイ", "word": "採決", "wordReading": "さいけつ", "meaningsKo": ["채결", "표결"], "examples": [{ "sentence": "{法案|ほうあん}の{{採決}}が{行|おこな}われました。", "sentenceTranslationKo": "법안 표결이 이루어졌습니다." }] },
+      { "readingRef": "とる", "word": "採る", "wordReading": "とる", "meaningsKo": ["뽑다", "채취하다"], "examples": [{ "sentence": "{山|やま}でキノコを{{採る}}のは{楽|たの}しいです。", "sentenceTranslationKo": "산에서 버섯을 따는 것은 즐겁습니다." }] }
+    ],
+    "接": [
+      { "readingRef": "セツ", "word": "接続", "wordReading": "せつぞく", "meaningsKo": ["접속"], "examples": [{ "sentence": "インターネットの{{接続}}が{遅|おそ}いです。", "sentenceTranslationKo": "인터넷 접속이 느립니다." }] },
+      { "readingRef": "セツ", "word": "面接", "wordReading": "めんせつ", "meaningsKo": ["면접"], "examples": [{ "sentence": "{明日|あした}{会社|かいしゃ}の{{面接}}があります。", "sentenceTranslationKo": "내일 회사 면접이 있습니다." }] },
+      { "readingRef": "セツ", "word": "直接", "wordReading": "ちょくせつ", "meaningsKo": ["직접"], "examples": [{ "sentence": "{社長|しゃちょう}に{{直接}}{会|あ}って{話|はな}しました。", "sentenceTranslationKo": "사장님을 직접 만나 이야기했습니다." }] },
+      { "readingRef": "セツ", "word": "接客", "wordReading": "せっきゃく", "meaningsKo": ["접객"], "examples": [{ "sentence": "{彼女|かのじょ}は{{接客}}が{上手|じょうず}です。", "sentenceTranslationKo": "그녀는 접객을 잘합니다." }] },
+      { "readingRef": "セツ", "word": "接近", "wordReading": "せっきん", "meaningsKo": ["접근"], "examples": [{ "sentence": "{台風|たいふう}が{{接近}}しています。", "sentenceTranslationKo": "태풍이 접근하고 있습니다." }] }
+    ],
+    "換": [
+      { "readingRef": "カン", "word": "交換", "wordReading": "こうかん", "meaningsKo": ["교환"], "examples": [{ "sentence": "{連絡|れんらく}{先|さき}を{{交換}}しました。", "sentenceTranslationKo": "연락처를 교환했습니다." }] },
+      { "readingRef": "カン", "word": "変換", "wordReading": "へんかん", "meaningsKo": ["변환"], "examples": [{ "sentence": "ファイル{形式|けいしき}を{{変換}}しました。", "sentenceTranslationKo": "파일 형식을 변환했습니다." }] },
+      { "readingRef": "カン", "word": "換気", "wordReading": "かんき", "meaningsKo": ["환기"], "examples": [{ "sentence": "{窓|まど}を{開|あ}けて{{換気}}しました。", "sentenceTranslationKo": "창문을 열고 환기했습니다." }] },
+      { "readingRef": "かえる", "word": "換える", "wordReading": "かえる", "meaningsKo": ["교환하다"], "examples": [{ "sentence": "{古|ふる}い{電池|でんち}を{{換える}}{時間|じかん}になりました。", "sentenceTranslationKo": "오래된 배터리를 교체할 시간이 되었습니다." }] },
+      { "readingRef": "カン", "word": "換金", "wordReading": "かんきん", "meaningsKo": ["환금"], "examples": [{ "sentence": "{宝|たから}くじを{{換金}}しました。", "sentenceTranslationKo": "복권을 환금했습니다." }] }
+    ],
+    "損": [
+      { "readingRef": "ソン", "word": "損害", "wordReading": "そんがい", "meaningsKo": ["손해"], "examples": [{ "sentence": "{台風|たいふう}で{大|おお}きな{{損害}}が{出|で}ました。", "sentenceTranslationKo": "태풍으로 큰 손해가 났습니다." }] },
+      { "readingRef": "ソン", "word": "損失", "wordReading": "そんしつ", "meaningsKo": ["손실"], "examples": [{ "sentence": "{今年|ことし}は{大|おお}きな{{損失}}を{出|だ}しました。", "sentenceTranslationKo": "올해는 큰 손실을 냈습니다." }] },
+      { "readingRef": "ソン", "word": "破損", "wordReading": "はそん", "meaningsKo": ["파손"], "examples": [{ "sentence": "{荷物|にもつ}が{配送中|はいそうちゅう}に{{破損}}しました。", "sentenceTranslationKo": "짐이 배송 중 파손되었습니다." }] },
+      { "readingRef": "ソン", "word": "損得", "wordReading": "そんとく", "meaningsKo": ["손익"], "examples": [{ "sentence": "{{損得}}{勘定|かんじょう}ばかりでは{ダメ|だめ}です。", "sentenceTranslationKo": "손익 계산만 해서는 안 됩니다." }] },
+      { "readingRef": "そこなう", "word": "損なう", "wordReading": "そこなう", "meaningsKo": ["해치다"], "examples": [{ "sentence": "{健康|けんこう}を{{損なう}}{ような|ような}{生活|せいかつ}は{避|さ}けたいです。", "sentenceTranslationKo": "건강을 해치는 생활은 피하고 싶습니다." }] }
+    ],
+    "改": [
+      { "readingRef": "カイ", "word": "改善", "wordReading": "かいぜん", "meaningsKo": ["개선"], "examples": [{ "sentence": "{業務|ぎょうむ}の{流|なが}れを{{改善}}しました。", "sentenceTranslationKo": "업무의 흐름을 개선했습니다." }] },
+      { "readingRef": "カイ", "word": "改革", "wordReading": "かいかく", "meaningsKo": ["개혁"], "examples": [{ "sentence": "{会社|かいしゃ}の{制度|せいど}を{{改革}}しました。", "sentenceTranslationKo": "회사 제도를 개혁했습니다." }] },
+      { "readingRef": "カイ", "word": "改正", "wordReading": "かいせい", "meaningsKo": ["개정"], "examples": [{ "sentence": "{法律|ほうりつ}が{{改正}}されました。", "sentenceTranslationKo": "법률이 개정되었습니다." }] },
+      { "readingRef": "あらためる", "word": "改める", "wordReading": "あらためる", "meaningsKo": ["고치다", "개선하다"], "examples": [{ "sentence": "{態度|たいど}を{{改める}}{こと|こと}にしました。", "sentenceTranslationKo": "태도를 고치기로 했습니다." }] },
+      { "readingRef": "あらたまる", "word": "改まる", "wordReading": "あらたまる", "meaningsKo": ["새로워지다"], "examples": [{ "sentence": "{年|とし}が{{改まる}}と{気持|きも}ちも{新|あたら}しくなります。", "sentenceTranslationKo": "해가 바뀌면 마음도 새로워집니다." }] }
+    ],
+    "敬": [
+      { "readingRef": "ケイ", "word": "尊敬", "wordReading": "そんけい", "meaningsKo": ["존경"], "examples": [{ "sentence": "{先生|せんせい}を{心|こころ}から{{尊敬}}しています。", "sentenceTranslationKo": "선생님을 진심으로 존경합니다." }] },
+      { "readingRef": "ケイ", "word": "敬意", "wordReading": "けいい", "meaningsKo": ["경의"], "examples": [{ "sentence": "{先輩|せんぱい}に{{敬意}}を{表|あらわ}します。", "sentenceTranslationKo": "선배님께 경의를 표합니다." }] },
+      { "readingRef": "ケイ", "word": "敬語", "wordReading": "けいご", "meaningsKo": ["경어"], "examples": [{ "sentence": "{目上|めうえ}の{人|ひと}には{{敬語}}を{使|つか}います。", "sentenceTranslationKo": "윗사람에게는 경어를 씁니다." }] },
+      { "readingRef": "ケイ", "word": "敬老", "wordReading": "けいろう", "meaningsKo": ["경로"], "examples": [{ "sentence": "{九月|くがつ}に{{敬老}}の{日|ひ}があります。", "sentenceTranslationKo": "9월에 경로의 날이 있습니다." }] },
+      { "readingRef": "うやまう", "word": "敬う", "wordReading": "うやまう", "meaningsKo": ["공경하다"], "examples": [{ "sentence": "{年配|ねんぱい}の{方|かた}を{{敬う}}{こと|こと}が{大切|たいせつ}です。", "sentenceTranslationKo": "연배 있는 분을 공경하는 것이 중요합니다." }] }
+    ],
+    "旧": [
+      { "readingRef": "キュウ", "word": "旧友", "wordReading": "きゅうゆう", "meaningsKo": ["옛 친구"], "examples": [{ "sentence": "{{旧友}}と{再会|さいかい}しました。", "sentenceTranslationKo": "옛 친구와 재회했습니다." }] },
+      { "readingRef": "キュウ", "word": "旧式", "wordReading": "きゅうしき", "meaningsKo": ["구식"], "examples": [{ "sentence": "{父|ちち}の{車|くるま}は{{旧式}}です。", "sentenceTranslationKo": "아버지의 차는 구식입니다." }] },
+      { "readingRef": "キュウ", "word": "旧暦", "wordReading": "きゅうれき", "meaningsKo": ["구력", "음력"], "examples": [{ "sentence": "{祖父|そふ}は{{旧暦}}でお{祝|いわ}いをします。", "sentenceTranslationKo": "할아버지는 음력으로 축하를 하십니다." }] },
+      { "readingRef": "キュウ", "word": "復旧", "wordReading": "ふっきゅう", "meaningsKo": ["복구"], "examples": [{ "sentence": "システムの{{復旧}}{作業|さぎょう}が{進|すす}んでいます。", "sentenceTranslationKo": "시스템 복구 작업이 진행되고 있습니다." }] },
+      { "readingRef": "キュウ", "word": "新旧", "wordReading": "しんきゅう", "meaningsKo": ["신구"], "examples": [{ "sentence": "{{新旧}}の{社員|しゃいん}が{交流|こうりゅう}しました。", "sentenceTranslationKo": "신구 사원이 교류했습니다." }] }
+    ],
+    "昇": [
+      { "readingRef": "ショウ", "word": "上昇", "wordReading": "じょうしょう", "meaningsKo": ["상승"], "examples": [{ "sentence": "{気温|きおん}が{急|きゅう}に{{上昇}}しました。", "sentenceTranslationKo": "기온이 급격히 상승했습니다." }] },
+      { "readingRef": "ショウ", "word": "昇進", "wordReading": "しょうしん", "meaningsKo": ["승진"], "examples": [{ "sentence": "{彼|かれ}は{{昇進}}{試験|しけん}に{合格|ごうかく}しました。", "sentenceTranslationKo": "그는 승진 시험에 합격했습니다." }] },
+      { "readingRef": "ショウ", "word": "昇格", "wordReading": "しょうかく", "meaningsKo": ["승격"], "examples": [{ "sentence": "チームが一{部|ぶ}に{{昇格}}しました。", "sentenceTranslationKo": "팀이 1부로 승격했습니다." }] },
+      { "readingRef": "のぼる", "word": "昇る", "wordReading": "のぼる", "meaningsKo": ["오르다"], "examples": [{ "sentence": "{太陽|たいよう}が{東|ひがし}から{{昇る}}{時間|じかん}です。", "sentenceTranslationKo": "태양이 동쪽에서 떠오르는 시간입니다." }] },
+      { "readingRef": "ショウ", "word": "昇給", "wordReading": "しょうきゅう", "meaningsKo": ["승급", "월급 인상"], "examples": [{ "sentence": "{今年|ことし}は{{昇給}}がありました。", "sentenceTranslationKo": "올해는 승급이 있었습니다." }] }
+    ],
+    "星": [
+      { "readingRef": "セイ", "word": "惑星", "wordReading": "わくせい", "meaningsKo": ["행성"], "examples": [{ "sentence": "{太陽|たいよう}{系|けい}には{八|やっ}つの{{惑星}}があります。", "sentenceTranslationKo": "태양계에는 여덟 개의 행성이 있습니다." }] },
+      { "readingRef": "セイ", "word": "火星", "wordReading": "かせい", "meaningsKo": ["화성"], "examples": [{ "sentence": "{{火星}}{探査|たんさ}が{進|すす}んでいます。", "sentenceTranslationKo": "화성 탐사가 진행되고 있습니다." }] },
+      { "readingRef": "ほし", "word": "星", "wordReading": "ほし", "meaningsKo": ["별"], "examples": [{ "sentence": "{今夜|こんや}{{星}}が{きれい|きれい}に{見|み}えます。", "sentenceTranslationKo": "오늘 밤 별이 예쁘게 보입니다." }] },
+      { "readingRef": "ほし", "word": "星空", "wordReading": "ほしぞら", "meaningsKo": ["별이 빛나는 하늘"], "examples": [{ "sentence": "{山|やま}の{{星空}}は{素晴|すば}らしいです。", "sentenceTranslationKo": "산의 별이 빛나는 하늘은 훌륭합니다." }] },
+      { "readingRef": "セイ", "word": "衛星", "wordReading": "えいせい", "meaningsKo": ["위성"], "examples": [{ "sentence": "{月|つき}は{地球|ちきゅう}の{{衛星}}です。", "sentenceTranslationKo": "달은 지구의 위성입니다." }] }
+    ],
+    "普": [
+      { "readingRef": "フ", "word": "普通", "wordReading": "ふつう", "meaningsKo": ["보통"], "examples": [{ "sentence": "{{普通}}の{日|ひ}はいつも{家|いえ}で{食事|しょくじ}します。", "sentenceTranslationKo": "보통 날은 늘 집에서 식사합니다." }] },
+      { "readingRef": "フ", "word": "普及", "wordReading": "ふきゅう", "meaningsKo": ["보급"], "examples": [{ "sentence": "スマホが{広|ひろ}く{{普及}}しています。", "sentenceTranslationKo": "스마트폰이 널리 보급되어 있습니다." }] },
+      { "readingRef": "フ", "word": "普段", "wordReading": "ふだん", "meaningsKo": ["평소"], "examples": [{ "sentence": "{{普段}}は{家|いえ}で{食事|しょくじ}します。", "sentenceTranslationKo": "평소에는 집에서 식사합니다." }] },
+      { "readingRef": "フ", "word": "普遍", "wordReading": "ふへん", "meaningsKo": ["보편"], "examples": [{ "sentence": "{愛|あい}は{{普遍}}{的|てき}なテーマです。", "sentenceTranslationKo": "사랑은 보편적인 주제입니다." }] }
+    ],
+    "暴": [
+      { "readingRef": "ボウ", "word": "暴力", "wordReading": "ぼうりょく", "meaningsKo": ["폭력"], "examples": [{ "sentence": "{学校|がっこう}の{{暴力}}{問題|もんだい}が{深刻|しんこく}です。", "sentenceTranslationKo": "학교 폭력 문제가 심각합니다." }] },
+      { "readingRef": "ボウ", "word": "暴風", "wordReading": "ぼうふう", "meaningsKo": ["폭풍"], "examples": [{ "sentence": "{昨夜|さくや}{激|はげ}しい{{暴風}}{雨|う}でした。", "sentenceTranslationKo": "어젯밤 격렬한 폭풍우였습니다." }] },
+      { "readingRef": "ボウ", "word": "暴露", "wordReading": "ばくろ", "meaningsKo": ["폭로"], "examples": [{ "sentence": "{秘密|ひみつ}が{{暴露}}されました。", "sentenceTranslationKo": "비밀이 폭로되었습니다." }] },
+      { "readingRef": "あばれる", "word": "暴れる", "wordReading": "あばれる", "meaningsKo": ["난동을 부리다"], "examples": [{ "sentence": "{酔|よ}っぱらいが{店|みせ}で{{暴れる}}{こと|こと}がありました。", "sentenceTranslationKo": "취객이 가게에서 난동 부리는 일이 있었습니다." }] },
+      { "readingRef": "ボウ", "word": "凶暴", "wordReading": "きょうぼう", "meaningsKo": ["흉포"], "examples": [{ "sentence": "{{凶暴}}な{犯人|はんにん}が{捕|つか}まりました。", "sentenceTranslationKo": "흉포한 범인이 잡혔습니다." }] }
+    ],
+    "曇": [
+      { "readingRef": "ドン", "word": "曇天", "wordReading": "どんてん", "meaningsKo": ["흐린 날씨"], "examples": [{ "sentence": "{今日|きょう}は{{曇天}}です。", "sentenceTranslationKo": "오늘은 흐린 날씨입니다." }] },
+      { "readingRef": "くもる", "word": "曇る", "wordReading": "くもる", "meaningsKo": ["흐리다"], "examples": [{ "sentence": "{空|そら}が{{曇る}}と{気分|きぶん}も{暗|くら}くなります。", "sentenceTranslationKo": "하늘이 흐리면 기분도 어두워집니다." }] },
+      { "readingRef": "くもる", "word": "曇り", "wordReading": "くもり", "meaningsKo": ["흐림"], "examples": [{ "sentence": "{明日|あした}は{{曇り}}{時々|ときどき}{雨|あめ}です。", "sentenceTranslationKo": "내일은 흐리고 때때로 비입니다." }] }
+    ],
+    "替": [
+      { "readingRef": "タイ", "word": "交替", "wordReading": "こうたい", "meaningsKo": ["교체"], "examples": [{ "sentence": "{選手|せんしゅ}が{{交替}}しました。", "sentenceTranslationKo": "선수가 교체되었습니다." }] },
+      { "readingRef": "タイ", "word": "為替", "wordReading": "かわせ", "meaningsKo": ["환"], "examples": [{ "sentence": "{今日|きょう}の{{為替}}{相場|そうば}を{確認|かくにん}しました。", "sentenceTranslationKo": "오늘의 환율을 확인했습니다." }] },
+      { "readingRef": "かえる", "word": "替える", "wordReading": "かえる", "meaningsKo": ["바꾸다"], "examples": [{ "sentence": "{古|ふる}い{電球|でんきゅう}を{新|あたら}しいのに{{替える}}{予定|よてい}です。", "sentenceTranslationKo": "낡은 전구를 새것으로 바꿀 예정입니다." }] },
+      { "readingRef": "かわる", "word": "替わる", "wordReading": "かわる", "meaningsKo": ["바뀌다"], "examples": [{ "sentence": "{担当|たんとう}{者|しゃ}が{{替わる}}{予定|よてい}です。", "sentenceTranslationKo": "담당자가 바뀔 예정입니다." }] },
+      { "readingRef": "かえ", "word": "両替", "wordReading": "りょうがえ", "meaningsKo": ["환전"], "examples": [{ "sentence": "{銀行|ぎんこう}で{{両替}}しました。", "sentenceTranslationKo": "은행에서 환전했습니다." }] }
+    ],
+    "札": [
+      { "readingRef": "サツ", "word": "改札", "wordReading": "かいさつ", "meaningsKo": ["개찰"], "examples": [{ "sentence": "{駅|えき}の{{改札}}{口|ぐち}で{待|ま}っています。", "sentenceTranslationKo": "역 개찰구에서 기다리고 있습니다." }] },
+      { "readingRef": "サツ", "word": "千円札", "wordReading": "せんえんさつ", "meaningsKo": ["천 엔 지폐"], "examples": [{ "sentence": "{財布|さいふ}に{{千円札}}が{二|に}{枚|まい}あります。", "sentenceTranslationKo": "지갑에 천 엔 지폐가 두 장 있습니다." }] },
+      { "readingRef": "ふだ", "word": "札", "wordReading": "ふだ", "meaningsKo": ["꼬리표", "이름표"], "examples": [{ "sentence": "{値段|ねだん}の{{札}}を{確認|かくにん}しました。", "sentenceTranslationKo": "가격표를 확인했습니다." }] },
+      { "readingRef": "ふだ", "word": "名札", "wordReading": "なふだ", "meaningsKo": ["명찰"], "examples": [{ "sentence": "{社員|しゃいん}は{{名札}}をつけています。", "sentenceTranslationKo": "사원은 명찰을 달고 있습니다." }] },
+      { "readingRef": "サツ", "word": "札束", "wordReading": "さつたば", "meaningsKo": ["지폐 다발"], "examples": [{ "sentence": "{銀行|ぎんこう}で{{札束}}を{受|う}け{取|と}りました。", "sentenceTranslationKo": "은행에서 지폐 다발을 받았습니다." }] }
+    ]
+  }
+}
