@@ -109,12 +109,15 @@ function geminiSchema(value: unknown): unknown {
   return value;
 }
 
+const DEFAULT_MAX_TOKENS = 2048;
+
 async function callAnthropic(
   apiKey: string,
   model: string,
   systemPrompt: string,
   userMessage: string,
   schema: Schema,
+  maxTokens: number = DEFAULT_MAX_TOKENS,
 ): Promise<{ data: unknown; usage: Usage }> {
   const client = new Anthropic({ apiKey, dangerouslyAllowBrowser: true });
   const outputConfig: Record<string, unknown> = {
@@ -124,7 +127,7 @@ async function callAnthropic(
 
   const response = await client.messages.create({
     model,
-    max_tokens: 2048,
+    max_tokens: maxTokens,
     system: [
       {
         type: "text",
@@ -143,6 +146,17 @@ async function callAnthropic(
     cacheCreationInputTokens: u?.cache_creation_input_tokens ?? 0,
     cacheReadInputTokens: u?.cache_read_input_tokens ?? 0,
   };
+
+  if (response.stop_reason === "max_tokens") {
+    console.error("[claude] response truncated at max_tokens", {
+      model,
+      maxTokens,
+      outputTokens: usage.outputTokens,
+    });
+    throw new Error(
+      `AI 응답이 토큰 한도(${maxTokens})에서 잘렸습니다. 다시 시도해 주세요.`,
+    );
+  }
 
   const textBlock = response.content.find((b) => b.type === "text");
   if (!textBlock || textBlock.type !== "text") {
@@ -164,6 +178,7 @@ async function callGemini(
   systemPrompt: string,
   userMessage: string,
   schema: Schema,
+  maxTokens: number = DEFAULT_MAX_TOKENS,
 ): Promise<{ data: unknown; usage: Usage }> {
   const client = new GoogleGenAI({ apiKey });
   const response = await client.models.generateContent({
@@ -173,15 +188,9 @@ async function callGemini(
       systemInstruction: systemPrompt,
       responseMimeType: "application/json",
       responseSchema: geminiSchema(schema) as never,
-      maxOutputTokens: 2048,
+      maxOutputTokens: maxTokens,
     },
   });
-
-  const text = response.text;
-  if (!text) {
-    console.error("[gemini] no text in response", response);
-    throw new Error("Gemini returned no text");
-  }
 
   const meta = response.usageMetadata;
   const usage: Usage = {
@@ -190,6 +199,24 @@ async function callGemini(
     cacheCreationInputTokens: 0,
     cacheReadInputTokens: meta?.cachedContentTokenCount ?? 0,
   };
+
+  const finishReason = response.candidates?.[0]?.finishReason;
+  if (finishReason === "MAX_TOKENS") {
+    console.error("[gemini] response truncated at MAX_TOKENS", {
+      model,
+      maxTokens,
+      outputTokens: usage.outputTokens,
+    });
+    throw new Error(
+      `AI 응답이 토큰 한도(${maxTokens})에서 잘렸습니다. 다시 시도해 주세요.`,
+    );
+  }
+
+  const text = response.text;
+  if (!text) {
+    console.error("[gemini] no text in response", response);
+    throw new Error("Gemini returned no text");
+  }
 
   try {
     return { data: JSON.parse(text), usage };
@@ -205,6 +232,7 @@ async function callJson(
   systemPrompt: string,
   userMessage: string,
   schema: Schema,
+  maxTokens?: number,
 ): Promise<{ data: unknown; usage: Usage }> {
   if (resolved.provider === "anthropic") {
     return callAnthropic(
@@ -213,6 +241,7 @@ async function callJson(
       systemPrompt,
       userMessage,
       schema,
+      maxTokens,
     );
   }
   return callGemini(
@@ -221,6 +250,7 @@ async function callJson(
     systemPrompt,
     userMessage,
     schema,
+    maxTokens,
   );
 }
 
@@ -1179,6 +1209,7 @@ export async function generateGrammarUsageGuide(
         GRAMMAR_USAGE_GUIDE_SYSTEM_PROMPT,
         userMessage,
         GRAMMAR_USAGE_GUIDE_SCHEMA,
+        6000,
       ),
     "grammar-usage-guide",
   );
