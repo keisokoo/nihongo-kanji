@@ -8,6 +8,7 @@ export type GrammarDeltaImportResult = {
   packKey: string;
   mode: GrammarDeltaImportMode;
   attachedItemExplanations: number;
+  attachedUsageGuides: number;
   attachedExampleExplanations: number;
   attachedQuizExplanations: number;
   insertedGeneratedExamples: number;
@@ -48,6 +49,7 @@ export async function importGrammarDelta(
     packKey: input.key,
     mode,
     attachedItemExplanations: 0,
+    attachedUsageGuides: 0,
     attachedExampleExplanations: 0,
     attachedQuizExplanations: 0,
     insertedGeneratedExamples: 0,
@@ -73,6 +75,7 @@ export async function importGrammarDelta(
           .map((q) => ({ ...q, explanation: null }));
         await d.grammarItems.update(it.id, {
           deepExplanation: null,
+          usageGuide: null,
           examples: newExamples,
           quizzes: newQuizzes,
         });
@@ -99,6 +102,17 @@ export async function importGrammarDelta(
         } else {
           updates.deepExplanation = exItem.deepExplanation;
           result.attachedItemExplanations++;
+          dirty = true;
+        }
+      }
+
+      // 1b) 항목 활용 가이드
+      if (exItem.usageGuide) {
+        if (mode === "merge" && fresh.usageGuide) {
+          // skip
+        } else {
+          updates.usageGuide = exItem.usageGuide;
+          result.attachedUsageGuides++;
           dirty = true;
         }
       }

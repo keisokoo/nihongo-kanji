@@ -7,6 +7,7 @@ import {
   clearGrammarExampleExplanations,
   clearGrammarItemExplanations,
   clearGrammarQuizExplanations,
+  clearGrammarUsageGuides,
   clearWordExplanations,
   deleteGeneratedExamples,
   deleteGeneratedGrammarExamples,
@@ -268,6 +269,51 @@ export default function AiData({ loaderData }: Route.ComponentProps) {
                 <div className="flex items-baseline gap-2">
                   <span className="text-base font-semibold [font-family:'Noto_Sans_JP',sans-serif] text-neutral-900 dark:text-neutral-100">
                     {g.pattern}
+                  </span>
+                </div>
+                <p className="mt-1 line-clamp-2 text-xs text-neutral-500">
+                  {g.preview}
+                </p>
+                <div className="mt-1 text-[10px] text-neutral-400">
+                  {g.modelUsed}
+                </div>
+              </Link>
+            </li>
+          ))}
+        </KindSection>
+
+        <KindSection
+          title="문법 활용 가이드"
+          total={data.totals.grammarUsageGuides}
+          shown={data.grammarUsageGuides.length}
+          action={
+            <BulkActionButton
+              label="초기화"
+              variant="clear"
+              action={clearGrammarUsageGuides}
+              confirmTitle="활용 가이드 모두 초기화"
+              confirmBody={
+                <p>
+                  AI 가 만든 활용 가이드 <strong>{data.totals.grammarUsageGuides}</strong>건을
+                  비웁니다. 시드 본문은 무손상.
+                </p>
+              }
+            />
+          }
+        >
+          {data.grammarUsageGuides.map((g) => (
+            <li key={`uguide-${g.itemId}`} className="ai-row">
+              <Link
+                to={`/grammar/${encodeURIComponent(g.packKey)}/${g.itemId}`}
+                prefetch="intent"
+                className="ai-link"
+              >
+                <div className="flex items-baseline gap-2">
+                  <span className="text-base font-semibold [font-family:'Noto_Sans_JP',sans-serif] text-neutral-900 dark:text-neutral-100">
+                    {g.pattern}
+                  </span>
+                  <span className="text-xs text-neutral-500">
+                    sections {g.sectionsCount}
                   </span>
                 </div>
                 <p className="mt-1 line-clamp-2 text-xs text-neutral-500">

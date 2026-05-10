@@ -3,14 +3,23 @@ import type {
   GrammarCategory,
   GrammarItem,
   GrammarItemDeepExplanation,
+  GrammarUsageGuide,
 } from "~/lib/idb/grammar-types";
-import { addGrammarItemDeepExplanation } from "~/lib/idb/grammar-actions";
+import {
+  addGrammarItemDeepExplanation,
+  addGrammarUsageGuide,
+} from "~/lib/idb/grammar-actions";
 import { useAiAvailability } from "~/lib/idb/use-ai-availability";
 import { ConfirmModal } from "~/components/ConfirmModal";
 import { showUsageToast } from "~/components/Toast";
 import { Spinner } from "~/components/Spinner";
 import { FavoriteToggle } from "~/components/FavoriteToggle";
-import { ExplanationCard, ExplSection, type ExplStatus } from "./ExplanationCard";
+import {
+  ExplanationCard,
+  ExplSection,
+  type ExplStatus,
+} from "./ExplanationCard";
+import { UsageGuidePanel } from "./UsageGuidePanel";
 
 /**
  * 상단 카드 — 문법 패턴의 메타 정보.
@@ -18,12 +27,19 @@ import { ExplanationCard, ExplSection, type ExplStatus } from "./ExplanationCard
  */
 export function GrammarCard({ item }: { item: GrammarItem }) {
   const ai = useAiAvailability();
-  const [explanation, setExplanation] = useState<GrammarItemDeepExplanation | null>(
-    item.deepExplanation ?? null,
-  );
+  const [explanation, setExplanation] =
+    useState<GrammarItemDeepExplanation | null>(item.deepExplanation ?? null);
   const [open, setOpen] = useState(false);
   const [status, setStatus] = useState<ExplStatus>({ kind: "idle" });
   const [showRegenModal, setShowRegenModal] = useState(false);
+
+  // 활용 가이드 상태
+  const [guide, setGuide] = useState<GrammarUsageGuide | null>(
+    item.usageGuide ?? null,
+  );
+  const [guideOpen, setGuideOpen] = useState(false);
+  const [guideStatus, setGuideStatus] = useState<ExplStatus>({ kind: "idle" });
+  const [showGuideRegenModal, setShowGuideRegenModal] = useState(false);
 
   async function fetchExplanation(tier: "default" | "premium") {
     setOpen(true);
@@ -44,20 +60,93 @@ export function GrammarCard({ item }: { item: GrammarItem }) {
     else setOpen((v) => !v);
   }
 
+  async function fetchGuide(tier: "default" | "premium") {
+    setGuideOpen(true);
+    setGuideStatus({ kind: "loading", tier });
+    try {
+      const data = await addGrammarUsageGuide(item.id, tier);
+      if (data.usage) showUsageToast("🔧 활용 가이드", data.usage);
+      setGuide(data.explanation);
+      setGuideStatus({ kind: "idle" });
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "failed";
+      setGuideStatus({ kind: "error", message });
+    }
+  }
+
+  function toggleGuide() {
+    if (!guide) fetchGuide("default");
+    else setGuideOpen((v) => !v);
+  }
+
   return (
     <div className="rounded-2xl border border-neutral-200 bg-white p-6 sm:p-8 dark:border-neutral-800 dark:bg-neutral-900">
-      <div className="flex flex-wrap items-start justify-between gap-3">
-        <div className="min-w-0">
-          <div className="flex items-baseline gap-3">
-            <h1 className="text-3xl font-semibold text-neutral-900 [font-family:'Noto_Sans_JP',sans-serif] sm:text-4xl dark:text-neutral-100">
-              {item.pattern}
-            </h1>
-            {item.romaji && (
-              <span className="truncate text-sm text-neutral-500 dark:text-neutral-400">
-                {item.romaji}
-              </span>
-            )}
+      <div className="flex flex-col items-start justify-between gap-3">
+        <div className="flex items-center gap-2 justify-between w-full">
+          <div className="flex items-center justify-start gap-2">
+            <CategoryBadge category={item.category} />
+            <FavoriteToggle itemKind="grammar" itemId={item.id} />
           </div>
+          <div className="flex items-center justify-end gap-2">
+            <button
+              type="button"
+              disabled={guideStatus.kind === "loading" || (!guide && !ai.hasAi)}
+              onClick={toggleGuide}
+              aria-pressed={guideOpen}
+              aria-label="활용 가이드"
+              title={
+                !guide && !ai.hasAi
+                  ? "AI 키 미설정"
+                  : "AI 가 패턴을 그룹·용법·비교 등 sections 으로 정리"
+              }
+              className={`inline-flex h-9 w-9 items-center justify-center rounded-full border text-base transition disabled:opacity-50 ${
+                guideOpen
+                  ? "border-indigo-400 bg-indigo-50 text-indigo-900 dark:border-indigo-500 dark:bg-indigo-950 dark:text-indigo-200"
+                  : "border-neutral-200 text-neutral-600 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+              }`}
+            >
+              {guideStatus.kind === "loading" ? (
+                <Spinner className="h-4 w-4" />
+              ) : (
+                <span aria-hidden>🔧</span>
+              )}
+            </button>
+            <button
+              type="button"
+              disabled={
+                status.kind === "loading" || (!explanation && !ai.hasAi)
+              }
+              onClick={toggle}
+              aria-pressed={open}
+              aria-label="문법 해설"
+              title={
+                !explanation && !ai.hasAi
+                  ? "AI 키 미설정"
+                  : "AI 가 문법 패턴을 더 깊게 설명 (언제 쓰는지 / 비교 / 자주 틀리는 점 / 학습 포인트)"
+              }
+              className={`inline-flex h-9 w-9 items-center justify-center rounded-full border text-base transition disabled:opacity-50 ${
+                open
+                  ? "border-sky-400 bg-sky-50 text-sky-900 dark:border-sky-500 dark:bg-sky-950 dark:text-sky-200"
+                  : "border-neutral-200 text-neutral-600 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
+              }`}
+            >
+              {status.kind === "loading" ? (
+                <Spinner className="h-4 w-4" />
+              ) : (
+                <span aria-hidden>📖</span>
+              )}
+            </button>
+          </div>
+        </div>
+        <div className="min-w-0">
+          {item.romaji && (
+            <p className="mt-1 truncate text-sm text-neutral-500 dark:text-neutral-400">
+              {item.romaji}
+            </p>
+          )}
+          <h1 className="text-3xl font-semibold text-neutral-900 [font-family:'Noto_Sans_JP',sans-serif] sm:text-4xl dark:text-neutral-100">
+            {item.pattern}
+          </h1>
           <p className="mt-2 text-base text-neutral-700 sm:text-lg dark:text-neutral-300">
             {item.meaningsKo.join(" · ")}
           </p>
@@ -66,33 +155,6 @@ export function GrammarCard({ item }: { item: GrammarItem }) {
               EN: {item.refOriginalEn}
             </p>
           )}
-        </div>
-        <div className="flex items-center gap-2">
-          <CategoryBadge category={item.category} />
-          <FavoriteToggle itemKind="grammar" itemId={item.id} />
-          <button
-            type="button"
-            disabled={status.kind === "loading" || (!explanation && !ai.hasAi)}
-            onClick={toggle}
-            aria-pressed={open}
-            aria-label="문법 해설"
-            title={
-              !explanation && !ai.hasAi
-                ? "AI 키 미설정"
-                : "AI 가 문법 패턴을 더 깊게 설명 (언제 쓰는지 / 비교 / 자주 틀리는 점 / 학습 포인트)"
-            }
-            className={`inline-flex h-9 w-9 items-center justify-center rounded-full border text-base transition disabled:opacity-50 ${
-              open
-                ? "border-sky-400 bg-sky-50 text-sky-900 dark:border-sky-500 dark:bg-sky-950 dark:text-sky-200"
-                : "border-neutral-200 text-neutral-600 hover:bg-neutral-100 dark:border-neutral-700 dark:text-neutral-300 dark:hover:bg-neutral-800"
-            }`}
-          >
-            {status.kind === "loading" ? (
-              <Spinner className="h-4 w-4" />
-            ) : (
-              <span aria-hidden>📖</span>
-            )}
-          </button>
         </div>
       </div>
 
@@ -119,6 +181,16 @@ export function GrammarCard({ item }: { item: GrammarItem }) {
           <span className="font-medium">주의 </span>
           {item.notes}
         </div>
+      )}
+
+      {guideOpen && (
+        <UsageGuidePanel
+          guide={guide}
+          status={guideStatus}
+          hasGuide={!!guide}
+          onRegenerate={() => setShowGuideRegenModal(true)}
+          onRetry={() => fetchGuide("default")}
+        />
       )}
 
       {open && (
@@ -164,6 +236,27 @@ export function GrammarCard({ item }: { item: GrammarItem }) {
           fetchExplanation("premium");
         }}
         onCancel={() => setShowRegenModal(false)}
+      />
+
+      <ConfirmModal
+        open={showGuideRegenModal}
+        title="활용 가이드 다시 생성"
+        body={
+          <>
+            <p>
+              <strong>Sonnet</strong> 으로 활용 가이드를 다시 생성합니다.
+            </p>
+            <p className="mt-2 text-xs text-neutral-500">
+              기존 가이드를 덮어씁니다. 비용이 더 발생합니다.
+            </p>
+          </>
+        }
+        confirmLabel="생성"
+        onConfirm={() => {
+          setShowGuideRegenModal(false);
+          fetchGuide("premium");
+        }}
+        onCancel={() => setShowGuideRegenModal(false)}
       />
     </div>
   );

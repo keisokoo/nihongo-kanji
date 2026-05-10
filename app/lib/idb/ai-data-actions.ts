@@ -130,6 +130,21 @@ export async function clearGrammarItemExplanations(): Promise<number> {
   return cleared;
 }
 
+export async function clearGrammarUsageGuides(): Promise<number> {
+  const d = db();
+  let cleared = 0;
+  await d.transaction("rw", [d.grammarItems], async () => {
+    const items = await d.grammarItems
+      .filter((it) => it.usageGuide !== null && it.usageGuide !== undefined)
+      .toArray();
+    for (const it of items) {
+      await d.grammarItems.update(it.id, { usageGuide: null });
+      cleared++;
+    }
+  });
+  return cleared;
+}
+
 /** GrammarItem.examples[].explanation 을 모두 null. examples row 자체는 유지. */
 export async function clearGrammarExampleExplanations(): Promise<number> {
   const d = db();

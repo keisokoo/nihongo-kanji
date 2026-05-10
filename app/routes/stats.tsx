@@ -101,6 +101,7 @@ export default function Stats({ loaderData }: Route.ComponentProps) {
             <StatCard label="단어 해설" value={ai.wordExplanations} />
             <StatCard label="예문 해설" value={ai.exampleExplanations} />
             <StatCard label="문법 항목 해설" value={ai.grammarItemExplanations} />
+            <StatCard label="문법 활용 가이드" value={ai.grammarUsageGuides} />
             <StatCard
               label="문법 예문 해설"
               value={ai.grammarExampleExplanations}

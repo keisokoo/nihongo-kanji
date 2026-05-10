@@ -65,6 +65,16 @@ export type GrammarItemExplanationView = {
   preview: string;
 };
 
+export type GrammarUsageGuideView = {
+  itemId: number;
+  packKey: string;
+  pattern: string;
+  sectionsCount: number;
+  modelUsed: string;
+  createdAt: string;
+  preview: string;
+};
+
 export type GrammarExampleExplanationView = {
   itemId: number;
   pattern: string;
@@ -111,6 +121,7 @@ export type AiDataSnapshot = {
   wordExplanations: WordExplanationView[];
   exampleExplanations: ExampleExplanationView[];
   grammarItemExplanations: GrammarItemExplanationView[];
+  grammarUsageGuides: GrammarUsageGuideView[];
   grammarExampleExplanations: GrammarExampleExplanationView[];
   grammarQuizExplanations: GrammarQuizExplanationView[];
   generatedGrammarExamples: GeneratedGrammarExampleView[];
@@ -121,6 +132,7 @@ export type AiDataSnapshot = {
     wordExplanations: number;
     exampleExplanations: number;
     grammarItemExplanations: number;
+    grammarUsageGuides: number;
     grammarExampleExplanations: number;
     grammarQuizExplanations: number;
     generatedGrammarExamples: number;
@@ -277,6 +289,7 @@ export async function loadAiData(): Promise<AiDataSnapshot> {
   const grammarItemsWithAi = await d.grammarItems.toArray();
 
   const grammarItemExplanations: GrammarItemExplanationView[] = [];
+  const grammarUsageGuides: GrammarUsageGuideView[] = [];
   const grammarExampleExplanations: GrammarExampleExplanationView[] = [];
   const grammarQuizExplanations: GrammarQuizExplanationView[] = [];
   const generatedGrammarExamples: GeneratedGrammarExampleView[] = [];
@@ -296,6 +309,17 @@ export async function loadAiData(): Promise<AiDataSnapshot> {
             (it.deepExplanation.takeaways ?? ""),
           160,
         ),
+      });
+    }
+    if (it.usageGuide) {
+      grammarUsageGuides.push({
+        itemId: it.id,
+        packKey: it.packKey,
+        pattern: it.pattern,
+        sectionsCount: it.usageGuide.sections.length,
+        modelUsed: it.usageGuide.modelUsed,
+        createdAt: it.usageGuide.createdAt,
+        preview: shorten(it.usageGuide.intro ?? "", 160),
       });
     }
     for (const [i, ex] of (it.examples ?? []).entries()) {
@@ -357,6 +381,9 @@ export async function loadAiData(): Promise<AiDataSnapshot> {
   grammarItemExplanations.sort((a, b) =>
     (b.createdAt ?? "").localeCompare(a.createdAt ?? ""),
   );
+  grammarUsageGuides.sort((a, b) =>
+    (b.createdAt ?? "").localeCompare(a.createdAt ?? ""),
+  );
   grammarExampleExplanations.sort((a, b) =>
     (b.createdAt ?? "").localeCompare(a.createdAt ?? ""),
   );
@@ -370,6 +397,7 @@ export async function loadAiData(): Promise<AiDataSnapshot> {
     wordExplanations: wordsWithExplAll.length,
     exampleExplanations: examplesWithExplAll.length,
     grammarItemExplanations: grammarItemExplanations.length,
+    grammarUsageGuides: grammarUsageGuides.length,
     grammarExampleExplanations: grammarExampleExplanations.length,
     grammarQuizExplanations: grammarQuizExplanations.length,
     generatedGrammarExamples: generatedGrammarExamples.length,
@@ -382,6 +410,7 @@ export async function loadAiData(): Promise<AiDataSnapshot> {
     wordExplanations,
     exampleExplanations,
     grammarItemExplanations: grammarItemExplanations.slice(0, PER_KIND_LIMIT),
+    grammarUsageGuides: grammarUsageGuides.slice(0, PER_KIND_LIMIT),
     grammarExampleExplanations: grammarExampleExplanations.slice(
       0,
       PER_KIND_LIMIT,

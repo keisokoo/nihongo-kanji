@@ -5,6 +5,7 @@ import type {
   GrammarItemDeepExplanation,
   GrammarQuiz,
   GrammarQuizExplanation,
+  GrammarUsageGuide,
 } from "./grammar-types";
 
 /**
@@ -26,6 +27,8 @@ export type GrammarExportItem = {
   position: number;
   /** 항목 deep explanation. */
   deepExplanation: GrammarItemDeepExplanation | null;
+  /** 항목 활용 가이드. */
+  usageGuide: GrammarUsageGuide | null;
   /** 시드 예문에 붙인 해설. */
   seedExampleExplanations: Array<{
     /** 시드 examples 배열 내 인덱스. */
@@ -105,6 +108,7 @@ export async function exportGrammarPack(
 
     if (
       !it.deepExplanation &&
+      !it.usageGuide &&
       seedExampleExplanations.length === 0 &&
       seedQuizExplanations.length === 0 &&
       generatedExamples.length === 0 &&
@@ -117,6 +121,7 @@ export async function exportGrammarPack(
       pattern: it.pattern,
       position: it.position,
       deepExplanation: it.deepExplanation ?? null,
+      usageGuide: it.usageGuide ?? null,
       seedExampleExplanations,
       seedQuizExplanations,
       generatedExamples,

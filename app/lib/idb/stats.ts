@@ -90,6 +90,7 @@ export type StatsData = {
     wordExplanations: number;
     exampleExplanations: number;
     grammarItemExplanations: number;
+    grammarUsageGuides: number;
     grammarExampleExplanations: number;
     grammarQuizExplanations: number;
     generatedGrammarExamples: number;
@@ -142,12 +143,14 @@ export async function loadStatsData(): Promise<StatsData> {
 
   // 문법 카운트는 row 안에 embedded array 라 toArray 후 집계
   let grammarItemExplanations = 0;
+  let grammarUsageGuides = 0;
   let grammarExampleExplanations = 0;
   let grammarQuizExplanations = 0;
   let generatedGrammarExamples = 0;
   let generatedGrammarQuizzes = 0;
   await d.grammarItems.each((it) => {
     if (it.deepExplanation) grammarItemExplanations++;
+    if (it.usageGuide) grammarUsageGuides++;
     for (const ex of it.examples ?? []) {
       if (ex.explanation) grammarExampleExplanations++;
       if (ex.source === "generated") generatedGrammarExamples++;
@@ -343,6 +346,7 @@ export async function loadStatsData(): Promise<StatsData> {
       wordExplanations,
       exampleExplanations,
       grammarItemExplanations,
+      grammarUsageGuides,
       grammarExampleExplanations,
       grammarQuizExplanations,
       generatedGrammarExamples,

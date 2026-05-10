@@ -975,6 +975,175 @@ export async function generateGrammarQuizExplanation(
   );
 }
 
+// ─── generateGrammarUsageGuide ──────────────────────────────────────────────
+
+const GRAMMAR_USAGE_GUIDE_SCHEMA = {
+  type: "object",
+  properties: {
+    intro: { type: "string" },
+    sections: {
+      type: "array",
+      items: {
+        type: "object",
+        properties: {
+          title: { type: "string" },
+          rule: { type: "string" },
+          examples: {
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                jp: { type: "string" },
+                jpReading: { type: ["string", "null"] },
+                conjugated: { type: ["string", "null"] },
+                gloss: { type: "string" },
+              },
+              required: ["jp", "gloss"],
+              additionalProperties: false,
+            },
+          },
+          note: { type: ["string", "null"] },
+        },
+        required: ["title", "rule", "examples"],
+        additionalProperties: false,
+      },
+    },
+  },
+  required: ["intro", "sections"],
+  additionalProperties: false,
+} as const;
+
+const GRAMMAR_USAGE_GUIDE_SYSTEM_PROMPT = `You are a Japanese grammar tutor for Korean speakers studying JLPT. Given a Japanese grammar pattern, produce a structured "usage guide" — sections + examples — IN KOREAN.
+
+Output JSON:
+{
+  "intro": "<한 줄 개요. 이 패턴이 어떤 종류의 문법인지 간결하게.>",
+  "sections": [
+    {
+      "title": "<섹션 제목 (한국어). 예: '1그룹 (5단 동사)' / '장소' / 'から과의 차이' / '동사 활용 규칙' 등>",
+      "rule": "<섹션의 핵심 규칙·의미 1-3 문장 (한국어).>",
+      "examples": [
+        {
+          "jp": "<일본어 예. 한자에는 {kanji|hiragana} 형태로 ruby (선택), {{}} target 마커는 사용 X.>",
+          "jpReading": "<선택. jp 의 전체 가나 발음 또는 로마자. jp 에 ruby 가 모든 한자에 있으면 null.>",
+          "conjugated": "<선택. 그룹별 활용처럼 사전형 → 변형 결과 매핑일 때만. 일반 예문이면 null.>",
+          "gloss": "<한국어 뜻>"
+        }
+      ],
+      "note": "<선택. 예외·주의·tip. 없으면 null.>"
+    }
+  ]
+}
+
+SECTION 구성 가이드 (패턴 유형별):
+
+A) **그룹별 변형** (verb_form 의 활용형, 형용사 활용 등)
+   - sections: "1그룹 (5단)", "2그룹 (1단)", "3그룹 (불규칙)", "예외 1그룹" 등
+   - 각 examples 에 dictForm + conjugated 매핑 (jp = 사전형, conjugated = 변형 결과, gloss = 한국어)
+
+B) **다의·다용도** (조사·접속사·종조사 의 여러 용법)
+   - sections: 의미별로 ("장소", "수단", "이유", "시간" 등)
+   - examples 는 각 용법의 자연스러운 예문 (전체 문장)
+
+C) **비교·대조** (비슷한 표현과의 차이)
+   - sections: "기본 의미", "X 와의 차이", "Y 와의 차이"
+   - examples 에 비교군의 같은 상황 예문을 나란히 배치 (자매 항목과 비교 가능하게)
+
+D) **활용·접속 규칙** (たい, たがる 같이 어디 붙는지가 중요)
+   - sections: "동사·형용사 활용", "사용 제한", "응용"
+   - examples 에 어떻게 결합되는지 보여줌
+
+E) **격식·문체 매핑** (존경·겸양어)
+   - sections: "일반 → 존경", "활용", "사용 상황"
+   - examples 에 일반 표현 ↔ 존경 표현 대응
+
+F) **단순 부사·감탄** (의미 1개 + 풍부한 예)
+   - sections 1-2개로 충분. "기본 사용" + 필요시 "뉘앙스/유의어"
+
+CONSTRAINTS:
+- Korean throughout (Japanese in 「」 또는 jp 필드).
+- Sections 갯수: 보통 2-5개 (단순 패턴은 1-2개도 OK).
+- 각 section 에 examples 2-5개.
+- 패턴이 단순하면 sections 적게. 복잡하면 풍부하게.
+- 예문은 JLPT 레벨에 맞는 자연스러운 일본어.
+- {{}} target 마커는 절대 사용 X (이건 퀴즈 markup, 가이드는 일반 ruby 만).
+- Skip sycophancy.`;
+
+export type GenerateGrammarUsageGuideInput = {
+  pattern: string;
+  meaningsKo: string[];
+  baseExplanation: string;
+  formation: string | null;
+  category: string;
+  level: string;
+};
+
+export type GenerateGrammarUsageGuideOutput = {
+  intro: string;
+  sections: Array<{
+    title: string;
+    rule: string;
+    examples: Array<{
+      jp: string;
+      jpReading?: string | null;
+      conjugated?: string | null;
+      gloss: string;
+    }>;
+    note?: string | null;
+  }>;
+};
+
+function isGrammarUsageGuideOutput(
+  x: unknown,
+): x is GenerateGrammarUsageGuideOutput {
+  if (!x || typeof x !== "object") return false;
+  const o = x as Record<string, unknown>;
+  if (typeof o.intro !== "string") return false;
+  if (!Array.isArray(o.sections)) return false;
+  for (const s of o.sections as Array<Record<string, unknown>>) {
+    if (typeof s.title !== "string" || typeof s.rule !== "string") return false;
+    if (!Array.isArray(s.examples)) return false;
+    for (const ex of s.examples as Array<Record<string, unknown>>) {
+      if (typeof ex.jp !== "string" || typeof ex.gloss !== "string") return false;
+    }
+  }
+  return true;
+}
+
+export async function generateGrammarUsageGuide(
+  input: GenerateGrammarUsageGuideInput,
+  tier: Tier = "default",
+): Promise<{
+  result: GenerateGrammarUsageGuideOutput;
+  modelUsed: string;
+  usage: Usage;
+}> {
+  const userMessage = [
+    `Pattern: ${input.pattern}`,
+    `Korean meanings: ${input.meaningsKo.join(", ")}`,
+    `Category: ${input.category}`,
+    `JLPT Level: ${input.level}`,
+    input.formation ? `Formation: ${input.formation}` : null,
+    `Base explanation: ${input.baseExplanation}`,
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  return withFallback<GenerateGrammarUsageGuideOutput>(
+    tier,
+    isGrammarUsageGuideOutput,
+    (resolved, model) =>
+      callJson(
+        resolved,
+        model,
+        GRAMMAR_USAGE_GUIDE_SYSTEM_PROMPT,
+        userMessage,
+        GRAMMAR_USAGE_GUIDE_SCHEMA,
+      ),
+    "grammar-usage-guide",
+  );
+}
+
 // ─── generateGrammarExample ─────────────────────────────────────────────────
 
 const GRAMMAR_EXAMPLE_SCHEMA = {

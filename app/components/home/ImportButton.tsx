@@ -123,6 +123,7 @@ export function ImportButton() {
       const summary =
         `${r.packKey} ${r.mode === "replace" ? "교체" : "병합"} 완료 — ` +
         `+${r.attachedItemExplanations} 항목 해설 / ` +
+        `+${r.attachedUsageGuides} 활용 가이드 / ` +
         `+${r.attachedExampleExplanations} 예문 해설 / ` +
         `+${r.attachedQuizExplanations} 퀴즈 해설 / ` +
         `+${r.insertedGeneratedExamples} 추가 예문 / ` +

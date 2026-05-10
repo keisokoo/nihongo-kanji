@@ -5,6 +5,7 @@ import {
   generateGrammarQuizExplanation,
   generateGrammarExample,
   generateGrammarQuiz,
+  generateGrammarUsageGuide,
   type Tier,
   type Usage,
 } from "./claude";
@@ -18,6 +19,7 @@ import type {
   GrammarQuiz,
   GrammarQuizExplanation,
   GrammarQuizType,
+  GrammarUsageGuide,
 } from "./grammar-types";
 
 type Result<T> = {
@@ -228,6 +230,58 @@ export async function addGrammarQuizExplanation(
 
   return {
     explanation,
+    cached: false,
+    usage: { ...gen.usage, model: gen.modelUsed },
+  };
+}
+
+// ─── Item-level usage guide ─────────────────────────────────────────────────
+
+export async function addGrammarUsageGuide(
+  itemId: number,
+  tier: Tier = "default",
+): Promise<Result<GrammarUsageGuide>> {
+  const d = db();
+  const item = await d.grammarItems.get(itemId);
+  if (!item) throw new Error("grammar item not found");
+
+  if (tier !== "premium" && item.usageGuide) {
+    return { explanation: item.usageGuide, cached: true, usage: null };
+  }
+
+  const gen = await generateGrammarUsageGuide(
+    {
+      pattern: item.pattern,
+      meaningsKo: item.meaningsKo,
+      baseExplanation: item.explanation,
+      formation: item.formation,
+      category: item.category,
+      level: levelOf(item),
+    },
+    tier,
+  );
+
+  const guide: GrammarUsageGuide = {
+    intro: gen.result.intro,
+    sections: gen.result.sections.map((s) => ({
+      title: s.title,
+      rule: s.rule,
+      examples: s.examples.map((e) => ({
+        jp: e.jp,
+        jpReading: e.jpReading ?? null,
+        conjugated: e.conjugated ?? null,
+        gloss: e.gloss,
+      })),
+      note: s.note ?? null,
+    })),
+    modelUsed: gen.modelUsed,
+    createdAt: new Date().toISOString(),
+  };
+
+  await d.grammarItems.update(itemId, { usageGuide: guide });
+
+  return {
+    explanation: guide,
     cached: false,
     usage: { ...gen.usage, model: gen.modelUsed },
   };

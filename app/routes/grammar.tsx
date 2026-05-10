@@ -138,12 +138,13 @@ export default function Grammar({ loaderData }: Route.ComponentProps) {
         />
 
         <section className="mb-6">
-          <GrammarCard item={item} />
+          <GrammarCard key={item.id} item={item} />
         </section>
 
         {item.examples.length > 0 && (
           <section className="mb-6">
             <GrammarExamples
+              key={item.id}
               itemId={item.id}
               examples={item.examples}
               pattern={item.pattern}
@@ -153,6 +154,7 @@ export default function Grammar({ loaderData }: Route.ComponentProps) {
 
         <section>
           <GrammarQuizSection
+            key={item.id}
             quizzes={item.quizzes}
             itemId={item.id}
             itemKey={item.id}

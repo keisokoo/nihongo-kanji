@@ -116,6 +116,41 @@ export type GrammarItemDeepExplanation = {
   createdAt: string;
 };
 
+/**
+ * 활용 가이드 — 패턴별 그룹·용법·비교 등을 sections 단위로 구조화.
+ *
+ * 6가지 유형 커버 (verb_form 그룹별 / 다의 / 비교 / 활용규칙 / 격식 / 단순부사)
+ * 모두 같은 sections 모양으로 표현. AI 가 패턴 카테고리·의미를 보고
+ * 적절한 sections 구성.
+ */
+export type GrammarUsageGuide = {
+  intro: string;
+  sections: GrammarUsageSection[];
+  modelUsed: string;
+  createdAt: string;
+};
+
+export type GrammarUsageSection = {
+  /** 섹션 제목 (예: "1그룹 (5단)" / "장소" / "から과의 차이" / "동사 활용" 등). */
+  title: string;
+  /** 핵심 규칙·의미·차이 1-3 문장. */
+  rule: string;
+  examples: GrammarUsageExample[];
+  /** 추가 설명 (예외·주의·tip). */
+  note: string | null;
+};
+
+export type GrammarUsageExample = {
+  /** 일본어 예. 인라인 마크업 OK ({한자|reading}). target {{}} 사용 X. */
+  jp: string;
+  /** (선택) 가나/로마자 — jp 가 한자만 있을 때 발음 표시. */
+  jpReading: string | null;
+  /** (선택) 변형 결과 — 그룹별 활용일 때 사전형 → ます형 매핑. */
+  conjugated: string | null;
+  /** 한국어 의미. */
+  gloss: string;
+};
+
 export type GrammarExampleExplanation = {
   nuance: string;
   grammar: string;
@@ -221,6 +256,8 @@ export type GrammarItem = {
 
   /** AI 가 생성하는 항목 단위 deep explanation (선택). */
   deepExplanation?: GrammarItemDeepExplanation | null;
+  /** AI 가 생성하는 활용 가이드 (선택). */
+  usageGuide?: GrammarUsageGuide | null;
 
   createdAt: Date;
 };
