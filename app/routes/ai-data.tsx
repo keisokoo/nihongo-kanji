@@ -1,6 +1,20 @@
-import { Link } from "react-router";
+import { useState } from "react";
+import { Link, useRevalidator } from "react-router";
 import type { Route } from "./+types/ai-data";
 import { loadAiData } from "~/lib/idb/ai-data";
+import {
+  clearExampleExplanations,
+  clearGrammarExampleExplanations,
+  clearGrammarItemExplanations,
+  clearGrammarQuizExplanations,
+  clearWordExplanations,
+  deleteGeneratedExamples,
+  deleteGeneratedGrammarExamples,
+  deleteGeneratedGrammarQuizzes,
+  deleteGeneratedWords,
+} from "~/lib/idb/ai-data-actions";
+import { ConfirmModal } from "~/components/ConfirmModal";
+import { Spinner } from "~/components/Spinner";
 
 export async function clientLoader() {
   return loadAiData();
@@ -50,6 +64,25 @@ export default function AiData({ loaderData }: Route.ComponentProps) {
           title="추가 단어 (한자팩)"
           total={data.totals.generatedWords}
           shown={data.generatedWords.length}
+          action={
+            <BulkActionButton
+              label="삭제"
+              variant="delete"
+              action={deleteGeneratedWords}
+              confirmTitle="AI 추가 단어 모두 삭제"
+              confirmBody={
+                <>
+                  <p>
+                    AI 가 추가한 단어 <strong>{data.totals.generatedWords}</strong>건
+                    + 그 단어에 달린 예문을 모두 삭제합니다.
+                  </p>
+                  <p className="mt-2 text-xs text-neutral-500">
+                    시드 단어 / 시드 예문은 무손상.
+                  </p>
+                </>
+              }
+            />
+          }
         >
           {data.generatedWords.map((w) => (
             <li key={w.id} className="ai-row">
@@ -85,6 +118,20 @@ export default function AiData({ loaderData }: Route.ComponentProps) {
           title="추가 예문 (한자팩)"
           total={data.totals.generatedExamples}
           shown={data.generatedExamples.length}
+          action={
+            <BulkActionButton
+              label="삭제"
+              variant="delete"
+              action={deleteGeneratedExamples}
+              confirmTitle="AI 추가 예문 모두 삭제"
+              confirmBody={
+                <p>
+                  AI 가 추가한 예문 <strong>{data.totals.generatedExamples}</strong>건을
+                  모두 삭제합니다. 시드 예문 / 단어는 무손상.
+                </p>
+              }
+            />
+          }
         >
           {data.generatedExamples.map((e) => (
             <li key={e.id} className="ai-row">
@@ -111,6 +158,20 @@ export default function AiData({ loaderData }: Route.ComponentProps) {
           title="단어 해설"
           total={data.totals.wordExplanations}
           shown={data.wordExplanations.length}
+          action={
+            <BulkActionButton
+              label="초기화"
+              variant="clear"
+              action={clearWordExplanations}
+              confirmTitle="단어 해설 모두 초기화"
+              confirmBody={
+                <p>
+                  AI 가 만든 단어 해설 <strong>{data.totals.wordExplanations}</strong>건을
+                  비웁니다. 단어 row 자체는 유지.
+                </p>
+              }
+            />
+          }
         >
           {data.wordExplanations.map((w) => (
             <li key={w.wordId} className="ai-row">
@@ -142,6 +203,20 @@ export default function AiData({ loaderData }: Route.ComponentProps) {
           title="예문 해설"
           total={data.totals.exampleExplanations}
           shown={data.exampleExplanations.length}
+          action={
+            <BulkActionButton
+              label="초기화"
+              variant="clear"
+              action={clearExampleExplanations}
+              confirmTitle="예문 해설 모두 초기화"
+              confirmBody={
+                <p>
+                  AI 가 만든 예문 해설 <strong>{data.totals.exampleExplanations}</strong>건을
+                  비웁니다. 예문 row 자체는 유지.
+                </p>
+              }
+            />
+          }
         >
           {data.exampleExplanations.map((e) => (
             <li key={e.exampleId} className="ai-row">
@@ -168,6 +243,20 @@ export default function AiData({ loaderData }: Route.ComponentProps) {
           title="문법 항목 해설"
           total={data.totals.grammarItemExplanations}
           shown={data.grammarItemExplanations.length}
+          action={
+            <BulkActionButton
+              label="초기화"
+              variant="clear"
+              action={clearGrammarItemExplanations}
+              confirmTitle="문법 항목 해설 모두 초기화"
+              confirmBody={
+                <p>
+                  문법 항목 deep 해설 <strong>{data.totals.grammarItemExplanations}</strong>건을
+                  비웁니다. 시드 본문은 무손상.
+                </p>
+              }
+            />
+          }
         >
           {data.grammarItemExplanations.map((g) => (
             <li key={g.itemId} className="ai-row">
@@ -196,6 +285,20 @@ export default function AiData({ loaderData }: Route.ComponentProps) {
           title="문법 예문 해설"
           total={data.totals.grammarExampleExplanations}
           shown={data.grammarExampleExplanations.length}
+          action={
+            <BulkActionButton
+              label="초기화"
+              variant="clear"
+              action={clearGrammarExampleExplanations}
+              confirmTitle="문법 예문 해설 모두 초기화"
+              confirmBody={
+                <p>
+                  문법 예문 해설 <strong>{data.totals.grammarExampleExplanations}</strong>건을
+                  비웁니다. 예문 본문은 유지.
+                </p>
+              }
+            />
+          }
         >
           {data.grammarExampleExplanations.map((g) => (
             <li
@@ -225,6 +328,20 @@ export default function AiData({ loaderData }: Route.ComponentProps) {
           title="문법 퀴즈 해설"
           total={data.totals.grammarQuizExplanations}
           shown={data.grammarQuizExplanations.length}
+          action={
+            <BulkActionButton
+              label="초기화"
+              variant="clear"
+              action={clearGrammarQuizExplanations}
+              confirmTitle="문법 퀴즈 해설 모두 초기화"
+              confirmBody={
+                <p>
+                  문법 퀴즈 해설 <strong>{data.totals.grammarQuizExplanations}</strong>건을
+                  비웁니다. 퀴즈 본문은 유지.
+                </p>
+              }
+            />
+          }
         >
           {data.grammarQuizExplanations.map((g) => (
             <li key={`${g.itemId}-${g.quizIndex}`} className="ai-row">
@@ -256,6 +373,20 @@ export default function AiData({ loaderData }: Route.ComponentProps) {
           title="문법 추가 예문"
           total={data.totals.generatedGrammarExamples}
           shown={data.generatedGrammarExamples.length}
+          action={
+            <BulkActionButton
+              label="삭제"
+              variant="delete"
+              action={deleteGeneratedGrammarExamples}
+              confirmTitle="문법 추가 예문 모두 삭제"
+              confirmBody={
+                <p>
+                  AI 가 추가한 문법 예문 <strong>{data.totals.generatedGrammarExamples}</strong>건을
+                  삭제합니다. 시드 예문은 무손상.
+                </p>
+              }
+            />
+          }
         >
           {data.generatedGrammarExamples.map((g, i) => (
             <li key={`${g.itemId}-gex-${i}`} className="ai-row">
@@ -280,6 +411,20 @@ export default function AiData({ loaderData }: Route.ComponentProps) {
           title="문법 추가 퀴즈"
           total={data.totals.generatedGrammarQuizzes}
           shown={data.generatedGrammarQuizzes.length}
+          action={
+            <BulkActionButton
+              label="삭제"
+              variant="delete"
+              action={deleteGeneratedGrammarQuizzes}
+              confirmTitle="문법 추가 퀴즈 모두 삭제"
+              confirmBody={
+                <p>
+                  AI 가 추가한 문법 퀴즈 <strong>{data.totals.generatedGrammarQuizzes}</strong>건을
+                  삭제합니다. 시드 퀴즈는 무손상.
+                </p>
+              }
+            />
+          }
         >
           {data.generatedGrammarQuizzes.map((g, i) => (
             <li key={`${g.itemId}-gq-${i}`} className="ai-row">
@@ -317,25 +462,100 @@ function KindSection({
   title,
   total,
   shown,
+  action,
   children,
 }: {
   title: string;
   total: number;
   shown: number;
+  action?: React.ReactNode;
   children: React.ReactNode;
 }) {
   if (total === 0) return null;
   return (
     <section className="mb-8">
-      <h2 className="mb-3 flex items-baseline justify-between text-sm font-semibold uppercase tracking-wide text-neutral-500">
-        <span>{title}</span>
-        <span className="text-xs tabular-nums normal-case text-neutral-400">
-          {shown} / {total} 표시
-        </span>
-      </h2>
+      <div className="mb-3 flex items-baseline justify-between gap-3">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-neutral-500">
+          {title}
+        </h2>
+        <div className="flex items-center gap-2">
+          <span className="text-xs tabular-nums text-neutral-400">
+            {shown} / {total} 표시
+          </span>
+          {action}
+        </div>
+      </div>
       <ul className="space-y-2 [&_.ai-link]:border-neutral-200 [&_.ai-link]:bg-white [&_.ai-link:hover]:border-neutral-400 dark:[&_.ai-link]:border-neutral-800 dark:[&_.ai-link]:bg-neutral-900 dark:[&_.ai-link:hover]:border-neutral-600">
         {children}
       </ul>
     </section>
+  );
+}
+
+type BulkResult = number | { words: number; examples: number };
+
+function BulkActionButton({
+  label,
+  variant,
+  action,
+  confirmTitle,
+  confirmBody,
+}: {
+  label: string;
+  variant: "delete" | "clear";
+  action: () => Promise<BulkResult>;
+  confirmTitle: string;
+  confirmBody: React.ReactNode;
+}) {
+  const revalidator = useRevalidator();
+  const [open, setOpen] = useState(false);
+  const [busy, setBusy] = useState(false);
+
+  async function execute() {
+    setOpen(false);
+    setBusy(true);
+    try {
+      const r = await action();
+      let summary: string;
+      if (typeof r === "number") summary = `${r}건 처리됨`;
+      else summary = `단어 ${r.words}건 + 예문 ${r.examples}건 삭제됨`;
+      revalidator.revalidate();
+      if (typeof window !== "undefined") {
+        window.alert(`${label} 완료 — ${summary}`);
+      }
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "error";
+      if (typeof window !== "undefined") window.alert(`실패: ${msg}`);
+    } finally {
+      setBusy(false);
+    }
+  }
+
+  const colorCls =
+    variant === "delete"
+      ? "border-rose-300 text-rose-700 hover:border-rose-400 hover:bg-rose-50 dark:border-rose-900/50 dark:text-rose-400 dark:hover:bg-rose-950/30"
+      : "border-amber-300 text-amber-700 hover:border-amber-400 hover:bg-amber-50 dark:border-amber-900/50 dark:text-amber-400 dark:hover:bg-amber-950/30";
+
+  return (
+    <>
+      <button
+        type="button"
+        disabled={busy}
+        onClick={() => setOpen(true)}
+        className={`inline-flex items-center gap-1 rounded-md border px-2 py-0.5 text-xs disabled:opacity-50 ${colorCls}`}
+      >
+        {busy && <Spinner className="h-3 w-3" />}
+        {label}
+      </button>
+      <ConfirmModal
+        open={open}
+        title={confirmTitle}
+        body={confirmBody}
+        confirmLabel={label}
+        destructive={variant === "delete"}
+        onConfirm={execute}
+        onCancel={() => setOpen(false)}
+      />
+    </>
   );
 }
