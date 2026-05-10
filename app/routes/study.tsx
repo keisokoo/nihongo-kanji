@@ -1,4 +1,4 @@
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import { Link, redirect, useNavigate } from "react-router";
 import type { Route } from "./+types/study";
 import { db } from "~/lib/idb/db";
@@ -8,6 +8,8 @@ import { Spinner } from "~/components/Spinner";
 import { showUsageToast } from "~/components/Toast";
 import { addAiWord } from "~/lib/idb/word-add";
 import { useAiAvailability } from "~/lib/idb/use-ai-availability";
+import { SidebarSearch } from "~/components/SidebarSearch";
+import { matchesAny } from "~/lib/search";
 
 const DISTRACTOR_POOL_SIZE = 200;
 
@@ -205,6 +207,14 @@ function KanjiListSidebar({
   activeId: number;
 }) {
   const activeRef = useRef<HTMLAnchorElement>(null);
+  const [query, setQuery] = useState("");
+
+  const filtered = useMemo(() => {
+    if (!query.trim()) return items;
+    return items.filter((it) =>
+      matchesAny([it.character, it.meaningKo], query),
+    );
+  }, [items, query]);
 
   useEffect(() => {
     if (!open) return;
@@ -261,38 +271,50 @@ function KanjiListSidebar({
             ✕
           </button>
         </header>
+        <SidebarSearch
+          value={query}
+          onChange={setQuery}
+          count={filtered.length}
+          total={items.length}
+        />
         <ol className="flex-1 overflow-y-auto py-2">
-          {items.map((item) => {
-            const isActive = item.id === activeId;
-            return (
-              <li key={item.id}>
-                <Link
-                  ref={isActive ? activeRef : undefined}
-                  to={`/study/${encodeURIComponent(packKey)}/${item.id}`}
-                  prefetch="intent"
-                  onClick={onClose}
-                  className={`flex items-center gap-3 px-5 py-2.5 transition ${
-                    isActive
-                      ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900"
-                      : "text-neutral-800 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-800"
-                  }`}
-                >
-                  <span className="w-8 shrink-0 text-2xl font-semibold leading-none [font-family:'Noto_Sans_JP',sans-serif]">
-                    {item.character}
-                  </span>
-                  <span
-                    className={`flex-1 truncate text-sm ${
+          {filtered.length === 0 ? (
+            <li className="px-5 py-6 text-center text-sm text-neutral-400">
+              일치하는 한자 없음
+            </li>
+          ) : (
+            filtered.map((item) => {
+              const isActive = item.id === activeId;
+              return (
+                <li key={item.id}>
+                  <Link
+                    ref={isActive ? activeRef : undefined}
+                    to={`/study/${encodeURIComponent(packKey)}/${item.id}`}
+                    prefetch="intent"
+                    onClick={onClose}
+                    className={`flex items-center gap-3 px-5 py-2.5 transition ${
                       isActive
-                        ? "opacity-90"
-                        : "text-neutral-500 dark:text-neutral-400"
+                        ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900"
+                        : "text-neutral-800 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-800"
                     }`}
                   >
-                    {item.meaningKo}
-                  </span>
-                </Link>
-              </li>
-            );
-          })}
+                    <span className="w-8 shrink-0 text-2xl font-semibold leading-none [font-family:'Noto_Sans_JP',sans-serif]">
+                      {item.character}
+                    </span>
+                    <span
+                      className={`flex-1 truncate text-sm ${
+                        isActive
+                          ? "opacity-90"
+                          : "text-neutral-500 dark:text-neutral-400"
+                      }`}
+                    >
+                      {item.meaningKo}
+                    </span>
+                  </Link>
+                </li>
+              );
+            })
+          )}
         </ol>
       </aside>
     </div>

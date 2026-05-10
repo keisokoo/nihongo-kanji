@@ -6,12 +6,19 @@ import {
   importJlptDelta,
   type PackExport,
 } from "~/lib/idb/pack-import-delta";
+import { importGrammarDelta } from "~/lib/idb/grammar-pack-import-delta";
+import type { GrammarPackExport } from "~/lib/idb/grammar-pack-export";
 
 type Status =
   | { kind: "idle" }
   | { kind: "loading"; filename: string }
   | { kind: "error"; message: string }
-  | { kind: "delta-pending"; filename: string; body: DeltaBody };
+  | { kind: "delta-pending"; filename: string; body: DeltaBody }
+  | {
+      kind: "grammar-delta-pending";
+      filename: string;
+      body: GrammarPackExport;
+    };
 
 // Lightweight shape — full type lives on the server.
 type DeltaBody = {
@@ -36,6 +43,18 @@ export function ImportButton() {
       if (json?.kind === "jlpt-delta") {
         // Stop here and let the user choose replace vs merge.
         setStatus({ kind: "delta-pending", filename: file.name, body: json });
+        return;
+      }
+
+      if (
+        json?.kind === "jlpt-grammar-delta" ||
+        json?.kind === "custom-grammar-full"
+      ) {
+        setStatus({
+          kind: "grammar-delta-pending",
+          filename: file.name,
+          body: json,
+        });
         return;
       }
 
@@ -93,8 +112,36 @@ export function ImportButton() {
     }
   }
 
+  async function applyGrammarDelta(mode: "replace" | "merge") {
+    if (status.kind !== "grammar-delta-pending") return;
+    const { body, filename } = status;
+    setStatus({ kind: "loading", filename });
+    try {
+      const r = await importGrammarDelta(body, mode);
+      setStatus({ kind: "idle" });
+      revalidator.revalidate();
+      const summary =
+        `${r.packKey} ${r.mode === "replace" ? "교체" : "병합"} 완료 — ` +
+        `+${r.attachedItemExplanations} 항목 / ` +
+        `+${r.attachedExampleExplanations} 예문 / ` +
+        `+${r.attachedQuizExplanations} 퀴즈 해설` +
+        (r.unknownPatterns.length > 0
+          ? ` · 알 수 없는 패턴 ${r.unknownPatterns.length} 건`
+          : "") +
+        (r.warnings.length > 0 ? ` · 경고 ${r.warnings.length} 건` : "");
+      if (typeof window !== "undefined") window.alert(summary);
+    } catch (err) {
+      const message = err instanceof Error ? err.message : "import failed";
+      setStatus({ kind: "error", message });
+    }
+  }
+
   function cancelDelta() {
-    if (status.kind === "delta-pending") setStatus({ kind: "idle" });
+    if (
+      status.kind === "delta-pending" ||
+      status.kind === "grammar-delta-pending"
+    )
+      setStatus({ kind: "idle" });
   }
 
   return (
@@ -137,7 +184,90 @@ export function ImportButton() {
           onCancel={cancelDelta}
         />
       )}
+
+      {status.kind === "grammar-delta-pending" && (
+        <GrammarDeltaModeModal
+          body={status.body}
+          onPick={applyGrammarDelta}
+          onCancel={cancelDelta}
+        />
+      )}
     </>
+  );
+}
+
+function GrammarDeltaModeModal({
+  body,
+  onPick,
+  onCancel,
+}: {
+  body: GrammarPackExport;
+  onPick: (mode: "replace" | "merge") => void;
+  onCancel: () => void;
+}) {
+  const itemCount = body.items.length;
+  const exampleExplCount = body.items.reduce(
+    (n, it) => n + it.examples.length,
+    0,
+  );
+  const quizExplCount = body.items.reduce(
+    (n, it) => n + it.quizzes.length,
+    0,
+  );
+  const itemExplCount = body.items.filter((it) => it.deepExplanation).length;
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      <div className="absolute inset-0 bg-neutral-900/40" onClick={onCancel} />
+      <div className="relative w-full max-w-lg rounded-2xl border border-neutral-200 bg-white p-6 shadow-xl dark:border-neutral-800 dark:bg-neutral-950">
+        <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
+          {body.title || body.key} — 문법 해설 가져오기
+        </h3>
+        <p className="mt-1 text-sm text-neutral-500">
+          AI 해설 delta — {itemCount} 항목 / 항목 해설 {itemExplCount} / 예문 해설{" "}
+          {exampleExplCount} / 퀴즈 해설 {quizExplCount}.
+          이 팩에 이미 만들어 둔 해설이 있을 수 있어요. 어떻게 적용할까요?
+        </p>
+
+        <div className="mt-5 space-y-2">
+          <button
+            type="button"
+            onClick={() => onPick("merge")}
+            className="block w-full rounded-lg border border-neutral-200 bg-white p-4 text-left transition hover:border-neutral-400 dark:border-neutral-800 dark:bg-neutral-900 dark:hover:border-neutral-600"
+          >
+            <div className="font-medium text-neutral-900 dark:text-neutral-100">
+              병합 (Merge)
+            </div>
+            <div className="mt-1 text-xs text-neutral-500">
+              기존 해설은 그대로 두고, 비어 있는 자리에만 가져온 해설을
+              채웁니다. 안전.
+            </div>
+          </button>
+          <button
+            type="button"
+            onClick={() => onPick("replace")}
+            className="block w-full rounded-lg border border-rose-200 bg-rose-50 p-4 text-left transition hover:border-rose-400 dark:border-rose-900/50 dark:bg-rose-950/30 dark:hover:border-rose-700"
+          >
+            <div className="font-medium text-rose-900 dark:text-rose-200">
+              교체 (Replace)
+            </div>
+            <div className="mt-1 text-xs text-rose-700 dark:text-rose-300/80">
+              이 팩의 모든 기존 해설(항목/예문/퀴즈)을 비운 뒤 가져온 해설로
+              채웁니다. 시드 본문 (pattern, examples, quizzes) 은 유지.
+            </div>
+          </button>
+        </div>
+
+        <div className="mt-5 flex justify-end">
+          <button
+            type="button"
+            onClick={onCancel}
+            className="rounded-md border border-neutral-300 bg-white px-4 py-2 text-sm hover:border-neutral-400 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
+          >
+            취소
+          </button>
+        </div>
+      </div>
+    </div>
   );
 }
 

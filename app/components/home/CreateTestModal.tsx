@@ -1,37 +1,66 @@
-import { useState } from "react";
+import { useMemo, useState } from "react";
 import { useNavigate } from "react-router";
 import { Spinner } from "~/components/Spinner";
 import type { WordTestKind } from "~/lib/idb/types";
-import type { HomePack } from "~/lib/idb/home";
+import type { HomePack, HomeGrammarPack } from "~/lib/idb/home";
 import { createWordTest } from "~/lib/idb/word-test";
+import { createGrammarTest } from "~/lib/idb/grammar-test";
 
 type Status =
   | { kind: "idle" }
   | { kind: "loading" }
   | { kind: "error"; message: string };
 
+type Mode = WordTestKind | "grammar";
+
 export function CreateTestModal({
   packs,
+  grammarPacks,
   onClose,
 }: {
   packs: HomePack[];
+  grammarPacks: HomeGrammarPack[];
   onClose: () => void;
 }) {
   const navigate = useNavigate();
   const [name, setName] = useState("");
-  const [testKind, setTestKind] = useState<WordTestKind>("meaning");
+  const [mode, setMode] = useState<Mode>("meaning");
   const [selected, setSelected] = useState<
     Map<string, { count: number | "all" }>
   >(new Map());
   const [status, setStatus] = useState<Status>({ kind: "idle" });
 
   const isLoading = status.kind === "loading";
+  const isGrammar = mode === "grammar";
 
-  function toggle(pack: HomePack) {
+  // 모드에 따라 어느 팩 풀을 보여줄지. 모드 바뀌면 selection 초기화.
+  const activePacks = useMemo(
+    () =>
+      isGrammar
+        ? grammarPacks.map((p) => ({
+            key: p.key,
+            title: p.title,
+            count: p.count,
+          }))
+        : packs.map((p) => ({
+            key: p.key,
+            title: p.title,
+            count: p.wordCount,
+          })),
+    [isGrammar, packs, grammarPacks],
+  );
+
+  function changeMode(next: Mode) {
+    if (next === mode) return;
+    setMode(next);
+    setSelected(new Map());
+  }
+
+  function toggle(pack: { key: string; count: number }) {
     setSelected((prev) => {
       const next = new Map(prev);
       if (next.has(pack.key)) next.delete(pack.key);
-      else next.set(pack.key, { count: Math.min(20, pack.wordCount) });
+      else next.set(pack.key, { count: Math.min(20, pack.count) });
       return next;
     });
   }
@@ -46,9 +75,9 @@ export function CreateTestModal({
   }
 
   const totalSelected = [...selected.entries()].reduce((sum, [key, v]) => {
-    const pack = packs.find((p) => p.key === key);
+    const pack = activePacks.find((p) => p.key === key);
     if (!pack) return sum;
-    return sum + (v.count === "all" ? pack.wordCount : v.count);
+    return sum + (v.count === "all" ? pack.count : v.count);
   }, 0);
 
   async function submit() {
@@ -63,16 +92,28 @@ export function CreateTestModal({
     }
     setStatus({ kind: "loading" });
     try {
-      const data = await createWordTest({
-        name: trimmed,
-        kind: testKind,
-        packs: [...selected.entries()].map(([packKey, v]) => ({
-          packKey,
-          count: v.count,
-        })),
-      });
-      onClose();
-      navigate(`/word-test/${data.testId}`);
+      if (isGrammar) {
+        const data = await createGrammarTest({
+          name: trimmed,
+          packs: [...selected.entries()].map(([packKey, v]) => ({
+            packKey,
+            count: v.count,
+          })),
+        });
+        onClose();
+        navigate(`/grammar-test/${data.testId}`);
+      } else {
+        const data = await createWordTest({
+          name: trimmed,
+          kind: mode,
+          packs: [...selected.entries()].map(([packKey, v]) => ({
+            packKey,
+            count: v.count,
+          })),
+        });
+        onClose();
+        navigate(`/word-test/${data.testId}`);
+      }
     } catch (err) {
       const message = err instanceof Error ? err.message : "failed";
       setStatus({ kind: "error", message });
@@ -87,30 +128,43 @@ export function CreateTestModal({
       />
       <div className="relative max-h-[85vh] w-full max-w-xl overflow-y-auto rounded-2xl border border-neutral-200 bg-white p-6 shadow-xl dark:border-neutral-800 dark:bg-neutral-950">
         <h3 className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
-          단어 시험 만들기
+          시험 만들기
         </h3>
         <p className="mt-1 text-sm text-neutral-500">
-          선택한 팩의 단어를 무작위로 뽑아 시험장을 만듭니다.
+          {isGrammar
+            ? "선택한 문법팩의 항목을 무작위로 뽑아 시험장을 만듭니다."
+            : "선택한 한자팩의 단어를 무작위로 뽑아 시험장을 만듭니다."}
         </p>
 
         <div className="mt-5">
           <span className="text-sm font-medium text-neutral-700 dark:text-neutral-300">
             모드 <span className="text-rose-500">*</span>
           </span>
-          <div className="mt-1.5 grid grid-cols-2 gap-2">
+          <div className="mt-1.5 grid grid-cols-3 gap-2">
             <KindOption
-              active={testKind === "meaning"}
-              onClick={() => setTestKind("meaning")}
+              active={mode === "meaning"}
+              onClick={() => changeMode("meaning")}
               disabled={isLoading}
               title="단어 시험"
-              description="일본어 ↔ 한국어 뜻 4지선다"
+              description="JP ↔ KO 4지선다"
             />
             <KindOption
-              active={testKind === "reading"}
-              onClick={() => setTestKind("reading")}
+              active={mode === "reading"}
+              onClick={() => changeMode("reading")}
               disabled={isLoading}
               title="한자 읽기"
-              description="예문 보고 단어 발음 4지선다"
+              description="예문 보고 발음 4지선다"
+            />
+            <KindOption
+              active={mode === "grammar"}
+              onClick={() => changeMode("grammar")}
+              disabled={isLoading || grammarPacks.length === 0}
+              title="문법"
+              description={
+                grammarPacks.length === 0
+                  ? "문법팩 없음"
+                  : "활용/조사/형태/한↔일"
+              }
             />
           </div>
         </div>
@@ -123,7 +177,9 @@ export function CreateTestModal({
             type="text"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            placeholder="예: N5 단어 1회차"
+            placeholder={
+              isGrammar ? "예: N5 문법 1회차" : "예: N5 단어 1회차"
+            }
             disabled={isLoading}
             className="mt-1.5 w-full rounded-md border border-neutral-300 bg-white px-3 py-2 text-sm text-neutral-900 outline-none focus:border-neutral-500 disabled:opacity-50 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100"
           />
@@ -139,73 +195,84 @@ export function CreateTestModal({
             </span>
           </div>
           <div className="space-y-2">
-            {packs.map((pack) => {
-              const cur = selected.get(pack.key);
-              const isOn = !!cur;
-              const isAll = cur?.count === "all";
-              return (
-                <div
-                  key={pack.key}
-                  className={`rounded-lg border p-3 transition ${
-                    isOn
-                      ? "border-neutral-900 bg-neutral-50 dark:border-neutral-100 dark:bg-neutral-900"
-                      : "border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-950"
-                  }`}
-                >
-                  <label className="flex items-center justify-between gap-3">
-                    <div className="flex items-center gap-2.5">
-                      <input
-                        type="checkbox"
-                        checked={isOn}
-                        onChange={() => toggle(pack)}
-                        disabled={isLoading}
-                        className="h-4 w-4 accent-neutral-900 dark:accent-neutral-100"
-                      />
-                      <span className="font-medium text-neutral-900 dark:text-neutral-100">
-                        {pack.title}
-                      </span>
-                    </div>
-                    <span className="text-xs tabular-nums text-neutral-500">
-                      가능 {pack.wordCount}개
-                    </span>
-                  </label>
-                  {isOn && (
-                    <div className="mt-3 flex flex-wrap items-center gap-3 pl-6">
-                      <input
-                        type="number"
-                        min={1}
-                        max={pack.wordCount}
-                        value={isAll ? pack.wordCount : (cur?.count ?? 0)}
-                        onChange={(e) => {
-                          const n = Math.max(
-                            1,
-                            Math.min(
-                              pack.wordCount,
-                              Number(e.target.value) || 1,
-                            ),
-                          );
-                          setCount(pack.key, n);
-                        }}
-                        disabled={isAll || isLoading}
-                        className="w-20 rounded-md border border-neutral-300 bg-white px-2 py-1 text-sm tabular-nums dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100 disabled:opacity-50"
-                      />
-                      <label className="flex items-center gap-1.5 text-xs text-neutral-600 dark:text-neutral-300">
+            {activePacks.length === 0 ? (
+              <p className="rounded-md border border-dashed border-neutral-300 p-4 text-center text-sm text-neutral-400 dark:border-neutral-700">
+                {isGrammar
+                  ? "문법팩이 없습니다. 시드 다시 설치 후 시도하세요."
+                  : "사용 가능한 팩이 없습니다."}
+              </p>
+            ) : (
+              activePacks.map((pack) => {
+                const cur = selected.get(pack.key);
+                const isOn = !!cur;
+                const isAll = cur?.count === "all";
+                return (
+                  <div
+                    key={pack.key}
+                    className={`rounded-lg border p-3 transition ${
+                      isOn
+                        ? "border-neutral-900 bg-neutral-50 dark:border-neutral-100 dark:bg-neutral-900"
+                        : "border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-950"
+                    }`}
+                  >
+                    <label className="flex items-center justify-between gap-3">
+                      <div className="flex items-center gap-2.5">
                         <input
                           type="checkbox"
-                          checked={isAll}
-                          onChange={(e) =>
-                            setCount(pack.key, e.target.checked ? "all" : 20)
-                          }
-                          disabled={isLoading}
-                          className="h-3.5 w-3.5 accent-neutral-900 dark:accent-neutral-100"
+                          checked={isOn}
+                          onChange={() => toggle(pack)}
+                          disabled={isLoading || pack.count === 0}
+                          className="h-4 w-4 accent-neutral-900 dark:accent-neutral-100"
                         />
-                        전체 ({pack.wordCount})
-                      </label>
-                    </div>
-                  )}
-                </div>
-              );
-            })}
+                        <span className="font-medium text-neutral-900 dark:text-neutral-100">
+                          {pack.title}
+                        </span>
+                      </div>
+                      <span className="text-xs tabular-nums text-neutral-500">
+                        가능 {pack.count}개
+                      </span>
+                    </label>
+                    {isOn && (
+                      <div className="mt-3 flex flex-wrap items-center gap-3 pl-6">
+                        <input
+                          type="number"
+                          min={1}
+                          max={pack.count}
+                          value={isAll ? pack.count : (cur?.count ?? 0)}
+                          onChange={(e) => {
+                            const n = Math.max(
+                              1,
+                              Math.min(
+                                pack.count,
+                                Number(e.target.value) || 1,
+                              ),
+                            );
+                            setCount(pack.key, n);
+                          }}
+                          disabled={isAll || isLoading}
+                          className="w-20 rounded-md border border-neutral-300 bg-white px-2 py-1 text-sm tabular-nums dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100 disabled:opacity-50"
+                        />
+                        <label className="flex items-center gap-1.5 text-xs text-neutral-600 dark:text-neutral-300">
+                          <input
+                            type="checkbox"
+                            checked={isAll}
+                            onChange={(e) =>
+                              setCount(
+                                pack.key,
+                                e.target.checked ? "all" : 20,
+                              )
+                            }
+                            disabled={isLoading}
+                            className="h-3.5 w-3.5 accent-neutral-900 dark:accent-neutral-100"
+                          />
+                          전체 ({pack.count})
+                        </label>
+                      </div>
+                    )}
+                  </div>
+                );
+              })
+            )}
           </div>
         </div>
 

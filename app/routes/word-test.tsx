@@ -33,6 +33,8 @@ import {
 import { ConfirmModal } from "~/components/ConfirmModal";
 import { showUsageToast, type ApiUsage } from "~/components/Toast";
 import { useTtsPlayer } from "~/lib/useTtsPlayer";
+import { SidebarSearch } from "~/components/SidebarSearch";
+import { matchesAny } from "~/lib/search";
 
 const CHOICE_COUNT = 4;
 
@@ -1146,6 +1148,19 @@ function WordTestListSidebar({
   correctCount: number;
 }) {
   const activeRef = useRef<HTMLButtonElement>(null);
+  const [query, setQuery] = useState("");
+
+  // 필터링 시 원본 인덱스를 유지해야 onJump/activeIndex 비교가 맞음.
+  const filtered = useMemo(() => {
+    const indexed = items.map((it, i) => ({ item: it, idx: i }));
+    if (!query.trim()) return indexed;
+    return indexed.filter(({ item }) =>
+      matchesAny(
+        [item.word, item.wordReading, ...item.meaningsKo],
+        query,
+      ),
+    );
+  }, [items, query]);
 
   useEffect(() => {
     if (!open) return;
@@ -1203,48 +1218,60 @@ function WordTestListSidebar({
             ✕
           </button>
         </header>
+        <SidebarSearch
+          value={query}
+          onChange={setQuery}
+          count={filtered.length}
+          total={items.length}
+        />
         <ol className="flex-1 overflow-y-auto py-2">
-          {items.map((item, i) => {
-            const isActive = i === activeIndex;
-            const status = statuses[i];
-            return (
-              <li key={item.id}>
-                <button
-                  ref={isActive ? activeRef : undefined}
-                  type="button"
-                  onClick={() => onJump(i)}
-                  className={`flex w-full items-center gap-3 px-5 py-2.5 text-left transition ${
-                    isActive
-                      ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900"
-                      : "text-neutral-800 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-800"
-                  }`}
-                >
-                  <span
-                    className={`w-7 shrink-0 text-xs tabular-nums ${
+          {filtered.length === 0 ? (
+            <li className="px-5 py-6 text-center text-sm text-neutral-400">
+              일치하는 문제 없음
+            </li>
+          ) : (
+            filtered.map(({ item, idx }) => {
+              const isActive = idx === activeIndex;
+              const status = statuses[idx];
+              return (
+                <li key={item.id}>
+                  <button
+                    ref={isActive ? activeRef : undefined}
+                    type="button"
+                    onClick={() => onJump(idx)}
+                    className={`flex w-full items-center gap-3 px-5 py-2.5 text-left transition ${
                       isActive
-                        ? "opacity-70"
-                        : "text-neutral-400 dark:text-neutral-500"
+                        ? "bg-neutral-900 text-white dark:bg-neutral-100 dark:text-neutral-900"
+                        : "text-neutral-800 hover:bg-neutral-100 dark:text-neutral-200 dark:hover:bg-neutral-800"
                     }`}
                   >
-                    {i + 1}
-                  </span>
-                  <StatusDot status={status} active={isActive} />
-                  <span className="flex-1 truncate text-base [font-family:'Noto_Sans_JP',sans-serif]">
-                    {item.word}
-                  </span>
-                  <span
-                    className={`truncate text-xs ${
-                      isActive
-                        ? "opacity-70"
-                        : "text-neutral-500 dark:text-neutral-400"
-                    }`}
-                  >
-                    {item.meaningsKo[0] ?? ""}
-                  </span>
-                </button>
-              </li>
-            );
-          })}
+                    <span
+                      className={`w-7 shrink-0 text-xs tabular-nums ${
+                        isActive
+                          ? "opacity-70"
+                          : "text-neutral-400 dark:text-neutral-500"
+                      }`}
+                    >
+                      {idx + 1}
+                    </span>
+                    <StatusDot status={status} active={isActive} />
+                    <span className="flex-1 truncate text-base [font-family:'Noto_Sans_JP',sans-serif]">
+                      {item.word}
+                    </span>
+                    <span
+                      className={`truncate text-xs ${
+                        isActive
+                          ? "opacity-70"
+                          : "text-neutral-500 dark:text-neutral-400"
+                      }`}
+                    >
+                      {item.meaningsKo[0] ?? ""}
+                    </span>
+                  </button>
+                </li>
+              );
+            })
+          )}
         </ol>
       </aside>
     </div>

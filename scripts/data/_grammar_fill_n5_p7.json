@@ -1,0 +1,527 @@
+{
+  "_comment": "N5 grammar Phase 7 (FINAL): no.74~84 (11개)",
+  "fills": {
+    "てもいいです": {
+      "meaningsKo": ["~해도 됩니다 (허락)"],
+      "category": "expression",
+      "explanation": "허락이나 허가를 정중하게 나타내는 표현이다. 「~해도 좋습니다」, 「~해도 괜찮습니다」 의 의미. 「~てもいいですか」 형태로 허락을 구하는 의문문에도 자주 쓰인다.",
+      "formation": "동사 て형 + も + いいです",
+      "notes": "반대 표현은 「~てはいけません」 (~해서는 안 됩니다). 좀 더 캐주얼하게는 「~てもいい」.",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "ここで{食|た}べ{{てもいいです}}。",
+          "sentenceTranslationKo": "여기서 먹어도 됩니다.",
+          "note": null
+        },
+        {
+          "sentence": "{窓|まど}を{開|あ}け{{てもいいですか}}。",
+          "sentenceTranslationKo": "창문을 열어도 됩니까?",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{帰|かえ}っ{{てもいいです}}。",
+            "answer": "てもいいです",
+            "distractors": ["てはいけません", "てください", "ないでください"],
+            "translationKo": "돌아가도 됩니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{座|すわ}ってもいい」",
+            "contextSentence": null,
+            "answer": "앉아도 좋다",
+            "distractors": ["앉아서는 안 된다", "앉지 않아도 된다", "앉아야 한다"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "사진을 찍어도 될까요?",
+            "answer": "{写真|しゃしん}を{撮|と}っ{{てもいいですか}}。",
+            "distractors": [
+              "{写真|しゃしん}を{撮|と}っ{{てはいけませんか}}。",
+              "{写真|しゃしん}を{撮|と}っ{{てください}}。",
+              "{写真|しゃしん}を{撮|と}り{{ましょうか}}。"
+            ],
+            "hintKo": "허락 = てもいいです"
+          }
+        }
+      ]
+    },
+    "と": {
+      "meaningsKo": ["~와/과 (열거)", "~와 (동반)", "~라고 (인용)"],
+      "category": "particle",
+      "explanation": "여러 의미를 갖는 조사이다. 명사를 나열하는 「~와/과」, 동작의 동반자를 나타내는 「~와 함께」, 인용의 「~라고」 가 주된 용법이다.",
+      "formation": null,
+      "notes": "열거의 「と」 는 모두 나열할 때, 「や」 는 일부만 예시할 때 쓴다.",
+      "applicableQuizTypes": ["particle_blank", "form_meaning"],
+      "examples": [
+        {
+          "sentence": "{猫|ねこ}{{と}}{犬|いぬ}が{好|す}きです。",
+          "sentenceTranslationKo": "고양이와 개를 좋아합니다.",
+          "note": "열거"
+        },
+        {
+          "sentence": "{友達|ともだち}{{と}}{映画|えいが}を{見|み}ました。",
+          "sentenceTranslationKo": "친구와 영화를 봤습니다.",
+          "note": "동반"
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "particle_blank",
+          "payload": {
+            "sentence": "{彼|かれ}{{と}}{結婚|けっこん}しました。",
+            "answer": "と",
+            "distractors": ["を", "に", "で"],
+            "translationKo": "그와 결혼했습니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「パンと{牛乳|ぎゅうにゅう}」",
+            "contextSentence": null,
+            "answer": "빵과 우유",
+            "distractors": ["빵이나 우유", "빵을 우유", "빵에서 우유"]
+          }
+        }
+      ]
+    },
+    "とき": {
+      "meaningsKo": ["~할 때, ~인 때"],
+      "category": "expression",
+      "explanation": "어떤 동작이나 상태가 일어나는 시점을 나타내는 표현이다. 「~할 때」, 「~인 경우」 의 의미로 시간·상황을 한정한다. 한자로 「時」 라 쓰기도 한다.",
+      "formation": "동사 보통형 + とき / い형용사 + とき / な형용사 어간 + な + とき / 명사 + の + とき",
+      "notes": "동사의 시제에 따라 의미가 달라진다 (사전형 = ~할 때, た형 = ~했을 때).",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "{学生|がくせい}の{{とき}}、よく{勉強|べんきょう}しました。",
+          "sentenceTranslationKo": "학생일 때 자주 공부했습니다.",
+          "note": null
+        },
+        {
+          "sentence": "{暑|あつ}い{{とき}}は{水|みず}を{飲|の}みます。",
+          "sentenceTranslationKo": "더울 때는 물을 마십니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{子供|こども}の{{とき}}、よく{遊|あそ}びました。",
+            "answer": "とき",
+            "distractors": ["まえ", "あと", "ながら"],
+            "translationKo": "어렸을 때 자주 놀았습니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{忙|いそが}しい{時|とき}」",
+            "contextSentence": null,
+            "answer": "바쁠 때",
+            "distractors": ["바빴기 때문에", "바쁘면", "바쁜 동안"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "비가 올 때는 우산을 가져갑니다.",
+            "answer": "{雨|あめ}が{降|ふ}る{{とき}}は{傘|かさ}を{持|も}って{行|い}きます。",
+            "distractors": [
+              "{雨|あめ}が{降|ふ}る{{まえ}}は{傘|かさ}を{持|も}って{行|い}きます。",
+              "{雨|あめ}が{降|ふ}る{{あと}}は{傘|かさ}を{持|も}って{行|い}きます。",
+              "{雨|あめ}が{降|ふ}り{{ながら}}{傘|かさ}を{持|も}って{行|い}きます。"
+            ],
+            "hintKo": "시점 = とき"
+          }
+        }
+      ]
+    },
+    "とても": {
+      "meaningsKo": ["매우, 아주, 굉장히"],
+      "category": "other",
+      "explanation": "정도가 매우 큼을 나타내는 부사이다. 「매우, 아주」 의 의미로 형용사·부사 앞에 와서 강조한다. 부정문에서는 「とても~ない」 형태로 「도저히 ~할 수 없다」 의 의미가 되기도 한다.",
+      "formation": null,
+      "notes": "회화에서는 「すごく」, 「めっちゃ」 가 더 캐주얼.",
+      "applicableQuizTypes": ["form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "{今日|きょう}は{{とても}}{暑|あつ}いです。",
+          "sentenceTranslationKo": "오늘은 매우 덥습니다.",
+          "note": null
+        },
+        {
+          "sentence": "この{本|ほん}は{{とても}}{面白|おもしろ}い。",
+          "sentenceTranslationKo": "이 책은 굉장히 재미있다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「とても{忙|いそが}しい」",
+            "contextSentence": null,
+            "answer": "매우 바쁘다",
+            "distractors": ["조금 바쁘다", "전혀 바쁘지 않다", "별로 바쁘지 않다"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "그녀는 매우 친절합니다.",
+            "answer": "{彼女|かのじょ}は{{とても}}{親切|しんせつ}です。",
+            "distractors": [
+              "{彼女|かのじょ}は{{あまり}}{親切|しんせつ}です。",
+              "{彼女|かのじょ}は{{ぜんぜん}}{親切|しんせつ}です。",
+              "{彼女|かのじょ}は{{ちょっと}}{親切|しんせつ}です。"
+            ],
+            "hintKo": "매우·아주 = とても"
+          }
+        }
+      ]
+    },
+    "つもり": {
+      "meaningsKo": ["~할 작정이다, ~할 생각이다"],
+      "category": "expression",
+      "explanation": "화자의 계획이나 의도를 나타내는 표현이다. 「~할 작정이다」, 「~할 생각이다」 의 의미. 동사 사전형 + つもり 가 가장 흔한 형태.",
+      "formation": "동사 사전형 + つもり / 동사 ない형 + つもり",
+      "notes": "「~予定」 보다 주관적·확실한 계획. 부정은 「~ないつもり」 (~하지 않을 작정).",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "{明日|あした}{勉強|べんきょう}する{{つもり}}です。",
+          "sentenceTranslationKo": "내일 공부할 작정입니다.",
+          "note": null
+        },
+        {
+          "sentence": "{来年|らいねん}{結婚|けっこん}する{{つもり}}だ。",
+          "sentenceTranslationKo": "내년에 결혼할 생각이다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{日本|にほん}に{行|い}く{{つもり}}です。",
+            "answer": "つもり",
+            "distractors": ["ことがある", "ばかり", "ところ"],
+            "translationKo": "일본에 갈 작정입니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{買|か}うつもり」",
+            "contextSentence": null,
+            "answer": "살 작정",
+            "distractors": ["산 적이 있음", "사 봤음", "사고 있음"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "오늘은 일찍 잘 생각이에요.",
+            "answer": "{今日|きょう}は{早|はや}く{寝|ね}る{{つもりです}}。",
+            "distractors": [
+              "{今日|きょう}は{早|はや}く{寝|ね}る{{ことがあります}}。",
+              "{今日|きょう}は{早|はや}く{寝|ね}{{たいです}}。",
+              "{今日|きょう}は{早|はや}く{寝|ね}{{ましょう}}。"
+            ],
+            "hintKo": "의도·계획 = つもり"
+          }
+        }
+      ]
+    },
+    "は": {
+      "meaningsKo": ["~은/는 (주제)"],
+      "category": "particle",
+      "explanation": "주제를 표시하는 조사이다. 「~은/는」 의 의미로, 문장의 주제를 들어 그것에 대해 설명·논평한다. 발음은 「わ」.",
+      "formation": null,
+      "notes": "「が」 와 자주 비교된다. 「は」 는 알려진 정보·주제, 「が」 는 새로운 정보·주체.",
+      "applicableQuizTypes": ["particle_blank", "form_meaning"],
+      "examples": [
+        {
+          "sentence": "{私|わたし}{{は}}{学生|がくせい}です。",
+          "sentenceTranslationKo": "저는 학생입니다.",
+          "note": null
+        },
+        {
+          "sentence": "これ{{は}}{本|ほん}です。",
+          "sentenceTranslationKo": "이것은 책입니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "particle_blank",
+          "payload": {
+            "sentence": "{彼|かれ}{{は}}{先生|せんせい}です。",
+            "answer": "は",
+            "distractors": ["が", "を", "に"],
+            "translationKo": "그는 선생님입니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{私|わたし}は」",
+            "contextSentence": null,
+            "answer": "저는",
+            "distractors": ["저가", "저에게", "저를"]
+          }
+        }
+      ]
+    },
+    "は〜より・・・です": {
+      "meaningsKo": ["[A]는 [B]보다 ~합니다"],
+      "category": "expression",
+      "explanation": "두 대상을 비교하여 한쪽이 더 ~함을 나타내는 비교 표현이다. 「[A]は [B]より ...です」 의 형태로 「A는 B보다 ...하다」 라는 의미를 만든다.",
+      "formation": "[A] + は + [B] + より + 형용사 + です",
+      "notes": "역방향은 「BよりAのほうが~」. 둘 다 같은 의미를 다르게 표현한 것.",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "{東京|とうきょう}は{大阪|おおさか}{{より}}{大|おお}きいです。",
+          "sentenceTranslationKo": "도쿄는 오사카보다 큽니다.",
+          "note": null
+        },
+        {
+          "sentence": "{今日|きょう}は{昨日|きのう}{{より}}{暑|あつ}い。",
+          "sentenceTranslationKo": "오늘은 어제보다 덥다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "りんごはバナナ{{より}}{高|たか}いです。",
+            "answer": "より",
+            "distractors": ["の中で", "ほうが", "までに"],
+            "translationKo": "사과는 바나나보다 비쌉니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「Aは Bより{大|おお}きい」",
+            "contextSentence": null,
+            "answer": "A는 B보다 크다",
+            "distractors": ["A와 B는 크다", "A보다 B가 크다", "A는 B만큼 크다"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이 책은 그 책보다 재미있어요.",
+            "answer": "この{本|ほん}はその{本|ほん}{{より面白いです}}。",
+            "distractors": [
+              "この{本|ほん}はその{本|ほん}{{ほうが面白いです}}。",
+              "この{本|ほん}はその{本|ほん}{{と面白いです}}。",
+              "この{本|ほん}はその{本|ほん}{{で面白いです}}。"
+            ],
+            "hintKo": "비교 = は~より"
+          }
+        }
+      ]
+    },
+    "はどうですか": {
+      "meaningsKo": ["~은/는 어떻습니까? (제안·의향)"],
+      "category": "expression",
+      "explanation": "상대에게 어떤 것을 권유하거나 의견을 묻는 정중한 표현이다. 「~은 어떻습니까?」 정도의 의미. 식당이나 가게에서 무엇을 추천하거나 권유할 때 자주 쓰인다.",
+      "formation": "명사 + は + どうですか",
+      "notes": "조금 더 정중하게는 「~はいかがですか」.",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "コーヒー{{はどうですか}}。",
+          "sentenceTranslationKo": "커피는 어떻습니까?",
+          "note": null
+        },
+        {
+          "sentence": "この{服|ふく}{{はどうですか}}。",
+          "sentenceTranslationKo": "이 옷은 어떻습니까?",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{明日|あした}{{はどうですか}}。",
+            "answer": "はどうですか",
+            "distractors": ["がほしいです", "にします", "をください"],
+            "translationKo": "내일은 어떻습니까?"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「お{茶|ちゃ}はどうですか」",
+            "contextSentence": null,
+            "answer": "차는 어떠세요?",
+            "distractors": ["차가 있습니까?", "차를 마십니까?", "차로 합시다"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이 영화는 어떠세요?",
+            "answer": "この{映画|えいが}{{はどうですか}}。",
+            "distractors": [
+              "この{映画|えいが}{{がほしいです}}。",
+              "この{映画|えいが}{{にします}}。",
+              "この{映画|えいが}{{をください}}。"
+            ],
+            "hintKo": "권유·의향 = はどうですか"
+          }
+        }
+      ]
+    },
+    "や": {
+      "meaningsKo": ["~이나, ~와 (열거 일부)"],
+      "category": "particle",
+      "explanation": "여러 명사 중 일부를 예시로 들 때 쓰는 조사이다. 「~이나, ~와」 의 의미. 「と」 는 모두 나열, 「や」 는 「예를 들면」 의 어감으로 일부만 든다.",
+      "formation": "명사 + や + 명사 (+ など)",
+      "notes": "끝에 「など」 (등) 를 붙여 「や~や~など」 형태가 자주 쓰인다.",
+      "applicableQuizTypes": ["particle_blank", "form_meaning"],
+      "examples": [
+        {
+          "sentence": "りんご{{や}}バナナを{買|か}いました。",
+          "sentenceTranslationKo": "사과나 바나나를 샀습니다.",
+          "note": null
+        },
+        {
+          "sentence": "{机|つくえ}の{上|うえ}に{本|ほん}{{や}}ペンがあります。",
+          "sentenceTranslationKo": "책상 위에 책이나 펜이 있습니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "particle_blank",
+          "payload": {
+            "sentence": "{犬|いぬ}{{や}}{猫|ねこ}が{好|す}きです。",
+            "answer": "や",
+            "distractors": ["と", "も", "から"],
+            "translationKo": "개나 고양이를 좋아합니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「パンや{牛乳|ぎゅうにゅう}」",
+            "contextSentence": null,
+            "answer": "빵이나 우유 (등)",
+            "distractors": ["빵과 우유 (모두)", "빵에서 우유까지", "빵을 우유"]
+          }
+        }
+      ]
+    },
+    "よ": {
+      "meaningsKo": ["~이야, ~예요 (정보 제공·강조)"],
+      "category": "ending",
+      "explanation": "문장 끝에 붙어 정보를 알려주거나 강조하는 종조사이다. 상대가 모를 거라 생각되는 정보를 전달하거나, 자기 의견을 강조할 때 쓴다.",
+      "formation": "문장 끝 + よ",
+      "notes": "「ね」 (확인·동의) 와 짝을 이룬다. 너무 자주 쓰면 강압적으로 들릴 수 있다.",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning"],
+      "examples": [
+        {
+          "sentence": "あの{店|みせ}はおいしいです{{よ}}。",
+          "sentenceTranslationKo": "저 가게는 맛있어요.",
+          "note": null
+        },
+        {
+          "sentence": "{大丈夫|だいじょうぶ}だ{{よ}}。",
+          "sentenceTranslationKo": "괜찮아요.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{雨|あめ}が{降|ふ}っています{{よ}}。",
+            "answer": "よ",
+            "distractors": ["か", "ね", "の"],
+            "translationKo": "비가 오고 있어요."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{気|き}をつけてよ」",
+            "contextSentence": null,
+            "answer": "조심해요",
+            "distractors": ["조심합시다", "조심했어요", "조심하지 마요"]
+          }
+        }
+      ]
+    },
+    "より～ほうが": {
+      "meaningsKo": ["~보다 ~쪽이 더 ~하다"],
+      "category": "expression",
+      "explanation": "두 대상 중 한쪽이 더 ~하다는 비교를 나타내는 표현이다. 「Aより Bのほうが~」 형태로 「A보다 B쪽이 더 ~하다」 라는 의미를 만든다.",
+      "formation": "[A] + より + [B] + のほうが + 형용사",
+      "notes": "「は~より~」 와 같은 의미를 표현 방향만 바꾼 것. 답을 묻는 의문문에서 답할 때 자주 쓴다.",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "{犬|いぬ}より{猫|ねこ}{{のほうが好きです}}。",
+          "sentenceTranslationKo": "개보다 고양이 쪽을 더 좋아합니다.",
+          "note": null
+        },
+        {
+          "sentence": "バスより{電車|でんしゃ}{{のほうが速いです}}。",
+          "sentenceTranslationKo": "버스보다 전철이 더 빠릅니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{冬|ふゆ}より{夏|なつ}{{のほうが好きです}}。",
+            "answer": "のほうが好きです",
+            "distractors": ["より好きです", "は好きです", "が好きです"],
+            "translationKo": "겨울보다 여름이 더 좋습니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「Aより Bのほうが{安|やす}い」",
+            "contextSentence": null,
+            "answer": "A보다 B 쪽이 더 싸다",
+            "distractors": ["A와 B는 같이 싸다", "A는 B보다 비싸다", "A도 B도 싸지 않다"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "차보다 비행기가 빠릅니다.",
+            "answer": "{車|くるま}{{より飛行機のほうが速いです}}。",
+            "distractors": [
+              "{車|くるま}{{と飛行機が速いです}}。",
+              "{車|くるま}{{で飛行機が速いです}}。",
+              "{車|くるま}{{は飛行機が速いです}}。"
+            ],
+            "hintKo": "비교 = より~のほうが"
+          }
+        }
+      ]
+    }
+  }
+}

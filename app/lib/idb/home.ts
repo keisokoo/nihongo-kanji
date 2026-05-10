@@ -1,15 +1,23 @@
 import { db } from "./db";
 import { JLPT_LEVELS, type Pack, type WordTestKind } from "./types";
+import type { GrammarPack } from "./grammar-types";
 
 export type HomePack = Pack & {
   count: number;       // total kanji in pack
   wordCount: number;   // words eligible for tests (have meaningsKo)
 };
 
+export type HomeGrammarPack = GrammarPack & {
+  count: number; // total items in pack
+};
+
 export type HomeTest = {
   id: number;
   name: string;
-  kind: WordTestKind;
+  /** "word" 면 kanji-pack 기반 단어/한자 시험, "grammar" 면 문법 시험. */
+  testKind: "word" | "grammar";
+  /** word test 일 때만 의미 있음 (meaning / reading). grammar 면 항상 "grammar" sentinel. */
+  kind: WordTestKind | "grammar";
   total: number;
   sourcePacks: string[];
   createdAt: Date;
@@ -20,6 +28,7 @@ export type HomeTest = {
 export type HomeData = {
   jlpt: HomePack[];
   custom: HomePack[];
+  grammar: HomeGrammarPack[];
   tests: HomeTest[];
 };
 
@@ -103,6 +112,7 @@ async function loadTests(): Promise<HomeTest[]> {
   return tests.map((t) => ({
     id: t.id,
     name: t.name,
+    testKind: "word" as const,
     kind: t.kind,
     total: t.total,
     sourcePacks: t.sourcePacks,
@@ -112,10 +122,72 @@ async function loadTests(): Promise<HomeTest[]> {
   }));
 }
 
+async function loadGrammarTests(): Promise<HomeTest[]> {
+  const d = db();
+  const tests = await d.grammarTests.orderBy("createdAt").reverse().toArray();
+  if (tests.length === 0) return [];
+
+  const allItems = await d.grammarTestItems.toArray();
+  const progress = new Map<number, { answered: number; correct: number }>();
+  for (const it of allItems) {
+    if (it.answeredAt === null) continue;
+    const cur = progress.get(it.testId) ?? { answered: 0, correct: 0 };
+    cur.answered++;
+    if (it.isCorrect === true) cur.correct++;
+    progress.set(it.testId, cur);
+  }
+
+  return tests.map((t) => ({
+    id: t.id,
+    name: t.name,
+    testKind: "grammar" as const,
+    kind: "grammar" as const,
+    total: t.total,
+    sourcePacks: t.sourcePacks,
+    createdAt: t.createdAt,
+    answered: progress.get(t.id)?.answered ?? 0,
+    correct: progress.get(t.id)?.correct ?? 0,
+  }));
+}
+
+async function loadGrammarPacks(): Promise<HomeGrammarPack[]> {
+  const d = db();
+  const packs = await d.grammarPacks.toArray();
+  if (packs.length === 0) return [];
+
+  const counts = new Map<string, number>();
+  await d.grammarItems.each((it) => {
+    counts.set(it.packKey, (counts.get(it.packKey) ?? 0) + 1);
+  });
+
+  // JLPT 문법팩 먼저 (N5 → N1), 커스텀 뒤에 (생성순)
+  const jlpt = packs
+    .filter((p) => p.kind === "jlpt-grammar")
+    .sort((a, b) => {
+      const ra = a.level ? (JLPT_RANK.get(a.level) ?? 99) : 99;
+      const rb = b.level ? (JLPT_RANK.get(b.level) ?? 99) : 99;
+      return ra - rb;
+    });
+  const custom = packs
+    .filter((p) => p.kind === "custom-grammar")
+    .sort((a, b) => +a.createdAt - +b.createdAt);
+
+  return [...jlpt, ...custom].map((p) => ({
+    ...p,
+    count: counts.get(p.key) ?? 0,
+  }));
+}
+
 export async function loadHomeData(): Promise<HomeData> {
-  const [{ jlpt, custom }, tests] = await Promise.all([
+  const [{ jlpt, custom }, grammar, wordTests, grammarTests] = await Promise.all([
     loadPacks(),
+    loadGrammarPacks(),
     loadTests(),
+    loadGrammarTests(),
   ]);
-  return { jlpt, custom, tests };
+  // 단일 리스트로 머지 — 생성일 역순 (최신 먼저)
+  const tests = [...wordTests, ...grammarTests].sort(
+    (a, b) => +b.createdAt - +a.createdAt,
+  );
+  return { jlpt, custom, grammar, tests };
 }

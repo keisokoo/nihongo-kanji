@@ -10,6 +10,12 @@ import type {
   WordTest,
   WordTestItem,
 } from "./types";
+import type {
+  GrammarItem,
+  GrammarPack,
+  GrammarTest,
+  GrammarTestItem,
+} from "./grammar-types";
 
 /**
  * Single Dexie database for the entire app.
@@ -31,6 +37,12 @@ export class NihongoDB extends Dexie {
   wordTestItems!: Table<WordTestItem, number>;
   audioCache!: Table<AudioCacheRow, string>;
   settings!: Table<SettingsRow, 1>;
+  /** v2 — 문법팩. examples/quizzes 는 GrammarItem 안에 임베디드. */
+  grammarPacks!: Table<GrammarPack, string>;
+  grammarItems!: Table<GrammarItem, number>;
+  /** v3 — 문법 시험. */
+  grammarTests!: Table<GrammarTest, number>;
+  grammarTestItems!: Table<GrammarTestItem, number>;
 
   constructor() {
     super("nihongo");
@@ -45,6 +57,19 @@ export class NihongoDB extends Dexie {
       wordTestItems: "++id, testId, [testId+position]",
       audioCache: "&textHash, createdAt",
       settings: "&id",
+    });
+
+    // v2: 문법팩 스토어 추가. 기존 v1 스토어는 그대로 유지 — Dexie 가 새
+    // 스토어만 생성. 기존 사용자 IDB 도 onupgradeneeded 로 자동 마이그레이션.
+    this.version(2).stores({
+      grammarPacks: "&key, kind, level, createdAt",
+      grammarItems: "++id, packKey, &[packKey+pattern], [packKey+position]",
+    });
+
+    // v3: 문법 시험.
+    this.version(3).stores({
+      grammarTests: "++id, createdAt",
+      grammarTestItems: "++id, testId, [testId+position]",
     });
   }
 }

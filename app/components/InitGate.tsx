@@ -306,12 +306,15 @@ function ProgressBlock({ progress }: { progress: SeedProgress | null }) {
   }
   if (progress.kind === "fetching" || progress.kind === "applying") {
     const pct = Math.round(((progress.index + (progress.kind === "applying" ? 0.5 : 0)) / progress.total) * 100);
+    const tag = progress.pack === "grammar" ? "문법" : "한자";
     return (
       <div>
         <div className="flex items-center justify-between text-sm">
           <span className="text-neutral-700 dark:text-neutral-300">
             {progress.kind === "fetching" ? "다운로드" : "적용"}{" "}
-            <strong>{progress.level}</strong>
+            <strong>
+              {tag} {progress.level}
+            </strong>
           </span>
           <span className="tabular-nums text-neutral-500">
             {progress.index + 1} / {progress.total}
@@ -327,10 +330,18 @@ function ProgressBlock({ progress }: { progress: SeedProgress | null }) {
     );
   }
   if (progress.kind === "applied") {
+    if (progress.pack === "kanji") {
+      return (
+        <div className="text-sm text-emerald-600 dark:text-emerald-400">
+          한자 {progress.level} 적용 완료 — 한자 {progress.stats.kanji} / 단어{" "}
+          {progress.stats.words} / 예문 {progress.stats.examples}
+        </div>
+      );
+    }
     return (
       <div className="text-sm text-emerald-600 dark:text-emerald-400">
-        {progress.level} 적용 완료 — 한자 {progress.stats.kanji} / 단어{" "}
-        {progress.stats.words} / 예문 {progress.stats.examples}
+        문법 {progress.level} 적용 완료 — 항목 {progress.stats.items} / 예문{" "}
+        {progress.stats.examples} / 퀴즈 {progress.stats.quizzes}
       </div>
     );
   }

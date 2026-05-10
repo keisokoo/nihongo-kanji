@@ -1,0 +1,584 @@
+{
+  "_comment": "N5 grammar Phase 3: no.26~37 (12개)",
+  "fills": {
+    "けれども": {
+      "meaningsKo": ["~지만, 그런데"],
+      "category": "conjunction",
+      "explanation": "역접을 나타내는 정중한 접속조사이다. 「けど」의 정중·문어체 형태로, 글이나 격식 있는 자리에서 자주 쓴다. 「が」와 비슷한 의미이지만 더 부드러운 어감을 준다.",
+      "formation": "보통형/정중형 + けれども",
+      "notes": "회화에서는 「けど」, 약식 문어에서는 「けれど」, 정식 문어에서는 「けれども」.",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "{雨|あめ}が{降|ふ}っています{{けれども}}、{出|で}かけます。",
+          "sentenceTranslationKo": "비가 오고 있지만, 외출합니다.",
+          "note": null
+        },
+        {
+          "sentence": "{勉強|べんきょう}しました{{けれども}}、{忘|わす}れました。",
+          "sentenceTranslationKo": "공부했지만 잊어버렸습니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{高|たか}いです{{けれども}}、{買|か}います。",
+            "answer": "けれども",
+            "distractors": ["から", "ので", "なら"],
+            "translationKo": "비싸지만 삽니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{忙|いそが}しいけれども」",
+            "contextSentence": null,
+            "answer": "바쁘지만",
+            "distractors": ["바쁘니까", "바빠도", "바쁘다면"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "맛있지만 비쌉니다.",
+            "answer": "おいしいです{{けれども}}、{高|たか}いです。",
+            "distractors": [
+              "おいしいです{{から}}、{高|たか}いです。",
+              "おいしいです{{ので}}、{高|たか}いです。",
+              "おいしいです{{なら}}、{高|たか}いです。"
+            ],
+            "hintKo": "정중 역접 = けれども"
+          }
+        }
+      ]
+    },
+    "まだ": {
+      "meaningsKo": ["아직", "여전히"],
+      "category": "other",
+      "explanation": "어떤 상태가 계속되거나 동작이 아직 완료되지 않았음을 나타내는 부사이다. 긍정문에서는 「아직 ~한다/이다 (계속)」, 부정문에서는 「아직 ~하지 않았다 (미완료)」 의 의미를 가진다.",
+      "formation": null,
+      "notes": "「もう」 (이미)의 반대 개념. 「まだ寒い」(아직 춥다) vs 「もう寒くない」(이제 춥지 않다).",
+      "applicableQuizTypes": ["form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "{{まだ}}{雨|あめ}が{降|ふ}っています。",
+          "sentenceTranslationKo": "아직 비가 오고 있습니다.",
+          "note": null
+        },
+        {
+          "sentence": "{宿題|しゅくだい}は{{まだ}}{終|お}わっていません。",
+          "sentenceTranslationKo": "숙제는 아직 끝나지 않았습니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「まだ{食|た}べていません」",
+            "contextSentence": null,
+            "answer": "아직 먹지 않았습니다",
+            "distractors": ["이미 먹었습니다", "지금 먹고 있습니다", "곧 먹습니다"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "아직 어립니다.",
+            "answer": "{{まだ}}{若|わか}いです。",
+            "distractors": [
+              "{{もう}}{若|わか}いです。",
+              "{{ぜんぜん}}{若|わか}いです。",
+              "{{あまり}}{若|わか}いです。"
+            ],
+            "hintKo": "아직 = まだ"
+          }
+        }
+      ]
+    },
+    "まだ～ていません": {
+      "meaningsKo": ["아직 ~하지 않았습니다"],
+      "category": "expression",
+      "explanation": "어떤 동작이 아직 완료되지 않았음을 나타내는 표현이다. 「もう~ました」(이미 ~했습니다)의 반대 표현으로, 상대가 「もう」 로 묻는 질문에 대답할 때 자주 쓰인다.",
+      "formation": "まだ + 동사 て형 + いません",
+      "notes": "「まだ~ません」 보다 「まだ~ていません」 이 자연스럽다. 단순 「まだ~ません」 은 「앞으로 ~하지 않을 것이다」 처럼 들릴 수 있다.",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "{昼|ひる}ご{飯|はん}を{{まだ食べていません}}。",
+          "sentenceTranslationKo": "점심을 아직 먹지 않았습니다.",
+          "note": null
+        },
+        {
+          "sentence": "{彼|かれ}は{{まだ来ていません}}。",
+          "sentenceTranslationKo": "그는 아직 오지 않았습니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{宿題|しゅくだい}を{{まだしていません}}。",
+            "answer": "まだしていません",
+            "distractors": ["もうしました", "まだします", "もうしています"],
+            "translationKo": "숙제를 아직 하지 않았습니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「まだ{読|よ}んでいません」",
+            "contextSentence": null,
+            "answer": "아직 읽지 않았습니다",
+            "distractors": ["이미 읽었습니다", "읽고 있습니다", "읽을 예정입니다"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "그 영화를 아직 보지 않았어요.",
+            "answer": "その{映画|えいが}を{{まだ見ていません}}。",
+            "distractors": [
+              "その{映画|えいが}を{{もう見ました}}。",
+              "その{映画|えいが}を{{まだ見ません}}。",
+              "その{映画|えいが}を{{もう見ていません}}。"
+            ],
+            "hintKo": "아직 미완료 = まだ + ていません"
+          }
+        }
+      ]
+    },
+    "まで": {
+      "meaningsKo": ["~까지 (도착점)", "~까지도 (강조)"],
+      "category": "particle",
+      "explanation": "장소·시간의 도착점이나 한도를 나타내는 조사이다. 「~부터」 의 「から」 와 짝을 이루어 「~から~まで」 (~부터 ~까지) 형태로 자주 쓰인다. 동사 사전형 + まで 로 「~할 때까지」 의 시점을 나타내기도 한다.",
+      "formation": null,
+      "notes": "「までに」 는 「~까지 (기한)」 으로 의미가 다르므로 주의.",
+      "applicableQuizTypes": ["particle_blank", "form_meaning"],
+      "examples": [
+        {
+          "sentence": "{駅|えき}{{まで}}{歩|ある}きます。",
+          "sentenceTranslationKo": "역까지 걷습니다.",
+          "note": null
+        },
+        {
+          "sentence": "{五時|ごじ}{{まで}}{勉強|べんきょう}します。",
+          "sentenceTranslationKo": "5시까지 공부합니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "particle_blank",
+          "payload": {
+            "sentence": "{家|いえ}から{学校|がっこう}{{まで}}{歩|ある}いて{行|い}きます。",
+            "answer": "まで",
+            "distractors": ["から", "に", "で"],
+            "translationKo": "집에서 학교까지 걸어 갑니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{夜|よる}まで」",
+            "contextSentence": null,
+            "answer": "밤까지",
+            "distractors": ["밤부터", "밤에", "밤이라도"]
+          }
+        }
+      ]
+    },
+    "前に（まえに）": {
+      "meaningsKo": ["~하기 전에", "~앞에"],
+      "category": "expression",
+      "explanation": "시간적으로 「~하기 전에」, 공간적으로 「~앞에」 를 나타낸다. 동사 사전형에 붙어 어떤 동작을 하기 전의 시점을 가리킨다. 명사 + の + 前に 형태도 가능.",
+      "formation": "동사 사전형 + 前に / 명사 + の + 前に",
+      "notes": "「~てから」 (~하고 나서) 의 반대 표현이라고 생각하면 쉽다.",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "{食|た}べる{{前に}}{手|て}を{洗|あら}います。",
+          "sentenceTranslationKo": "먹기 전에 손을 씻습니다.",
+          "note": null
+        },
+        {
+          "sentence": "{駅|えき}の{{前に}}コンビニがあります。",
+          "sentenceTranslationKo": "역 앞에 편의점이 있습니다.",
+          "note": "공간"
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{寝|ね}る{{前に}}{歯|は}を{磨|みが}きます。",
+            "answer": "前に",
+            "distractors": ["後で", "間に", "までに"],
+            "translationKo": "자기 전에 이를 닦습니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{出|で}かける{前|まえ}に」",
+            "contextSentence": null,
+            "answer": "외출하기 전에",
+            "distractors": ["외출한 후에", "외출하는 동안", "외출하면서"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "수업 전에 책을 읽습니다.",
+            "answer": "{授業|じゅぎょう}の{{前に}}{本|ほん}を{読|よ}みます。",
+            "distractors": [
+              "{授業|じゅぎょう}の{{後で}}{本|ほん}を{読|よ}みます。",
+              "{授業|じゅぎょう}の{{間に}}{本|ほん}を{読|よ}みます。",
+              "{授業|じゅぎょう}の{{中で}}{本|ほん}を{読|よ}みます。"
+            ],
+            "hintKo": "~전에 = 前に"
+          }
+        }
+      ]
+    },
+    "ませんか": {
+      "meaningsKo": ["~하지 않겠습니까? (권유)"],
+      "category": "expression",
+      "explanation": "정중하게 권유하거나 제안할 때 쓰는 표현이다. 형태는 부정 의문문이지만 의미는 권유이다. 「~하지 않겠습니까?」 「~할래요?」 정도의 의미. 보다 자기 의지가 강한 「ましょう」 와 달리 상대 의향을 묻는 어감.",
+      "formation": "동사 ます형 어간 + ませんか",
+      "notes": "단순 부정 의문 「~하지 않습니까?」 와 권유의 「ませんか」 는 문맥과 억양으로 구분.",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "{一緒|いっしょ}にお{茶|ちゃ}を{飲|の}{{みませんか}}。",
+          "sentenceTranslationKo": "함께 차를 마시지 않을래요?",
+          "note": null
+        },
+        {
+          "sentence": "{映画|えいが}を{見|み}に{行|い}き{{ませんか}}。",
+          "sentenceTranslationKo": "영화 보러 가지 않을래요?",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{昼|ひる}ご{飯|はん}を{食|た}べ{{ませんか}}。",
+            "answer": "ませんか",
+            "distractors": ["ましたか", "ましょうか", "てください"],
+            "translationKo": "점심 먹지 않을래요?"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{行|い}きませんか」",
+            "contextSentence": null,
+            "answer": "가지 않을래요?",
+            "distractors": ["갔습니까?", "가야 합니까?", "갑시다"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "함께 공부하지 않을래요?",
+            "answer": "{一緒|いっしょ}に{勉強|べんきょう}し{{ませんか}}。",
+            "distractors": [
+              "{一緒|いっしょ}に{勉強|べんきょう}し{{ましょう}}。",
+              "{一緒|いっしょ}に{勉強|べんきょう}し{{ました}}。",
+              "{一緒|いっしょ}に{勉強|べんきょう}し{{ています}}。"
+            ],
+            "hintKo": "정중한 권유 = ませんか"
+          }
+        }
+      ]
+    },
+    "ましょう": {
+      "meaningsKo": ["~합시다, ~하자"],
+      "category": "expression",
+      "explanation": "상대를 자기 쪽으로 끌어들여 함께 행동할 것을 제안하는 표현이다. 「ませんか」 가 상대 의향을 묻는 어감이라면, 「ましょう」 는 화자가 더 적극적으로 권하는 어감.",
+      "formation": "동사 ます형 어간 + ましょう",
+      "notes": "혼자만의 결심을 나타낼 때도 사용 가능 (例: そろそろ帰りましょう = 슬슬 돌아가자).",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "{一緒|いっしょ}に{帰|かえ}り{{ましょう}}。",
+          "sentenceTranslationKo": "함께 돌아갑시다.",
+          "note": null
+        },
+        {
+          "sentence": "{授業|じゅぎょう}を{始|はじ}め{{ましょう}}。",
+          "sentenceTranslationKo": "수업을 시작합시다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "もう{寝|ね}{{ましょう}}。",
+            "answer": "ましょう",
+            "distractors": ["ませんか", "ました", "ています"],
+            "translationKo": "이제 잡시다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{食|た}べましょう」",
+            "contextSentence": null,
+            "answer": "먹읍시다",
+            "distractors": ["먹지 않을래요?", "먹었습니다", "먹어 주세요"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "내일 만나요.",
+            "answer": "{明日|あした}{会|あ}い{{ましょう}}。",
+            "distractors": [
+              "{明日|あした}{会|あ}い{{ませんか}}。",
+              "{明日|あした}{会|あ}い{{ました}}。",
+              "{明日|あした}{会|あ}って{{ください}}。"
+            ],
+            "hintKo": "함께 권유 = ましょう"
+          }
+        }
+      ]
+    },
+    "ましょうか": {
+      "meaningsKo": ["~할까요? (제안·도움)"],
+      "category": "expression",
+      "explanation": "상대에게 도움이나 행동을 제안하며 의향을 묻는 표현이다. 「ましょう」 + 의문조사 「か」 로, 「~할까요?」 의 의미. 자기 행동을 제안할 때 (「持ちましょうか」 = 들어드릴까요?) 자주 쓰인다.",
+      "formation": "동사 ます형 어간 + ましょうか",
+      "notes": "「ませんか」 (권유) 와 다르게 화자 본인이 행동할 의사를 보이는 뉘앙스.",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "{窓|まど}を{開|あ}け{{ましょうか}}。",
+          "sentenceTranslationKo": "창문을 열까요?",
+          "note": "도움 제안"
+        },
+        {
+          "sentence": "{何|なに}を{食|た}べ{{ましょうか}}。",
+          "sentenceTranslationKo": "무엇을 먹을까요?",
+          "note": "의향 묻기"
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{荷物|にもつ}を{持|も}ち{{ましょうか}}。",
+            "answer": "ましょうか",
+            "distractors": ["ませんか", "ましたか", "ています"],
+            "translationKo": "짐을 들어드릴까요?"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{手伝|てつだ}いましょうか」",
+            "contextSentence": null,
+            "answer": "도와드릴까요?",
+            "distractors": ["도왔습니다", "도와주세요", "도와줄래요?"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "전화할까요?",
+            "answer": "{電話|でんわ}し{{ましょうか}}。",
+            "distractors": [
+              "{電話|でんわ}し{{ませんか}}。",
+              "{電話|でんわ}し{{ました}}。",
+              "{電話|でんわ}して{{ください}}。"
+            ],
+            "hintKo": "본인 행동 제안 = ましょうか"
+          }
+        }
+      ]
+    },
+    "も": {
+      "meaningsKo": ["~도, ~또한"],
+      "category": "particle",
+      "explanation": "「~도」 의 의미로 추가나 동일함을 나타내는 조사이다. 다른 조사 (が・を) 자리를 대체하기도 하고, 「~に + も」 처럼 다른 조사 뒤에 붙어 강조하기도 한다.",
+      "formation": null,
+      "notes": "「が/を」 의 자리를 대체하지만, 「に/で」 등은 그대로 둔 채 「+ も」 형태가 된다.",
+      "applicableQuizTypes": ["particle_blank", "form_meaning"],
+      "examples": [
+        {
+          "sentence": "{私|わたし}{{も}}{学生|がくせい}です。",
+          "sentenceTranslationKo": "저도 학생입니다.",
+          "note": null
+        },
+        {
+          "sentence": "{彼|かれ}{{も}}{来|き}ました。",
+          "sentenceTranslationKo": "그도 왔습니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "particle_blank",
+          "payload": {
+            "sentence": "コーヒー{{も}}{飲|の}みました。",
+            "answer": "も",
+            "distractors": ["を", "が", "は"],
+            "translationKo": "커피도 마셨습니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{私|わたし}も」",
+            "contextSentence": null,
+            "answer": "저도",
+            "distractors": ["저는", "저를", "저와"]
+          }
+        }
+      ]
+    },
+    "もう": {
+      "meaningsKo": ["이미, 벌써", "더 이상 (부정)"],
+      "category": "other",
+      "explanation": "긍정문에서는 「이미, 벌써」 의 의미로 동작·상태가 완료되었음을 나타낸다. 부정문에서는 「もう~ない」 형태로 「더 이상 ~하지 않다」 의 의미가 된다.",
+      "formation": null,
+      "notes": "「まだ」 (아직) 와 짝을 이루는 부사. 「もう一度」 (한 번 더) 의 「もう」 는 「또, 한 번 더」 의 의미.",
+      "applicableQuizTypes": ["form_meaning", "ko_to_jp_form"],
+      "examples": [
+        {
+          "sentence": "{{もう}}{食|た}べました。",
+          "sentenceTranslationKo": "이미 먹었습니다.",
+          "note": "긍정"
+        },
+        {
+          "sentence": "{{もう}}{時間|じかん}がない。",
+          "sentenceTranslationKo": "더 이상 시간이 없다.",
+          "note": "강조"
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「もう{帰|かえ}りました」",
+            "contextSentence": null,
+            "answer": "이미 돌아갔습니다",
+            "distractors": ["아직 돌아가지 않았습니다", "지금 돌아갑니다", "돌아갈 예정입니다"]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "벌써 끝났습니다.",
+            "answer": "{{もう}}{終|お}わりました。",
+            "distractors": [
+              "{{まだ}}{終|お}わりました。",
+              "{{ぜんぜん}}{終|お}わりました。",
+              "{{あまり}}{終|お}わりました。"
+            ],
+            "hintKo": "이미·벌써 = もう"
+          }
+        }
+      ]
+    },
+    "な-adjectives": {
+      "meaningsKo": ["나형용사"],
+      "category": "verb_form",
+      "explanation": "어미가 「~な」 로 명사를 수식하는 형용사이다. 일본어 형용사의 두 종류 중 하나로, 명사처럼 활용한다. 명사 수식: 어간 + な + 명사. 부정: 어간 + じゃない / ではない. 과거: 어간 + だった.",
+      "formation": "어간 + だ/だった/じゃない/じゃなかった (서술) / 어간 + な + 명사 (수식)",
+      "notes": "「きれい」 「ゆうめい」 등은 い로 끝나지만 「な」 형용사이므로 주의 (例: きれいな花, きれいだった).",
+      "applicableQuizTypes": ["conjugation", "form_meaning"],
+      "examples": [
+        {
+          "sentence": "ここは{{しずかな}}{町|まち}です。",
+          "sentenceTranslationKo": "여기는 조용한 동네입니다.",
+          "note": "수식"
+        },
+        {
+          "sentence": "{試験|しけん}は{{大変だった}}。",
+          "sentenceTranslationKo": "시험은 힘들었다.",
+          "note": "과거"
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "conjugation",
+          "payload": {
+            "dictForm": "静か",
+            "group": "na_adj",
+            "targetFormLabel": "명사 수식형",
+            "answer": "静かな",
+            "distractors": ["静かい", "静かの", "静かだ"],
+            "hintKo": "な형용사 + 명사 = 어간 + な + 명사"
+          }
+        },
+        {
+          "type": "conjugation",
+          "payload": {
+            "dictForm": "便利",
+            "group": "na_adj",
+            "targetFormLabel": "부정형",
+            "answer": "便利じゃない",
+            "distractors": ["便利くない", "便利ない", "便利ではい"],
+            "hintKo": "な형용사 부정 = 어간 + じゃない"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{有名|ゆうめい}だった」",
+            "contextSentence": null,
+            "answer": "유명했다",
+            "distractors": ["유명하다", "유명하지 않다", "유명할 것이다"]
+          }
+        }
+      ]
+    },
+    "なあ": {
+      "meaningsKo": ["~하구나, ~네 (감탄·확인)"],
+      "category": "ending",
+      "explanation": "감탄·동경·아쉬움 등 화자의 감정을 나타내는 종조사이다. 혼잣말이나 친한 사이에서 자주 쓴다. 정중도가 낮으므로 격식 자리에서는 쓰지 않는다.",
+      "formation": "보통형 + なあ",
+      "notes": "여성은 「わ」, 남성은 「なあ」 를 더 자주 쓰는 경향이 있지만 요즘은 두 성별 모두 자유롭게 사용.",
+      "applicableQuizTypes": ["pattern_blank", "form_meaning"],
+      "examples": [
+        {
+          "sentence": "きれいな{花|はな}だ{{なあ}}。",
+          "sentenceTranslationKo": "예쁜 꽃이구나.",
+          "note": null
+        },
+        {
+          "sentence": "{疲|つか}れた{{なあ}}。",
+          "sentenceTranslationKo": "피곤하네.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{今日|きょう}は{暑|あつ}い{{なあ}}。",
+            "answer": "なあ",
+            "distractors": ["か", "の", "を"],
+            "translationKo": "오늘은 덥구나."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{楽|たの}しいなあ」",
+            "contextSentence": null,
+            "answer": "재미있구나",
+            "distractors": ["재미있어요", "재미있어?", "재미있지 않다"]
+          }
+        }
+      ]
+    }
+  }
+}

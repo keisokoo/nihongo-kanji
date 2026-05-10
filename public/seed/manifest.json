@@ -1,5 +1,5 @@
 {
-  "version": 1,
+  "version": 2,
   "files": [
     {
       "level": "N5",
@@ -40,6 +40,16 @@
       "words": 2819,
       "examples": 2819,
       "bytes": 1653772
+    }
+  ],
+  "grammar": [
+    {
+      "level": "N5",
+      "path": "/seed/grammar-n5.json",
+      "items": 84,
+      "examples": 167,
+      "quizzes": 221,
+      "bytes": 209886
     }
   ]
 }

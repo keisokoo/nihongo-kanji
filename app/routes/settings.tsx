@@ -1,10 +1,15 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { Link, useNavigate } from "react-router";
 import type { Route } from "./+types/settings";
 import { loadSettings, saveSettings } from "~/lib/idb/settings";
 import { resetDb } from "~/lib/idb/db";
 import { installSeeds } from "~/lib/idb/seed-install";
 import { loadUsage, type IdbUsage } from "~/lib/idb/usage";
+import {
+  exportAudioCache,
+  importAudioCache,
+  getAudioCacheCount,
+} from "~/lib/idb/audio-cache";
 import { Spinner } from "~/components/Spinner";
 import { ConfirmModal } from "~/components/ConfirmModal";
 
@@ -24,6 +29,10 @@ export default function Settings() {
   const [showResetModal, setShowResetModal] = useState(false);
   const [resetting, setResetting] = useState(false);
   const [usage, setUsage] = useState<IdbUsage | null>(null);
+  const [audioCount, setAudioCount] = useState<number | null>(null);
+  const [audioBusy, setAudioBusy] = useState(false);
+  const [audioMsg, setAudioMsg] = useState<string | null>(null);
+  const audioFileInput = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
     (async () => {
@@ -31,6 +40,7 @@ export default function Settings() {
       setAnthropic(s.anthropicApiKey ?? "");
       setGemini(s.geminiApiKey ?? "");
       setUsage(await loadUsage());
+      setAudioCount(await getAudioCacheCount());
     })();
   }, []);
 
@@ -51,10 +61,16 @@ export default function Settings() {
     setReseedMsg(null);
     try {
       const totals = await installSeeds((p) => {
-        if (p.kind === "applying") setReseedMsg(`${p.level} 적용 중…`);
+        if (p.kind === "applying") {
+          const tag = p.pack === "grammar" ? "문법" : "한자";
+          setReseedMsg(`${tag} ${p.level} 적용 중…`);
+        }
       });
       setReseedMsg(
-        `완료 — 한자 ${totals.totalKanji}, 단어 ${totals.totalWords}, 예문 ${totals.totalExamples}`,
+        `완료 — 한자 ${totals.totalKanji} / 단어 ${totals.totalWords} / 예문 ${totals.totalExamples}` +
+          (totals.totalGrammarItems > 0
+            ? ` · 문법 ${totals.totalGrammarItems} / 퀴즈 ${totals.totalGrammarQuizzes}`
+            : ""),
       );
       refreshUsage();
     } catch (err) {
@@ -74,6 +90,50 @@ export default function Settings() {
     } catch (err) {
       console.error(err);
       setResetting(false);
+    }
+  }
+
+  async function downloadAudio() {
+    setAudioBusy(true);
+    setAudioMsg(null);
+    try {
+      const { blob, count } = await exportAudioCache();
+      if (count === 0) {
+        setAudioMsg("캐시된 음성이 없습니다.");
+        return;
+      }
+      const url = URL.createObjectURL(blob);
+      const date = new Date().toISOString().slice(0, 10);
+      const filename = `nihongo-audio-${date}.zip`;
+      const a = document.createElement("a");
+      a.href = url;
+      a.download = filename;
+      document.body.appendChild(a);
+      a.click();
+      a.remove();
+      setTimeout(() => URL.revokeObjectURL(url), 5000);
+      setAudioMsg(`${count}건 내보냄 (${(blob.size / 1024 / 1024).toFixed(1)} MB)`);
+    } catch (err) {
+      setAudioMsg(`실패: ${err instanceof Error ? err.message : "error"}`);
+    } finally {
+      setAudioBusy(false);
+    }
+  }
+
+  async function uploadAudio(file: File) {
+    setAudioBusy(true);
+    setAudioMsg(null);
+    try {
+      const r = await importAudioCache(file);
+      setAudioMsg(
+        `+${r.added} 건 추가 / 중복 ${r.skipped} 건 / 무효 ${r.invalid} 건`,
+      );
+      setAudioCount(await getAudioCacheCount());
+      refreshUsage();
+    } catch (err) {
+      setAudioMsg(`실패: ${err instanceof Error ? err.message : "error"}`);
+    } finally {
+      setAudioBusy(false);
     }
   }
 
@@ -180,6 +240,54 @@ export default function Settings() {
               계산 중…
             </div>
           )}
+        </section>
+
+        <section className="mb-8 rounded-2xl border border-neutral-200 bg-white p-6 dark:border-neutral-800 dark:bg-neutral-900">
+          <h2 className="text-base font-semibold text-neutral-900 dark:text-neutral-100">
+            음성 캐시 백업 / 복원
+          </h2>
+          <p className="mt-1 text-xs text-neutral-500">
+            TTS 로 한 번 재생한 음성은 IndexedDB 에 캐시됩니다. 이 캐시를
+            ZIP (manifest.json + audio/*.wav) 으로 내보내거나, 다른 기기·사용자가
+            만든 ZIP 을 가져와서 채울 수 있어요. 가져오기 시 기존 hash 와
+            중복되면 skip.
+          </p>
+          <div className="mt-3 text-xs text-neutral-500 tabular-nums">
+            현재 캐시: {audioCount === null ? "…" : `${audioCount} 건`}
+          </div>
+          <div className="mt-4 flex flex-wrap items-center gap-3">
+            <button
+              type="button"
+              disabled={audioBusy || audioCount === 0}
+              onClick={downloadAudio}
+              className="inline-flex items-center gap-2 rounded-md border border-neutral-300 bg-white px-4 py-2 text-sm hover:border-neutral-400 disabled:opacity-50 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
+            >
+              {audioBusy && <Spinner className="h-3.5 w-3.5" />}
+              ⬇ 음성 캐시 내보내기
+            </button>
+            <input
+              ref={audioFileInput}
+              type="file"
+              accept="application/zip,.zip"
+              className="hidden"
+              onChange={(e) => {
+                const file = e.target.files?.[0];
+                if (file) uploadAudio(file);
+                e.target.value = "";
+              }}
+            />
+            <button
+              type="button"
+              disabled={audioBusy}
+              onClick={() => audioFileInput.current?.click()}
+              className="inline-flex items-center gap-2 rounded-md border border-neutral-300 bg-white px-4 py-2 text-sm hover:border-neutral-400 disabled:opacity-50 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
+            >
+              ⬆ 음성 캐시 가져오기
+            </button>
+            {audioMsg && (
+              <span className="text-xs text-neutral-500">{audioMsg}</span>
+            )}
+          </div>
         </section>
 
         <section className="mb-8 rounded-2xl border border-rose-200 bg-rose-50 p-6 dark:border-rose-900/50 dark:bg-rose-950/30">

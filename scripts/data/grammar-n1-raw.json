@@ -1,0 +1,1773 @@
+[
+  {
+    "no": 1,
+    "romaji": "aete",
+    "pattern": "敢えて（あえて）",
+    "meaningEn": "dare to; daringly; deliberately; purposely ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e6%95%a2%e3%81%88%e3%81%a6-%e3%81%82%e3%81%88%e3%81%a6-aete-meaning/"
+  },
+  {
+    "no": 2,
+    "romaji": "akumade mo",
+    "pattern": "あくまでも",
+    "meaningEn": "to the end; persistently; absolutely; is still very ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%82%e3%81%8f%e3%81%be%e3%81%a7%e3%82%82-akumade-mo-meaning/"
+  },
+  {
+    "no": 3,
+    "romaji": "an no jou",
+    "pattern": "案の定（あんのじょう）",
+    "meaningEn": "just as one thought; as usual; sure enough",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e6%a1%88%e3%81%ae%e5%ae%9a-%e3%81%82%e3%82%93%e3%81%ae%e3%81%98%e3%82%87%e3%81%86-an-no-jou-meaning/"
+  },
+  {
+    "no": 4,
+    "romaji": "arakajime",
+    "pattern": "あらかじめ",
+    "meaningEn": "beforehand; in advance; previously​",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%82%e3%82%89%e3%81%8b%e3%81%98%e3%82%81-arakajime-meaning/"
+  },
+  {
+    "no": 5,
+    "romaji": "atte no",
+    "pattern": "あっての",
+    "meaningEn": "which can exist solely due to the presence of; which owes everything to",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%82%e3%81%a3%e3%81%a6%e3%81%ae-atte-no-meaning/"
+  },
+  {
+    "no": 6,
+    "romaji": "ba koso",
+    "pattern": "ばこそ",
+    "meaningEn": "only because ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%b0%e3%81%93%e3%81%9d-ba-koso-meaning/"
+  },
+  {
+    "no": 7,
+    "romaji": "ba sore made da / tara sore made da",
+    "pattern": "ばそれまでだ / たらそれまでだ",
+    "meaningEn": "if… then it’s over",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%b0%e3%81%9d%e3%82%8c%e3%81%be%e3%81%a7%e3%81%a0-%e3%81%9f%e3%82%89%e3%81%9d%e3%82%8c%e3%81%be%e3%81%a7%e3%81%a0-ba-sore-made-da-meaning/"
+  },
+  {
+    "no": 8,
+    "romaji": "bekarazu / bekarazaru",
+    "pattern": "べからず / べからざる",
+    "meaningEn": "must not; should not; do not ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%b9%e3%81%8b%e3%82%89%e3%81%9a-%e3%81%b9%e3%81%8b%e3%82%89%e3%81%96%e3%82%8b-bekarazu-bekarazaru-meaning/"
+  },
+  {
+    "no": 9,
+    "romaji": "beku",
+    "pattern": "べく",
+    "meaningEn": "in order to; for the purpose of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%b9%e3%81%8f-beku-meaning/"
+  },
+  {
+    "no": 10,
+    "romaji": "beku mo nai",
+    "pattern": "べくもない",
+    "meaningEn": "cannot possibly be ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%b9%e3%81%8f%e3%82%82%e3%81%aa%e3%81%84-beku-mo-nai-meaning/"
+  },
+  {
+    "no": 11,
+    "romaji": "beku shite",
+    "pattern": "べくして",
+    "meaningEn": "as it is bound to (happen); following the natural course",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%b9%e3%81%8f%e3%81%97%e3%81%a6-beku-shite-meaning/"
+  },
+  {
+    "no": 12,
+    "romaji": "biru / bite / bita",
+    "pattern": "びる / びて / びた",
+    "meaningEn": "to seem to be; to appear; to behave as ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%b3%e3%82%8b-biru-%e3%81%b3%e3%81%9f-bita-%e3%81%b3%e3%81%a6-bite-meaning/"
+  },
+  {
+    "no": 13,
+    "romaji": "buri / ppuri",
+    "pattern": "ぶり / っぷり",
+    "meaningEn": "style; manner; way​",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%b6%e3%82%8a-%e3%81%a3%e3%81%b7%e3%82%8a-buri-ppuri-meaning/"
+  },
+  {
+    "no": 14,
+    "romaji": "buru / butte / butta",
+    "pattern": "ぶる / ぶって / ぶった",
+    "meaningEn": "assuming the air of; behaving like; to pretend / act like ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%b6%e3%82%8b-%e3%81%b6%e3%81%a3%e3%81%a6-%e3%81%b6%e3%81%a3%e3%81%9f-buru-butte-butta-meaning/"
+  },
+  {
+    "no": 15,
+    "romaji": "dani / dani shinai",
+    "pattern": "だに / だにしない",
+    "meaningEn": "even; not even ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a0%e3%81%ab-%e3%81%a0%e3%81%ab%e3%81%97%e3%81%aa%e3%81%84-dani-shinai-meaning/"
+  },
+  {
+    "no": 16,
+    "romaji": "dano~dano",
+    "pattern": "だの～だの",
+    "meaningEn": "and; and the like; and so forth ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a0%e3%81%ae%ef%bd%9e%e3%81%a0%e3%81%ae-dano-dano-meaning/"
+  },
+  {
+    "no": 17,
+    "romaji": "darou ni",
+    "pattern": "だろうに",
+    "meaningEn": "(1) surely..., but ~; although... is likely, ~ (2) should have (regret); might / must have been ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a0%e3%82%8d%e3%81%86%e3%81%ab-darou-ni-meaning/"
+  },
+  {
+    "no": 18,
+    "romaji": "de are / de arou to",
+    "pattern": "であれ / であろうと",
+    "meaningEn": "whoever; whatever; however; even ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a7%e3%81%82%e3%82%8c-%e3%81%a7%e3%81%82%e3%82%8d%e3%81%86%e3%81%a8-de-are-de-arou-meaning/"
+  },
+  {
+    "no": 19,
+    "romaji": "de are~de are",
+    "pattern": "であれ～であれ",
+    "meaningEn": "whether [A] or [B]",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a7%e3%81%82%e3%82%8c%ef%bd%9e%e3%81%a7%e3%81%82%e3%82%8c-de-are-de-are-meaning/"
+  },
+  {
+    "no": 20,
+    "romaji": "demo ari~demo aru",
+    "pattern": "でもあり～でもある",
+    "meaningEn": "to also be; both… and ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a7%e3%82%82%e3%81%82%e3%82%8a%ef%bd%9e%e3%81%a7%e3%82%82%e3%81%82%e3%82%8b-demo-ari-demo-aru-meaning/"
+  },
+  {
+    "no": 21,
+    "romaji": "demo nan demo nai / kumo nan tomo nai",
+    "pattern": "でも何でもない / くも何ともない（でもなんでもない / くもなんともない）",
+    "meaningEn": "not in the least; nothing like that",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a7%e3%82%82%e4%bd%95%e3%81%a7%e3%82%82%e3%81%aa%e3%81%84-%e3%81%8f%e3%82%82%e4%bd%95%e3%81%a8%e3%82%82%e3%81%aa%e3%81%84-demo-nan-demo-nai-meaning/"
+  },
+  {
+    "no": 22,
+    "romaji": "denakute nan darou",
+    "pattern": "でなくてなんだろう",
+    "meaningEn": "must be; is definitely ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a7%e3%81%aa%e3%81%8f%e3%81%a6%e3%81%aa%e3%82%93%e3%81%a0%e3%82%8d%e3%81%86-denakute-nan-darou-meaning/"
+  },
+  {
+    "no": 23,
+    "romaji": "dewa arumai ka",
+    "pattern": "ではあるまいか",
+    "meaningEn": "isn't it; I wonder if it’s not ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a7%e3%81%af%e3%81%82%e3%82%8b%e3%81%be%e3%81%84%e3%81%8b-dewa-arumai-ka-meaning/"
+  },
+  {
+    "no": 24,
+    "romaji": "dewa arumai shi",
+    "pattern": "ではあるまいし",
+    "meaningEn": "it’s not like; it isn’t as if ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a7%e3%81%af%e3%81%82%e3%82%8b%e3%81%be%e3%81%84%e3%81%97-dewa-arumai-shi-meaning/"
+  },
+  {
+    "no": 25,
+    "romaji": "dewa sumanai",
+    "pattern": "では済まない（ではすまない）",
+    "meaningEn": "it doesn’t end with just ~; it will take more than ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a7%e3%81%af%e6%b8%88%e3%81%be%e3%81%aa%e3%81%84-dewa-sumanai-meaning/"
+  },
+  {
+    "no": 26,
+    "romaji": "dou nimo~nai",
+    "pattern": "どうにも～ない",
+    "meaningEn": "not … by any means; no matter how hard one tries, cannot ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a9%e3%81%86%e3%81%ab%e3%82%82%ef%bd%9e%e3%81%aa%e3%81%84-dou-nimo-nai-meaning/"
+  },
+  {
+    "no": 27,
+    "romaji": "ga hayai ka",
+    "pattern": "が早いか（がはやいか）",
+    "meaningEn": "no sooner than; as soon as ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8c%e6%97%a9%e3%81%84%e3%81%8b-ga-hayai-ka-meaning/"
+  },
+  {
+    "no": 28,
+    "romaji": "ga/mo~nara, ~mo~da",
+    "pattern": "が/も～なら、～も～だ",
+    "meaningEn": "negative connection/comparison (like father like son)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8c-%e3%82%82%ef%bd%9e%e3%81%aa%e3%82%89%ef%bd%9e%e3%82%82%ef%bd%9e%e3%81%a0-ga-mo-nara-mo-da-meaning/"
+  },
+  {
+    "no": 29,
+    "romaji": "gamashii",
+    "pattern": "がましい",
+    "meaningEn": "look like; sound like; approximate; similar to; somewhat like ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8c%e3%81%be%e3%81%97%e3%81%84-gamashii-meaning/"
+  },
+  {
+    "no": 30,
+    "romaji": "gatera",
+    "pattern": "がてら",
+    "meaningEn": "while; on the same occasion; at the same time; coincidentally ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8c%e3%81%a6%e3%82%89-gatera-meaning/"
+  },
+  {
+    "no": 31,
+    "romaji": "gotoki / gotoku / gotoshi",
+    "pattern": "ごとき / ごとく / ごとし",
+    "meaningEn": "like; as if; the same as ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%94%e3%81%a8%e3%81%8d-%e3%81%94%e3%81%a8%e3%81%8f-%e3%81%94%e3%81%a8%e3%81%97-gotoki-gotoku-gotoshi-meaning/"
+  },
+  {
+    "no": 32,
+    "romaji": "gurumi",
+    "pattern": "ぐるみ",
+    "meaningEn": "together (with); -wide",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%90%e3%82%8b%e3%81%bf-gurumi-meaning/"
+  },
+  {
+    "no": 33,
+    "romaji": "hame ni naru",
+    "pattern": "羽目になる（はめになる）",
+    "meaningEn": "to get stuck with; to end up with (something unpleasant)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e7%be%bd%e7%9b%ae%e3%81%ab%e3%81%aa%e3%82%8b-%e3%81%af%e3%82%81%e3%81%ab%e3%81%aa%e3%82%8b-hame-ni-naru-meaning/"
+  },
+  {
+    "no": 34,
+    "romaji": "hodo no koto dewa nai",
+    "pattern": "ほどのことではない",
+    "meaningEn": "it's not worth; no need to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%bb%e3%81%a9%e3%81%ae%e3%81%93%e3%81%a8%e3%81%a7%e3%81%af%e3%81%aa%e3%81%84-hodo-no-koto-dewa-nai-meaning/"
+  },
+  {
+    "no": 35,
+    "romaji": "hou ga mashi da",
+    "pattern": "ほうがましだ",
+    "meaningEn": "better than; would rather ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%bb%e3%81%86%e3%81%8c%e3%81%be%e3%81%97%e3%81%a0-hou-ga-mashi-da-meaning/"
+  },
+  {
+    "no": 36,
+    "romaji": "houdai",
+    "pattern": "放題（ほうだい）",
+    "meaningEn": "doing as one pleases; to one's heart's content; leaving uncontrolled",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e6%94%be%e9%a1%8c-%e3%81%bb%e3%81%86%e3%81%a0%e3%81%84-houdai-meaning/"
+  },
+  {
+    "no": 37,
+    "romaji": "ikan da / ikan dewa / ikan ni yotte wa",
+    "pattern": "いかんだ / いかんでは / いかんによっては",
+    "meaningEn": "in accordance with; depending on; whether or not ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%84%e3%81%8b%e3%82%93%e3%81%a0-%e3%81%84%e3%81%8b%e3%82%93%e3%81%a7%e3%81%af-%e3%81%84%e3%81%8b%e3%82%93%e3%81%ab%e3%82%88%e3%81%a3%e3%81%a6%e3%81%af-ikan-dewa-meaning/"
+  },
+  {
+    "no": 38,
+    "romaji": "ikan ni kakawarazu / ikan ni yorazu / ikan o towazu",
+    "pattern": "いかんにかかわらず / いかんによらず / いかんをとわず",
+    "meaningEn": "regardless of; whether or not; doesn't matter whether ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%84%e3%81%8b%e3%82%93%e3%81%ab%e3%81%8b%e3%81%8b%e3%82%8f%e3%82%89%e3%81%9a-%e3%81%84%e3%81%8b%e3%82%93%e3%81%ab%e3%82%88%e3%82%89%e3%81%9a-ikan-ni-kakawarazu-meaning/"
+  },
+  {
+    "no": 39,
+    "romaji": "ikanaru",
+    "pattern": "いかなる",
+    "meaningEn": "any kind of; every; whatsoever; whatever",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e5%a6%82%e4%bd%95%e3%81%aa%e3%82%8b-%e3%81%84%e3%81%8b%e3%81%aa%e3%82%8b-ikanaru-meaning/"
+  },
+  {
+    "no": 40,
+    "romaji": "ikani",
+    "pattern": "いかに",
+    "meaningEn": "how; in what way; how much; to what extent",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e5%a6%82%e4%bd%95%e3%81%ab-%e3%81%84%e3%81%8b%e3%81%ab-ikani-meaning/"
+  },
+  {
+    "no": 41,
+    "romaji": "ikani mo",
+    "pattern": "いかにも",
+    "meaningEn": "indeed; really; truly; just (like); very; extremely ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e5%a6%82%e4%bd%95%e3%81%ab%e3%82%82-%e3%81%84%e3%81%8b%e3%81%ab%e3%82%82-ikani-mo-meaning/"
+  },
+  {
+    "no": 42,
+    "romaji": "izure ni shitemo / izure ni shiro / izure ni seyo",
+    "pattern": "いずれにしても / いずれにしろ / いずれにせよ",
+    "meaningEn": "anyhow; anyway; either way; in any case ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%84%e3%81%9a%e3%82%8c%e3%81%ab%e3%81%97%e3%81%a6%e3%82%82-%e3%81%84%e3%81%9a%e3%82%8c%e3%81%ab%e3%81%9b%e3%82%88-izure-ni-shitemo-meaning/"
+  },
+  {
+    "no": 43,
+    "romaji": "jimita",
+    "pattern": "じみた",
+    "meaningEn": "to become; to appear like; to look like; tainted with ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%98%e3%81%bf%e3%81%9f-jimita-meaning/"
+  },
+  {
+    "no": 44,
+    "romaji": "ka ina ka",
+    "pattern": "か否か（かいなか）",
+    "meaningEn": "whether or not ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8b%e5%90%a6%e3%81%8b-%e3%81%8b%e3%81%84%e3%81%aa%e3%81%8b-ka-ina-ka-meaning/"
+  },
+  {
+    "no": 45,
+    "romaji": "ka to omoikiya",
+    "pattern": "かと思いきや（かとおもいきや）",
+    "meaningEn": "contrary to expectations; or so we thought, but ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8b%e3%81%a8%e6%80%9d%e3%81%84%e3%81%8d%e3%82%84-%e3%81%8b%e3%81%a8%e3%81%8a%e3%82%82%e3%81%84%e3%81%8d%e3%82%84-to-omoikiya-meaning/"
+  },
+  {
+    "no": 46,
+    "romaji": "kagiri da",
+    "pattern": "限りだ（かぎりだ）",
+    "meaningEn": "to feel strongly",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e9%99%90%e3%82%8a%e3%81%a0-kagiri-da-meaning/"
+  },
+  {
+    "no": 47,
+    "romaji": "kai mo naku",
+    "pattern": "甲斐もなく（かいもなく）",
+    "meaningEn": "despite; even though ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e7%94%b2%e6%96%90%e3%82%82%e3%81%aa%e3%81%8f-%e3%81%8b%e3%81%84%e3%82%82%e3%81%aa%e3%81%8f-kai-mo-naku-meaning/"
+  },
+  {
+    "no": 48,
+    "romaji": "kanousei ga aru",
+    "pattern": "可能性がある（かのうせいがある）",
+    "meaningEn": "may/might; there’s a possibility that ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e5%8f%af%e8%83%bd%e6%80%a7%e3%81%8c%e3%81%82%e3%82%8b-%e3%81%8b%e3%81%ae%e3%81%86%e3%81%9b%e3%81%84%e3%81%8c%e3%81%82%e3%82%8b-kanousei-ga-aru-meaning/"
+  },
+  {
+    "no": 49,
+    "romaji": "kara aru / kara suru / kara no",
+    "pattern": "からある / からする / からの",
+    "meaningEn": "at least; as much as; as many as ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8b%e3%82%89%e3%81%82%e3%82%8b-kara-aru-%e3%81%8b%e3%82%89%e3%81%99%e3%82%8b-kara-suru-%e3%81%8b%e3%82%89%e3%81%ae-kara-no-meaning/"
+  },
+  {
+    "no": 50,
+    "romaji": "kare~kare",
+    "pattern": "かれ～かれ",
+    "meaningEn": "sooner or later; more or less",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8b%e3%82%8c%ef%bd%9e%e3%81%8b%e3%82%8c-kare-kare-meaning/"
+  },
+  {
+    "no": 51,
+    "romaji": "katagata",
+    "pattern": "かたがた",
+    "meaningEn": "while; at the same time; incidentally; for the purpose of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8b%e3%81%9f%e3%81%8c%e3%81%9f-katagata-meaning/"
+  },
+  {
+    "no": 52,
+    "romaji": "katawara",
+    "pattern": "かたわら",
+    "meaningEn": "while; besides; at the same time; in addition",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8b%e3%81%9f%e3%82%8f%e3%82%89-katawara-meaning/"
+  },
+  {
+    "no": 53,
+    "romaji": "katsute",
+    "pattern": "かつて",
+    "meaningEn": "once; before; formerly; ever; former; ex-",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8b%e3%81%a4%e3%81%a6-katsute-meaning/"
+  },
+  {
+    "no": 54,
+    "romaji": "kirai ga aru",
+    "pattern": "嫌いがある（きらいがある）",
+    "meaningEn": "bad habit; to have a tendency to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e5%ab%8c%e3%81%84%e3%81%8c%e3%81%82%e3%82%8b-%e3%81%8d%e3%82%89%e3%81%84%e3%81%8c%e3%81%82%e3%82%8b-kirai-ga-aru-meaning/"
+  },
+  {
+    "no": 55,
+    "romaji": "kiri ga nai",
+    "pattern": "切りがない（きりがない）",
+    "meaningEn": "endless; boundless; going on forever​; there’s no end to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e5%88%87%e3%82%8a%e3%81%8c%e3%81%aa%e3%81%84-%e3%81%8d%e3%82%8a%e3%81%8c%e3%81%aa%e3%81%84-kiri-ga-nai-meaning/"
+  },
+  {
+    "no": 56,
+    "romaji": "kitte no",
+    "pattern": "きっての",
+    "meaningEn": "the most / greatest … of all",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8d%e3%81%a3%e3%81%a6%e3%81%ae-kitte-no-meaning/"
+  },
+  {
+    "no": 57,
+    "romaji": "kiwamaru / kiwamarinai",
+    "pattern": "極まる / 極まりない（きわまる / きわまりない）",
+    "meaningEn": "extremely; very ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e6%a5%b5%e3%81%be%e3%82%8b-%e6%a5%b5%e3%81%be%e3%82%8a%e3%81%aa%e3%81%84-kiwamaru-kiwamarinai-meaning/"
+  },
+  {
+    "no": 58,
+    "romaji": "koso are",
+    "pattern": "こそあれ",
+    "meaningEn": "although; even though ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%93%e3%81%9d%e3%81%82%e3%82%8c-koso-are-meaning/"
+  },
+  {
+    "no": 59,
+    "romaji": "koso sure",
+    "pattern": "こそすれ",
+    "meaningEn": "and; although; but ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%93%e3%81%9d%e3%81%99%e3%82%8c-koso-sure-meaning/"
+  },
+  {
+    "no": 60,
+    "romaji": "koso~ga/keredo",
+    "pattern": "こそ「～が・けれど」",
+    "meaningEn": "but; although (emphasis)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%93%e3%81%9d%ef%bd%9e%e3%81%8c%ef%bd%9e%e3%81%91%e3%82%8c%e3%81%a9-koso-ga-keredo-meaning/"
+  },
+  {
+    "no": 61,
+    "romaji": "koto gotoku",
+    "pattern": "ことごとく",
+    "meaningEn": "altogether; entirely; completely ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e6%82%89%e3%81%8f-%e3%81%93%e3%81%a8%e3%81%94%e3%81%a8%e3%81%8f-koto-gotoku-meaning/"
+  },
+  {
+    "no": 62,
+    "romaji": "koto kono ue nai / kono ue nai / kono ue naku",
+    "pattern": "ことこの上ない / この上ない / この上なく（ことこのうえない / このうえない / このうえなく）",
+    "meaningEn": "the most of all; the best; nothing is more ... than ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%93%e3%81%a8%e3%81%93%e3%81%ae%e4%b8%8a%e3%81%aa%e3%81%84-%e3%81%93%e3%81%ae%e4%b8%8a%e3%81%aa%e3%81%84-%e3%81%93%e3%81%ae%e4%b8%8a%e3%81%aa%e3%81%8f-koto-no-ue-naku-meaning/"
+  },
+  {
+    "no": 63,
+    "romaji": "koto mo atte",
+    "pattern": "こともあって",
+    "meaningEn": "partly because; also because of; plus the reason for ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%93%e3%81%a8%e3%82%82%e3%81%82%e3%81%a3%e3%81%a6-koto-mo-atte-meaning/"
+  },
+  {
+    "no": 64,
+    "romaji": "koto nashi ni",
+    "pattern": "ことなしに",
+    "meaningEn": "without doing something",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%93%e3%81%a8%e3%81%aa%e3%81%97%e3%81%ab-koto-nashi-ni-meaning/"
+  },
+  {
+    "no": 65,
+    "romaji": "koto no nai you ni",
+    "pattern": "ことのないように",
+    "meaningEn": "so as not to; to not ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%93%e3%81%a8%e3%81%ae%e3%81%aa%e3%81%84%e3%82%88%e3%81%86%e3%81%ab-koto-no-nai-you-ni-meaning/"
+  },
+  {
+    "no": 66,
+    "romaji": "koto tote",
+    "pattern": "こととて",
+    "meaningEn": "because; since ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%93%e3%81%a8%e3%81%a8%e3%81%a6-koto-tote-meaning/"
+  },
+  {
+    "no": 67,
+    "romaji": "kurai nara",
+    "pattern": "くらいなら",
+    "meaningEn": "rather than (do ...)​",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8f%e3%82%89%e3%81%84%e3%81%aa%e3%82%89-kurai-nara-meaning/"
+  },
+  {
+    "no": 68,
+    "romaji": "kurai no mono da",
+    "pattern": "くらいのものだ",
+    "meaningEn": "only (emphasis)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8f%e3%82%89%e3%81%84%e3%81%ae%e3%82%82%e3%81%ae%e3%81%a0-%e3%81%90%e3%82%89%e3%81%84%e3%81%ae%e3%82%82%e3%81%ae%e3%81%a0-kurai-no-mono-da-meaning/"
+  },
+  {
+    "no": 69,
+    "romaji": "made da / made no koto da",
+    "pattern": "までだ / までのことだ",
+    "meaningEn": "only; just; nothing else",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%be%e3%81%a7%e3%81%a0-%e3%81%be%e3%81%a7%e3%81%ae%e3%81%93%e3%81%a8%e3%81%a0-made-da-made-no-koto-da-meaning/"
+  },
+  {
+    "no": 70,
+    "romaji": "made mo nai / made mo naku",
+    "pattern": "までもない / までもなく",
+    "meaningEn": "there's no need to; it’s not necessary to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%be%e3%81%a7%e3%82%82%e3%81%aa%e3%81%84-%e3%81%be%e3%81%a7%e3%82%82%e3%81%aa%e3%81%8f-made-mo-nai-made-mo-naku-meaning/"
+  },
+  {
+    "no": 71,
+    "romaji": "majiki",
+    "pattern": "まじき",
+    "meaningEn": "should not; must not ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%be%e3%81%98%e3%81%8d-majiki-meaning/"
+  },
+  {
+    "no": 72,
+    "romaji": "makuru",
+    "pattern": "まくる",
+    "meaningEn": "to do over and over again; to do relentlessly",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%be%e3%81%8f%e3%82%8b-%e3%81%be%e3%81%8f%e3%81%a3%e3%81%a6-makuru-makutte-meaning/"
+  },
+  {
+    "no": 73,
+    "romaji": "mamire",
+    "pattern": "まみれ",
+    "meaningEn": "covered with; stained; smeared with ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%be%e3%81%bf%e3%82%8c-mamire-meaning/"
+  },
+  {
+    "no": 74,
+    "romaji": "marukkiri",
+    "pattern": "まるっきり",
+    "meaningEn": "completely; absolutely; totally; (not) at all​ ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e4%b8%b8%e3%81%a3%e3%81%8d%e3%82%8a-%e3%81%be%e3%82%8b%e3%81%a3%e3%81%8d%e3%82%8a-marukkiri-meaning/"
+  },
+  {
+    "no": 75,
+    "romaji": "meku",
+    "pattern": "めく",
+    "meaningEn": "seems; show signs of; to have the appearance of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%81%e3%81%8f-meku-meaning/"
+  },
+  {
+    "no": 76,
+    "romaji": "mo douzen da",
+    "pattern": "も同然だ（もどうぜんだ）",
+    "meaningEn": "just like; same as ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%82%e5%90%8c%e7%84%b6%e3%81%a0-mo-douzen-da-meaning/"
+  },
+  {
+    "no": 77,
+    "romaji": "mo saru koto nagara",
+    "pattern": "もさることながら",
+    "meaningEn": "one may well say so, but~; not only... but also ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%82%e3%81%95%e3%82%8b%e3%81%93%e3%81%a8%e3%81%aa%e3%81%8c%e3%82%89-mo-saru-koto-nagara-meaning/"
+  },
+  {
+    "no": 78,
+    "romaji": "mo shinai de",
+    "pattern": "もしないで",
+    "meaningEn": "without even doing ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%82%e3%81%97%e3%81%aa%e3%81%84%e3%81%a7-mo-shinai-de-meaning/"
+  },
+  {
+    "no": 79,
+    "romaji": "mohaya",
+    "pattern": "もはや",
+    "meaningEn": "already; now; no longer; not anymore",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e6%9c%80%e6%97%a9-%e3%82%82%e3%81%af%e3%82%84-mohaya-meaning/"
+  },
+  {
+    "no": 80,
+    "romaji": "mono de",
+    "pattern": "もので",
+    "meaningEn": "because; for that reason",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%82%e3%81%ae%e3%81%a7-mono-de-meaning/"
+  },
+  {
+    "no": 81,
+    "romaji": "mono o",
+    "pattern": "ものを",
+    "meaningEn": "if only; I wish; I'm sorry it's not actually (regret)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%82%e3%81%ae%e3%82%92-mono-o-meaning/"
+  },
+  {
+    "no": 82,
+    "romaji": "mono to omowareru / mono to mirareru",
+    "pattern": "ものと思われる / ものと見られる（ものとおもわれる / ものとみられる）",
+    "meaningEn": "to think; to suppose; it is believed/expected that ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%82%e3%81%ae%e3%81%a8%e6%80%9d%e3%82%8f%e3%82%8c%e3%82%8b-%e3%82%82%e3%81%ae%e3%81%a8%e8%a6%8b%e3%82%89%e3%82%8c%e3%82%8b-mono-to-omowareru-meaning/"
+  },
+  {
+    "no": 83,
+    "romaji": "mono to suru",
+    "pattern": "ものとする",
+    "meaningEn": "shall; to assume; understood as ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%82%e3%81%ae%e3%81%a8%e3%81%99%e3%82%8b-mono-to-suru-meaning/"
+  },
+  {
+    "no": 84,
+    "romaji": "mono toshite",
+    "pattern": "ものとして",
+    "meaningEn": "to assume; to suppose; on the presumption that ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%82%e3%81%ae%e3%81%a8%e3%81%97%e3%81%a6-mono-toshite-meaning/"
+  },
+  {
+    "no": 85,
+    "romaji": "moshikuwa",
+    "pattern": "もしくは",
+    "meaningEn": "or; otherwise",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%82%e3%81%97%e3%81%8f%e3%81%af-moshikuwa-meaning/"
+  },
+  {
+    "no": 86,
+    "romaji": "n bakari ni",
+    "pattern": "んばかりに",
+    "meaningEn": "as if; as though ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%93%e3%81%b0%e3%81%8b%e3%82%8a%e3%81%ab-n-bakari-ni-meaning/"
+  },
+  {
+    "no": 87,
+    "romaji": "n ga tame ni",
+    "pattern": "んがために",
+    "meaningEn": "in order to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%93%e3%81%8c%e3%81%9f%e3%82%81%e3%81%ab-n-ga-tame-ni-meaning/"
+  },
+  {
+    "no": 88,
+    "romaji": "nagara ni / nagara no",
+    "pattern": "ながらに / ながらの",
+    "meaningEn": "while; during; without change; performed in this condition",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%81%8c%e3%82%89%e3%81%ab-%e3%81%aa%e3%81%8c%e3%82%89%e3%81%ae-nagara-ni-nagara-no-meaning/"
+  },
+  {
+    "no": 89,
+    "romaji": "nai made mo",
+    "pattern": "ないまでも",
+    "meaningEn": "not to say; although it does not reach the level of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%81%84%e3%81%be%e3%81%a7%e3%82%82-nai-made-mo-meaning/"
+  },
+  {
+    "no": 90,
+    "romaji": "nai mono demo nai",
+    "pattern": "ないものでもない",
+    "meaningEn": "is not entirely impossible",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%81%84%e3%82%82%e3%81%ae%e3%81%a7%e3%82%82%e3%81%aa%e3%81%84-nai-mono-demo-nai-meaning/"
+  },
+  {
+    "no": 91,
+    "romaji": "nai mono ka / nai mono darou ka",
+    "pattern": "ないものか / ないものだろうか",
+    "meaningEn": "isn't there; can’t we…?; can’t I…?",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%81%84%e3%82%82%e3%81%ae%e3%81%8b-%e3%81%aa%e3%81%84%e3%82%82%e3%81%ae%e3%81%a0%e3%82%8d%e3%81%86%e3%81%8b-nai-mono-ka-meaning/"
+  },
+  {
+    "no": 92,
+    "romaji": "nai tomo kagiranai",
+    "pattern": "ないとも限らない（ないともかぎらない）",
+    "meaningEn": "not necessarily; I can't say that; maybe; might ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%81%84%e3%81%a8%e3%82%82%e9%99%90%e3%82%89%e3%81%aa%e3%81%84-nai-tomo-kagiranai-meaning/"
+  },
+  {
+    "no": 93,
+    "romaji": "nakushite wa",
+    "pattern": "なくしては",
+    "meaningEn": "cannot do without ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%81%8f%e3%81%97%e3%81%a6%e3%81%af-nakushite-wa-meaning/"
+  },
+  {
+    "no": 94,
+    "romaji": "nami",
+    "pattern": "並み（なみ）",
+    "meaningEn": "average; ordinary; same level as; equal to; on par with ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e4%b8%a6%e3%81%bf-%e3%81%aa%e3%81%bf-nami-meaning/"
+  },
+  {
+    "no": 95,
+    "romaji": "nan to iu / nanto / nante",
+    "pattern": "なんという / なんと / なんて",
+    "meaningEn": "how (beautiful, etc.); what a ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%82%93%e3%81%a8%e3%81%84%e3%81%86-%e3%81%aa%e3%82%93%e3%81%a8-%e3%81%aa%e3%82%93%e3%81%a6-nan-to-iu-nanto-nante-meaning/"
+  },
+  {
+    "no": 96,
+    "romaji": "nani shiro",
+    "pattern": "何しろ（なにしろ）",
+    "meaningEn": "at any rate; after all; anyhow; anyway; in any case; because; as you know ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e4%bd%95%e3%81%97%e3%82%8d-%e3%81%aa%e3%81%ab%e3%81%97%e3%82%8d-nani-shiro-meaning/"
+  },
+  {
+    "no": 97,
+    "romaji": "nara dewa",
+    "pattern": "ならでは",
+    "meaningEn": "distinctive of; uniquely applying to; special to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%82%89%e3%81%a7%e3%81%af-nara-dewa-meaning/"
+  },
+  {
+    "no": 98,
+    "romaji": "nara iza shirazu / wa iza shirazu",
+    "pattern": "ならいざしらず / はいざしらず",
+    "meaningEn": "I don't know about ... but; it may be possible for ... but ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%82%89%e3%81%84%e3%81%96%e3%81%97%e3%82%89%e3%81%9a-%e3%81%af%e3%81%84%e3%81%96%e3%81%97%e3%82%89%e3%81%9a-nara-iza-shirazu-meaning/"
+  },
+  {
+    "no": 99,
+    "romaji": "nari",
+    "pattern": "なり",
+    "meaningEn": "as soon as; right after ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%82%8a-nari-meaning/"
+  },
+  {
+    "no": 100,
+    "romaji": "nari ni / nari no",
+    "pattern": "なりに / なりの",
+    "meaningEn": "suitable; in one's own way/style",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%82%8a%e3%81%ab-%e3%81%aa%e3%82%8a%e3%81%ae-nari-ni-nari-no-meaning/"
+  },
+  {
+    "no": 101,
+    "romaji": "nari tomo",
+    "pattern": "なりとも",
+    "meaningEn": "at least; even just a little (adverbial particle)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%82%8a%e3%81%a8%e3%82%82-nari-tomo-meaning/"
+  },
+  {
+    "no": 102,
+    "romaji": "nari~nari",
+    "pattern": "なり～なり",
+    "meaningEn": "[A] or [B] or something; for instance ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%82%8a%ef%bd%9e%e3%81%aa%e3%82%8a-narinari-meaning/"
+  },
+  {
+    "no": 103,
+    "romaji": "nashi ni / nashi de",
+    "pattern": "なしに / なしで",
+    "meaningEn": "without; without doing ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%aa%e3%81%97%e3%81%ab-%e3%81%aa%e3%81%97%e3%81%a7-nashi-ni-nashi-de-meaning/"
+  },
+  {
+    "no": 104,
+    "romaji": "ni",
+    "pattern": "に",
+    "meaningEn": "and; in addition to; the combination of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab-ni-particle-meaning-and-in-addition/"
+  },
+  {
+    "no": 105,
+    "romaji": "ni atai suru",
+    "pattern": "に値する（にあたいする）",
+    "meaningEn": "to be worth; to be worthy of; to deserve; to merit​ ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e5%80%a4%e3%81%99%e3%82%8b-%e3%81%ab%e3%81%82%e3%81%9f%e3%81%84%e3%81%99%e3%82%8b-ni-atai-suru-meaning/"
+  },
+  {
+    "no": 106,
+    "romaji": "ni atte",
+    "pattern": "にあって",
+    "meaningEn": "at; on; during; in the condition of​ ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%82%e3%81%a3%e3%81%a6-ni-atte-meaning/"
+  },
+  {
+    "no": 107,
+    "romaji": "ni hikikae",
+    "pattern": "に引き換え（にひきかえ）",
+    "meaningEn": "compared to; in contrast to; unlike; while; whereas ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e5%bc%95%e3%81%8d%e6%8f%9b%e3%81%88-%e3%81%ab%e3%81%b2%e3%81%8d%e3%81%8b%e3%81%88-ni-hikikae-meaning/"
+  },
+  {
+    "no": 108,
+    "romaji": "ni itaru / ni itatta",
+    "pattern": "に至る / に至った（にいたる / にいたった）",
+    "meaningEn": "leads to; come to a conclusion",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e8%87%b3%e3%82%8b-%e3%81%ab%e8%87%b3%e3%81%a3%e3%81%9f-%e3%81%84%e3%81%9f%e3%82%8b-%e3%81%84%e3%81%9f%e3%81%a3%e3%81%9f-ni-itaru-ni-itatta-meaning/"
+  },
+  {
+    "no": 109,
+    "romaji": "ni itaru made",
+    "pattern": "に至るまで（にいたるまで）",
+    "meaningEn": "as far as; up until; everything from ... to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e8%87%b3%e3%82%8b%e3%81%be%e3%81%a7-%e3%81%ab%e3%81%84%e3%81%9f%e3%82%8b%e3%81%be%e3%81%a7-ni-itaru-made-meaning/"
+  },
+  {
+    "no": 110,
+    "romaji": "ni itattemo",
+    "pattern": "に至っても（にいたっても）",
+    "meaningEn": "even if; even though; although something reached the point ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e8%87%b3%e3%81%a3%e3%81%a6%e3%82%82-%e3%81%ab%e3%81%84%e3%81%9f%e3%81%a3%e3%81%a6%e3%82%82-ni-itattemo-meaning/"
+  },
+  {
+    "no": 111,
+    "romaji": "ni ittate wa",
+    "pattern": "に至っては（にいたっては）",
+    "meaningEn": "when it comes to; as for ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e8%87%b3%e3%81%a3%e3%81%a6%e3%81%af-%e3%81%ab%e3%81%84%e3%81%9f%e3%81%a3%e3%81%a6%e3%81%af-ni-ittate-wa-meaning/"
+  },
+  {
+    "no": 112,
+    "romaji": "ni iwasereba",
+    "pattern": "に言わせれば（にいわせれば）",
+    "meaningEn": "if you ask; if one may say ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e8%a8%80%e3%82%8f%e3%81%9b%e3%82%8c%e3%81%b0-ni-iwasereba-meaning/"
+  },
+  {
+    "no": 113,
+    "romaji": "ni kagitta koto dewa nai",
+    "pattern": "に限ったことではない（にかぎったことではない）",
+    "meaningEn": "not limited to only ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e9%99%90%e3%81%a3%e3%81%9f%e3%81%93%e3%81%a8%e3%81%a7%e3%81%af%e3%81%aa%e3%81%84-ni-kagitta-koto-de-wa-nai-meaning/"
+  },
+  {
+    "no": 114,
+    "romaji": "ni kakatte wa / ni kakattara / ni kakaru to / kakareba",
+    "pattern": "にかかっては / にかかったら / にかかると / かかれば",
+    "meaningEn": "when handled by (N), becomes a completely different result",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%8b%e3%81%8b%e3%81%a3%e3%81%a6%e3%81%af-%e3%81%ab%e3%81%8b%e3%81%8b%e3%81%a3%e3%81%9f%e3%82%89-%e3%81%ab%e3%81%8b%e3%81%8b%e3%82%8b%e3%81%a8-%e3%81%8b%e3%81%8b%e3%82%8c%e3%81%b0-meaning/"
+  },
+  {
+    "no": 115,
+    "romaji": "ni kakatteiru",
+    "pattern": "にかかっている",
+    "meaningEn": "depending on; to depend on; whether or not",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%8b%e3%81%8b%e3%81%a3%e3%81%a6%e3%81%84%e3%82%8b-ni-kakatteiru-meaning/"
+  },
+  {
+    "no": 116,
+    "romaji": "ni kako tsukete",
+    "pattern": "にかこつけて",
+    "meaningEn": "to use as a pretext; to use as an excuse",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%8b%e3%81%93%e3%81%a4%e3%81%91%e3%81%a6-ni-kako-tsukete-meaning/"
+  },
+  {
+    "no": 117,
+    "romaji": "ni kamakete",
+    "pattern": "にかまけて",
+    "meaningEn": "to be too busy; to focus / concentrate only on ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%8b%e3%81%be%e3%81%91%e3%81%a6-ni-kamakete-meaning/"
+  },
+  {
+    "no": 118,
+    "romaji": "ni katakunai",
+    "pattern": "に難くない（にかたくない）",
+    "meaningEn": "easy to do; it’s not hard to (imagine, understand, guess)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e9%9b%a3%e3%81%8f%e3%81%aa%e3%81%84-%e3%81%ab%e3%81%8b%e3%81%9f%e3%81%8f%e3%81%aa%e3%81%84-ni-katakunai-meaning/"
+  },
+  {
+    "no": 119,
+    "romaji": "ni matsuwaru",
+    "pattern": "にまつわる",
+    "meaningEn": "to be related to; to concern; associated with ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%be%e3%81%a4%e3%82%8f%e3%82%8b-ni-matsuwaru-meaning/"
+  },
+  {
+    "no": 120,
+    "romaji": "ni nottotte",
+    "pattern": "に則って（にのっとって）",
+    "meaningEn": "based on; according to; in accordance with ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e5%89%87%e3%81%a3%e3%81%a6-%e3%81%ab%e3%81%ae%e3%81%a3%e3%81%a8%e3%81%a3%e3%81%a6-ni-nottotte-meaning/"
+  },
+  {
+    "no": 121,
+    "romaji": "ni sakigakete",
+    "pattern": "に先駆けて（にさきがけて）",
+    "meaningEn": "prior to; to be the first (pioneer); being ahead of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e5%85%88%e9%a7%86%e3%81%91%e3%81%a6-%e3%81%ab%e3%81%95%e3%81%8d%e3%81%8c%e3%81%91%e3%81%a6-ni-sakigakete-meaning/"
+  },
+  {
+    "no": 122,
+    "romaji": "ni shinobinai",
+    "pattern": "に忍びない（にしのびない）",
+    "meaningEn": "cannot bring oneself (to do); unable to bear ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e5%bf%8d%e3%81%b3%e3%81%aa%e3%81%84-%e3%81%ab%e3%81%97%e3%81%ae%e3%81%b3%e3%81%aa%e3%81%84-ni-shinobinai-meaning/"
+  },
+  {
+    "no": 123,
+    "romaji": "ni shita tokoro de / to shita tokoro de",
+    "pattern": "にしたところで / としたところで",
+    "meaningEn": "even if; even supposing that ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%97%e3%81%9f%e3%81%a3%e3%81%a6-%e3%81%ab%e3%81%97%e3%81%9f%e3%81%a8%e3%81%93%e3%82%8d%e3%81%a7-ni-shitatte-meaning/"
+  },
+  {
+    "no": 124,
+    "romaji": "ni shite",
+    "pattern": "にして",
+    "meaningEn": "at / on / under certain conditions (time, position, age, number of times)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%97%e3%81%a6-ni-shite-meaning/"
+  },
+  {
+    "no": 125,
+    "romaji": "ni sokushite",
+    "pattern": "に即して（にそくして）",
+    "meaningEn": "according to; in keeping with; to be based on ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e5%8d%b3%e3%81%97%e3%81%a6-%e3%81%ab%e3%81%9d%e3%81%8f%e3%81%97%e3%81%a6-ni-sokushite-meaning/"
+  },
+  {
+    "no": 126,
+    "romaji": "ni taeru / ni taenai",
+    "pattern": "に耐える / に耐えない（にたえる / にたえない）",
+    "meaningEn": "worth doing; can do; cannot bear doing ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e8%80%90%e3%81%88%e3%82%8b-%e3%81%ab%e8%80%90%e3%81%88%e3%81%aa%e3%81%84-%e3%81%ab%e3%81%9f%e3%81%88%e3%82%8b-%e3%81%ab%e3%81%9f%e3%81%88%e3%81%aa%e3%81%84-ni-taeru-ni-taenai-meaning/"
+  },
+  {
+    "no": 127,
+    "romaji": "ni taranai / ni tarinai",
+    "pattern": "に足らない / に足りない（にたらない / にたりない）",
+    "meaningEn": "cannot; not worthy; not worth doing ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e8%b6%b3%e3%82%89%e3%81%aa%e3%81%84-%e3%81%ab%e8%b6%b3%e3%82%8a%e3%81%aa%e3%81%84-ni-taranai-ni-tarinai-meaning/"
+  },
+  {
+    "no": 128,
+    "romaji": "ni taru / ni tariru",
+    "pattern": "に足る / に足りる（にたる / にたりる）",
+    "meaningEn": "can do; worthy; worth doing",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e8%b6%b3%e3%82%8b-%e3%81%ab%e8%b6%b3%e3%82%8a%e3%82%8b-ni-taru-ni-tariru-meaning/"
+  },
+  {
+    "no": 129,
+    "romaji": "ni terashite",
+    "pattern": "に照らして（にてらして）",
+    "meaningEn": "according to; in view of; in light of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e7%85%a7%e3%82%89%e3%81%97%e3%81%a6-%e3%81%ab%e3%81%a6%e3%82%89%e3%81%97%e3%81%a6-ni-terashite-meaning/"
+  },
+  {
+    "no": 130,
+    "romaji": "ni todomarazu",
+    "pattern": "にとどまらず",
+    "meaningEn": "not limited to; not only… but also ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%a8%e3%81%a9%e3%81%be%e3%82%89%e3%81%9a-ni-todomarazu-meaning/"
+  },
+  {
+    "no": 131,
+    "romaji": "ni wa muri ga aru",
+    "pattern": "には無理がある（にはむりがある）",
+    "meaningEn": "difficult to do; is unreasonable / unrealistic / impossible",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%af%e7%84%a1%e7%90%86%e3%81%8c%e3%81%82%e3%82%8b-%e3%81%ab%e3%81%af%e3%82%80%e3%82%8a%e3%81%8c%e3%81%82%e3%82%8b-ni-wa-muri-ga-aru-meaning/"
+  },
+  {
+    "no": 132,
+    "romaji": "ni yorazu",
+    "pattern": "によらず",
+    "meaningEn": "regardless of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%82%88%e3%82%89%e3%81%9a-ni-yorazu-meaning/"
+  },
+  {
+    "no": 133,
+    "romaji": "ni~o kasanete",
+    "pattern": "に～を重ねて（に～をかさねて）",
+    "meaningEn": "success after continuous (effort, work, adjustments, etc.)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%ef%bd%9e%e3%82%92%e9%87%8d%e3%81%ad%e3%81%a6-ni-o-kasanete-meaning/"
+  },
+  {
+    "no": 134,
+    "romaji": "nimo hodo ga aru",
+    "pattern": "にもほどがある",
+    "meaningEn": "there is a limit to what is acceptable; to go too far",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%82%82%e7%a8%8b%e3%81%8c%e3%81%82%e3%82%8b-%e3%81%ab%e3%82%82%e3%81%bb%e3%81%a9%e3%81%8c%e3%81%82%e3%82%8b-nimo-hodo-ga-aru-meaning/"
+  },
+  {
+    "no": 135,
+    "romaji": "nimo mashite",
+    "pattern": "にも増して（にもまして）",
+    "meaningEn": "more than…; above ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%82%82%e5%a2%97%e3%81%97%e3%81%a6-%e3%81%ab%e3%82%82%e3%81%be%e3%81%97%e3%81%a6-nimo-mashite-meaning/"
+  },
+  {
+    "no": 136,
+    "romaji": "niwa ataranai",
+    "pattern": "には当たらない（にはあたらない）",
+    "meaningEn": "it’s not worth; there’s no need to; does not correspond to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%af%e5%bd%93%e3%81%9f%e3%82%89%e3%81%aa%e3%81%84-%e3%81%ab%e3%81%af%e3%81%82%e3%81%9f%e3%82%89%e3%81%aa%e3%81%84-niwa-ataranai-meaning/"
+  },
+  {
+    "no": 137,
+    "romaji": "niwa oyobanai",
+    "pattern": "には及ばない（にはおよばない）",
+    "meaningEn": "there is no need to; unnecessary; no match for ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%af%e5%8f%8a%e3%81%b0%e3%81%aa%e3%81%84-%e3%81%ab%e3%81%af%e3%81%8a%e3%82%88%e3%81%b0%e3%81%aa%e3%81%84-niwa-oyobanai-meaning/"
+  },
+  {
+    "no": 138,
+    "romaji": "no itari",
+    "pattern": "の至り（のいたり）",
+    "meaningEn": "utmost; extremely ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ae%e8%87%b3%e3%82%8a-%e3%81%ae%e3%81%84%e3%81%9f%e3%82%8a-no-itari-meaning/"
+  },
+  {
+    "no": 139,
+    "romaji": "no kiwami",
+    "pattern": "の極み（のきわみ）",
+    "meaningEn": "utmost; extremely ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ae%e6%a5%b5%e3%81%bf-no-kiwami-meaning/"
+  },
+  {
+    "no": 140,
+    "romaji": "no nan notte",
+    "pattern": "のなんのって",
+    "meaningEn": "extremely ~ (cannot be expressed in words)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ae%e3%81%aa%e3%82%93%e3%81%ae%e3%81%a3%e3%81%a6-no-nan-notte-meaning/"
+  },
+  {
+    "no": 141,
+    "romaji": "no yara / mono yara / koto yara",
+    "pattern": "のやら / ものやら / ことやら",
+    "meaningEn": "I wonder...; unsure; I don’t know ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ae%e3%82%84%e3%82%89-%e3%82%82%e3%81%ae%e3%82%84%e3%82%89-%e3%81%93%e3%81%a8%e3%82%84%e3%82%89-no-yara-mono-yara-koto-yara-meaning/"
+  },
+  {
+    "no": 142,
+    "romaji": "no yara~no yara",
+    "pattern": "のやら～のやら",
+    "meaningEn": "or ~ (I don't know)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ae%e3%82%84%e3%82%89%ef%bd%9e%e3%81%ae%e3%82%84%e3%82%89-no-yara-no-yara/"
+  },
+  {
+    "no": 143,
+    "romaji": "o fumaete",
+    "pattern": "を踏まえて（をふまえて）",
+    "meaningEn": "to be based on; to take into account ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e8%b8%8f%e3%81%be%e3%81%88%e3%81%a6-%e3%82%92%e3%81%b5%e3%81%be%e3%81%88%e3%81%a6-o-fumaete-meaning/"
+  },
+  {
+    "no": 144,
+    "romaji": "o hete",
+    "pattern": "を経て（をへて）",
+    "meaningEn": "through; by way of; after; via ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e7%b5%8c%e3%81%a6-%e3%82%92%e3%81%b8%e3%81%a6-o-hete-meaning/"
+  },
+  {
+    "no": 145,
+    "romaji": "o hikaete",
+    "pattern": "を控えて（をひかえて）",
+    "meaningEn": "to be soon; the time has come to; nearby; ahead of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e6%8e%a7%e3%81%88%e3%81%a6-%e3%82%92%e3%81%b2%e3%81%8b%e3%81%88%e3%81%a6-o-hikaete-meaning/"
+  },
+  {
+    "no": 146,
+    "romaji": "o ii koto ni",
+    "pattern": "をいいことに",
+    "meaningEn": "to take advantage of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e3%81%84%e3%81%84%e3%81%93%e3%81%a8%e3%81%ab-o-ii-koto-ni-meaning/"
+  },
+  {
+    "no": 147,
+    "romaji": "o kaerimizu / mo kaerimizu",
+    "pattern": "を顧みず / も顧みず（をかえりみず / もかえりみず）",
+    "meaningEn": "despite; without considering; not worrying about; regardless of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e9%a1%a7%e3%81%bf%e3%81%9a-%e3%82%82%e9%a1%a7%e3%81%bf%e3%81%9a-%e3%82%92%e3%81%8b%e3%81%88%e3%82%8a%e3%81%bf%e3%81%9a-mo-kaerimizu-meaning/"
+  },
+  {
+    "no": 148,
+    "romaji": "o kagiri ni",
+    "pattern": "を限りに（をかぎりに）",
+    "meaningEn": "starting from; the last time (ending a continued action)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e9%99%90%e3%82%8a%e3%81%ab-o-kagiri-ni-meaning/"
+  },
+  {
+    "no": 149,
+    "romaji": "o kanete",
+    "pattern": "を兼ねて（をかねて）",
+    "meaningEn": "also for the purpose of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e5%85%bc%e3%81%ad%e3%81%a6-%e3%82%92%e3%81%8b%e3%81%ad%e3%81%a6-o-kanete-meaning/"
+  },
+  {
+    "no": 150,
+    "romaji": "o kawakiri ni",
+    "pattern": "を皮切りに（をかわきりに）",
+    "meaningEn": "one after another; starting with ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e7%9a%ae%e5%88%87%e3%82%8a%e3%81%ab-%e3%82%92%e3%81%8b%e3%82%8f%e3%81%8d%e3%82%8a%e3%81%ab-o-kawakiri-ni-meaning/"
+  },
+  {
+    "no": 151,
+    "romaji": "o ki ni",
+    "pattern": "を機に（をきに）",
+    "meaningEn": "as an opportunity/chance to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e6%a9%9f%e3%81%ab-%e3%82%92%e3%81%8d%e3%81%ab-o-ki-ni-meaning/"
+  },
+  {
+    "no": 152,
+    "romaji": "o kinji enai",
+    "pattern": "を禁じ得ない（をきんじえない）",
+    "meaningEn": "can’t help but; can’t refrain from ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e7%a6%81%e3%81%98%e5%be%97%e3%81%aa%e3%81%84-%e3%82%92%e3%81%8d%e3%82%93%e3%81%98%e3%81%88%e3%81%aa%e3%81%84-o-kinji-enai-meaning/"
+  },
+  {
+    "no": 153,
+    "romaji": "o mono tomo sezuni",
+    "pattern": "をものともせずに",
+    "meaningEn": "in defiance of; not losing to / afraid / worrying about ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e3%82%82%e3%81%ae%e3%81%a8%e3%82%82%e3%81%9b%e3%81%9a%e3%81%ab-o-mono-tomo-sezuni-meaning/"
+  },
+  {
+    "no": 154,
+    "romaji": "o motte / o mochimashite",
+    "pattern": "をもって / をもちまして",
+    "meaningEn": "by means of; with; on / at / as of (time)​",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e3%82%82%e3%81%a3%e3%81%a6-%e3%82%92%e3%82%82%e3%81%a1%e3%81%be%e3%81%97%e3%81%a6-o-motte-o-mochimashite-meaning/"
+  },
+  {
+    "no": 155,
+    "romaji": "o oite~nai",
+    "pattern": "をおいて～ない",
+    "meaningEn": "only; can only be; there is no alternative, only ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/jlpt-n1-grammar-%e3%82%92%e3%81%8a%e3%81%84%e3%81%a6%ef%bd%9e%e3%81%aa%e3%81%84-o-oitenai-meaning/"
+  },
+  {
+    "no": 156,
+    "romaji": "o oshite / o oshikitte",
+    "pattern": "を押して / を押し切って（をおして / をおしきって）",
+    "meaningEn": "to overcome (opposition); to push past ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e6%8a%bc%e3%81%97%e3%81%a6-%e3%82%92%e6%8a%bc%e3%81%97%e5%88%87%e3%81%a3%e3%81%a6-%e3%82%92%e3%81%8a%e3%81%97%e3%81%8d%e3%81%a3%e3%81%a6-o-oshite-o-oshikitte-meaning/"
+  },
+  {
+    "no": 157,
+    "romaji": "o sakai ni",
+    "pattern": "を境に（をさかいに）",
+    "meaningEn": "since ~ (indicates a large change before & after)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e5%a2%83%e3%81%ab%e3%81%97%e3%81%a6-%e3%82%92%e3%81%95%e3%81%8b%e3%81%84%e3%81%ab-o-sakai-ni-meaning/"
+  },
+  {
+    "no": 158,
+    "romaji": "o yogi naku sareru",
+    "pattern": "を余儀なくされる（をよぎなくされる）",
+    "meaningEn": "to be forced to do something because one has no other choice",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e4%bd%99%e5%84%80%e3%81%aa%e3%81%8f%e3%81%95%e3%82%8c%e3%82%8b-%e3%82%92%e3%82%88%e3%81%8e%e3%81%aa%e3%81%8f%e3%81%95%e3%82%8c%e3%82%8b-o-yogi-naku-sareru-meaning/"
+  },
+  {
+    "no": 159,
+    "romaji": "o yoso ni",
+    "pattern": "をよそに",
+    "meaningEn": "despite; without regards to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e3%82%88%e3%81%9d%e3%81%ab-o-yoso-ni-meaning/"
+  },
+  {
+    "no": 160,
+    "romaji": "o zentei toshite",
+    "pattern": "を前提として（をぜんていとして）",
+    "meaningEn": "with the intention to; on the condition / assumption ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e5%89%8d%e6%8f%90%e3%81%a8%e3%81%97%e3%81%a6-o-zentei-toshite-meaning/"
+  },
+  {
+    "no": 161,
+    "romaji": "omoi o suru",
+    "pattern": "思いをする（おもいをする）",
+    "meaningEn": "to think; to feel ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e6%80%9d%e3%81%84%e3%82%92%e3%81%99%e3%82%8b-%e3%81%8a%e3%82%82%e3%81%84%e3%82%92%e3%81%99%e3%82%8b-omoi-o-suru-meaning/"
+  },
+  {
+    "no": 162,
+    "romaji": "ori ni",
+    "pattern": "折に（おりに）",
+    "meaningEn": "when; at the time; on the occasion ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e6%8a%98%e3%81%ab-%e3%81%8a%e3%82%8a%e3%81%ab-ori-ni-meaning/"
+  },
+  {
+    "no": 163,
+    "romaji": "oyoso",
+    "pattern": "およそ",
+    "meaningEn": "about; roughly; generally; approximately; completely​ ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8a%e3%82%88%e3%81%9d-oyoso-meaning/"
+  },
+  {
+    "no": 164,
+    "romaji": "sa",
+    "pattern": "さ",
+    "meaningEn": "ending particle; indicates assertion",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%95-sa-ending-particle-meaning/"
+  },
+  {
+    "no": 165,
+    "romaji": "samo",
+    "pattern": "さも",
+    "meaningEn": "really (seem, appear, etc.); truly; as if ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e7%84%b6%e3%82%82-%e3%81%95%e3%82%82-samo-meaning/"
+  },
+  {
+    "no": 166,
+    "romaji": "samonaito",
+    "pattern": "さもないと",
+    "meaningEn": "otherwise; or else; if not ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%95%e3%82%82%e3%81%aa%e3%81%84%e3%81%a8-samonaito-meaning/"
+  },
+  {
+    "no": 167,
+    "romaji": "sazo",
+    "pattern": "さぞ",
+    "meaningEn": "surely; certainly; no doubt; indeed​ ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e5%98%b8-%e3%81%95%e3%81%9e%e3%81%8b%e3%81%97-sazo-kashi-meaning/"
+  },
+  {
+    "no": 168,
+    "romaji": "shimatsu da",
+    "pattern": "始末だ（しまつだ）",
+    "meaningEn": "end up; in the end; as a result (negative)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e5%a7%8b%e6%9c%ab%e3%81%a0-%e3%81%97%e3%81%be%e3%81%a4%e3%81%a0-shimatsu-da-meaning/"
+  },
+  {
+    "no": 169,
+    "romaji": "soba kara",
+    "pattern": "そばから",
+    "meaningEn": "as soon as; right after​ ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9d%e3%81%b0%e3%81%8b%e3%82%89-soba-kara-meaning/"
+  },
+  {
+    "no": 170,
+    "romaji": "sobireru",
+    "pattern": "そびれる",
+    "meaningEn": "to miss a chance; to fail to do ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9d%e3%81%b3%e3%82%8c%e3%82%8b-sobireru-meaning/"
+  },
+  {
+    "no": 171,
+    "romaji": "sokonau / sokoneru / sonjiru",
+    "pattern": "損なう / 損ねる / 損じる（そこなう / そこねる / そんじる）",
+    "meaningEn": "to do something wrong; by mistake; to miss a chance; to fail to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e6%90%8d%e3%81%aa%e3%81%86-%e6%90%8d%e3%81%ad%e3%82%8b-%e6%90%8d%e3%81%98%e3%82%8b-sokonau-sokoneru-sonjiru-meaning/"
+  },
+  {
+    "no": 172,
+    "romaji": "sube ga nai",
+    "pattern": "術がない（すべがない）",
+    "meaningEn": "there is no way / means; cannot do ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e8%a1%93%e3%81%8c%e3%81%aa%e3%81%84-%e3%81%99%e3%81%b9%e3%81%8c%e3%81%aa%e3%81%84-sube-ga-nai-meaning/"
+  },
+  {
+    "no": 173,
+    "romaji": "sura / de sura",
+    "pattern": "すら / ですら",
+    "meaningEn": "even ~ (with emphasis)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%99%e3%82%89-%e3%81%a7%e3%81%99%e3%82%89-de-sura-meaning/"
+  },
+  {
+    "no": 174,
+    "romaji": "ta hazumi ni / ta hyoushi ni",
+    "pattern": "た弾みに / た拍子に（たはずみに / たひょうしに）",
+    "meaningEn": "the moment [A], unintentionally / inadvertently caused something to happen",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e5%bc%be%e3%81%bf%e3%81%ab-%e3%81%9f%e6%8b%8d%e5%ad%90%e3%81%ab-ta-hazumi-ni-ta-hyoushi-ni-meaning/"
+  },
+  {
+    "no": 175,
+    "romaji": "ta koto ni suru / ta koto ni naru",
+    "pattern": "たことにする / たことになる",
+    "meaningEn": "pretend to; see things as untrue; contrary to the truth ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%81%93%e3%81%a8%e3%81%ab%e3%81%99%e3%82%8b-%e3%81%9f%e3%81%93%e3%81%a8%e3%81%ab%e3%81%aa%e3%82%8b-ta-koto-ni-suru-ta-koto-ni-naru-meaning/"
+  },
+  {
+    "no": 176,
+    "romaji": "ta tokoro de",
+    "pattern": "たところで",
+    "meaningEn": "even if; no matter (who, what, when, where, why, how)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%81%a8%e3%81%93%e3%82%8d%e3%81%a7-ta-tokoro-de-meaning/"
+  },
+  {
+    "no": 177,
+    "romaji": "ta tsumori wa nai",
+    "pattern": "たつもりはない",
+    "meaningEn": "have no intention to / didn't mean to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%81%a4%e3%82%82%e3%82%8a%e3%81%af%e3%81%aa%e3%81%84-ta-tsumori-wa-nai-meaning/"
+  },
+  {
+    "no": 178,
+    "romaji": "tada~nomi da",
+    "pattern": "ただ～のみだ",
+    "meaningEn": "all we can do is; can do nothing but; only ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%81%a0%ef%bd%9e%e3%81%ae%e3%81%bf%e3%81%a0-tada-nomi-da-meaning/"
+  },
+  {
+    "no": 179,
+    "romaji": "tameshi ga nai",
+    "pattern": "ためしがない",
+    "meaningEn": "is never the case; has never happened; I have never seen or heard of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%82%81%e3%81%97%e3%81%8c%e3%81%aa%e3%81%84-tameshi-ga-nai-meaning/"
+  },
+  {
+    "no": 180,
+    "romaji": "tara saigo / taga saigo",
+    "pattern": "たら最後 / たが最後（たらさいご / たがさいご）",
+    "meaningEn": "if you do... negative result",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%82%89%e6%9c%80%e5%be%8c-%e3%81%9f%e3%81%8c%e6%9c%80%e5%be%8c-%e3%81%9f%e3%82%89%e3%81%95%e3%81%84%e3%81%94-tara-saigo-meaning/"
+  },
+  {
+    "no": 181,
+    "romaji": "tara~tade",
+    "pattern": "たら～たで",
+    "meaningEn": "if / in the case... of course / should ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%82%89%ef%bd%9e%e3%81%9f%e3%81%a7-tara-tade-meaning/"
+  },
+  {
+    "no": 182,
+    "romaji": "tara~tokoro da",
+    "pattern": "たら～ところだ",
+    "meaningEn": "if... (counterfactual condition), then would be ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%82%89%ef%bd%9e%e3%81%a8%e3%81%93%e3%82%8d%e3%81%a0-tara-tokoro-da-meaning/"
+  },
+  {
+    "no": 183,
+    "romaji": "tari tomo",
+    "pattern": "たりとも",
+    "meaningEn": "not even; not any ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%82%8a%e3%81%a8%e3%82%82%ef%bd%9e%e3%81%aa%e3%81%84-tari-tomo-nai-meaning/"
+  },
+  {
+    "no": 184,
+    "romaji": "taru mono / taru",
+    "pattern": "たるもの / たる",
+    "meaningEn": "(those) who are; (that) which is; in the capacity of ... should ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%82%8b%e3%82%82%e3%81%ae-%e3%81%9f%e3%82%8b-taru-mono-meaning/"
+  },
+  {
+    "no": 185,
+    "romaji": "te kanawanai",
+    "pattern": "て敵わない（てかなわない）",
+    "meaningEn": "can't bear to; unable to; troublesome to; can’t stand to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e6%95%b5%e3%82%8f%e3%81%aa%e3%81%84-%e3%81%a6%e3%81%8b%e3%81%aa%e3%82%8f%e3%81%aa%e3%81%84-te-kanawanai-meaning/"
+  },
+  {
+    "no": 186,
+    "romaji": "te kara to iu mono",
+    "pattern": "てからというもの",
+    "meaningEn": "ever since ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%81%8b%e3%82%89%e3%81%a8%e3%81%84%e3%81%86%e3%82%82%e3%81%ae-te-kara-to-iu-mono-meaning/"
+  },
+  {
+    "no": 187,
+    "romaji": "te miseru",
+    "pattern": "てみせる",
+    "meaningEn": "I’ll do my best; I'll definitely do; I'll show you ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%81%bf%e3%81%9b%e3%82%8b-te-miseru-meaning/"
+  },
+  {
+    "no": 188,
+    "romaji": "te shikaru beki da",
+    "pattern": "てしかるべきだ",
+    "meaningEn": "should; appropriate; it is natural to do ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%81%97%e3%81%8b%e3%82%8b%e3%81%b9%e3%81%8d%e3%81%a0-te-shikaru-beki-da-meaning/"
+  },
+  {
+    "no": 189,
+    "romaji": "te sumu koto dewa nai",
+    "pattern": "て済むことではない（てすむことではない）",
+    "meaningEn": "~ is not enough to solve the problem; cannot be resolved by ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e6%b8%88%e3%82%80%e3%81%93%e3%81%a8%e3%81%a7%e3%81%af%e3%81%aa%e3%81%84-te-sumu-koto-dewa-nai-meaning/"
+  },
+  {
+    "no": 190,
+    "romaji": "te yamanai",
+    "pattern": "てやまない",
+    "meaningEn": "always; never stop; can’t help but ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%82%84%e3%81%be%e3%81%aa%e3%81%84-te-yamanai-meaning/"
+  },
+  {
+    "no": 191,
+    "romaji": "temae",
+    "pattern": "手前（てまえ）",
+    "meaningEn": "considering; before; in front of; one’s standpoint",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e6%89%8b%e5%89%8d-%e3%81%a6%e3%81%be%e3%81%88-temae-meaning/"
+  },
+  {
+    "no": 192,
+    "romaji": "temo dou ni mo naranai",
+    "pattern": "てもどうにもならない",
+    "meaningEn": "it's no use; can't do anything",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%82%82%e3%81%a9%e3%81%86%e3%81%ab%e3%82%82%e3%81%aa%e3%82%89%e3%81%aa%e3%81%84-temo-dou-ni-mo-naranai-meaning/"
+  },
+  {
+    "no": 193,
+    "romaji": "temo sashitsukaenai",
+    "pattern": "ても差し支えない（てもさしつかえない）",
+    "meaningEn": "can ~; it’s okay if ~ (indicates permission or compromise)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%82%82%e5%b7%ae%e3%81%97%e6%94%af%e3%81%88%e3%81%aa%e3%81%84-%e3%81%a6%e3%82%82%e3%81%95%e3%81%97%e3%81%a4%e3%81%8b%e3%81%88%e3%81%aa%e3%81%84-temo-sashitsukaenai-meaning/"
+  },
+  {
+    "no": 194,
+    "romaji": "temo shiranai",
+    "pattern": "ても知らない（てもしらない）",
+    "meaningEn": "if (you) continue... you'll end up / I don't care about it",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%82%82%e7%9f%a5%e3%82%89%e3%81%aa%e3%81%84-temo-shiranai-meaning/"
+  },
+  {
+    "no": 195,
+    "romaji": "to aimatte",
+    "pattern": "と相まって（とあいまって）",
+    "meaningEn": "together with..., more; because of the influence of..., more ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e7%9b%b8%e3%81%be%e3%81%a3%e3%81%a6-%e3%81%a8%e3%81%82%e3%81%84%e3%81%be%e3%81%a3%e3%81%a6-to-aimatte-meaning/"
+  },
+  {
+    "no": 196,
+    "romaji": "to areba",
+    "pattern": "とあれば",
+    "meaningEn": "if it is the case that; if ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%82%e3%82%8c%e3%81%b0-to-areba-meaning/"
+  },
+  {
+    "no": 197,
+    "romaji": "to atte",
+    "pattern": "とあって",
+    "meaningEn": "due to the fact that; because of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%82%e3%81%a3%e3%81%a6-to-atte-meaning/"
+  },
+  {
+    "no": 198,
+    "romaji": "to bakari ni",
+    "pattern": "とばかりに",
+    "meaningEn": "as if to say; as though~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%b0%e3%81%8b%e3%82%8a%e3%81%ab-to-bakari-ni-meaning/"
+  },
+  {
+    "no": 199,
+    "romaji": "to ie domo",
+    "pattern": "といえども",
+    "meaningEn": "even if; even though; despite ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%88%e3%81%a9%e3%82%82-to-ie-domo-meaning/"
+  },
+  {
+    "no": 200,
+    "romaji": "to ienaku mo nai",
+    "pattern": "と言えなくもない（といえなくもない）",
+    "meaningEn": "one can even say that; it can also be said that ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e8%a8%80%e3%81%88%e3%81%aa%e3%81%8f%e3%82%82%e3%81%aa%e3%81%84-to-ienaku-mo-nai-meaning/"
+  },
+  {
+    "no": 201,
+    "romaji": "to ii~to ii",
+    "pattern": "といい～といい",
+    "meaningEn": "both ... and; not only ... also; whether it be ... or ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%84%ef%bd%9e%e3%81%a8%e3%81%84%e3%81%84-to-ii-to-ii-meaning/"
+  },
+  {
+    "no": 202,
+    "romaji": "to ittara nai",
+    "pattern": "といったらない",
+    "meaningEn": "extremely; very; nothing more ... than this; as ... as it could possibly be",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%a3%e3%81%9f%e3%82%89%e3%81%aa%e3%81%84-to-ittara-nai-meaning/"
+  },
+  {
+    "no": 203,
+    "romaji": "to iu",
+    "pattern": "という",
+    "meaningEn": "all; every single ~ (no exceptions)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/n1-%e3%81%a8%e3%81%84%e3%81%86-to-iu-meaning-all-every/"
+  },
+  {
+    "no": 204,
+    "romaji": "to iu ka~to iu ka",
+    "pattern": "というか～というか",
+    "meaningEn": "or rather; or perhaps I should say; I mean ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%86%e3%81%8b%ef%bd%9e%e3%81%a8%e3%81%84%e3%81%86%e3%81%8b-to-iu-ka-to-iu-ka-meaning/"
+  },
+  {
+    "no": 205,
+    "romaji": "to iu mono",
+    "pattern": "というもの",
+    "meaningEn": "during; for; since; over a period of time",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%86%e3%82%82%e3%81%ae-to-iu-mono-meaning/"
+  },
+  {
+    "no": 206,
+    "romaji": "to iu tokoro da / to itta tokoro da",
+    "pattern": "というところだ / といったところだ",
+    "meaningEn": "at the most; no more than​; at best; roughly; about ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%86%e3%81%a8%e3%81%93%e3%82%8d%e3%81%a0-%e3%81%a8%e3%81%84%e3%81%a3%e3%81%9f%e3%81%a8%e3%81%93%e3%82%8d%e3%81%a0-iu-tokoro-da-meaning/"
+  },
+  {
+    "no": 207,
+    "romaji": "to iu wake da",
+    "pattern": "というわけだ",
+    "meaningEn": "that's why; no wonder; this means; it is the case that ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%86%e3%82%8f%e3%81%91%e3%81%a0-to-iu-wake-da-%e3%81%a8%e3%81%84%e3%81%86%e3%82%8f%e3%81%91%e3%81%a7%e3%81%99-meaning/"
+  },
+  {
+    "no": 208,
+    "romaji": "to iu wake dewa nai",
+    "pattern": "というわけではない",
+    "meaningEn": "it’s not that; it doesn’t mean that ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%86%e3%82%8f%e3%81%91%e3%81%a7%e3%81%af%e3%81%aa%e3%81%84-to-iu-wake-dewa-nai-meaning/"
+  },
+  {
+    "no": 209,
+    "romaji": "to iwazu~to iwazu",
+    "pattern": "といわず～といわず",
+    "meaningEn": "both; not only A or B, but (overall) ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%82%8f%e3%81%9a%ef%bd%9e%e3%81%a8%e3%81%84%e3%82%8f%e3%81%9a-to-iwazu-to-iwazu-meaning/"
+  },
+  {
+    "no": 210,
+    "romaji": "to kiteiru",
+    "pattern": "ときている",
+    "meaningEn": "because of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%8d%e3%81%a6%e3%81%84%e3%82%8b-to-kiteiru-meaning/"
+  },
+  {
+    "no": 211,
+    "romaji": "to miru to",
+    "pattern": "とみると",
+    "meaningEn": "as soon as one realizes ..., then ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%bf%e3%82%8b%e3%81%a8-to-miru-to-meaning/"
+  },
+  {
+    "no": 212,
+    "romaji": "to miru ya",
+    "pattern": "と見るや（とみるや）",
+    "meaningEn": "at the sight of; upon seeing; after confirming ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e8%a6%8b%e3%82%8b%e3%82%84-%e3%81%a8%e3%81%bf%e3%82%8b%e3%82%84-to-miru-ya-meaning/"
+  },
+  {
+    "no": 213,
+    "romaji": "to naru to / to nareba",
+    "pattern": "となると / となれば",
+    "meaningEn": "when it comes to; in such a case; if that happens",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%aa%e3%82%8b%e3%81%a8-%e3%81%a8%e3%81%aa%e3%82%8c%e3%81%b0-%e3%81%a8%e3%81%aa%e3%81%a3%e3%81%9f%e3%82%89-to-naru-to-nareba-meaning/"
+  },
+  {
+    "no": 214,
+    "romaji": "to sareru",
+    "pattern": "とされる",
+    "meaningEn": "is considered to; it is said that ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%95%e3%82%8c%e3%82%8b-%e3%81%a8%e3%81%95%e3%82%8c%e3%81%a6%e3%81%84%e3%82%8b-to-sareru-meaning/"
+  },
+  {
+    "no": 215,
+    "romaji": "tokitara",
+    "pattern": "ときたら",
+    "meaningEn": "when it comes to; concerning ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%8d%e3%81%9f%e3%82%89-tokitara-meaning/"
+  },
+  {
+    "no": 216,
+    "romaji": "tokoro o",
+    "pattern": "ところを",
+    "meaningEn": "although (it is a certain time/condition); even though normally",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%93%e3%82%8d%e3%82%92-tokoro-o-meaning/"
+  },
+  {
+    "no": 217,
+    "romaji": "tomo arou mono ga",
+    "pattern": "ともあろうものが",
+    "meaningEn": "of all people (expression showing surprise at a high standing person's misbehavior)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%82%82%e3%81%82%e3%82%8d%e3%81%86%e3%82%82%e3%81%ae%e3%81%8c-tomo-arou-mono-ga-meaning/"
+  },
+  {
+    "no": 218,
+    "romaji": "tomo naku / tomo nashi ni",
+    "pattern": "ともなく / ともなしに",
+    "meaningEn": "somehow; without knowing; without thinking; unconsciously​ ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%82%82%e3%81%aa%e3%81%8f-%e3%81%a8%e3%82%82%e3%81%aa%e3%81%97%e3%81%ab-tomo-naku-meaning/"
+  },
+  {
+    "no": 219,
+    "romaji": "tomo sureba",
+    "pattern": "ともすれば",
+    "meaningEn": "apt to (do); tend to; liable to; prone to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%82%82%e3%81%99%e3%82%8c%e3%81%b0-tomo-sureba-meaning/"
+  },
+  {
+    "no": 220,
+    "romaji": "tomo~tomo",
+    "pattern": "とも～とも",
+    "meaningEn": "unable to draw a conclusion; unable to judge",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%82%82%ef%bd%9e%e3%81%a8%e3%82%82-tomo-tomo-meaning/"
+  },
+  {
+    "no": 221,
+    "romaji": "toriwake",
+    "pattern": "とりわけ",
+    "meaningEn": "especially; above all ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%82%8a%e3%82%8f%e3%81%91-toriwake-meaning/"
+  },
+  {
+    "no": 222,
+    "romaji": "toshita koto ga",
+    "pattern": "としたことが",
+    "meaningEn": "of all people, who would have thought?",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%97%e3%81%9f%e3%81%93%e3%81%a8%e3%81%8c-toshita-koto-ga-meaning/"
+  },
+  {
+    "no": 223,
+    "romaji": "tossa ni",
+    "pattern": "とっさに",
+    "meaningEn": "at once; right away; promptly",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%a3%e3%81%95%e3%81%ab-tossa-ni-meaning/"
+  },
+  {
+    "no": 224,
+    "romaji": "tote",
+    "pattern": "とて",
+    "meaningEn": "even; even if/though ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%a6-tote-particle-meaning/"
+  },
+  {
+    "no": 225,
+    "romaji": "towa",
+    "pattern": "とは",
+    "meaningEn": "I didn't know; I was surprised that; the fact that ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%af-towa-meaning/"
+  },
+  {
+    "no": 226,
+    "romaji": "towa ie",
+    "pattern": "とはいえ",
+    "meaningEn": "though; although; be that as it may; nonetheless",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%af%e3%81%84%e3%81%88-towa-ie-meaning/"
+  },
+  {
+    "no": 227,
+    "romaji": "towa kurabemono ni naranai",
+    "pattern": "とは比べものにならない（とはくらべものにならない）",
+    "meaningEn": "can't compare with ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%af%e6%af%94%e3%81%b9%e3%82%82%e3%81%ae%e3%81%ab%e3%81%aa%e3%82%89%e3%81%aa%e3%81%84-towa-kurabemono-ni-naranai-meaning/"
+  },
+  {
+    "no": 228,
+    "romaji": "towa utte kawatte / to wa utte kawari",
+    "pattern": "とは打って変わって / とは打って変わり（とはうってかわって / とはうってかわり）",
+    "meaningEn": "unlike; totally different; very different from ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%af%e6%89%93%e3%81%a3%e3%81%a6%e5%a4%89%e3%82%8f%e3%81%a3%e3%81%a6-%e3%81%a8%e3%81%af%e6%89%93%e3%81%a3%e3%81%a6%e5%a4%89%e3%82%8f%e3%82%8a-towa-utte-kawatte-meaning/"
+  },
+  {
+    "no": 229,
+    "romaji": "tsu~tsu",
+    "pattern": "つ～つ",
+    "meaningEn": "and ~ (indicates two contrasting actions)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a4%ef%bd%9e%e3%81%a4-tsu-tsu-meaning/"
+  },
+  {
+    "no": 230,
+    "romaji": "tsukusu",
+    "pattern": "尽くす（つくす）",
+    "meaningEn": "to use up (completely without anything remaining); to exhaust; to run out of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e5%b0%bd%e3%81%8f%e3%81%99-%e3%81%a4%e3%81%8f%e3%81%99-tsukusu-meaning/"
+  },
+  {
+    "no": 231,
+    "romaji": "tteba / ttara",
+    "pattern": "ってば / ったら",
+    "meaningEn": "speaking of; I told you already; come on (annoyance / dissatisfaction)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a3%e3%81%a6%e3%81%b0-%e3%81%a3%e3%81%9f%e3%82%89-tteba-ttara-meaning/"
+  },
+  {
+    "no": 232,
+    "romaji": "uchi ni hairanai",
+    "pattern": "うちに入らない（うちにはいらない）",
+    "meaningEn": "not really; can't be regarded as ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%86%e3%81%a1%e3%81%ab%e5%85%a5%e3%82%89%e3%81%aa%e3%81%84-uchi-ni-hairanai-meaning/"
+  },
+  {
+    "no": 233,
+    "romaji": "wa",
+    "pattern": "わ",
+    "meaningEn": "feminine sentence ending particle",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%8f-wa-particle-meaning/"
+  },
+  {
+    "no": 234,
+    "romaji": "wa dou de are",
+    "pattern": "はどうであれ",
+    "meaningEn": "however; whatever​ ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%af%e3%81%a9%e3%81%86%e3%81%a7%e3%81%82%e3%82%8c-wa-dou-de-are-meaning/"
+  },
+  {
+    "no": 235,
+    "romaji": "wa oroka",
+    "pattern": "はおろか",
+    "meaningEn": "let alone; not to mention; needless to say ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%af%e3%81%8a%e3%82%8d%e3%81%8b-wa-oroka-meaning/"
+  },
+  {
+    "no": 236,
+    "romaji": "wa sateoki",
+    "pattern": "はさておき",
+    "meaningEn": "setting aside ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%af%e3%81%95%e3%81%a6%e3%81%8a%e3%81%8d-wa-sateoki-meaning/"
+  },
+  {
+    "no": 237,
+    "romaji": "wa socchinoke de / o socchinoke de",
+    "pattern": "はそっちのけで / をそっちのけで",
+    "meaningEn": "ignoring (one thing) for (another)​​; instead of ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%af%e3%81%9d%e3%81%a3%e3%81%a1%e3%81%ae%e3%81%91%e3%81%a7-%e3%82%92%e3%81%9d%e3%81%a3%e3%81%a1%e3%81%ae%e3%81%91%e3%81%a7-wa-socchinoke-de-meaning/"
+  },
+  {
+    "no": 238,
+    "romaji": "wa~wade",
+    "pattern": "わ〜わで",
+    "meaningEn": "and (listing negative things happening at the same time)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%8f%e3%80%9c%e3%82%8f%e3%81%a7-wa-wade-meaning/"
+  },
+  {
+    "no": 239,
+    "romaji": "ya ina ya",
+    "pattern": "や否や（やいなや）",
+    "meaningEn": "as soon as; the moment ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%84%e5%90%a6%e3%82%84-ya-ina-ya-meaning/"
+  },
+  {
+    "no": 240,
+    "romaji": "ya shinai",
+    "pattern": "やしない",
+    "meaningEn": "should do, but don't; absolutely not; there's no way ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%84%e3%81%97%e3%81%aa%e3%81%84-ya-shinai-meaning/"
+  },
+  {
+    "no": 241,
+    "romaji": "yare~yare",
+    "pattern": "やれ～やれ",
+    "meaningEn": "pattern to give two representative examples (usually negative)",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%84%e3%82%8c%ef%bd%9e%e3%82%84%e3%82%8c-yare-yare-meaning/"
+  },
+  {
+    "no": 242,
+    "romaji": "you ga / you to",
+    "pattern": "ようが / ようと",
+    "meaningEn": "even if; no matter how/what ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%88%e3%81%86%e3%81%8c-%e3%82%88%e3%81%86%e3%81%a8-you-ga-you-to-meaning/"
+  },
+  {
+    "no": 243,
+    "romaji": "you ga~you ga / you to~you to",
+    "pattern": "ようが～ようが / ようと～ようと",
+    "meaningEn": "no matter; whether; even if [A] or [B]",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%88%e3%81%86%e3%81%8c%ef%bd%9e%e3%82%88%e3%81%86%e3%81%8c-%e3%82%88%e3%81%86%e3%81%a8%ef%bd%9e%e3%82%88%e3%81%86%e3%81%a8-you-ga-you-to-meaning/"
+  },
+  {
+    "no": 244,
+    "romaji": "you ni yotte wa / you dewa",
+    "pattern": "ようによっては / ようでは",
+    "meaningEn": "depending on the way; depending on how; according to how ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%88%e3%81%86%e3%81%ab%e3%82%88%e3%81%a3%e3%81%a6%e3%81%af-%e3%82%88%e3%81%86%e3%81%a7%e3%81%af-you-ni-yotte-wa-you-dewa-meaning/"
+  },
+  {
+    "no": 245,
+    "romaji": "you nimo~nai",
+    "pattern": "ようにも～ない",
+    "meaningEn": "even if I wanted to… I couldn’t ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%88%e3%81%86%e3%81%ab%e3%82%82%ef%bd%9e%e3%81%aa%e3%81%84-you-nimo-nai-meaning/"
+  },
+  {
+    "no": 246,
+    "romaji": "you to~mai to / you ga~mai ga",
+    "pattern": "ようと～まいと / ようが～まいが",
+    "meaningEn": "whether or not; regardless",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%88%e3%81%86%e3%81%a8%ef%bd%9e%e3%81%be%e3%81%84%e3%81%a8-%e3%82%88%e3%81%86%e3%81%8c%ef%bd%9e%e3%81%be%e3%81%84%e3%81%8c-you-to-mai-to-you-ga-mai-ga-meaning/"
+  },
+  {
+    "no": 247,
+    "romaji": "yue ni",
+    "pattern": "ゆえに",
+    "meaningEn": "therefore; consequently​; because of; due to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e6%95%85%e3%81%ab-%e3%82%86%e3%81%88%e3%81%ab-yue-ni-meaning/"
+  },
+  {
+    "no": 248,
+    "romaji": "zo / ze",
+    "pattern": "ぞ・ぜ",
+    "meaningEn": "ending particle; adds force or indicates command",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9e-%e3%81%9c-zo-ze-ending-particle-meaning/"
+  },
+  {
+    "no": 249,
+    "romaji": "zu jimai",
+    "pattern": "ずじまい",
+    "meaningEn": "ended up not doing ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9a%e3%81%98%e3%81%be%e3%81%84-zu-jimai-meaning/"
+  },
+  {
+    "no": 250,
+    "romaji": "zu niwa okanai / nai dewa okanai",
+    "pattern": "ずにはおかない / ないではおかない",
+    "meaningEn": "will definitely/certainly do something; cannot not ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9a%e3%81%ab%e3%81%af%e3%81%8a%e3%81%8b%e3%81%aa%e3%81%84-%e3%81%aa%e3%81%84%e3%81%a7%e3%81%af%e3%81%8a%e3%81%8b%e3%81%aa%e3%81%84-zu-niwa-okanai-meaning/"
+  },
+  {
+    "no": 251,
+    "romaji": "zu niwa sumanai / nai dewa sumanai",
+    "pattern": "ずには済まない / ないでは済まない（ずにはすまない / ないではすまない）",
+    "meaningEn": "must; will definitely; can’t help but to ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9a%e3%81%ab%e3%81%af%e6%b8%88%e3%81%be%e3%81%aa%e3%81%84-%e3%81%aa%e3%81%84%e3%81%a7%e3%81%af%e6%b8%88%e3%81%be%e3%81%aa%e3%81%84-zu-niwa-sumanai-nai-dewa-sumanai-meaning/"
+  },
+  {
+    "no": 252,
+    "romaji": "zu tomo",
+    "pattern": "ずとも",
+    "meaningEn": "even without doing; even without being​ ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9a%e3%81%a8%e3%82%82-zu-tomo-meaning/"
+  },
+  {
+    "no": 253,
+    "romaji": "zukume",
+    "pattern": "ずくめ",
+    "meaningEn": "completely; entirely; nothing but ~",
+    "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9a%e3%81%8f%e3%82%81-zukume-meaning/"
+  }
+]

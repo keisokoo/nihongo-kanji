@@ -680,3 +680,272 @@ export async function generateExampleExplanation(
     "example-explanation",
   );
 }
+
+// ─── generateGrammarItemExplanation ─────────────────────────────────────────
+
+const GRAMMAR_ITEM_EXPLANATION_SCHEMA = {
+  type: "object",
+  properties: {
+    whenToUse: { type: "string" },
+    comparison: { type: "string" },
+    commonMistakes: { type: "string" },
+    takeaways: { type: "string" },
+  },
+  required: ["whenToUse", "comparison", "commonMistakes", "takeaways"],
+  additionalProperties: false,
+} as const;
+
+const GRAMMAR_ITEM_EXPLANATION_SYSTEM_PROMPT = `You are a Japanese grammar tutor for Korean speakers studying JLPT. Given a Japanese grammar pattern with its short Korean meanings and a basic explanation, write a deeper explanation IN KOREAN — beyond what the basic explanation already says.
+
+Output JSON with these four fields, ALL written in Korean (Japanese terms in original kana/kanji are fine):
+
+{
+  "whenToUse": "<2-4 sentences. Concrete situations: who says it, in what register (정중/반말/문어/구어), what topic. Give 1-2 quick scene examples in 「」 quotes if helpful.>",
+  "comparison": "<2-4 sentences. Compare with similar/easily-confused patterns (e.g. 「ばかり」 vs 「だけ」, 「は」 vs 「が」). Cite specific patterns with 「」. If no clear comparison exists, write '비교할 만한 표현 없음.'>",
+  "commonMistakes": "<2-4 sentences. Typical learner errors: wrong particle, wrong form, wrong context. Give a concrete '✗ wrong → ✓ right' if useful.>",
+  "takeaways": "<2-3 sentences. Memorable JLPT-relevant points to lock in. Concrete and actionable, not generic study advice.>"
+}
+
+CONSTRAINTS:
+- Korean explanation throughout; quote Japanese in 「」 when citing.
+- Don't repeat the basic explanation verbatim — go DEEPER.
+- Skip sycophancy and meta-commentary.
+- If a section has truly nothing to add, say so briefly (don't pad).`;
+
+export type GenerateGrammarItemExplanationInput = {
+  pattern: string;
+  meaningsKo: string[];
+  /** the existing short explanation (don't repeat). */
+  baseExplanation: string;
+  formation: string | null;
+  level: string;
+};
+
+export type GenerateGrammarItemExplanationOutput = {
+  whenToUse: string;
+  comparison: string;
+  commonMistakes: string;
+  takeaways: string;
+};
+
+function isGrammarItemExplanationOutput(
+  x: unknown,
+): x is GenerateGrammarItemExplanationOutput {
+  if (!x || typeof x !== "object") return false;
+  const o = x as Record<string, unknown>;
+  return (
+    typeof o.whenToUse === "string" &&
+    typeof o.comparison === "string" &&
+    typeof o.commonMistakes === "string" &&
+    typeof o.takeaways === "string"
+  );
+}
+
+export async function generateGrammarItemExplanation(
+  input: GenerateGrammarItemExplanationInput,
+  tier: Tier = "default",
+): Promise<{
+  result: GenerateGrammarItemExplanationOutput;
+  modelUsed: string;
+  usage: Usage;
+}> {
+  const userMessage = [
+    `Pattern: ${input.pattern}`,
+    `Korean meanings: ${input.meaningsKo.join(", ")}`,
+    `JLPT Level: ${input.level}`,
+    input.formation ? `Formation: ${input.formation}` : null,
+    `Base explanation (DO NOT repeat — go deeper):\n${input.baseExplanation}`,
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  return withFallback<GenerateGrammarItemExplanationOutput>(
+    tier,
+    isGrammarItemExplanationOutput,
+    (resolved, model) =>
+      callJson(
+        resolved,
+        model,
+        GRAMMAR_ITEM_EXPLANATION_SYSTEM_PROMPT,
+        userMessage,
+        GRAMMAR_ITEM_EXPLANATION_SCHEMA,
+      ),
+    "grammar-item-explanation",
+  );
+}
+
+// ─── generateGrammarExampleExplanation ──────────────────────────────────────
+
+const GRAMMAR_EXAMPLE_EXPLANATION_SYSTEM_PROMPT = `You are a Japanese grammar tutor for Korean speakers studying JLPT. Given a Japanese example sentence (which uses a specific grammar pattern) with its Korean translation, explain (IN KOREAN) the whole sentence across four lenses.
+
+Output JSON with these four fields, ALL written in Korean:
+
+{
+  "nuance": "<2-4 sentences. Japanese expressions and nuances that don't map 1:1 to Korean. Where the Korean translation simplifies, what's actually happening in the Japanese. Cite specific words/particles in 「」.>",
+  "grammar": "<2-4 sentences. Break down notable grammar with focus on how the target pattern is used here. Particles, verb forms, conditional/passive/causative if present. 1-3 most instructive points.>",
+  "pronunciation": "<1-3 sentences. ONLY if the sentence has interesting reading phenomena: 연탁, 음편화, 숙자훈, 아테지, irregular kanji readings. Otherwise '특이사항 없음.'>",
+  "takeaways": "<2-3 sentences. Idioms, useful patterns, JLPT-relevant memorables. Concrete.>"
+}
+
+CONSTRAINTS:
+- Korean throughout; quote Japanese in 「」.
+- Be specific to THIS sentence — no generic advice.
+- The "focus pattern" is the grammar form being studied — explain how it's used here, but explain the whole SENTENCE, not just the pattern.
+- Skip sycophancy.`;
+
+export type GenerateGrammarExampleExplanationInput = {
+  sentence: string;
+  translationKo: string;
+  pattern: string;
+  patternMeaning: string;
+  level: string;
+};
+
+export type GenerateGrammarExampleExplanationOutput = {
+  nuance: string;
+  grammar: string;
+  pronunciation: string;
+  takeaways: string;
+};
+
+function isGrammarExampleExplanationOutput(
+  x: unknown,
+): x is GenerateGrammarExampleExplanationOutput {
+  if (!x || typeof x !== "object") return false;
+  const o = x as Record<string, unknown>;
+  return (
+    typeof o.nuance === "string" &&
+    typeof o.grammar === "string" &&
+    typeof o.pronunciation === "string" &&
+    typeof o.takeaways === "string"
+  );
+}
+
+export async function generateGrammarExampleExplanation(
+  input: GenerateGrammarExampleExplanationInput,
+  tier: Tier = "default",
+): Promise<{
+  result: GenerateGrammarExampleExplanationOutput;
+  modelUsed: string;
+  usage: Usage;
+}> {
+  const userMessage = [
+    `Sentence (Japanese): ${input.sentence}`,
+    `Translation (Korean): ${input.translationKo}`,
+    `Focus grammar pattern: ${input.pattern} (${input.patternMeaning})`,
+    `JLPT Level: ${input.level}`,
+  ].join("\n");
+
+  return withFallback<GenerateGrammarExampleExplanationOutput>(
+    tier,
+    isGrammarExampleExplanationOutput,
+    (resolved, model) =>
+      callJson(
+        resolved,
+        model,
+        GRAMMAR_EXAMPLE_EXPLANATION_SYSTEM_PROMPT,
+        userMessage,
+        EXAMPLE_EXPLANATION_SCHEMA,
+      ),
+    "grammar-example-explanation",
+  );
+}
+
+// ─── generateGrammarQuizExplanation ─────────────────────────────────────────
+
+const GRAMMAR_QUIZ_EXPLANATION_SCHEMA = {
+  type: "object",
+  properties: {
+    promptAnalysis: { type: "string" },
+    correctAnswer: { type: "string" },
+    whyCorrect: { type: "string" },
+    whyOthersWrong: { type: "string" },
+  },
+  required: ["promptAnalysis", "correctAnswer", "whyCorrect", "whyOthersWrong"],
+  additionalProperties: false,
+} as const;
+
+const GRAMMAR_QUIZ_EXPLANATION_SYSTEM_PROMPT = `You are a Japanese grammar tutor for Korean speakers studying JLPT. Given a multiple-choice grammar quiz with its correct answer and distractors, explain (IN KOREAN) why the answer is correct and the distractors aren't.
+
+Output JSON with these four fields, ALL written in Korean:
+
+{
+  "promptAnalysis": "<2-4 sentences. Analyze the prompt/example sentence: what it means, what's being tested, what the structure reveals. If a blank, what slot is being filled. Cite Japanese in 「」.>",
+  "correctAnswer": "<1 sentence. Restate the correct answer clearly with the Japanese form quoted in 「」 and a brief Korean gloss.>",
+  "whyCorrect": "<2-3 sentences. Why this answer fits — particle role / verb form / pattern semantics — pointing to the specific reason it works here.>",
+  "whyOthersWrong": "<2-4 sentences. Brief reasons each wrong choice fails. Use ✗ markers + 「Japanese」 form. Combine if multiple share the same kind of error.>"
+}
+
+CONSTRAINTS:
+- Korean throughout; quote Japanese in 「」.
+- Be specific to THIS quiz — concrete, not generic.
+- 'whyOthersWrong' should help the learner avoid that exact mistake next time.
+- Skip sycophancy.`;
+
+export type GenerateGrammarQuizExplanationInput = {
+  /** "conjugation" | "particle_blank" | "pattern_blank" | "form_meaning" | "ko_to_jp_form" */
+  quizType: string;
+  /** Plain-text representation of the question (assembled by caller). */
+  promptText: string;
+  /** Plain-text correct answer. */
+  answer: string;
+  /** Plain-text distractors. */
+  distractors: string[];
+  /** Grammar pattern this quiz is testing. */
+  pattern: string;
+  patternMeaning: string;
+  level: string;
+};
+
+export type GenerateGrammarQuizExplanationOutput = {
+  promptAnalysis: string;
+  correctAnswer: string;
+  whyCorrect: string;
+  whyOthersWrong: string;
+};
+
+function isGrammarQuizExplanationOutput(
+  x: unknown,
+): x is GenerateGrammarQuizExplanationOutput {
+  if (!x || typeof x !== "object") return false;
+  const o = x as Record<string, unknown>;
+  return (
+    typeof o.promptAnalysis === "string" &&
+    typeof o.correctAnswer === "string" &&
+    typeof o.whyCorrect === "string" &&
+    typeof o.whyOthersWrong === "string"
+  );
+}
+
+export async function generateGrammarQuizExplanation(
+  input: GenerateGrammarQuizExplanationInput,
+  tier: Tier = "default",
+): Promise<{
+  result: GenerateGrammarQuizExplanationOutput;
+  modelUsed: string;
+  usage: Usage;
+}> {
+  const userMessage = [
+    `Grammar pattern: ${input.pattern} (${input.patternMeaning})`,
+    `JLPT Level: ${input.level}`,
+    `Quiz type: ${input.quizType}`,
+    `Prompt:\n${input.promptText}`,
+    `Correct answer: ${input.answer}`,
+    `Distractors:`,
+    ...input.distractors.map((d) => `  - ${d}`),
+  ].join("\n");
+
+  return withFallback<GenerateGrammarQuizExplanationOutput>(
+    tier,
+    isGrammarQuizExplanationOutput,
+    (resolved, model) =>
+      callJson(
+        resolved,
+        model,
+        GRAMMAR_QUIZ_EXPLANATION_SYSTEM_PROMPT,
+        userMessage,
+        GRAMMAR_QUIZ_EXPLANATION_SCHEMA,
+      ),
+    "grammar-quiz-explanation",
+  );
+}

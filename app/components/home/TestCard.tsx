@@ -4,6 +4,7 @@ import { Spinner } from "~/components/Spinner";
 import { ConfirmModal } from "~/components/ConfirmModal";
 import type { HomeTest } from "~/lib/idb/home";
 import { deleteWordTest } from "~/lib/idb/word-test";
+import { deleteGrammarTest } from "~/lib/idb/grammar-test";
 
 export function TestCard({ test }: { test: HomeTest }) {
   const revalidator = useRevalidator();
@@ -14,12 +15,18 @@ export function TestCard({ test }: { test: HomeTest }) {
   const pct =
     test.total > 0 ? Math.round((test.answered / test.total) * 100) : 0;
 
+  const isGrammar = test.testKind === "grammar";
+  const linkTo = isGrammar
+    ? `/grammar-test/${test.id}`
+    : `/word-test/${test.id}`;
+
   async function confirmDelete() {
     setShowConfirm(false);
     setDeleting(true);
     setError(null);
     try {
-      await deleteWordTest(test.id);
+      if (isGrammar) await deleteGrammarTest(test.id);
+      else await deleteWordTest(test.id);
       revalidator.revalidate();
     } catch (err) {
       const message = err instanceof Error ? err.message : "failed";
@@ -31,7 +38,7 @@ export function TestCard({ test }: { test: HomeTest }) {
   return (
     <div className="group relative">
       <Link
-        to={`/word-test/${test.id}`}
+        to={linkTo}
         prefetch="intent"
         className={`block rounded-xl border border-neutral-200 bg-white p-5 transition hover:border-neutral-400 hover:shadow-sm dark:border-neutral-800 dark:bg-neutral-900 dark:hover:border-neutral-600 ${
           deleting ? "pointer-events-none opacity-50" : ""
@@ -41,15 +48,7 @@ export function TestCard({ test }: { test: HomeTest }) {
           <span className="text-lg font-semibold text-neutral-900 dark:text-neutral-100">
             {test.name}
           </span>
-          <span
-            className={`rounded px-1.5 py-0.5 text-[10px] uppercase tracking-wide ${
-              test.kind === "reading"
-                ? "bg-sky-100 text-sky-700 dark:bg-sky-950 dark:text-sky-300"
-                : "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400"
-            }`}
-          >
-            {test.kind === "reading" ? "한자 읽기" : "단어 시험"}
-          </span>
+          <KindBadge test={test} />
         </div>
         <div className="mt-1 text-xs text-neutral-500">
           {test.sourcePacks.join(" · ")}
@@ -124,5 +123,26 @@ export function TestCard({ test }: { test: HomeTest }) {
         onCancel={() => setShowConfirm(false)}
       />
     </div>
+  );
+}
+
+function KindBadge({ test }: { test: HomeTest }) {
+  if (test.testKind === "grammar") {
+    return (
+      <span className="rounded bg-amber-100 px-1.5 py-0.5 text-[10px] uppercase tracking-wide text-amber-700 dark:bg-amber-950 dark:text-amber-300">
+        문법
+      </span>
+    );
+  }
+  return (
+    <span
+      className={`rounded px-1.5 py-0.5 text-[10px] uppercase tracking-wide ${
+        test.kind === "reading"
+          ? "bg-sky-100 text-sky-700 dark:bg-sky-950 dark:text-sky-300"
+          : "bg-neutral-100 text-neutral-600 dark:bg-neutral-800 dark:text-neutral-400"
+      }`}
+    >
+      {test.kind === "reading" ? "한자 읽기" : "단어 시험"}
+    </span>
   );
 }
