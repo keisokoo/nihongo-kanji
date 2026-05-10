@@ -249,6 +249,17 @@ export async function addGrammarUsageGuide(
     return { explanation: item.usageGuide, cached: true, usage: null };
   }
 
+  // family foundation lookup — derived 면 같은 family 의 foundation pattern 찾기
+  let foundationPattern: string | null = null;
+  if (item.ruleFamily && !item.isFoundation) {
+    const foundation = await d.grammarItems
+      .where("ruleFamily")
+      .equals(item.ruleFamily)
+      .filter((it) => it.isFoundation === true)
+      .first();
+    foundationPattern = foundation?.pattern ?? null;
+  }
+
   const gen = await generateGrammarUsageGuide(
     {
       pattern: item.pattern,
@@ -257,6 +268,9 @@ export async function addGrammarUsageGuide(
       formation: item.formation,
       category: item.category,
       level: levelOf(item),
+      ruleFamily: item.ruleFamily ?? null,
+      isFoundation: item.isFoundation === true,
+      foundationPattern,
     },
     tier,
   );
@@ -372,6 +386,30 @@ const VERB_GROUPS = new Set([
   "any",
 ]);
 
+/**
+ * Quiz 의 "변별 필드" — type 별로 어떤 필드가 quiz 를 unique 하게 만드는지.
+ * particle_blank 의 answer 는 항상 패턴 자체라서 answer 만 비교하면 즉시 duplicate.
+ * 진짜 variation 필드 (sentence / prompt / ko / dictForm+label) 로 dedupe.
+ */
+function quizDedupeKey(
+  type: string,
+  payload: Record<string, unknown>,
+): string {
+  if (type === "conjugation") {
+    return `${payload.dictForm ?? ""}|${payload.targetFormLabel ?? ""}`;
+  }
+  if (type === "particle_blank" || type === "pattern_blank") {
+    return String(payload.sentence ?? "");
+  }
+  if (type === "form_meaning") {
+    return String(payload.prompt ?? "");
+  }
+  if (type === "ko_to_jp_form") {
+    return String(payload.ko ?? "");
+  }
+  return String(payload.answer ?? "");
+}
+
 export async function addGrammarQuiz(
   itemId: number,
   tier: Tier = "default",
@@ -388,6 +426,7 @@ export async function addGrammarQuiz(
   const existing = item.quizzes.map((q) => ({
     type: q.type,
     answer: q.payload.answer,
+    dedupeKey: quizDedupeKey(q.type, q.payload as Record<string, unknown>),
   }));
 
   const gen = await generateGrammarQuiz(
@@ -397,7 +436,11 @@ export async function addGrammarQuiz(
       formation: item.formation,
       level: levelOf(item),
       applicableQuizTypes: applicable,
-      existingQuizzes: existing,
+      existingQuizzes: existing.map((e) => ({
+        type: e.type,
+        answer: e.answer,
+        variation: e.dedupeKey,
+      })),
     },
     tier,
   );
@@ -408,13 +451,19 @@ export async function addGrammarQuiz(
     applicable,
   );
 
-  // Dedupe
+  // Dedupe — type 별 variation 필드 비교
+  const newKey = quizDedupeKey(
+    built.type,
+    built.payload as unknown as Record<string, unknown>,
+  );
   if (
     existing.some(
-      (e) => e.type === built.type && e.answer === built.payload.answer,
+      (e) => e.type === built.type && e.dedupeKey === newKey,
     )
   ) {
-    throw new Error("generated quiz duplicates an existing one");
+    throw new Error(
+      `generated quiz duplicates an existing one (type=${built.type}, variation="${newKey}")`,
+    );
   }
 
   const newQuiz: GrammarQuiz = {

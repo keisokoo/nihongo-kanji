@@ -8,6 +8,7 @@ export default [
   route("grammar/:packKey", "routes/grammar-index.tsx"),
   route("grammar/:packKey/:itemId", "routes/grammar.tsx"),
   route("grammar-test/:id", "routes/grammar-test.tsx"),
+  route("family/:familyId", "routes/family.tsx"),
   route("review", "routes/review.tsx"),
   route("favorites", "routes/favorites.tsx"),
   route("stats", "routes/stats.tsx"),

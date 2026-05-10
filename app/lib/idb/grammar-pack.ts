@@ -186,6 +186,8 @@ export async function importGrammarPack(
         applicableQuizTypes: seedItem.applicableQuizTypes,
         examples: seedItem.examples,
         quizzes: seedItem.quizzes,
+        ruleFamily: seedItem.ruleFamily ?? null,
+        isFoundation: seedItem.isFoundation ?? false,
         createdAt: new Date(),
       } as never);
       stats.items++;

@@ -3,6 +3,8 @@ import { JLPT_LEVELS, type Pack, type WordTestKind } from "./types";
 import type { GrammarPack } from "./grammar-types";
 import { getWeakItemCount } from "./review";
 import { getFavoritesCount } from "./favorites";
+import { loadAllFamilyCounts } from "./family";
+import { RULE_FAMILIES, type RuleFamilyMeta } from "../grammar-families";
 
 export type HomePack = Pack & {
   count: number;       // total kanji in pack
@@ -27,10 +29,14 @@ export type HomeTest = {
   correct: number;
 };
 
+export type HomeFamily = RuleFamilyMeta & { count: number };
+
 export type HomeData = {
   jlpt: HomePack[];
   custom: HomePack[];
   grammar: HomeGrammarPack[];
+  /** 멤버 1명 이상 있는 룰 패밀리만 surface. */
+  families: HomeFamily[];
   tests: HomeTest[];
   weakItemCount: number;
   favoritesCount: number;
@@ -190,6 +196,7 @@ export async function loadHomeData(): Promise<HomeData> {
     grammarTests,
     weakItemCount,
     favoritesCount,
+    familyCounts,
   ] = await Promise.all([
     loadPacks(),
     loadGrammarPacks(),
@@ -197,9 +204,24 @@ export async function loadHomeData(): Promise<HomeData> {
     loadGrammarTests(),
     getWeakItemCount(),
     getFavoritesCount(),
+    loadAllFamilyCounts(),
   ]);
   const tests = [...wordTests, ...grammarTests].sort(
     (a, b) => +b.createdAt - +a.createdAt,
   );
-  return { jlpt, custom, grammar, tests, weakItemCount, favoritesCount };
+  const families = RULE_FAMILIES.map((f) => ({
+    ...f,
+    count: familyCounts.get(f.id) ?? 0,
+  }))
+    .filter((f) => f.count > 0)
+    .sort((a, b) => a.order - b.order);
+  return {
+    jlpt,
+    custom,
+    grammar,
+    families,
+    tests,
+    weakItemCount,
+    favoritesCount,
+  };
 }

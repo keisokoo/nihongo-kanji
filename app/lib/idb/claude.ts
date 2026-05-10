@@ -234,7 +234,8 @@ async function withFallback<T>(
   label: string,
 ): Promise<{ result: T; modelUsed: string; usage: Usage }> {
   const resolved = await resolveProvider();
-  const primary = tier === "premium" ? resolved.premiumModel : resolved.defaultModel;
+  const primary =
+    tier === "premium" ? resolved.premiumModel : resolved.defaultModel;
   const fallback = resolved.premiumModel;
   let lastErr: unknown = null;
   let aggregated: Usage = ZERO_USAGE;
@@ -259,9 +260,7 @@ async function withFallback<T>(
       aggregated = addUsage(aggregated, usage);
       void logAiUsage(label, fallback, usage);
       if (validate(data)) {
-        console.warn(
-          `[claude:${label}] fell back to ${fallback} successfully`,
-        );
+        console.warn(`[claude:${label}] fell back to ${fallback} successfully`);
         return { result: data, modelUsed: fallback, usage: aggregated };
       }
       lastErr = new Error("fallback validation failed");
@@ -353,7 +352,13 @@ export async function generateExample(
     tier,
     isExampleOutput,
     (resolved, model) =>
-      callJson(resolved, model, EXAMPLE_SYSTEM_PROMPT, userMessage, EXAMPLE_SCHEMA),
+      callJson(
+        resolved,
+        model,
+        EXAMPLE_SYSTEM_PROMPT,
+        userMessage,
+        EXAMPLE_SCHEMA,
+      ),
     "example",
   );
 }
@@ -588,13 +593,23 @@ function isReadingsOutput(x: unknown): x is GenerateReadingsOutput {
 export async function generateReadings(
   input: GenerateReadingsInput,
   tier: Tier = "default",
-): Promise<{ result: GenerateReadingsOutput; modelUsed: string; usage: Usage }> {
+): Promise<{
+  result: GenerateReadingsOutput;
+  modelUsed: string;
+  usage: Usage;
+}> {
   const userMessage = `Kanji: ${input.kanjiChar}`;
   return withFallback<GenerateReadingsOutput>(
     tier,
     isReadingsOutput,
     (resolved, model) =>
-      callJson(resolved, model, READINGS_SYSTEM_PROMPT, userMessage, READINGS_SCHEMA),
+      callJson(
+        resolved,
+        model,
+        READINGS_SYSTEM_PROMPT,
+        userMessage,
+        READINGS_SCHEMA,
+      ),
     "readings",
   );
 }
@@ -1076,6 +1091,12 @@ export type GenerateGrammarUsageGuideInput = {
   formation: string | null;
   category: string;
   level: string;
+  /** 룰 family ID — 있으면 prompt 가 다르게 작동 (foundation/derived). */
+  ruleFamily?: string | null;
+  /** family 의 기초 항목인지. true 면 그룹별 변형 풀 가이드. */
+  isFoundation?: boolean;
+  /** 같은 family 의 foundation 항목 pattern (derived 일 때 참조용). */
+  foundationPattern?: string | null;
 };
 
 export type GenerateGrammarUsageGuideOutput = {
@@ -1104,7 +1125,8 @@ function isGrammarUsageGuideOutput(
     if (typeof s.title !== "string" || typeof s.rule !== "string") return false;
     if (!Array.isArray(s.examples)) return false;
     for (const ex of s.examples as Array<Record<string, unknown>>) {
-      if (typeof ex.jp !== "string" || typeof ex.gloss !== "string") return false;
+      if (typeof ex.jp !== "string" || typeof ex.gloss !== "string")
+        return false;
     }
   }
   return true;
@@ -1118,6 +1140,13 @@ export async function generateGrammarUsageGuide(
   modelUsed: string;
   usage: Usage;
 }> {
+  const familyHint =
+    input.isFoundation === true
+      ? `\n[FOUNDATION ITEM] 이 항목은 "${input.ruleFamily}" family 의 기초입니다. 그룹별/형태별 변형 규칙을 풀로 (1그룹/2그룹/3그룹 또는 현재/과거/부정/과거부정 등) 풍부하게 출력하세요. 이 항목이 변형 규칙의 reference 역할.`
+      : input.ruleFamily
+        ? `\n[DERIVED ITEM] 이 항목은 "${input.ruleFamily}" family 에 속하지만 기초가 아닙니다. 변형 규칙은 ${input.foundationPattern ? `"${input.foundationPattern}"` : "기초 항목"}와 동일하므로 **반복하지 마세요**. 첫 section 에서 "활용 규칙은 ${input.foundationPattern ?? "기초 항목"}과 동일" 정도로 짧게 언급하고, 의미·용법·뉘앙스·비교에 집중하세요.`
+        : "";
+
   const userMessage = [
     `Pattern: ${input.pattern}`,
     `Korean meanings: ${input.meaningsKo.join(", ")}`,
@@ -1125,6 +1154,7 @@ export async function generateGrammarUsageGuide(
     `JLPT Level: ${input.level}`,
     input.formation ? `Formation: ${input.formation}` : null,
     `Base explanation: ${input.baseExplanation}`,
+    familyHint || null,
   ]
     .filter(Boolean)
     .join("\n");
@@ -1245,87 +1275,188 @@ export async function generateGrammarExample(
   );
 }
 
-// ─── generateGrammarQuiz ─────────────────────────────────────────────────────
+// ─── generateGrammarQuiz (2-stage) ──────────────────────────────────────────
+// 1) 적용 가능 type 중에서 가장 적절한 type 선택 (작은 호출).
+// 2) 정해진 type 의 specific schema 로 payload 생성.
+//
+// 단일 union schema 는 Anthropic 의 "additionalProperties: false" 제약 + JSON
+// schema 의 oneOf 지원 부족 때문에 안 통함. 2단계로 분리해서 schema 를 type 별로 구체화.
 
-const GRAMMAR_QUIZ_SCHEMA = {
+const ALL_QUIZ_TYPES = [
+  "conjugation",
+  "particle_blank",
+  "pattern_blank",
+  "form_meaning",
+  "ko_to_jp_form",
+] as const;
+
+// ─── Stage 1 schema: type 결정 ──────────────────────────────────────────────
+
+function makeQuizTypePickSchema(applicable: string[]): Schema {
+  return {
+    type: "object",
+    properties: {
+      chosenType: { type: "string", enum: applicable },
+    },
+    required: ["chosenType"],
+    additionalProperties: false,
+  };
+}
+
+const QUIZ_TYPE_PICK_SYSTEM_PROMPT = `You are a Japanese grammar quiz designer.
+
+Given a pattern and the list of existing quizzes, pick the BEST quiz type to add.
+
+Selection criteria:
+- Avoid duplicating the type that's already most-used in existing quizzes (variety).
+- Pick a type that fits the pattern naturally:
+  - "conjugation" — when the pattern itself involves verb/adjective form transformation
+  - "particle_blank" — particles (は/が/を/に/で/から…)
+  - "pattern_blank" — connective/expressive patterns
+  - "form_meaning" — testing recognition of a form's Korean meaning
+  - "ko_to_jp_form" — testing translation Korean→Japanese using the pattern
+- Output: { "chosenType": <one of the applicable types> }`;
+
+// ─── Stage 2 schemas: type 별 payload + 외부 wrapper ─────────────────────────
+
+const CONJUGATION_PAYLOAD_SCHEMA: Schema = {
   type: "object",
   properties: {
-    type: {
+    dictForm: { type: "string" },
+    group: {
       type: "string",
-      enum: [
-        "conjugation",
-        "particle_blank",
-        "pattern_blank",
-        "form_meaning",
-        "ko_to_jp_form",
-      ],
+      enum: ["godan", "ichidan", "irregular", "i_adj", "na_adj", "noun", "any"],
     },
-    payload: {
-      type: "object",
-      // payload 형식은 type 별로 다양 — schema 는 헐거운 통합 검증.
-      additionalProperties: true,
+    targetFormLabel: { type: "string" },
+    answer: { type: "string" },
+    distractors: {
+      type: "array",
+      items: { type: "string" },
+    },
+    hintKo: { type: ["string", "null"] },
+  },
+  required: ["dictForm", "group", "targetFormLabel", "answer", "distractors"],
+  additionalProperties: false,
+};
+
+const BLANK_PAYLOAD_SCHEMA: Schema = {
+  type: "object",
+  properties: {
+    sentence: { type: "string" },
+    answer: { type: "string" },
+    distractors: {
+      type: "array",
+      items: { type: "string" },
+    },
+    translationKo: { type: "string" },
+  },
+  required: ["sentence", "answer", "distractors", "translationKo"],
+  additionalProperties: false,
+};
+
+const FORM_MEANING_PAYLOAD_SCHEMA: Schema = {
+  type: "object",
+  properties: {
+    prompt: { type: "string" },
+    contextSentence: { type: ["string", "null"] },
+    answer: { type: "string" },
+    distractors: {
+      type: "array",
+      items: { type: "string" },
     },
   },
-  required: ["type", "payload"],
+  required: ["prompt", "answer", "distractors"],
   additionalProperties: false,
-} as const;
+};
 
-const GRAMMAR_QUIZ_SYSTEM_PROMPT = `You are a Japanese grammar quiz generator for Korean speakers studying JLPT.
+const KO_TO_JP_PAYLOAD_SCHEMA: Schema = {
+  type: "object",
+  properties: {
+    ko: { type: "string" },
+    answer: { type: "string" },
+    distractors: {
+      type: "array",
+      items: { type: "string" },
+    },
+    hintKo: { type: ["string", "null"] },
+  },
+  required: ["ko", "answer", "distractors"],
+  additionalProperties: false,
+};
 
-Pick ONE of the requested quiz types and produce a quality multiple-choice quiz with 1 correct answer + 3 distractors.
+const PAYLOAD_SCHEMA_BY_TYPE: Record<string, Schema> = {
+  conjugation: CONJUGATION_PAYLOAD_SCHEMA,
+  particle_blank: BLANK_PAYLOAD_SCHEMA,
+  pattern_blank: BLANK_PAYLOAD_SCHEMA,
+  form_meaning: FORM_MEANING_PAYLOAD_SCHEMA,
+  ko_to_jp_form: KO_TO_JP_PAYLOAD_SCHEMA,
+};
 
-OUTPUT — JSON: { "type": <one of the requested types>, "payload": {...} }
-
-PAYLOAD shapes by type:
-
-1) "conjugation"
+const PAYLOAD_GUIDE_BY_TYPE: Record<string, string> = {
+  conjugation: `Type "conjugation" — payload:
 {
-  "dictForm": "<dictionary form, JP>",
+  "dictForm": "<dictionary form, JP, e.g. 食べる>",
   "group": "godan|ichidan|irregular|i_adj|na_adj|noun|any",
-  "targetFormLabel": "<Korean label like 'ます형' or 'たい형'>",
+  "targetFormLabel": "<Korean label, e.g. 'ます형' / 'たい형' / '과거형'>",
   "answer": "<correct conjugated form>",
-  "distractors": ["<wrong>", "<wrong>", "<wrong>"],
-  "hintKo": null
+  "distractors": ["<wrong1>", "<wrong2>", "<wrong3>"],
+  "hintKo": "<Korean hint or null>"
 }
-
-2) "particle_blank" / "pattern_blank"
+- Distractors are common conjugation mistakes (wrong group, wrong tense, wrong活用 step).`,
+  particle_blank: `Type "particle_blank" — payload:
 {
-  "sentence": "<inline-markup sentence with EXACTLY ONE {{X}} target where X = the answer>",
-  "answer": "<X — must equal target text>",
-  "distractors": ["<wrong>", "<wrong>", "<wrong>"],
+  "sentence": "<inline-markup sentence with ONE {{X}} target where X = the answer particle>",
+  "answer": "<X — must equal what's inside {{...}}>",
+  "distractors": ["<other particle>", "<other>", "<other>"],
+  "translationKo": "<KO translation of full sentence>"
+}
+- {{}} cannot contain ruby — particle is hiragana so no issue.
+- Distractors are other particles (に/を/で/が/と/から…).`,
+  pattern_blank: `Type "pattern_blank" — payload:
+{
+  "sentence": "<inline-markup sentence with ONE {{X}} target where X = the answer pattern>",
+  "answer": "<X — must equal what's inside {{...}}>",
+  "distractors": ["<similar pattern>", "<similar>", "<similar>"],
   "translationKo": "<KO translation>"
 }
-
-3) "form_meaning"
+- {{}} CANNOT contain ruby — if pattern includes kanji, prefer kana spelling.
+- Distractors are similar but wrong patterns (other conjunctions/expressions).`,
+  form_meaning: `Type "form_meaning" — payload:
 {
-  "prompt": "<short Japanese form, may include ruby. {{}} not used>",
-  "contextSentence": null,
-  "answer": "<Korean meaning, plain>",
+  "prompt": "<short Japanese form, may include {kanji|reading} ruby; do NOT use {{}}>",
+  "contextSentence": "<optional inline-markup sentence or null>",
+  "answer": "<Korean meaning, PLAIN text — no markup>",
   "distractors": ["<KO>", "<KO>", "<KO>"]
 }
-
-4) "ko_to_jp_form"
+- answer/distractors are plain Korean.
+- Distractors are common confusable Korean meanings.`,
+  ko_to_jp_form: `Type "ko_to_jp_form" — payload:
 {
   "ko": "<Korean sentence>",
-  "answer": "<Japanese sentence with ruby + {{...}} target marking pattern usage>",
-  "distractors": ["<wrong JP with {{...}}>", "<wrong>", "<wrong>"],
-  "hintKo": null
+  "answer": "<Japanese sentence with ruby + ONE {{...}} marking pattern usage>",
+  "distractors": ["<wrong JP with one {{...}}>", "<wrong>", "<wrong>"],
+  "hintKo": "<Korean hint or null>"
 }
+- All four JP sentences must have ruby on every non-target kanji and exactly one {{...}}.
+- {{}} cannot contain ruby (split target if needed).
+- Distractors apply the pattern incorrectly (wrong particle / wrong tense / wrong activation).`,
+};
 
-INLINE MARKUP RULES:
-- {{...}} target appears EXACTLY ONCE per sentence (when used).
-- {{...}} CANNOT contain ruby — if a kanji is needed inside, split-target: keep kanji+ruby outside {{}}.
-- Every non-target kanji must have {kanji|hiragana}.
+const QUIZ_PAYLOAD_SYSTEM_PROMPT = `You are a Japanese grammar quiz generator for Korean speakers studying JLPT.
+
+Generate ONE high-quality multiple-choice quiz of the SPECIFIED type. Output JSON with the exact payload shape — no extra fields.
+
+INLINE MARKUP RULES (when sentence-form fields are used):
+- {{...}} target appears EXACTLY ONCE per sentence.
+- {{...}} CANNOT contain ruby — if kanji must be inside, prefer split-target: keep kanji+ruby OUTSIDE {{}} and only the suffix inside.
+- Every non-target kanji must have {kanji|hiragana} ruby.
 
 QUALITY RULES:
-- Distractors should be plausible mistakes — wrong particle, wrong activation, wrong meaning — not obviously absurd.
+- distractors 배열은 EXACTLY 3 strings — not 2, not 4, exactly 3. Plausible mistakes (wrong particle, wrong activation, wrong tense).
 - Distractors must NOT equal the answer.
-- For 'form_meaning' answer/distractors: plain Korean (no markup).
-- For 'ko_to_jp_form' answer/distractors: full JP sentences with markup, each with one {{...}}.
-- For 'particle_blank'/'pattern_blank' sentence: {{}} content == answer string.
 - Vocabulary appropriate for the given JLPT level.
-- DO NOT generate a quiz that duplicates the given existing quizzes (same answer + same type combination).
-- Pick a type from "applicableQuizTypes". Avoid picking a type already used too many times if other applicable types are unused.`;
+- DO NOT duplicate any quiz in the "Existing quizzes" list.
+- Stay strictly within the requested type's payload shape.`;
 
 export type GenerateGrammarQuizInput = {
   pattern: string;
@@ -1334,8 +1465,12 @@ export type GenerateGrammarQuizInput = {
   level: string;
   /** 적용 가능한 퀴즈 타입들. */
   applicableQuizTypes: string[];
-  /** 기존 퀴즈 (중복 회피). */
-  existingQuizzes: Array<{ type: string; answer: string }>;
+  /**
+   * 기존 퀴즈 (중복 회피용).
+   * `variation` 은 type 별 식별 필드 (conjugation: dictForm+label, blank: sentence,
+   * form_meaning: prompt, ko_to_jp_form: ko). 같은 type+variation 조합은 절대 생성 X.
+   */
+  existingQuizzes: Array<{ type: string; answer: string; variation: string }>;
 };
 
 export type GenerateGrammarQuizOutput = {
@@ -1343,14 +1478,50 @@ export type GenerateGrammarQuizOutput = {
   payload: Record<string, unknown>;
 };
 
-function isGrammarQuizOutput(x: unknown): x is GenerateGrammarQuizOutput {
+function isQuizTypePickOutput(
+  x: unknown,
+): x is { chosenType: string } {
   if (!x || typeof x !== "object") return false;
   const o = x as Record<string, unknown>;
-  return (
-    typeof o.type === "string" &&
-    o.payload !== null &&
-    typeof o.payload === "object"
-  );
+  return typeof o.chosenType === "string";
+}
+
+function makePayloadValidator(
+  type: string,
+): (x: unknown) => x is Record<string, unknown> {
+  return (x): x is Record<string, unknown> => {
+    if (!x || typeof x !== "object") return false;
+    const o = x as Record<string, unknown>;
+    // 모든 type 공통: distractors 정확히 3개 + 모두 string
+    const distractorsOk =
+      Array.isArray(o.distractors) &&
+      o.distractors.length === 3 &&
+      o.distractors.every((d) => typeof d === "string");
+    if (!distractorsOk) return false;
+
+    if (type === "conjugation") {
+      return (
+        typeof o.dictForm === "string" &&
+        typeof o.group === "string" &&
+        typeof o.targetFormLabel === "string" &&
+        typeof o.answer === "string"
+      );
+    }
+    if (type === "particle_blank" || type === "pattern_blank") {
+      return (
+        typeof o.sentence === "string" &&
+        typeof o.answer === "string" &&
+        typeof o.translationKo === "string"
+      );
+    }
+    if (type === "form_meaning") {
+      return typeof o.prompt === "string" && typeof o.answer === "string";
+    }
+    if (type === "ko_to_jp_form") {
+      return typeof o.ko === "string" && typeof o.answer === "string";
+    }
+    return false;
+  };
 }
 
 export async function generateGrammarQuiz(
@@ -1361,32 +1532,102 @@ export async function generateGrammarQuiz(
   modelUsed: string;
   usage: Usage;
 }> {
-  const userMessage = [
+  // 적용 가능 타입 안전성 체크
+  const applicable = input.applicableQuizTypes.filter((t) =>
+    (ALL_QUIZ_TYPES as readonly string[]).includes(t),
+  );
+  if (applicable.length === 0) {
+    throw new Error("no valid applicableQuizTypes");
+  }
+
+  const baseUserMessage = [
     `Pattern: ${input.pattern}`,
     `Korean meaning: ${input.meaningKo}`,
     input.formation ? `Formation: ${input.formation}` : null,
     `JLPT Level: ${input.level}`,
-    `Applicable quiz types: ${input.applicableQuizTypes.join(", ")}`,
+    `Applicable quiz types: ${applicable.join(", ")}`,
     input.existingQuizzes.length > 0
-      ? `Existing quizzes (do NOT duplicate type+answer):\n${input.existingQuizzes
-          .map((q) => `  - ${q.type}: ${q.answer}`)
-          .join("\n")}`
+      ? `Existing quizzes — do NOT duplicate (variation field is what makes a quiz unique within a type):
+- conjugation: variation = dictForm + targetFormLabel (different verb / different target form = OK)
+- particle_blank/pattern_blank: variation = sentence (different sentence = OK)
+- form_meaning: variation = prompt (different prompt = OK)
+- ko_to_jp_form: variation = ko (different Korean prompt = OK)
+
+Existing list:
+${input.existingQuizzes
+  .map((q) => `  - ${q.type}: variation="${q.variation}" (answer="${q.answer}")`)
+  .join("\n")}
+
+If you generate a new ${input.existingQuizzes.length > 0 ? "" : ""}quiz of the same type, choose a DIFFERENT variation. For example, if existing has 'particle_blank' with sentence "学校へ行きます。", generate a different sentence.`
       : null,
   ]
     .filter(Boolean)
     .join("\n");
 
-  return withFallback<GenerateGrammarQuizOutput>(
+  let aggUsage: Usage = ZERO_USAGE;
+  let modelUsed = "";
+
+  // ── Stage 1: chosenType ──
+  let chosenType: string;
+  if (applicable.length === 1) {
+    // 분기 1개면 stage 1 skip — 절약.
+    chosenType = applicable[0];
+  } else {
+    const pick = await withFallback<{ chosenType: string }>(
+      tier,
+      isQuizTypePickOutput,
+      (resolved, model) =>
+        callJson(
+          resolved,
+          model,
+          QUIZ_TYPE_PICK_SYSTEM_PROMPT,
+          baseUserMessage,
+          makeQuizTypePickSchema(applicable),
+        ),
+      "grammar-quiz-pick",
+    );
+    if (!applicable.includes(pick.result.chosenType)) {
+      throw new Error(
+        `AI picked non-applicable type "${pick.result.chosenType}"`,
+      );
+    }
+    chosenType = pick.result.chosenType;
+    aggUsage = addUsage(aggUsage, pick.usage);
+    modelUsed = pick.modelUsed;
+  }
+
+  // ── Stage 2: payload for chosenType ──
+  const payloadSchema = PAYLOAD_SCHEMA_BY_TYPE[chosenType];
+  if (!payloadSchema) {
+    throw new Error(`no payload schema for type "${chosenType}"`);
+  }
+  const stage2UserMessage = [
+    `Quiz type: ${chosenType}`,
+    PAYLOAD_GUIDE_BY_TYPE[chosenType],
+    "",
+    baseUserMessage,
+  ].join("\n");
+
+  const validatePayload = makePayloadValidator(chosenType);
+  const stage2 = await withFallback<Record<string, unknown>>(
     tier,
-    isGrammarQuizOutput,
+    validatePayload,
     (resolved, model) =>
       callJson(
         resolved,
         model,
-        GRAMMAR_QUIZ_SYSTEM_PROMPT,
-        userMessage,
-        GRAMMAR_QUIZ_SCHEMA,
+        QUIZ_PAYLOAD_SYSTEM_PROMPT,
+        stage2UserMessage,
+        payloadSchema,
       ),
-    "grammar-quiz",
+    `grammar-quiz-payload:${chosenType}`,
   );
+  aggUsage = addUsage(aggUsage, stage2.usage);
+  modelUsed = stage2.modelUsed;
+
+  return {
+    result: { type: chosenType, payload: stage2.result },
+    modelUsed,
+    usage: aggUsage,
+  };
 }

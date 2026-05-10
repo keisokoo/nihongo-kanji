@@ -95,6 +95,13 @@ export class NihongoDB extends Dexie {
     this.version(6).stores({
       aiUsageLog: "++id, createdAt, [feature+createdAt], model",
     });
+
+    // v7: grammarItems 에 ruleFamily 인덱스 추가 (family 별 query).
+    // 기존 store 인덱스 변경은 schema string 갱신 필요 — 다른 인덱스 전부 그대로 두고 추가.
+    this.version(7).stores({
+      grammarItems:
+        "++id, packKey, &[packKey+pattern], [packKey+position], ruleFamily",
+    });
   }
 }
 

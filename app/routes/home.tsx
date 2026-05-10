@@ -4,6 +4,7 @@ import type { Route } from "./+types/home";
 import { loadHomeData } from "~/lib/idb/home";
 import { PackCard } from "~/components/home/PackCard";
 import { GrammarPackCard } from "~/components/home/GrammarPackCard";
+import { FamilyCard } from "~/components/home/FamilyCard";
 import { TestCard } from "~/components/home/TestCard";
 import { ImportButton } from "~/components/home/ImportButton";
 import { CreateTestModal } from "~/components/home/CreateTestModal";
@@ -20,8 +21,15 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
-  const { jlpt, custom, grammar, tests, weakItemCount, favoritesCount } =
-    loaderData;
+  const {
+    jlpt,
+    custom,
+    grammar,
+    families,
+    tests,
+    weakItemCount,
+    favoritesCount,
+  } = loaderData;
   const [showTestModal, setShowTestModal] = useState(false);
   const packsForTest = [...jlpt, ...custom].filter((p) => p.wordCount > 0);
   const grammarPacksForTest = grammar.filter((p) => p.count > 0);
@@ -120,6 +128,19 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 md:grid-cols-5">
               {grammar.map((pack) => (
                 <GrammarPackCard key={pack.key} pack={pack} />
+              ))}
+            </div>
+          </section>
+        )}
+
+        {families.length > 0 && (
+          <section className="mb-10">
+            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-500">
+              📚 룰 패밀리
+            </h2>
+            <div className="grid gap-3 sm:grid-cols-2 md:grid-cols-3">
+              {families.map((f) => (
+                <FamilyCard key={f.id} family={f} />
               ))}
             </div>
           </section>

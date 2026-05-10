@@ -259,6 +259,19 @@ export type GrammarItem = {
   /** AI 가 생성하는 활용 가이드 (선택). */
   usageGuide?: GrammarUsageGuide | null;
 
+  /**
+   * 같은 변형/사용 룰을 공유하는 family ID. 항목간 그룹화 용.
+   * 예: "verb:masu" / "adj:i" / "particle:limit". null = 단독.
+   * Family ID 목록은 app/lib/grammar-families.ts 의 RULE_FAMILIES 레지스트리.
+   */
+  ruleFamily?: string | null;
+  /**
+   * 이 항목이 family 의 기초 (변형 규칙 정의자) 인지.
+   * true 인 항목은 family 페이지의 헤드 카드 + 그룹별 변형 규칙 풀 가이드.
+   * derived 항목은 foundation 참조 링크만.
+   */
+  isFoundation?: boolean;
+
   createdAt: Date;
 };
 
@@ -288,6 +301,10 @@ export type GrammarSeedItem = {
   applicableQuizTypes: GrammarQuizType[];
   examples: GrammarExample[];
   quizzes: GrammarQuiz[];
+  /** 룰 family ID — RULE_FAMILIES 안의 값. 단독 항목은 null. */
+  ruleFamily?: string | null;
+  /** family 의 기초 항목인지. */
+  isFoundation?: boolean;
 };
 
 /**
