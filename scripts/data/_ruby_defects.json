@@ -1,0 +1,4692 @@
+[
+  {
+    "level": "n5",
+    "no": 1,
+    "pattern": "ます (ます형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "食べる",
+    "missing": "食"
+  },
+  {
+    "level": "n5",
+    "no": 1,
+    "pattern": "ます (ます형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "食べます",
+    "missing": "食"
+  },
+  {
+    "level": "n5",
+    "no": 1,
+    "pattern": "ます (ます형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "食べります",
+    "missing": "食"
+  },
+  {
+    "level": "n5",
+    "no": 1,
+    "pattern": "ます (ます형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "食べるます",
+    "missing": "食"
+  },
+  {
+    "level": "n5",
+    "no": 1,
+    "pattern": "ます (ます형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "食ます",
+    "missing": "食"
+  },
+  {
+    "level": "n5",
+    "no": 2,
+    "pattern": "て (て형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "書く",
+    "missing": "書"
+  },
+  {
+    "level": "n5",
+    "no": 2,
+    "pattern": "て (て형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "書いて",
+    "missing": "書"
+  },
+  {
+    "level": "n5",
+    "no": 2,
+    "pattern": "て (て형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "書きて",
+    "missing": "書"
+  },
+  {
+    "level": "n5",
+    "no": 2,
+    "pattern": "て (て형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "書って",
+    "missing": "書"
+  },
+  {
+    "level": "n5",
+    "no": 2,
+    "pattern": "て (て형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "書くて",
+    "missing": "書"
+  },
+  {
+    "level": "n5",
+    "no": 3,
+    "pattern": "ない (ない형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "話す",
+    "missing": "話"
+  },
+  {
+    "level": "n5",
+    "no": 3,
+    "pattern": "ない (ない형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "話さない",
+    "missing": "話"
+  },
+  {
+    "level": "n5",
+    "no": 3,
+    "pattern": "ない (ない형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "話しない",
+    "missing": "話"
+  },
+  {
+    "level": "n5",
+    "no": 3,
+    "pattern": "ない (ない형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "話すない",
+    "missing": "話"
+  },
+  {
+    "level": "n5",
+    "no": 3,
+    "pattern": "ない (ない형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "話さありません",
+    "missing": "話"
+  },
+  {
+    "level": "n5",
+    "no": 4,
+    "pattern": "た (た형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "読む",
+    "missing": "読"
+  },
+  {
+    "level": "n5",
+    "no": 4,
+    "pattern": "た (た형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "読んだ",
+    "missing": "読"
+  },
+  {
+    "level": "n5",
+    "no": 4,
+    "pattern": "た (た형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "読みた",
+    "missing": "読"
+  },
+  {
+    "level": "n5",
+    "no": 4,
+    "pattern": "た (た형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "読った",
+    "missing": "読"
+  },
+  {
+    "level": "n5",
+    "no": 4,
+    "pattern": "た (た형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "読いた",
+    "missing": "読"
+  },
+  {
+    "level": "n5",
+    "no": 5,
+    "pattern": "辞書形 (사전형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "食べます",
+    "missing": "食"
+  },
+  {
+    "level": "n5",
+    "no": 5,
+    "pattern": "辞書形 (사전형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "食べる",
+    "missing": "食"
+  },
+  {
+    "level": "n5",
+    "no": 5,
+    "pattern": "辞書形 (사전형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "食べた",
+    "missing": "食"
+  },
+  {
+    "level": "n5",
+    "no": 5,
+    "pattern": "辞書形 (사전형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "食べて",
+    "missing": "食"
+  },
+  {
+    "level": "n5",
+    "no": 5,
+    "pattern": "辞書形 (사전형)",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "食べない",
+    "missing": "食"
+  },
+  {
+    "level": "n5",
+    "no": 8,
+    "pattern": "だけ",
+    "qidx": 0,
+    "type": "form_meaning",
+    "field": "prompt",
+    "value": "「今日だけ」",
+    "missing": "今日"
+  },
+  {
+    "level": "n5",
+    "no": 21,
+    "pattern": "い-adjectives",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "高い",
+    "missing": "高"
+  },
+  {
+    "level": "n5",
+    "no": 21,
+    "pattern": "い-adjectives",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "高かった",
+    "missing": "高"
+  },
+  {
+    "level": "n5",
+    "no": 21,
+    "pattern": "い-adjectives",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "高いだった",
+    "missing": "高"
+  },
+  {
+    "level": "n5",
+    "no": 21,
+    "pattern": "い-adjectives",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "高くた",
+    "missing": "高"
+  },
+  {
+    "level": "n5",
+    "no": 21,
+    "pattern": "い-adjectives",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "高いかった",
+    "missing": "高"
+  },
+  {
+    "level": "n5",
+    "no": 21,
+    "pattern": "い-adjectives",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "寒い",
+    "missing": "寒"
+  },
+  {
+    "level": "n5",
+    "no": 21,
+    "pattern": "い-adjectives",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "寒くない",
+    "missing": "寒"
+  },
+  {
+    "level": "n5",
+    "no": 21,
+    "pattern": "い-adjectives",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "寒いない",
+    "missing": "寒"
+  },
+  {
+    "level": "n5",
+    "no": 21,
+    "pattern": "い-adjectives",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "寒じゃない",
+    "missing": "寒"
+  },
+  {
+    "level": "n5",
+    "no": 21,
+    "pattern": "い-adjectives",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "寒くじゃない",
+    "missing": "寒"
+  },
+  {
+    "level": "n5",
+    "no": 41,
+    "pattern": "な-adjectives",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "静か",
+    "missing": "静"
+  },
+  {
+    "level": "n5",
+    "no": 41,
+    "pattern": "な-adjectives",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "静かな",
+    "missing": "静"
+  },
+  {
+    "level": "n5",
+    "no": 41,
+    "pattern": "な-adjectives",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "静かい",
+    "missing": "静"
+  },
+  {
+    "level": "n5",
+    "no": 41,
+    "pattern": "な-adjectives",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "静かの",
+    "missing": "静"
+  },
+  {
+    "level": "n5",
+    "no": 41,
+    "pattern": "な-adjectives",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "静かだ",
+    "missing": "静"
+  },
+  {
+    "level": "n5",
+    "no": 41,
+    "pattern": "な-adjectives",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "便利",
+    "missing": "便利"
+  },
+  {
+    "level": "n5",
+    "no": 41,
+    "pattern": "な-adjectives",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "便利じゃない",
+    "missing": "便利"
+  },
+  {
+    "level": "n5",
+    "no": 41,
+    "pattern": "な-adjectives",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "便利くない",
+    "missing": "便利"
+  },
+  {
+    "level": "n5",
+    "no": 41,
+    "pattern": "な-adjectives",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "便利ない",
+    "missing": "便利"
+  },
+  {
+    "level": "n5",
+    "no": 41,
+    "pattern": "な-adjectives",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "便利ではい",
+    "missing": "便利"
+  },
+  {
+    "level": "n4",
+    "no": 5,
+    "pattern": "ば",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "行く",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 5,
+    "pattern": "ば",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "行けば",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 5,
+    "pattern": "ば",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "行きば",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 5,
+    "pattern": "ば",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "行くば",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 5,
+    "pattern": "ば",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "行ったば",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 22,
+    "pattern": "意向形 （いこうけい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "行く",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 22,
+    "pattern": "意向形 （いこうけい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "行こう",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 22,
+    "pattern": "意向形 （いこうけい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "行きう",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 22,
+    "pattern": "意向形 （いこうけい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "行くよう",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 22,
+    "pattern": "意向形 （いこうけい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "行こうと",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 22,
+    "pattern": "意向形 （いこうけい）",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "食べる",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 22,
+    "pattern": "意向形 （いこうけい）",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "食べよう",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 22,
+    "pattern": "意向形 （いこうけい）",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "食べう",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 22,
+    "pattern": "意向形 （いこうけい）",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "食べりよう",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 22,
+    "pattern": "意向形 （いこうけい）",
+    "qidx": 1,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "食べろう",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 39,
+    "pattern": "くする",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "高い",
+    "missing": "高"
+  },
+  {
+    "level": "n4",
+    "no": 39,
+    "pattern": "くする",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "高くする",
+    "missing": "高"
+  },
+  {
+    "level": "n4",
+    "no": 39,
+    "pattern": "くする",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "高いする",
+    "missing": "高"
+  },
+  {
+    "level": "n4",
+    "no": 39,
+    "pattern": "くする",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "高くなる",
+    "missing": "高"
+  },
+  {
+    "level": "n4",
+    "no": 39,
+    "pattern": "くする",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "高にする",
+    "missing": "高"
+  },
+  {
+    "level": "n4",
+    "no": 40,
+    "pattern": "急に（きゅうに）",
+    "qidx": 0,
+    "type": "form_meaning",
+    "field": "prompt",
+    "value": "「急に{止|と}まる」",
+    "missing": "急"
+  },
+  {
+    "level": "n4",
+    "no": 69,
+    "pattern": "られる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "食べる",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 69,
+    "pattern": "られる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "食べられる",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 69,
+    "pattern": "られる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "食べれる",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 69,
+    "pattern": "られる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "食べる",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 69,
+    "pattern": "られる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "食べた",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 73,
+    "pattern": "させられる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "食べる",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 73,
+    "pattern": "させられる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "食べさせられる",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 73,
+    "pattern": "させられる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "食べられる",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 73,
+    "pattern": "させられる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "食べさせる",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 73,
+    "pattern": "させられる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "食べさせるれる",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 74,
+    "pattern": "させる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "行く",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 74,
+    "pattern": "させる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "行かせる",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 74,
+    "pattern": "させる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "行かれる",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 74,
+    "pattern": "させる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "行ける",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 74,
+    "pattern": "させる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "行きさせる",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 87,
+    "pattern": "たがる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "行く",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 87,
+    "pattern": "たがる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "行きたがる",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 87,
+    "pattern": "たがる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "行きたい",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 87,
+    "pattern": "たがる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "行きたがります",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 87,
+    "pattern": "たがる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "行ったがる",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 88,
+    "pattern": "たら",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "行く",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 88,
+    "pattern": "たら",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "行ったら",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 88,
+    "pattern": "たら",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "行きたら",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 88,
+    "pattern": "たら",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "行くたら",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 88,
+    "pattern": "たら",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "行ければ",
+    "missing": "行"
+  },
+  {
+    "level": "n4",
+    "no": 91,
+    "pattern": "て / で",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "書く",
+    "missing": "書"
+  },
+  {
+    "level": "n4",
+    "no": 91,
+    "pattern": "て / で",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "書いて",
+    "missing": "書"
+  },
+  {
+    "level": "n4",
+    "no": 91,
+    "pattern": "て / で",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "書きて",
+    "missing": "書"
+  },
+  {
+    "level": "n4",
+    "no": 91,
+    "pattern": "て / で",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "書くて",
+    "missing": "書"
+  },
+  {
+    "level": "n4",
+    "no": 91,
+    "pattern": "て / で",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "書って",
+    "missing": "書"
+  },
+  {
+    "level": "n4",
+    "no": 92,
+    "pattern": "てあげる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "買う",
+    "missing": "買"
+  },
+  {
+    "level": "n4",
+    "no": 92,
+    "pattern": "てあげる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "買ってあげる",
+    "missing": "買"
+  },
+  {
+    "level": "n4",
+    "no": 92,
+    "pattern": "てあげる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "買いてあげる",
+    "missing": "買"
+  },
+  {
+    "level": "n4",
+    "no": 92,
+    "pattern": "てあげる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "買うてあげる",
+    "missing": "買"
+  },
+  {
+    "level": "n4",
+    "no": 92,
+    "pattern": "てあげる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "買ってもらう",
+    "missing": "買"
+  },
+  {
+    "level": "n4",
+    "no": 94,
+    "pattern": "ていく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "持つ",
+    "missing": "持"
+  },
+  {
+    "level": "n4",
+    "no": 94,
+    "pattern": "ていく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "持っていく",
+    "missing": "持"
+  },
+  {
+    "level": "n4",
+    "no": 94,
+    "pattern": "ていく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "持ちていく",
+    "missing": "持"
+  },
+  {
+    "level": "n4",
+    "no": 94,
+    "pattern": "ていく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "持つていく",
+    "missing": "持"
+  },
+  {
+    "level": "n4",
+    "no": 94,
+    "pattern": "ていく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "持ってくる",
+    "missing": "持"
+  },
+  {
+    "level": "n4",
+    "no": 95,
+    "pattern": "ていた",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "見る",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 95,
+    "pattern": "ていた",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "見ていた",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 95,
+    "pattern": "ていた",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "見った",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 95,
+    "pattern": "ていた",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "見ていって",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 95,
+    "pattern": "ていた",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "見るていた",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 97,
+    "pattern": "てくれる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "教える",
+    "missing": "教"
+  },
+  {
+    "level": "n4",
+    "no": 97,
+    "pattern": "てくれる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "教えてくれる",
+    "missing": "教"
+  },
+  {
+    "level": "n4",
+    "no": 97,
+    "pattern": "てくれる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "教えてあげる",
+    "missing": "教"
+  },
+  {
+    "level": "n4",
+    "no": 97,
+    "pattern": "てくれる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "教えてもらう",
+    "missing": "教"
+  },
+  {
+    "level": "n4",
+    "no": 97,
+    "pattern": "てくれる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "教えるくれる",
+    "missing": "教"
+  },
+  {
+    "level": "n4",
+    "no": 98,
+    "pattern": "てくる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "持つ",
+    "missing": "持"
+  },
+  {
+    "level": "n4",
+    "no": 98,
+    "pattern": "てくる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "持ってくる",
+    "missing": "持"
+  },
+  {
+    "level": "n4",
+    "no": 98,
+    "pattern": "てくる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "持ちてくる",
+    "missing": "持"
+  },
+  {
+    "level": "n4",
+    "no": 98,
+    "pattern": "てくる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "持つてくる",
+    "missing": "持"
+  },
+  {
+    "level": "n4",
+    "no": 98,
+    "pattern": "てくる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "持っていく",
+    "missing": "持"
+  },
+  {
+    "level": "n4",
+    "no": 99,
+    "pattern": "てみる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "着る",
+    "missing": "着"
+  },
+  {
+    "level": "n4",
+    "no": 99,
+    "pattern": "てみる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "着てみる",
+    "missing": "着"
+  },
+  {
+    "level": "n4",
+    "no": 99,
+    "pattern": "てみる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "着るみる",
+    "missing": "着"
+  },
+  {
+    "level": "n4",
+    "no": 99,
+    "pattern": "てみる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "着きてみる",
+    "missing": "着"
+  },
+  {
+    "level": "n4",
+    "no": 99,
+    "pattern": "てみる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "着られる",
+    "missing": "着"
+  },
+  {
+    "level": "n4",
+    "no": 100,
+    "pattern": "てもらう",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "貸す",
+    "missing": "貸"
+  },
+  {
+    "level": "n4",
+    "no": 100,
+    "pattern": "てもらう",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "貸してもらう",
+    "missing": "貸"
+  },
+  {
+    "level": "n4",
+    "no": 100,
+    "pattern": "てもらう",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "貸してくれる",
+    "missing": "貸"
+  },
+  {
+    "level": "n4",
+    "no": 100,
+    "pattern": "てもらう",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "貸してあげる",
+    "missing": "貸"
+  },
+  {
+    "level": "n4",
+    "no": 100,
+    "pattern": "てもらう",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "貸しもらう",
+    "missing": "貸"
+  },
+  {
+    "level": "n4",
+    "no": 101,
+    "pattern": "ておく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "買う",
+    "missing": "買"
+  },
+  {
+    "level": "n4",
+    "no": 101,
+    "pattern": "ておく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "買っておく",
+    "missing": "買"
+  },
+  {
+    "level": "n4",
+    "no": 101,
+    "pattern": "ておく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "買ってある",
+    "missing": "買"
+  },
+  {
+    "level": "n4",
+    "no": 101,
+    "pattern": "ておく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "買っている",
+    "missing": "買"
+  },
+  {
+    "level": "n4",
+    "no": 101,
+    "pattern": "ておく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "買っていく",
+    "missing": "買"
+  },
+  {
+    "level": "n4",
+    "no": 102,
+    "pattern": "てしまう / ちゃう",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "食べる",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 102,
+    "pattern": "てしまう / ちゃう",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "食べちゃう",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 102,
+    "pattern": "てしまう / ちゃう",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "食べじゃう",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 102,
+    "pattern": "てしまう / ちゃう",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "食べてしゃう",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 102,
+    "pattern": "てしまう / ちゃう",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "食べちゃった",
+    "missing": "食"
+  },
+  {
+    "level": "n4",
+    "no": 104,
+    "pattern": "てやる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "見せる",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 104,
+    "pattern": "てやる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "見せてやる",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 104,
+    "pattern": "てやる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "見せてあげる",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 104,
+    "pattern": "てやる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "見せてくれる",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 104,
+    "pattern": "てやる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "見せてもらう",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 107,
+    "pattern": "ても",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "高い",
+    "missing": "高"
+  },
+  {
+    "level": "n4",
+    "no": 107,
+    "pattern": "ても",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "高くても",
+    "missing": "高"
+  },
+  {
+    "level": "n4",
+    "no": 107,
+    "pattern": "ても",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "高いても",
+    "missing": "高"
+  },
+  {
+    "level": "n4",
+    "no": 107,
+    "pattern": "ても",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "高でも",
+    "missing": "高"
+  },
+  {
+    "level": "n4",
+    "no": 107,
+    "pattern": "ても",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "高くでも",
+    "missing": "高"
+  },
+  {
+    "level": "n4",
+    "no": 117,
+    "pattern": "続ける（つづける）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "走る",
+    "missing": "走"
+  },
+  {
+    "level": "n4",
+    "no": 117,
+    "pattern": "続ける（つづける）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "走り続ける",
+    "missing": "走続"
+  },
+  {
+    "level": "n4",
+    "no": 117,
+    "pattern": "続ける（つづける）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "走る続ける",
+    "missing": "走続"
+  },
+  {
+    "level": "n4",
+    "no": 117,
+    "pattern": "続ける（つづける）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "走って続ける",
+    "missing": "走続"
+  },
+  {
+    "level": "n4",
+    "no": 117,
+    "pattern": "続ける（つづける）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "走り始める",
+    "missing": "走始"
+  },
+  {
+    "level": "n4",
+    "no": 119,
+    "pattern": "受身形（うけみけい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "見る",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 119,
+    "pattern": "受身形（うけみけい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "見られる",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 119,
+    "pattern": "受身形（うけみけい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "見れる",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 119,
+    "pattern": "受身形（うけみけい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "見させる",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 119,
+    "pattern": "受身形（うけみけい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "見せる",
+    "missing": "見"
+  },
+  {
+    "level": "n4",
+    "no": 121,
+    "pattern": "やすい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "使う",
+    "missing": "使"
+  },
+  {
+    "level": "n4",
+    "no": 121,
+    "pattern": "やすい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "使いやすい",
+    "missing": "使"
+  },
+  {
+    "level": "n4",
+    "no": 121,
+    "pattern": "やすい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "使うやすい",
+    "missing": "使"
+  },
+  {
+    "level": "n4",
+    "no": 121,
+    "pattern": "やすい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "使ってやすい",
+    "missing": "使"
+  },
+  {
+    "level": "n4",
+    "no": 121,
+    "pattern": "やすい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "使えやすい",
+    "missing": "使"
+  },
+  {
+    "level": "n4",
+    "no": 127,
+    "pattern": "ようになる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "話す",
+    "missing": "話"
+  },
+  {
+    "level": "n4",
+    "no": 127,
+    "pattern": "ようになる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "話せるようになる",
+    "missing": "話"
+  },
+  {
+    "level": "n4",
+    "no": 127,
+    "pattern": "ようになる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "話すようになる",
+    "missing": "話"
+  },
+  {
+    "level": "n4",
+    "no": 127,
+    "pattern": "ようになる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "話されるようになる",
+    "missing": "話"
+  },
+  {
+    "level": "n4",
+    "no": 127,
+    "pattern": "ようになる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "話してようになる",
+    "missing": "話"
+  },
+  {
+    "level": "n4",
+    "no": 129,
+    "pattern": "ようと思う（ようとおもう）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "勉強する",
+    "missing": "勉強"
+  },
+  {
+    "level": "n4",
+    "no": 129,
+    "pattern": "ようと思う（ようとおもう）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "勉強しようと思う",
+    "missing": "勉強思"
+  },
+  {
+    "level": "n4",
+    "no": 129,
+    "pattern": "ようと思う（ようとおもう）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "勉強すると思う",
+    "missing": "勉強思"
+  },
+  {
+    "level": "n4",
+    "no": 129,
+    "pattern": "ようと思う（ようとおもう）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "勉強したいと思う",
+    "missing": "勉強思"
+  },
+  {
+    "level": "n4",
+    "no": 129,
+    "pattern": "ようと思う（ようとおもう）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "勉強するつもりと思う",
+    "missing": "勉強思"
+  },
+  {
+    "level": "n4",
+    "no": 132,
+    "pattern": "づらい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "頼む",
+    "missing": "頼"
+  },
+  {
+    "level": "n4",
+    "no": 132,
+    "pattern": "づらい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "頼みづらい",
+    "missing": "頼"
+  },
+  {
+    "level": "n4",
+    "no": 132,
+    "pattern": "づらい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "頼むづらい",
+    "missing": "頼"
+  },
+  {
+    "level": "n4",
+    "no": 132,
+    "pattern": "づらい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "頼んでづらい",
+    "missing": "頼"
+  },
+  {
+    "level": "n4",
+    "no": 132,
+    "pattern": "づらい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "頼まれづらい",
+    "missing": "頼"
+  },
+  {
+    "level": "n3",
+    "no": 1,
+    "pattern": "上げる（あげる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "書く",
+    "missing": "書"
+  },
+  {
+    "level": "n3",
+    "no": 1,
+    "pattern": "上げる（あげる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "書き上げる",
+    "missing": "書上"
+  },
+  {
+    "level": "n3",
+    "no": 1,
+    "pattern": "上げる（あげる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "書く上げる",
+    "missing": "書上"
+  },
+  {
+    "level": "n3",
+    "no": 1,
+    "pattern": "上げる（あげる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "書いて上げる",
+    "missing": "書上"
+  },
+  {
+    "level": "n3",
+    "no": 1,
+    "pattern": "上げる（あげる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "書かれ上げる",
+    "missing": "書上"
+  },
+  {
+    "level": "n3",
+    "no": 4,
+    "pattern": "合う（あう）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "話す",
+    "missing": "話"
+  },
+  {
+    "level": "n3",
+    "no": 4,
+    "pattern": "合う（あう）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "話し合う",
+    "missing": "話合"
+  },
+  {
+    "level": "n3",
+    "no": 4,
+    "pattern": "合う（あう）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "話す合う",
+    "missing": "話合"
+  },
+  {
+    "level": "n3",
+    "no": 4,
+    "pattern": "合う（あう）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "話して合う",
+    "missing": "話合"
+  },
+  {
+    "level": "n3",
+    "no": 4,
+    "pattern": "合う（あう）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "話される合う",
+    "missing": "話合"
+  },
+  {
+    "level": "n3",
+    "no": 5,
+    "pattern": "ばいい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "行く",
+    "missing": "行"
+  },
+  {
+    "level": "n3",
+    "no": 5,
+    "pattern": "ばいい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "行けばいい",
+    "missing": "行"
+  },
+  {
+    "level": "n3",
+    "no": 5,
+    "pattern": "ばいい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "行くばいい",
+    "missing": "行"
+  },
+  {
+    "level": "n3",
+    "no": 5,
+    "pattern": "ばいい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "行ったばいい",
+    "missing": "行"
+  },
+  {
+    "level": "n3",
+    "no": 5,
+    "pattern": "ばいい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "行きばいい",
+    "missing": "行"
+  },
+  {
+    "level": "n3",
+    "no": 6,
+    "pattern": "ばよかった",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "言う",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 6,
+    "pattern": "ばよかった",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "言えばよかった",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 6,
+    "pattern": "ばよかった",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "言ったばよかった",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 6,
+    "pattern": "ばよかった",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "言うばよかった",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 6,
+    "pattern": "ばよかった",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "言いばよかった",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 8,
+    "pattern": "ば～のに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "知る",
+    "missing": "知"
+  },
+  {
+    "level": "n3",
+    "no": 8,
+    "pattern": "ば～のに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "知っていればよかったのに",
+    "missing": "知"
+  },
+  {
+    "level": "n3",
+    "no": 8,
+    "pattern": "ば～のに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "知るのに",
+    "missing": "知"
+  },
+  {
+    "level": "n3",
+    "no": 8,
+    "pattern": "ば～のに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "知ったらのに",
+    "missing": "知"
+  },
+  {
+    "level": "n3",
+    "no": 8,
+    "pattern": "ば～のに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "知りばのに",
+    "missing": "知"
+  },
+  {
+    "level": "n3",
+    "no": 11,
+    "pattern": "べきだ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "言う",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 11,
+    "pattern": "べきだ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "言うべきだ",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 11,
+    "pattern": "べきだ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "言ったべきだ",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 11,
+    "pattern": "べきだ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "言いべきだ",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 11,
+    "pattern": "べきだ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "言ってべきだ",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 12,
+    "pattern": "べきではない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "怒る",
+    "missing": "怒"
+  },
+  {
+    "level": "n3",
+    "no": 12,
+    "pattern": "べきではない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "怒るべきではない",
+    "missing": "怒"
+  },
+  {
+    "level": "n3",
+    "no": 12,
+    "pattern": "べきではない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "怒ったべきではない",
+    "missing": "怒"
+  },
+  {
+    "level": "n3",
+    "no": 12,
+    "pattern": "べきではない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "怒らべきではない",
+    "missing": "怒"
+  },
+  {
+    "level": "n3",
+    "no": 12,
+    "pattern": "べきではない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "怒ってべきではない",
+    "missing": "怒"
+  },
+  {
+    "level": "n3",
+    "no": 24,
+    "pattern": "がち",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "遅れる",
+    "missing": "遅"
+  },
+  {
+    "level": "n3",
+    "no": 24,
+    "pattern": "がち",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "遅れがち",
+    "missing": "遅"
+  },
+  {
+    "level": "n3",
+    "no": 24,
+    "pattern": "がち",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "遅れがり",
+    "missing": "遅"
+  },
+  {
+    "level": "n3",
+    "no": 24,
+    "pattern": "がち",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "遅れぎみ",
+    "missing": "遅"
+  },
+  {
+    "level": "n3",
+    "no": 24,
+    "pattern": "がち",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "遅れたがち",
+    "missing": "遅"
+  },
+  {
+    "level": "n3",
+    "no": 25,
+    "pattern": "がたい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "理解する",
+    "missing": "理解"
+  },
+  {
+    "level": "n3",
+    "no": 25,
+    "pattern": "がたい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "理解しがたい",
+    "missing": "理解"
+  },
+  {
+    "level": "n3",
+    "no": 25,
+    "pattern": "がたい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "理解にくい",
+    "missing": "理解"
+  },
+  {
+    "level": "n3",
+    "no": 25,
+    "pattern": "がたい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "理解づらい",
+    "missing": "理解"
+  },
+  {
+    "level": "n3",
+    "no": 25,
+    "pattern": "がたい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "理解しがち",
+    "missing": "理解"
+  },
+  {
+    "level": "n3",
+    "no": 26,
+    "pattern": "気味（ぎみ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "太る",
+    "missing": "太"
+  },
+  {
+    "level": "n3",
+    "no": 26,
+    "pattern": "気味（ぎみ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "太り気味",
+    "missing": "太気味"
+  },
+  {
+    "level": "n3",
+    "no": 26,
+    "pattern": "気味（ぎみ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "太りがち",
+    "missing": "太"
+  },
+  {
+    "level": "n3",
+    "no": 26,
+    "pattern": "気味（ぎみ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "太りやすい",
+    "missing": "太"
+  },
+  {
+    "level": "n3",
+    "no": 26,
+    "pattern": "気味（ぎみ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "太りそう",
+    "missing": "太"
+  },
+  {
+    "level": "n3",
+    "no": 36,
+    "pattern": "かける",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "食べる",
+    "missing": "食"
+  },
+  {
+    "level": "n3",
+    "no": 36,
+    "pattern": "かける",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "食べかける",
+    "missing": "食"
+  },
+  {
+    "level": "n3",
+    "no": 36,
+    "pattern": "かける",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "食べはじめる",
+    "missing": "食"
+  },
+  {
+    "level": "n3",
+    "no": 36,
+    "pattern": "かける",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "食べおわる",
+    "missing": "食"
+  },
+  {
+    "level": "n3",
+    "no": 36,
+    "pattern": "かける",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "食べつづける",
+    "missing": "食"
+  },
+  {
+    "level": "n3",
+    "no": 42,
+    "pattern": "切れない（きれない）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "覚える",
+    "missing": "覚"
+  },
+  {
+    "level": "n3",
+    "no": 42,
+    "pattern": "切れない（きれない）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "覚えきれない",
+    "missing": "覚"
+  },
+  {
+    "level": "n3",
+    "no": 42,
+    "pattern": "切れない（きれない）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "覚えられない",
+    "missing": "覚"
+  },
+  {
+    "level": "n3",
+    "no": 42,
+    "pattern": "切れない（きれない）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "覚えにくい",
+    "missing": "覚"
+  },
+  {
+    "level": "n3",
+    "no": 42,
+    "pattern": "切れない（きれない）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "覚えがたい",
+    "missing": "覚"
+  },
+  {
+    "level": "n3",
+    "no": 44,
+    "pattern": "切る（きる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "使う",
+    "missing": "使"
+  },
+  {
+    "level": "n3",
+    "no": 44,
+    "pattern": "切る（きる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "使い切る",
+    "missing": "使切"
+  },
+  {
+    "level": "n3",
+    "no": 44,
+    "pattern": "切る（きる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "使う切る",
+    "missing": "使切"
+  },
+  {
+    "level": "n3",
+    "no": 44,
+    "pattern": "切る（きる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "使って切る",
+    "missing": "使切"
+  },
+  {
+    "level": "n3",
+    "no": 44,
+    "pattern": "切る（きる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "使い終わる",
+    "missing": "使終"
+  },
+  {
+    "level": "n3",
+    "no": 46,
+    "pattern": "込む（こむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "走る",
+    "missing": "走"
+  },
+  {
+    "level": "n3",
+    "no": 46,
+    "pattern": "込む（こむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "走り込む",
+    "missing": "走込"
+  },
+  {
+    "level": "n3",
+    "no": 46,
+    "pattern": "込む（こむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "走る込む",
+    "missing": "走込"
+  },
+  {
+    "level": "n3",
+    "no": 46,
+    "pattern": "込む（こむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "走って込む",
+    "missing": "走込"
+  },
+  {
+    "level": "n3",
+    "no": 46,
+    "pattern": "込む（こむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "走り出す",
+    "missing": "走出"
+  },
+  {
+    "level": "n3",
+    "no": 50,
+    "pattern": "ことになっている",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "守る",
+    "missing": "守"
+  },
+  {
+    "level": "n3",
+    "no": 50,
+    "pattern": "ことになっている",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "守ることになっている",
+    "missing": "守"
+  },
+  {
+    "level": "n3",
+    "no": 50,
+    "pattern": "ことになっている",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "守ることにしている",
+    "missing": "守"
+  },
+  {
+    "level": "n3",
+    "no": 50,
+    "pattern": "ことになっている",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "守ることにする",
+    "missing": "守"
+  },
+  {
+    "level": "n3",
+    "no": 50,
+    "pattern": "ことになっている",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "守ることになる",
+    "missing": "守"
+  },
+  {
+    "level": "n3",
+    "no": 69,
+    "pattern": "直す（なおす）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "やり直す",
+    "missing": "直"
+  },
+  {
+    "level": "n3",
+    "no": 69,
+    "pattern": "直す（なおす）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "やる直す",
+    "missing": "直"
+  },
+  {
+    "level": "n3",
+    "no": 69,
+    "pattern": "直す（なおす）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "やって直す",
+    "missing": "直"
+  },
+  {
+    "level": "n3",
+    "no": 69,
+    "pattern": "直す（なおす）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "やり始める",
+    "missing": "始"
+  },
+  {
+    "level": "n3",
+    "no": 86,
+    "pattern": "について",
+    "qidx": 1,
+    "type": "form_meaning",
+    "field": "prompt",
+    "value": "「日本{文化|ぶんか}について{学|まな}ぶ」",
+    "missing": "日本"
+  },
+  {
+    "level": "n3",
+    "no": 97,
+    "pattern": "っぱなし",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "開ける",
+    "missing": "開"
+  },
+  {
+    "level": "n3",
+    "no": 97,
+    "pattern": "っぱなし",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "開けっぱなし",
+    "missing": "開"
+  },
+  {
+    "level": "n3",
+    "no": 97,
+    "pattern": "っぱなし",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "開けたまま",
+    "missing": "開"
+  },
+  {
+    "level": "n3",
+    "no": 97,
+    "pattern": "っぱなし",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "開けているまま",
+    "missing": "開"
+  },
+  {
+    "level": "n3",
+    "no": 97,
+    "pattern": "っぱなし",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "開けて置く",
+    "missing": "開置"
+  },
+  {
+    "level": "n3",
+    "no": 98,
+    "pattern": "っぽい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "怒る",
+    "missing": "怒"
+  },
+  {
+    "level": "n3",
+    "no": 98,
+    "pattern": "っぽい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "怒りっぽい",
+    "missing": "怒"
+  },
+  {
+    "level": "n3",
+    "no": 98,
+    "pattern": "っぽい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "怒っぽい",
+    "missing": "怒"
+  },
+  {
+    "level": "n3",
+    "no": 98,
+    "pattern": "っぽい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "怒るっぽい",
+    "missing": "怒"
+  },
+  {
+    "level": "n3",
+    "no": 98,
+    "pattern": "っぽい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "怒ってっぽい",
+    "missing": "怒"
+  },
+  {
+    "level": "n3",
+    "no": 111,
+    "pattern": "そうもない /そうにない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "勝つ",
+    "missing": "勝"
+  },
+  {
+    "level": "n3",
+    "no": 111,
+    "pattern": "そうもない /そうにない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "勝ちそうもない",
+    "missing": "勝"
+  },
+  {
+    "level": "n3",
+    "no": 111,
+    "pattern": "そうもない /そうにない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "勝つそうもない",
+    "missing": "勝"
+  },
+  {
+    "level": "n3",
+    "no": 111,
+    "pattern": "そうもない /そうにない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "勝ったそうもない",
+    "missing": "勝"
+  },
+  {
+    "level": "n3",
+    "no": 111,
+    "pattern": "そうもない /そうにない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "勝てそうもない",
+    "missing": "勝"
+  },
+  {
+    "level": "n3",
+    "no": 115,
+    "pattern": "たものだ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "遊ぶ",
+    "missing": "遊"
+  },
+  {
+    "level": "n3",
+    "no": 115,
+    "pattern": "たものだ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "遊んだものだ",
+    "missing": "遊"
+  },
+  {
+    "level": "n3",
+    "no": 115,
+    "pattern": "たものだ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "遊ぶものだ",
+    "missing": "遊"
+  },
+  {
+    "level": "n3",
+    "no": 115,
+    "pattern": "たものだ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "遊ぶことだ",
+    "missing": "遊"
+  },
+  {
+    "level": "n3",
+    "no": 115,
+    "pattern": "たものだ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "遊ぶようだ",
+    "missing": "遊"
+  },
+  {
+    "level": "n3",
+    "no": 116,
+    "pattern": "たとたん",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "見る",
+    "missing": "見"
+  },
+  {
+    "level": "n3",
+    "no": 116,
+    "pattern": "たとたん",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "見たとたん",
+    "missing": "見"
+  },
+  {
+    "level": "n3",
+    "no": 116,
+    "pattern": "たとたん",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "見るとたん",
+    "missing": "見"
+  },
+  {
+    "level": "n3",
+    "no": 116,
+    "pattern": "たとたん",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "見てとたん",
+    "missing": "見"
+  },
+  {
+    "level": "n3",
+    "no": 116,
+    "pattern": "たとたん",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "見ているとたん",
+    "missing": "見"
+  },
+  {
+    "level": "n3",
+    "no": 120,
+    "pattern": "たて",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "出来る",
+    "missing": "出来"
+  },
+  {
+    "level": "n3",
+    "no": 120,
+    "pattern": "たて",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "出来たて",
+    "missing": "出来"
+  },
+  {
+    "level": "n3",
+    "no": 120,
+    "pattern": "たて",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "出来るたて",
+    "missing": "出来"
+  },
+  {
+    "level": "n3",
+    "no": 120,
+    "pattern": "たて",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "出来てたて",
+    "missing": "出来"
+  },
+  {
+    "level": "n3",
+    "no": 120,
+    "pattern": "たて",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "出来たばかり",
+    "missing": "出来"
+  },
+  {
+    "level": "n3",
+    "no": 132,
+    "pattern": "的（てき）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "歴史",
+    "missing": "歴史"
+  },
+  {
+    "level": "n3",
+    "no": 132,
+    "pattern": "的（てき）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "歴史的",
+    "missing": "歴史的"
+  },
+  {
+    "level": "n3",
+    "no": 132,
+    "pattern": "的（てき）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "歴史らしい",
+    "missing": "歴史"
+  },
+  {
+    "level": "n3",
+    "no": 132,
+    "pattern": "的（てき）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "歴史っぽい",
+    "missing": "歴史"
+  },
+  {
+    "level": "n3",
+    "no": 132,
+    "pattern": "的（てき）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "歴史だらけ",
+    "missing": "歴史"
+  },
+  {
+    "level": "n3",
+    "no": 150,
+    "pattern": "通す（とおす）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "やり通す",
+    "missing": "通"
+  },
+  {
+    "level": "n3",
+    "no": 150,
+    "pattern": "通す（とおす）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "やる通す",
+    "missing": "通"
+  },
+  {
+    "level": "n3",
+    "no": 150,
+    "pattern": "通す（とおす）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "やって通す",
+    "missing": "通"
+  },
+  {
+    "level": "n3",
+    "no": 150,
+    "pattern": "通す（とおす）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "やり切る",
+    "missing": "切"
+  },
+  {
+    "level": "n3",
+    "no": 152,
+    "pattern": "とても～ない",
+    "qidx": 0,
+    "type": "pattern_blank",
+    "field": "sentence",
+    "value": "{{とても信じられない}}話だ。",
+    "missing": "話"
+  },
+  {
+    "level": "n3",
+    "no": 174,
+    "pattern": "ようがない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "言う",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 174,
+    "pattern": "ようがない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "言いようがない",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 174,
+    "pattern": "ようがない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "言うようがない",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 174,
+    "pattern": "ようがない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "言えようがない",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 174,
+    "pattern": "ようがない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "言ってようがない",
+    "missing": "言"
+  },
+  {
+    "level": "n3",
+    "no": 178,
+    "pattern": "ようとしない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "認める",
+    "missing": "認"
+  },
+  {
+    "level": "n3",
+    "no": 178,
+    "pattern": "ようとしない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "認めようとしない",
+    "missing": "認"
+  },
+  {
+    "level": "n3",
+    "no": 178,
+    "pattern": "ようとしない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "認めるとしない",
+    "missing": "認"
+  },
+  {
+    "level": "n3",
+    "no": 178,
+    "pattern": "ようとしない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "認めとしない",
+    "missing": "認"
+  },
+  {
+    "level": "n3",
+    "no": 178,
+    "pattern": "ようとしない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "認めないようにする",
+    "missing": "認"
+  },
+  {
+    "level": "n3",
+    "no": 179,
+    "pattern": "ようとする",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "話す",
+    "missing": "話"
+  },
+  {
+    "level": "n3",
+    "no": 179,
+    "pattern": "ようとする",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "話そうとする",
+    "missing": "話"
+  },
+  {
+    "level": "n3",
+    "no": 179,
+    "pattern": "ようとする",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "話すとする",
+    "missing": "話"
+  },
+  {
+    "level": "n3",
+    "no": 179,
+    "pattern": "ようとする",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "話しとする",
+    "missing": "話"
+  },
+  {
+    "level": "n3",
+    "no": 179,
+    "pattern": "ようとする",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "話してとする",
+    "missing": "話"
+  },
+  {
+    "level": "n3",
+    "no": 180,
+    "pattern": "ずに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "勉強する",
+    "missing": "勉強"
+  },
+  {
+    "level": "n3",
+    "no": 180,
+    "pattern": "ずに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "勉強せずに",
+    "missing": "勉強"
+  },
+  {
+    "level": "n3",
+    "no": 180,
+    "pattern": "ずに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "勉強しずに",
+    "missing": "勉強"
+  },
+  {
+    "level": "n3",
+    "no": 180,
+    "pattern": "ずに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "勉強しないで",
+    "missing": "勉強"
+  },
+  {
+    "level": "n3",
+    "no": 180,
+    "pattern": "ずに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "勉強しなくて",
+    "missing": "勉強"
+  },
+  {
+    "level": "n3",
+    "no": 181,
+    "pattern": "ずにはいられない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "笑う",
+    "missing": "笑"
+  },
+  {
+    "level": "n3",
+    "no": 181,
+    "pattern": "ずにはいられない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "笑わずにはいられない",
+    "missing": "笑"
+  },
+  {
+    "level": "n3",
+    "no": 181,
+    "pattern": "ずにはいられない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "笑いずにはいられない",
+    "missing": "笑"
+  },
+  {
+    "level": "n3",
+    "no": 181,
+    "pattern": "ずにはいられない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "笑ってはいられない",
+    "missing": "笑"
+  },
+  {
+    "level": "n3",
+    "no": 181,
+    "pattern": "ずにはいられない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "笑いはいられない",
+    "missing": "笑"
+  },
+  {
+    "level": "n2",
+    "no": 20,
+    "pattern": "得ない（えない）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "あり得ない",
+    "missing": "得"
+  },
+  {
+    "level": "n2",
+    "no": 20,
+    "pattern": "得ない（えない）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "ある得ない",
+    "missing": "得"
+  },
+  {
+    "level": "n2",
+    "no": 21,
+    "pattern": "得る（える / うる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "あり得る",
+    "missing": "得"
+  },
+  {
+    "level": "n2",
+    "no": 21,
+    "pattern": "得る（える / うる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "ある得る",
+    "missing": "得"
+  },
+  {
+    "level": "n2",
+    "no": 25,
+    "pattern": "げ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "寂しい",
+    "missing": "寂"
+  },
+  {
+    "level": "n2",
+    "no": 25,
+    "pattern": "げ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "寂しげ",
+    "missing": "寂"
+  },
+  {
+    "level": "n2",
+    "no": 25,
+    "pattern": "げ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "寂しいげ",
+    "missing": "寂"
+  },
+  {
+    "level": "n2",
+    "no": 25,
+    "pattern": "げ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "寂しくげ",
+    "missing": "寂"
+  },
+  {
+    "level": "n2",
+    "no": 25,
+    "pattern": "げ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "寂しのげ",
+    "missing": "寂"
+  },
+  {
+    "level": "n2",
+    "no": 45,
+    "pattern": "かねない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "事故になる",
+    "missing": "事故"
+  },
+  {
+    "level": "n2",
+    "no": 45,
+    "pattern": "かねない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "事故になりかねない",
+    "missing": "事故"
+  },
+  {
+    "level": "n2",
+    "no": 45,
+    "pattern": "かねない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "事故になりかねる",
+    "missing": "事故"
+  },
+  {
+    "level": "n2",
+    "no": 45,
+    "pattern": "かねない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "事故になりがち",
+    "missing": "事故"
+  },
+  {
+    "level": "n2",
+    "no": 45,
+    "pattern": "かねない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "事故になりそう",
+    "missing": "事故"
+  },
+  {
+    "level": "n2",
+    "no": 46,
+    "pattern": "かねる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "理解する",
+    "missing": "理解"
+  },
+  {
+    "level": "n2",
+    "no": 46,
+    "pattern": "かねる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "理解しかねる",
+    "missing": "理解"
+  },
+  {
+    "level": "n2",
+    "no": 46,
+    "pattern": "かねる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "理解しかねない",
+    "missing": "理解"
+  },
+  {
+    "level": "n2",
+    "no": 46,
+    "pattern": "かねる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "理解しがち",
+    "missing": "理解"
+  },
+  {
+    "level": "n2",
+    "no": 46,
+    "pattern": "かねる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "理解しがたい",
+    "missing": "理解"
+  },
+  {
+    "level": "n2",
+    "no": 54,
+    "pattern": "っこない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "分かる",
+    "missing": "分"
+  },
+  {
+    "level": "n2",
+    "no": 54,
+    "pattern": "っこない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "分かりっこない",
+    "missing": "分"
+  },
+  {
+    "level": "n2",
+    "no": 54,
+    "pattern": "っこない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "分からっこない",
+    "missing": "分"
+  },
+  {
+    "level": "n2",
+    "no": 54,
+    "pattern": "っこない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "分かれっこない",
+    "missing": "分"
+  },
+  {
+    "level": "n2",
+    "no": 54,
+    "pattern": "っこない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "分かっこない",
+    "missing": "分"
+  },
+  {
+    "level": "n2",
+    "no": 63,
+    "pattern": "まい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "言う",
+    "missing": "言"
+  },
+  {
+    "level": "n2",
+    "no": 63,
+    "pattern": "まい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "言うまい",
+    "missing": "言"
+  },
+  {
+    "level": "n2",
+    "no": 63,
+    "pattern": "まい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "言わまい",
+    "missing": "言"
+  },
+  {
+    "level": "n2",
+    "no": 63,
+    "pattern": "まい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "言いまい",
+    "missing": "言"
+  },
+  {
+    "level": "n2",
+    "no": 63,
+    "pattern": "まい",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "言えまい",
+    "missing": "言"
+  },
+  {
+    "level": "n2",
+    "no": 78,
+    "pattern": "ないではいられない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "言う",
+    "missing": "言"
+  },
+  {
+    "level": "n2",
+    "no": 78,
+    "pattern": "ないではいられない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "言わないではいられない",
+    "missing": "言"
+  },
+  {
+    "level": "n2",
+    "no": 78,
+    "pattern": "ないではいられない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "言うないではいられない",
+    "missing": "言"
+  },
+  {
+    "level": "n2",
+    "no": 78,
+    "pattern": "ないではいられない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "言いではいられない",
+    "missing": "言"
+  },
+  {
+    "level": "n2",
+    "no": 78,
+    "pattern": "ないではいられない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "言いないではいられない",
+    "missing": "言"
+  },
+  {
+    "level": "n2",
+    "no": 82,
+    "pattern": "なくて済む（なくてすむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "行く",
+    "missing": "行"
+  },
+  {
+    "level": "n2",
+    "no": 82,
+    "pattern": "なくて済む（なくてすむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "行かなくて済む",
+    "missing": "行済"
+  },
+  {
+    "level": "n2",
+    "no": 82,
+    "pattern": "なくて済む（なくてすむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "行きなくて済む",
+    "missing": "行済"
+  },
+  {
+    "level": "n2",
+    "no": 82,
+    "pattern": "なくて済む（なくてすむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "行くなくて済む",
+    "missing": "行済"
+  },
+  {
+    "level": "n2",
+    "no": 82,
+    "pattern": "なくて済む（なくてすむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "行ってなくて済む",
+    "missing": "行済"
+  },
+  {
+    "level": "n2",
+    "no": 85,
+    "pattern": "ねばならない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "決定する",
+    "missing": "決定"
+  },
+  {
+    "level": "n2",
+    "no": 85,
+    "pattern": "ねばならない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "決定せねばならない",
+    "missing": "決定"
+  },
+  {
+    "level": "n2",
+    "no": 85,
+    "pattern": "ねばならない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "決定しねばならない",
+    "missing": "決定"
+  },
+  {
+    "level": "n2",
+    "no": 85,
+    "pattern": "ねばならない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "決定するねばならない",
+    "missing": "決定"
+  },
+  {
+    "level": "n2",
+    "no": 85,
+    "pattern": "ねばならない",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "決定してねばならない",
+    "missing": "決定"
+  },
+  {
+    "level": "n2",
+    "no": 120,
+    "pattern": "ぬ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "知る",
+    "missing": "知"
+  },
+  {
+    "level": "n2",
+    "no": 120,
+    "pattern": "ぬ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "知らぬ",
+    "missing": "知"
+  },
+  {
+    "level": "n2",
+    "no": 120,
+    "pattern": "ぬ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "知るぬ",
+    "missing": "知"
+  },
+  {
+    "level": "n2",
+    "no": 120,
+    "pattern": "ぬ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "知りぬ",
+    "missing": "知"
+  },
+  {
+    "level": "n2",
+    "no": 120,
+    "pattern": "ぬ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "知れぬ",
+    "missing": "知"
+  },
+  {
+    "level": "n2",
+    "no": 122,
+    "pattern": "抜く（ぬく）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "やり抜く",
+    "missing": "抜"
+  },
+  {
+    "level": "n2",
+    "no": 122,
+    "pattern": "抜く（ぬく）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "やる抜く",
+    "missing": "抜"
+  },
+  {
+    "level": "n2",
+    "no": 122,
+    "pattern": "抜く（ぬく）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "やって抜く",
+    "missing": "抜"
+  },
+  {
+    "level": "n2",
+    "no": 122,
+    "pattern": "抜く（ぬく）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "やり切る",
+    "missing": "切"
+  },
+  {
+    "level": "n2",
+    "no": 138,
+    "pattern": "次第（しだい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "終わる",
+    "missing": "終"
+  },
+  {
+    "level": "n2",
+    "no": 138,
+    "pattern": "次第（しだい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "終わり次第",
+    "missing": "終次第"
+  },
+  {
+    "level": "n2",
+    "no": 138,
+    "pattern": "次第（しだい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "終わる次第",
+    "missing": "終次第"
+  },
+  {
+    "level": "n2",
+    "no": 138,
+    "pattern": "次第（しだい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "終わって次第",
+    "missing": "終次第"
+  },
+  {
+    "level": "n2",
+    "no": 138,
+    "pattern": "次第（しだい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "終わった次第",
+    "missing": "終次第"
+  },
+  {
+    "level": "n2",
+    "no": 152,
+    "pattern": "たまえ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "聞く",
+    "missing": "聞"
+  },
+  {
+    "level": "n2",
+    "no": 152,
+    "pattern": "たまえ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "聞きたまえ",
+    "missing": "聞"
+  },
+  {
+    "level": "n2",
+    "no": 152,
+    "pattern": "たまえ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "聞くたまえ",
+    "missing": "聞"
+  },
+  {
+    "level": "n2",
+    "no": 152,
+    "pattern": "たまえ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "聞いたたまえ",
+    "missing": "聞"
+  },
+  {
+    "level": "n2",
+    "no": 152,
+    "pattern": "たまえ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "聞いてたまえ",
+    "missing": "聞"
+  },
+  {
+    "level": "n2",
+    "no": 181,
+    "pattern": "つつ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "歩く",
+    "missing": "歩"
+  },
+  {
+    "level": "n2",
+    "no": 181,
+    "pattern": "つつ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "歩きつつ",
+    "missing": "歩"
+  },
+  {
+    "level": "n2",
+    "no": 181,
+    "pattern": "つつ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "歩くつつ",
+    "missing": "歩"
+  },
+  {
+    "level": "n2",
+    "no": 181,
+    "pattern": "つつ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "歩いてつつ",
+    "missing": "歩"
+  },
+  {
+    "level": "n2",
+    "no": 181,
+    "pattern": "つつ",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "歩いたつつ",
+    "missing": "歩"
+  },
+  {
+    "level": "n2",
+    "no": 182,
+    "pattern": "つつある",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "増える",
+    "missing": "増"
+  },
+  {
+    "level": "n2",
+    "no": 182,
+    "pattern": "つつある",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "増えつつある",
+    "missing": "増"
+  },
+  {
+    "level": "n2",
+    "no": 182,
+    "pattern": "つつある",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "増えるつつある",
+    "missing": "増"
+  },
+  {
+    "level": "n2",
+    "no": 182,
+    "pattern": "つつある",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "増えてつつある",
+    "missing": "増"
+  },
+  {
+    "level": "n2",
+    "no": 182,
+    "pattern": "つつある",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "増えたつつある",
+    "missing": "増"
+  },
+  {
+    "level": "n2",
+    "no": 196,
+    "pattern": "ざるを得ない（ざるをえない）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "出席する",
+    "missing": "出席"
+  },
+  {
+    "level": "n2",
+    "no": 196,
+    "pattern": "ざるを得ない（ざるをえない）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "出席せざるを得ない",
+    "missing": "出席得"
+  },
+  {
+    "level": "n2",
+    "no": 196,
+    "pattern": "ざるを得ない（ざるをえない）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "出席しざるを得ない",
+    "missing": "出席得"
+  },
+  {
+    "level": "n2",
+    "no": 196,
+    "pattern": "ざるを得ない（ざるをえない）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "出席するざるを得ない",
+    "missing": "出席得"
+  },
+  {
+    "level": "n2",
+    "no": 196,
+    "pattern": "ざるを得ない（ざるをえない）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "出席してざるを得ない",
+    "missing": "出席得"
+  },
+  {
+    "level": "n2",
+    "no": 197,
+    "pattern": "ずに済む （ずにすむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "心配する",
+    "missing": "心配"
+  },
+  {
+    "level": "n2",
+    "no": 197,
+    "pattern": "ずに済む （ずにすむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "心配せずに済む",
+    "missing": "心配済"
+  },
+  {
+    "level": "n2",
+    "no": 197,
+    "pattern": "ずに済む （ずにすむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "心配しずに済む",
+    "missing": "心配済"
+  },
+  {
+    "level": "n2",
+    "no": 197,
+    "pattern": "ずに済む （ずにすむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "心配するずに済む",
+    "missing": "心配済"
+  },
+  {
+    "level": "n2",
+    "no": 197,
+    "pattern": "ずに済む （ずにすむ）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "心配してずに済む",
+    "missing": "心配済"
+  },
+  {
+    "level": "n1",
+    "no": 8,
+    "pattern": "べからず / べからざる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "見る",
+    "missing": "見"
+  },
+  {
+    "level": "n1",
+    "no": 8,
+    "pattern": "べからず / べからざる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "見るべからず",
+    "missing": "見"
+  },
+  {
+    "level": "n1",
+    "no": 8,
+    "pattern": "べからず / べからざる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "見べからず",
+    "missing": "見"
+  },
+  {
+    "level": "n1",
+    "no": 8,
+    "pattern": "べからず / べからざる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "見ているべからず",
+    "missing": "見"
+  },
+  {
+    "level": "n1",
+    "no": 8,
+    "pattern": "べからず / べからざる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "見たべからず",
+    "missing": "見"
+  },
+  {
+    "level": "n1",
+    "no": 9,
+    "pattern": "べく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "勝つ",
+    "missing": "勝"
+  },
+  {
+    "level": "n1",
+    "no": 9,
+    "pattern": "べく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "勝つべく",
+    "missing": "勝"
+  },
+  {
+    "level": "n1",
+    "no": 9,
+    "pattern": "べく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "勝ったべく",
+    "missing": "勝"
+  },
+  {
+    "level": "n1",
+    "no": 9,
+    "pattern": "べく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "勝ちべく",
+    "missing": "勝"
+  },
+  {
+    "level": "n1",
+    "no": 9,
+    "pattern": "べく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "勝ってべく",
+    "missing": "勝"
+  },
+  {
+    "level": "n1",
+    "no": 12,
+    "pattern": "びる / びて / びた",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "古い",
+    "missing": "古"
+  },
+  {
+    "level": "n1",
+    "no": 12,
+    "pattern": "びる / びて / びた",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "古びる",
+    "missing": "古"
+  },
+  {
+    "level": "n1",
+    "no": 12,
+    "pattern": "びる / びて / びた",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "古めく",
+    "missing": "古"
+  },
+  {
+    "level": "n1",
+    "no": 12,
+    "pattern": "びる / びて / びた",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "古っぽい",
+    "missing": "古"
+  },
+  {
+    "level": "n1",
+    "no": 12,
+    "pattern": "びる / びて / びた",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "古がる",
+    "missing": "古"
+  },
+  {
+    "level": "n1",
+    "no": 13,
+    "pattern": "ぶり / っぷり",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "働く",
+    "missing": "働"
+  },
+  {
+    "level": "n1",
+    "no": 13,
+    "pattern": "ぶり / っぷり",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "働きぶり",
+    "missing": "働"
+  },
+  {
+    "level": "n1",
+    "no": 13,
+    "pattern": "ぶり / っぷり",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "働くぶり",
+    "missing": "働"
+  },
+  {
+    "level": "n1",
+    "no": 13,
+    "pattern": "ぶり / っぷり",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "働いてぶり",
+    "missing": "働"
+  },
+  {
+    "level": "n1",
+    "no": 13,
+    "pattern": "ぶり / っぷり",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "働いたぶり",
+    "missing": "働"
+  },
+  {
+    "level": "n1",
+    "no": 14,
+    "pattern": "ぶる / ぶって / ぶった",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "偉い",
+    "missing": "偉"
+  },
+  {
+    "level": "n1",
+    "no": 14,
+    "pattern": "ぶる / ぶって / ぶった",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "偉ぶる",
+    "missing": "偉"
+  },
+  {
+    "level": "n1",
+    "no": 14,
+    "pattern": "ぶる / ぶって / ぶった",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "偉いぶる",
+    "missing": "偉"
+  },
+  {
+    "level": "n1",
+    "no": 14,
+    "pattern": "ぶる / ぶって / ぶった",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "偉さぶる",
+    "missing": "偉"
+  },
+  {
+    "level": "n1",
+    "no": 14,
+    "pattern": "ぶる / ぶって / ぶった",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "偉くぶる",
+    "missing": "偉"
+  },
+  {
+    "level": "n1",
+    "no": 36,
+    "pattern": "放題（ほうだい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "飲む",
+    "missing": "飲"
+  },
+  {
+    "level": "n1",
+    "no": 36,
+    "pattern": "放題（ほうだい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "飲み放題",
+    "missing": "飲放題"
+  },
+  {
+    "level": "n1",
+    "no": 36,
+    "pattern": "放題（ほうだい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "飲む放題",
+    "missing": "飲放題"
+  },
+  {
+    "level": "n1",
+    "no": 36,
+    "pattern": "放題（ほうだい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "飲んだ放題",
+    "missing": "飲放題"
+  },
+  {
+    "level": "n1",
+    "no": 36,
+    "pattern": "放題（ほうだい）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "飲んで放題",
+    "missing": "飲放題"
+  },
+  {
+    "level": "n1",
+    "no": 72,
+    "pattern": "まくる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "話す",
+    "missing": "話"
+  },
+  {
+    "level": "n1",
+    "no": 72,
+    "pattern": "まくる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "話しまくる",
+    "missing": "話"
+  },
+  {
+    "level": "n1",
+    "no": 72,
+    "pattern": "まくる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "話すまくる",
+    "missing": "話"
+  },
+  {
+    "level": "n1",
+    "no": 72,
+    "pattern": "まくる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "話してまくる",
+    "missing": "話"
+  },
+  {
+    "level": "n1",
+    "no": 72,
+    "pattern": "まくる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "話したまくる",
+    "missing": "話"
+  },
+  {
+    "level": "n1",
+    "no": 75,
+    "pattern": "めく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "皮肉",
+    "missing": "皮肉"
+  },
+  {
+    "level": "n1",
+    "no": 75,
+    "pattern": "めく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "皮肉めく",
+    "missing": "皮肉"
+  },
+  {
+    "level": "n1",
+    "no": 75,
+    "pattern": "めく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "皮肉ぶる",
+    "missing": "皮肉"
+  },
+  {
+    "level": "n1",
+    "no": 75,
+    "pattern": "めく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "皮肉びる",
+    "missing": "皮肉"
+  },
+  {
+    "level": "n1",
+    "no": 75,
+    "pattern": "めく",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "皮肉がる",
+    "missing": "皮肉"
+  },
+  {
+    "level": "n1",
+    "no": 86,
+    "pattern": "んばかりに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "倒れる",
+    "missing": "倒"
+  },
+  {
+    "level": "n1",
+    "no": 86,
+    "pattern": "んばかりに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "倒れんばかりに",
+    "missing": "倒"
+  },
+  {
+    "level": "n1",
+    "no": 86,
+    "pattern": "んばかりに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "倒れるばかりに",
+    "missing": "倒"
+  },
+  {
+    "level": "n1",
+    "no": 86,
+    "pattern": "んばかりに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "倒れんばかり",
+    "missing": "倒"
+  },
+  {
+    "level": "n1",
+    "no": 86,
+    "pattern": "んばかりに",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "倒れたばかりに",
+    "missing": "倒"
+  },
+  {
+    "level": "n1",
+    "no": 170,
+    "pattern": "そびれる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "聞く",
+    "missing": "聞"
+  },
+  {
+    "level": "n1",
+    "no": 170,
+    "pattern": "そびれる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "聞きそびれる",
+    "missing": "聞"
+  },
+  {
+    "level": "n1",
+    "no": 170,
+    "pattern": "そびれる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "聞くそびれる",
+    "missing": "聞"
+  },
+  {
+    "level": "n1",
+    "no": 170,
+    "pattern": "そびれる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "聞いてそびれる",
+    "missing": "聞"
+  },
+  {
+    "level": "n1",
+    "no": 170,
+    "pattern": "そびれる",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "聞いたそびれる",
+    "missing": "聞"
+  },
+  {
+    "level": "n1",
+    "no": 171,
+    "pattern": "損なう / 損ねる / 損じる（そこなう / そこねる / そんじる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "dictForm",
+    "value": "見る",
+    "missing": "見"
+  },
+  {
+    "level": "n1",
+    "no": 171,
+    "pattern": "損なう / 損ねる / 損じる（そこなう / そこねる / そんじる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "見損なう",
+    "missing": "見損"
+  },
+  {
+    "level": "n1",
+    "no": 171,
+    "pattern": "損なう / 損ねる / 損じる（そこなう / そこねる / そんじる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "見るそこなう",
+    "missing": "見"
+  },
+  {
+    "level": "n1",
+    "no": 171,
+    "pattern": "損なう / 損ねる / 損じる（そこなう / そこねる / そんじる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "見て損なう",
+    "missing": "見損"
+  },
+  {
+    "level": "n1",
+    "no": 171,
+    "pattern": "損なう / 損ねる / 損じる（そこなう / そこねる / そんじる）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "見た損なう",
+    "missing": "見損"
+  },
+  {
+    "level": "n1",
+    "no": 230,
+    "pattern": "尽くす（つくす）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "answer",
+    "value": "やり尽くす",
+    "missing": "尽"
+  },
+  {
+    "level": "n1",
+    "no": 230,
+    "pattern": "尽くす（つくす）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[0]",
+    "value": "やる尽くす",
+    "missing": "尽"
+  },
+  {
+    "level": "n1",
+    "no": 230,
+    "pattern": "尽くす（つくす）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[1]",
+    "value": "やって尽くす",
+    "missing": "尽"
+  },
+  {
+    "level": "n1",
+    "no": 230,
+    "pattern": "尽くす（つくす）",
+    "qidx": 0,
+    "type": "conjugation",
+    "field": "distractors[2]",
+    "value": "やった尽くす",
+    "missing": "尽"
+  }
+]

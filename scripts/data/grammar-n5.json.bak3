@@ -39,14 +39,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{食|た}べる",
+            "dictForm": "食べる",
             "group": "ichidan",
             "targetFormLabel": "ます형 (정중형)",
-            "answer": "{食|た}べます",
+            "answer": "食べます",
             "distractors": [
-              "{食|た}べります",
-              "{食|た}べるます",
-              "{食|た}ます"
+              "食べります",
+              "食べるます",
+              "食ます"
             ],
             "hintKo": "1단동사 = 어간 + ます"
           }
@@ -102,14 +102,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{書|か}く",
+            "dictForm": "書く",
             "group": "godan",
             "targetFormLabel": "て형",
-            "answer": "{書|か}いて",
+            "answer": "書いて",
             "distractors": [
-              "{書|か}きて",
-              "{書|か}って",
-              "{書|か}くて"
+              "書きて",
+              "書って",
+              "書くて"
             ],
             "hintKo": "5단 く → いて"
           }
@@ -165,14 +165,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{話|はな}す",
+            "dictForm": "話す",
             "group": "godan",
             "targetFormLabel": "ない형 (부정형)",
-            "answer": "{話|はな}さない",
+            "answer": "話さない",
             "distractors": [
-              "{話|はな}しない",
-              "{話|はな}すない",
-              "{話|はな}さありません"
+              "話しない",
+              "話すない",
+              "話さありません"
             ],
             "hintKo": "5단 す단 → さ단 + ない"
           }
@@ -228,14 +228,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{読|よ}む",
+            "dictForm": "読む",
             "group": "godan",
             "targetFormLabel": "た형 (과거형)",
-            "answer": "{読|よ}んだ",
+            "answer": "読んだ",
             "distractors": [
-              "{読|よ}みた",
-              "{読|よ}った",
-              "{読|よ}いた"
+              "読みた",
+              "読った",
+              "読いた"
             ],
             "hintKo": "5단 む → んだ"
           }
@@ -291,14 +291,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{食|た}べます",
+            "dictForm": "食べます",
             "group": "ichidan",
             "targetFormLabel": "사전형",
-            "answer": "{食|た}べる",
+            "answer": "食べる",
             "distractors": [
-              "{食|た}べた",
-              "{食|た}べて",
-              "{食|た}べない"
+              "食べた",
+              "食べて",
+              "食べない"
             ],
             "hintKo": "ます형 어간 + る (1단)"
           }
@@ -468,7 +468,7 @@
         {
           "type": "form_meaning",
           "payload": {
-            "prompt": "「{今日|きょう}だけ」",
+            "prompt": "「今日だけ」",
             "contextSentence": null,
             "answer": "오늘만",
             "distractors": [
@@ -1336,14 +1336,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{高|たか}い",
+            "dictForm": "高い",
             "group": "i_adj",
             "targetFormLabel": "과거형",
-            "answer": "{高|たか}かった",
+            "answer": "高かった",
             "distractors": [
-              "{高|たか}いだった",
-              "{高|たか}くた",
-              "{高|たか}いかった"
+              "高いだった",
+              "高くた",
+              "高いかった"
             ],
             "hintKo": "い형용사 과거 = 어간 + かった"
           }
@@ -1351,14 +1351,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{寒|さむ}い",
+            "dictForm": "寒い",
             "group": "i_adj",
             "targetFormLabel": "부정형",
-            "answer": "{寒|さむ}くない",
+            "answer": "寒くない",
             "distractors": [
-              "{寒|さむ}いない",
-              "{寒|さむ}じゃない",
-              "{寒|さむ}くじゃない"
+              "寒いない",
+              "寒じゃない",
+              "寒くじゃない"
             ],
             "hintKo": "い형용사 부정 = 어간 + くない"
           }
@@ -2678,14 +2678,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{静|しず}か",
+            "dictForm": "静か",
             "group": "na_adj",
             "targetFormLabel": "명사 수식형",
-            "answer": "{静|しず}かな",
+            "answer": "静かな",
             "distractors": [
-              "{静|しず}かい",
-              "{静|しず}かの",
-              "{静|しず}かだ"
+              "静かい",
+              "静かの",
+              "静かだ"
             ],
             "hintKo": "な형용사 + 명사 = 어간 + な + 명사"
           }
@@ -2693,14 +2693,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{便利|べんり}",
+            "dictForm": "便利",
             "group": "na_adj",
             "targetFormLabel": "부정형",
-            "answer": "{便利|べんり}じゃない",
+            "answer": "便利じゃない",
             "distractors": [
-              "{便利|べんり}くない",
-              "{便利|べんり}ない",
-              "{便利|べんり}ではい"
+              "便利くない",
+              "便利ない",
+              "便利ではい"
             ],
             "hintKo": "な형용사 부정 = 어간 + じゃない"
           }

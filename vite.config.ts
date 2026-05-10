@@ -36,7 +36,7 @@ export default defineConfig({
       },
       registerType: "autoUpdate",
       manifest: {
-        name: "Nihongo — 일본어 한자 학습",
+        name: "Nihongo — 일본어 학습",
         short_name: "Nihongo",
         description: "JLPT N5–N1 한자/단어/예문 학습 PWA",
         theme_color: "#0a0a0a",

@@ -16,8 +16,8 @@ export async function clientLoader() {
 
 export function meta({}: Route.MetaArgs) {
   return [
-    { title: "Nihongo — 일본어 한자 학습" },
-    { name: "description", content: "일본어 한자 학습" },
+    { title: "Nihongo — 일본어 학습" },
+    { name: "description", content: "일본어 학습" },
   ];
 }
 
@@ -52,7 +52,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
               Nihongo
             </button>
             <p className="mt-2 text-sm text-neutral-600 sm:text-base dark:text-neutral-400">
-              일본어 한자 학습
+              일본어 학습
             </p>
           </div>
           <div className="flex items-center gap-3">

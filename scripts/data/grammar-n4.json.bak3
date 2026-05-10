@@ -331,14 +331,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{行|い}く",
+            "dictForm": "行く",
             "group": "godan",
             "targetFormLabel": "ば형",
-            "answer": "{行|い}けば",
+            "answer": "行けば",
             "distractors": [
-              "{行|い}きば",
-              "{行|い}くば",
-              "{行|い}ったば"
+              "行きば",
+              "行くば",
+              "行ったば"
             ],
             "hintKo": "5단동사 ば형 = 어미 う단 → え단 + ば"
           }
@@ -1572,14 +1572,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{行|い}く",
+            "dictForm": "行く",
             "group": "godan",
             "targetFormLabel": "의지형",
-            "answer": "{行|い}こう",
+            "answer": "行こう",
             "distractors": [
-              "{行|い}きう",
-              "{行|い}くよう",
-              "{行|い}こうと"
+              "行きう",
+              "行くよう",
+              "行こうと"
             ],
             "hintKo": "5단 의지형 = 어미 う단 → お단 + う"
           }
@@ -1587,14 +1587,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{食|た}べる",
+            "dictForm": "食べる",
             "group": "ichidan",
             "targetFormLabel": "의지형",
-            "answer": "{食|た}べよう",
+            "answer": "食べよう",
             "distractors": [
-              "{食|た}べう",
-              "{食|た}べりよう",
-              "{食|た}べろう"
+              "食べう",
+              "食べりよう",
+              "食べろう"
             ],
             "hintKo": "1단 의지형 = 어간 + よう"
           }
@@ -2763,14 +2763,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{高|たか}い",
+            "dictForm": "高い",
             "group": "i_adj",
             "targetFormLabel": "~게 하다 (くする)",
-            "answer": "{高|たか}くする",
+            "answer": "高くする",
             "distractors": [
-              "{高|たか}いする",
-              "{高|たか}くなる",
-              "{高|たか}にする"
+              "高いする",
+              "高くなる",
+              "高にする"
             ],
             "hintKo": "い형용사 어간 + く + する"
           }
@@ -2837,7 +2837,7 @@
         {
           "type": "form_meaning",
           "payload": {
-            "prompt": "「{急|きゅう}に{止|と}まる」",
+            "prompt": "「急に{止|と}まる」",
             "contextSentence": null,
             "answer": "갑자기 멈추다",
             "distractors": [
@@ -4937,14 +4937,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{食|た}べる",
+            "dictForm": "食べる",
             "group": "ichidan",
             "targetFormLabel": "가능형",
-            "answer": "{食|た}べられる",
+            "answer": "食べられる",
             "distractors": [
-              "{食|た}べれる",
-              "{食|た}べる",
-              "{食|た}べた"
+              "食べれる",
+              "食べる",
+              "食べた"
             ],
             "hintKo": "1단동사 가능형 = 어간 + られる"
           }
@@ -5204,14 +5204,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{食|た}べる",
+            "dictForm": "食べる",
             "group": "ichidan",
             "targetFormLabel": "사역수동형",
-            "answer": "{食|た}べさせられる",
+            "answer": "食べさせられる",
             "distractors": [
-              "{食|た}べられる",
-              "{食|た}べさせる",
-              "{食|た}べさせるれる"
+              "食べられる",
+              "食べさせる",
+              "食べさせるれる"
             ],
             "hintKo": "1단동사 사역수동 = 어간 + させられる"
           }
@@ -5280,14 +5280,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{行|い}く",
+            "dictForm": "行く",
             "group": "godan",
             "targetFormLabel": "사역형",
-            "answer": "{行|い}かせる",
+            "answer": "行かせる",
             "distractors": [
-              "{行|い}かれる",
-              "{行|い}ける",
-              "{行|い}きさせる"
+              "行かれる",
+              "行ける",
+              "行きさせる"
             ],
             "hintKo": "5단동사 사역 = 어미 う단 → あ단 + せる"
           }
@@ -6176,14 +6176,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{行|い}く",
+            "dictForm": "行く",
             "group": "godan",
             "targetFormLabel": "3인칭 욕구형 (~たがる)",
-            "answer": "{行|い}きたがる",
+            "answer": "行きたがる",
             "distractors": [
-              "{行|い}きたい",
-              "{行|い}きたがります",
-              "{行|い}ったがる"
+              "行きたい",
+              "行きたがります",
+              "行ったがる"
             ],
             "hintKo": "ます형 어간 + たがる"
           }
@@ -6252,14 +6252,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{行|い}く",
+            "dictForm": "行く",
             "group": "godan",
             "targetFormLabel": "たら형 (조건형)",
-            "answer": "{行|い}ったら",
+            "answer": "行ったら",
             "distractors": [
-              "{行|い}きたら",
-              "{行|い}くたら",
-              "{行|い}ければ"
+              "行きたら",
+              "行くたら",
+              "行ければ"
             ],
             "hintKo": "た형 + ら"
           }
@@ -6487,14 +6487,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{書|か}く",
+            "dictForm": "書く",
             "group": "godan",
             "targetFormLabel": "て형",
-            "answer": "{書|か}いて",
+            "answer": "書いて",
             "distractors": [
-              "{書|か}きて",
-              "{書|か}くて",
-              "{書|か}って"
+              "書きて",
+              "書くて",
+              "書って"
             ],
             "hintKo": "く → いて"
           }
@@ -6575,14 +6575,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{買|か}う",
+            "dictForm": "買う",
             "group": "godan",
             "targetFormLabel": "てあげる형 (해 주다)",
-            "answer": "{買|か}ってあげる",
+            "answer": "買ってあげる",
             "distractors": [
-              "{買|か}いてあげる",
-              "{買|か}うてあげる",
-              "{買|か}ってもらう"
+              "買いてあげる",
+              "買うてあげる",
+              "買ってもらう"
             ],
             "hintKo": "て형 + あげる"
           }
@@ -6723,14 +6723,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{持|も}つ",
+            "dictForm": "持つ",
             "group": "godan",
             "targetFormLabel": "ていく형 (해 가다)",
-            "answer": "{持|も}っていく",
+            "answer": "持っていく",
             "distractors": [
-              "{持|も}ちていく",
-              "{持|も}つていく",
-              "{持|も}ってくる"
+              "持ちていく",
+              "持つていく",
+              "持ってくる"
             ],
             "hintKo": "て형 + いく (이동·변화 진행)"
           }
@@ -6798,14 +6798,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{見|み}る",
+            "dictForm": "見る",
             "group": "ichidan",
             "targetFormLabel": "ていた형 (하고 있었다)",
-            "answer": "{見|み}ていた",
+            "answer": "見ていた",
             "distractors": [
-              "{見|み}った",
-              "{見|み}ていって",
-              "{見|み}るていた"
+              "見った",
+              "見ていって",
+              "見るていた"
             ],
             "hintKo": "て형 + いた"
           }
@@ -6946,14 +6946,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{教|おし}える",
+            "dictForm": "教える",
             "group": "ichidan",
             "targetFormLabel": "てくれる형 (해 주다·남→나)",
-            "answer": "{教|おし}えてくれる",
+            "answer": "教えてくれる",
             "distractors": [
-              "{教|おし}えてあげる",
-              "{教|おし}えてもらう",
-              "{教|おし}えるくれる"
+              "教えてあげる",
+              "教えてもらう",
+              "教えるくれる"
             ],
             "hintKo": "て형 + くれる (남이 나에게)"
           }
@@ -7021,14 +7021,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{持|も}つ",
+            "dictForm": "持つ",
             "group": "godan",
             "targetFormLabel": "てくる형 (해 오다)",
-            "answer": "{持|も}ってくる",
+            "answer": "持ってくる",
             "distractors": [
-              "{持|も}ちてくる",
-              "{持|も}つてくる",
-              "{持|も}っていく"
+              "持ちてくる",
+              "持つてくる",
+              "持っていく"
             ],
             "hintKo": "て형 + くる (접근·발생)"
           }
@@ -7096,14 +7096,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{着|き}る",
+            "dictForm": "着る",
             "group": "ichidan",
             "targetFormLabel": "てみる형 (해 보다)",
-            "answer": "{着|き}てみる",
+            "answer": "着てみる",
             "distractors": [
-              "{着|き}るみる",
-              "{着|き}きてみる",
-              "{着|き}られる"
+              "着るみる",
+              "着きてみる",
+              "着られる"
             ],
             "hintKo": "て형 + みる (시도)"
           }
@@ -7171,14 +7171,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{貸|か}す",
+            "dictForm": "貸す",
             "group": "godan",
             "targetFormLabel": "てもらう형 (해 받다)",
-            "answer": "{貸|か}してもらう",
+            "answer": "貸してもらう",
             "distractors": [
-              "{貸|か}してくれる",
-              "{貸|か}してあげる",
-              "{貸|か}しもらう"
+              "貸してくれる",
+              "貸してあげる",
+              "貸しもらう"
             ],
             "hintKo": "て형 + もらう"
           }
@@ -7246,14 +7246,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{買|か}う",
+            "dictForm": "買う",
             "group": "godan",
             "targetFormLabel": "ておく형 (해 두다)",
-            "answer": "{買|か}っておく",
+            "answer": "買っておく",
             "distractors": [
-              "{買|か}ってある",
-              "{買|か}っている",
-              "{買|か}っていく"
+              "買ってある",
+              "買っている",
+              "買っていく"
             ],
             "hintKo": "て형 + おく (준비)"
           }
@@ -7321,14 +7321,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{食|た}べる",
+            "dictForm": "食べる",
             "group": "ichidan",
             "targetFormLabel": "てしまう의 캐주얼 축약형",
-            "answer": "{食|た}べちゃう",
+            "answer": "食べちゃう",
             "distractors": [
-              "{食|た}べじゃう",
-              "{食|た}べてしゃう",
-              "{食|た}べちゃった"
+              "食べじゃう",
+              "食べてしゃう",
+              "食べちゃった"
             ],
             "hintKo": "て + しまう → ちゃう"
           }
@@ -7469,14 +7469,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{見|み}せる",
+            "dictForm": "見せる",
             "group": "ichidan",
             "targetFormLabel": "てやる형 (강한 의지)",
-            "answer": "{見|み}せてやる",
+            "answer": "見せてやる",
             "distractors": [
-              "{見|み}せてあげる",
-              "{見|み}せてくれる",
-              "{見|み}せてもらう"
+              "見せてあげる",
+              "見せてくれる",
+              "見せてもらう"
             ],
             "hintKo": "て형 + やる (남성·강한 어조)"
           }
@@ -7691,14 +7691,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{高|たか}い",
+            "dictForm": "高い",
             "group": "i_adj",
             "targetFormLabel": "ても형 (~해도)",
-            "answer": "{高|たか}くても",
+            "answer": "高くても",
             "distractors": [
-              "{高|たか}いても",
-              "{高|たか}でも",
-              "{高|たか}くでも"
+              "高いても",
+              "高でも",
+              "高くでも"
             ],
             "hintKo": "い형용사 어간 + くても"
           }
@@ -8429,14 +8429,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{走|はし}る",
+            "dictForm": "走る",
             "group": "godan",
             "targetFormLabel": "続ける형 (계속 ~하다)",
-            "answer": "{走|はし}り{続|つづ}ける",
+            "answer": "走り続ける",
             "distractors": [
-              "{走|はし}る{続|つづ}ける",
-              "{走|はし}って{続|つづ}ける",
-              "{走|はし}り{始|はじ}める"
+              "走る続ける",
+              "走って続ける",
+              "走り始める"
             ],
             "hintKo": "ます형 어간 + 続ける"
           }
@@ -8576,14 +8576,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{見|み}る",
+            "dictForm": "見る",
             "group": "ichidan",
             "targetFormLabel": "수동형 (~られる)",
-            "answer": "{見|み}られる",
+            "answer": "見られる",
             "distractors": [
-              "{見|み}れる",
-              "{見|み}させる",
-              "{見|み}せる"
+              "見れる",
+              "見させる",
+              "見せる"
             ],
             "hintKo": "1단동사 수동 = 어간 + られる"
           }
@@ -8725,14 +8725,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{使|つか}う",
+            "dictForm": "使う",
             "group": "godan",
             "targetFormLabel": "やすい형 (~하기 쉽다)",
-            "answer": "{使|つか}いやすい",
+            "answer": "使いやすい",
             "distractors": [
-              "{使|つか}うやすい",
-              "{使|つか}ってやすい",
-              "{使|つか}えやすい"
+              "使うやすい",
+              "使ってやすい",
+              "使えやすい"
             ],
             "hintKo": "ます형 어간 + やすい"
           }
@@ -9163,14 +9163,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{話|はな}す",
+            "dictForm": "話す",
             "group": "godan",
             "targetFormLabel": "ようになる형 (가능 변화)",
-            "answer": "{話|はな}せるようになる",
+            "answer": "話せるようになる",
             "distractors": [
-              "{話|はな}すようになる",
-              "{話|はな}されるようになる",
-              "{話|はな}してようになる"
+              "話すようになる",
+              "話されるようになる",
+              "話してようになる"
             ],
             "hintKo": "능력 변화는 가능형 + ようになる"
           }
@@ -9311,14 +9311,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{勉強|べんきょう}する",
+            "dictForm": "勉強する",
             "group": "irregular",
             "targetFormLabel": "ようと思う형",
-            "answer": "{勉強|べんきょう}しようと{思|おも}う",
+            "answer": "勉強しようと思う",
             "distractors": [
-              "{勉強|べんきょう}すると{思|おも}う",
-              "{勉強|べんきょう}したいと{思|おも}う",
-              "{勉強|べんきょう}するつもりと{思|おも}う"
+              "勉強すると思う",
+              "勉強したいと思う",
+              "勉強するつもりと思う"
             ],
             "hintKo": "의지형 + と思う"
           }
@@ -9530,14 +9530,14 @@
         {
           "type": "conjugation",
           "payload": {
-            "dictForm": "{頼|たの}む",
+            "dictForm": "頼む",
             "group": "godan",
             "targetFormLabel": "づらい형 (심리적으로 ~하기 거북)",
-            "answer": "{頼|たの}みづらい",
+            "answer": "頼みづらい",
             "distractors": [
-              "{頼|たの}むづらい",
-              "{頼|たの}んでづらい",
-              "{頼|たの}まれづらい"
+              "頼むづらい",
+              "頼んでづらい",
+              "頼まれづらい"
             ],
             "hintKo": "ます형 어간 + づらい"
           }
