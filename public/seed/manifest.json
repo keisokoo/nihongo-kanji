@@ -50,6 +50,38 @@
       "examples": 167,
       "quizzes": 221,
       "bytes": 209886
+    },
+    {
+      "level": "N4",
+      "path": "/seed/grammar-n4.json",
+      "items": 132,
+      "examples": 264,
+      "quizzes": 388,
+      "bytes": 370848
+    },
+    {
+      "level": "N3",
+      "path": "/seed/grammar-n3.json",
+      "items": 182,
+      "examples": 364,
+      "quizzes": 548,
+      "bytes": 556558
+    },
+    {
+      "level": "N2",
+      "path": "/seed/grammar-n2.json",
+      "items": 197,
+      "examples": 394,
+      "quizzes": 591,
+      "bytes": 599768
+    },
+    {
+      "level": "N1",
+      "path": "/seed/grammar-n1.json",
+      "items": 253,
+      "examples": 506,
+      "quizzes": 759,
+      "bytes": 763109
     }
   ]
 }

@@ -25,9 +25,7 @@ export function CreateTestModal({
   const navigate = useNavigate();
   const [name, setName] = useState("");
   const [mode, setMode] = useState<Mode>("meaning");
-  const [selected, setSelected] = useState<
-    Map<string, { count: number | "all" }>
-  >(new Map());
+  const [selected, setSelected] = useState<Set<string>>(new Set());
   const [status, setStatus] = useState<Status>({ kind: "idle" });
 
   const isLoading = status.kind === "loading";
@@ -53,31 +51,21 @@ export function CreateTestModal({
   function changeMode(next: Mode) {
     if (next === mode) return;
     setMode(next);
-    setSelected(new Map());
+    setSelected(new Set());
   }
 
   function toggle(pack: { key: string; count: number }) {
     setSelected((prev) => {
-      const next = new Map(prev);
+      const next = new Set(prev);
       if (next.has(pack.key)) next.delete(pack.key);
-      else next.set(pack.key, { count: Math.min(20, pack.count) });
+      else next.add(pack.key);
       return next;
     });
   }
 
-  function setCount(packKey: string, count: number | "all") {
-    setSelected((prev) => {
-      const next = new Map(prev);
-      if (!next.get(packKey)) return prev;
-      next.set(packKey, { count });
-      return next;
-    });
-  }
-
-  const totalSelected = [...selected.entries()].reduce((sum, [key, v]) => {
+  const totalSelected = [...selected].reduce((sum, key) => {
     const pack = activePacks.find((p) => p.key === key);
-    if (!pack) return sum;
-    return sum + (v.count === "all" ? pack.count : v.count);
+    return sum + (pack?.count ?? 0);
   }, 0);
 
   async function submit() {
@@ -92,24 +80,19 @@ export function CreateTestModal({
     }
     setStatus({ kind: "loading" });
     try {
+      const packs = [...selected].map((packKey) => ({
+        packKey,
+        count: "all" as const,
+      }));
       if (isGrammar) {
-        const data = await createGrammarTest({
-          name: trimmed,
-          packs: [...selected.entries()].map(([packKey, v]) => ({
-            packKey,
-            count: v.count,
-          })),
-        });
+        const data = await createGrammarTest({ name: trimmed, packs });
         onClose();
         navigate(`/grammar-test/${data.testId}`);
       } else {
         const data = await createWordTest({
           name: trimmed,
           kind: mode,
-          packs: [...selected.entries()].map(([packKey, v]) => ({
-            packKey,
-            count: v.count,
-          })),
+          packs,
         });
         onClose();
         navigate(`/word-test/${data.testId}`);
@@ -203,73 +186,32 @@ export function CreateTestModal({
               </p>
             ) : (
               activePacks.map((pack) => {
-                const cur = selected.get(pack.key);
-                const isOn = !!cur;
-                const isAll = cur?.count === "all";
+                const isOn = selected.has(pack.key);
                 return (
-                  <div
+                  <label
                     key={pack.key}
-                    className={`rounded-lg border p-3 transition ${
+                    className={`flex cursor-pointer items-center justify-between gap-3 rounded-lg border p-3 transition ${
                       isOn
                         ? "border-neutral-900 bg-neutral-50 dark:border-neutral-100 dark:bg-neutral-900"
                         : "border-neutral-200 bg-white dark:border-neutral-800 dark:bg-neutral-950"
-                    }`}
+                    } ${pack.count === 0 ? "opacity-50" : ""}`}
                   >
-                    <label className="flex items-center justify-between gap-3">
-                      <div className="flex items-center gap-2.5">
-                        <input
-                          type="checkbox"
-                          checked={isOn}
-                          onChange={() => toggle(pack)}
-                          disabled={isLoading || pack.count === 0}
-                          className="h-4 w-4 accent-neutral-900 dark:accent-neutral-100"
-                        />
-                        <span className="font-medium text-neutral-900 dark:text-neutral-100">
-                          {pack.title}
-                        </span>
-                      </div>
-                      <span className="text-xs tabular-nums text-neutral-500">
-                        가능 {pack.count}개
+                    <div className="flex items-center gap-2.5">
+                      <input
+                        type="checkbox"
+                        checked={isOn}
+                        onChange={() => toggle(pack)}
+                        disabled={isLoading || pack.count === 0}
+                        className="h-4 w-4 accent-neutral-900 dark:accent-neutral-100"
+                      />
+                      <span className="font-medium text-neutral-900 dark:text-neutral-100">
+                        {pack.title}
                       </span>
-                    </label>
-                    {isOn && (
-                      <div className="mt-3 flex flex-wrap items-center gap-3 pl-6">
-                        <input
-                          type="number"
-                          min={1}
-                          max={pack.count}
-                          value={isAll ? pack.count : (cur?.count ?? 0)}
-                          onChange={(e) => {
-                            const n = Math.max(
-                              1,
-                              Math.min(
-                                pack.count,
-                                Number(e.target.value) || 1,
-                              ),
-                            );
-                            setCount(pack.key, n);
-                          }}
-                          disabled={isAll || isLoading}
-                          className="w-20 rounded-md border border-neutral-300 bg-white px-2 py-1 text-sm tabular-nums dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-100 disabled:opacity-50"
-                        />
-                        <label className="flex items-center gap-1.5 text-xs text-neutral-600 dark:text-neutral-300">
-                          <input
-                            type="checkbox"
-                            checked={isAll}
-                            onChange={(e) =>
-                              setCount(
-                                pack.key,
-                                e.target.checked ? "all" : 20,
-                              )
-                            }
-                            disabled={isLoading}
-                            className="h-3.5 w-3.5 accent-neutral-900 dark:accent-neutral-100"
-                          />
-                          전체 ({pack.count})
-                        </label>
-                      </div>
-                    )}
-                  </div>
+                    </div>
+                    <span className="text-xs tabular-nums text-neutral-500">
+                      {pack.count}개
+                    </span>
+                  </label>
                 );
               })
             )}

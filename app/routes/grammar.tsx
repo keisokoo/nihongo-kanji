@@ -76,38 +76,15 @@ export default function Grammar({ loaderData }: Route.ComponentProps) {
   return (
     <main className="min-h-screen bg-neutral-50 dark:bg-neutral-950">
       <div className="mx-auto max-w-3xl px-4 py-6 sm:px-8 sm:py-10">
-        <header className="mb-6 flex flex-wrap items-center justify-between gap-x-4 gap-y-3 sm:mb-8">
-          <button
-            type="button"
-            onClick={() => (window.location.href = "/")}
-            className="text-sm text-neutral-500 hover:text-neutral-900 sm:text-base dark:hover:text-neutral-100"
-          >
-            ← 팩 선택
-          </button>
-          <div className="flex flex-wrap items-center gap-2 sm:gap-3">
-            <NavButton
-              to={
-                prev
-                  ? `/grammar/${encodeURIComponent(packKey)}/${prev.id}`
-                  : null
-              }
-              label="◀"
-              longLabel="◀ 이전"
-              hint={prev?.pattern}
-            />
-            <span className="text-sm tabular-nums text-neutral-500 sm:text-base">
-              {pack?.title ?? packKey} · {position} / {total}
-            </span>
-            <NavButton
-              to={
-                next
-                  ? `/grammar/${encodeURIComponent(packKey)}/${next.id}`
-                  : null
-              }
-              label="▶"
-              longLabel="다음 ▶"
-              hint={next?.pattern}
-            />
+        <header className="mb-6 sm:mb-8">
+          <div className="flex items-center justify-between gap-3">
+            <button
+              type="button"
+              onClick={() => (window.location.href = "/")}
+              className="text-sm text-neutral-500 hover:text-neutral-900 sm:text-base dark:hover:text-neutral-100"
+            >
+              ← 팩 선택
+            </button>
             <button
               type="button"
               onClick={() => setListOpen(true)}
@@ -117,6 +94,37 @@ export default function Grammar({ loaderData }: Route.ComponentProps) {
             >
               ☰ <span className="hidden sm:inline">목록</span>
             </button>
+          </div>
+          <div className="mt-3 flex items-center justify-between gap-2 sm:gap-3">
+            <div className="flex-1">
+              <NavButton
+                to={
+                  prev
+                    ? `/grammar/${encodeURIComponent(packKey)}/${prev.id}`
+                    : null
+                }
+                label="◀"
+                longLabel="◀ 이전"
+                hint={prev?.pattern}
+              />
+            </div>
+            <div className="flex flex-1 justify-center">
+              <span className="text-sm tabular-nums text-neutral-500 sm:text-base">
+                {pack?.title ?? packKey} · {position} / {total}
+              </span>
+            </div>
+            <div className="flex flex-1 justify-end">
+              <NavButton
+                to={
+                  next
+                    ? `/grammar/${encodeURIComponent(packKey)}/${next.id}`
+                    : null
+                }
+                label="▶"
+                longLabel="다음 ▶"
+                hint={next?.pattern}
+              />
+            </div>
           </div>
         </header>
 
