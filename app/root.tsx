@@ -1,4 +1,3 @@
-import { useEffect } from "react";
 import {
   isRouteErrorResponse,
   Links,
@@ -11,6 +10,7 @@ import {
 import type { Route } from "./+types/root";
 import { Toaster } from "~/components/Toast";
 import { InitGate } from "~/components/InitGate";
+import { PwaUpdateToast } from "~/components/PwaUpdateToast";
 import "./app.css";
 
 export const links: Route.LinksFunction = () => [
@@ -40,6 +40,7 @@ export function Layout({ children }: { children: React.ReactNode }) {
       <body>
         {children}
         <Toaster />
+        <PwaUpdateToast />
         <ScrollRestoration />
         <Scripts />
       </body>
@@ -48,17 +49,8 @@ export function Layout({ children }: { children: React.ReactNode }) {
 }
 
 export default function App() {
-  // Service worker registration. vite-plugin-pwa's auto-inject doesn't reach
-  // RR7-generated index.html, so register manually. sw.js is only present in
-  // production builds (see scripts/build-sw.mjs); dev mode skips it silently.
-  useEffect(() => {
-    if (typeof navigator === "undefined" || !("serviceWorker" in navigator))
-      return;
-    navigator.serviceWorker.register("/sw.js", { scope: "/" }).catch((err) => {
-      console.warn("[sw] register failed:", err);
-    });
-  }, []);
-
+  // SW 등록 + 업데이트 감지 + reload 흐름은 PwaUpdateToast 가 모두 담당
+  // (Layout 에서 mount). sw.js 는 production 빌드에만 있음 — dev 에선 silent fail.
   return (
     <InitGate>
       <Outlet />

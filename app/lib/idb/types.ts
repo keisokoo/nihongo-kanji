@@ -171,3 +171,19 @@ export type JlptLevel = (typeof JLPT_LEVELS)[number];
 export function isJlptLevel(key: string): key is JlptLevel {
   return (JLPT_LEVELS as readonly string[]).includes(key.toUpperCase());
 }
+
+/**
+ * 오답노트 — 사용자가 시험에서 틀렸던 항목 중 "기억함" 으로 표시한 row.
+ * 시험 결과 자체는 건드리지 않고 별도로 기록 → 시험 통계는 보존.
+ *
+ * 복합 unique key: (testKind, sourceId)
+ *   - word:    sourceId = Word.id
+ *   - grammar: sourceId = GrammarItem.id
+ */
+export type WeakItemKind = "word" | "grammar";
+
+export type WeakItemMastery = {
+  testKind: WeakItemKind;
+  sourceId: number;
+  masteredAt: Date;
+};

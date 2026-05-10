@@ -6,6 +6,7 @@ import type {
   Pack,
   Reading,
   SettingsRow,
+  WeakItemMastery,
   Word,
   WordTest,
   WordTestItem,
@@ -43,6 +44,8 @@ export class NihongoDB extends Dexie {
   /** v3 — 문법 시험. */
   grammarTests!: Table<GrammarTest, number>;
   grammarTestItems!: Table<GrammarTestItem, number>;
+  /** v4 — 오답노트 mastery. composite primary key: [testKind+sourceId]. */
+  weakItemMastery!: Table<WeakItemMastery, [string, number]>;
 
   constructor() {
     super("nihongo");
@@ -70,6 +73,11 @@ export class NihongoDB extends Dexie {
     this.version(3).stores({
       grammarTests: "++id, createdAt",
       grammarTestItems: "++id, testId, [testId+position]",
+    });
+
+    // v4: 오답노트.
+    this.version(4).stores({
+      weakItemMastery: "&[testKind+sourceId], masteredAt",
     });
   }
 }

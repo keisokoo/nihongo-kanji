@@ -1,6 +1,7 @@
 import { db } from "./db";
 import { JLPT_LEVELS, type Pack, type WordTestKind } from "./types";
 import type { GrammarPack } from "./grammar-types";
+import { getWeakItemCount } from "./review";
 
 export type HomePack = Pack & {
   count: number;       // total kanji in pack
@@ -30,6 +31,7 @@ export type HomeData = {
   custom: HomePack[];
   grammar: HomeGrammarPack[];
   tests: HomeTest[];
+  weakItemCount: number;
 };
 
 const JLPT_RANK = new Map<string, number>(
@@ -179,15 +181,16 @@ async function loadGrammarPacks(): Promise<HomeGrammarPack[]> {
 }
 
 export async function loadHomeData(): Promise<HomeData> {
-  const [{ jlpt, custom }, grammar, wordTests, grammarTests] = await Promise.all([
-    loadPacks(),
-    loadGrammarPacks(),
-    loadTests(),
-    loadGrammarTests(),
-  ]);
-  // 단일 리스트로 머지 — 생성일 역순 (최신 먼저)
+  const [{ jlpt, custom }, grammar, wordTests, grammarTests, weakItemCount] =
+    await Promise.all([
+      loadPacks(),
+      loadGrammarPacks(),
+      loadTests(),
+      loadGrammarTests(),
+      getWeakItemCount(),
+    ]);
   const tests = [...wordTests, ...grammarTests].sort(
     (a, b) => +b.createdAt - +a.createdAt,
   );
-  return { jlpt, custom, grammar, tests };
+  return { jlpt, custom, grammar, tests, weakItemCount };
 }

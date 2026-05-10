@@ -20,7 +20,7 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
-  const { jlpt, custom, grammar, tests } = loaderData;
+  const { jlpt, custom, grammar, tests, weakItemCount } = loaderData;
   const [showTestModal, setShowTestModal] = useState(false);
   const packsForTest = [...jlpt, ...custom].filter((p) => p.wordCount > 0);
   const grammarPacksForTest = grammar.filter((p) => p.count > 0);
@@ -45,6 +45,18 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             </p>
           </div>
           <div className="flex items-center gap-3">
+            {weakItemCount > 0 && (
+              <Link
+                to="/review"
+                className="inline-flex items-center gap-1.5 rounded-md border border-amber-300 bg-amber-50 px-3 py-1.5 text-sm text-amber-800 hover:border-amber-400 dark:border-amber-900/50 dark:bg-amber-950/30 dark:text-amber-200"
+                title="시험에서 틀린 항목 모음"
+              >
+                ✦ 오답노트
+                <span className="rounded-full bg-amber-200 px-1.5 text-xs tabular-nums text-amber-900 dark:bg-amber-900/50 dark:text-amber-200">
+                  {weakItemCount}
+                </span>
+              </Link>
+            )}
             <ImportButton />
             <Link
               to="/settings"

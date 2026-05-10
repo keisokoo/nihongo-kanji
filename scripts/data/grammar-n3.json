@@ -6119,14 +6119,71 @@
       "romaji": "ni totte",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%a8%e3%81%a3%e3%81%a6-ni-totte-meaning/",
       "refOriginalEn": "to; for; concerning; as far as ... is concerned; regarding ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~에게 있어서, ~의 입장에서"
+      ],
+      "category": "expression",
+      "explanation": "어떤 사람·집단의 입장에서 평가·판단됨을 나타낸다. 「~에게 있어서」 의 의미. 주관적 가치판단을 도입하는 표현.",
+      "formation": "명사 + にとって",
+      "notes": "「私にとって」 (나에게 있어서), 「子どもにとって大切」 (아이에게 있어서 중요하다). 「にとっては」 강조형도 빈출.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{家族|かぞく}{{にとって}}、{健康|けんこう}が{一番|いちばん}{大切|たいせつ}だ。",
+          "sentenceTranslationKo": "가족에게 있어서 건강이 가장 중요하다.",
+          "note": null
+        },
+        {
+          "sentence": "{私|わたし}{{にとって}}、{日本|にほん}は{第二|だいに}の{故郷|こきょう}です。",
+          "sentenceTranslationKo": "저에게 있어서 일본은 제2의 고향입니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{学生|がくせい}{{にとって}}、{勉強|べんきょう}が{大切|たいせつ}だ。",
+            "answer": "にとって",
+            "distractors": [
+              "について",
+              "に対して",
+              "に関して"
+            ],
+            "translationKo": "학생에게 있어서 공부가 중요하다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{私|わたし}にとっての{宝物|たからもの}」",
+            "contextSentence": null,
+            "answer": "나에게 있어서의 보물 (주관적 평가)",
+            "distractors": [
+              "나에 대한 보물",
+              "나에 관한 보물",
+              "나에게 향한 보물"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "그에게 있어서 가족이 가장 소중해요.",
+            "answer": "{彼|かれ}{{にとって}}、{家族|かぞく}が{一番|いちばん}{大切|たいせつ}です。",
+            "distractors": [
+              "{彼|かれ}{{について}}、{家族|かぞく}が{一番|いちばん}{大切|たいせつ}です。",
+              "{彼|かれ}{{に対して}}、{家族|かぞく}が{一番|いちばん}{大切|たいせつ}です。",
+              "{彼|かれ}{{に関して}}、{家族|かぞく}が{一番|いちばん}{大切|たいせつ}です。"
+            ],
+            "hintKo": "주관적 가치 평가 = 명사 + にとって"
+          }
+        }
+      ]
     },
     {
       "no": 86,
@@ -6134,14 +6191,71 @@
       "romaji": "ni tsuite",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6-ni-tsuite-meaning/",
       "refOriginalEn": "concerning; regarding; about; on ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~에 대해, ~에 관해"
+      ],
+      "category": "expression",
+      "explanation": "어떤 화제·주제와 관련됨을 나타낸다. 「~에 대해」 의 의미. 「に関して」 와 호환되며 회화에서는 「について」 가 더 자연.",
+      "formation": "명사 + について",
+      "notes": "「~について話す」 (~에 대해 말하다), 「~についての本」 (~에 관한 책 - 명사 수식). 「に対して」 (대상·대비) 와 차이 — 「について」 는 주제·내용.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{将来|しょうらい}{{について}}{真剣|しんけん}に{考|かんが}えている。",
+          "sentenceTranslationKo": "장래에 대해 진지하게 생각하고 있다.",
+          "note": null
+        },
+        {
+          "sentence": "この{問題|もんだい}{{について}}どう{思|おも}いますか。",
+          "sentenceTranslationKo": "이 문제에 대해 어떻게 생각하십니까?",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{歴史|れきし}{{について}}の{授業|じゅぎょう}は{面白|おもしろ}い。",
+            "answer": "について",
+            "distractors": [
+              "にとって",
+              "に対して",
+              "に関する"
+            ],
+            "translationKo": "역사에 대한 수업은 재미있다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「日本{文化|ぶんか}について{学|まな}ぶ」",
+            "contextSentence": null,
+            "answer": "일본 문화에 대해 배우다 (주제)",
+            "distractors": [
+              "일본 문화에 있어서 배우다",
+              "일본 문화를 향해 배우다",
+              "일본 문화에 따라 배우다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이 사건에 대해 자세히 설명해 주세요.",
+            "answer": "この{事件|じけん}{{について}}{詳|くわ}しく{説明|せつめい}してください。",
+            "distractors": [
+              "この{事件|じけん}{{にとって}}{詳|くわ}しく{説明|せつめい}してください。",
+              "この{事件|じけん}{{に対して}}{詳|くわ}しく{説明|せつめい}してください。",
+              "この{事件|じけん}{{に関する}}{詳|くわ}しく{説明|せつめい}してください。"
+            ],
+            "hintKo": "주제·내용 = 명사 + について"
+          }
+        }
+      ]
     },
     {
       "no": 87,
@@ -6149,14 +6263,71 @@
       "romaji": "ni tsurete",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%a4%e3%82%8c%e3%81%a6-ni-tsurete-%e3%81%ab%e3%81%a4%e3%82%8c-ni-tsure-meaning/",
       "refOriginalEn": "as; in proportion to; with; as… then ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~함에 따라 (변화 비례)"
+      ],
+      "category": "expression",
+      "explanation": "한쪽의 변화에 따라 다른 쪽도 점진적으로 함께 변함을 나타낸다. 「~함에 따라」 의 의미. 「にしたがって」 와 호환되지만 「につれて」 는 변화 자체에만 사용 (명령·규칙 ✕).",
+      "formation": "동사 사전형 / 명사 + につれて",
+      "notes": "「年を取るにつれて、忘れっぽくなる」 (나이를 먹음에 따라 자주 잊어버리게 된다). 자연스런 점진적 변화에 사용.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{時間|じかん}が{経|た}つ{{につれて}}、{気持|きも}ちが{落|お}ち{着|つ}いた。",
+          "sentenceTranslationKo": "시간이 지남에 따라 마음이 진정되었다.",
+          "note": null
+        },
+        {
+          "sentence": "{年|とし}を{取|と}る{{につれて}}、{体力|たいりょく}が{衰|おとろ}える。",
+          "sentenceTranslationKo": "나이를 먹음에 따라 체력이 쇠퇴한다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{季節|きせつ}が{変|か}わる{{につれて}}、{気温|きおん}も{変|か}わる。",
+            "answer": "につれて",
+            "distractors": [
+              "によって",
+              "について",
+              "にとって"
+            ],
+            "translationKo": "계절이 바뀜에 따라 기온도 변한다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{経済|けいざい}の{発展|はってん}につれて、{生活|せいかつ}が{変|か}わった」",
+            "contextSentence": null,
+            "answer": "경제의 발전에 따라 생활이 변했다 (변화 비례)",
+            "distractors": [
+              "경제의 발전 때문에 생활이 변했다",
+              "경제의 발전에 대해 생활이 변했다",
+              "경제의 발전을 향해 생활이 변했다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "공부함에 따라 점점 재미있어졌어요.",
+            "answer": "{勉強|べんきょう}する{{につれて}}、だんだん{面白|おもしろ}くなりました。",
+            "distractors": [
+              "{勉強|べんきょう}する{{によって}}、だんだん{面白|おもしろ}くなりました。",
+              "{勉強|べんきょう}する{{について}}、だんだん{面白|おもしろ}くなりました。",
+              "{勉強|べんきょう}する{{にとって}}、だんだん{面白|おもしろ}くなりました。"
+            ],
+            "hintKo": "변화 비례 = 사전형 + につれて"
+          }
+        }
+      ]
     },
     {
       "no": 88,
@@ -6164,14 +6335,71 @@
       "romaji": "ni wa",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%81%af-ni-wa-meaning/",
       "refOriginalEn": "for the purpose of; in order to ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~하기 위해서는, ~에는"
+      ],
+      "category": "expression",
+      "explanation": "어떤 목적·조건을 나타내며 그것을 위해서는 무엇이 필요한지를 도입한다. 「~하기 위해서는」 의 의미. 「ためには」 보다 더 회화체.",
+      "formation": "동사 사전형 + には / 명사 + には",
+      "notes": "「日本へ行くには、ビザが必要だ」 (일본에 가기 위해서는 비자가 필요하다). 격조사 「に」 + 「は」 의 결합.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{合格|ごうかく}する{{には}}、{毎日|まいにち}{勉強|べんきょう}が{必要|ひつよう}だ。",
+          "sentenceTranslationKo": "합격하기 위해서는 매일 공부가 필요하다.",
+          "note": null
+        },
+        {
+          "sentence": "{健康|けんこう}{{には}}{運動|うんどう}と{食事|しょくじ}が{大切|たいせつ}だ。",
+          "sentenceTranslationKo": "건강에는 운동과 식사가 중요하다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{駅|えき}に{行|い}く{{には}}どうすればいいですか。",
+            "answer": "には",
+            "distractors": [
+              "とは",
+              "では",
+              "から"
+            ],
+            "translationKo": "역에 가기 위해서는 어떻게 하면 됩니까?"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{成功|せいこう}するには、{努力|どりょく}が{必要|ひつよう}だ」",
+            "contextSentence": null,
+            "answer": "성공하기 위해서는 노력이 필요하다",
+            "distractors": [
+              "성공하면 노력이 필요하다",
+              "성공해서 노력이 필요했다",
+              "성공할 수 있어서 노력했다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "일본어를 잘하기 위해서는 매일 연습하세요.",
+            "answer": "{日本語|にほんご}が{上手|じょうず}になる{{には}}、{毎日|まいにち}{練習|れんしゅう}してください。",
+            "distractors": [
+              "{日本語|にほんご}が{上手|じょうず}になる{{とは}}、{毎日|まいにち}{練習|れんしゅう}してください。",
+              "{日本語|にほんご}が{上手|じょうず}になる{{では}}、{毎日|まいにち}{練習|れんしゅう}してください。",
+              "{日本語|にほんご}が{上手|じょうず}になる{{から}}、{毎日|まいにち}{練習|れんしゅう}してください。"
+            ],
+            "hintKo": "목적·조건 = 사전형 + には"
+          }
+        }
+      ]
     },
     {
       "no": 89,
@@ -6179,14 +6407,71 @@
       "romaji": "ni yoru to/ni yoreba",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%82%88%e3%82%8b%e3%81%a8-%e3%81%ab%e3%82%88%e3%82%8c%e3%81%b0-ni-yoru-to-ni-yoreba-meaning/",
       "refOriginalEn": "according to ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~에 의하면, ~에 따르면 (정보의 출처)"
+      ],
+      "category": "expression",
+      "explanation": "정보·뉴스·소문의 출처를 명시할 때 쓰는 표현이다. 「~에 의하면」 의 의미. 보통 문장 끝에 「~そうだ / ~らしい / ~ということだ」 와 호응.",
+      "formation": "명사 + によると / によれば",
+      "notes": "「天気予報によると、明日は雨だそうだ」 (일기예보에 의하면 내일은 비라고 한다). 기사·뉴스·논문 빈출.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{天気予報|てんきよほう}{{によると}}、{明日|あした}は{晴|は}れだそうだ。",
+          "sentenceTranslationKo": "일기예보에 의하면 내일은 맑다고 한다.",
+          "note": null
+        },
+        {
+          "sentence": "{彼|かれ}の{話|はなし}{{によれば}}、{試験|しけん}は{延期|えんき}されたらしい。",
+          "sentenceTranslationKo": "그의 말에 따르면 시험이 연기되었다고 한다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "ニュース{{によると}}、{経済|けいざい}は{回復|かいふく}しているらしい。",
+            "answer": "によると",
+            "distractors": [
+              "によって",
+              "について",
+              "に対して"
+            ],
+            "translationKo": "뉴스에 의하면 경제는 회복하고 있는 것 같다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{調査|ちょうさ}によれば、{多|おお}くの{人|ひと}が{賛成|さんせい}している」",
+            "contextSentence": null,
+            "answer": "조사에 따르면 많은 사람이 찬성하고 있다 (출처)",
+            "distractors": [
+              "조사에 의해 많은 사람이 찬성했다 (수단)",
+              "조사에 대해 많은 사람이 찬성한다",
+              "조사에 있어서 많은 사람이 찬성한다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "신문에 의하면 그 사건이 해결되었다고 합니다.",
+            "answer": "{新聞|しんぶん}{{によると}}、その{事件|じけん}は{解決|かいけつ}されたそうです。",
+            "distractors": [
+              "{新聞|しんぶん}{{によって}}、その{事件|じけん}は{解決|かいけつ}されたそうです。",
+              "{新聞|しんぶん}{{について}}、その{事件|じけん}は{解決|かいけつ}されたそうです。",
+              "{新聞|しんぶん}{{に対して}}、その{事件|じけん}は{解決|かいけつ}されたそうです。"
+            ],
+            "hintKo": "정보 출처 = 명사 + によると"
+          }
+        }
+      ]
     },
     {
       "no": 90,
@@ -6194,14 +6479,71 @@
       "romaji": "ni yotte / ni yoru",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ab%e3%82%88%e3%81%a3%e3%81%a6-%e3%81%ab%e3%82%88%e3%82%8b-ni-yotte-ni-yoru-meaning/",
       "refOriginalEn": "by means of; due to; owing to; because of ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~에 의해, ~에 따라 (수단·원인·차이)"
+      ],
+      "category": "expression",
+      "explanation": "다양한 의미를 가진 다목적 격식 표현이다: ① 수단·방법, ② 원인, ③ 행위자 (수동), ④ 차이·기준. 「~에 의해」 의 의미. 「による」 는 명사 수식형.",
+      "formation": "명사 + によって / による + 명사",
+      "notes": "「火事による被害」 (화재에 의한 피해 - 원인), 「人によって考え方が違う」 (사람에 따라 생각이 다르다 - 차이), 「電話によって連絡する」 (전화로 연락하다 - 수단).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{火事|かじ}{{によって}}{家|いえ}が{焼|や}けた。",
+          "sentenceTranslationKo": "화재에 의해 집이 탔다.",
+          "note": null
+        },
+        {
+          "sentence": "{人|ひと}{{によって}}{考|かんが}え{方|かた}が{違|ちが}う。",
+          "sentenceTranslationKo": "사람에 따라 생각이 다르다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{地震|じしん}{{による}}{被害|ひがい}が{大|おお}きい。",
+            "answer": "による",
+            "distractors": [
+              "について",
+              "に対する",
+              "において"
+            ],
+            "translationKo": "지진에 의한 피해가 크다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{場合|ばあい}によっては、{中止|ちゅうし}になる」",
+            "contextSentence": null,
+            "answer": "경우에 따라서는 중지된다 (조건·차이)",
+            "distractors": [
+              "경우에 의해 분명히 중지된다",
+              "경우에 대해 중지된다",
+              "경우에 있어서 중지된다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이 책은 한 학자에 의해 쓰여졌어요.",
+            "answer": "この{本|ほん}は{一人|ひとり}の{学者|がくしゃ}{{によって}}{書|か}かれました。",
+            "distractors": [
+              "この{本|ほん}は{一人|ひとり}の{学者|がくしゃ}{{について}}{書|か}かれました。",
+              "この{本|ほん}は{一人|ひとり}の{学者|がくしゃ}{{に対して}}{書|か}かれました。",
+              "この{本|ほん}は{一人|ひとり}の{学者|がくしゃ}{{において}}{書|か}かれました。"
+            ],
+            "hintKo": "행위자 (수동) = 명사 + によって"
+          }
+        }
+      ]
     },
     {
       "no": 91,
@@ -6209,14 +6551,71 @@
       "romaji": "no deshou ka",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%ae%e3%81%a7%e3%81%97%e3%82%87%e3%81%86%e3%81%8b-no-deshou-ka-meaning/",
       "refOriginalEn": "ask a question in a polite way",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~인 걸까요?, ~일까요? (정중한 의문)"
+      ],
+      "category": "expression",
+      "explanation": "정중하면서도 다소 망설임이 섞인 의문을 표현한다. 「~인 걸까요?」 의 의미. 단순한 「ですか」 보다 부드러운 어감으로 비즈니스·격식 회화에 자주.",
+      "formation": "보통형 (명사·な형용사 어간+な) + のでしょうか",
+      "notes": "「だろうか」 의 정중형. 「いかがでしょうか」, 「どうでしょうか」 가 회화 상투어.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{何時|なんじ}に{出発|しゅっぱつ}する{{のでしょうか}}。",
+          "sentenceTranslationKo": "몇 시에 출발하는 걸까요?",
+          "note": null
+        },
+        {
+          "sentence": "なぜ{彼|かれ}は{来|こ}なかった{{のでしょうか}}。",
+          "sentenceTranslationKo": "왜 그는 오지 않은 걸까요?",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "これは{何|なん}な{{のでしょうか}}。",
+            "answer": "のでしょうか",
+            "distractors": [
+              "のだろうか",
+              "のかしら",
+              "のかな"
+            ],
+            "translationKo": "이건 뭐일까요?"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「どうすればいいのでしょうか」",
+            "contextSentence": null,
+            "answer": "어떻게 하면 좋을까요? (정중한 의문)",
+            "distractors": [
+              "어떻게 해야 한다",
+              "어떻게 하고 있어요",
+              "어떻게 했어요"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이 회의에 참석해야 할까요?",
+            "answer": "この{会議|かいぎ}に{出席|しゅっせき}しなければならない{{のでしょうか}}。",
+            "distractors": [
+              "この{会議|かいぎ}に{出席|しゅっせき}しなければならない{{のだろうか}}。",
+              "この{会議|かいぎ}に{出席|しゅっせき}しなければならない{{のかしら}}。",
+              "この{会議|かいぎ}に{出席|しゅっせき}しなければならない{{のかな}}。"
+            ],
+            "hintKo": "정중한 의문 = 보통형 + のでしょうか"
+          }
+        }
+      ]
     },
     {
       "no": 92,
@@ -6224,14 +6623,71 @@
       "romaji": "o chuushin ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e4%b8%ad%e5%bf%83%e3%81%ab-o-chuushin-ni-meaning/",
       "refOriginalEn": "focused on; centered on",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~을 중심으로"
+      ],
+      "category": "expression",
+      "explanation": "어떤 사물·인물·장소가 중심이 되어 다른 것들이 그것을 둘러싸고 있음을 나타낸다. 「~을 중심으로」 의 의미. 「を中心として」 도 호환.",
+      "formation": "명사 + を中心に / を中心として",
+      "notes": "「東京を中心に」 (도쿄를 중심으로), 「学生を中心とする団体」 (학생을 중심으로 하는 단체). 보고서·뉴스에 빈출.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{彼|かれ}{{を中心に}}、グループが{活動|かつどう}している。",
+          "sentenceTranslationKo": "그를 중심으로 그룹이 활동하고 있다.",
+          "note": null
+        },
+        {
+          "sentence": "この{研究|けんきゅう}は{日本|にほん}の{文化|ぶんか}{{を中心に}}{進|すす}める。",
+          "sentenceTranslationKo": "이 연구는 일본 문화를 중심으로 진행한다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{若者|わかもの}{{を中心に}}{流行|りゅうこう}している。",
+            "answer": "を中心に",
+            "distractors": [
+              "について",
+              "に対して",
+              "に関して"
+            ],
+            "translationKo": "젊은이를 중심으로 유행하고 있다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{家族|かぞく}を{中心|ちゅうしん}に{生活|せいかつ}している」",
+            "contextSentence": null,
+            "answer": "가족을 중심으로 생활하고 있다",
+            "distractors": [
+              "가족에 대해 생활한다",
+              "가족과 함께 생활한다",
+              "가족 밖에서 생활한다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "팀은 그를 중심으로 만들어졌어요.",
+            "answer": "チームは{彼|かれ}{{を中心に}}{作|つく}られました。",
+            "distractors": [
+              "チームは{彼|かれ}{{について}}{作|つく}られました。",
+              "チームは{彼|かれ}{{に対して}}{作|つく}られました。",
+              "チームは{彼|かれ}{{に関して}}{作|つく}られました。"
+            ],
+            "hintKo": "중심 = 명사 + を中心に"
+          }
+        }
+      ]
     },
     {
       "no": 93,
@@ -6239,14 +6695,71 @@
       "romaji": "o hajime",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e3%81%af%e3%81%98%e3%82%81%e3%81%a8%e3%81%99%e3%82%8b-o-hajime-to-suru-meaning/",
       "refOriginalEn": "for example; starting with ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~을 비롯해, ~을 시작으로"
+      ],
+      "category": "expression",
+      "explanation": "어떤 대표적인 예를 들면서 그 외의 것도 함께 포함됨을 나타낸다. 「~을 비롯해」 의 의미. 격식 있는 글에서 예시 도입에 자주.",
+      "formation": "명사 + をはじめ / をはじめとする + 명사",
+      "notes": "「先生をはじめ、皆さん」 (선생님을 비롯해 여러분), 「東京をはじめとする大都市」 (도쿄를 비롯한 대도시).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{先生|せんせい}{{をはじめ}}、{皆|みな}さんに{感謝|かんしゃ}します。",
+          "sentenceTranslationKo": "선생님을 비롯해 여러분에게 감사합니다.",
+          "note": null
+        },
+        {
+          "sentence": "{日本|にほん}{{をはじめとする}}アジアの{国々|くにぐに}。",
+          "sentenceTranslationKo": "일본을 비롯한 아시아 국가들.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{社長|しゃちょう}{{をはじめ}}、{社員|しゃいん}{全員|ぜんいん}が{参加|さんか}した。",
+            "answer": "をはじめ",
+            "distractors": [
+              "をはじめとする",
+              "について",
+              "を中心に"
+            ],
+            "translationKo": "사장을 비롯해 사원 전원이 참가했다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{京都|きょうと}をはじめ、{古都|こと}を{訪|おとず}れた」",
+            "contextSentence": null,
+            "answer": "교토를 비롯해 고도(古都)를 방문했다",
+            "distractors": [
+              "교토에 대해 방문했다",
+              "교토를 향해 방문했다",
+              "교토에 따라 방문했다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "야구를 비롯해 다양한 스포츠를 좋아해요.",
+            "answer": "{野球|やきゅう}{{をはじめ}}、{様々|さまざま}なスポーツが{好|す}きです。",
+            "distractors": [
+              "{野球|やきゅう}{{について}}、{様々|さまざま}なスポーツが{好|す}きです。",
+              "{野球|やきゅう}{{に対して}}、{様々|さまざま}なスポーツが{好|す}きです。",
+              "{野球|やきゅう}{{を中心に}}、{様々|さまざま}なスポーツが{好|す}きです。"
+            ],
+            "hintKo": "대표 예시 = 명사 + をはじめ"
+          }
+        }
+      ]
     },
     {
       "no": 94,
@@ -6254,14 +6767,71 @@
       "romaji": "o komete",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e8%be%bc%e3%82%81%e3%81%a6-%e3%82%92%e3%81%93%e3%82%81%e3%81%a6-o-komete-meaning/",
       "refOriginalEn": "filled with; full of",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~을 담아"
+      ],
+      "category": "expression",
+      "explanation": "어떤 마음·감정·의도를 담아서 행동함을 나타낸다. 「~을 담아」 의 의미. 감정·정성을 표현하는 시적·격식체.",
+      "formation": "명사 + を込めて",
+      "notes": "「心を込めて」 (마음을 담아), 「愛情を込めて」 (애정을 담아), 「感謝を込めて」 (감사를 담아) 빈출.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{心|こころ}{{を込めて}}{手紙|てがみ}を{書|か}いた。",
+          "sentenceTranslationKo": "마음을 담아 편지를 썼다.",
+          "note": null
+        },
+        {
+          "sentence": "{感謝|かんしゃ}{{を込めて}}プレゼントを{贈|おく}った。",
+          "sentenceTranslationKo": "감사를 담아 선물을 보냈다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{愛情|あいじょう}{{を込めて}}{料理|りょうり}を{作|つく}る。",
+            "answer": "を込めて",
+            "distractors": [
+              "を中心に",
+              "をはじめ",
+              "について"
+            ],
+            "translationKo": "애정을 담아 요리를 만든다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{祈|いの}りを{込|こ}めて{歌|うた}う」",
+            "contextSentence": null,
+            "answer": "기도를 담아 노래하다 (감정을 담음)",
+            "distractors": [
+              "기도에 대해 노래한다",
+              "기도를 향해 노래한다",
+              "기도에 따라 노래한다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "감사의 마음을 담아 선물을 준비했어요.",
+            "answer": "{感謝|かんしゃ}の{気持|きも}ち{{を込めて}}プレゼントを{用意|ようい}しました。",
+            "distractors": [
+              "{感謝|かんしゃ}の{気持|きも}ち{{を中心に}}プレゼントを{用意|ようい}しました。",
+              "{感謝|かんしゃ}の{気持|きも}ち{{をはじめ}}プレゼントを{用意|ようい}しました。",
+              "{感謝|かんしゃ}の{気持|きも}ち{{について}}プレゼントを{用意|ようい}しました。"
+            ],
+            "hintKo": "감정을 담아 = 명사 + を込めて"
+          }
+        }
+      ]
     },
     {
       "no": 95,
@@ -6269,14 +6839,71 @@
       "romaji": "o tsuujite / o tooshite",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%82%92%e9%80%9a%e3%81%98%e3%81%a6-%e3%82%92%e9%80%9a%e3%81%97%e3%81%a6-o-tsuujite-o-tooshite-meaning/",
       "refOriginalEn": "through; via; throughout; by ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~을 통해, ~동안 (수단·매개·기간)"
+      ],
+      "category": "expression",
+      "explanation": "두 가지 의미: ① 어떤 것을 매개·수단으로 함 (수단), ② 시간 전체에 걸침 (기간). 「~을 통해」 의 의미. 「を通じて」 와 「を通して」 는 거의 호환.",
+      "formation": "명사 + を通じて / を通して",
+      "notes": "「インターネットを通じて」 (인터넷을 통해 - 수단), 「一年を通して暑い」 (일 년 내내 덥다 - 기간).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "インターネット{{を通じて}}{情報|じょうほう}を{集|あつ}める。",
+          "sentenceTranslationKo": "인터넷을 통해 정보를 모은다.",
+          "note": null
+        },
+        {
+          "sentence": "{一年|いちねん}{{を通して}}この{町|まち}は{暖|あたた}かい。",
+          "sentenceTranslationKo": "일 년 내내 이 마을은 따뜻하다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{友達|ともだち}{{を通じて}}{彼|かれ}を{紹介|しょうかい}してもらった。",
+            "answer": "を通じて",
+            "distractors": [
+              "を中心に",
+              "について",
+              "に対して"
+            ],
+            "translationKo": "친구를 통해 그를 소개받았다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{経験|けいけん}を{通|つう}じて{学|まな}んだ」",
+            "contextSentence": null,
+            "answer": "경험을 통해 배웠다 (수단·매개)",
+            "distractors": [
+              "경험에 대해 배웠다",
+              "경험을 향해 배웠다",
+              "경험과 비교해 배웠다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이 일을 통해 많이 성장했어요.",
+            "answer": "この{仕事|しごと}{{を通じて}}{成長|せいちょう}しました。",
+            "distractors": [
+              "この{仕事|しごと}{{を中心に}}{成長|せいちょう}しました。",
+              "この{仕事|しごと}{{について}}{成長|せいちょう}しました。",
+              "この{仕事|しごと}{{に対して}}{成長|せいちょう}しました。"
+            ],
+            "hintKo": "수단·매개 = 명사 + を通じて"
+          }
+        }
+      ]
     },
     {
       "no": 96,
@@ -6284,14 +6911,71 @@
       "romaji": "okage de",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%8a%e3%81%8b%e3%81%92%e3%81%a7-okage-de-meaning/",
       "refOriginalEn": "thanks to; owing to; because of ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~덕분에 (긍정적 원인)"
+      ],
+      "category": "expression",
+      "explanation": "긍정적인 결과의 원인·이유를 감사의 어감과 함께 나타낸다. 「~덕분에」 의 의미. 「せいで」 (탓에 - 부정적) 와 정반대 어감.",
+      "formation": "보통형 (명사+の / な형용사+な) + おかげで",
+      "notes": "「先生のおかげで合格できた」 (선생님 덕분에 합격할 수 있었다). 가벼운 빈정거림 (역설) 으로 부정적 결과에도 쓰이지만 본의는 긍정적.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{先生|せんせい}の{{おかげで}}、{合格|ごうかく}できました。",
+          "sentenceTranslationKo": "선생님 덕분에 합격할 수 있었습니다.",
+          "note": null
+        },
+        {
+          "sentence": "{薬|くすり}を{飲|の}んだ{{おかげで}}、{元気|げんき}になった。",
+          "sentenceTranslationKo": "약을 먹은 덕분에 건강해졌다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "あなたの{{おかげで}}{助|たす}かった。",
+            "answer": "おかげで",
+            "distractors": [
+              "せいで",
+              "ために",
+              "について"
+            ],
+            "translationKo": "당신 덕분에 살았다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{両親|りょうしん}のおかげで{留学|りゅうがく}できた」",
+            "contextSentence": null,
+            "answer": "부모님 덕분에 유학할 수 있었다 (긍정 원인)",
+            "distractors": [
+              "부모님 탓에 유학할 수 있었다",
+              "부모님을 위해 유학했다",
+              "부모님에 대해 유학했다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "친구 덕분에 즐거운 시간을 보낼 수 있었어요.",
+            "answer": "{友達|ともだち}の{{おかげで}}{楽|たの}しい{時間|じかん}を{過|す}ごせました。",
+            "distractors": [
+              "{友達|ともだち}の{{せいで}}{楽|たの}しい{時間|じかん}を{過|す}ごせました。",
+              "{友達|ともだち}の{{ために}}{楽|たの}しい{時間|じかん}を{過|す}ごせました。",
+              "{友達|ともだち}の{{について}}{楽|たの}しい{時間|じかん}を{過|す}ごせました。"
+            ],
+            "hintKo": "긍정 원인 = 보통형 + おかげで"
+          }
+        }
+      ]
     },
     {
       "no": 97,
@@ -6299,14 +6983,73 @@
       "romaji": "ppanashi",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a3%e3%81%b1%e3%81%aa%e3%81%97-ppanashi-meaning/",
       "refOriginalEn": "leaving (something) on; leaving (something) still in use​",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~한 채로, ~한 상태 그대로 (방치)"
+      ],
+      "category": "auxiliary",
+      "explanation": "어떤 동작 후 마무리·정리 없이 그대로 둔 상태를 나타낸다. 「~한 채로」 의 의미. 보통 부정적 어감 (방치) 으로 자주 사용.",
+      "formation": "동사 ます형 어간 + っぱなし",
+      "notes": "「電気をつけっぱなし」 (전기를 켠 채로), 「立ちっぱなし」 (계속 서 있는 상태). な형용사처럼 활용 — 「~っぱなしだ」, 「~っぱなしの」.",
+      "applicableQuizTypes": [
+        "conjugation",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{電気|でんき}をつけ{{っぱなし}}で{出|で}かけた。",
+          "sentenceTranslationKo": "전기를 켠 채로 외출했다.",
+          "note": null
+        },
+        {
+          "sentence": "{昨日|きのう}は{一日中|いちにちじゅう}{立|た}ち{{っぱなし}}だった。",
+          "sentenceTranslationKo": "어제는 하루 종일 서 있는 상태였다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "conjugation",
+          "payload": {
+            "dictForm": "開ける",
+            "group": "ichidan",
+            "targetFormLabel": "っぱなし형 (~한 채로)",
+            "answer": "開けっぱなし",
+            "distractors": [
+              "開けたまま",
+              "開けているまま",
+              "開けて置く"
+            ],
+            "hintKo": "ます형 어간 + っぱなし"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{窓|まど}を{開|あ}けっぱなしにする」",
+            "contextSentence": null,
+            "answer": "창문을 연 채로 두다 (방치)",
+            "distractors": [
+              "창문을 열기 시작하다",
+              "창문을 닫아 두다",
+              "창문을 열 수 있다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "텔레비전을 켠 채로 잤어요.",
+            "answer": "テレビをつけ{{っぱなし}}で{寝|ね}ました。",
+            "distractors": [
+              "テレビをつけ{{たまま}}で{寝|ね}ました。",
+              "テレビをつけ{{ているまま}}で{寝|ね}ました。",
+              "テレビをつけ{{て置く}}で{寝|ね}ました。"
+            ],
+            "hintKo": "방치 = ます형 + っぱなし"
+          }
+        }
+      ]
     },
     {
       "no": 98,
@@ -6314,14 +7057,73 @@
       "romaji": "ppoi",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a3%e3%81%bd%e3%81%84-ppoi-meaning/",
       "refOriginalEn": "seems like; somewhat; -ish; easily does; often does ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~해 보이다, ~한 느낌 (~다움)"
+      ],
+      "category": "auxiliary",
+      "explanation": "어떤 성질·경향이 강하게 느껴짐을 나타낸다. 「~해 보이다, ~한 느낌」 의 의미. い형용사처럼 활용.",
+      "formation": "명사 / 동사 ます형 어간 / 형용사 어간 + っぽい",
+      "notes": "「子どもっぽい」 (어린애 같다), 「忘れっぽい」 (잘 잊다), 「白っぽい」 (흰 느낌). 부정적 평가가 자주.",
+      "applicableQuizTypes": [
+        "conjugation",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{彼|かれ}は{子|こ}ども{{っぽい}}{性格|せいかく}だ。",
+          "sentenceTranslationKo": "그는 어린애 같은 성격이다.",
+          "note": null
+        },
+        {
+          "sentence": "{最近|さいきん}{忘|わす}れ{{っぽく}}なった。",
+          "sentenceTranslationKo": "최근에 잘 잊어버리게 되었다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "conjugation",
+          "payload": {
+            "dictForm": "怒る",
+            "group": "godan",
+            "targetFormLabel": "っぽい형 (잘 ~하다·~한 느낌)",
+            "answer": "怒りっぽい",
+            "distractors": [
+              "怒っぽい",
+              "怒るっぽい",
+              "怒ってっぽい"
+            ],
+            "hintKo": "ます형 어간 + っぽい"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{白|しろ}っぽいシャツ」",
+            "contextSentence": null,
+            "answer": "흰 느낌의 셔츠",
+            "distractors": [
+              "완전히 하얀 셔츠",
+              "흰색이 아닌 셔츠",
+              "하얀 줄무늬 셔츠"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "그녀는 여성스러워요.",
+            "answer": "{彼女|かのじょ}は{女|おんな}{{っぽいです}}。",
+            "distractors": [
+              "{彼女|かのじょ}は{女|おんな}{{みたいです}}。",
+              "{彼女|かのじょ}は{女|おんな}{{ようです}}。",
+              "{彼女|かのじょ}は{女|おんな}{{らしいです}}。"
+            ],
+            "hintKo": "성질·경향 = 어간 + っぽい"
+          }
+        }
+      ]
     },
     {
       "no": 99,
@@ -6329,14 +7131,71 @@
       "romaji": "sae",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%95%e3%81%88-sae-%e3%81%a7%e3%81%95%e3%81%88%e3%82%82-meaning/",
       "refOriginalEn": "even; so much as; not even",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~조차, ~마저 (극단적 예시)"
+      ],
+      "category": "particle",
+      "explanation": "극단적인 예를 들며 「그것조차 그러하니 다른 것은 말할 것도 없다」 라는 의미를 강조한다. 「~조차」 의 의미.",
+      "formation": "명사 + さえ",
+      "notes": "「子どもさえ知っている」 (아이조차 알고 있다 = 누구나 안다). 「ですら」, 「まで」 와 비슷한 어감.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{子|こ}ども{{さえ}}{知|し}っている{常識|じょうしき}だ。",
+          "sentenceTranslationKo": "아이조차 알고 있는 상식이다.",
+          "note": null
+        },
+        {
+          "sentence": "{忙|いそが}しくて、{食事|しょくじ}{{さえ}}できない。",
+          "sentenceTranslationKo": "바빠서 식사조차 할 수 없다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{先生|せんせい}{{さえ}}{答|こた}えられない{問題|もんだい}だ。",
+            "answer": "さえ",
+            "distractors": [
+              "まで",
+              "だけ",
+              "ばかり"
+            ],
+            "translationKo": "선생님조차 답할 수 없는 문제다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{名前|なまえ}さえ{忘|わす}れた」",
+            "contextSentence": null,
+            "answer": "이름조차 잊었다 (극단적 예시)",
+            "distractors": [
+              "이름만 잊었다",
+              "이름까지 기억했다",
+              "이름은 잊지 않았다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "물조차 마실 수 없을 만큼 피곤했어요.",
+            "answer": "{水|みず}{{さえ}}{飲|の}めないほど{疲|つか}れました。",
+            "distractors": [
+              "{水|みず}{{まで}}{飲|の}めないほど{疲|つか}れました。",
+              "{水|みず}{{だけ}}{飲|の}めないほど{疲|つか}れました。",
+              "{水|みず}{{ばかり}}{飲|の}めないほど{疲|つか}れました。"
+            ],
+            "hintKo": "극단 예시 = 명사 + さえ"
+          }
+        }
+      ]
     },
     {
       "no": 100,
@@ -6344,14 +7203,71 @@
       "romaji": "sae~ba",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%95%e3%81%88%ef%bd%9e%e3%81%b0-sae-ba-meaning/",
       "refOriginalEn": "if only; as long as ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~만 ~하면 (최소 조건)"
+      ],
+      "category": "expression",
+      "explanation": "어떤 최소 조건이 갖춰지기만 하면 다른 것은 모두 OK 라는 의미를 나타낸다. 「~만 ~하면」 의 의미. 「だけ~ば」 보다 강한 강조.",
+      "formation": "명사 + さえ + 동사 ば형 / 동사 ます형 어간 + さえすれば",
+      "notes": "「君さえいれば、何もいらない」 (너만 있으면 아무것도 필요 없다), 「勉強しさえすればいい」 (공부만 하면 된다).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{{時間さえあれば}}、{何|なん}でもできる。",
+          "sentenceTranslationKo": "시간만 있으면 무엇이든 할 수 있다.",
+          "note": null
+        },
+        {
+          "sentence": "{{君さえいれば}}{大丈夫|だいじょうぶ}だ。",
+          "sentenceTranslationKo": "너만 있으면 괜찮다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{{頑張りさえすれば}}{合格|ごうかく}できる。",
+            "answer": "頑張りさえすれば",
+            "distractors": [
+              "頑張りでもすれば",
+              "頑張りだけすれば",
+              "頑張りばかりすれば"
+            ],
+            "translationKo": "노력만 하면 합격할 수 있다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「お{金|かね}さえあれば、{幸|しあわ}せだ」",
+            "contextSentence": null,
+            "answer": "돈만 있으면 행복하다 (최소 조건)",
+            "distractors": [
+              "돈조차 행복하다",
+              "돈까지 행복하다",
+              "돈만 행복하지 않다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이것만 있으면 됩니다.",
+            "answer": "{{これさえあれば}}いいです。",
+            "distractors": [
+              "{{これだけあれば}}いいです。",
+              "{{これまであれば}}いいです。",
+              "{{これでもあれば}}いいです。"
+            ],
+            "hintKo": "최소 조건 = 명사 + さえ + ば형"
+          }
+        }
+      ]
     },
     {
       "no": 101,
@@ -6359,14 +7275,71 @@
       "romaji": "sai ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e9%9a%9b%e3%81%ab-sai-ni-meaning/",
       "refOriginalEn": "when; at the time of; in the case of ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~할 때, ~할 즈음 (격식)"
+      ],
+      "category": "expression",
+      "explanation": "어떤 동작·일이 일어나는 시점을 격식 있게 나타낸다. 「~할 때」 의 의미. 「とき」 의 격식 있는 표현.",
+      "formation": "동사 사전형 / た형 / 명사+の + 際に",
+      "notes": "비즈니스·공식 안내문에 빈출. 「ご利用の際に」 (이용하실 때), 「お困りの際は」 (곤란하실 때는).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{出発|しゅっぱつ}の{{際に}}、パスポートを{確認|かくにん}してください。",
+          "sentenceTranslationKo": "출발 시 여권을 확인해 주세요.",
+          "note": null
+        },
+        {
+          "sentence": "ご{質問|しつもん}の{{際は}}、お{気軽|きがる}に。",
+          "sentenceTranslationKo": "질문이 있으실 때는 부담 없이.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{帰国|きこく}する{{際に}}、お{土産|みやげ}を{買|か}った。",
+            "answer": "際に",
+            "distractors": [
+              "うちに",
+              "間に",
+              "前に"
+            ],
+            "translationKo": "귀국할 때 선물을 샀다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「お{支払|しはら}いの{際|さい}に、カードがご{利用|りよう}いただけます」",
+            "contextSentence": null,
+            "answer": "결제하실 때 카드를 이용하실 수 있습니다",
+            "distractors": [
+              "결제하기 전에 카드를 이용하실 수 있습니다",
+              "결제하는 사이에 카드를 이용하실 수 있습니다",
+              "결제하지 않을 때 카드를 이용하실 수 있습니다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "긴급할 때는 이 번호로 전화하세요.",
+            "answer": "{緊急|きんきゅう}の{{際は}}、この{番号|ばんごう}にお{電話|でんわ}ください。",
+            "distractors": [
+              "{緊急|きんきゅう}の{{うちは}}、この{番号|ばんごう}にお{電話|でんわ}ください。",
+              "{緊急|きんきゅう}の{{間は}}、この{番号|ばんごう}にお{電話|でんわ}ください。",
+              "{緊急|きんきゅう}の{{前は}}、この{番号|ばんごう}にお{電話|でんわ}ください。"
+            ],
+            "hintKo": "격식 시점 = 사전형/명사の + 際に"
+          }
+        }
+      ]
     },
     {
       "no": 102,
@@ -6374,14 +7347,71 @@
       "romaji": "saichuu ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e7%9c%9f%e3%81%a3%e6%9c%80%e4%b8%ad%e3%81%ab-%e3%81%be%e3%81%a3%e3%81%95%e3%81%84%e3%81%a1%e3%82%85%e3%81%86%e3%81%ab-saichuu-ni-meaning/",
       "refOriginalEn": "while; during; in the middle of ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "한창 ~하는 중에"
+      ],
+      "category": "expression",
+      "explanation": "어떤 동작이 한창 진행되는 중간 시점에 다른 일이 일어남을 나타낸다. 「한창 ~하는 중에」 의 의미. 「ているところに」 와 비슷하지만 「最中に」 가 더 강조.",
+      "formation": "동사 て형+いる + 最中に / 명사 + の + 最中に",
+      "notes": "보통 진행 중에 방해·간섭이 발생할 때 사용. 「会議の最中に電話が鳴った」 (회의 중에 전화가 울렸다).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{食事|しょくじ}の{{最中に}}{電話|でんわ}がかかってきた。",
+          "sentenceTranslationKo": "한창 식사 중에 전화가 걸려왔다.",
+          "note": null
+        },
+        {
+          "sentence": "{試験|しけん}を{受|う}けている{{最中に}}、{急|きゅう}にお{腹|なか}が{痛|いた}くなった。",
+          "sentenceTranslationKo": "시험을 보는 중에 갑자기 배가 아파졌다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{授業|じゅぎょう}の{{最中に}}、{居眠|いねむ}りしてしまった。",
+            "answer": "最中に",
+            "distractors": [
+              "際に",
+              "うちに",
+              "間に"
+            ],
+            "translationKo": "수업 한창 중에 깜빡 졸아 버렸다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{会議|かいぎ}の{最中|さいちゅう}に{停電|ていでん}した」",
+            "contextSentence": null,
+            "answer": "회의 중에 정전됐다 (한창 진행 중)",
+            "distractors": [
+              "회의 시작 전에 정전됐다",
+              "회의 끝난 후에 정전됐다",
+              "회의가 시작될 때 정전됐다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이야기 중에 끼어들지 마세요.",
+            "answer": "{話|はな}している{{最中に}}{割|わ}り{込|こ}まないでください。",
+            "distractors": [
+              "{話|はな}している{{際に}}{割|わ}り{込|こ}まないでください。",
+              "{話|はな}している{{うちに}}{割|わ}り{込|こ}まないでください。",
+              "{話|はな}している{{間に}}{割|わ}り{込|こ}まないでください。"
+            ],
+            "hintKo": "한창 진행 중 = 명사の/ている + 最中に"
+          }
+        }
+      ]
     },
     {
       "no": 103,
@@ -6389,14 +7419,71 @@
       "romaji": "sara ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%95%e3%82%89%e3%81%ab-sara-ni-meaning/",
       "refOriginalEn": "furthermore; again; more and more ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
+      "meaningsKo": [
+        "게다가, 더욱더, 한층"
+      ],
+      "category": "conjunction",
+      "explanation": "추가 정보를 도입하거나 정도가 더 강해짐을 나타내는 부사이다. 「게다가, 더욱더」 의 의미. 「もっと」 보다 격식적.",
       "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "notes": "「さらに悪い」 (더욱 나쁘다 - 강도), 「さらに彼は~」 (게다가 그는 ~ - 추가). 글말·격식 회화에 자주.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{物価|ぶっか}は{{さらに}}{上|あ}がるだろう。",
+          "sentenceTranslationKo": "물가는 더욱 오를 것이다.",
+          "note": null
+        },
+        {
+          "sentence": "{雨|あめ}が{降|ふ}り、{{さらに}}{風|かぜ}も{吹|ふ}いてきた。",
+          "sentenceTranslationKo": "비가 내리고, 게다가 바람도 불기 시작했다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{今年|ことし}の{夏|なつ}は{{さらに}}{暑|あつ}くなりそうだ。",
+            "answer": "さらに",
+            "distractors": [
+              "やっと",
+              "もっとも",
+              "むしろ"
+            ],
+            "translationKo": "올여름은 더 더워질 것 같다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{値段|ねだん}がさらに{下|さ}がった」",
+            "contextSentence": null,
+            "answer": "가격이 더욱 떨어졌다 (강도 증가)",
+            "distractors": [
+              "가격이 결국 떨어졌다",
+              "가격이 가장 떨어졌다",
+              "가격이 오히려 떨어졌다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이 사실에 더해 한 가지 더 알려드릴게요.",
+            "answer": "この{事実|じじつ}に{加|くわ}えて、{{さらに}}もう{一|ひと}つお{知|し}らせします。",
+            "distractors": [
+              "この{事実|じじつ}に{加|くわ}えて、{{やっと}}もう{一|ひと}つお{知|し}らせします。",
+              "この{事実|じじつ}に{加|くわ}えて、{{もっとも}}もう{一|ひと}つお{知|し}らせします。",
+              "この{事実|じじつ}に{加|くわ}えて、{{むしろ}}もう{一|ひと}つお{知|し}らせします。"
+            ],
+            "hintKo": "게다가·더욱 = さらに"
+          }
+        }
+      ]
     },
     {
       "no": 104,
@@ -6404,14 +7491,71 @@
       "romaji": "sate",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%95%e3%81%a6-sate-meaning/",
       "refOriginalEn": "conjunction: well; now; then ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "그런데, 자 (화제 전환)"
+      ],
+      "category": "conjunction",
+      "explanation": "이전의 화제를 마무리하고 새로운 화제로 넘어가는 접속사이다. 「그런데, 자」 의 의미. 글·강연·회의에서 화제 전환에 자주.",
+      "formation": "문장 도입에 단독 사용",
+      "notes": "「ところで」 와 호환되지만 「さて」 가 더 격식적·정리된 어감. 「さて、本題に入りましょう」 (자, 본론으로 들어갑시다).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{{さて}}、{次|つぎ}の{議題|ぎだい}に{移|うつ}りましょう。",
+          "sentenceTranslationKo": "자, 다음 의제로 넘어갑시다.",
+          "note": null
+        },
+        {
+          "sentence": "{{さて}}、{今日|きょう}は{何|なに}を{食|た}べようか。",
+          "sentenceTranslationKo": "그런데 오늘은 뭘 먹을까.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{{さて}}、{本題|ほんだい}に{入|はい}ります。",
+            "answer": "さて",
+            "distractors": [
+              "なお",
+              "また",
+              "それから"
+            ],
+            "translationKo": "자, 본론으로 들어갑니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「さて、{皆|みな}さんお{元気|げんき}ですか」",
+            "contextSentence": null,
+            "answer": "그런데 여러분 잘 지내십니까? (화제 전환·시작)",
+            "distractors": [
+              "또한 여러분 잘 지내십니까?",
+              "그리고 여러분 잘 지내십니까?",
+              "그래서 여러분 잘 지내십니까?"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "자, 이제 다음 이야기로 넘어가겠습니다.",
+            "answer": "{{さて}}、{次|つぎ}の{話|はなし}に{移|うつ}ります。",
+            "distractors": [
+              "{{なお}}、{次|つぎ}の{話|はなし}に{移|うつ}ります。",
+              "{{また}}、{次|つぎ}の{話|はなし}に{移|うつ}ります。",
+              "{{それから}}、{次|つぎ}の{話|はなし}に{移|うつ}ります。"
+            ],
+            "hintKo": "화제 전환 = さて"
+          }
+        }
+      ]
     },
     {
       "no": 105,
@@ -6419,14 +7563,71 @@
       "romaji": "sei de",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9b%e3%81%84%e3%81%a7-sei-de-meaning/",
       "refOriginalEn": "because of; due to; as a result of ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~탓에 (부정적 원인)"
+      ],
+      "category": "expression",
+      "explanation": "부정적 결과의 원인·이유를 비난·불만의 어감과 함께 나타낸다. 「~탓에」 의 의미. 「おかげで」 (덕분에 - 긍정) 와 정반대 어감.",
+      "formation": "보통형 (명사+の / な형용사+な) + せいで",
+      "notes": "「彼のせいで失敗した」 (그 탓에 실패했다). 「せいだ」 (~탓이다 - 단정), 「せいか」 (~탓인지 - 추측).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{雨|あめ}の{{せいで}}、{試合|しあい}が{中止|ちゅうし}になった。",
+          "sentenceTranslationKo": "비 탓에 시합이 중지되었다.",
+          "note": null
+        },
+        {
+          "sentence": "{彼|かれ}の{{せいで}}、{時間|じかん}に{遅|おく}れた。",
+          "sentenceTranslationKo": "그 사람 탓에 시간에 늦었다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{寝坊|ねぼう}した{{せいで}}、{遅刻|ちこく}した。",
+            "answer": "せいで",
+            "distractors": [
+              "おかげで",
+              "ために",
+              "について"
+            ],
+            "translationKo": "늦잠을 잔 탓에 지각했다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{熱|ねつ}のせいで{頭|あたま}が{痛|いた}い」",
+            "contextSentence": null,
+            "answer": "열 탓에 머리가 아프다 (부정 원인)",
+            "distractors": [
+              "열 덕분에 머리가 아프다",
+              "열을 위해 머리가 아프다",
+              "열에 대해 머리가 아프다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "그의 거짓말 탓에 모두가 곤란해졌어요.",
+            "answer": "{彼|かれ}の{嘘|うそ}の{{せいで}}、{皆|みな}が{困|こま}りました。",
+            "distractors": [
+              "{彼|かれ}の{嘘|うそ}の{{おかげで}}、{皆|みな}が{困|こま}りました。",
+              "{彼|かれ}の{嘘|うそ}の{{ために}}、{皆|みな}が{困|こま}りました。",
+              "{彼|かれ}の{嘘|うそ}の{{について}}、{皆|みな}が{困|こま}りました。"
+            ],
+            "hintKo": "부정적 원인 = 보통형 + せいで"
+          }
+        }
+      ]
     },
     {
       "no": 106,
@@ -6434,14 +7635,71 @@
       "romaji": "seizei",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9b%e3%81%84%e3%81%9c%e3%81%84-seizei-meaning/",
       "refOriginalEn": "at the most; at best; to the utmost",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
+      "meaningsKo": [
+        "기껏해야, 잘해야 (한정·약한 평가)"
+      ],
+      "category": "other",
+      "explanation": "정도·양·횟수의 상한선을 한정하는 부사이다. 「기껏해야」 의 의미. 약간 비판적·체념적 어감.",
       "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "notes": "「せいぜい1万円くらい」 (기껏해야 1만 엔 정도), 「せいぜい頑張れ」 (잘해 봐 - 약간 비꼬는 격려). 「最大限」 의 회화체.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "このバッグは{{せいぜい}}{1万円|いちまんえん}{程度|ていど}だろう。",
+          "sentenceTranslationKo": "이 가방은 기껏해야 1만 엔 정도일 것이다.",
+          "note": null
+        },
+        {
+          "sentence": "{彼|かれ}にできるのは{{せいぜい}}この{程度|ていど}だ。",
+          "sentenceTranslationKo": "그가 할 수 있는 것은 기껏해야 이 정도다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{毎月|まいつき}{{せいぜい}}{2万円|にまんえん}しか{貯金|ちょきん}できない。",
+            "answer": "せいぜい",
+            "distractors": [
+              "なるべく",
+              "ぜひ",
+              "せっかく"
+            ],
+            "translationKo": "매달 기껏해야 2만 엔밖에 저금할 수 없다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「せいぜい{頑張|がんば}って」",
+            "contextSentence": null,
+            "answer": "잘해 봐 (가벼운 비꼼·격려)",
+            "distractors": [
+              "꼭 노력해 (강한 권유)",
+              "되도록 노력해 (가능한 한)",
+              "모처럼 노력해 (어렵게 얻은 기회)"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "기껏해야 한 시간 정도 걸려요.",
+            "answer": "{{せいぜい}}{1時間|いちじかん}{程度|ていど}かかります。",
+            "distractors": [
+              "{{なるべく}}{1時間|いちじかん}{程度|ていど}かかります。",
+              "{{ぜひ}}{1時間|いちじかん}{程度|ていど}かかります。",
+              "{{せっかく}}{1時間|いちじかん}{程度|ていど}かかります。"
+            ],
+            "hintKo": "한정·기껏해야 = せいぜい"
+          }
+        }
+      ]
     },
     {
       "no": 107,
@@ -6449,14 +7707,71 @@
       "romaji": "shibaraku",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%97%e3%81%b0%e3%82%89%e3%81%8f-shibaraku-meaning/",
       "refOriginalEn": "for a moment; for a while; for the time being",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
+      "meaningsKo": [
+        "잠시, 한동안, 당분간"
+      ],
+      "category": "other",
+      "explanation": "비교적 짧은 시간을 가리키는 부사이다. 「잠시, 한동안」 의 의미. 정확한 시간보다 「조금 / 잠깐」 의 모호한 시간 단위.",
       "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "notes": "「しばらくお待ちください」 (잠시 기다려 주세요), 「しばらくぶり」 (오랜만). 회화·격식체 양쪽 자연.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{{しばらく}}お{待|ま}ちください。",
+          "sentenceTranslationKo": "잠시만 기다려 주세요.",
+          "note": null
+        },
+        {
+          "sentence": "{彼|かれ}は{{しばらく}}{海外|かいがい}に{滞在|たいざい}する{予定|よてい}だ。",
+          "sentenceTranslationKo": "그는 한동안 해외에 체류할 예정이다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{{しばらく}}{会|あ}っていない。",
+            "answer": "しばらく",
+            "distractors": [
+              "やっと",
+              "ちょうど",
+              "すぐ"
+            ],
+            "translationKo": "한동안 만나지 않았다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「しばらくぶりに{故郷|こきょう}に{帰|かえ}った」",
+            "contextSentence": null,
+            "answer": "오랜만에 고향에 돌아갔다",
+            "distractors": [
+              "처음으로 고향에 돌아갔다",
+              "마침내 고향에 돌아갔다",
+              "지금 막 고향에 돌아갔다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "한동안 일본어 공부를 쉬고 있어요.",
+            "answer": "{{しばらく}}{日本語|にほんご}の{勉強|べんきょう}を{休|やす}んでいます。",
+            "distractors": [
+              "{{やっと}}{日本語|にほんご}の{勉強|べんきょう}を{休|やす}んでいます。",
+              "{{ちょうど}}{日本語|にほんご}の{勉強|べんきょう}を{休|やす}んでいます。",
+              "{{すぐ}}{日本語|にほんご}の{勉強|べんきょう}を{休|やす}んでいます。"
+            ],
+            "hintKo": "잠시·한동안 = しばらく"
+          }
+        }
+      ]
     },
     {
       "no": 108,
@@ -6464,14 +7779,71 @@
       "romaji": "shikanai",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%97%e3%81%8b%e3%81%aa%e3%81%84-shika-nai-meaning/",
       "refOriginalEn": "have no choice but ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~할 수밖에 없다"
+      ],
+      "category": "expression",
+      "explanation": "다른 선택지가 없어 그것만 가능함을 나타낸다. 「~할 수밖에 없다」 의 의미. 체념·결단의 어감.",
+      "formation": "동사 사전형 + しかない / 명사 + しかない",
+      "notes": "「やるしかない」 (할 수밖에 없다), 「これしかない」 (이것밖에 없다). 「だけしかない」 강조형도 사용.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "もう{諦|あきら}める{{しかない}}。",
+          "sentenceTranslationKo": "이제 포기할 수밖에 없다.",
+          "note": null
+        },
+        {
+          "sentence": "バスがないので、{歩|ある}く{{しかない}}。",
+          "sentenceTranslationKo": "버스가 없어서 걸을 수밖에 없다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "やってみる{{しかない}}でしょう。",
+            "answer": "しかない",
+            "distractors": [
+              "ばかりだ",
+              "ことになる",
+              "ようになる"
+            ],
+            "translationKo": "해볼 수밖에 없겠지요."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{我慢|がまん}するしかない」",
+            "contextSentence": null,
+            "answer": "참을 수밖에 없다 (체념)",
+            "distractors": [
+              "참는 일이 있다",
+              "참기로 했다",
+              "참아 본 적 없다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "지금은 기다릴 수밖에 없어요.",
+            "answer": "{今|いま}は{待|ま}つ{{しかありません}}。",
+            "distractors": [
+              "{今|いま}は{待|ま}つ{{ばかりです}}。",
+              "{今|いま}は{待|ま}つ{{ことになります}}。",
+              "{今|いま}は{待|ま}つ{{ようになります}}。"
+            ],
+            "hintKo": "다른 선택지 없음 = 사전형 + しかない"
+          }
+        }
+      ]
     },
     {
       "no": 109,
@@ -6479,14 +7851,71 @@
       "romaji": "sono tame ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9d%e3%81%ae%e7%82%ba-%e3%81%9d%e3%81%ae%e3%81%9f%e3%82%81-sono-tame-meaning/",
       "refOriginalEn": "hence; for that reason; because of ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "그 때문에, 그래서 (인과 접속)"
+      ],
+      "category": "conjunction",
+      "explanation": "앞 문장의 내용이 원인이 되어 뒤의 결과로 이어짐을 나타내는 접속사이다. 「그 때문에」 의 의미. 격식 있는 글에서 인과 관계를 명시.",
+      "formation": "문장 도입에 단독 사용",
+      "notes": "「だから」 보다 격식적, 「したがって」 와 비슷. 「彼は遅刻した。そのために、会議に出られなかった」 (그는 지각했다. 그래서 회의에 참석할 수 없었다).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{雨|あめ}が{降|ふ}っていた。{{そのために}}、{試合|しあい}は{中止|ちゅうし}になった。",
+          "sentenceTranslationKo": "비가 내리고 있었다. 그래서 시합은 중지되었다.",
+          "note": null
+        },
+        {
+          "sentence": "{道路工事|どうろこうじ}があった。{{そのために}}、{遅刻|ちこく}した。",
+          "sentenceTranslationKo": "도로 공사가 있었다. 그 때문에 지각했다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{彼|かれ}は{病気|びょうき}だった。{{そのために}}、{欠席|けっせき}した。",
+            "answer": "そのために",
+            "distractors": [
+              "それでも",
+              "それから",
+              "ところが"
+            ],
+            "translationKo": "그는 아팠다. 그래서 결석했다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{忙|いそが}しい。そのために、{食事|しょくじ}も{取|と}れない」",
+            "contextSentence": null,
+            "answer": "바쁘다. 그 때문에 식사도 할 수 없다",
+            "distractors": [
+              "바쁘다. 그래도 식사를 한다",
+              "바쁘다. 그러나 식사를 한다",
+              "바쁘다. 그 후에 식사를 한다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "전철이 멈췄어요. 그 때문에 회의에 늦었어요.",
+            "answer": "{電車|でんしゃ}が{止|と}まりました。{{そのために}}、{会議|かいぎ}に{遅|おく}れました。",
+            "distractors": [
+              "{電車|でんしゃ}が{止|と}まりました。{{それでも}}、{会議|かいぎ}に{遅|おく}れました。",
+              "{電車|でんしゃ}が{止|と}まりました。{{それから}}、{会議|かいぎ}に{遅|おく}れました。",
+              "{電車|でんしゃ}が{止|と}まりました。{{ところが}}、{会議|かいぎ}に{遅|おく}れました。"
+            ],
+            "hintKo": "인과 접속 = そのために"
+          }
+        }
+      ]
     },
     {
       "no": 110,
@@ -6494,14 +7923,71 @@
       "romaji": "soretomo",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9d%e3%82%8c%e3%81%a8%e3%82%82-soretomo-meaning/",
       "refOriginalEn": "or; or else ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "아니면, 그렇지 않으면 (선택 의문)"
+      ],
+      "category": "conjunction",
+      "explanation": "두 가지 선택지를 제시하며 어느 쪽인지 묻는 접속사이다. 「아니면」 의 의미. 의문문에서만 자연스럽게 사용.",
+      "formation": "[질문 A] か、それとも [질문 B] か",
+      "notes": "「~か、それとも~か」 형태로 두 선택지를 명확히 제시. 평서문에는 「または」 가 자연.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "コーヒーにしますか、{{それとも}}{紅茶|こうちゃ}にしますか。",
+          "sentenceTranslationKo": "커피로 하시겠어요, 아니면 홍차로 하시겠어요?",
+          "note": null
+        },
+        {
+          "sentence": "{行|い}く?{{それとも}}{行|い}かない?",
+          "sentenceTranslationKo": "갈래? 아니면 안 갈래?",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{今|いま}{出|で}かけますか、{{それとも}}{後|あと}にしますか。",
+            "answer": "それとも",
+            "distractors": [
+              "それから",
+              "それで",
+              "それなら"
+            ],
+            "translationKo": "지금 나가실래요, 아니면 나중에 하실래요?"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{電車|でんしゃ}で{行|い}く?それともバスで{行|い}く?」",
+            "contextSentence": null,
+            "answer": "전철로 갈래? 아니면 버스로 갈래? (선택)",
+            "distractors": [
+              "전철로 가고 그리고 버스로 갈래?",
+              "전철로 가서 그래서 버스로 갈래?",
+              "전철로 가면 버스로 갈래?"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "지금 먹을래요, 아니면 나중에 먹을래요?",
+            "answer": "{今|いま}{食|た}べますか、{{それとも}}{後|あと}で{食|た}べますか。",
+            "distractors": [
+              "{今|いま}{食|た}べますか、{{それから}}{後|あと}で{食|た}べますか。",
+              "{今|いま}{食|た}べますか、{{それで}}{後|あと}で{食|た}べますか。",
+              "{今|いま}{食|た}べますか、{{それなら}}{後|あと}で{食|た}べますか。"
+            ],
+            "hintKo": "선택 의문 = それとも"
+          }
+        }
+      ]
     },
     {
       "no": 111,
@@ -6509,14 +7995,73 @@
       "romaji": "sou mo nai /sou ni nai",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9d%e3%81%86%e3%82%82%e3%81%aa%e3%81%84-sou-mo-nai-%e3%81%9d%e3%81%86%e3%81%ab%e3%81%aa%e3%81%84-sou-ni-nai-meaning/",
       "refOriginalEn": "very unlikely to; showing no signs of ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~할 것 같지 않다 (가능성 부정)"
+      ],
+      "category": "auxiliary",
+      "explanation": "어떤 일이 일어날 가능성이 매우 낮음을 나타낸다. 「~할 것 같지 않다」 의 의미. 양태의 「そうだ」 의 부정형 강조.",
+      "formation": "동사 ます형 어간 + そうもない / そうにない",
+      "notes": "「雨が降りそうもない」 (비가 올 것 같지 않다), 「終わりそうにない」 (끝날 것 같지 않다). 「そうもない」 가 좀 더 회화체.",
+      "applicableQuizTypes": [
+        "conjugation",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{今日中|きょうじゅう}に{終|お}わり{{そうもない}}。",
+          "sentenceTranslationKo": "오늘 중에 끝날 것 같지 않다.",
+          "note": null
+        },
+        {
+          "sentence": "この{雨|あめ}は{止|や}み{{そうにない}}。",
+          "sentenceTranslationKo": "이 비는 그칠 것 같지 않다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "conjugation",
+          "payload": {
+            "dictForm": "勝つ",
+            "group": "godan",
+            "targetFormLabel": "そうもない형 (~할 것 같지 않다)",
+            "answer": "勝ちそうもない",
+            "distractors": [
+              "勝つそうもない",
+              "勝ったそうもない",
+              "勝てそうもない"
+            ],
+            "hintKo": "ます형 어간 + そうもない"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{雪|ゆき}が{降|ふ}りそうもない」",
+            "contextSentence": null,
+            "answer": "눈이 내릴 것 같지 않다 (가능성 매우 낮음)",
+            "distractors": [
+              "눈이 내릴 것 같다",
+              "눈이 내리지 않는다고 한다",
+              "눈이 내릴 거라고 들었다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "그가 올 것 같지 않아요.",
+            "answer": "{彼|かれ}は{来|き}{{そうもありません}}。",
+            "distractors": [
+              "{彼|かれ}は{来|く}る{{そうもありません}}。",
+              "{彼|かれ}は{来|く}る{{そうではありません}}。",
+              "{彼|かれ}は{来|き}{{そうではありません}}。"
+            ],
+            "hintKo": "가능성 부정 = ます형 + そうもない"
+          }
+        }
+      ]
     },
     {
       "no": 112,
@@ -6524,14 +8069,71 @@
       "romaji": "sude ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%99%e3%81%a7%e3%81%ab-sude-ni-meaning/",
       "refOriginalEn": "something has already been done/taken place; is already the case",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
+      "meaningsKo": [
+        "이미, 벌써"
+      ],
+      "category": "other",
+      "explanation": "어떤 일이 이미 끝났거나 진행되었음을 나타내는 부사이다. 「이미, 벌써」 의 의미. 「もう」 와 거의 호환되지만 「すでに」 가 좀 더 격식적.",
       "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "notes": "「すでに到着している」 (이미 도착해 있다), 「すでに終わった」 (이미 끝났다). 보고서·뉴스에 빈출.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{彼|かれ}は{{すでに}}{帰宅|きたく}した。",
+          "sentenceTranslationKo": "그는 이미 귀가했다.",
+          "note": null
+        },
+        {
+          "sentence": "{試験|しけん}は{{すでに}}{始|はじ}まっている。",
+          "sentenceTranslationKo": "시험은 이미 시작되었다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{宿題|しゅくだい}は{{すでに}}{終|お}わりました。",
+            "answer": "すでに",
+            "distractors": [
+              "まだ",
+              "もうすぐ",
+              "やっと"
+            ],
+            "translationKo": "숙제는 이미 끝났습니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「すでに{遅|おそ}い」",
+            "contextSentence": null,
+            "answer": "이미 늦었다",
+            "distractors": [
+              "아직 늦지 않다",
+              "겨우 늦었다",
+              "꽤 늦었다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "그 영화는 이미 봤어요.",
+            "answer": "その{映画|えいが}は{{すでに}}{見|み}ました。",
+            "distractors": [
+              "その{映画|えいが}は{{まだ}}{見|み}ました。",
+              "その{映画|えいが}は{{もうすぐ}}{見|み}ました。",
+              "その{映画|えいが}は{{やっと}}{見|み}ました。"
+            ],
+            "hintKo": "이미·벌써 = すでに"
+          }
+        }
+      ]
     },
     {
       "no": 113,
@@ -6539,14 +8141,71 @@
       "romaji": "sunawachi",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e5%8d%b3%e3%81%a1-%e3%81%99%e3%81%aa%e3%82%8f%e3%81%a1-sunawachi-meaning/",
       "refOriginalEn": "in other words; namely ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "즉, 다시 말해"
+      ],
+      "category": "conjunction",
+      "explanation": "앞에서 말한 내용을 다른 말로 바꾸어 설명하거나 정의를 도입하는 접속사이다. 「즉」 의 의미. 격식 있는 글이나 강연에 자주.",
+      "formation": "문장 도입에 단독 사용",
+      "notes": "「つまり」 와 거의 호환되지만 「すなわち」 가 더 격식적. 학술적·전문적 글에 빈출.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{父|ちち}の{弟|おとうと}、{{すなわち}}{叔父|おじ}です。",
+          "sentenceTranslationKo": "아버지의 동생, 즉 삼촌입니다.",
+          "note": null
+        },
+        {
+          "sentence": "{彼|かれ}は{私|わたし}の{母|はは}の{兄|あに}、{{すなわち}}{伯父|おじ}だ。",
+          "sentenceTranslationKo": "그는 내 어머니의 형, 즉 큰아버지다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{月|つき}の{衛星|えいせい}、{{すなわち}}{月|つき}そのものだ。",
+            "answer": "すなわち",
+            "distractors": [
+              "それで",
+              "それから",
+              "それでも"
+            ],
+            "translationKo": "달의 위성, 즉 달 그 자체이다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{年金|ねんきん}{制度|せいど}、すなわち{老後|ろうご}の{保障|ほしょう}」",
+            "contextSentence": null,
+            "answer": "연금 제도, 즉 노후 보장",
+            "distractors": [
+              "연금 제도, 그래서 노후 보장",
+              "연금 제도, 그렇지만 노후 보장",
+              "연금 제도, 그 후 노후 보장"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "건강한 생활, 즉 운동과 균형 있는 식사가 중요해요.",
+            "answer": "{健康|けんこう}な{生活|せいかつ}、{{すなわち}}{運動|うんどう}とバランスのとれた{食事|しょくじ}が{重要|じゅうよう}です。",
+            "distractors": [
+              "{健康|けんこう}な{生活|せいかつ}、{{それで}}{運動|うんどう}とバランスのとれた{食事|しょくじ}が{重要|じゅうよう}です。",
+              "{健康|けんこう}な{生活|せいかつ}、{{それから}}{運動|うんどう}とバランスのとれた{食事|しょくじ}が{重要|じゅうよう}です。",
+              "{健康|けんこう}な{生活|せいかつ}、{{それでも}}{運動|うんどう}とバランスのとれた{食事|しょくじ}が{重要|じゅうよう}です。"
+            ],
+            "hintKo": "정의 도입 = すなわち"
+          }
+        }
+      ]
     },
     {
       "no": 114,
@@ -6554,14 +8213,71 @@
       "romaji": "suuryou + wa",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e6%95%b0%e9%87%8f-%e3%81%af-suuryou-wa-meaning/",
       "refOriginalEn": "at least ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "적어도 ~은"
+      ],
+      "category": "particle",
+      "explanation": "수량을 나타내는 표현 뒤에 붙어 「최소한 그만큼은 (있다 / 있어야 한다)」 라는 의미를 나타낸다. 「적어도 ~은」 의 의미.",
+      "formation": "수량 표현 + は",
+      "notes": "「3万円はかかる」 (적어도 3만 엔은 든다), 「1時間はかかる」 (적어도 1시간은 걸린다). 「は」 의 한정·강조 용법.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "この{時計|とけい}は{1万円|いちまんえん}{{は}}するだろう。",
+          "sentenceTranslationKo": "이 시계는 적어도 1만 엔은 할 것이다.",
+          "note": null
+        },
+        {
+          "sentence": "{駅|えき}まで{30分|さんじゅっぷん}{{は}}かかる。",
+          "sentenceTranslationKo": "역까지 적어도 30분은 걸린다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "この{本|ほん}を{読|よ}むのに{2時間|にじかん}{{は}}かかる。",
+            "answer": "は",
+            "distractors": [
+              "も",
+              "ぐらい",
+              "まで"
+            ],
+            "translationKo": "이 책을 읽는 데 적어도 2시간은 걸린다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{毎日|まいにち}、{8時間|はちじかん}は{寝|ね}る」",
+            "contextSentence": null,
+            "answer": "매일 적어도 8시간은 잔다",
+            "distractors": [
+              "매일 정확히 8시간 잔다",
+              "매일 8시간만 잔다",
+              "매일 8시간쯤 잔다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이 일에는 적어도 3일은 걸려요.",
+            "answer": "この{仕事|しごと}には{3日|みっか}{{は}}かかります。",
+            "distractors": [
+              "この{仕事|しごと}には{3日|みっか}{{も}}かかります。",
+              "この{仕事|しごと}には{3日|みっか}{{ぐらい}}かかります。",
+              "この{仕事|しごと}には{3日|みっか}{{まで}}かかります。"
+            ],
+            "hintKo": "최소 한정 = 수량 + は"
+          }
+        }
+      ]
     },
     {
       "no": 115,
@@ -6569,14 +8285,73 @@
       "romaji": "ta mono da",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%82%82%e3%81%ae%e3%81%a0-ta-mono-da-meaning/",
       "refOriginalEn": "used to do; would often do",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~하곤 했다 (회상)"
+      ],
+      "category": "expression",
+      "explanation": "과거의 습관·상태를 회상하며 감회를 담아 말하는 표현이다. 「~하곤 했다」 의 의미. 「~ものだ」 (일반 진리) 와 다름 — 「たものだ」 는 회상 한정.",
+      "formation": "동사 た형 + ものだ",
+      "notes": "「子どものころ、よく公園で遊んだものだ」 (어린 시절에 자주 공원에서 놀곤 했다). 노스탤지아·감회의 어감.",
+      "applicableQuizTypes": [
+        "conjugation",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{子|こ}どもの{頃|ころ}、よく{川|かわ}で{泳|およ}いだ{{ものだ}}。",
+          "sentenceTranslationKo": "어렸을 때 자주 강에서 헤엄치곤 했다.",
+          "note": null
+        },
+        {
+          "sentence": "{学生時代|がくせいじだい}、よく{先生|せんせい}に{怒|おこ}られた{{ものだ}}。",
+          "sentenceTranslationKo": "학창 시절에 자주 선생님께 혼나곤 했다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "conjugation",
+          "payload": {
+            "dictForm": "遊ぶ",
+            "group": "godan",
+            "targetFormLabel": "たものだ형 (회상)",
+            "answer": "遊んだものだ",
+            "distractors": [
+              "遊ぶものだ",
+              "遊ぶことだ",
+              "遊ぶようだ"
+            ],
+            "hintKo": "た형 + ものだ"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{若|わか}い{頃|ころ}、よく{旅行|りょこう}したものだ」",
+            "contextSentence": null,
+            "answer": "젊은 시절에 자주 여행하곤 했다 (회상)",
+            "distractors": [
+              "젊은 시절에 자주 여행한다",
+              "젊은 시절에 여행하기로 했다",
+              "젊은 시절에 여행하는 일이 있다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "옛날에는 매일 친구와 놀곤 했어요.",
+            "answer": "{昔|むかし}は{毎日|まいにち}{友達|ともだち}と{遊|あそ}んだ{{ものです}}。",
+            "distractors": [
+              "{昔|むかし}は{毎日|まいにち}{友達|ともだち}と{遊|あそ}ぶ{{ものです}}。",
+              "{昔|むかし}は{毎日|まいにち}{友達|ともだち}と{遊|あそ}ぶ{{ことです}}。",
+              "{昔|むかし}は{毎日|まいにち}{友達|ともだち}と{遊|あそ}ぶ{{ようです}}。"
+            ],
+            "hintKo": "회상 = た형 + ものだ"
+          }
+        }
+      ]
     },
     {
       "no": 116,
@@ -6584,14 +8359,73 @@
       "romaji": "ta totan",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%81%a8%e3%81%9f%e3%82%93-ta-totan-meaning/",
       "refOriginalEn": "as soon as; just as ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~하자마자, ~한 순간 (즉시 발생)"
+      ],
+      "category": "expression",
+      "explanation": "어떤 동작이 끝나자마자 다음 일이 즉시 일어남을 나타낸다. 「~하자마자」 의 의미. 보통 예상 외의 일이 일어났을 때 사용.",
+      "formation": "동사 た형 + とたん (に)",
+      "notes": "「家を出たとたん、雨が降り出した」 (집을 나오자마자 비가 내리기 시작했다). 「と同時に」 보다 의외성 강조.",
+      "applicableQuizTypes": [
+        "conjugation",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "ドアを{開|あ}け{{たとたん}}、{猫|ねこ}が{走|はし}り{出|だ}した。",
+          "sentenceTranslationKo": "문을 열자마자 고양이가 뛰쳐나갔다.",
+          "note": null
+        },
+        {
+          "sentence": "{家|いえ}を{出|で}{{たとたんに}}、{雨|あめ}が{降|ふ}り{始|はじ}めた。",
+          "sentenceTranslationKo": "집을 나서자마자 비가 내리기 시작했다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "conjugation",
+          "payload": {
+            "dictForm": "見る",
+            "group": "ichidan",
+            "targetFormLabel": "たとたん형 (~하자마자)",
+            "answer": "見たとたん",
+            "distractors": [
+              "見るとたん",
+              "見てとたん",
+              "見ているとたん"
+            ],
+            "hintKo": "た형 + とたん"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{彼|かれ}を{見|み}たとたん、{涙|なみだ}が{出|で}た」",
+            "contextSentence": null,
+            "answer": "그를 보자마자 눈물이 났다 (즉시·의외)",
+            "distractors": [
+              "그를 보고 한참 후에 눈물이 났다",
+              "그를 보면 눈물이 난다",
+              "그를 보기 전에 눈물이 났다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "전철에 타자마자 출발했어요.",
+            "answer": "{電車|でんしゃ}に{乗|の}っ{{たとたん}}、{出発|しゅっぱつ}しました。",
+            "distractors": [
+              "{電車|でんしゃ}に{乗|の}る{{とたん}}、{出発|しゅっぱつ}しました。",
+              "{電車|でんしゃ}に{乗|の}って{{とたん}}、{出発|しゅっぱつ}しました。",
+              "{電車|でんしゃ}に{乗|の}っている{{とたん}}、{出発|しゅっぱつ}しました。"
+            ],
+            "hintKo": "즉시 발생 = た형 + とたん"
+          }
+        }
+      ]
     },
     {
       "no": 117,
@@ -6599,14 +8433,71 @@
       "romaji": "tabi ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%81%b3%e3%81%ab-tabi-ni-meaning/",
       "refOriginalEn": "whenever; every time ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~할 때마다"
+      ],
+      "category": "expression",
+      "explanation": "어떤 일이 일어날 때마다 항상 다른 일이 함께 일어남을 나타낸다. 「~할 때마다」 의 의미. 반복 패턴을 강조.",
+      "formation": "동사 사전형 / 명사 + の + たびに",
+      "notes": "「会うたびに、彼は元気になっていく」 (만날 때마다 그는 건강해져 간다). 「ごとに」 와 비슷하지만 「たびに」 가 「반복 패턴」, 「ごとに」 가 「정기 단위」.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{彼|かれ}に{会|あ}う{{たびに}}、{何|なに}か{新|あたら}しいことを{学|まな}ぶ。",
+          "sentenceTranslationKo": "그를 만날 때마다 뭔가 새로운 것을 배운다.",
+          "note": null
+        },
+        {
+          "sentence": "{旅行|りょこう}の{{たびに}}、お{土産|みやげ}を{買|か}う。",
+          "sentenceTranslationKo": "여행 때마다 선물을 산다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{雨|あめ}が{降|ふ}る{{たびに}}、{頭|あたま}が{痛|いた}くなる。",
+            "answer": "たびに",
+            "distractors": [
+              "ごとに",
+              "うちに",
+              "までに"
+            ],
+            "translationKo": "비가 올 때마다 머리가 아프다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「この{歌|うた}を{聞|き}くたびに、{昔|むかし}を{思|おも}い{出|だ}す」",
+            "contextSentence": null,
+            "answer": "이 노래를 들을 때마다 옛날을 떠올린다",
+            "distractors": [
+              "이 노래를 듣는 사이에 옛날을 떠올린다",
+              "이 노래를 들으면서 옛날을 떠올린다",
+              "이 노래를 듣기 전에 옛날을 떠올린다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "일본에 갈 때마다 라멘을 먹어요.",
+            "answer": "{日本|にほん}に{行|い}く{{たびに}}、ラーメンを{食|た}べます。",
+            "distractors": [
+              "{日本|にほん}に{行|い}く{{ごとに}}、ラーメンを{食|た}べます。",
+              "{日本|にほん}に{行|い}く{{うちに}}、ラーメンを{食|た}べます。",
+              "{日本|にほん}に{行|い}く{{までに}}、ラーメンを{食|た}べます。"
+            ],
+            "hintKo": "반복 패턴 = 사전형 + たびに"
+          }
+        }
+      ]
     },
     {
       "no": 118,
@@ -6614,14 +8505,71 @@
       "romaji": "tame ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%82%81%e3%81%ab-tame-ni-meaning/",
       "refOriginalEn": "for; in order to; for the benefit of; because of; as a result of ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~을 위해, ~ 때문에 (목적·원인)"
+      ],
+      "category": "expression",
+      "explanation": "두 가지 의미: ① 목적 (~을 위해), ② 원인·이유 (~ 때문에). 「~을 위해」 의 의미가 가장 빈출. 「ため」 도 같은 의미.",
+      "formation": "동사 사전형 / 명사 + の + ために",
+      "notes": "목적: 「健康のために運動する」 (건강을 위해 운동한다). 원인: 「雨のために、試合は中止」 (비 때문에 시합은 중지). 의지 동사 = 목적, 무의지 = 원인.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{家族|かぞく}の{{ために}}、{毎日|まいにち}{働|はたら}いている。",
+          "sentenceTranslationKo": "가족을 위해 매일 일하고 있다.",
+          "note": null
+        },
+        {
+          "sentence": "{雨|あめ}の{{ために}}、{試合|しあい}は{中止|ちゅうし}になった。",
+          "sentenceTranslationKo": "비 때문에 시합은 중지되었다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{合格|ごうかく}する{{ために}}、{毎日|まいにち}{勉強|べんきょう}している。",
+            "answer": "ために",
+            "distractors": [
+              "ように",
+              "ことに",
+              "おかげで"
+            ],
+            "translationKo": "합격하기 위해 매일 공부하고 있다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{台風|たいふう}のために、{学校|がっこう}は{休|やす}みになった」",
+            "contextSentence": null,
+            "answer": "태풍 때문에 학교가 쉬게 되었다 (원인)",
+            "distractors": [
+              "태풍을 위해 학교가 쉬게 되었다",
+              "태풍 덕분에 학교가 쉬게 되었다",
+              "태풍에 대해 학교가 쉬게 되었다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "건강을 위해 운동을 시작했어요.",
+            "answer": "{健康|けんこう}の{{ために}}、{運動|うんどう}を{始|はじ}めました。",
+            "distractors": [
+              "{健康|けんこう}の{{ように}}、{運動|うんどう}を{始|はじ}めました。",
+              "{健康|けんこう}の{{ことに}}、{運動|うんどう}を{始|はじ}めました。",
+              "{健康|けんこう}の{{おかげで}}、{運動|うんどう}を{始|はじ}めました。"
+            ],
+            "hintKo": "목적·원인 = 사전형/명사の + ために"
+          }
+        }
+      ]
     },
     {
       "no": 119,
@@ -6629,14 +8577,71 @@
       "romaji": "tashika ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e7%a2%ba%e3%81%8b%e3%81%ab-tashika-ni-meaning/",
       "refOriginalEn": "surely, certainly ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
+      "meaningsKo": [
+        "확실히, 분명히"
+      ],
+      "category": "other",
+      "explanation": "사실·근거에 대한 강한 확신 또는 상대의 의견 일부를 인정할 때 쓰는 부사이다. 「확실히」 의 의미. 「確かに~が~」 형태로 양보 구문에 자주.",
       "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "notes": "「確かに高いが、品質はいい」 (확실히 비싸지만 품질은 좋다 - 양보). 「絶対に」 보다 부드러운 단정.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{{確かに}}{彼|かれ}の{言|い}う{通|とお}りだ。",
+          "sentenceTranslationKo": "확실히 그가 말하는 대로다.",
+          "note": null
+        },
+        {
+          "sentence": "{{確かに}}{難|むずか}しいが、{挑戦|ちょうせん}してみる{価値|かち}はある。",
+          "sentenceTranslationKo": "확실히 어렵지만 도전해 볼 가치는 있다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{{確かに}}この{店|みせ}は{有名|ゆうめい}だ。",
+            "answer": "確かに",
+            "distractors": [
+              "まさか",
+              "もしかしたら",
+              "なんとなく"
+            ],
+            "translationKo": "확실히 이 가게는 유명하다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{確|たし}かにそうだ」",
+            "contextSentence": null,
+            "answer": "확실히 그렇다 (인정)",
+            "distractors": [
+              "설마 그렇다",
+              "어쩌면 그렇다",
+              "왠지 그렇다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "확실히 그가 약속을 했어요.",
+            "answer": "{{確かに}}{彼|かれ}が{約束|やくそく}しました。",
+            "distractors": [
+              "{{まさか}}{彼|かれ}が{約束|やくそく}しました。",
+              "{{もしかしたら}}{彼|かれ}が{約束|やくそく}しました。",
+              "{{なんとなく}}{彼|かれ}が{約束|やくそく}しました。"
+            ],
+            "hintKo": "확신·인정 = 確かに"
+          }
+        }
+      ]
     },
     {
       "no": 120,
@@ -6644,14 +8649,73 @@
       "romaji": "tate",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%81%a6-tate-meaning/",
       "refOriginalEn": "just done; freshly done; newly done",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "갓 ~한, 막 ~한 (신선·직후)"
+      ],
+      "category": "auxiliary",
+      "explanation": "어떤 동작이 막 끝난 직후의 신선한 상태를 강조하는 보조어이다. 「갓 ~한」 의 의미. 식품·신상품 등에 자주.",
+      "formation": "동사 ます형 어간 + たて",
+      "notes": "「焼きたてのパン」 (갓 구운 빵), 「できたて」 (방금 만든 것), 「炊きたてのご飯」 (갓 지은 밥). 「ばかり」 와 비슷하지만 「たて」 는 신선·완성도 강조.",
+      "applicableQuizTypes": [
+        "conjugation",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{焼|や}き{{たて}}のパンはおいしい。",
+          "sentenceTranslationKo": "갓 구운 빵은 맛있다.",
+          "note": null
+        },
+        {
+          "sentence": "{炊|た}き{{たて}}のご{飯|はん}を{食|た}べた。",
+          "sentenceTranslationKo": "갓 지은 밥을 먹었다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "conjugation",
+          "payload": {
+            "dictForm": "出来る",
+            "group": "ichidan",
+            "targetFormLabel": "たて형 (갓 ~한)",
+            "answer": "出来たて",
+            "distractors": [
+              "出来るたて",
+              "出来てたて",
+              "出来たばかり"
+            ],
+            "hintKo": "ます형 어간 + たて"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{揚|あ}げたてのコロッケ」",
+            "contextSentence": null,
+            "answer": "갓 튀긴 고로케 (신선)",
+            "distractors": [
+              "튀긴 적 있는 고로케",
+              "튀기기 전의 고로케",
+              "튀기다 만 고로케"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "갓 만든 케이크예요.",
+            "answer": "{作|つく}り{{たて}}のケーキです。",
+            "distractors": [
+              "{作|つく}り{{ばかり}}のケーキです。",
+              "{作|つく}る{{たて}}のケーキです。",
+              "{作|つく}って{{たて}}のケーキです。"
+            ],
+            "hintKo": "신선·직후 = ます형 + たて"
+          }
+        }
+      ]
     },
     {
       "no": 121,
@@ -6659,14 +8723,71 @@
       "romaji": "tatoe~temo",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%81%a8%e3%81%88%ef%bd%9e%e3%81%a6%e3%82%82-tatoe-temo-meaning/",
       "refOriginalEn": "even if… is the case",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "설령 ~한다 해도, 비록 ~한다 해도"
+      ],
+      "category": "expression",
+      "explanation": "어떤 가정을 인정하더라도 결과는 변하지 않음을 강조한다. 「설령 ~한다 해도」 의 의미. 「ても」 보다 강한 양보·가정 어감.",
+      "formation": "たとえ + 동사·형용사 + ても",
+      "notes": "「たとえ失敗しても、後悔しない」 (설령 실패한다 해도 후회하지 않는다). 강한 의지·결심 표현.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{{たとえ失敗しても}}、{挑戦|ちょうせん}したい。",
+          "sentenceTranslationKo": "설령 실패한다 해도 도전하고 싶다.",
+          "note": null
+        },
+        {
+          "sentence": "{{たとえ雨が降っても}}、{試合|しあい}は{行|おこな}われる。",
+          "sentenceTranslationKo": "설령 비가 와도 시합은 진행된다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{{たとえ忙しくても}}、{連絡|れんらく}してください。",
+            "answer": "たとえ忙しくても",
+            "distractors": [
+              "どんなに忙しくて",
+              "もしも忙しくて",
+              "せっかく忙しくて"
+            ],
+            "translationKo": "설령 바빠도 연락해 주세요."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「たとえ{反対|はんたい}されても、{結婚|けっこん}する」",
+            "contextSentence": null,
+            "answer": "설령 반대받는다 해도 결혼한다 (강한 의지)",
+            "distractors": [
+              "분명히 반대받기 때문에 결혼한다",
+              "혹시 반대받으면 결혼한다",
+              "오히려 반대받아도 결혼한다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "설령 비싸도 사고 싶어요.",
+            "answer": "{{たとえ高くても}}{買|か}いたいです。",
+            "distractors": [
+              "{{どうしても高くて}}{買|か}いたいです。",
+              "{{もしも高くて}}{買|か}いたいです。",
+              "{{せっかく高くて}}{買|か}いたいです。"
+            ],
+            "hintKo": "강한 양보 가정 = たとえ ~ ても"
+          }
+        }
+      ]
     },
     {
       "no": 122,
@@ -6674,14 +8795,71 @@
       "romaji": "tatoeba",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e4%be%8b%e3%81%88%e3%81%b0-%e3%81%9f%e3%81%a8%e3%81%88%e3%81%b0-tatoeba-meaning/",
       "refOriginalEn": "for example; for instance ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "예를 들면, 예컨대"
+      ],
+      "category": "conjunction",
+      "explanation": "구체적인 예시를 들어 설명할 때 쓰는 접속사이다. 「예를 들면」 의 의미. 글말·회화 모두 자연스럽게 사용.",
+      "formation": "문장 도입에 단독 사용",
+      "notes": "「たとえば、リンゴやバナナです」 (예를 들면, 사과나 바나나입니다). 정의·설명 구문에 빈출.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{{例えば}}、{果物|くだもの}が{好|す}きです。リンゴとかバナナとか。",
+          "sentenceTranslationKo": "예를 들면 과일을 좋아합니다. 사과나 바나나 같은 것.",
+          "note": null
+        },
+        {
+          "sentence": "{日本料理|にほんりょうり}、{{例えば}}{寿司|すし}や{天|てん}ぷらが{好|す}きだ。",
+          "sentenceTranslationKo": "일본 요리, 예를 들면 초밥이나 튀김을 좋아한다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{{例えば}}、こんな{場合|ばあい}はどうしますか。",
+            "answer": "例えば",
+            "distractors": [
+              "なお",
+              "つまり",
+              "それで"
+            ],
+            "translationKo": "예를 들면, 이런 경우는 어떻게 합니까?"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{例|たと}えば、{彼|かれ}の{場合|ばあい}を{考|かんが}えてみよう」",
+            "contextSentence": null,
+            "answer": "예를 들면, 그의 경우를 생각해 보자",
+            "distractors": [
+              "그러므로 그의 경우를 생각해 보자",
+              "즉 그의 경우를 생각해 보자",
+              "그래서 그의 경우를 생각해 보자"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "예를 들면, 한국 음식은 매워요.",
+            "answer": "{{例えば}}、{韓国料理|かんこくりょうり}は{辛|から}いです。",
+            "distractors": [
+              "{{なお}}、{韓国料理|かんこくりょうり}は{辛|から}いです。",
+              "{{つまり}}、{韓国料理|かんこくりょうり}は{辛|から}いです。",
+              "{{それで}}、{韓国料理|かんこくりょうり}は{辛|から}いです。"
+            ],
+            "hintKo": "구체적 예시 도입 = 例えば"
+          }
+        }
+      ]
     },
     {
       "no": 123,
@@ -6689,14 +8867,71 @@
       "romaji": "tatte",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%9f%e3%81%a3%e3%81%a6-tatte-meaning/",
       "refOriginalEn": "even if; even though; no matter how ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~한다 해도, ~해도 (회화체 양보)"
+      ],
+      "category": "expression",
+      "explanation": "「~ても」 의 회화체 형태이다. 「~한다 해도」 의 의미. 친한 사이 회화에 자연스럽고 격식체에는 부적절.",
+      "formation": "동사 た형 + って / 형용사 어간+くたって / 명사+だって",
+      "notes": "「行ったって、何もない」 (간다 해도 아무것도 없다), 「言ったって無駄だ」 (말한다 해도 소용없다).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{今|いま}{行|い}っ{{たって}}、もう{遅|おそ}い。",
+          "sentenceTranslationKo": "지금 간다 해도 이미 늦었다.",
+          "note": null
+        },
+        {
+          "sentence": "いくら{頼|たの}まれ{{たって}}、{無理|むり}なものは{無理|むり}。",
+          "sentenceTranslationKo": "아무리 부탁받는다 해도 안 되는 것은 안 된다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{謝|あやま}っ{{たって}}、{許|ゆる}してくれない。",
+            "answer": "たって",
+            "distractors": [
+              "ても",
+              "なくて",
+              "ながら"
+            ],
+            "translationKo": "사과한다 해도 용서해 주지 않는다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{言|い}ったって{無駄|むだ}だ」",
+            "contextSentence": null,
+            "answer": "말한다 해도 소용없다 (회화체)",
+            "distractors": [
+              "말하면 소용없다",
+              "말해서 소용없다",
+              "말하지 않아 소용없다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "공부한다 해도 잊어버려요.",
+            "answer": "{勉強|べんきょう}し{{たって}}、{忘|わす}れてしまいます。",
+            "distractors": [
+              "{勉強|べんきょう}し{{ても}}、{忘|わす}れてしまいます。",
+              "{勉強|べんきょう}し{{なくて}}、{忘|わす}れてしまいます。",
+              "{勉強|べんきょう}し{{ながら}}、{忘|わす}れてしまいます。"
+            ],
+            "hintKo": "회화체 양보 = た형 + って"
+          }
+        }
+      ]
     },
     {
       "no": 124,
@@ -6704,14 +8939,71 @@
       "romaji": "te bakari iru",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%81%b0%e3%81%8b%e3%82%8a%e3%81%84%e3%82%8b-te-bakari-iru-meaning/",
       "refOriginalEn": "only; nothing but ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~만 하고 있다 (지속 부정 평가)"
+      ],
+      "category": "expression",
+      "explanation": "어떤 동작만 계속해서 한다는 비판적 어감을 나타낸다. 「~만 하고 있다」 의 의미. 「ばかり」 + 「ている」 의 결합으로 부정적 평가가 강함.",
+      "formation": "동사 て형 + ばかりいる",
+      "notes": "「遊んでばかりいる」 (놀기만 하고 있다), 「文句を言ってばかりいる」 (불평만 하고 있다). 부모·교사가 자녀에게 자주 사용.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{弟|おとうと}はゲームをし{{てばかりいる}}。",
+          "sentenceTranslationKo": "남동생은 게임만 하고 있다.",
+          "note": null
+        },
+        {
+          "sentence": "{彼|かれ}は{文句|もんく}を{言|い}っ{{てばかりいる}}。",
+          "sentenceTranslationKo": "그는 불평만 하고 있다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{勉強|べんきょう}せずに、{遊|あそ}ん{{でばかりいる}}。",
+            "answer": "でばかりいる",
+            "distractors": [
+              "でばかりだ",
+              "ているばかりだ",
+              "たばかりだ"
+            ],
+            "translationKo": "공부하지 않고 놀기만 하고 있다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{彼|かれ}は{寝|ね}てばかりいる」",
+            "contextSentence": null,
+            "answer": "그는 잠만 자고 있다 (지속·부정 평가)",
+            "distractors": [
+              "그는 막 자려고 한다",
+              "그는 자고 있는 중이다",
+              "그는 잠을 자고 있지 않다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "그녀는 항상 텔레비전만 보고 있어요.",
+            "answer": "{彼女|かのじょ}はいつもテレビを{見|み}{{てばかりいます}}。",
+            "distractors": [
+              "{彼女|かのじょ}はいつもテレビを{見|み}{{ているばかりです}}。",
+              "{彼女|かのじょ}はいつもテレビを{見|み}{{たばかりです}}。",
+              "{彼女|かのじょ}はいつもテレビを{見|み}{{てばかりです}}。"
+            ],
+            "hintKo": "지속 부정 평가 = て형 + ばかりいる"
+          }
+        }
+      ]
     },
     {
       "no": 125,
@@ -6719,14 +9011,71 @@
       "romaji": "te goran",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%81%94%e3%82%89%e3%82%93-te-goran-meaning/",
       "refOriginalEn": "(please) try to; (please) look",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~해 봐 (부드러운 권유)"
+      ],
+      "category": "expression",
+      "explanation": "윗사람이 아랫사람에게 권유할 때 쓰는 부드러운 명령 표현이다. 「~해 봐」 의 의미. 「~てみてください」 의 캐주얼한 가족·친구 사이 표현.",
+      "formation": "동사 て형 + ごらん",
+      "notes": "「ごらん」 은 「ご覧」 (보세요) 의 의미. 친한 친구·가족·아랫사람에게만 사용 (윗사람에게는 부적절).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "もう{一度|いちど}{考|かんが}え{{てごらん}}。",
+          "sentenceTranslationKo": "다시 한 번 생각해 봐.",
+          "note": null
+        },
+        {
+          "sentence": "この{本|ほん}を{読|よ}ん{{でごらん}}。{面白|おもしろ}いよ。",
+          "sentenceTranslationKo": "이 책을 읽어 봐. 재미있어.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{自分|じぶん}でやっ{{てごらん}}。",
+            "answer": "てごらん",
+            "distractors": [
+              "てください",
+              "てしまう",
+              "てある"
+            ],
+            "translationKo": "직접 해 봐."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{食|た}べてごらん。おいしいよ」",
+            "contextSentence": null,
+            "answer": "먹어 봐. 맛있어 (부드러운 권유)",
+            "distractors": [
+              "먹지 마. 맛있어",
+              "먹어 줘. 맛있어",
+              "먹어 봤어. 맛있었어"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "한 번 시도해 봐.",
+            "answer": "{一度|いちど}{試|ため}し{{てごらん}}。",
+            "distractors": [
+              "{一度|いちど}{試|ため}し{{てください}}。",
+              "{一度|いちど}{試|ため}し{{てしまう}}。",
+              "{一度|いちど}{試|ため}し{{てある}}。"
+            ],
+            "hintKo": "부드러운 권유 = て형 + ごらん"
+          }
+        }
+      ]
     },
     {
       "no": 126,
@@ -6734,14 +9083,71 @@
       "romaji": "te hajimete",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%81%af%e3%81%98%e3%82%81%e3%81%a6-te-hajimete-meaning/",
       "refOriginalEn": "not until; only after [x] did I",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~하고 나서 비로소 (경험 후 깨달음)"
+      ],
+      "category": "expression",
+      "explanation": "어떤 경험을 하고 나서야 비로소 무언가를 깨닫거나 이해함을 나타낸다. 「~하고 나서 비로소」 의 의미. 보통 「分かる」, 「気づく」 등 인지 동사와 호응.",
+      "formation": "동사 て형 + はじめて",
+      "notes": "「失ってはじめて、その大切さに気づく」 (잃어보고 나서 비로소 그 소중함을 깨닫는다). 인생의 깨달음 표현 빈출.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{留学|りゅうがく}し{{てはじめて}}、{家族|かぞく}の{大切|たいせつ}さが{分|わ}かった。",
+          "sentenceTranslationKo": "유학을 하고 나서야 비로소 가족의 소중함을 알았다.",
+          "note": null
+        },
+        {
+          "sentence": "{失|うしな}っ{{てはじめて}}{気|き}づくものだ。",
+          "sentenceTranslationKo": "잃고 나서 비로소 깨닫는 법이다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{親|おや}になっ{{てはじめて}}、{親|おや}の{苦労|くろう}が{分|わ}かった。",
+            "answer": "てはじめて",
+            "distractors": [
+              "てから",
+              "てこそ",
+              "てしまって"
+            ],
+            "translationKo": "부모가 되고 나서야 비로소 부모의 고생을 알았다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{病気|びょうき}になってはじめて、{健康|けんこう}の{大切|たいせつ}さを{知|し}った」",
+            "contextSentence": null,
+            "answer": "병이 들고 나서야 비로소 건강의 소중함을 알았다",
+            "distractors": [
+              "병이 들기 전에 건강의 소중함을 알았다",
+              "병이 들면서 건강의 소중함을 알았다",
+              "병이 들지 않았는데 건강의 소중함을 알았다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "일본에 살고 나서야 비로소 그 문화를 이해했어요.",
+            "answer": "{日本|にほん}に{住|す}ん{{ではじめて}}、その{文化|ぶんか}が{理解|りかい}できました。",
+            "distractors": [
+              "{日本|にほん}に{住|す}ん{{でから}}、その{文化|ぶんか}が{理解|りかい}できました。",
+              "{日本|にほん}に{住|す}ん{{でこそ}}、その{文化|ぶんか}が{理解|りかい}できました。",
+              "{日本|にほん}に{住|す}ん{{でしまって}}、その{文化|ぶんか}が{理解|りかい}できました。"
+            ],
+            "hintKo": "경험 후 깨달음 = て형 + はじめて"
+          }
+        }
+      ]
     },
     {
       "no": 127,
@@ -6749,14 +9155,71 @@
       "romaji": "te kara de nai to",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%81%8b%e3%82%89%e3%81%a7%e3%81%aa%e3%81%84%e3%81%a8-te-kara-de-nai-to-meaning/",
       "refOriginalEn": "must first do; cannot do without first doing ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~하고 나서가 아니면 (전제 조건)"
+      ],
+      "category": "expression",
+      "explanation": "어떤 동작이 먼저 이루어져야만 다음 일이 가능함을 나타낸다. 「~하고 나서가 아니면」 의 의미. 보통 부정 표현과 호응.",
+      "formation": "동사 て형 + からでないと / からでなければ",
+      "notes": "「許可をもらってからでないと、入れない」 (허가를 받고 나서가 아니면 들어갈 수 없다). 회의·규정에 빈출.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{許可|きょか}をもらっ{{てからでないと}}、{入|はい}れません。",
+          "sentenceTranslationKo": "허가를 받고 나서가 아니면 들어갈 수 없습니다.",
+          "note": null
+        },
+        {
+          "sentence": "{予約|よやく}し{{てからでないと}}、{利用|りよう}できない。",
+          "sentenceTranslationKo": "예약을 하고 나서가 아니면 이용할 수 없다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{相談|そうだん}し{{てからでないと}}、{決|き}められない。",
+            "answer": "てからでないと",
+            "distractors": [
+              "てから",
+              "てはじめて",
+              "てしまって"
+            ],
+            "translationKo": "상담하고 나서가 아니면 결정할 수 없다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{試験|しけん}に{合格|ごうかく}してからでないと、{先|さき}に{進|すす}めない」",
+            "contextSentence": null,
+            "answer": "시험에 합격하고 나서가 아니면 다음으로 나아갈 수 없다",
+            "distractors": [
+              "시험에 합격하고 나서 다음으로 나아간다",
+              "시험에 합격하면 다음으로 나아간다",
+              "시험에 합격하지 않으면 다음으로 나아간다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "예약을 하고 나서가 아니면 이 식당은 갈 수 없어요.",
+            "answer": "{予約|よやく}を{取|と}っ{{てからでないと}}、このレストランには{行|い}けません。",
+            "distractors": [
+              "{予約|よやく}を{取|と}っ{{てから}}、このレストランには{行|い}けません。",
+              "{予約|よやく}を{取|と}っ{{てはじめて}}、このレストランには{行|い}けません。",
+              "{予約|よやく}を{取|と}っ{{てしまって}}、このレストランには{行|い}けません。"
+            ],
+            "hintKo": "전제 조건 = て형 + からでないと"
+          }
+        }
+      ]
     },
     {
       "no": 128,
@@ -6764,14 +9227,71 @@
       "romaji": "te shou ga nai/te shikata ga nai",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%81%97%e3%82%87%e3%81%86%e3%81%8c%e3%81%aa%e3%81%84-te-shou-ga-nai-%e3%81%a6%e4%bb%95%e6%96%b9%e3%81%8c%e3%81%aa%e3%81%84-shikata-ga-nai-meaning/",
       "refOriginalEn": "can't help but; very; extremely ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~해서 견딜 수 없다, 너무 ~하다 (감정·생리 강조)"
+      ],
+      "category": "expression",
+      "explanation": "감정·생리적 상태를 억누를 수 없을 정도로 강하게 느낌을 나타낸다. 「~해서 견딜 수 없다」 의 의미. 「しょうがない」 가 회화체, 「しかたがない」 가 격식체.",
+      "formation": "동사 て형 / 형용사 어간+くて + しょうがない / しかたがない",
+      "notes": "「眠くてしょうがない」 (졸려 죽겠다), 「気になってしかたがない」 (마음이 너무 쓰인다). 「~てたまらない」 와 호환.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{眠|ねむ}く{{てしょうがない}}。",
+          "sentenceTranslationKo": "졸려서 견딜 수 없다.",
+          "note": null
+        },
+        {
+          "sentence": "{気|き}になっ{{てしかたがない}}。",
+          "sentenceTranslationKo": "신경이 쓰여서 어쩔 수가 없다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "お{腹|なか}が{空|す}い{{てしょうがない}}。",
+            "answer": "てしょうがない",
+            "distractors": [
+              "てもいい",
+              "てしまう",
+              "ているところ"
+            ],
+            "translationKo": "배가 너무 고파서 견딜 수 없다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{暑|あつ}くてしょうがない」",
+            "contextSentence": null,
+            "answer": "더워서 견딜 수 없다 (강한 감정)",
+            "distractors": [
+              "더워도 괜찮다",
+              "더우면 어쩔 수 없다",
+              "더워질 수밖에 없다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "그가 너무 보고 싶어서 견딜 수 없어요.",
+            "answer": "{彼|かれ}に{会|あ}いたく{{てしょうがないです}}。",
+            "distractors": [
+              "{彼|かれ}に{会|あ}いたく{{てもいいです}}。",
+              "{彼|かれ}に{会|あ}いたく{{てしまいます}}。",
+              "{彼|かれ}に{会|あ}いたく{{ているところです}}。"
+            ],
+            "hintKo": "감정·생리 강조 = て형 + しょうがない"
+          }
+        }
+      ]
     },
     {
       "no": 129,
@@ -6779,14 +9299,71 @@
       "romaji": "te sumu",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e6%b8%88%e3%82%80-te-sumu-meaning/",
       "refOriginalEn": "sufficient by; no problem to; resolve by ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~하면 (간단히) 끝나다, ~하면 충분하다"
+      ],
+      "category": "expression",
+      "explanation": "큰 노력·문제 없이 어떤 행동만으로 일이 해결됨을 나타낸다. 「~하면 끝나다」 의 의미. 「で済む」 (~으로 끝나다) 형태도 빈출.",
+      "formation": "동사 て형 + 済む / 명사 + で + 済む",
+      "notes": "「電話で済む」 (전화로 끝나다), 「謝って済むことではない」 (사과로 끝날 일이 아니다). 부정형으로 「쉽게 끝나지 않을 만큼 심각함」 강조.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "この{問題|もんだい}は{電話|でんわ}{{で済みます}}。",
+          "sentenceTranslationKo": "이 문제는 전화로 끝납니다.",
+          "note": null
+        },
+        {
+          "sentence": "{謝|あやま}っ{{て済む}}{問題|もんだい}じゃない。",
+          "sentenceTranslationKo": "사과로 끝날 문제가 아니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{薬|くすり}を{飲|の}ん{{で済む}}{病気|びょうき}だ。",
+            "answer": "で済む",
+            "distractors": [
+              "で終わる",
+              "で済まない",
+              "で始まる"
+            ],
+            "translationKo": "약을 먹으면 끝나는 병이다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{500円|ごひゃくえん}で{済|す}んだ」",
+            "contextSentence": null,
+            "answer": "500엔으로 끝났다 (간단히 해결)",
+            "distractors": [
+              "500엔으로 시작했다",
+              "500엔이 부족했다",
+              "500엔만 받았다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이 일은 사과로 끝낼 수 없어요.",
+            "answer": "この{件|けん}は{謝|あやま}っ{{て済むことではありません}}。",
+            "distractors": [
+              "この{件|けん}は{謝|あやま}っ{{て終わることではありません}}。",
+              "この{件|けん}は{謝|あやま}っ{{て済まないことではありません}}。",
+              "この{件|けん}は{謝|あやま}っ{{て始まることではありません}}。"
+            ],
+            "hintKo": "간단히 끝남 = て형/で + 済む"
+          }
+        }
+      ]
     },
     {
       "no": 130,
@@ -6794,14 +9371,71 @@
       "romaji": "te wa ikenai kara",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%81%af%e3%81%84%e3%81%91%e3%81%aa%e3%81%84%e3%81%8b%e3%82%89-te-wa-ikenai-kara-meaning/",
       "refOriginalEn": "in order to not~; to prevent a negative situation",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~해서는 안 되니까 (예방·금지의 이유)"
+      ],
+      "category": "expression",
+      "explanation": "부정적 결과를 막기 위한 행위의 이유를 나타낸다. 「~해서는 안 되니까」 의 의미. 예방·주의 환기 표현.",
+      "formation": "동사 て형 + はいけないから",
+      "notes": "「忘れてはいけないから、メモした」 (잊어서는 안 되니까 메모했다). 「ないように」 보다 더 명시적인 금지의 이유.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{遅刻|ちこく}し{{てはいけないから}}、{早|はや}く{出|で}る。",
+          "sentenceTranslationKo": "지각해서는 안 되니까 일찍 나간다.",
+          "note": null
+        },
+        {
+          "sentence": "{忘|わす}れ{{てはいけないから}}、{手帳|てちょう}に{書|か}いた。",
+          "sentenceTranslationKo": "잊어서는 안 되니까 수첩에 적었다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{失敗|しっぱい}し{{てはいけないから}}、{慎重|しんちょう}に{進|すす}める。",
+            "answer": "てはいけないから",
+            "distractors": [
+              "てはいけないと",
+              "てもいいから",
+              "てしまうから"
+            ],
+            "translationKo": "실패해서는 안 되니까 신중히 진행한다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{風邪|かぜ}を{引|ひ}いてはいけないから、{暖|あたた}かくする」",
+            "contextSentence": null,
+            "answer": "감기에 걸려서는 안 되니까 따뜻하게 한다",
+            "distractors": [
+              "감기에 걸려도 좋으니까 따뜻하게 한다",
+              "감기에 걸려 버려서 따뜻하게 한다",
+              "감기에 걸리면 따뜻하게 한다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "잊어서는 안 되니까 알람을 설정했어요.",
+            "answer": "{忘|わす}れ{{てはいけないから}}、アラームを{設定|せってい}しました。",
+            "distractors": [
+              "{忘|わす}れ{{てはいけないと}}、アラームを{設定|せってい}しました。",
+              "{忘|わす}れ{{てもいいから}}、アラームを{設定|せってい}しました。",
+              "{忘|わす}れ{{てしまうから}}、アラームを{設定|せってい}しました。"
+            ],
+            "hintKo": "예방·금지 이유 = て형 + はいけないから"
+          }
+        }
+      ]
     },
     {
       "no": 131,
@@ -6809,14 +9443,71 @@
       "romaji": "teiru baai janai",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%81%84%e3%82%8b%e5%a0%b4%e5%90%88%e3%81%98%e3%82%83%e3%81%aa%e3%81%84-teiru-baai-janai-meaning/",
       "refOriginalEn": "this is no time to be doing ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~하고 있을 때가 아니다 (긴급·재촉)"
+      ],
+      "category": "expression",
+      "explanation": "현재 상황이 어떤 행동을 할 여유가 없을 만큼 긴급함을 강조한다. 「~하고 있을 때가 아니다」 의 의미. 자기 또는 타인을 재촉할 때.",
+      "formation": "동사 て형+いる + 場合じゃない",
+      "notes": "「泣いている場合じゃない」 (울고 있을 때가 아니다), 「遊んでいる場合じゃない」 (놀고 있을 때가 아니다). 위기·긴급 상황에 빈출.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{試験|しけん}が{近|ちか}いから、{遊|あそ}ん{{でいる場合じゃない}}。",
+          "sentenceTranslationKo": "시험이 가까우니까 놀고 있을 때가 아니다.",
+          "note": null
+        },
+        {
+          "sentence": "{泣|な}い{{ている場合じゃない}}よ。{何|なに}とかしよう。",
+          "sentenceTranslationKo": "울고 있을 때가 아니야. 어떻게든 하자.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{時間|じかん}がない。{食事|しょくじ}し{{ている場合じゃない}}。",
+            "answer": "ている場合じゃない",
+            "distractors": [
+              "ている場合だ",
+              "たい場合だ",
+              "ているところだ"
+            ],
+            "translationKo": "시간이 없다. 식사하고 있을 때가 아니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{寝|ね}ている{場合|ばあい}じゃない」",
+            "contextSentence": null,
+            "answer": "자고 있을 때가 아니다 (긴급)",
+            "distractors": [
+              "자고 있을 때다",
+              "자고 싶을 때다",
+              "자고 있는 중이다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이런 일로 화내고 있을 때가 아니에요.",
+            "answer": "こんなことで{怒|おこ}っ{{ている場合じゃありません}}。",
+            "distractors": [
+              "こんなことで{怒|おこ}っ{{ている場合です}}。",
+              "こんなことで{怒|おこ}り{{たい場合です}}。",
+              "こんなことで{怒|おこ}っ{{ているところです}}。"
+            ],
+            "hintKo": "긴급·재촉 = ている + 場合じゃない"
+          }
+        }
+      ]
     },
     {
       "no": 132,
@@ -6824,14 +9515,73 @@
       "romaji": "teki",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e7%9a%84-%e3%81%a6%e3%81%8d-teki-meaning/",
       "refOriginalEn": "change noun into na-adjective or adverb",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~적, ~답게 (성질·관점)"
+      ],
+      "category": "auxiliary",
+      "explanation": "명사 뒤에 붙어 「~의 성질을 가진, ~의 관점에서」 라는 의미를 만드는 접미사이다. 「~적」 의 의미. な형용사·부사로 활용.",
+      "formation": "명사 + 的 + な / に",
+      "notes": "「科学的」 (과학적), 「個人的」 (개인적), 「日本的」 (일본적). 「的に」 (~적으로) 의 부사용법도 빈출.",
+      "applicableQuizTypes": [
+        "conjugation",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "これは{科学|かがく}{{的}}な{研究|けんきゅう}です。",
+          "sentenceTranslationKo": "이것은 과학적인 연구입니다.",
+          "note": null
+        },
+        {
+          "sentence": "{個人|こじん}{{的}}には{反対|はんたい}です。",
+          "sentenceTranslationKo": "개인적으로는 반대입니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "conjugation",
+          "payload": {
+            "dictForm": "歴史",
+            "group": "noun",
+            "targetFormLabel": "的형 (~적)",
+            "answer": "歴史的",
+            "distractors": [
+              "歴史らしい",
+              "歴史っぽい",
+              "歴史だらけ"
+            ],
+            "hintKo": "명사 + 的 + な/に"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{経済|けいざい}{的|てき}な{問題|もんだい}」",
+            "contextSentence": null,
+            "answer": "경제적 문제 (성질)",
+            "distractors": [
+              "경제 같은 문제",
+              "경제투성이의 문제",
+              "경제스러운 문제"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이 영화는 매우 일본적이에요.",
+            "answer": "この{映画|えいが}はとても{日本|にほん}{{的です}}。",
+            "distractors": [
+              "この{映画|えいが}はとても{日本|にほん}{{らしいです}}。",
+              "この{映画|えいが}はとても{日本|にほん}{{っぽいです}}。",
+              "この{映画|えいが}はとても{日本|にほん}{{だらけです}}。"
+            ],
+            "hintKo": "성질·관점 = 명사 + 的"
+          }
+        }
+      ]
     },
     {
       "no": 133,
@@ -6839,14 +9589,71 @@
       "romaji": "temo hajimaranai",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%82%82%e5%a7%8b%e3%81%be%e3%82%89%e3%81%aa%e3%81%84-temo-hajimaranai-meaning/",
       "refOriginalEn": "even if you... it’s no use; there is no point to ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~해도 소용없다, ~해도 시작되지 않는다"
+      ],
+      "category": "expression",
+      "explanation": "어떤 행동을 해도 의미가 없거나 상황이 개선되지 않음을 나타낸다. 「~해도 소용없다」 의 의미. 체념·포기의 어감.",
+      "formation": "동사 て형 + も始まらない",
+      "notes": "「後悔しても始まらない」 (후회해도 소용없다), 「文句を言っても始まらない」 (불평해도 소용없다). 위로·격려에 자주.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{今|いま}{後悔|こうかい}し{{ても始まらない}}。",
+          "sentenceTranslationKo": "지금 후회해도 소용없다.",
+          "note": null
+        },
+        {
+          "sentence": "{文句|もんく}を{言|い}っ{{ても始まらない}}。",
+          "sentenceTranslationKo": "불평해도 소용없다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{泣|な}い{{ても始まらない}}よ。",
+            "answer": "ても始まらない",
+            "distractors": [
+              "ても構わない",
+              "てもいい",
+              "てしまう"
+            ],
+            "translationKo": "울어도 소용없어."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{怒|おこ}っても{始|はじ}まらない」",
+            "contextSentence": null,
+            "answer": "화내도 소용없다 (체념)",
+            "distractors": [
+              "화내도 괜찮다",
+              "화내고 있는 중이다",
+              "화내기 시작했다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이제 와서 사과해도 소용없어요.",
+            "answer": "{今|いま}さら{謝|あやま}っ{{ても始まりません}}。",
+            "distractors": [
+              "{今|いま}さら{謝|あやま}っ{{ても構いません}}。",
+              "{今|いま}さら{謝|あやま}っ{{てもいいです}}。",
+              "{今|いま}さら{謝|あやま}っ{{てしまいます}}。"
+            ],
+            "hintKo": "체념·소용없음 = て형 + も始まらない"
+          }
+        }
+      ]
     },
     {
       "no": 134,
@@ -6854,14 +9661,71 @@
       "romaji": "temo kamawanai",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%82%82%e3%81%8b%e3%81%be%e3%82%8f%e3%81%aa%e3%81%84-temo-kamawanai-meaning/",
       "refOriginalEn": "it doesn't matter if ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~해도 상관없다, ~해도 괜찮다"
+      ],
+      "category": "expression",
+      "explanation": "어떤 행동·상태가 자신에게 문제가 되지 않음을 나타낸다. 「~해도 상관없다」 의 의미. 「~てもいい」 보다 약간 더 격식체.",
+      "formation": "동사 て형 + も構わない / 형용사 어간+くて + も構わない / 명사+で + も構わない",
+      "notes": "「ここで食べても構わない」 (여기서 먹어도 상관없다). 허가·관용을 객관적으로 표현.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "ここでタバコを{吸|す}っ{{ても構わない}}ですか。",
+          "sentenceTranslationKo": "여기서 담배를 피워도 괜찮습니까?",
+          "note": null
+        },
+        {
+          "sentence": "{安|やす}く{{ても構わない}}から、{何|なに}か{食|た}べたい。",
+          "sentenceTranslationKo": "싸도 상관없으니까 뭔가 먹고 싶다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{雨|あめ}が{降|ふ}っ{{ても構わない}}。{出|で}かける。",
+            "answer": "ても構わない",
+            "distractors": [
+              "ても始まらない",
+              "てしまう",
+              "てください"
+            ],
+            "translationKo": "비가 와도 상관없다. 외출한다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{忙|いそが}しくても{構|かま}わない」",
+            "contextSentence": null,
+            "answer": "바빠도 상관없다 (관용)",
+            "distractors": [
+              "바빠도 안 된다",
+              "바빠도 시작이다",
+              "바빠도 어쩔 수 없다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "비싸도 상관없으니까 좋은 것을 사고 싶어요.",
+            "answer": "{高|たか}く{{ても構わない}}から、いいものを{買|か}いたいです。",
+            "distractors": [
+              "{高|たか}く{{ても始まらない}}から、いいものを{買|か}いたいです。",
+              "{高|たか}く{{てしまう}}から、いいものを{買|か}いたいです。",
+              "{高|たか}く{{てください}}から、いいものを{買|か}いたいです。"
+            ],
+            "hintKo": "허가·관용 = て형 + も構わない"
+          }
+        }
+      ]
     },
     {
       "no": 135,
@@ -6869,14 +9733,71 @@
       "romaji": "temo shou ga nai / temo shikata ga nai",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a6%e3%82%82%e3%81%97%e3%82%87%e3%81%86%e3%81%8c%e3%81%aa%e3%81%84%e3%83%bb%e3%81%a6%e3%82%82%e4%bb%95%e6%96%b9%e3%81%8c%e3%81%aa%e3%81%84-temo-shou-ga-nai-temo-shikata-ga-nai-meaning/",
       "refOriginalEn": "there's no point to~; it's no use to~; it cannot be helped",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~해도 어쩔 수 없다, ~해도 소용없다"
+      ],
+      "category": "expression",
+      "explanation": "어떤 행동을 해도 결과를 바꿀 수 없음을 나타내는 체념 표현이다. 「~해도 어쩔 수 없다」 의 의미. 「ても始まらない」 와 비슷.",
+      "formation": "동사 て형 / 형용사 어간+くて + もしょうがない",
+      "notes": "「いくら考えてもしょうがない」 (아무리 생각해도 소용없다). 「~てたまらない」 와 다름 — 그쪽은 강한 감정.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{過去|かこ}を{後悔|こうかい}し{{てもしょうがない}}。",
+          "sentenceTranslationKo": "과거를 후회해도 어쩔 수 없다.",
+          "note": null
+        },
+        {
+          "sentence": "そんなことを{言|い}っ{{てもしかたがない}}。",
+          "sentenceTranslationKo": "그런 말을 해도 소용없다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{今|いま}{急|いそ}い{{でもしょうがない}}。",
+            "answer": "でもしょうがない",
+            "distractors": [
+              "でもしょうがある",
+              "でも構わない",
+              "でもいい"
+            ],
+            "translationKo": "지금 서둘러도 어쩔 수 없다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{文句|もんく}を{言|い}ってもしかたがない」",
+            "contextSentence": null,
+            "answer": "불평해도 어쩔 수 없다 (체념)",
+            "distractors": [
+              "불평해도 괜찮다",
+              "불평해도 시작이다",
+              "불평하고 싶다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "지금 와서 화내도 어쩔 수 없어요.",
+            "answer": "{今|いま}さら{怒|おこ}っ{{てもしょうがありません}}。",
+            "distractors": [
+              "{今|いま}さら{怒|おこ}っ{{ても構いません}}。",
+              "{今|いま}さら{怒|おこ}っ{{てもいいです}}。",
+              "{今|いま}さら{怒|おこ}っ{{てしまいます}}。"
+            ],
+            "hintKo": "체념 = て형 + もしょうがない"
+          }
+        }
+      ]
     },
     {
       "no": 136,
@@ -6884,14 +9805,71 @@
       "romaji": "to ieba",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e8%a8%80%e3%81%88%e3%81%b0-%e3%81%a8%e3%81%84%e3%81%88%e3%81%b0-to-ieba-meaning/",
       "refOriginalEn": "speaking of; when you talk of; when you say; if it were the case that ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~라고 하면, ~라면 (화제 도입·연상)"
+      ],
+      "category": "conjunction",
+      "explanation": "어떤 단어·화제에서 연상되는 것을 도입할 때 쓰는 표현이다. 「~라고 하면」 의 의미. 화제 전환 또는 떠오르는 생각을 추가할 때.",
+      "formation": "명사 + と言えば",
+      "notes": "「日本と言えば、寿司」 (일본이라고 하면 초밥), 「そういえば」 (그러고 보니) 가 회화 빈출. 「と言えば」 보다 「といえば」 가나 표기가 자연.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{日本|にほん}{{といえば}}、{富士山|ふじさん}を{思|おも}い{出|だ}します。",
+          "sentenceTranslationKo": "일본이라고 하면 후지산을 떠올립니다.",
+          "note": null
+        },
+        {
+          "sentence": "{京都|きょうと}{{といえば}}、お{寺|てら}が{有名|ゆうめい}だ。",
+          "sentenceTranslationKo": "교토라고 하면 절이 유명하다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{夏|なつ}{{といえば}}、スイカが{食|た}べたい。",
+            "answer": "といえば",
+            "distractors": [
+              "というと",
+              "といったら",
+              "といって"
+            ],
+            "translationKo": "여름이라고 하면 수박이 먹고 싶다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{韓国|かんこく}{料理|りょうり}といえば、キムチだ」",
+            "contextSentence": null,
+            "answer": "한국 요리라고 하면 김치다 (연상 도입)",
+            "distractors": [
+              "한국 요리라고 한다면 김치다",
+              "한국 요리라고 말하면 김치다",
+              "한국 요리이고 김치다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "겨울이라고 하면 눈이 떠올라요.",
+            "answer": "{冬|ふゆ}{{といえば}}、{雪|ゆき}を{思|おも}い{出|だ}します。",
+            "distractors": [
+              "{冬|ふゆ}{{というと}}、{雪|ゆき}を{思|おも}い{出|だ}します。",
+              "{冬|ふゆ}{{といったら}}、{雪|ゆき}を{思|おも}い{出|だ}します。",
+              "{冬|ふゆ}{{といって}}、{雪|ゆき}を{思|おも}い{出|だ}します。"
+            ],
+            "hintKo": "연상 도입 = 명사 + といえば"
+          }
+        }
+      ]
     },
     {
       "no": 137,
@@ -6899,14 +9877,71 @@
       "romaji": "to ii / tara ii",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%84-to-ii-%e3%81%9f%e3%82%89%e3%81%84%e3%81%84-tara-ii-meaning/",
       "refOriginalEn": "it would be nice if; should; I hope ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~하면 좋겠다, ~했으면 좋겠다 (희망·기원)"
+      ],
+      "category": "expression",
+      "explanation": "어떤 일이 일어나기를 바라는 화자의 희망·기원을 나타낸다. 「~하면 좋겠다」 의 의미. 「ばいい」 보다 부드러운 어감으로 회화에 자주.",
+      "formation": "동사 사전형 + といい / 동사 た형 + らいい",
+      "notes": "「合格するといい」 (합격하면 좋겠다), 「雨が降らないといい」 (비가 안 왔으면 좋겠다). 자기·타인 모두에 사용 가능.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{明日|あした}{晴|は}れる{{といい}}ですね。",
+          "sentenceTranslationKo": "내일 맑으면 좋겠네요.",
+          "note": null
+        },
+        {
+          "sentence": "{彼|かれ}に{会|あ}え{{たらいい}}のに。",
+          "sentenceTranslationKo": "그를 만날 수 있다면 좋을 텐데.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{合格|ごうかく}できる{{といい}}ね。",
+            "answer": "といい",
+            "distractors": [
+              "とよい",
+              "ばいい",
+              "なら"
+            ],
+            "translationKo": "합격할 수 있으면 좋겠네."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{早|はや}く{元気|げんき}になるといい」",
+            "contextSentence": null,
+            "answer": "빨리 건강해지면 좋겠다 (희망)",
+            "distractors": [
+              "빨리 건강해진다 (단정)",
+              "빨리 건강해질 것이다 (예상)",
+              "빨리 건강해지지 않는다 (부정)"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "내일 비가 안 오면 좋겠어요.",
+            "answer": "{明日|あした}{雨|あめ}が{降|ふ}らない{{といいです}}。",
+            "distractors": [
+              "{明日|あした}{雨|あめ}が{降|ふ}らない{{ばいいです}}。",
+              "{明日|あした}{雨|あめ}が{降|ふ}ら{{なくていいです}}。",
+              "{明日|あした}{雨|あめ}が{降|ふ}らない{{なら}}。"
+            ],
+            "hintKo": "희망·기원 = 사전형 + といい"
+          }
+        }
+      ]
     },
     {
       "no": 138,
@@ -6914,14 +9949,71 @@
       "romaji": "to ittemo",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%a3%e3%81%a6%e3%82%82-to-ittemo-meaning/",
       "refOriginalEn": "although I say; although one might say ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~라고 해도, ~라 하더라도 (한정 보충)"
+      ],
+      "category": "expression",
+      "explanation": "어떤 표현·주장을 인정하면서도 그 정도가 그리 크지 않음을 보충한다. 「~라고 해도」 의 의미. 과장·오해를 줄이는 표현.",
+      "formation": "보통형 + といっても",
+      "notes": "「忙しいといっても、それほどではない」 (바쁘다 해도 그 정도는 아니다), 「日本に住んでいるといっても、半年だけだ」 (일본에 산다 해도 반년뿐이다).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{日本語|にほんご}が{話|はな}せる{{といっても}}、{少|すこ}しだけです。",
+          "sentenceTranslationKo": "일본어를 할 줄 안다고 해도 조금만 가능합니다.",
+          "note": null
+        },
+        {
+          "sentence": "{忙|いそが}しい{{といっても}}、{食事|しょくじ}する{時間|じかん}はある。",
+          "sentenceTranslationKo": "바쁘다 하더라도 식사할 시간은 있다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{雪|ゆき}が{降|ふ}った{{といっても}}、{少|すこ}しだけだ。",
+            "answer": "といっても",
+            "distractors": [
+              "といえば",
+              "というより",
+              "ということだ"
+            ],
+            "translationKo": "눈이 내렸다 해도 조금만이다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{家|いえ}を{買|か}ったといっても、{小|ちい}さい{家|いえ}だ」",
+            "contextSentence": null,
+            "answer": "집을 샀다고 해도 작은 집이다 (과장 축소)",
+            "distractors": [
+              "집을 샀다고 하면 작은 집이다",
+              "집을 사기보다 작은 집이다",
+              "집을 산다는 것은 작은 집이다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "여행 갔다고 해도 하루뿐이었어요.",
+            "answer": "{旅行|りょこう}に{行|い}った{{といっても}}、{一日|いちにち}だけでした。",
+            "distractors": [
+              "{旅行|りょこう}に{行|い}った{{といえば}}、{一日|いちにち}だけでした。",
+              "{旅行|りょこう}に{行|い}った{{というより}}、{一日|いちにち}だけでした。",
+              "{旅行|りょこう}に{行|い}った{{ということだ}}、{一日|いちにち}だけでした。"
+            ],
+            "hintKo": "한정 보충 = 보통형 + といっても"
+          }
+        }
+      ]
     },
     {
       "no": 139,
@@ -6929,14 +10021,71 @@
       "romaji": "to iu koto da",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%86%e3%81%93%e3%81%a8%e3%81%a0-to-iu-koto-da-%e3%81%a8%e3%81%ae%e3%81%93%e3%81%a8%e3%81%a0-to-no-koto-da-meaning/",
       "refOriginalEn": "I heard; it means that; in other words ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~라는 것이다 (전문·결론)"
+      ],
+      "category": "expression",
+      "explanation": "두 가지 의미: ① 들은 정보의 전달 (전문), ② 결론·정리 도입. 「~라는 것이다」 의 의미. 격식 있는 글에 빈출.",
+      "formation": "보통형 + ということだ",
+      "notes": "「彼は来ないということだ」 (그는 오지 않는다는 것이다 - 전문), 「つまり、こういうことだ」 (즉, 이런 것이다 - 결론).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{彼|かれ}は{出張中|しゅっちょうちゅう}だ{{ということだ}}。",
+          "sentenceTranslationKo": "그는 출장 중이라는 것이다.",
+          "note": null
+        },
+        {
+          "sentence": "つまり、{失敗|しっぱい}した{{ということです}}。",
+          "sentenceTranslationKo": "즉, 실패했다는 것입니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{試験|しけん}は{延期|えんき}になった{{ということだ}}。",
+            "answer": "ということだ",
+            "distractors": [
+              "というのは",
+              "といっても",
+              "といえば"
+            ],
+            "translationKo": "시험은 연기되었다는 것이다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{彼|かれ}が{合格|ごうかく}したということだ」",
+            "contextSentence": null,
+            "answer": "그가 합격했다는 것이다 (전문/결론)",
+            "distractors": [
+              "그가 합격할 것이다 (예상)",
+              "그가 합격해서 (이유)",
+              "그가 합격하면서 (동시)"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "회사가 도쿄로 이전한다는 것이에요.",
+            "answer": "{会社|かいしゃ}が{東京|とうきょう}に{移転|いてん}する{{ということです}}。",
+            "distractors": [
+              "{会社|かいしゃ}が{東京|とうきょう}に{移転|いてん}する{{というのです}}。",
+              "{会社|かいしゃ}が{東京|とうきょう}に{移転|いてん}する{{といっても}}。",
+              "{会社|かいしゃ}が{東京|とうきょう}に{移転|いてん}する{{といえば}}。"
+            ],
+            "hintKo": "전문/결론 = 보통형 + ということだ"
+          }
+        }
+      ]
     },
     {
       "no": 140,
@@ -6944,14 +10093,71 @@
       "romaji": "to iu nowa",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%86%e3%81%ae%e3%81%af-to-iu-nowa-meaning/",
       "refOriginalEn": "this means; the meaning of … is; because; that is to say ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~라는 것은, ~라고 하는 것은 (정의·이유)"
+      ],
+      "category": "expression",
+      "explanation": "두 가지 의미: ① 정의 (~라는 것은), ② 이유 (왜냐하면). 「~라는 것은」 의 의미. 격식 있는 설명·해설에 빈출.",
+      "formation": "명사·보통형 + というのは",
+      "notes": "「もったいないというのは、無駄にすることだ」 (못타이나이라는 것은 낭비하는 것이다 - 정의). 「というのは」 + 「~からだ」 (~ 때문이다) 형태로 이유 도입.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "「もったいない」{{というのは}}、{物|もの}を{無駄|むだ}にすることだ。",
+          "sentenceTranslationKo": "「못타이나이」라는 것은 물건을 낭비하는 것이다.",
+          "note": null
+        },
+        {
+          "sentence": "{彼|かれ}が{遅|おく}れた{{というのは}}、バスが{遅|おく}れたからだ。",
+          "sentenceTranslationKo": "그가 늦은 것은 버스가 늦었기 때문이다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{家族|かぞく}{{というのは}}、{大切|たいせつ}なものだ。",
+            "answer": "というのは",
+            "distractors": [
+              "というのが",
+              "というのを",
+              "というのに"
+            ],
+            "translationKo": "가족이라는 것은 소중한 것이다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{愛|あい}というのは、{難|むずか}しいものだ」",
+            "contextSentence": null,
+            "answer": "사랑이라는 것은 어려운 것이다 (정의·해설)",
+            "distractors": [
+              "사랑이라고 한다면 어려운 것이다",
+              "사랑이라고 해도 어려운 것이다",
+              "사랑이라기보다 어려운 것이다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "사쿠라라는 것은 일본의 봄을 상징하는 꽃이에요.",
+            "answer": "{桜|さくら}{{というのは}}、{日本|にほん}の{春|はる}を{象徴|しょうちょう}する{花|はな}です。",
+            "distractors": [
+              "{桜|さくら}{{といえば}}、{日本|にほん}の{春|はる}を{象徴|しょうちょう}する{花|はな}です。",
+              "{桜|さくら}{{といっても}}、{日本|にほん}の{春|はる}を{象徴|しょうちょう}する{花|はな}です。",
+              "{桜|さくら}{{ということだ}}、{日本|にほん}の{春|はる}を{象徴|しょうちょう}する{花|はな}です。"
+            ],
+            "hintKo": "정의·해설 = 명사 + というのは"
+          }
+        }
+      ]
     },
     {
       "no": 141,
@@ -6959,14 +10165,71 @@
       "romaji": "to iu to",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e8%a8%80%e3%81%86%e3%81%a8-%e3%81%a8%e3%81%84%e3%81%86%e3%81%a8-to-iuto-meaning/",
       "refOriginalEn": "speaking of; when you talk of; when you say ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~라고 하면 (확인·연상 도입)"
+      ],
+      "category": "conjunction",
+      "explanation": "「といえば」 와 비슷하지만 「というと」 는 상대방의 발언을 받아 「~라는 것은」 처럼 확인의 어감이 강함. 화제 도입·연상에 사용.",
+      "formation": "명사 + というと",
+      "notes": "「田中さんというと、あの背の高い人?」 (다나카 씨라고 하면 그 키 큰 사람?). 회화에서 상대 발언 확인에 자주.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{田中|たなか}さん{{というと}}、{背|せ}が{高|たか}い{方|かた}ですね。",
+          "sentenceTranslationKo": "다나카 씨라고 하면 키가 큰 분이지요.",
+          "note": null
+        },
+        {
+          "sentence": "{京都|きょうと}{{というと}}、{古|ふる}いお{寺|てら}を{思|おも}い{出|だ}す。",
+          "sentenceTranslationKo": "교토라고 하면 오래된 절이 떠오른다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{春|はる}{{というと}}、{桜|さくら}を{思|おも}い{浮|う}かべる。",
+            "answer": "というと",
+            "distractors": [
+              "というのは",
+              "というのを",
+              "というのに"
+            ],
+            "translationKo": "봄이라고 하면 벚꽃을 떠올린다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{富士山|ふじさん}というと、{日本|にほん}を{代表|だいひょう}する{山|やま}だ」",
+            "contextSentence": null,
+            "answer": "후지산이라고 하면 일본을 대표하는 산이다 (연상 확인)",
+            "distractors": [
+              "후지산이라는 것은 일본을 대표하는 산이라는 것이다",
+              "후지산이라고 해도 일본을 대표하는 산이다",
+              "후지산이라기보다 일본을 대표하는 산이다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "도쿄라고 하면 시부야가 유명해요.",
+            "answer": "{東京|とうきょう}{{というと}}、{渋谷|しぶや}が{有名|ゆうめい}です。",
+            "distractors": [
+              "{東京|とうきょう}{{というのは}}、{渋谷|しぶや}が{有名|ゆうめい}です。",
+              "{東京|とうきょう}{{ということだ}}、{渋谷|しぶや}が{有名|ゆうめい}です。",
+              "{東京|とうきょう}{{といっても}}、{渋谷|しぶや}が{有名|ゆうめい}です。"
+            ],
+            "hintKo": "확인·연상 도입 = 명사 + というと"
+          }
+        }
+      ]
     },
     {
       "no": 142,
@@ -6974,14 +10237,71 @@
       "romaji": "to iu yori",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%84%e3%81%86%e3%82%88%e3%82%8a-to-iu-yori-meaning/",
       "refOriginalEn": "rather than ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~라기보다 (비교 정정)"
+      ],
+      "category": "expression",
+      "explanation": "어떤 표현보다 다른 표현이 더 적절함을 나타낸다. 「~라기보다」 의 의미. 첫 표현을 부분적으로 부정하면서 더 정확한 표현으로 정정.",
+      "formation": "보통형 + というより",
+      "notes": "「彼は親友というより、家族のようだ」 (그는 친구라기보다 가족 같다). 정정·미세 수정 표현.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{彼|かれ}は{親友|しんゆう}{{というより}}、{家族|かぞく}のようだ。",
+          "sentenceTranslationKo": "그는 친구라기보다 가족 같다.",
+          "note": null
+        },
+        {
+          "sentence": "{暑|あつ}い{{というより}}、{蒸|む}し{暑|あつ}い。",
+          "sentenceTranslationKo": "덥다기보다 무덥다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "これは{芸術|げいじゅつ}{{というより}}、ただの{遊|あそ}びだ。",
+            "answer": "というより",
+            "distractors": [
+              "というのは",
+              "というと",
+              "といっても"
+            ],
+            "translationKo": "이것은 예술이라기보다 그냥 놀이다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{怒|おこ}っているというより、{悲|かな}しんでいる」",
+            "contextSentence": null,
+            "answer": "화나 있다기보다 슬퍼하고 있다 (정정)",
+            "distractors": [
+              "화나 있다고 해도 슬퍼하고 있다",
+              "화나 있다고 하면 슬퍼하고 있다",
+              "화나 있는 것은 슬퍼하고 있다는 것이다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "그녀는 친구라기보다 자매 같아요.",
+            "answer": "{彼女|かのじょ}は{友達|ともだち}{{というより}}、{姉妹|しまい}のようです。",
+            "distractors": [
+              "{彼女|かのじょ}は{友達|ともだち}{{というのは}}、{姉妹|しまい}のようです。",
+              "{彼女|かのじょ}は{友達|ともだち}{{というと}}、{姉妹|しまい}のようです。",
+              "{彼女|かのじょ}は{友達|ともだち}{{といっても}}、{姉妹|しまい}のようです。"
+            ],
+            "hintKo": "비교 정정 = 보통형 + というより"
+          }
+        }
+      ]
     },
     {
       "no": 143,
@@ -6989,14 +10309,71 @@
       "romaji": "to mieru / to miete",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%bf%e3%81%88%e3%81%a6-miete-%e3%81%a8%e3%81%bf%e3%81%88%e3%82%8b-to-mieru-meaning/",
       "refOriginalEn": "it seems that ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~인 것 같다, ~인 듯 (관찰 추측)"
+      ],
+      "category": "expression",
+      "explanation": "관찰된 사실로부터 추측되는 사정을 나타낸다. 「~인 것 같다」 의 의미. 「ようだ」 와 비슷하지만 「とみえる」 는 객관적 추측의 어감이 강함.",
+      "formation": "보통형 + とみえる / とみえて",
+      "notes": "「彼は疲れているとみえて、元気がない」 (그는 피곤한 듯 기운이 없다). 격식 있는 글에 자주.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{彼|かれ}は{忙|いそが}しい{{とみえて}}、なかなか{連絡|れんらく}が{来|こ}ない。",
+          "sentenceTranslationKo": "그는 바쁜 듯 좀처럼 연락이 오지 않는다.",
+          "note": null
+        },
+        {
+          "sentence": "{誰|だれ}か{来|き}た{{とみえる}}。{靴|くつ}が{置|お}いてある。",
+          "sentenceTranslationKo": "누군가 온 것 같다. 신발이 놓여 있다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "お{腹|なか}が{空|す}いている{{とみえて}}、{彼|かれ}はたくさん{食|た}べた。",
+            "answer": "とみえて",
+            "distractors": [
+              "とみえない",
+              "ということだ",
+              "といって"
+            ],
+            "translationKo": "배가 고픈 듯 그는 많이 먹었다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{何|なに}か{良|よ}いことがあったとみえる」",
+            "contextSentence": null,
+            "answer": "뭔가 좋은 일이 있었던 것 같다 (관찰 추측)",
+            "distractors": [
+              "뭔가 좋은 일이 있을 것이다",
+              "뭔가 좋은 일이 있었다고 한다",
+              "뭔가 좋은 일이 있는 것이다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "비가 내린 듯 길이 젖어 있어요.",
+            "answer": "{雨|あめ}が{降|ふ}った{{とみえて}}、{道|みち}が{濡|ぬ}れています。",
+            "distractors": [
+              "{雨|あめ}が{降|ふ}った{{とみえない}}、{道|みち}が{濡|ぬ}れています。",
+              "{雨|あめ}が{降|ふ}った{{ということだ}}、{道|みち}が{濡|ぬ}れています。",
+              "{雨|あめ}が{降|ふ}った{{といって}}、{道|みち}が{濡|ぬ}れています。"
+            ],
+            "hintKo": "관찰 추측 = 보통형 + とみえて"
+          }
+        }
+      ]
     },
     {
       "no": 144,
@@ -7004,14 +10381,71 @@
       "romaji": "to sureba / to shitara / to suru to",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%99%e3%82%8c%e3%81%b0-%e3%81%a8%e3%81%97%e3%81%9f%e3%82%89-%e3%81%a8%e3%81%99%e3%82%8b%e3%81%a8-sureba-shitara-suru-to-meaning/",
       "refOriginalEn": "in the case of~; assuming~; if A then B",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~라고 한다면, ~라고 가정하면"
+      ],
+      "category": "expression",
+      "explanation": "어떤 가정·전제를 세우고 그 결과를 추론하는 표현이다. 「~라고 한다면」 의 의미. 「とすれば」, 「としたら」, 「とすると」 거의 호환.",
+      "formation": "보통형 + とすれば / としたら / とすると",
+      "notes": "「彼が来ないとすれば、誰が手伝うのか」 (그가 안 온다고 한다면 누가 도울 것인가). 가설·논리적 추론에 빈출.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{彼|かれ}が{合格|ごうかく}した{{とすれば}}、{両親|りょうしん}も{喜|よろこ}ぶでしょう。",
+          "sentenceTranslationKo": "그가 합격했다고 한다면 부모님도 기뻐하실 것입니다.",
+          "note": null
+        },
+        {
+          "sentence": "{宝|たから}くじが{当|あ}たった{{としたら}}、{何|なに}を{買|か}いますか。",
+          "sentenceTranslationKo": "복권에 당첨된다고 한다면 무엇을 살 것입니까?",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{雨|あめ}が{降|ふ}る{{とすれば}}、{試合|しあい}は{中止|ちゅうし}だ。",
+            "answer": "とすれば",
+            "distractors": [
+              "となれば",
+              "となったら",
+              "となると"
+            ],
+            "translationKo": "비가 온다고 한다면 시합은 중지다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{彼|かれ}が{犯人|はんにん}だとすると、{動機|どうき}は{何|なに}か」",
+            "contextSentence": null,
+            "answer": "그가 범인이라고 한다면 동기는 무엇인가 (가정)",
+            "distractors": [
+              "그가 범인이라고 한다",
+              "그가 범인이 되었다",
+              "그가 범인이라기보다 동기가 있다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "내가 부자가 된다고 한다면 여행을 가고 싶어요.",
+            "answer": "{私|わたし}が{金持|かねも}ちになる{{としたら}}、{旅行|りょこう}に{行|い}きたいです。",
+            "distractors": [
+              "{私|わたし}が{金持|かねも}ちになる{{となれば}}、{旅行|りょこう}に{行|い}きたいです。",
+              "{私|わたし}が{金持|かねも}ちになる{{となったら}}、{旅行|りょこう}に{行|い}きたいです。",
+              "{私|わたし}が{金持|かねも}ちになる{{となると}}、{旅行|りょこう}に{行|い}きたいです。"
+            ],
+            "hintKo": "가정·전제 = 보통형 + とすれば"
+          }
+        }
+      ]
     },
     {
       "no": 145,
@@ -7019,14 +10453,71 @@
       "romaji": "to tomo ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e5%85%b1%e3%81%ab-to-tomo-ni-meaning/",
       "refOriginalEn": "together with; at the same time as; as well as ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~와 함께, ~함과 동시에"
+      ],
+      "category": "expression",
+      "explanation": "동반·동시 진행을 나타내는 격식 표현이다. 「~와 함께」 의 의미. 「と一緒に」 보다 더 격식적·문어적.",
+      "formation": "명사 / 동사 사전형 + と共に",
+      "notes": "「家族と共に」 (가족과 함께), 「年を取ると共に、体力が落ちる」 (나이를 먹음과 동시에 체력이 떨어진다). 변화 동반에도 사용.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{家族|かぞく}{{と共に}}、お{祝|いわ}いをした。",
+          "sentenceTranslationKo": "가족과 함께 축하를 했다.",
+          "note": null
+        },
+        {
+          "sentence": "{時代|じだい}の{変化|へんか}{{と共に}}、{文化|ぶんか}も{変|か}わる。",
+          "sentenceTranslationKo": "시대 변화와 함께 문화도 변한다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{年|とし}を{取|と}る{{と共に}}、{記憶力|きおくりょく}が{衰|おとろ}える。",
+            "answer": "と共に",
+            "distractors": [
+              "と一緒に",
+              "と同時に",
+              "とともに"
+            ],
+            "translationKo": "나이를 먹음과 동시에 기억력이 쇠퇴한다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{先生|せんせい}と{共|とも}に{研究|けんきゅう}する」",
+            "contextSentence": null,
+            "answer": "선생님과 함께 연구하다 (동반)",
+            "distractors": [
+              "선생님 대신에 연구하다",
+              "선생님을 위해 연구하다",
+              "선생님에 대해 연구하다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "기술의 발전과 함께 생활도 변해 왔어요.",
+            "answer": "{技術|ぎじゅつ}の{発展|はってん}{{と共に}}、{生活|せいかつ}も{変|か}わってきました。",
+            "distractors": [
+              "{技術|ぎじゅつ}の{発展|はってん}{{と一緒に}}、{生活|せいかつ}も{変|か}わってきました。",
+              "{技術|ぎじゅつ}の{発展|はってん}{{と同時に}}、{生活|せいかつ}も{変|か}わってきました。",
+              "{技術|ぎじゅつ}の{発展|はってん}{{と比べて}}、{生活|せいかつ}も{変|か}わってきました。"
+            ],
+            "hintKo": "동반·동시 진행 = 명사 + と共に"
+          }
+        }
+      ]
     },
     {
       "no": 146,
@@ -7034,14 +10525,71 @@
       "romaji": "tochuu de / tochuu ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e9%80%94%e4%b8%ad%e3%81%a7-%e9%80%94%e4%b8%ad%e3%81%ab-tochuu-de-tochuu-ni-meaning/",
       "refOriginalEn": "on the way; in the middle of ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "도중에"
+      ],
+      "category": "expression",
+      "explanation": "어떤 동작·이동의 중간 시점에 다른 일이 일어남을 나타낸다. 「도중에」 의 의미.",
+      "formation": "동사 사전형 / 명사 + の + 途中で / 途中に",
+      "notes": "「家に帰る途中で」 (집에 가는 도중에), 「会議の途中に電話が鳴った」 (회의 도중에 전화가 울렸다). 「で」 가 좀 더 자연스러움.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{家|いえ}に{帰|かえ}る{{途中で}}、{雨|あめ}に{降|ふ}られた。",
+          "sentenceTranslationKo": "집에 가는 도중에 비를 맞았다.",
+          "note": null
+        },
+        {
+          "sentence": "{会議|かいぎ}の{{途中に}}{電話|でんわ}が{鳴|な}った。",
+          "sentenceTranslationKo": "회의 도중에 전화가 울렸다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{駅|えき}に{行|い}く{{途中で}}{財布|さいふ}を{落|お}とした。",
+            "answer": "途中で",
+            "distractors": [
+              "最中に",
+              "うちに",
+              "間に"
+            ],
+            "translationKo": "역에 가는 도중에 지갑을 떨어뜨렸다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{授業|じゅぎょう}の{途中|とちゅう}で{眠|ねむ}くなった」",
+            "contextSentence": null,
+            "answer": "수업 도중에 졸렸다",
+            "distractors": [
+              "수업이 끝난 후 졸렸다",
+              "수업 시작 전에 졸렸다",
+              "수업 동안 내내 졸렸다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "여행 도중에 친구를 만났어요.",
+            "answer": "{旅行|りょこう}の{{途中で}}{友達|ともだち}に{会|あ}いました。",
+            "distractors": [
+              "{旅行|りょこう}の{{最中に}}{友達|ともだち}に{会|あ}いました。",
+              "{旅行|りょこう}の{{うちに}}{友達|ともだち}に{会|あ}いました。",
+              "{旅行|りょこう}の{{間に}}{友達|ともだち}に{会|あ}いました。"
+            ],
+            "hintKo": "도중 = 명사の + 途中で"
+          }
+        }
+      ]
     },
     {
       "no": 147,
@@ -7049,14 +10597,71 @@
       "romaji": "tokoro de",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%93%e3%82%8d%e3%81%a7-tokoro-de-meaning/",
       "refOriginalEn": "by the way ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "그런데 (화제 전환)"
+      ],
+      "category": "conjunction",
+      "explanation": "이전 화제를 마무리하고 새로운 화제로 전환하는 접속사이다. 「그런데」 의 의미. 회화에서 가장 일반적인 화제 전환 표현.",
+      "formation": "문장 도입에 단독 사용",
+      "notes": "「さて」 와 비슷하지만 「ところで」 가 더 회화적. 「ところで、お元気ですか」 (그런데 잘 지내십니까?).",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{{ところで}}、お{元気|げんき}ですか。",
+          "sentenceTranslationKo": "그런데 잘 지내십니까?",
+          "note": null
+        },
+        {
+          "sentence": "{{ところで}}、{今度|こんど}の{週末|しゅうまつ}は{予定|よてい}ありますか。",
+          "sentenceTranslationKo": "그런데 이번 주말은 약속 있어요?",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{{ところで}}、{昨日|きのう}の{試験|しけん}はどうでしたか。",
+            "answer": "ところで",
+            "distractors": [
+              "ところが",
+              "それでも",
+              "ところに"
+            ],
+            "translationKo": "그런데 어제 시험은 어땠습니까?"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「ところで、{何|なに}か{食|た}べに{行|い}きませんか」",
+            "contextSentence": null,
+            "answer": "그런데 뭔가 먹으러 안 갈래요? (화제 전환)",
+            "distractors": [
+              "그러나 뭔가 먹으러 안 갈래요?",
+              "그래서 뭔가 먹으러 안 갈래요?",
+              "그곳에 뭔가 먹으러 안 갈래요?"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "그런데, 새 직장은 어떠세요?",
+            "answer": "{{ところで}}、{新|あたら}しい{職場|しょくば}はどうですか。",
+            "distractors": [
+              "{{ところが}}、{新|あたら}しい{職場|しょくば}はどうですか。",
+              "{{それでも}}、{新|あたら}しい{職場|しょくば}はどうですか。",
+              "{{ところに}}、{新|あたら}しい{職場|しょくば}はどうですか。"
+            ],
+            "hintKo": "화제 전환 = ところで"
+          }
+        }
+      ]
     },
     {
       "no": 148,
@@ -7064,14 +10669,71 @@
       "romaji": "tokoro ga",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%93%e3%82%8d%e3%81%8c-tokoro-ga-meaning/",
       "refOriginalEn": "even so; however; even though ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "그런데 (예상 외 결과)"
+      ],
+      "category": "conjunction",
+      "explanation": "예상·기대와 다른 결과가 일어났음을 나타내는 역접 접속사이다. 「그런데」 의 의미. 「ところで」 (화제 전환) 와 발음 비슷하지만 의미 정반대.",
+      "formation": "문장 도입에 단독 사용",
+      "notes": "「ところが、実は違っていた」 (그런데 사실은 달랐다). 의외성·반전 강조.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{晴|は}れると{思|おも}った。{{ところが}}、{雨|あめ}が{降|ふ}り{出|だ}した。",
+          "sentenceTranslationKo": "맑을 거라고 생각했다. 그런데 비가 내리기 시작했다.",
+          "note": null
+        },
+        {
+          "sentence": "{合格|ごうかく}したと{思|おも}っていた。{{ところが}}、{不合格|ふごうかく}だった。",
+          "sentenceTranslationKo": "합격했다고 생각했다. 그런데 불합격이었다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{易|やさ}しいテストだと{思|おも}った。{{ところが}}、{難|むずか}しかった。",
+            "answer": "ところが",
+            "distractors": [
+              "ところで",
+              "それでも",
+              "ところに"
+            ],
+            "translationKo": "쉬운 시험이라고 생각했다. 그런데 어려웠다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{彼|かれ}は{来|く}ると{言|い}った。ところが、{来|こ}なかった」",
+            "contextSentence": null,
+            "answer": "그는 온다고 말했다. 그런데 오지 않았다 (예상 외)",
+            "distractors": [
+              "그는 온다고 말했다. 그래서 오지 않았다",
+              "그는 온다고 말했다. 그런데 (화제 전환)",
+              "그는 온다고 말했다. 그곳에 오지 않았다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이길 거라고 생각했다. 그런데 졌어요.",
+            "answer": "{勝|か}つと{思|おも}っていた。{{ところが}}、{負|ま}けました。",
+            "distractors": [
+              "{勝|か}つと{思|おも}っていた。{{ところで}}、{負|ま}けました。",
+              "{勝|か}つと{思|おも}っていた。{{それでも}}、{負|ま}けました。",
+              "{勝|か}つと{思|おも}っていた。{{ところに}}、{負|ま}けました。"
+            ],
+            "hintKo": "예상 외 결과 = ところが"
+          }
+        }
+      ]
     },
     {
       "no": 149,
@@ -7079,14 +10741,71 @@
       "romaji": "toori ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%8a%e3%82%8a%e3%81%ab-toori-ni-meaning/",
       "refOriginalEn": "in the same way as; in the way; as ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~한 대로, ~대로"
+      ],
+      "category": "expression",
+      "explanation": "어떤 행동·지시와 똑같이 한다는 것을 나타낸다. 「~대로」 의 의미. 「ように」 와 비슷하지만 「とおりに」 는 정확히 일치 강조.",
+      "formation": "동사 사전형 / た형 + 通りに / 명사 + の + 通りに / 명사 + 通りに",
+      "notes": "「説明書のとおりに作る」 (설명서대로 만들다), 「言ったとおりにする」 (말한 대로 한다). 한자 「通り」 또는 가나 「とおり」 모두 가능.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{先生|せんせい}が{言|い}った{{通りに}}、やってみました。",
+          "sentenceTranslationKo": "선생님이 말한 대로 해 봤습니다.",
+          "note": null
+        },
+        {
+          "sentence": "{予定|よてい}{{通りに}}{出発|しゅっぱつ}した。",
+          "sentenceTranslationKo": "예정대로 출발했다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{説明書|せつめいしょ}の{{とおりに}}{組|く}み{立|た}てた。",
+            "answer": "とおりに",
+            "distractors": [
+              "ように",
+              "ような",
+              "そうに"
+            ],
+            "translationKo": "설명서대로 조립했다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{予想|よそう}{通|どお}りに{進|すす}んだ」",
+            "contextSentence": null,
+            "answer": "예상대로 진행되었다 (정확히 일치)",
+            "distractors": [
+              "예상처럼 진행되었다",
+              "예상에 비해 진행되었다",
+              "예상에 따라 진행되었다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "지도대로 가면 도착해요.",
+            "answer": "{地図|ちず}の{{通りに}}{行|い}けば{着|つ}きます。",
+            "distractors": [
+              "{地図|ちず}の{{ように}}{行|い}けば{着|つ}きます。",
+              "{地図|ちず}の{{ような}}{行|い}けば{着|つ}きます。",
+              "{地図|ちず}の{{そうに}}{行|い}けば{着|つ}きます。"
+            ],
+            "hintKo": "정확히 일치 = 명사の + 通りに"
+          }
+        }
+      ]
     },
     {
       "no": 150,
@@ -7094,14 +10813,73 @@
       "romaji": "toosu",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e9%80%9a%e3%81%99-%e3%81%a8%e3%81%8a%e3%81%99-toosu-meaning/",
       "refOriginalEn": "to do until the end; to continually do; through ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "끝까지 ~하다, 계속 ~하다 (관철)"
+      ],
+      "category": "verb_form",
+      "explanation": "어떤 동작·상태를 처음부터 끝까지 일관되게 유지함을 나타낸다. 「끝까지 ~하다」 의 의미. 의지·결의 어감.",
+      "formation": "동사 ます형 어간 + 通す",
+      "notes": "「言い通す」 (끝까지 주장하다), 「やり通す」 (끝까지 해내다), 「読み通す」 (끝까지 읽다). 「切る」 (완수) 와 비슷하지만 「通す」 는 「관철·일관성」.",
+      "applicableQuizTypes": [
+        "conjugation",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{彼|かれ}は{自分|じぶん}の{意見|いけん}を{言|い}い{{通した}}。",
+          "sentenceTranslationKo": "그는 자기 의견을 끝까지 주장했다.",
+          "note": null
+        },
+        {
+          "sentence": "この{仕事|しごと}を{最後|さいご}までやり{{通す}}。",
+          "sentenceTranslationKo": "이 일을 끝까지 해낸다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "conjugation",
+          "payload": {
+            "dictForm": "やる",
+            "group": "godan",
+            "targetFormLabel": "通す형 (끝까지 ~하다)",
+            "answer": "やり通す",
+            "distractors": [
+              "やる通す",
+              "やって通す",
+              "やり切る"
+            ],
+            "hintKo": "ます형 어간 + 通す"
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{初心|しょしん}を{貫|つらぬ}き{通|とお}す」",
+            "contextSentence": null,
+            "answer": "초심을 끝까지 관철하다",
+            "distractors": [
+              "초심을 시작하다",
+              "초심을 잃다",
+              "초심을 떠올리다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "그는 끝까지 거짓말을 관철했어요.",
+            "answer": "{彼|かれ}は{最後|さいご}まで{嘘|うそ}をつき{{通しました}}。",
+            "distractors": [
+              "{彼|かれ}は{最後|さいご}まで{嘘|うそ}をつき{{切りました}}。",
+              "{彼|かれ}は{最後|さいご}まで{嘘|うそ}をつき{{始めました}}。",
+              "{彼|かれ}は{最後|さいご}まで{嘘|うそ}をつき{{ました}}。"
+            ],
+            "hintKo": "관철·일관성 = ます형 + 通す"
+          }
+        }
+      ]
     },
     {
       "no": 151,
@@ -7109,14 +10887,71 @@
       "romaji": "toshite",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%97%e3%81%a6-toshite-meaning/",
       "refOriginalEn": "as; in the role of ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~로서 (자격·입장)"
+      ],
+      "category": "expression",
+      "explanation": "어떤 자격·입장·역할로서 행동함을 나타낸다. 「~로서」 의 의미.",
+      "formation": "명사 + として",
+      "notes": "「教師として」 (교사로서), 「友達として忠告する」 (친구로서 충고한다), 「お土産として」 (선물로서). 자격·역할 명시.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{彼|かれ}は{先生|せんせい}{{として}}{尊敬|そんけい}されている。",
+          "sentenceTranslationKo": "그는 선생으로서 존경받고 있다.",
+          "note": null
+        },
+        {
+          "sentence": "{友達|ともだち}{{として}}{忠告|ちゅうこく}します。",
+          "sentenceTranslationKo": "친구로서 충고합니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{留学生|りゅうがくせい}{{として}}{日本|にほん}に{来|き}た。",
+            "answer": "として",
+            "distractors": [
+              "にとって",
+              "について",
+              "に対して"
+            ],
+            "translationKo": "유학생으로서 일본에 왔다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{母|はは}として{子|こ}どもを{愛|あい}する」",
+            "contextSentence": null,
+            "answer": "어머니로서 아이를 사랑한다 (자격)",
+            "distractors": [
+              "어머니에게 있어서 아이를 사랑한다",
+              "어머니에 대해 아이를 사랑한다",
+              "어머니에 관해 아이를 사랑한다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "전문가로서 의견을 말씀드리겠습니다.",
+            "answer": "{専門家|せんもんか}{{として}}{意見|いけん}を{申|もう}し{上|あ}げます。",
+            "distractors": [
+              "{専門家|せんもんか}{{にとって}}{意見|いけん}を{申|もう}し{上|あ}げます。",
+              "{専門家|せんもんか}{{について}}{意見|いけん}を{申|もう}し{上|あ}げます。",
+              "{専門家|せんもんか}{{に対して}}{意見|いけん}を{申|もう}し{上|あ}げます。"
+            ],
+            "hintKo": "자격·입장 = 명사 + として"
+          }
+        }
+      ]
     },
     {
       "no": 152,
@@ -7124,14 +10959,71 @@
       "romaji": "totemo~nai",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%a6%e3%82%82%ef%bd%9e%e3%81%aa%e3%81%84-totemo-nai-meaning/",
       "refOriginalEn": "cannot possibly be; hardly ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "도저히 ~할 수 없다"
+      ],
+      "category": "expression",
+      "explanation": "「とても」 가 부정형과 함께 쓰이면 「도저히」 의 강한 부정 의미가 된다. 「도저히 ~할 수 없다」 의 의미. 「とても」 단독 (매우) 과 의미 다름.",
+      "formation": "とても + 부정형 (보통 가능형 부정)",
+      "notes": "「とても食べきれない」 (도저히 다 먹을 수 없다), 「とても理解できない」 (도저히 이해할 수 없다). 「到底~ない」 와 호환.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "この{量|りょう}は{{とても食べきれない}}。",
+          "sentenceTranslationKo": "이 양은 도저히 다 먹을 수 없다.",
+          "note": null
+        },
+        {
+          "sentence": "{彼|かれ}の{気持|きも}ちは{{とても理解できない}}。",
+          "sentenceTranslationKo": "그의 마음은 도저히 이해할 수 없다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{{とても信じられない}}話だ。",
+            "answer": "とても信じられない",
+            "distractors": [
+              "なかなか信じられない",
+              "全然信じられない",
+              "もしかしたら信じられない"
+            ],
+            "translationKo": "도저히 믿을 수 없는 이야기다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「とても{追|お}いつけない」",
+            "contextSentence": null,
+            "answer": "도저히 따라잡을 수 없다 (강한 부정)",
+            "distractors": [
+              "매우 따라잡을 수 있다",
+              "조금 따라잡을 수 있다",
+              "혹시 따라잡을 수 없다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "이 일은 혼자서는 도저히 할 수 없어요.",
+            "answer": "この{仕事|しごと}は{一人|ひとり}では{{とてもできません}}。",
+            "distractors": [
+              "この{仕事|しごと}は{一人|ひとり}では{{なかなかできません}}。",
+              "この{仕事|しごと}は{一人|ひとり}では{{全然できません}}。",
+              "この{仕事|しごと}は{一人|ひとり}では{{もしかしたらできません}}。"
+            ],
+            "hintKo": "도저히 부정 = とても + 부정형"
+          }
+        }
+      ]
     },
     {
       "no": 153,
@@ -7139,14 +11031,71 @@
       "romaji": "towa kagiranai",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a8%e3%81%af%e9%99%90%e3%82%89%e3%81%aa%e3%81%84-towa-kagiranai-meaning/",
       "refOriginalEn": "not necessarily so; is not always true",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "반드시 ~인 것은 아니다"
+      ],
+      "category": "expression",
+      "explanation": "일반적으로 그렇다고 여겨지는 것이 항상 그렇지는 않음을 나타낸다. 「반드시 ~인 것은 아니다」 의 의미. 단정을 약화시키는 격식 표현.",
+      "formation": "보통형 + とは限らない",
+      "notes": "「お金があれば幸せだとは限らない」 (돈이 있다고 해서 반드시 행복한 것은 아니다). 「必ずしも~とは限らない」 강조형.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "お{金持|かねも}ちが{幸|しあわ}せ{{とは限らない}}。",
+          "sentenceTranslationKo": "부자가 반드시 행복한 것은 아니다.",
+          "note": null
+        },
+        {
+          "sentence": "{高|たか}いものがいい{{とは限らない}}。",
+          "sentenceTranslationKo": "비싼 것이 반드시 좋은 것은 아니다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{勉強|べんきょう}すれば{合格|ごうかく}できる{{とは限らない}}。",
+            "answer": "とは限らない",
+            "distractors": [
+              "とは違う",
+              "とは思えない",
+              "とは言えない"
+            ],
+            "translationKo": "공부한다고 해서 반드시 합격할 수 있는 것은 아니다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{有名|ゆうめい}な{店|みせ}がおいしいとは{限|かぎ}らない」",
+            "contextSentence": null,
+            "answer": "유명한 가게가 반드시 맛있는 것은 아니다 (단정 약화)",
+            "distractors": [
+              "유명한 가게는 다 맛있다",
+              "유명한 가게는 맛이 다르다",
+              "유명한 가게는 맛없다고 말할 수 없다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "비싸다고 해서 반드시 품질이 좋은 것은 아니에요.",
+            "answer": "{高|たか}いから{品質|ひんしつ}がいい{{とは限りません}}。",
+            "distractors": [
+              "{高|たか}いから{品質|ひんしつ}がいい{{とは違いません}}。",
+              "{高|たか}いから{品質|ひんしつ}がいい{{とは思えません}}。",
+              "{高|たか}いから{品質|ひんしつ}がいい{{とは言えません}}。"
+            ],
+            "hintKo": "단정 약화 = 보통형 + とは限らない"
+          }
+        }
+      ]
     },
     {
       "no": 154,
@@ -7154,14 +11103,71 @@
       "romaji": "tsui",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a4%e3%81%84-tsui-meaning/",
       "refOriginalEn": "accidentally; unintentionally; by mistake",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
+      "meaningsKo": [
+        "그만, 무심코, 자기도 모르게"
+      ],
+      "category": "other",
+      "explanation": "의도하지 않게 무심코 어떤 동작을 해 버렸음을 나타내는 부사이다. 「그만, 무심코」 의 의미. 보통 후회·자책 어감.",
       "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "notes": "「つい笑ってしまった」 (그만 웃어 버렸다), 「つい食べ過ぎた」 (자기도 모르게 너무 먹었다). 「~てしまう」 와 자주 호응.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{{つい}}{食|た}べ{過|す}ぎてしまった。",
+          "sentenceTranslationKo": "그만 너무 먹어 버렸다.",
+          "note": null
+        },
+        {
+          "sentence": "おかしくて、{{つい}}{笑|わら}ってしまった。",
+          "sentenceTranslationKo": "웃겨서 무심코 웃어 버렸다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{{つい}}{大声|おおごえ}を{出|だ}してしまった。",
+            "answer": "つい",
+            "distractors": [
+              "ついに",
+              "ついで",
+              "ついでに"
+            ],
+            "translationKo": "그만 큰 소리를 내 버렸다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「つい{忘|わす}れてしまった」",
+            "contextSentence": null,
+            "answer": "그만 잊어 버렸다 (무심코)",
+            "distractors": [
+              "마침내 잊어 버렸다",
+              "함께 잊어 버렸다",
+              "겸사겸사 잊어 버렸다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "그만 약속을 잊어 버렸어요.",
+            "answer": "{{つい}}{約束|やくそく}を{忘|わす}れてしまいました。",
+            "distractors": [
+              "{{ついに}}{約束|やくそく}を{忘|わす}れてしまいました。",
+              "{{ついで}}{約束|やくそく}を{忘|わす}れてしまいました。",
+              "{{ついでに}}{約束|やくそく}を{忘|わす}れてしまいました。"
+            ],
+            "hintKo": "무심코·그만 = つい"
+          }
+        }
+      ]
     },
     {
       "no": 155,
@@ -7169,14 +11175,71 @@
       "romaji": "tsui ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a4%e3%81%84%e3%81%ab-tsui-ni-meaning/",
       "refOriginalEn": "finally; at last; in the end ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
+      "meaningsKo": [
+        "마침내, 결국, 드디어"
+      ],
+      "category": "other",
+      "explanation": "오랜 기다림·노력 끝에 어떤 일이 일어났음을 강조하는 부사이다. 「마침내, 드디어」 의 의미. 「やっと」 보다 더 강한 결말 어감.",
       "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "notes": "「ついに完成した」 (마침내 완성했다), 「ついに彼が来た」 (드디어 그가 왔다). 부정문에서는 「결국 ~하지 않았다」 의 의미.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{{ついに}}{論文|ろんぶん}が{完成|かんせい}した。",
+          "sentenceTranslationKo": "마침내 논문이 완성되었다.",
+          "note": null
+        },
+        {
+          "sentence": "{長|なが}い{戦|たたか}いの{後|あと}、{{ついに}}{勝利|しょうり}した。",
+          "sentenceTranslationKo": "긴 싸움 끝에 마침내 승리했다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{{ついに}}{夢|ゆめ}が{叶|かな}った。",
+            "answer": "ついに",
+            "distractors": [
+              "つい",
+              "ついで",
+              "ついでに"
+            ],
+            "translationKo": "마침내 꿈이 이루어졌다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「ついに{真実|しんじつ}が{明|あき}らかになった」",
+            "contextSentence": null,
+            "answer": "마침내 진실이 밝혀졌다 (오랜 기다림 후)",
+            "distractors": [
+              "그만 진실이 밝혀졌다",
+              "함께 진실이 밝혀졌다",
+              "겸사겸사 진실이 밝혀졌다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "마침내 합격 통지가 왔어요.",
+            "answer": "{{ついに}}{合格|ごうかく}の{知|し}らせが{来|き}ました。",
+            "distractors": [
+              "{{つい}}{合格|ごうかく}の{知|し}らせが{来|き}ました。",
+              "{{ついで}}{合格|ごうかく}の{知|し}らせが{来|き}ました。",
+              "{{ついでに}}{合格|ごうかく}の{知|し}らせが{来|き}ました。"
+            ],
+            "hintKo": "마침내·드디어 = ついに"
+          }
+        }
+      ]
     },
     {
       "no": 156,
@@ -7184,14 +11247,71 @@
       "romaji": "tsuide ni",
       "ref": "https://jlptsensei.com/learn-japanese-grammar/%e3%81%a4%e3%81%84%e3%81%a7%e3%81%ab-tsuide-ni-meaning/",
       "refOriginalEn": "while, incidentally, at the same time, on the way ~",
-      "meaningsKo": [],
-      "category": null,
-      "explanation": "",
-      "formation": null,
-      "notes": null,
-      "applicableQuizTypes": [],
-      "examples": [],
-      "quizzes": []
+      "meaningsKo": [
+        "~하는 김에, 겸사겸사"
+      ],
+      "category": "expression",
+      "explanation": "한 가지 일을 하는 기회에 다른 일도 함께 함을 나타낸다. 「~하는 김에」 의 의미. 부수적 행동을 추가하는 표현.",
+      "formation": "동사 사전형 / た형 / 명사+の + ついでに",
+      "notes": "「買い物に行くついでに、郵便局に寄った」 (장 보러 가는 김에 우체국에 들렀다). 부수적·계기적 행동.",
+      "applicableQuizTypes": [
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form"
+      ],
+      "examples": [
+        {
+          "sentence": "{買|か}い{物|もの}に{行|い}く{{ついでに}}、{郵便局|ゆうびんきょく}に{寄|よ}った。",
+          "sentenceTranslationKo": "장 보러 가는 김에 우체국에 들렀다.",
+          "note": null
+        },
+        {
+          "sentence": "{散歩|さんぽ}の{{ついでに}}、{本屋|ほんや}に{寄|よ}った。",
+          "sentenceTranslationKo": "산책하는 김에 서점에 들렀다.",
+          "note": null
+        }
+      ],
+      "quizzes": [
+        {
+          "type": "pattern_blank",
+          "payload": {
+            "sentence": "{出張|しゅっちょう}の{{ついでに}}、{観光|かんこう}もしてきた。",
+            "answer": "ついでに",
+            "distractors": [
+              "ついに",
+              "つい",
+              "ついて"
+            ],
+            "translationKo": "출장 가는 김에 관광도 하고 왔다."
+          }
+        },
+        {
+          "type": "form_meaning",
+          "payload": {
+            "prompt": "「{掃除|そうじ}するついでに、{洗濯|せんたく}もした」",
+            "contextSentence": null,
+            "answer": "청소하는 김에 빨래도 했다 (부수적)",
+            "distractors": [
+              "청소했고 마침내 빨래도 했다",
+              "청소했지만 그만 빨래도 했다",
+              "청소했고 함께 빨래도 했다"
+            ]
+          }
+        },
+        {
+          "type": "ko_to_jp_form",
+          "payload": {
+            "ko": "도쿄에 가는 김에 친구도 만나고 올게요.",
+            "answer": "{東京|とうきょう}に{行|い}く{{ついでに}}、{友達|ともだち}にも{会|あ}ってきます。",
+            "distractors": [
+              "{東京|とうきょう}に{行|い}く{{ついに}}、{友達|ともだち}にも{会|あ}ってきます。",
+              "{東京|とうきょう}に{行|い}く{{つい}}、{友達|ともだち}にも{会|あ}ってきます。",
+              "{東京|とうきょう}に{行|い}く{{ついて}}、{友達|ともだち}にも{会|あ}ってきます。"
+            ],
+            "hintKo": "~하는 김에 = 사전형 + ついでに"
+          }
+        }
+      ]
     },
     {
       "no": 157,
