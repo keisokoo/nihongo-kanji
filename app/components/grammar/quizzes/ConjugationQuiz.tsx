@@ -3,7 +3,9 @@ import type {
   ConjugationPayload,
   GrammarQuizExplanation,
 } from "~/lib/idb/grammar-types";
+import { parseSentence, tokensToPlain } from "~/lib/sentence";
 import { ChoiceButton, ChoiceGrid, QuizShell } from "../QuizShell";
+import { GrammarSentence } from "../GrammarSentence";
 import {
   QuizExplanationButton,
   QuizExplanationPanel,
@@ -39,15 +41,25 @@ export function ConjugationQuiz({
 }) {
   const [picked, setPicked] = usePickState(controlled);
   const expl = useQuizExplanation(itemId, quizIndex, initialExplanation);
+
+  // dictForm 은 ruby markup `{漢字|かな}` 가 포함될 수 있어 토큰화해서 렌더.
+  const dictTokens = useMemo(
+    () => parseSentence(payload.dictForm, "conjugation dictForm"),
+    [payload.dictForm],
+  );
+  const dictPlain = useMemo(() => tokensToPlain(dictTokens), [dictTokens]);
+
   const choices = useMemo(() => {
-    const all = [payload.answer, ...payload.distractors];
+    const all = [payload.answer, ...payload.distractors].map((raw) => ({
+      raw,
+      tokens: parseSentence(raw, "conjugation choice"),
+    }));
     // Deterministic-enough shuffle on mount
-    const a = [...all];
-    for (let i = a.length - 1; i > 0; i--) {
+    for (let i = all.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
+      [all[i], all[j]] = [all[j], all[i]];
     }
-    return a;
+    return all;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -68,7 +80,7 @@ export function ConjugationQuiz({
             <span className="ml-2">→ {payload.targetFormLabel}</span>
           </div>
           <div className="text-2xl font-semibold text-neutral-900 [font-family:'Noto_Sans_JP',sans-serif] sm:text-3xl dark:text-neutral-100">
-            {payload.dictForm}
+            <GrammarSentence tokens={dictTokens} highlightClass="" />
           </div>
         </div>
       }
@@ -76,15 +88,15 @@ export function ConjugationQuiz({
         <ChoiceGrid>
           {choices.map((c) => (
             <ChoiceButton
-              key={c}
-              myKey={c}
+              key={c.raw}
+              myKey={c.raw}
               pickedKey={picked}
               picked={picked !== null}
-              isCorrect={c === payload.answer}
+              isCorrect={c.raw === payload.answer}
               japanese
-              onPick={() => setPicked(c)}
+              onPick={() => setPicked(c.raw)}
             >
-              {c}
+              <GrammarSentence tokens={c.tokens} highlightClass="" />
             </ChoiceButton>
           ))}
         </ChoiceGrid>
@@ -92,7 +104,7 @@ export function ConjugationQuiz({
       footer={
         picked !== null && payload.hintKo ? <span>💡 {payload.hintKo}</span> : null
       }
-      ttsButton={<QuizTtsButton text={payload.dictForm} />}
+      ttsButton={<QuizTtsButton text={dictPlain} />}
       explanationButton={
         <QuizExplanationButton
           state={expl.state}

@@ -2578,7 +2578,7 @@
           "payload": {
             "dictForm": "{飲|の}む",
             "group": "godan",
-            "targetFormLabel": "放題형 (마음껏 ~하다)",
+            "targetFormLabel": "{放題|ほうだい}형 (마음껏 ~하다)",
             "answer": "{飲|の}み{放題|ほうだい}",
             "distractors": [
               "{飲|の}む{放題|ほうだい}",
@@ -12323,7 +12323,7 @@
           "payload": {
             "dictForm": "{見|み}る",
             "group": "ichidan",
-            "targetFormLabel": "損なう형 (기회 놓침)",
+            "targetFormLabel": "{損|そこ}なう형 (기회 놓침)",
             "answer": "{見|み}{損|そこ}なう",
             "distractors": [
               "{見|み}るそこなう",
@@ -16599,7 +16599,7 @@
           "payload": {
             "dictForm": "やる",
             "group": "godan",
-            "targetFormLabel": "尽くす형 (다 ~하다)",
+            "targetFormLabel": "{尽|つ}くす형 (다 ~하다)",
             "answer": "やり{尽|つ}くす",
             "distractors": [
               "やる{尽|つ}くす",

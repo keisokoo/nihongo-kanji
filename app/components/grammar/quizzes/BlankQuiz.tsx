@@ -42,13 +42,15 @@ export function BlankQuiz({
   // Pick 후에만 TTS 가능. 답이 들어간 완성 문장이라 spoiler 막기 위해.
   const ttsText = picked !== null ? tokensToPlain(tokens) : "";
   const choices = useMemo(() => {
-    const all = [payload.answer, ...payload.distractors];
-    const a = [...all];
-    for (let i = a.length - 1; i > 0; i--) {
+    const all = [payload.answer, ...payload.distractors].map((raw) => ({
+      raw,
+      tokens: parseSentence(raw, "blank-quiz choice"),
+    }));
+    for (let i = all.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
-      [a[i], a[j]] = [a[j], a[i]];
+      [all[i], all[j]] = [all[j], all[i]];
     }
-    return a;
+    return all;
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
@@ -73,15 +75,15 @@ export function BlankQuiz({
         <ChoiceGrid>
           {choices.map((c) => (
             <ChoiceButton
-              key={c}
-              myKey={c}
+              key={c.raw}
+              myKey={c.raw}
               pickedKey={picked}
               picked={picked !== null}
-              isCorrect={c === payload.answer}
+              isCorrect={c.raw === payload.answer}
               japanese
-              onPick={() => setPicked(c)}
+              onPick={() => setPicked(c.raw)}
             >
-              {c}
+              <GrammarSentence tokens={c.tokens} highlightClass="" />
             </ChoiceButton>
           ))}
         </ChoiceGrid>

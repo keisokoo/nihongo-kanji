@@ -1422,7 +1422,7 @@
           "payload": {
             "dictForm": "ある",
             "group": "godan",
-            "targetFormLabel": "得ない형 (불가능)",
+            "targetFormLabel": "{得|え}ない형 (불가능)",
             "answer": "あり{得|え}ない",
             "distractors": [
               "あるえない",
@@ -1497,7 +1497,7 @@
           "payload": {
             "dictForm": "ある",
             "group": "godan",
-            "targetFormLabel": "得る형 (가능성)",
+            "targetFormLabel": "{得|え}る형 (가능성)",
             "answer": "あり{得|え}る",
             "distractors": [
               "あるえる",
@@ -5917,7 +5917,7 @@
           "payload": {
             "dictForm": "{行|い}く",
             "group": "godan",
-            "targetFormLabel": "なくて済む형",
+            "targetFormLabel": "なくて{済|す}む형",
             "answer": "{行|い}かなくて{済|す}む",
             "distractors": [
               "{行|い}きなくて{済|す}む",
@@ -8810,7 +8810,7 @@
           "payload": {
             "dictForm": "やる",
             "group": "godan",
-            "targetFormLabel": "抜く형 (끝까지 ~하다)",
+            "targetFormLabel": "{抜|ぬ}く형 (끝까지 ~하다)",
             "answer": "やり{抜|ぬ}く",
             "distractors": [
               "やる{抜|ぬ}く",
@@ -9970,7 +9970,7 @@
           "payload": {
             "dictForm": "{終|お}わる",
             "group": "godan",
-            "targetFormLabel": "次第형 (~하는 대로)",
+            "targetFormLabel": "{次第|しだい}형 (~하는 대로)",
             "answer": "{終|お}わり{次第|しだい}",
             "distractors": [
               "{終|お}わる{次第|しだい}",
@@ -14178,7 +14178,7 @@
           "payload": {
             "dictForm": "{出席|しゅっせき}する",
             "group": "irregular",
-            "targetFormLabel": "ざるを得ない형",
+            "targetFormLabel": "ざるを{得|え}ない형",
             "answer": "{出席|しゅっせき}せざるを{得|え}ない",
             "distractors": [
               "{出席|しゅっせき}しざるを{得|え}ない",
@@ -14253,7 +14253,7 @@
           "payload": {
             "dictForm": "{心配|しんぱい}する",
             "group": "irregular",
-            "targetFormLabel": "ずに済む형",
+            "targetFormLabel": "ずに{済|す}む형",
             "answer": "{心配|しんぱい}せずに{済|す}む",
             "distractors": [
               "{心配|しんぱい}しずに{済|す}む",

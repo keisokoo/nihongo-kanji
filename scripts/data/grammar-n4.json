@@ -4636,7 +4636,7 @@
           "note": null
         },
         {
-          "sentence": "ご自由に{{お取りください}}。",
+          "sentence": "ご{自由|じゆう}に{{お取りください}}。",
           "sentenceTranslationKo": "자유롭게 가져가 주십시오.",
           "note": null
         }
@@ -8431,7 +8431,7 @@
           "payload": {
             "dictForm": "{走|はし}る",
             "group": "godan",
-            "targetFormLabel": "続ける형 (계속 ~하다)",
+            "targetFormLabel": "{続|つづ}ける형 (계속 ~하다)",
             "answer": "{走|はし}り{続|つづ}ける",
             "distractors": [
               "{走|はし}る{続|つづ}ける",
@@ -9313,7 +9313,7 @@
           "payload": {
             "dictForm": "{勉強|べんきょう}する",
             "group": "irregular",
-            "targetFormLabel": "ようと思う형",
+            "targetFormLabel": "ようと{思|おも}う형",
             "answer": "{勉強|べんきょう}しようと{思|おも}う",
             "distractors": [
               "{勉強|べんきょう}すると{思|おも}う",

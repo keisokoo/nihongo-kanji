@@ -16,7 +16,7 @@ RUBY_RE = re.compile(r'\{[^|{}]+\|[^}]+\}')
 TARGET_RE = re.compile(r'\{\{[^}]+\}\}')
 
 JP_FIELDS = {
-    "conjugation": ["dictForm", "answer"],
+    "conjugation": ["dictForm", "answer", "targetFormLabel"],
     "form_meaning": ["prompt", "contextSentence"],
     "ko_to_jp_form": ["answer"],
     "particle_blank": ["sentence"],

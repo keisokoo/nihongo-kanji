@@ -1,112 +1,12 @@
 [
   {
     "level": "n3",
-    "no": 86,
-    "pattern": "について",
-    "qidx": 1,
-    "type": "form_meaning",
-    "field": "prompt",
-    "value": "「日本{文化|ぶんか}について{学|まな}ぶ」",
-    "missing": "日本"
-  },
-  {
-    "level": "n3",
-    "no": 97,
-    "pattern": "っぱなし",
+    "no": 42,
+    "pattern": "切れない（きれない）",
     "qidx": 0,
     "type": "conjugation",
-    "field": "distractors[2]",
-    "value": "{開|あ}けて置く",
-    "missing": "置"
-  },
-  {
-    "level": "n3",
-    "no": 132,
-    "pattern": "的（てき）",
-    "qidx": 0,
-    "type": "conjugation",
-    "field": "answer",
-    "value": "{歴史|れきし}的",
-    "missing": "的"
-  },
-  {
-    "level": "n2",
-    "no": 82,
-    "pattern": "なくて済む（なくてすむ）",
-    "qidx": 0,
-    "type": "conjugation",
-    "field": "answer",
-    "value": "{行|い}かなくて済む",
-    "missing": "済"
-  },
-  {
-    "level": "n2",
-    "no": 82,
-    "pattern": "なくて済む（なくてすむ）",
-    "qidx": 0,
-    "type": "conjugation",
-    "field": "distractors[0]",
-    "value": "{行|い}きなくて済む",
-    "missing": "済"
-  },
-  {
-    "level": "n2",
-    "no": 82,
-    "pattern": "なくて済む（なくてすむ）",
-    "qidx": 0,
-    "type": "conjugation",
-    "field": "distractors[1]",
-    "value": "{行|い}くなくて済む",
-    "missing": "済"
-  },
-  {
-    "level": "n2",
-    "no": 82,
-    "pattern": "なくて済む（なくてすむ）",
-    "qidx": 0,
-    "type": "conjugation",
-    "field": "distractors[2]",
-    "value": "{行|い}ってなくて済む",
-    "missing": "済"
-  },
-  {
-    "level": "n2",
-    "no": 197,
-    "pattern": "ずに済む （ずにすむ）",
-    "qidx": 0,
-    "type": "conjugation",
-    "field": "answer",
-    "value": "{心配|しんぱい}せずに済む",
-    "missing": "済"
-  },
-  {
-    "level": "n2",
-    "no": 197,
-    "pattern": "ずに済む （ずにすむ）",
-    "qidx": 0,
-    "type": "conjugation",
-    "field": "distractors[0]",
-    "value": "{心配|しんぱい}しずに済む",
-    "missing": "済"
-  },
-  {
-    "level": "n2",
-    "no": 197,
-    "pattern": "ずに済む （ずにすむ）",
-    "qidx": 0,
-    "type": "conjugation",
-    "field": "distractors[1]",
-    "value": "{心配|しんぱい}するずに済む",
-    "missing": "済"
-  },
-  {
-    "level": "n2",
-    "no": 197,
-    "pattern": "ずに済む （ずにすむ）",
-    "qidx": 0,
-    "type": "conjugation",
-    "field": "distractors[2]",
-    "value": "{心配|しんぱい}してずに済む",
-    "missing": "済"
+    "field": "targetFormLabel",
+    "value": "切れない형 (다 ~할 수 없다)",
+    "missing": "切"
   }
 ]

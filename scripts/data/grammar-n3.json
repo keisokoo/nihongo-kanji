@@ -41,7 +41,7 @@
           "payload": {
             "dictForm": "{書|か}く",
             "group": "godan",
-            "targetFormLabel": "上げる형 (다 ~해 내다)",
+            "targetFormLabel": "{上|あ}げる형 (다 ~해 내다)",
             "answer": "{書|か}き{上|あ}げる",
             "distractors": [
               "{書|か}く{上|あ}げる",
@@ -260,7 +260,7 @@
           "payload": {
             "dictForm": "{話|はな}す",
             "group": "godan",
-            "targetFormLabel": "合う형 (서로 ~하다)",
+            "targetFormLabel": "{合|あ}う형 (서로 ~하다)",
             "answer": "{話|はな}し{合|あ}う",
             "distractors": [
               "{話|はな}す{合|あ}う",
@@ -1902,7 +1902,7 @@
           "payload": {
             "dictForm": "{太|ふと}る",
             "group": "godan",
-            "targetFormLabel": "気味형 (~한 기색)",
+            "targetFormLabel": "{気味|ぎみ}형 (~한 기색)",
             "answer": "{太|ふと}り{気味|ぎみ}",
             "distractors": [
               "{太|ふと}りがち",
@@ -3063,7 +3063,7 @@
           "payload": {
             "dictForm": "{覚|おぼ}える",
             "group": "ichidan",
-            "targetFormLabel": "切れない형 (다 ~할 수 없다)",
+            "targetFormLabel": "{切|き}れない형 (다 ~할 수 없다)",
             "answer": "{覚|おぼ}えきれない",
             "distractors": [
               "{覚|おぼ}えられない",
@@ -3211,7 +3211,7 @@
           "payload": {
             "dictForm": "{使|つか}う",
             "group": "godan",
-            "targetFormLabel": "切る형 (다 ~하다)",
+            "targetFormLabel": "{切|き}る형 (다 ~하다)",
             "answer": "{使|つか}い{切|き}る",
             "distractors": [
               "{使|つか}う{切|き}る",
@@ -3358,7 +3358,7 @@
           "payload": {
             "dictForm": "{走|はし}る",
             "group": "godan",
-            "targetFormLabel": "込む형 (안으로 ~하다)",
+            "targetFormLabel": "{込|こ}む형 (안으로 ~하다)",
             "answer": "{走|はし}り{込|こ}む",
             "distractors": [
               "{走|はし}る{込|こ}む",
@@ -5030,7 +5030,7 @@
           "payload": {
             "dictForm": "やる",
             "group": "godan",
-            "targetFormLabel": "直す형 (다시 ~하다)",
+            "targetFormLabel": "{直|なお}す형 (다시 ~하다)",
             "answer": "やり{直|なお}す",
             "distractors": [
               "やる{直|なお}す",
@@ -9610,7 +9610,7 @@
           "payload": {
             "dictForm": "{歴史|れきし}",
             "group": "noun",
-            "targetFormLabel": "的형 (~적)",
+            "targetFormLabel": "{的|てき}형 (~적)",
             "answer": "{歴史|れきし}{的|てき}",
             "distractors": [
               "{歴史|れきし}らしい",
@@ -10918,7 +10918,7 @@
           "payload": {
             "dictForm": "やる",
             "group": "godan",
-            "targetFormLabel": "通す형 (끝까지 ~하다)",
+            "targetFormLabel": "{通|とお}す형 (끝까지 ~하다)",
             "answer": "やり{通|とお}す",
             "distractors": [
               "やる{通|とお}す",
