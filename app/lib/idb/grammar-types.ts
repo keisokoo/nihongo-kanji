@@ -87,10 +87,14 @@ export type KoToJpFormPayload = {
   hintKo: string | null;
 };
 
-/** AI 해설은 quiz type 과 무관하게 동일 모양 — 별도 필드. */
-type WithExplanation = { explanation?: GrammarQuizExplanation | null };
+/** AI 해설 + source 는 quiz type 과 무관하게 동일 모양 — 별도 필드. */
+type WithMeta = {
+  explanation?: GrammarQuizExplanation | null;
+  /** seed: 시드 퀴즈. generated: 사용자가 AI 로 추가. */
+  source?: "seed" | "generated";
+};
 
-export type GrammarQuiz = WithExplanation &
+export type GrammarQuiz = WithMeta &
   (
     | { type: "conjugation"; payload: ConjugationPayload }
     | { type: "particle_blank"; payload: BlankPayload }
@@ -139,6 +143,8 @@ export type GrammarExample = {
   sentence: string;
   sentenceTranslationKo: string;
   note: string | null;
+  /** seed: 시드에 들어있던 예문. generated: 사용자가 AI 로 추가. */
+  source?: "seed" | "generated";
   /** AI 해설 — lazy 로 생성·캐시. */
   explanation?: GrammarExampleExplanation | null;
 };

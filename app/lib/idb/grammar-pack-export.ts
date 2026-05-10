@@ -1,36 +1,50 @@
 import { db } from "./db";
 import type {
+  GrammarExample,
   GrammarExampleExplanation,
   GrammarItemDeepExplanation,
+  GrammarQuiz,
   GrammarQuizExplanation,
 } from "./grammar-types";
 
 /**
- * 문법팩 delta export — 사용자가 AI 로 생성한 해설만 담음.
+ * 문법팩 delta export — 사용자가 AI 로 추가한 데이터.
  *
- * 시드 자체 (pattern / examples / quizzes 본문) 는 모든 사용자가 공유하므로
- * 제외. delta 는 한 PC 에서 생성한 해설을 다른 PC 로 옮기거나 백업할 때 사용.
+ * 시드 자체 (pattern / 시드 examples / 시드 quizzes 본문) 는 모든 사용자가
+ * 공유하므로 제외. delta 는 다음 두 종류를 모두 담음:
+ *
+ * 1) 시드 row 의 AI 해설 (deepExplanation, example.explanation, quiz.explanation)
+ *    — 매칭 키: pattern + (sentence / type+answer)
+ * 2) 사용자가 AI 로 추가한 새 row (source==="generated") — 통째로 export.
+ *    — 그 자체로 삽입.
  */
 
 export type GrammarExportItem = {
   /** 시드의 pattern 과 일치 — match key. */
   pattern: string;
-  /** 시드의 position (no) — fallback match key. */
+  /** 시드의 position (no) — fallback. */
   position: number;
+  /** 항목 deep explanation. */
   deepExplanation: GrammarItemDeepExplanation | null;
-  /** 인덱스가 시드와 동일하다고 가정. sentence 도 함께 보내서 match 검증. */
-  examples: Array<{
+  /** 시드 예문에 붙인 해설. */
+  seedExampleExplanations: Array<{
+    /** 시드 examples 배열 내 인덱스. */
     index: number;
+    /** 검증용 sentence 문자열. */
     sentence: string;
     explanation: GrammarExampleExplanation;
   }>;
-  quizzes: Array<{
+  /** 시드 퀴즈에 붙인 해설. */
+  seedQuizExplanations: Array<{
     index: number;
-    type: string; // 검증용
-    /** 정답 — quiz.payload.answer (raw 그대로). 검증·매칭용. */
+    type: string;
     answer: string;
     explanation: GrammarQuizExplanation;
   }>;
+  /** 사용자가 AI 로 추가한 새 예문 (source==="generated"). 통째로. */
+  generatedExamples: GrammarExample[];
+  /** 사용자가 AI 로 추가한 새 퀴즈. 통째로. */
+  generatedQuizzes: GrammarQuiz[];
 };
 
 export type GrammarPackExport = {
@@ -57,35 +71,44 @@ export async function exportGrammarPack(
 
   const exportItems: GrammarExportItem[] = [];
   for (const it of items) {
-    const exExamples = (it.examples ?? [])
-      .map((ex, i) =>
-        ex.explanation
-          ? {
-              index: i,
-              sentence: ex.sentence,
-              explanation: ex.explanation,
-            }
-          : null,
-      )
-      .filter((x): x is NonNullable<typeof x> => x !== null);
+    // 시드 vs 생성 구분 — source 가 "generated" 인 것만 generated 로 분리.
+    const seedExamples = (it.examples ?? []).map((ex, i) => ({ ex, i }));
+    const seedExampleExplanations: GrammarExportItem["seedExampleExplanations"] =
+      [];
+    const generatedExamples: GrammarExample[] = [];
+    for (const { ex, i } of seedExamples) {
+      if (ex.source === "generated") {
+        generatedExamples.push(ex);
+      } else if (ex.explanation) {
+        seedExampleExplanations.push({
+          index: i,
+          sentence: ex.sentence,
+          explanation: ex.explanation,
+        });
+      }
+    }
 
-    const exQuizzes = (it.quizzes ?? [])
-      .map((q, i) =>
-        q.explanation
-          ? {
-              index: i,
-              type: q.type,
-              answer: q.payload.answer,
-              explanation: q.explanation,
-            }
-          : null,
-      )
-      .filter((x): x is NonNullable<typeof x> => x !== null);
+    const seedQuizExplanations: GrammarExportItem["seedQuizExplanations"] = [];
+    const generatedQuizzes: GrammarQuiz[] = [];
+    for (const [i, q] of (it.quizzes ?? []).entries()) {
+      if (q.source === "generated") {
+        generatedQuizzes.push(q);
+      } else if (q.explanation) {
+        seedQuizExplanations.push({
+          index: i,
+          type: q.type,
+          answer: q.payload.answer,
+          explanation: q.explanation,
+        });
+      }
+    }
 
     if (
       !it.deepExplanation &&
-      exExamples.length === 0 &&
-      exQuizzes.length === 0
+      seedExampleExplanations.length === 0 &&
+      seedQuizExplanations.length === 0 &&
+      generatedExamples.length === 0 &&
+      generatedQuizzes.length === 0
     ) {
       continue; // skip — AI 데이터 없음
     }
@@ -94,8 +117,10 @@ export async function exportGrammarPack(
       pattern: it.pattern,
       position: it.position,
       deepExplanation: it.deepExplanation ?? null,
-      examples: exExamples,
-      quizzes: exQuizzes,
+      seedExampleExplanations,
+      seedQuizExplanations,
+      generatedExamples,
+      generatedQuizzes,
     });
   }
 

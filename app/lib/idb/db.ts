@@ -1,7 +1,9 @@
 import Dexie, { type Table } from "dexie";
 import type {
+  AiUsageLogRow,
   AudioCacheRow,
   Example,
+  Favorite,
   Kanji,
   Pack,
   Reading,
@@ -46,6 +48,10 @@ export class NihongoDB extends Dexie {
   grammarTestItems!: Table<GrammarTestItem, number>;
   /** v4 — 오답노트 mastery. composite primary key: [testKind+sourceId]. */
   weakItemMastery!: Table<WeakItemMastery, [string, number]>;
+  /** v5 — 즐겨찾기. composite primary key: [itemKind+itemId]. */
+  favorites!: Table<Favorite, [string, number]>;
+  /** v6 — AI 사용량 로그. */
+  aiUsageLog!: Table<AiUsageLogRow, number>;
 
   constructor() {
     super("nihongo");
@@ -78,6 +84,16 @@ export class NihongoDB extends Dexie {
     // v4: 오답노트.
     this.version(4).stores({
       weakItemMastery: "&[testKind+sourceId], masteredAt",
+    });
+
+    // v5: 즐겨찾기.
+    this.version(5).stores({
+      favorites: "&[itemKind+itemId], createdAt, itemKind",
+    });
+
+    // v6: AI 사용량 로그.
+    this.version(6).stores({
+      aiUsageLog: "++id, createdAt, [feature+createdAt], model",
     });
   }
 }

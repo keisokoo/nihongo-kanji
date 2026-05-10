@@ -20,7 +20,8 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function Home({ loaderData }: Route.ComponentProps) {
-  const { jlpt, custom, grammar, tests, weakItemCount } = loaderData;
+  const { jlpt, custom, grammar, tests, weakItemCount, favoritesCount } =
+    loaderData;
   const [showTestModal, setShowTestModal] = useState(false);
   const packsForTest = [...jlpt, ...custom].filter((p) => p.wordCount > 0);
   const grammarPacksForTest = grammar.filter((p) => p.count > 0);
@@ -45,6 +46,25 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             </p>
           </div>
           <div className="flex items-center gap-3">
+            <Link
+              to="/stats"
+              className="text-sm text-neutral-500 hover:text-neutral-900 dark:hover:text-neutral-100"
+              title="학습 통계"
+            >
+              📊
+            </Link>
+            {favoritesCount > 0 && (
+              <Link
+                to="/favorites"
+                className="inline-flex items-center gap-1.5 rounded-md border border-amber-300 bg-white px-3 py-1.5 text-sm text-amber-700 hover:border-amber-400 dark:border-amber-900/50 dark:bg-neutral-900 dark:text-amber-300"
+                title="즐겨찾기 항목 모음"
+              >
+                ★ 즐겨찾기
+                <span className="rounded-full bg-amber-100 px-1.5 text-xs tabular-nums text-amber-900 dark:bg-amber-950/50 dark:text-amber-200">
+                  {favoritesCount}
+                </span>
+              </Link>
+            )}
             {weakItemCount > 0 && (
               <Link
                 to="/review"

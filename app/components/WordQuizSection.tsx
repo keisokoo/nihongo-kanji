@@ -20,6 +20,7 @@ import { ConfirmModal } from "./ConfirmModal";
 import { SentenceRender } from "./SentenceRender";
 import { ExampleExplanationPanel } from "./ExampleExplanationPanel";
 import { showUsageToast } from "./Toast";
+import { FavoriteToggle } from "./FavoriteToggle";
 
 type GenStatus =
   | { kind: "idle" }
@@ -385,16 +386,20 @@ function ActiveWordQuiz({
                 type="button"
                 disabled={genStatus.kind === "loading" || !ai.hasAi}
                 onClick={() => generate("default")}
-                title={ai.hasAi ? undefined : "AI 키 미설정"}
+                title={
+                  ai.hasAi
+                    ? "이 단어로 예문 1개 생성"
+                    : "AI 키 미설정"
+                }
                 className="inline-flex items-center gap-2 rounded-md bg-neutral-900 px-5 py-2.5 text-base text-white hover:bg-neutral-700 disabled:opacity-50 dark:bg-neutral-100 dark:text-neutral-900"
               >
                 {genStatus.kind === "loading" ? (
                   <>
                     <Spinner className="h-4 w-4" />
-                    생성 중…
+                    예문 생성 중…
                   </>
                 ) : (
-                  "문제 생성"
+                  "✦ 예문 추가"
                 )}
               </button>
             </div>
@@ -578,16 +583,20 @@ function ActiveWordQuiz({
           type="button"
           disabled={isGenerating || !ai.hasAi}
           onClick={() => generate("default")}
-          title={ai.hasAi ? undefined : "AI 키 미설정"}
+          title={
+            ai.hasAi
+              ? "이 단어로 새 예문 1개 생성 (현재 보이는 예문은 제외)"
+              : "AI 키 미설정"
+          }
           className="inline-flex items-center gap-2 rounded-md bg-neutral-900 px-4 py-2 text-sm text-white hover:bg-neutral-700 disabled:opacity-50 dark:bg-neutral-100 dark:text-neutral-900"
         >
           {isGenerating && genStatus.tier === "default" ? (
             <>
               <Spinner className="h-3.5 w-3.5" />
-              생성 중…
+              예문 생성 중…
             </>
           ) : (
-            "문제 생성"
+            "✦ 예문 추가"
           )}
         </button>
       </div>
@@ -760,6 +769,7 @@ function WordHeader({
         >
           {wordTtsLoading ? <Spinner className="h-4 w-4" /> : "♪"}
         </button>
+        <FavoriteToggle itemKind="word" itemId={word.id} size="sm" />
       </div>
       <div className="flex flex-wrap items-center gap-2 sm:gap-3">
         {score && score.total > 0 && (

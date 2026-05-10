@@ -3,17 +3,21 @@ import {
   generateGrammarItemExplanation,
   generateGrammarExampleExplanation,
   generateGrammarQuizExplanation,
+  generateGrammarExample,
+  generateGrammarQuiz,
   type Tier,
   type Usage,
 } from "./claude";
 import { tokensToPlain } from "../sentence";
 import { parseSentence } from "../sentence";
 import type {
+  GrammarExample,
   GrammarExampleExplanation,
   GrammarItem,
   GrammarItemDeepExplanation,
-  GrammarQuizExplanation,
   GrammarQuiz,
+  GrammarQuizExplanation,
+  GrammarQuizType,
 } from "./grammar-types";
 
 type Result<T> = {
@@ -226,5 +230,300 @@ export async function addGrammarQuizExplanation(
     explanation,
     cached: false,
     usage: { ...gen.usage, model: gen.modelUsed },
+  };
+}
+
+// ─── Add new example / quiz via AI ──────────────────────────────────────────
+
+export type AddGrammarExampleResult = {
+  example: GrammarExample;
+  usage: (Usage & { model: string }) | null;
+};
+
+export async function addGrammarExample(
+  itemId: number,
+  tier: Tier = "default",
+): Promise<AddGrammarExampleResult> {
+  const d = db();
+  const item = await d.grammarItems.get(itemId);
+  if (!item) throw new Error("grammar item not found");
+
+  const existing = (item.examples ?? []).map((ex) => ex.sentence);
+
+  const gen = await generateGrammarExample(
+    {
+      pattern: item.pattern,
+      meaningKo: item.meaningsKo[0] ?? "",
+      formation: item.formation,
+      level: levelOf(item),
+      existingSentences: existing,
+    },
+    tier,
+  );
+
+  // 마크업 검증 — parseSentence 가 던지면 throw, target 1개 확인.
+  const tokens = parseSentence(
+    gen.result.sentence,
+    `add-grammar-example ${item.pattern}`,
+  );
+  const targetCount = tokens.filter((t) => t.target).length;
+  if (targetCount !== 1) {
+    throw new Error(
+      `generated sentence has ${targetCount} target markers (expected 1)`,
+    );
+  }
+
+  // Dedupe 체크 (혹시 모델이 무시했을 경우)
+  if (existing.includes(gen.result.sentence)) {
+    throw new Error("generated sentence duplicates an existing one");
+  }
+
+  const newExample: GrammarExample = {
+    sentence: gen.result.sentence,
+    sentenceTranslationKo: gen.result.sentenceTranslationKo,
+    note: gen.result.note ?? null,
+    source: "generated",
+    explanation: null,
+  };
+
+  const newExamples = [...(item.examples ?? []), newExample];
+  await d.grammarItems.update(itemId, { examples: newExamples });
+
+  return {
+    example: newExample,
+    usage: { ...gen.usage, model: gen.modelUsed },
+  };
+}
+
+export type AddGrammarQuizResult = {
+  quiz: GrammarQuiz;
+  usage: (Usage & { model: string }) | null;
+};
+
+const VALID_QUIZ_TYPES: ReadonlyArray<GrammarQuizType> = [
+  "conjugation",
+  "particle_blank",
+  "pattern_blank",
+  "form_meaning",
+  "ko_to_jp_form",
+];
+
+const VERB_GROUPS = new Set([
+  "godan",
+  "ichidan",
+  "irregular",
+  "i_adj",
+  "na_adj",
+  "noun",
+  "any",
+]);
+
+export async function addGrammarQuiz(
+  itemId: number,
+  tier: Tier = "default",
+): Promise<AddGrammarQuizResult> {
+  const d = db();
+  const item = await d.grammarItems.get(itemId);
+  if (!item) throw new Error("grammar item not found");
+
+  const applicable = item.applicableQuizTypes;
+  if (applicable.length === 0) {
+    throw new Error("이 항목엔 applicableQuizTypes 가 비어있어 퀴즈 생성 불가");
+  }
+
+  const existing = item.quizzes.map((q) => ({
+    type: q.type,
+    answer: q.payload.answer,
+  }));
+
+  const gen = await generateGrammarQuiz(
+    {
+      pattern: item.pattern,
+      meaningKo: item.meaningsKo[0] ?? "",
+      formation: item.formation,
+      level: levelOf(item),
+      applicableQuizTypes: applicable,
+      existingQuizzes: existing,
+    },
+    tier,
+  );
+
+  const built = validateAndBuildQuiz(
+    gen.result.type,
+    gen.result.payload,
+    applicable,
+  );
+
+  // Dedupe
+  if (
+    existing.some(
+      (e) => e.type === built.type && e.answer === built.payload.answer,
+    )
+  ) {
+    throw new Error("generated quiz duplicates an existing one");
+  }
+
+  const newQuiz: GrammarQuiz = {
+    ...built,
+    source: "generated",
+    explanation: null,
+  } as GrammarQuiz;
+
+  const newQuizzes = [...item.quizzes, newQuiz];
+  await d.grammarItems.update(itemId, { quizzes: newQuizzes });
+
+  return {
+    quiz: newQuiz,
+    usage: { ...gen.usage, model: gen.modelUsed },
+  };
+}
+
+/**
+ * AI 가 던진 quiz 의 type 과 payload 를 검증하고 도메인 객체로 빌드.
+ * 5개 타입 별로 필수 필드 / 마크업 / distractor 갯수 체크.
+ */
+function validateAndBuildQuiz(
+  type: string,
+  payload: Record<string, unknown>,
+  applicable: readonly string[],
+): GrammarQuiz {
+  if (!VALID_QUIZ_TYPES.includes(type as GrammarQuizType)) {
+    throw new Error(`unknown quiz type: ${type}`);
+  }
+  if (!applicable.includes(type)) {
+    throw new Error(`type ${type} not in applicableQuizTypes`);
+  }
+
+  const ans = payload.answer;
+  const distractors = payload.distractors;
+  if (typeof ans !== "string" || !ans.trim()) {
+    throw new Error("payload.answer missing");
+  }
+  if (
+    !Array.isArray(distractors) ||
+    distractors.length !== 3 ||
+    distractors.some((d) => typeof d !== "string")
+  ) {
+    throw new Error("payload.distractors must be 3 strings");
+  }
+  if ((distractors as string[]).includes(ans)) {
+    throw new Error("answer duplicates a distractor");
+  }
+
+  if (type === "conjugation") {
+    if (typeof payload.dictForm !== "string" || !payload.dictForm) {
+      throw new Error("conjugation: dictForm missing");
+    }
+    if (typeof payload.targetFormLabel !== "string") {
+      throw new Error("conjugation: targetFormLabel missing");
+    }
+    if (typeof payload.group !== "string" || !VERB_GROUPS.has(payload.group)) {
+      throw new Error(`conjugation: invalid group "${payload.group}"`);
+    }
+    return {
+      type: "conjugation",
+      payload: {
+        dictForm: payload.dictForm,
+        group: payload.group as never,
+        targetFormLabel: payload.targetFormLabel,
+        answer: ans,
+        distractors: distractors as string[],
+        hintKo: typeof payload.hintKo === "string" ? payload.hintKo : null,
+      },
+    };
+  }
+
+  if (type === "particle_blank" || type === "pattern_blank") {
+    if (typeof payload.sentence !== "string") {
+      throw new Error(`${type}: sentence missing`);
+    }
+    const tokens = parseSentence(payload.sentence, `add-grammar-quiz ${type}`);
+    const targets = tokens.filter((t) => t.target);
+    if (targets.length !== 1) {
+      throw new Error(`${type}: sentence target count = ${targets.length}`);
+    }
+    if (targets[0].text !== ans) {
+      throw new Error(
+        `${type}: sentence target "${targets[0].text}" != answer "${ans}"`,
+      );
+    }
+    if (typeof payload.translationKo !== "string") {
+      throw new Error(`${type}: translationKo missing`);
+    }
+    return {
+      type,
+      payload: {
+        sentence: payload.sentence,
+        answer: ans,
+        distractors: distractors as string[],
+        translationKo: payload.translationKo,
+      },
+    };
+  }
+
+  if (type === "form_meaning") {
+    if (typeof payload.prompt !== "string") {
+      throw new Error("form_meaning: prompt missing");
+    }
+    parseSentence(payload.prompt, "add-grammar-quiz form_meaning prompt");
+    if (
+      payload.contextSentence !== null &&
+      payload.contextSentence !== undefined &&
+      typeof payload.contextSentence !== "string"
+    ) {
+      throw new Error("form_meaning: contextSentence must be string or null");
+    }
+    if (typeof payload.contextSentence === "string") {
+      parseSentence(payload.contextSentence, "add-grammar-quiz form_meaning ctx");
+    }
+    if (/[{}]/.test(ans)) {
+      throw new Error("form_meaning: answer must be plain Korean (no markup)");
+    }
+    for (const [i, d] of (distractors as string[]).entries()) {
+      if (/[{}]/.test(d)) {
+        throw new Error(
+          `form_meaning: distractors[${i}] must be plain Korean (no markup)`,
+        );
+      }
+    }
+    return {
+      type: "form_meaning",
+      payload: {
+        prompt: payload.prompt,
+        contextSentence:
+          typeof payload.contextSentence === "string"
+            ? payload.contextSentence
+            : null,
+        answer: ans,
+        distractors: distractors as string[],
+      },
+    };
+  }
+
+  // ko_to_jp_form
+  if (typeof payload.ko !== "string") {
+    throw new Error("ko_to_jp_form: ko missing");
+  }
+  // answer + distractors 모두 마크업 검증, target 1개씩
+  const ansTokens = parseSentence(ans, "add-grammar-quiz ko-to-jp answer");
+  if (ansTokens.filter((t) => t.target).length !== 1) {
+    throw new Error("ko_to_jp_form: answer must contain one {{...}} target");
+  }
+  for (const [i, d] of (distractors as string[]).entries()) {
+    const tokens = parseSentence(d, `add-grammar-quiz ko-to-jp distractor[${i}]`);
+    if (tokens.filter((t) => t.target).length !== 1) {
+      throw new Error(
+        `ko_to_jp_form: distractors[${i}] must contain one {{...}} target`,
+      );
+    }
+  }
+  return {
+    type: "ko_to_jp_form",
+    payload: {
+      ko: payload.ko,
+      answer: ans,
+      distractors: distractors as string[],
+      hintKo: typeof payload.hintKo === "string" ? payload.hintKo : null,
+    },
   };
 }

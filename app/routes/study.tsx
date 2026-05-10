@@ -414,23 +414,25 @@ function NavButton({
   hint?: string;
 }) {
   const cls =
-    "rounded-md border border-neutral-200 bg-white px-2.5 py-1.5 text-sm transition sm:px-4 sm:py-2 sm:text-base dark:border-neutral-800 dark:bg-neutral-900";
+    "inline-flex max-w-[180px] items-baseline gap-1 overflow-hidden rounded-md border border-neutral-200 bg-white px-2.5 py-1.5 text-sm transition sm:max-w-[220px] sm:px-4 sm:py-2 sm:text-base dark:border-neutral-800 dark:bg-neutral-900";
   const enabled =
     "text-neutral-800 hover:border-neutral-400 dark:text-neutral-200 dark:hover:border-neutral-600";
   const disabled = "text-neutral-300 dark:text-neutral-700";
 
   const content = (
     <>
-      {longLabel ? (
-        <>
-          <span className="sm:hidden">{label}</span>
-          <span className="hidden sm:inline">{longLabel}</span>
-        </>
-      ) : (
-        label
-      )}
+      <span className="shrink-0">
+        {longLabel ? (
+          <>
+            <span className="sm:hidden">{label}</span>
+            <span className="hidden sm:inline">{longLabel}</span>
+          </>
+        ) : (
+          label
+        )}
+      </span>
       {hint && (
-        <span className="ml-1 text-neutral-400 [font-family:'Noto_Sans_JP',sans-serif]">
+        <span className="truncate text-neutral-400 [font-family:'Noto_Sans_JP',sans-serif]">
           {hint}
         </span>
       )}

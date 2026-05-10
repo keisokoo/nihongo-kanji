@@ -1,6 +1,28 @@
 import Anthropic from "@anthropic-ai/sdk";
 import { GoogleGenAI } from "@google/genai";
+import { db } from "./db";
 import { loadSettings } from "./settings";
+
+/** AI 사용량을 IDB 에 비동기 기록. 실패 무시 (logging 으로 본 흐름 막지 않음). */
+export async function logAiUsage(
+  feature: string,
+  model: string,
+  usage: Usage,
+): Promise<void> {
+  try {
+    await db().aiUsageLog.add({
+      createdAt: new Date(),
+      feature,
+      model,
+      inputTokens: usage.inputTokens,
+      outputTokens: usage.outputTokens,
+      cacheCreationInputTokens: usage.cacheCreationInputTokens,
+      cacheReadInputTokens: usage.cacheReadInputTokens,
+    } as never);
+  } catch (err) {
+    console.warn("[ai-usage-log] failed:", err);
+  }
+}
 
 export type Tier = "default" | "premium";
 
@@ -220,6 +242,8 @@ async function withFallback<T>(
   try {
     const { data, usage } = await call(resolved, primary);
     aggregated = addUsage(aggregated, usage);
+    // 매 호출 별 토큰 사용량을 사용량 로그에 기록 (validation 결과 무관 — 호출 비용은 발생).
+    void logAiUsage(label, primary, usage);
     if (validate(data))
       return { result: data, modelUsed: primary, usage: aggregated };
     lastErr = new Error("validation failed");
@@ -233,6 +257,7 @@ async function withFallback<T>(
     try {
       const { data, usage } = await call(resolved, fallback);
       aggregated = addUsage(aggregated, usage);
+      void logAiUsage(label, fallback, usage);
       if (validate(data)) {
         console.warn(
           `[claude:${label}] fell back to ${fallback} successfully`,
@@ -947,5 +972,252 @@ export async function generateGrammarQuizExplanation(
         GRAMMAR_QUIZ_EXPLANATION_SCHEMA,
       ),
     "grammar-quiz-explanation",
+  );
+}
+
+// ─── generateGrammarExample ─────────────────────────────────────────────────
+
+const GRAMMAR_EXAMPLE_SCHEMA = {
+  type: "object",
+  properties: {
+    sentence: { type: "string" },
+    sentenceTranslationKo: { type: "string" },
+    note: { type: ["string", "null"] },
+  },
+  required: ["sentence", "sentenceTranslationKo"],
+  additionalProperties: false,
+} as const;
+
+const GRAMMAR_EXAMPLE_SYSTEM_PROMPT = `You are a Japanese grammar example-sentence generator for Korean speakers studying JLPT.
+
+Produce ONE natural Japanese example sentence that uses the given grammar pattern, plus a Korean translation.
+
+OUTPUT — JSON with these fields:
+- "sentence": the Japanese sentence in inline-markup form (rules below)
+- "sentenceTranslationKo": natural Korean translation
+- "note" (optional): a short Korean note about the sentence (1 short clause). Use null if nothing notable.
+
+INLINE MARKUP for "sentence":
+- Wrap the grammar form's USE in the sentence as {{...}} EXACTLY ONCE — this is the target.
+- Wrap EVERY other kanji segment as {kanji|hiragana} — reading must match how it's actually pronounced.
+- Hiragana, katakana, particles, punctuation appear as plain text.
+- ⚠ {{...}} CANNOT contain ruby. If the target needs to include a kanji whose reading is not obvious, prefer "split-target": keep the kanji with ruby OUTSIDE {{}} and wrap only the kana suffix. e.g. "{走|はし}{{っちゃいけない}}" instead of "{{走っちゃいけない}}".
+
+Examples:
+- pattern "〜たい" → "{学校|がっこう}に{行|い}き{{たい}}です。"
+- pattern "ちゃいけない・じゃいけない" → "ここで{走|はし}{{っちゃいけない}}よ。"
+- pattern "だけ" → "{今日|きょう}は{水|みず}{{だけ}}{飲|の}みます。"
+
+CONSTRAINTS:
+- Vocabulary appropriate for the JLPT level given.
+- Exactly one {{...}} target marker.
+- Every non-target kanji has {kanji|hiragana}.
+- {{...}} CANNOT contain ruby — split target if needed.
+- Sentence ends with appropriate punctuation (。, ？, etc).
+- DO NOT reuse a sentence from the "existing" list — the new one must be different in structure or vocabulary.
+- Keep it short and natural (5–15 어절).`;
+
+export type GenerateGrammarExampleInput = {
+  pattern: string;
+  meaningKo: string;
+  formation: string | null;
+  level: string;
+  /** 기존 예문들 — 중복 회피용. */
+  existingSentences: string[];
+};
+
+export type GenerateGrammarExampleOutput = {
+  sentence: string;
+  sentenceTranslationKo: string;
+  note?: string | null;
+};
+
+function isGrammarExampleOutput(x: unknown): x is GenerateGrammarExampleOutput {
+  if (!x || typeof x !== "object") return false;
+  const o = x as Record<string, unknown>;
+  return (
+    typeof o.sentence === "string" &&
+    typeof o.sentenceTranslationKo === "string"
+  );
+}
+
+export async function generateGrammarExample(
+  input: GenerateGrammarExampleInput,
+  tier: Tier = "default",
+): Promise<{
+  result: GenerateGrammarExampleOutput;
+  modelUsed: string;
+  usage: Usage;
+}> {
+  const userMessage = [
+    `Pattern: ${input.pattern}`,
+    `Korean meaning: ${input.meaningKo}`,
+    input.formation ? `Formation: ${input.formation}` : null,
+    `JLPT Level: ${input.level}`,
+    input.existingSentences.length > 0
+      ? `Existing sentences (do NOT repeat any of these):\n${input.existingSentences.map((s) => `  - ${s}`).join("\n")}`
+      : null,
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  return withFallback<GenerateGrammarExampleOutput>(
+    tier,
+    isGrammarExampleOutput,
+    (resolved, model) =>
+      callJson(
+        resolved,
+        model,
+        GRAMMAR_EXAMPLE_SYSTEM_PROMPT,
+        userMessage,
+        GRAMMAR_EXAMPLE_SCHEMA,
+      ),
+    "grammar-example",
+  );
+}
+
+// ─── generateGrammarQuiz ─────────────────────────────────────────────────────
+
+const GRAMMAR_QUIZ_SCHEMA = {
+  type: "object",
+  properties: {
+    type: {
+      type: "string",
+      enum: [
+        "conjugation",
+        "particle_blank",
+        "pattern_blank",
+        "form_meaning",
+        "ko_to_jp_form",
+      ],
+    },
+    payload: {
+      type: "object",
+      // payload 형식은 type 별로 다양 — schema 는 헐거운 통합 검증.
+      additionalProperties: true,
+    },
+  },
+  required: ["type", "payload"],
+  additionalProperties: false,
+} as const;
+
+const GRAMMAR_QUIZ_SYSTEM_PROMPT = `You are a Japanese grammar quiz generator for Korean speakers studying JLPT.
+
+Pick ONE of the requested quiz types and produce a quality multiple-choice quiz with 1 correct answer + 3 distractors.
+
+OUTPUT — JSON: { "type": <one of the requested types>, "payload": {...} }
+
+PAYLOAD shapes by type:
+
+1) "conjugation"
+{
+  "dictForm": "<dictionary form, JP>",
+  "group": "godan|ichidan|irregular|i_adj|na_adj|noun|any",
+  "targetFormLabel": "<Korean label like 'ます형' or 'たい형'>",
+  "answer": "<correct conjugated form>",
+  "distractors": ["<wrong>", "<wrong>", "<wrong>"],
+  "hintKo": null
+}
+
+2) "particle_blank" / "pattern_blank"
+{
+  "sentence": "<inline-markup sentence with EXACTLY ONE {{X}} target where X = the answer>",
+  "answer": "<X — must equal target text>",
+  "distractors": ["<wrong>", "<wrong>", "<wrong>"],
+  "translationKo": "<KO translation>"
+}
+
+3) "form_meaning"
+{
+  "prompt": "<short Japanese form, may include ruby. {{}} not used>",
+  "contextSentence": null,
+  "answer": "<Korean meaning, plain>",
+  "distractors": ["<KO>", "<KO>", "<KO>"]
+}
+
+4) "ko_to_jp_form"
+{
+  "ko": "<Korean sentence>",
+  "answer": "<Japanese sentence with ruby + {{...}} target marking pattern usage>",
+  "distractors": ["<wrong JP with {{...}}>", "<wrong>", "<wrong>"],
+  "hintKo": null
+}
+
+INLINE MARKUP RULES:
+- {{...}} target appears EXACTLY ONCE per sentence (when used).
+- {{...}} CANNOT contain ruby — if a kanji is needed inside, split-target: keep kanji+ruby outside {{}}.
+- Every non-target kanji must have {kanji|hiragana}.
+
+QUALITY RULES:
+- Distractors should be plausible mistakes — wrong particle, wrong activation, wrong meaning — not obviously absurd.
+- Distractors must NOT equal the answer.
+- For 'form_meaning' answer/distractors: plain Korean (no markup).
+- For 'ko_to_jp_form' answer/distractors: full JP sentences with markup, each with one {{...}}.
+- For 'particle_blank'/'pattern_blank' sentence: {{}} content == answer string.
+- Vocabulary appropriate for the given JLPT level.
+- DO NOT generate a quiz that duplicates the given existing quizzes (same answer + same type combination).
+- Pick a type from "applicableQuizTypes". Avoid picking a type already used too many times if other applicable types are unused.`;
+
+export type GenerateGrammarQuizInput = {
+  pattern: string;
+  meaningKo: string;
+  formation: string | null;
+  level: string;
+  /** 적용 가능한 퀴즈 타입들. */
+  applicableQuizTypes: string[];
+  /** 기존 퀴즈 (중복 회피). */
+  existingQuizzes: Array<{ type: string; answer: string }>;
+};
+
+export type GenerateGrammarQuizOutput = {
+  type: string;
+  payload: Record<string, unknown>;
+};
+
+function isGrammarQuizOutput(x: unknown): x is GenerateGrammarQuizOutput {
+  if (!x || typeof x !== "object") return false;
+  const o = x as Record<string, unknown>;
+  return (
+    typeof o.type === "string" &&
+    o.payload !== null &&
+    typeof o.payload === "object"
+  );
+}
+
+export async function generateGrammarQuiz(
+  input: GenerateGrammarQuizInput,
+  tier: Tier = "default",
+): Promise<{
+  result: GenerateGrammarQuizOutput;
+  modelUsed: string;
+  usage: Usage;
+}> {
+  const userMessage = [
+    `Pattern: ${input.pattern}`,
+    `Korean meaning: ${input.meaningKo}`,
+    input.formation ? `Formation: ${input.formation}` : null,
+    `JLPT Level: ${input.level}`,
+    `Applicable quiz types: ${input.applicableQuizTypes.join(", ")}`,
+    input.existingQuizzes.length > 0
+      ? `Existing quizzes (do NOT duplicate type+answer):\n${input.existingQuizzes
+          .map((q) => `  - ${q.type}: ${q.answer}`)
+          .join("\n")}`
+      : null,
+  ]
+    .filter(Boolean)
+    .join("\n");
+
+  return withFallback<GenerateGrammarQuizOutput>(
+    tier,
+    isGrammarQuizOutput,
+    (resolved, model) =>
+      callJson(
+        resolved,
+        model,
+        GRAMMAR_QUIZ_SYSTEM_PROMPT,
+        userMessage,
+        GRAMMAR_QUIZ_SCHEMA,
+      ),
+    "grammar-quiz",
   );
 }

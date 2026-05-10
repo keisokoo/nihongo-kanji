@@ -239,6 +239,12 @@ export default function GrammarTest({ loaderData }: Route.ComponentProps) {
           levelLabel={levelLabel}
           onOpen={() => setHintOpen(true)}
           hasSource={!!current.sourceItemId && sourceItemMap.has(current.sourceItemId)}
+          /* blank quiz 는 패턴 가려진 상태에서 답 후보 여럿이 자연스러워 모호 →
+             한국어 의미를 힌트로 미리 노출 (패턴은 여전히 숨김). */
+          showMeaningHint={
+            current.quizSnapshot.type === "particle_blank" ||
+            current.quizSnapshot.type === "pattern_blank"
+          }
         />
 
         {hintOpen && (
@@ -595,6 +601,7 @@ function PatternRevealRow({
   levelLabel,
   onOpen,
   hasSource,
+  showMeaningHint,
 }: {
   picked: boolean;
   pattern: string;
@@ -602,13 +609,22 @@ function PatternRevealRow({
   levelLabel: string;
   onOpen: () => void;
   hasSource: boolean;
+  showMeaningHint?: boolean;
 }) {
   if (!picked) {
     return (
-      <div className="mb-2 text-xs text-neutral-500">
-        <span className="rounded bg-neutral-100 px-2 py-0.5 dark:bg-neutral-800">
+      <div className="mb-2 flex flex-wrap items-center gap-2 text-xs">
+        <span className="rounded bg-neutral-100 px-2 py-0.5 text-neutral-500 dark:bg-neutral-800">
           난이도 {levelLabel}
         </span>
+        {showMeaningHint && meaningsKo.length > 0 && (
+          <span
+            className="rounded bg-amber-50 px-2 py-0.5 text-amber-800 dark:bg-amber-950/40 dark:text-amber-200"
+            title="빈칸에 들어갈 패턴의 의미"
+          >
+            힌트 — {meaningsKo.join(" · ")}
+          </span>
+        )}
       </div>
     );
   }

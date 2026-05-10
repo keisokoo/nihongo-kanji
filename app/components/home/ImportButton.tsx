@@ -122,9 +122,11 @@ export function ImportButton() {
       revalidator.revalidate();
       const summary =
         `${r.packKey} ${r.mode === "replace" ? "교체" : "병합"} 완료 — ` +
-        `+${r.attachedItemExplanations} 항목 / ` +
-        `+${r.attachedExampleExplanations} 예문 / ` +
-        `+${r.attachedQuizExplanations} 퀴즈 해설` +
+        `+${r.attachedItemExplanations} 항목 해설 / ` +
+        `+${r.attachedExampleExplanations} 예문 해설 / ` +
+        `+${r.attachedQuizExplanations} 퀴즈 해설 / ` +
+        `+${r.insertedGeneratedExamples} 추가 예문 / ` +
+        `+${r.insertedGeneratedQuizzes} 추가 퀴즈` +
         (r.unknownPatterns.length > 0
           ? ` · 알 수 없는 패턴 ${r.unknownPatterns.length} 건`
           : "") +
@@ -207,14 +209,22 @@ function GrammarDeltaModeModal({
 }) {
   const itemCount = body.items.length;
   const exampleExplCount = body.items.reduce(
-    (n, it) => n + it.examples.length,
+    (n, it) => n + it.seedExampleExplanations.length,
     0,
   );
   const quizExplCount = body.items.reduce(
-    (n, it) => n + it.quizzes.length,
+    (n, it) => n + it.seedQuizExplanations.length,
     0,
   );
   const itemExplCount = body.items.filter((it) => it.deepExplanation).length;
+  const generatedExampleCount = body.items.reduce(
+    (n, it) => n + it.generatedExamples.length,
+    0,
+  );
+  const generatedQuizCount = body.items.reduce(
+    (n, it) => n + it.generatedQuizzes.length,
+    0,
+  );
   return (
     <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
       <div className="absolute inset-0 bg-neutral-900/40" onClick={onCancel} />
@@ -223,9 +233,12 @@ function GrammarDeltaModeModal({
           {body.title || body.key} — 문법 해설 가져오기
         </h3>
         <p className="mt-1 text-sm text-neutral-500">
-          AI 해설 delta — {itemCount} 항목 / 항목 해설 {itemExplCount} / 예문 해설{" "}
-          {exampleExplCount} / 퀴즈 해설 {quizExplCount}.
-          이 팩에 이미 만들어 둔 해설이 있을 수 있어요. 어떻게 적용할까요?
+          AI 데이터 delta — {itemCount} 항목 / 항목 해설 {itemExplCount} /
+          시드 예문 해설 {exampleExplCount} / 시드 퀴즈 해설 {quizExplCount}
+          {generatedExampleCount + generatedQuizCount > 0
+            ? ` / 추가 예문 ${generatedExampleCount} / 추가 퀴즈 ${generatedQuizCount}`
+            : ""}
+          . 어떻게 적용할까요?
         </p>
 
         <div className="mt-5 space-y-2">

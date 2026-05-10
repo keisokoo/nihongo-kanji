@@ -1,6 +1,7 @@
 import { GoogleGenAI, HarmBlockThreshold, HarmCategory } from "@google/genai";
 import { db } from "./db";
 import { loadSettings } from "./settings";
+import { logAiUsage } from "./claude";
 
 const TTS_MODEL = "gemini-3.1-flash-tts-preview";
 const TTS_VOICE = "Kore";
@@ -134,6 +135,14 @@ export async function synthesize(text: string): Promise<TtsResult> {
       meta?.totalTokenCount ??
       (meta?.promptTokenCount ?? 0) + (meta?.candidatesTokenCount ?? 0),
   };
+
+  // AI 사용량 로그에 기록 (Toast 와는 별도로 영구 보관).
+  void logAiUsage("tts", TTS_MODEL, {
+    inputTokens: usage.inputTokens,
+    outputTokens: usage.outputTokens,
+    cacheCreationInputTokens: 0,
+    cacheReadInputTokens: 0,
+  });
 
   return { blob, cached: false, usage };
 }

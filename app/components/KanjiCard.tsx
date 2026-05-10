@@ -7,6 +7,7 @@ import { useAiAvailability } from "~/lib/idb/use-ai-availability";
 import { Spinner } from "./Spinner";
 import { ConfirmModal } from "./ConfirmModal";
 import { showUsageToast } from "./Toast";
+import { FavoriteToggle } from "./FavoriteToggle";
 
 type Props = {
   kanji: Pick<Kanji, "id" | "character" | "packKey" | "meaningKo">;
@@ -42,24 +43,27 @@ export function KanjiCard({ kanji, readings }: Props) {
 
   return (
     <article className="relative rounded-2xl border border-neutral-200 bg-white p-5 sm:p-10 dark:border-neutral-800 dark:bg-neutral-900">
-      <button
-        type="button"
-        disabled={refetch?.state === "loading" || !ai.hasAi}
-        onClick={() => setShowModal(true)}
-        aria-label="음/훈독 + 의미 다시 생성"
-        title={
-          ai.hasAi
-            ? "AI로 음/훈독 + 한국어 의미 재생성"
-            : "AI 키 미설정 — 설정에서 입력해 주세요"
-        }
-        className="absolute right-3 top-3 inline-flex h-8 w-8 items-center justify-center rounded-full border border-neutral-300 bg-white text-base text-neutral-600 opacity-30 transition hover:opacity-100 disabled:opacity-20 sm:right-4 sm:top-4 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
-      >
-        {refetch?.state === "loading" ? (
-          <Spinner className="h-4 w-4" />
-        ) : (
-          "↻"
-        )}
-      </button>
+      <div className="absolute right-3 top-3 flex items-center gap-2 sm:right-4 sm:top-4">
+        <FavoriteToggle itemKind="kanji" itemId={kanji.id} size="sm" />
+        <button
+          type="button"
+          disabled={refetch?.state === "loading" || !ai.hasAi}
+          onClick={() => setShowModal(true)}
+          aria-label="음/훈독 + 의미 다시 생성"
+          title={
+            ai.hasAi
+              ? "AI로 음/훈독 + 한국어 의미 재생성"
+              : "AI 키 미설정 — 설정에서 입력해 주세요"
+          }
+          className="inline-flex h-7 w-7 items-center justify-center rounded-full border border-neutral-300 bg-white text-base text-neutral-600 opacity-30 transition hover:opacity-100 disabled:opacity-20 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
+        >
+          {refetch?.state === "loading" ? (
+            <Spinner className="h-4 w-4" />
+          ) : (
+            "↻"
+          )}
+        </button>
+      </div>
 
       <div className="flex items-start gap-4 sm:gap-10">
         <div className="text-[5rem] font-semibold leading-[0.9] text-neutral-900 sm:text-[8rem] md:text-[10rem] dark:text-neutral-100 [font-family:'Noto_Sans_JP',sans-serif]">

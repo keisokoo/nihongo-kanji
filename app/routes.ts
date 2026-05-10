@@ -9,5 +9,8 @@ export default [
   route("grammar/:packKey/:itemId", "routes/grammar.tsx"),
   route("grammar-test/:id", "routes/grammar-test.tsx"),
   route("review", "routes/review.tsx"),
+  route("favorites", "routes/favorites.tsx"),
+  route("stats", "routes/stats.tsx"),
+  route("ai-data", "routes/ai-data.tsx"),
   route("settings", "routes/settings.tsx"),
 ] satisfies RouteConfig;

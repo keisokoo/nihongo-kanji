@@ -173,6 +173,40 @@ export function isJlptLevel(key: string): key is JlptLevel {
 }
 
 /**
+ * AI 호출 사용량 로그. 비용 추적용.
+ *
+ * - feature: "grammar-quiz", "example-explanation" 등 (claude.ts withFallback label).
+ *   "tts" 로 별도 prefix.
+ * - 캐시 hit / fallback 한 호출도 모두 기록 (실제 발생한 token 합계).
+ */
+export type AiUsageLogRow = {
+  id: number; // ++id
+  createdAt: Date;
+  feature: string;
+  model: string;
+  inputTokens: number;
+  outputTokens: number;
+  cacheCreationInputTokens: number;
+  cacheReadInputTokens: number;
+};
+
+/**
+ * 즐겨찾기 (⭐). 한자 / 단어 / 문법 항목을 마크해서 별도 페이지에서 모아보기.
+ *
+ * 복합 unique key: (itemKind, itemId)
+ *   - kanji:   itemId = Kanji.id
+ *   - word:    itemId = Word.id
+ *   - grammar: itemId = GrammarItem.id
+ */
+export type FavoriteKind = "kanji" | "word" | "grammar";
+
+export type Favorite = {
+  itemKind: FavoriteKind;
+  itemId: number;
+  createdAt: Date;
+};
+
+/**
  * 오답노트 — 사용자가 시험에서 틀렸던 항목 중 "기억함" 으로 표시한 row.
  * 시험 결과 자체는 건드리지 않고 별도로 기록 → 시험 통계는 보존.
  *

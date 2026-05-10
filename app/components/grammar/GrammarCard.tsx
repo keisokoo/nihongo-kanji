@@ -9,6 +9,7 @@ import { useAiAvailability } from "~/lib/idb/use-ai-availability";
 import { ConfirmModal } from "~/components/ConfirmModal";
 import { showUsageToast } from "~/components/Toast";
 import { Spinner } from "~/components/Spinner";
+import { FavoriteToggle } from "~/components/FavoriteToggle";
 import { ExplanationCard, ExplSection, type ExplStatus } from "./ExplanationCard";
 
 /**
@@ -68,6 +69,7 @@ export function GrammarCard({ item }: { item: GrammarItem }) {
         </div>
         <div className="flex items-center gap-2">
           <CategoryBadge category={item.category} />
+          <FavoriteToggle itemKind="grammar" itemId={item.id} />
           <button
             type="button"
             disabled={status.kind === "loading" || (!explanation && !ai.hasAi)}
