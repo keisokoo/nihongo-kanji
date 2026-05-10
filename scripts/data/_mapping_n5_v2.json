@@ -1,0 +1,12 @@
+{
+  "_comment": "N5 v2 패치: basic-case (の/を/に/で), multi-form (ほうがいい/んです/のです), から 의 related 추가. 고정표현 (があります/がいます) 은 이미 null 상태.",
+  "10": {"primary": "particle:basic-case"},
+  "20": {"primary": "verb:ta", "related": ["verb:dict", "verb:nai"]},
+  "28": {"primary": "conjunction:reason", "related": ["particle:basic-case"]},
+  "51": {"primary": "verb:dict", "related": ["adj:i", "adj:na"]},
+  "53": {"primary": "particle:basic-case"},
+  "57": {"primary": "particle:basic-case"},
+  "58": {"primary": "verb:dict", "related": ["adj:i", "adj:na"]},
+  "65": {"primary": "particle:basic-case"},
+  "80": {"primary": "particle:basic-case"}
+}

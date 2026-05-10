@@ -31,12 +31,22 @@ export type HomeTest = {
 
 export type HomeFamily = RuleFamilyMeta & { count: number };
 
+export type HomeFoundation = {
+  id: number;
+  packKey: string;
+  pattern: string;
+  meaningsKo: string[];
+  ruleFamily: string | null;
+};
+
 export type HomeData = {
   jlpt: HomePack[];
   custom: HomePack[];
   grammar: HomeGrammarPack[];
   /** 멤버 1명 이상 있는 룰 패밀리만 surface. */
   families: HomeFamily[];
+  /** isFoundation=true 인 grammarItems. 비어있으면 home 섹션 안 보임. */
+  foundations: HomeFoundation[];
   tests: HomeTest[];
   weakItemCount: number;
   favoritesCount: number;
@@ -160,6 +170,34 @@ async function loadGrammarTests(): Promise<HomeTest[]> {
   }));
 }
 
+async function loadFoundations(): Promise<HomeFoundation[]> {
+  const d = db();
+  const items: HomeFoundation[] = [];
+  await d.grammarItems.each((it) => {
+    if (it.isFoundation === true) {
+      items.push({
+        id: it.id,
+        packKey: it.packKey,
+        pattern: it.pattern,
+        meaningsKo: it.meaningsKo,
+        ruleFamily: it.ruleFamily ?? null,
+      });
+    }
+  });
+  // 룰 패밀리 order 로 정렬 (학습 순서 — ます → て → ない → た → ...). family 없으면 마지막.
+  items.sort((a, b) => {
+    const fa = a.ruleFamily
+      ? (RULE_FAMILIES.find((f) => f.id === a.ruleFamily)?.order ?? 999)
+      : 1000;
+    const fb = b.ruleFamily
+      ? (RULE_FAMILIES.find((f) => f.id === b.ruleFamily)?.order ?? 999)
+      : 1000;
+    if (fa !== fb) return fa - fb;
+    return a.pattern.localeCompare(b.pattern);
+  });
+  return items;
+}
+
 async function loadGrammarPacks(): Promise<HomeGrammarPack[]> {
   const d = db();
   const packs = await d.grammarPacks.toArray();
@@ -197,6 +235,7 @@ export async function loadHomeData(): Promise<HomeData> {
     weakItemCount,
     favoritesCount,
     familyCounts,
+    foundations,
   ] = await Promise.all([
     loadPacks(),
     loadGrammarPacks(),
@@ -205,6 +244,7 @@ export async function loadHomeData(): Promise<HomeData> {
     getWeakItemCount(),
     getFavoritesCount(),
     loadAllFamilyCounts(),
+    loadFoundations(),
   ]);
   const tests = [...wordTests, ...grammarTests].sort(
     (a, b) => +b.createdAt - +a.createdAt,
@@ -220,6 +260,7 @@ export async function loadHomeData(): Promise<HomeData> {
     custom,
     grammar,
     families,
+    foundations,
     tests,
     weakItemCount,
     favoritesCount,

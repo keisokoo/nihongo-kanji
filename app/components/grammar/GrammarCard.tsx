@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
+import { Link } from "react-router";
 import type {
   GrammarCategory,
   GrammarItem,
@@ -10,6 +11,7 @@ import {
   addGrammarUsageGuide,
 } from "~/lib/idb/grammar-actions";
 import { useAiAvailability } from "~/lib/idb/use-ai-availability";
+import { RULE_FAMILY_BY_ID } from "~/lib/grammar-families";
 import { ConfirmModal } from "~/components/ConfirmModal";
 import { showUsageToast } from "~/components/Toast";
 import { Spinner } from "~/components/Spinner";
@@ -21,11 +23,27 @@ import {
 } from "./ExplanationCard";
 import { UsageGuidePanel } from "./UsageGuidePanel";
 
+export type FoundationLink = {
+  familyId: string;
+  isPrimary: boolean;
+  item: GrammarItem;
+};
+
 /**
  * 상단 카드 — 문법 패턴의 메타 정보.
  * 한자팩의 KanjiCard 자리.
+ *
+ * @param foundationLinks  derived 항목일 때 ruleFamily/relatedFamilies 의
+ *   foundation 항목들. 클릭 시 모달로 그 foundation GrammarCard peek.
+ *   undefined / [] 이면 링크 안 표시 (모달 안에서 nested rendering 시 등).
  */
-export function GrammarCard({ item }: { item: GrammarItem }) {
+export function GrammarCard({
+  item,
+  foundationLinks = [],
+}: {
+  item: GrammarItem;
+  foundationLinks?: FoundationLink[];
+}) {
   const ai = useAiAvailability();
   const [explanation, setExplanation] =
     useState<GrammarItemDeepExplanation | null>(item.deepExplanation ?? null);
@@ -40,6 +58,9 @@ export function GrammarCard({ item }: { item: GrammarItem }) {
   const [guideOpen, setGuideOpen] = useState(false);
   const [guideStatus, setGuideStatus] = useState<ExplStatus>({ kind: "idle" });
   const [showGuideRegenModal, setShowGuideRegenModal] = useState(false);
+
+  // 기초 항목 peek 모달
+  const [peekIndex, setPeekIndex] = useState<number | null>(null);
 
   async function fetchExplanation(tier: "default" | "premium") {
     setOpen(true);
@@ -183,6 +204,57 @@ export function GrammarCard({ item }: { item: GrammarItem }) {
         </div>
       )}
 
+      {foundationLinks.length > 0 && (
+        <div className="mt-5">
+          <div className="mb-2 flex items-baseline gap-2 text-xs">
+            <span className="font-medium uppercase tracking-wide text-neutral-500">
+              📚 기초 항목
+            </span>
+            <span className="text-neutral-400">
+              이 패턴이 의존하는 활용 — 클릭해서 카드 펼침
+            </span>
+          </div>
+          <div className="flex flex-wrap gap-2">
+            {foundationLinks.map((link, i) => {
+              const familyMeta = RULE_FAMILY_BY_ID.get(link.familyId);
+              return (
+                <button
+                  key={link.familyId}
+                  type="button"
+                  onClick={() => setPeekIndex(i)}
+                  className={`inline-flex items-center gap-1.5 rounded-md border px-2.5 py-1 text-xs transition ${
+                    link.isPrimary
+                      ? "border-emerald-300 bg-emerald-50 text-emerald-800 hover:border-emerald-400 dark:border-emerald-900/50 dark:bg-emerald-950/30 dark:text-emerald-200"
+                      : "border-neutral-300 bg-white text-neutral-700 hover:border-neutral-400 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
+                  }`}
+                  title={
+                    familyMeta?.title
+                      ? `${familyMeta.title} ${link.isPrimary ? "(주요)" : "(관련)"}`
+                      : undefined
+                  }
+                >
+                  <span className="[font-family:'Noto_Sans_JP',sans-serif] font-semibold">
+                    {link.item.pattern}
+                  </span>
+                  {!link.isPrimary && (
+                    <span className="text-[10px] uppercase tracking-wide opacity-70">
+                      관련
+                    </span>
+                  )}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+      )}
+
+      {peekIndex !== null && foundationLinks[peekIndex] && (
+        <FoundationPeekModal
+          link={foundationLinks[peekIndex]}
+          onClose={() => setPeekIndex(null)}
+        />
+      )}
+
       {guideOpen && (
         <UsageGuidePanel
           guide={guide}
@@ -278,5 +350,60 @@ function CategoryBadge({ category }: { category: GrammarCategory }) {
     <span className="shrink-0 rounded-full bg-sky-100 px-3 py-1 text-xs font-medium text-sky-800 dark:bg-sky-950 dark:text-sky-200">
       {CATEGORY_LABELS[category]}
     </span>
+  );
+}
+
+/**
+ * Foundation peek 모달 — 같은 GrammarCard 를 모달 안에서 재사용.
+ * 모달 안 카드는 자체 foundationLinks 빈 배열로 (재귀 방지).
+ * "상세 페이지로" 링크로 그 항목 일반 페이지로 이동도 가능.
+ */
+function FoundationPeekModal({
+  link,
+  onClose,
+}: {
+  link: FoundationLink;
+  onClose: () => void;
+}) {
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (e.key === "Escape") onClose();
+    }
+    window.addEventListener("keydown", onKey);
+    const prevOverflow = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
+    return () => {
+      window.removeEventListener("keydown", onKey);
+      document.body.style.overflow = prevOverflow;
+    };
+  }, [onClose]);
+
+  return (
+    <div className="fixed inset-0 z-50 flex items-center justify-center p-4">
+      <div className="absolute inset-0 bg-neutral-900/40" onClick={onClose} />
+      <div className="relative w-full max-w-3xl">
+        <div className="absolute -top-3 left-0 right-12 z-10 flex items-center justify-start">
+          <Link
+            to={`/grammar/${encodeURIComponent(link.item.packKey)}/${link.item.id}`}
+            onClick={onClose}
+            className="rounded-md border border-neutral-200 bg-white px-3 py-1 text-xs text-neutral-700 shadow hover:border-neutral-400 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300"
+          >
+            상세 페이지로 →
+          </Link>
+        </div>
+        <button
+          type="button"
+          onClick={onClose}
+          aria-label="닫기"
+          className="absolute -top-3 -right-3 z-10 inline-flex h-8 w-8 items-center justify-center rounded-full border border-neutral-200 bg-white text-neutral-600 shadow hover:bg-neutral-100 dark:border-neutral-700 dark:bg-neutral-900 dark:text-neutral-300 dark:hover:bg-neutral-800"
+        >
+          ✕
+        </button>
+        <div className="max-h-[85vh] overflow-y-auto rounded-2xl">
+          {/* nested 카드 — foundationLinks=[] 로 재귀 차단 */}
+          <GrammarCard item={link.item} foundationLinks={[]} />
+        </div>
+      </div>
+    </div>
   );
 }

@@ -260,11 +260,19 @@ export type GrammarItem = {
   usageGuide?: GrammarUsageGuide | null;
 
   /**
-   * 같은 변형/사용 룰을 공유하는 family ID. 항목간 그룹화 용.
-   * 예: "verb:masu" / "adj:i" / "particle:limit". null = 단독.
+   * 같은 변형/사용 룰을 공유하는 **주요** family ID. 그룹화·카운트·AI prompt
+   * foundation 참조의 기준. 단독은 null.
    * Family ID 목록은 app/lib/grammar-families.ts 의 RULE_FAMILIES 레지스트리.
    */
   ruleFamily?: string | null;
+  /**
+   * **보조** family ID 들. 패턴이 여러 형태를 동시에 받을 때 부가 정보.
+   * 예: ほうがいい 가 ruleFamily="verb:ta" 인데 relatedFamilies=["verb:dict","verb:nai"]
+   * — primary 는 가장 흔한 사용, related 는 다른 활용도 받음을 표시.
+   * AI usage guide prompt 가 이걸 보고 "추가로 X 형태도 받음" 언급 가능.
+   * 패밀리 카드 카운트엔 영향 X (primary 만 카운트).
+   */
+  relatedFamilies?: string[];
   /**
    * 이 항목이 family 의 기초 (변형 규칙 정의자) 인지.
    * true 인 항목은 family 페이지의 헤드 카드 + 그룹별 변형 규칙 풀 가이드.
@@ -303,6 +311,8 @@ export type GrammarSeedItem = {
   quizzes: GrammarQuiz[];
   /** 룰 family ID — RULE_FAMILIES 안의 값. 단독 항목은 null. */
   ruleFamily?: string | null;
+  /** 보조 family IDs (선택). primary 외 추가로 받는 활용 형태. */
+  relatedFamilies?: string[];
   /** family 의 기초 항목인지. */
   isFoundation?: boolean;
 };

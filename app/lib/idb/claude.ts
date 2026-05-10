@@ -1097,6 +1097,11 @@ export type GenerateGrammarUsageGuideInput = {
   isFoundation?: boolean;
   /** 같은 family 의 foundation 항목 pattern (derived 일 때 참조용). */
   foundationPattern?: string | null;
+  /**
+   * 보조 family 의 foundation patterns (배열). 이 패턴이 다른 활용 형태도
+   * 받을 때 prompt 에 "추가로 X·Y 형태도 받음" 부가 언급용.
+   */
+  relatedFoundationPatterns?: string[];
 };
 
 export type GenerateGrammarUsageGuideOutput = {
@@ -1140,11 +1145,16 @@ export async function generateGrammarUsageGuide(
   modelUsed: string;
   usage: Usage;
 }> {
+  const relatedHint =
+    (input.relatedFoundationPatterns?.length ?? 0) > 0
+      ? `\n또한 이 패턴은 다음 형태도 받을 수 있습니다: ${input.relatedFoundationPatterns!.map((p) => `"${p}"`).join(", ")}. 첫 section 에서 가볍게 언급해 주세요 — 각 형태가 어떤 뉘앙스를 만드는지 (있으면).`
+      : "";
+
   const familyHint =
     input.isFoundation === true
       ? `\n[FOUNDATION ITEM] 이 항목은 "${input.ruleFamily}" family 의 기초입니다. 그룹별/형태별 변형 규칙을 풀로 (1그룹/2그룹/3그룹 또는 현재/과거/부정/과거부정 등) 풍부하게 출력하세요. 이 항목이 변형 규칙의 reference 역할.`
       : input.ruleFamily
-        ? `\n[DERIVED ITEM] 이 항목은 "${input.ruleFamily}" family 에 속하지만 기초가 아닙니다. 변형 규칙은 ${input.foundationPattern ? `"${input.foundationPattern}"` : "기초 항목"}와 동일하므로 **반복하지 마세요**. 첫 section 에서 "활용 규칙은 ${input.foundationPattern ?? "기초 항목"}과 동일" 정도로 짧게 언급하고, 의미·용법·뉘앙스·비교에 집중하세요.`
+        ? `\n[DERIVED ITEM] 이 항목은 "${input.ruleFamily}" family 에 속하지만 기초가 아닙니다. 변형 규칙은 ${input.foundationPattern ? `"${input.foundationPattern}"` : "기초 항목"}와 동일하므로 **반복하지 마세요**. 첫 section 에서 "활용 규칙은 ${input.foundationPattern ?? "기초 항목"}과 동일" 정도로 짧게 언급하고, 의미·용법·뉘앙스·비교에 집중하세요.${relatedHint}`
         : "";
 
   const userMessage = [

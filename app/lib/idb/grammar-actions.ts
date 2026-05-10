@@ -260,6 +260,17 @@ export async function addGrammarUsageGuide(
     foundationPattern = foundation?.pattern ?? null;
   }
 
+  // related families 의 foundation 도 lookup (배열)
+  const relatedFoundationPatterns: string[] = [];
+  for (const fid of item.relatedFamilies ?? []) {
+    const f = await d.grammarItems
+      .where("ruleFamily")
+      .equals(fid)
+      .filter((it) => it.isFoundation === true)
+      .first();
+    if (f?.pattern) relatedFoundationPatterns.push(f.pattern);
+  }
+
   const gen = await generateGrammarUsageGuide(
     {
       pattern: item.pattern,
@@ -271,6 +282,7 @@ export async function addGrammarUsageGuide(
       ruleFamily: item.ruleFamily ?? null,
       isFoundation: item.isFoundation === true,
       foundationPattern,
+      relatedFoundationPatterns,
     },
     tier,
   );

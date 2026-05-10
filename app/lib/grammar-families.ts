@@ -148,6 +148,14 @@ export const RULE_FAMILIES: RuleFamilyMeta[] = [
 
   // ── 조사 family ──
   {
+    id: "particle:basic-case",
+    title: "기본 격조사 (の / を / に / へ / で / と / から)",
+    description:
+      "문장 구조의 뼈대 — 명사 간 관계·역할을 표시하는 기본 조사들.",
+    group: "particle",
+    order: 39,
+  },
+  {
     id: "particle:topic-subject",
     title: "주제·주격 (は / が)",
     description: "は 와 が 의 사용 구분 — 신·구 정보, 강조, 대비.",

@@ -187,6 +187,7 @@ export async function importGrammarPack(
         examples: seedItem.examples,
         quizzes: seedItem.quizzes,
         ruleFamily: seedItem.ruleFamily ?? null,
+        relatedFamilies: seedItem.relatedFamilies ?? [],
         isFoundation: seedItem.isFoundation ?? false,
         createdAt: new Date(),
       } as never);

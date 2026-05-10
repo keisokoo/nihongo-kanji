@@ -48,6 +48,34 @@ export async function clientLoader({ params }: Route.ClientLoaderArgs) {
       .first(),
   ]);
 
+  // Foundation links — 이 항목이 derived 일 때 ruleFamily + relatedFamilies 의
+  // foundation 항목들을 모달용으로 fetch. 자기 자신이 foundation 이면 skip
+  // (자기 → 자기 링크 불필요).
+  type FoundationLink = {
+    familyId: string;
+    isPrimary: boolean;
+    item: typeof target;
+  };
+  const foundationLinks: FoundationLink[] = [];
+  if (!target.isFoundation) {
+    const familyIds = [
+      ...(target.ruleFamily
+        ? [{ id: target.ruleFamily, isPrimary: true }]
+        : []),
+      ...(target.relatedFamilies ?? []).map((id) => ({ id, isPrimary: false })),
+    ];
+    for (const { id: fid, isPrimary } of familyIds) {
+      const found = await d.grammarItems
+        .where("ruleFamily")
+        .equals(fid)
+        .filter((it) => it.isFoundation === true)
+        .first();
+      if (found) {
+        foundationLinks.push({ familyId: fid, isPrimary, item: found });
+      }
+    }
+  }
+
   return {
     item: target,
     pack: pack ?? null,
@@ -56,6 +84,7 @@ export async function clientLoader({ params }: Route.ClientLoaderArgs) {
     total,
     prev: prev ? { id: prev.id, pattern: prev.pattern } : null,
     next: next ? { id: next.id, pattern: next.pattern } : null,
+    foundationLinks,
   };
 }
 
@@ -70,7 +99,8 @@ export function meta({ data }: Route.MetaArgs) {
 }
 
 export default function Grammar({ loaderData }: Route.ComponentProps) {
-  const { item, pack, packKey, position, total, prev, next } = loaderData;
+  const { item, pack, packKey, position, total, prev, next, foundationLinks } =
+    loaderData;
   const [listOpen, setListOpen] = useState(false);
 
   return (
@@ -138,7 +168,11 @@ export default function Grammar({ loaderData }: Route.ComponentProps) {
         />
 
         <section className="mb-6">
-          <GrammarCard key={item.id} item={item} />
+          <GrammarCard
+            key={item.id}
+            item={item}
+            foundationLinks={foundationLinks}
+          />
         </section>
 
         {item.examples.length > 0 && (

@@ -77,8 +77,7 @@
             "hintKo": "끝까지 완성 = ます형 + 上げる"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 2,
@@ -296,8 +295,7 @@
             "hintKo": "상호 동작 = ます형 + 合う"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 5,
@@ -385,8 +383,7 @@
             "hintKo": "해결책 제안 = ば형 + いい"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 6,
@@ -460,8 +457,7 @@
             "hintKo": "과거 후회 = ば형 + よかった"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 7,
@@ -533,8 +529,7 @@
             "hintKo": "비례 변화 = ば형 + 사전형 + ほど"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 8,
@@ -608,8 +603,7 @@
             "hintKo": "가정+아쉬움 = ば형 ~ のに"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 9,
@@ -681,8 +675,7 @@
             "hintKo": "부정적 한정 = て형 + ばかりで"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 10,
@@ -754,8 +747,7 @@
             "hintKo": "추가 정보 = ばかりでなく"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 11,
@@ -843,8 +835,7 @@
             "hintKo": "당위·도덕 의무 = 사전형 + べきだ"
           }
         }
-      ],
-      "ruleFamily": "verb:dict"
+      ]
     },
     {
       "no": 12,
@@ -918,8 +909,7 @@
             "hintKo": "도덕적 금지 = 사전형 + べきではない"
           }
         }
-      ],
-      "ruleFamily": "verb:dict"
+      ]
     },
     {
       "no": 13,
@@ -1207,8 +1197,7 @@
             "hintKo": "한정 = 명사 + だけ"
           }
         }
-      ],
-      "ruleFamily": "particle:limit"
+      ]
     },
     {
       "no": 17,
@@ -1280,8 +1269,7 @@
             "hintKo": "추가 정보 = だけでなく"
           }
         }
-      ],
-      "ruleFamily": "particle:limit"
+      ]
     },
     {
       "no": 18,
@@ -1353,8 +1341,7 @@
             "hintKo": "회화체 역접 = だけど"
           }
         }
-      ],
-      "ruleFamily": "conjunction:contrast"
+      ]
     },
     {
       "no": 19,
@@ -1788,8 +1775,7 @@
             "hintKo": "부정적 경향 = ます형 + がち"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 25,
@@ -1863,8 +1849,7 @@
             "hintKo": "강한 곤란·도덕적 = ます형 + がたい"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 26,
@@ -1938,8 +1923,7 @@
             "hintKo": "약한 경향 = ます형 + 気味"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 27,
@@ -2083,8 +2067,7 @@
             "hintKo": "정도·대략 = 수량 + ほど"
           }
         }
-      ],
-      "ruleFamily": "particle:comparison"
+      ]
     },
     {
       "no": 29,
@@ -2156,8 +2139,7 @@
             "hintKo": "비교 부정 (~만큼 안) = ほど + 부정"
           }
         }
-      ],
-      "ruleFamily": "particle:comparison"
+      ]
     },
     {
       "no": 30,
@@ -2517,8 +2499,7 @@
             "hintKo": "확인·동의·놀람 = 상승조 じゃない"
           }
         }
-      ],
-      "ruleFamily": "copula"
+      ]
     },
     {
       "no": 35,
@@ -2664,8 +2645,7 @@
             "hintKo": "직전·미완료 = ます형 + かける"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 37,
@@ -3099,8 +3079,7 @@
             "hintKo": "양 초과로 못 다함 = ます형 + 切れない"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 43,
@@ -3172,8 +3151,7 @@
             "hintKo": "그 후 미변화 = た형 + きり"
           }
         }
-      ],
-      "ruleFamily": "particle:limit"
+      ]
     },
     {
       "no": 44,
@@ -3247,8 +3225,7 @@
             "hintKo": "끝까지 완수 = ます형 + 切る"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 45,
@@ -3394,8 +3371,7 @@
             "hintKo": "안으로·깊이 = ます형 + 込む"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 47,
@@ -3685,8 +3661,7 @@
             "hintKo": "외부 규칙·관습 = 사전형 + ことになっている"
           }
         }
-      ],
-      "ruleFamily": "verb:dict"
+      ]
     },
     {
       "no": 51,
@@ -3758,8 +3733,7 @@
             "hintKo": "필요 없음 = 사전형 + ことはない"
           }
         }
-      ],
-      "ruleFamily": "verb:dict"
+      ]
     },
     {
       "no": 52,
@@ -3903,8 +3877,7 @@
             "hintKo": "대략 정도 = 수량 + くらい"
           }
         }
-      ],
-      "ruleFamily": "particle:comparison"
+      ]
     },
     {
       "no": 54,
@@ -3976,8 +3949,7 @@
             "hintKo": "비난 동반 역접 = 보통형 + くせに"
           }
         }
-      ],
-      "ruleFamily": "conjunction:contrast"
+      ]
     },
     {
       "no": 55,
@@ -4265,8 +4237,7 @@
             "hintKo": "두 항목 열거 = も + ば형 + も"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 59,
@@ -4338,8 +4309,7 @@
             "hintKo": "가능성 추측 = もしかしたら + かもしれない"
           }
         }
-      ],
-      "ruleFamily": "guess"
+      ]
     },
     {
       "no": 60,
@@ -4411,8 +4381,7 @@
             "hintKo": "강조 가정 = もしも ~ たら"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 61,
@@ -4700,8 +4669,7 @@
             "hintKo": "양보 역접 = ます형/형용사 + ながらも"
           }
         }
-      ],
-      "ruleFamily": "conjunction:contrast"
+      ]
     },
     {
       "no": 65,
@@ -4773,8 +4741,7 @@
             "hintKo": "이중 부정 약한 긍정 = ない형 + ことはない"
           }
         }
-      ],
-      "ruleFamily": "verb:nai"
+      ]
     },
     {
       "no": 66,
@@ -4846,8 +4813,7 @@
             "hintKo": "당위 회화체 = ない형 + と"
           }
         }
-      ],
-      "ruleFamily": "verb:nai"
+      ]
     },
     {
       "no": 67,
@@ -4991,8 +4957,7 @@
             "hintKo": "놀람 = ~なんて"
           }
         }
-      ],
-      "ruleFamily": "particle:example"
+      ]
     },
     {
       "no": 69,
@@ -5066,8 +5031,7 @@
             "hintKo": "재시도·수정 = ます형 + 直す"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 70,
@@ -5211,8 +5175,7 @@
             "hintKo": "이유 도입 = なぜなら ~ からだ"
           }
         }
-      ],
-      "ruleFamily": "conjunction:reason"
+      ]
     },
     {
       "no": 72,
@@ -5284,11 +5247,6 @@
             "hintKo": "회화체 전문 = 보통형 + んだって"
           }
         }
-      ],
-      "ruleFamily": "verb:dict",
-      "relatedFamilies": [
-        "adj:i",
-        "adj:na"
       ]
     },
     {
@@ -5361,8 +5319,7 @@
             "hintKo": "강한 확신 = 보통형 + に違いない"
           }
         }
-      ],
-      "ruleFamily": "guess"
+      ]
     },
     {
       "no": 74,
@@ -6010,8 +5967,7 @@
             "hintKo": "양보 가정 = 보통형 + にしても"
           }
         }
-      ],
-      "ruleFamily": "conjunction:contrast"
+      ]
     },
     {
       "no": 83,
@@ -6083,8 +6039,7 @@
             "hintKo": "전제 대비 의외 = 보통형 + にしては"
           }
         }
-      ],
-      "ruleFamily": "conjunction:contrast"
+      ]
     },
     {
       "no": 84,
@@ -6660,8 +6615,7 @@
             "hintKo": "정중한 의문 = 보통형 + のでしょうか"
           }
         }
-      ],
-      "ruleFamily": "ending:question"
+      ]
     },
     {
       "no": 92,
@@ -7021,8 +6975,7 @@
             "hintKo": "긍정 원인 = 보통형 + おかげで"
           }
         }
-      ],
-      "ruleFamily": "conjunction:reason"
+      ]
     },
     {
       "no": 97,
@@ -7314,8 +7267,7 @@
             "hintKo": "최소 조건 = 명사 + さえ + ば형"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 101,
@@ -7675,8 +7627,7 @@
             "hintKo": "부정적 원인 = 보통형 + せいで"
           }
         }
-      ],
-      "ruleFamily": "conjunction:reason"
+      ]
     },
     {
       "no": 106,
@@ -7964,8 +7915,7 @@
             "hintKo": "인과 접속 = そのために"
           }
         }
-      ],
-      "ruleFamily": "conjunction:reason"
+      ]
     },
     {
       "no": 110,
@@ -8037,8 +7987,7 @@
             "hintKo": "선택 의문 = それとも"
           }
         }
-      ],
-      "ruleFamily": "conjunction:listing"
+      ]
     },
     {
       "no": 111,
@@ -8112,8 +8061,7 @@
             "hintKo": "가능성 부정 = ます형 + そうもない"
           }
         }
-      ],
-      "ruleFamily": "guess"
+      ]
     },
     {
       "no": 112,
@@ -8403,8 +8351,7 @@
             "hintKo": "회상 = た형 + ものだ"
           }
         }
-      ],
-      "ruleFamily": "verb:ta"
+      ]
     },
     {
       "no": 116,
@@ -8478,8 +8425,7 @@
             "hintKo": "즉시 발생 = た형 + とたん"
           }
         }
-      ],
-      "ruleFamily": "verb:ta"
+      ]
     },
     {
       "no": 117,
@@ -8623,8 +8569,7 @@
             "hintKo": "목적·원인 = 사전형/명사の + ために"
           }
         }
-      ],
-      "ruleFamily": "conjunction:reason"
+      ]
     },
     {
       "no": 119,
@@ -8770,8 +8715,7 @@
             "hintKo": "신선·직후 = ます형 + たて"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 121,
@@ -8843,8 +8787,7 @@
             "hintKo": "강한 양보 가정 = たとえ ~ ても"
           }
         }
-      ],
-      "ruleFamily": "conjunction:contrast"
+      ]
     },
     {
       "no": 122,
@@ -9060,8 +9003,7 @@
             "hintKo": "지속 부정 평가 = て형 + ばかりいる"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 125,
@@ -9133,8 +9075,7 @@
             "hintKo": "부드러운 권유 = て형 + ごらん"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 126,
@@ -9206,8 +9147,7 @@
             "hintKo": "경험 후 깨달음 = て형 + はじめて"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 127,
@@ -9279,8 +9219,7 @@
             "hintKo": "전제 조건 = て형 + からでないと"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 128,
@@ -9352,8 +9291,7 @@
             "hintKo": "감정·생리 강조 = て형 + しょうがない"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 129,
@@ -9425,8 +9363,7 @@
             "hintKo": "간단히 끝남 = て형/で + 済む"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 130,
@@ -9498,8 +9435,7 @@
             "hintKo": "예방·금지 이유 = て형 + はいけないから"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 131,
@@ -9571,8 +9507,7 @@
             "hintKo": "긴급·재촉 = ている + 場合じゃない"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 132,
@@ -9718,8 +9653,7 @@
             "hintKo": "체념·소용없음 = て형 + も始まらない"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 134,
@@ -9791,8 +9725,7 @@
             "hintKo": "허가·관용 = て형 + も構わない"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 135,
@@ -9864,8 +9797,7 @@
             "hintKo": "체념 = て형 + もしょうがない"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 136,
@@ -9937,8 +9869,7 @@
             "hintKo": "연상 도입 = 명사 + といえば"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 137,
@@ -10010,8 +9941,7 @@
             "hintKo": "희망·기원 = 사전형 + といい"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 138,
@@ -10083,8 +10013,7 @@
             "hintKo": "한정 보충 = 보통형 + といっても"
           }
         }
-      ],
-      "ruleFamily": "conjunction:contrast"
+      ]
     },
     {
       "no": 139,
@@ -10300,8 +10229,7 @@
             "hintKo": "확인·연상 도입 = 명사 + というと"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 142,
@@ -10445,8 +10373,7 @@
             "hintKo": "관찰 추측 = 보통형 + とみえて"
           }
         }
-      ],
-      "ruleFamily": "guess"
+      ]
     },
     {
       "no": 144,
@@ -10518,8 +10445,7 @@
             "hintKo": "가정·전제 = 보통형 + とすれば"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 145,
@@ -10807,8 +10733,7 @@
             "hintKo": "예상 외 결과 = ところが"
           }
         }
-      ],
-      "ruleFamily": "conjunction:contrast"
+      ]
     },
     {
       "no": 149,
@@ -10954,8 +10879,7 @@
             "hintKo": "관철·일관성 = ます형 + 通す"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 151,
@@ -11747,8 +11671,7 @@
             "hintKo": "전제 후 결정 = た형 + 上で"
           }
         }
-      ],
-      "ruleFamily": "verb:ta"
+      ]
     },
     {
       "no": 162,
@@ -12612,8 +12535,7 @@
             "hintKo": "강조 비교 = 명사 + よりも"
           }
         }
-      ],
-      "ruleFamily": "particle:comparison"
+      ]
     },
     {
       "no": 174,
@@ -12759,8 +12681,7 @@
             "hintKo": "막연한 인상 = 보통형 + ような気がする"
           }
         }
-      ],
-      "ruleFamily": "guess"
+      ]
     },
     {
       "no": 176,
@@ -12904,8 +12825,7 @@
             "hintKo": "외관 인상 = 보통형 + ように見える"
           }
         }
-      ],
-      "ruleFamily": "guess"
+      ]
     },
     {
       "no": 178,
@@ -12979,8 +12899,7 @@
             "hintKo": "의지 부정 = 의지형 + としない"
           }
         }
-      ],
-      "ruleFamily": "verb:volitional"
+      ]
     },
     {
       "no": 179,
@@ -13054,8 +12973,7 @@
             "hintKo": "의도·시도 = 의지형 + とする"
           }
         }
-      ],
-      "ruleFamily": "verb:volitional"
+      ]
     },
     {
       "no": 180,
@@ -13129,8 +13047,7 @@
             "hintKo": "격식체 = ない형 어간 + ずに"
           }
         }
-      ],
-      "ruleFamily": "verb:nai"
+      ]
     },
     {
       "no": 181,
@@ -13204,8 +13121,7 @@
             "hintKo": "자제 불가 = ない형 어간 + ずにはいられない"
           }
         }
-      ],
-      "ruleFamily": "verb:nai"
+      ]
     },
     {
       "no": 182,

@@ -5,6 +5,7 @@ import { loadHomeData } from "~/lib/idb/home";
 import { PackCard } from "~/components/home/PackCard";
 import { GrammarPackCard } from "~/components/home/GrammarPackCard";
 import { FamilyCard } from "~/components/home/FamilyCard";
+import { FoundationCard } from "~/components/home/FoundationCard";
 import { TestCard } from "~/components/home/TestCard";
 import { ImportButton } from "~/components/home/ImportButton";
 import { CreateTestModal } from "~/components/home/CreateTestModal";
@@ -26,6 +27,7 @@ export default function Home({ loaderData }: Route.ComponentProps) {
     custom,
     grammar,
     families,
+    foundations,
     tests,
     weakItemCount,
     favoritesCount,
@@ -115,6 +117,19 @@ export default function Home({ loaderData }: Route.ComponentProps) {
             <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3">
               {custom.map((pack) => (
                 <PackCard key={pack.key} pack={pack} showDescription />
+              ))}
+            </div>
+          </section>
+        )}
+
+        {foundations.length > 0 && (
+          <section className="mb-10">
+            <h2 className="mb-4 text-sm font-semibold uppercase tracking-wide text-neutral-500">
+              🔰 기초 문법
+            </h2>
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 md:grid-cols-5">
+              {foundations.map((it) => (
+                <FoundationCard key={it.id} item={it} />
               ))}
             </div>
           </section>

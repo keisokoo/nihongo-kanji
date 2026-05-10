@@ -8,20 +8,22 @@
 
 ## 0. 무엇을 하는가
 
-각 `GrammarItem` 에 두 필드를 추가:
+각 `GrammarItem` 에 세 필드 (필요 시) 를 추가:
 
 ```jsonc
 {
   "no": 5,
   "pattern": "で",
   ...
-  "ruleFamily": "particle:limit",   // 새 필드
-  "isFoundation": false              // 새 필드 (true / false / 생략)
+  "ruleFamily": "particle:limit",            // 주요 family — 그룹화·카운트의 기준
+  "relatedFamilies": ["verb:ta", "verb:nai"], // 보조 (선택) — 다른 활용도 받을 때
+  "isFoundation": false                       // family 의 기초 항목인지 (선택)
 }
 ```
 
-- **`ruleFamily`** (선택): 같은 변형·사용 룰을 공유하는 family ID. 단독 항목은 `null` 또는 필드 생략.
-- **`isFoundation`** (선택): family 의 기초 항목인지. true 인 항목은 family 페이지 헤드 카드 + 활용 가이드 풀 출력.
+- **`ruleFamily`** (선택, 단일 string): 같은 변형·사용 룰을 공유하는 **주요** family ID. 단독은 `null` 또는 필드 생략.
+- **`relatedFamilies`** (선택, string 배열): 패턴이 여러 활용 형태를 받을 때 **보조** family. primary 는 가장 흔한 사용으로, 나머지는 여기에. 패밀리 카드 카운트엔 영향 X.
+- **`isFoundation`** (선택, boolean): family 의 기초 항목인지. true 인 항목은 family 페이지 헤드 카드 + 활용 가이드 풀 출력.
 
 ---
 
@@ -63,6 +65,7 @@
 
 | ID | 멤버 예 |
 |---|---|
+| `particle:basic-case` | の, を, に, へ, で, と, から (시작점) |
 | `particle:topic-subject` | は, が |
 | `particle:limit` | だけ, ばかり, しか, のみ, きり |
 | `particle:example` | など, なんか, とか, やら |
@@ -115,13 +118,21 @@
    → 동사 변형이 ます형 어간에 의존 → `verb:masu`
    → 동사 변형이 て형에 의존 → `verb:te`
 2. **같은 의미·문법 카테고리** 인가? (조사, 접속, 종조사, 추측 등)
-3. **둘 이상 패밀리에 걸칠 때**: 가장 핵심적인 룰 family 선택. 예:
-   - 〜たがる: ます형 + たがる → `verb:masu`
-   - 〜たことがある: た형 + ことがある → `verb:ta`
-   - 〜ながら: ます형 어간 + ながら → `verb:masu`
+3. **둘 이상 패밀리에 걸칠 때**: **primary 1개** 선택 (가장 흔한 사용 형태). 다른 형태도 받으면 `relatedFamilies` 배열에 추가.
+   예시:
+   - 〜たがる: ます형 + たがる → `ruleFamily: "verb:masu"`
+   - 〜たことがある: た형 + ことがある → `ruleFamily: "verb:ta"`
+   - 〜ながら: ます형 어간 + ながら → `ruleFamily: "verb:masu"`
+   - **〜ほうがいい**: 가장 흔한 건 た형 권유 ("간 게 좋다"), 사전형/ない형도 받음
+     → `ruleFamily: "verb:ta"`, `relatedFamilies: ["verb:dict", "verb:nai"]`
+   - **〜んです / 〜のです**: 보통형 받음 (사전형 기반)
+     → `ruleFamily: "verb:dict"`, `relatedFamilies: ["adj:i", "adj:na"]` (형용사 보통형도)
 4. **단독 항목** (룰 공유 없음, 부사·감탄·관용표현): `ruleFamily` 생략 또는 `null`
    - 예: あまり, やがて, さぞ, とりわけ, きっと 등 부사
    - 예: お互いに, わざと, めったに 등 단독 사용 표현
+   - 예: なる, になる, にする (단독 동사 표현)
+5. **고정 표현** — 활용 규칙이 패턴 자체에 박혀있는 것: 보통 `null`
+   - 예: があります / がいます (ある·いる 의 ます형 고정)
 
 ### `isFoundation` 판단
 
@@ -135,18 +146,25 @@
   - 예: `particle:limit` 의 だけ/ばかり/しか — 평등한 멤버, foundation 없음
   - 예: `conditional` 의 ば/と/たら/なら — 평등한 멤버
 - 한 family 에 foundation 은 **최대 1개**
+- **여러 후보가 있을 때 결정 원칙: "활용·변형의 출발점이 되는 가장 기본형"**
+  - 긍정 > 부정: `だ/です` > `じゃない/ではない`
+  - 현재 > 과거: `ます` > `ました`, `ません` > `ませんでした`
+  - 사전형 > 활용형: `ない` > `なかった`, `た` > `たら`
+  - 일반 > 정중: `だ` > `です` (단, copula family 의 경우 `だ/です` 가 보통 한 항목으로 묶여 있음)
 
 ---
 
 ## 3. 작업 흐름
 
 작업은 **N5 → N4 → N3 → N2 → N1** 순으로 진행. 각 레벨에 두 step:
-A. 기초 항목 (foundation) 추가 (N5 만 해당 — 다른 레벨엔 추가 안 함)
+A. 기초 항목 (foundation) 추가 또는 기존 항목에 isFoundation 부여
 B. 모든 derived 항목에 `ruleFamily` 채우기
 
-### Step A: 기초 항목 추가 — **N5 만**
+### Step A: 기초 항목 (foundation) — 어느 레벨이든 가능
 
-다음 기초 항목들이 어느 레벨 시드에도 없음. **N5 의 `items` 배열 앞부분에 insert** (다른 레벨엔 추가 X — JLPT 분류상 모두 N5 이전 단계 학습 내용):
+> **원칙**: foundation 은 family 의 변형 규칙을 정의하는 항목. 그 변형 규칙이 JLPT 어느 레벨에서 학습되는지에 따라 위치가 달라짐. **N5 에만 묶이지 않음.**
+
+#### N5 에 추가할 기초 항목 (시드에 없음 → 새로 insert)
 
 | 추가할 패턴 | ruleFamily | category | 비고 |
 |---|---|---|---|
@@ -156,15 +174,77 @@ B. 모든 derived 항목에 `ruleFamily` 채우기
 | `た (た형)` | `verb:ta` | `verb_form` | foundation = true |
 | `辞書形 (사전형)` | `verb:dict` | `verb_form` | foundation = true |
 
-(필요시 〜ば 조건형 / 의지형도 추가 — 적절한 범위에서 판단)
+#### 다른 레벨에 이미 존재하는 변형 규칙 자체 항목 — `isFoundation: true` 만 추가
+
+JLPT 더 높은 레벨에서 학습되는 활용형은 그 레벨에 자체 항목으로 들어있음. 별도 항목 추가하지 말고 **기존 항목에 `isFoundation: true` + 알맞은 `ruleFamily` 만 set**:
+
+| 레벨 | 패턴 | ruleFamily |
+|---|---|---|
+| N4 | 意向形 (의지형) | `verb:volitional` |
+| N4 | 受身形 (수동형) | `verb:passive` |
+| N4 | 使役形 (사역형) — 있으면 | `verb:causative` |
+| N4 | 사역수동형 — 있으면 | `verb:causative-passive` |
+| N4 | 명령·금지형 — 있으면 | `verb:imperative` |
+| N4 | 가능형 — 있으면 (자체 항목 있을 때) | `verb:potential` |
+
+cowork 가 각 레벨 작업하면서 위 후보 항목 발견하면 isFoundation 부여. 발견 못 하면 해당 family 는 foundation 없이 진행 (derived 항목들의 활용 가이드는 AI 가 자체 생성).
+
+#### `verb:ba` 와 `conditional` 의 구분
+
+- `conditional` family (ば·と·たら·なら) — **peer 비교** family. ば 는 이 안의 멤버 1 — peer 라 foundation 없음.
+- `verb:ba` family — ば 형 자체에 무언가 더 붙는 derived 패턴 (〜ばよかった, 〜ば〜ほど 등) 이 있을 때 그 reference.
+
+N5 의 `ば` 패턴은 `conditional` 로 분류 (ば/と/たら/なら 비교 학습이 N5-N4 핵심). `verb:ba` foundation 은 별도 추가 없이 두고, derived 항목들은 AI 자체 가이드.
 
 기존 N5 의 1~84 position 을 shift 해서 1~5 (또는 6~10) 자리에 insert. 또는 0.1, 0.2 등 분수 사용 가능 (정렬용).
 
-각 기초 항목의 `explanation` 은 짧게 (활용 가이드는 사용자가 🔧 버튼으로 AI 호출). 기존 1/2/3그룹 변형 룰 한두 줄 요약 정도.
+#### 🔍 Foundation `explanation` 작성 가이드 (중요)
 
-`examples` / `quizzes` 1~2 개씩 (`GRAMMAR_FILL_PROMPT.md` 의 마크업 룰 따라).
+Foundation 항목은 학습자가 **변형 규칙 reference 로 자주 펴보는** 곳이라 **일반 항목보다 풍부하게** 작성합니다. 다음 구조 권장 — 각 섹션 사이에 `\n\n` 으로 paragraph 띄우고, list 는 `\n- ` 또는 `\n• ` 사용.
 
-i형용사 / な형용사 활용 / だ·です 는 이미 N5 에 항목으로 존재 → 그 항목들에 `isFoundation: true` + 적절한 `ruleFamily` 만 추가 (별도 추가 X).
+UI 가 `whitespace-pre-line` 으로 렌더하므로 `\n` 그대로 줄바꿈, `\n\n` 은 paragraph 띄우기로 표시됨.
+
+**구조 예** (ます형):
+
+```jsonc
+{
+  "pattern": "ます (ます형)",
+  "explanation": "동사를 정중하게 만드는 가장 기본 활용. 일상 회화·정중한 문장의 토대.\n\n【형성 규칙】\n• 1그룹 (5단): 어미 う단을 い단으로 바꾸고 ます — 行く → 行きます, 飲む → 飲みます\n• 2그룹 (1단): 어미 る를 빼고 ます — 食べる → 食べます, 見る → 見ます\n• 3그룹 (불규칙): する → します, 来る → 来ます (명사+する 도 같음: 勉強する → 勉強します)\n\n【예외 1그룹】 (2그룹처럼 보이는 1그룹 활용)\n• 帰る → 帰ります, 入る → 入ります, 切る → 切ります\n\n【파생 표현】 ます형 어간 (ます 빼기) 에 결합:\n• 〜ます / 〜ました / 〜ません / 〜ませんでした (시제·부정)\n• 〜たい (~하고 싶다), 〜たがる (3인칭 욕구)\n• 〜ながら (~하면서), 〜ましょう (~합시다)\n• 〜方 (~하는 방법)"
+}
+```
+
+렌더 결과 (`whitespace-pre-line` 적용):
+
+```
+동사를 정중하게 만드는 가장 기본 활용. 일상 회화·정중한 문장의 토대.
+
+【형성 규칙】
+• 1그룹 (5단): 어미 う단을 い단으로 바꾸고 ます — 行く → 行きます, 飲む → 飲みます
+• 2그룹 (1단): 어미 る를 빼고 ます — 食べる → 食べます, 見る → 見ます
+• 3그룹 (불규칙): する → します, 来る → 来ます (명사+する 도 같음)
+
+【예외 1그룹】 (2그룹처럼 보이는 1그룹 활용)
+• 帰る → 帰ります, 入る → 入ります
+
+【파생 표현】 ます형 어간에 결합:
+• 〜ます / 〜ました / 〜ません / 〜ませんでした
+• 〜たい, 〜たがる, 〜ながら, 〜ましょう, 〜方
+...
+```
+
+**작성 가이드 요약**:
+1. **첫 문단** (1-2문장): 한 줄로 정의 + 어떤 학습 단계에 위치하는지
+2. **【형성 규칙】**: 1그룹 / 2그룹 / 3그룹 별 변형 룰 + 대표 동사 1-2개씩
+3. **【예외】** (있으면): 헷갈리는 케이스
+4. **【파생 표현】**: 이 foundation 위에 무엇이 쌓이는지 list (학습자 motivation)
+5. 줄바꿈은 `\n` (단일) 또는 `\n\n` (paragraph). bullet 은 `\n• ` 또는 `\n- `
+6. `examples` / `quizzes` 1~2 개씩 (`GRAMMAR_FILL_PROMPT.md` 의 마크업 룰 따라)
+
+> **참고**: foundation 의 더 풍부한 sectioned 가이드는 사용자가 🔧 활용 가이드 버튼으로 AI 호출 → 별도 panel. `explanation` 은 정적 reference 라 cowork 가 직접 작성 (AI 호출 비용 X, 인쇄 가능, 한 화면에 표시됨).
+
+기존 N5 의 foundation 이미 추가된 5개 (ます/て/ない/た/사전형) **+ 기존 isFoundation 처리된 3개** (い-adjectives / な-adjectives / だ・です) — 위 구조에 맞게 **explanation 보강** 필요.
+
+i형용사 / な형용사 활용 / だ·です 는 이미 N5 에 항목으로 존재 → 그 항목들에 `isFoundation: true` + 적절한 `ruleFamily` 만 추가 (별도 추가 X). explanation 만 보강.
 
 ### Step B: 전 레벨 모든 derived 항목에 `ruleFamily` 채우기
 

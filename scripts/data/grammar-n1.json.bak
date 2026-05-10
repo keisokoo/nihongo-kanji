@@ -435,8 +435,7 @@
             "hintKo": "강조 이유 = ば형 + こそ"
           }
         }
-      ],
-      "ruleFamily": "verb:ba"
+      ]
     },
     {
       "no": 7,
@@ -508,8 +507,7 @@
             "hintKo": "결정적 결말 = ば/たら + それまでだ"
           }
         }
-      ],
-      "ruleFamily": "verb:ba"
+      ]
     },
     {
       "no": 8,
@@ -657,8 +655,7 @@
             "hintKo": "격식 목적 = 사전형 + べく"
           }
         }
-      ],
-      "ruleFamily": "verb:dict"
+      ]
     },
     {
       "no": 10,
@@ -730,8 +727,7 @@
             "hintKo": "강한 부정 가능성 = 사전형 + べくもない"
           }
         }
-      ],
-      "ruleFamily": "verb:dict"
+      ]
     },
     {
       "no": 11,
@@ -1169,8 +1165,7 @@
             "hintKo": "불만 열거 = 보통형 + だの + 보통형 + だの"
           }
         }
-      ],
-      "ruleFamily": "conjunction:listing"
+      ]
     },
     {
       "no": 17,
@@ -1242,8 +1237,7 @@
             "hintKo": "안타까움 = 보통형 + だろうに"
           }
         }
-      ],
-      "ruleFamily": "guess"
+      ]
     },
     {
       "no": 18,
@@ -1675,8 +1669,7 @@
             "hintKo": "격식 추측 = 보통형 + ではあるまいか"
           }
         }
-      ],
-      "ruleFamily": "guess"
+      ]
     },
     {
       "no": 24,
@@ -3190,8 +3183,7 @@
             "hintKo": "격식 의문 = 보통형 + か否か"
           }
         }
-      ],
-      "ruleFamily": "ending:question"
+      ]
     },
     {
       "no": 45,
@@ -5209,8 +5201,7 @@
             "hintKo": "강한 반복 = ます형 + まくる"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 73,
@@ -5644,8 +5635,7 @@
             "hintKo": "조차 안 함 = ます형 어간 + もしないで"
           }
         }
-      ],
-      "ruleFamily": "verb:nai"
+      ]
     },
     {
       "no": 79,
@@ -5789,8 +5779,7 @@
             "hintKo": "변명적 이유 = 보통형 + もので"
           }
         }
-      ],
-      "ruleFamily": "conjunction:reason"
+      ]
     },
     {
       "no": 81,
@@ -6150,8 +6139,7 @@
             "hintKo": "격식 선택 = 명사 + もしくは + 명사"
           }
         }
-      ],
-      "ruleFamily": "conjunction:listing"
+      ]
     },
     {
       "no": 86,
@@ -6441,8 +6429,7 @@
             "hintKo": "최고는 아니지만 = ない형 + までも"
           }
         }
-      ],
-      "ruleFamily": "verb:nai"
+      ]
     },
     {
       "no": 90,
@@ -6514,8 +6501,7 @@
             "hintKo": "이중 부정 약한 가능 = ない형 + ものでもない"
           }
         }
-      ],
-      "ruleFamily": "verb:nai"
+      ]
     },
     {
       "no": 91,
@@ -6587,8 +6573,7 @@
             "hintKo": "강한 희망 = ない형 + ものか"
           }
         }
-      ],
-      "ruleFamily": "verb:nai"
+      ]
     },
     {
       "no": 92,
@@ -6660,8 +6645,7 @@
             "hintKo": "가능성 인정 = ない형 + とも限らない"
           }
         }
-      ],
-      "ruleFamily": "verb:nai"
+      ]
     },
     {
       "no": 93,
@@ -7381,8 +7365,7 @@
             "hintKo": "선택지 제시 = 명사 + なり + 명사 + なり"
           }
         }
-      ],
-      "ruleFamily": "conjunction:listing"
+      ]
     },
     {
       "no": 103,
@@ -7526,8 +7509,7 @@
             "hintKo": "추가 = 명사 + に + 명사"
           }
         }
-      ],
-      "ruleFamily": "particle:basic-case"
+      ]
     },
     {
       "no": 105,
@@ -7743,8 +7725,7 @@
             "hintKo": "강한 대비 = 명사 + に引き換え"
           }
         }
-      ],
-      "ruleFamily": "conjunction:contrast"
+      ]
     },
     {
       "no": 108,
@@ -11993,8 +11974,7 @@
             "hintKo": "경고 = さもないと"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 167,
@@ -12284,8 +12264,7 @@
             "hintKo": "기회 놓침 = ます형 + そびれる"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 171,
@@ -12359,8 +12338,7 @@
             "hintKo": "기회 놓침 = ます형 + 損ねる"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 172,
@@ -12504,8 +12482,7 @@
             "hintKo": "격식 극단 강조 = 명사 + すら"
           }
         }
-      ],
-      "ruleFamily": "particle:limit"
+      ]
     },
     {
       "no": 174,
@@ -12577,8 +12554,7 @@
             "hintKo": "의도치 않은 순간 = た형 + 拍子に"
           }
         }
-      ],
-      "ruleFamily": "verb:ta"
+      ]
     },
     {
       "no": 175,
@@ -12650,8 +12626,7 @@
             "hintKo": "사실 왜곡 = た형 + ことにする"
           }
         }
-      ],
-      "ruleFamily": "verb:ta"
+      ]
     },
     {
       "no": 176,
@@ -12723,8 +12698,7 @@
             "hintKo": "소용없음 = た형 + ところで"
           }
         }
-      ],
-      "ruleFamily": "verb:ta"
+      ]
     },
     {
       "no": 177,
@@ -12796,8 +12770,7 @@
             "hintKo": "의도 없음 = た형 + つもりはない"
           }
         }
-      ],
-      "ruleFamily": "verb:ta"
+      ]
     },
     {
       "no": 178,
@@ -13013,8 +12986,7 @@
             "hintKo": "필연 부정 결과 = た형 + ら最後"
           }
         }
-      ],
-      "ruleFamily": "verb:ta"
+      ]
     },
     {
       "no": 181,
@@ -13086,8 +13058,7 @@
             "hintKo": "어떤 결과든 = た형 + ら + た형 + で"
           }
         }
-      ],
-      "ruleFamily": "verb:ta"
+      ]
     },
     {
       "no": 182,
@@ -13159,8 +13130,7 @@
             "hintKo": "반사실 = た형 + ら + 사전형 + ところだった"
           }
         }
-      ],
-      "ruleFamily": "verb:ta"
+      ]
     },
     {
       "no": 183,
@@ -13376,8 +13346,7 @@
             "hintKo": "견딜 수 없음 = 어간+く + て敵わない"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 186,
@@ -13449,8 +13418,7 @@
             "hintKo": "지속 변화 = て형 + からというもの"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 187,
@@ -13522,8 +13490,7 @@
             "hintKo": "강한 결의 = て형 + みせる"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 188,
@@ -13595,8 +13562,7 @@
             "hintKo": "격식 당위 = て형 + しかるべきだ"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 189,
@@ -13668,8 +13634,7 @@
             "hintKo": "심각·끝낼 일 아님 = て형 + 済むことではない"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 190,
@@ -13741,8 +13706,7 @@
             "hintKo": "강한 지속 감정 = て형 + やまない"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 191,
@@ -13886,8 +13850,7 @@
             "hintKo": "어쩔 수 없음 = て형 + もどうにもならない"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 193,
@@ -13959,8 +13922,7 @@
             "hintKo": "격식 허락 = て형 + も差し支えない"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 194,
@@ -14032,8 +13994,7 @@
             "hintKo": "책임 거부·경고 = て형 + も知らない"
           }
         }
-      ],
-      "ruleFamily": "verb:te"
+      ]
     },
     {
       "no": 195,
@@ -14177,8 +14138,7 @@
             "hintKo": "특별 사정 = 명사 + とあれば"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 197,
@@ -14394,8 +14354,7 @@
             "hintKo": "격식 양보 = 명사 + といえども"
           }
         }
-      ],
-      "ruleFamily": "conjunction:contrast"
+      ]
     },
     {
       "no": 200,
@@ -14539,8 +14498,7 @@
             "hintKo": "둘 다 평가 = 명사 + といい + 명사 + といい"
           }
         }
-      ],
-      "ruleFamily": "conjunction:listing"
+      ]
     },
     {
       "no": 202,
@@ -14756,8 +14714,7 @@
             "hintKo": "두 표현 사이 = 형용사 + というか + 형용사 + というか"
           }
         }
-      ],
-      "ruleFamily": "conjunction:listing"
+      ]
     },
     {
       "no": 205,
@@ -15117,8 +15074,7 @@
             "hintKo": "구별 없이 모두 = 명사 + といわず + 명사 + といわず"
           }
         }
-      ],
-      "ruleFamily": "conjunction:listing"
+      ]
     },
     {
       "no": 210,
@@ -15406,8 +15362,7 @@
             "hintKo": "조건 가정 = 명사 + となると"
           }
         }
-      ],
-      "ruleFamily": "conditional"
+      ]
     },
     {
       "no": 214,
@@ -15911,8 +15866,7 @@
             "hintKo": "판단 불가 = 보통형 + とも + 보통형 + とも"
           }
         }
-      ],
-      "ruleFamily": "conjunction:listing"
+      ]
     },
     {
       "no": 221,
@@ -16344,8 +16298,7 @@
             "hintKo": "격식 역접 = 보통형 + とはいえ"
           }
         }
-      ],
-      "ruleFamily": "conjunction:contrast"
+      ]
     },
     {
       "no": 227,
@@ -16635,8 +16588,7 @@
             "hintKo": "끝까지 = ます형 + 尽くす"
           }
         }
-      ],
-      "ruleFamily": "verb:masu"
+      ]
     },
     {
       "no": 231,
@@ -16852,8 +16804,7 @@
             "hintKo": "여성·감탄 = 보통형 + わ"
           }
         }
-      ],
-      "ruleFamily": "ending:emotion"
+      ]
     },
     {
       "no": 234,
@@ -17501,8 +17452,7 @@
             "hintKo": "강한 양보 = 의지형 + が/と"
           }
         }
-      ],
-      "ruleFamily": "verb:volitional"
+      ]
     },
     {
       "no": 243,
@@ -17574,8 +17524,7 @@
             "hintKo": "둘 다 무관 = 의지형 + が + 의지형 + が"
           }
         }
-      ],
-      "ruleFamily": "verb:volitional"
+      ]
     },
     {
       "no": 244,
@@ -17719,8 +17668,7 @@
             "hintKo": "하려고 해도 안 됨 = 의지형 + にも + 가능형 부정"
           }
         }
-      ],
-      "ruleFamily": "verb:volitional"
+      ]
     },
     {
       "no": 246,
@@ -17792,8 +17740,7 @@
             "hintKo": "하든 안 하든 = 의지형 + と + 사전형 + まいと"
           }
         }
-      ],
-      "ruleFamily": "verb:volitional"
+      ]
     },
     {
       "no": 247,
@@ -17865,8 +17812,7 @@
             "hintKo": "격식 이유 = 보통형 + ゆえに"
           }
         }
-      ],
-      "ruleFamily": "conjunction:reason"
+      ]
     },
     {
       "no": 248,
@@ -17938,8 +17884,7 @@
             "hintKo": "남성 결의·강조 = 보통형 + ぞ"
           }
         }
-      ],
-      "ruleFamily": "ending:emphasis"
+      ]
     },
     {
       "no": 249,
@@ -18011,8 +17956,7 @@
             "hintKo": "결국 못 함 = ない형 어간 + ずじまい"
           }
         }
-      ],
-      "ruleFamily": "verb:nai"
+      ]
     },
     {
       "no": 250,
@@ -18084,8 +18028,7 @@
             "hintKo": "강한 의지·필연 = ない형 어간 + ずにはおかない"
           }
         }
-      ],
-      "ruleFamily": "verb:nai"
+      ]
     },
     {
       "no": 251,
@@ -18157,8 +18100,7 @@
             "hintKo": "의무·필연 = ない형 어간 + ずには済まない"
           }
         }
-      ],
-      "ruleFamily": "verb:nai"
+      ]
     },
     {
       "no": 252,
@@ -18230,8 +18172,7 @@
             "hintKo": "격식 ~하지 않아도 = ない형 어간 + ずとも"
           }
         }
-      ],
-      "ruleFamily": "verb:nai"
+      ]
     },
     {
       "no": 253,
