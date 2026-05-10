@@ -49,7 +49,7 @@
       "items": 89,
       "examples": 177,
       "quizzes": 231,
-      "bytes": 232772
+      "bytes": 233144
     },
     {
       "level": "N4",
@@ -57,7 +57,7 @@
       "items": 132,
       "examples": 264,
       "quizzes": 388,
-      "bytes": 378614
+      "bytes": 379673
     },
     {
       "level": "N3",
@@ -65,7 +65,7 @@
       "items": 182,
       "examples": 364,
       "quizzes": 548,
-      "bytes": 559458
+      "bytes": 560749
     },
     {
       "level": "N2",
@@ -73,7 +73,7 @@
       "items": 197,
       "examples": 394,
       "quizzes": 591,
-      "bytes": 602154
+      "bytes": 602971
     },
     {
       "level": "N1",
@@ -81,7 +81,7 @@
       "items": 253,
       "examples": 506,
       "quizzes": 759,
-      "bytes": 765186
+      "bytes": 765765
     }
   ]
 }
